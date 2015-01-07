@@ -159,8 +159,6 @@ strings.
 
 Original author: German Cancio <German.C>
 
-Author of the Yum-based package manager: Luis Fernando Muñoz Mejías
-
 ### SEE ALSO
 
 You must read this document to understand how to manage packages
@@ -176,10 +174,3 @@ software installations in large sites:
 [http://quattor.org/blog/2013/01/29/package-layout-proposal.html](http://quattor.org/blog/2013/01/29/package-layout-proposal.html)
 [http://quattor.org/blog/2013/03/27/cleaning-up-packages.html](http://quattor.org/blog/2013/03/27/cleaning-up-packages.html)
 
-### POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 194:
-
-    Non-ASCII character seen before =encoding in 'Muñoz'. Assuming UTF-8

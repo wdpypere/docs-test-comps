@@ -114,22 +114,3 @@ An example:
 "/system/network/interfaces/vlan0/device" = "eth0.3";
 "/system/network/interfaces/vlan0/physdev" = "eth0";
 
-### POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 29:
-
-    '=item' outside of any '=over'
-
-- Around line 99:
-
-    You forgot a '=back' before '=head1'
-
-- Around line 107:
-
-    '=item' outside of any '=over'
-
-- Around line 116:
-
-    You forgot a '=back' before '=head1'

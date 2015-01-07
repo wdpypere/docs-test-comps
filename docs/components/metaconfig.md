@@ -205,9 +205,6 @@ And now, we only have to specify the contents:
 That's it!  When you deploy your configuration you should see your
 `/etc/foo.ini` in the correct location.
 
-\#
-\### Author(s): Luis Fernando Muñoz Mejías
-\#
 
 ### TODO
 
@@ -216,10 +213,3 @@ Anyone knows of a good Apache config renderer for Perl??
 A better way for deriving the name of the template from the file name
 would be appreciated.
 
-### POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 238:
-
-    Non-ASCII character seen before =encoding in 'Muñoz'. Assuming UTF-8

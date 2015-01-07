@@ -16,12 +16,3 @@ https://twiki.cern.ch/twiki/bin/view/FIOgroup/TsiCDBBlockDevices
 
 [ncm-filesystems](https://metacpan.org/pod/ncm-filesystems)
 
-Luis Fernando Muñoz Mejías, <Luis.Fernando.Munoz.M>
-
-### POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 37:
-
-    Non-ASCII character seen before =encoding in 'Muñoz'. Assuming UTF-8

@@ -50,22 +50,3 @@ Juan.Pelegrin <Juan.P>
 
 ncm-ncd(1)
 
-### POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 27:
-
-    '=item' outside of any '=over'
-
-- Around line 35:
-
-    You forgot a '=back' before '=head1'
-
-- Around line 37:
-
-    '=item' outside of any '=over'
-
-- Around line 49:
-
-    You forgot a '=back' before '=head1'

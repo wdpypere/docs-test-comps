@@ -70,14 +70,3 @@ Better way to place the defaults on hieraconf parameter.
 
 Downloading files from other sources than PuppetLabs forge.
 
-### POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 74:
-
-    You forgot a '=back' before '=head2'
-
-- Around line 91:
-
-    You forgot a '=back' before '=head1'

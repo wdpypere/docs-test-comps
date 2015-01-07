@@ -90,14 +90,3 @@ And we can instruct Postfix to access this database:
     "query_filter" = "(an-ldap-filter)";
     "result_format" = "%s";
 
-### POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 36:
-
-    Unterminated L<...> sequence
-
-- Around line 90:
-
-    You forgot a '=back' before '=head1'

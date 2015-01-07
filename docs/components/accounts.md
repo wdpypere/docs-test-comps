@@ -263,18 +263,3 @@ ncm-accounts but by [ncm-authconfig](https://metacpan.org/pod/ncm-authconfig).
 
 [ncm-authconfig](https://metacpan.org/pod/ncm-authconfig)
 
-Luis Fernando Muñoz Mejías <Luis.Fernando.Munoz.M>
-
-### POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 255:
-
-    &#x3d;over should be: '=over' or '=over positive\_number'
-
-    You can't have =items (as at line 263) unless the first thing after the =over is an =item
-
-- Around line 308:
-
-    Non-ASCII character seen before =encoding in 'Muñoz'. Assuming UTF-8

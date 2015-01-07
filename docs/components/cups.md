@@ -102,8 +102,6 @@ None known.
 
 Michel Jouvin <jouvin@lal.in2p3.fr>
 
-Luis Fernando Muñoz Mejías <>
-
 ### VERSION
 
 2.0.0
@@ -112,10 +110,3 @@ Luis Fernando Muñoz Mejías <>
 
 ncm-ncd(1), cupsd(8), lpadmin(8)
 
-### POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 131:
-
-    Non-ASCII character seen before =encoding in 'Muñoz'. Assuming UTF-8
