@@ -12,7 +12,7 @@
 \#
 
 \### #
-\### metaconfig, 15.4.1-SNAPSHOT, SNAPSHOT20150820170950, 2015-08-20T17:09:47Z
+\### metaconfig, 15.4.1-SNAPSHOT, SNAPSHOT20150820215546, 2015-08-20T21:55:42Z
 \#
 
 ### NAME
@@ -213,6 +213,8 @@ And now, we only have to specify the contents:
 That's it!  When you deploy your configuration you should see your
 `/etc/foo.ini` in the correct location.
 
+\#
+\#
 
 ### TODO
 
