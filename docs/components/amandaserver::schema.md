@@ -1,16 +1,22 @@
- ##### Types
-  - `/software/amandaserver/columnspec`
+ ### Types
+
+- `/software/amandaserver/columnspec`
     - `/software/amandaserver/columnspec/name`
-      - required
-    - type: string
+        - required
+        - type: string
+
     - `/software/amandaserver/columnspec/space`
-      - required
-    - type: long
+        - required
+        - type: long
+
     - `/software/amandaserver/columnspec/width`
-      - required
-    - type: long
+        - required
+        - type: long
+
   - `/software/amandaserver/backupstring`
+
   - `/software/amandaserver/tapetypestring`
+
   - `/software/amandaserver/dumptypestring`
   - `/software/amandaserver/interfacestring`
   - `/software/amandaserver/booleanstring`
