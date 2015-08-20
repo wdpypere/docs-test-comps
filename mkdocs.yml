@@ -4,7 +4,7 @@ theme: 'readthedocs'
 
 pages:
 - introduction: 'index.md'
- - CCM:
+- CCM:
     - syncfile: 'CCM/syncfile.md'
     - jsonprofiletyped: 'CCM/jsonprofiletyped.md'
     - path: 'CCM/path.md'
@@ -22,7 +22,7 @@ pages:
     - resource: 'CCM/resource.md'
     - fetch: 'CCM/fetch.md'
     - tt::scalar: 'CCM/tt::scalar.md'
- - CAF:
+- CAF:
     - service: 'CAF/service.md'
     - reporter: 'CAF/reporter.md'
     - replogger: 'CAF/replogger.md'
@@ -37,7 +37,7 @@ pages:
     - lock: 'CAF/lock.md'
     - application: 'CAF/application.md'
     - process: 'CAF/process.md'
- - components:
+- components:
     - useraccess::schema: 'components/useraccess::schema.md'
     - useraccess: 'components/useraccess.md'
     - puppet::schema: 'components/puppet::schema.md'
