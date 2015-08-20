@@ -1,23 +1,23 @@
- - Types
+ ##### Types
   - `/software/dirperm/structure_dirperm_entry`
-   - `/software/dirperm/structure_dirperm_entry/path`
-    - required
+    - `/software/dirperm/structure_dirperm_entry/path`
+      - required
     - type: string
-   - `/software/dirperm/structure_dirperm_entry/perm`
-    - required
+    - `/software/dirperm/structure_dirperm_entry/perm`
+      - required
     - type: string
-   - `/software/dirperm/structure_dirperm_entry/owner`
-    - required
+    - `/software/dirperm/structure_dirperm_entry/owner`
+      - required
     - type: string
-   - `/software/dirperm/structure_dirperm_entry/type`
-    - required
+    - `/software/dirperm/structure_dirperm_entry/type`
+      - required
     - type: string
-   - `/software/dirperm/structure_dirperm_entry/initdir`
-    - optional
+    - `/software/dirperm/structure_dirperm_entry/initdir`
+      - optional
     - type: string
   - `/software/dirperm/component_dirperm`
-   - `/software/dirperm/component_dirperm/paths`
-    - optional
+    - `/software/dirperm/component_dirperm/paths`
+      - optional
     - type: structure_dirperm_entry
 
  - Functions

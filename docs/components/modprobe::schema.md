@@ -1,29 +1,29 @@
- - Types
+ ##### Types
   - `/software/modprobe/module_type`
-   - `/software/modprobe/module_type/name`
-    - required
+    - `/software/modprobe/module_type/name`
+      - required
     - type: string
-   - `/software/modprobe/module_type/alias`
-    - optional
+    - `/software/modprobe/module_type/alias`
+      - optional
     - type: string
-   - `/software/modprobe/module_type/options`
-    - optional
+    - `/software/modprobe/module_type/options`
+      - optional
     - type: string
-   - `/software/modprobe/module_type/install`
-    - optional
+    - `/software/modprobe/module_type/install`
+      - optional
     - type: string
-   - `/software/modprobe/module_type/remove`
-    - optional
+    - `/software/modprobe/module_type/remove`
+      - optional
     - type: string
-   - `/software/modprobe/module_type/blacklist`
-    - optional
+    - `/software/modprobe/module_type/blacklist`
+      - optional
     - type: string
   - `/software/modprobe/component_modprobe_type`
-   - `/software/modprobe/component_modprobe_type/file`
-    - required
+    - `/software/modprobe/component_modprobe_type/file`
+      - required
     - type: string
-   - `/software/modprobe/component_modprobe_type/modules`
-    - required
+    - `/software/modprobe/component_modprobe_type/modules`
+      - required
     - type: module_type
 
  - Functions
