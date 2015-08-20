@@ -6,11 +6,9 @@
 
 \### #
 \### Current developer(s):
-\###   Luis Fernando Muñoz Mejías <Luis.Munoz@UGent.be>
 \#
 
 \### #
-\### Author(s): Luis Fernando Muñoz Mejías
 \#
 
 \### #
