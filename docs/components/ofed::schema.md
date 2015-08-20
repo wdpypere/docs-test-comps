@@ -1,136 +1,136 @@
  - Types
-  - /software/ofed/component_ofed_openib_options
-   - /software/ofed/component_ofed_openib_options/onboot
+  - `/software/ofed/component_ofed_openib_options`
+   - `/software/ofed/component_ofed_openib_options/onboot`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_options/renice_ib_mad
+   - `/software/ofed/component_ofed_openib_options/renice_ib_mad`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_options/set_ipoib_cm
+   - `/software/ofed/component_ofed_openib_options/set_ipoib_cm`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_options/set_ipoib_channels
+   - `/software/ofed/component_ofed_openib_options/set_ipoib_channels`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_options/srpha_enable
+   - `/software/ofed/component_ofed_openib_options/srpha_enable`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_options/srp_daemon_enable
+   - `/software/ofed/component_ofed_openib_options/srp_daemon_enable`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_options/ipoib_mtu
+   - `/software/ofed/component_ofed_openib_options/ipoib_mtu`
     - required
     - type: long
-   - /software/ofed/component_ofed_openib_options/run_sysctl
+   - `/software/ofed/component_ofed_openib_options/run_sysctl`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_options/run_affinity_tuner
+   - `/software/ofed/component_ofed_openib_options/run_affinity_tuner`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_options/run_mlnx_tune
+   - `/software/ofed/component_ofed_openib_options/run_mlnx_tune`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_options/node_desc
+   - `/software/ofed/component_ofed_openib_options/node_desc`
     - optional
     - type: string
-   - /software/ofed/component_ofed_openib_options/node_desc_update_timeout
+   - `/software/ofed/component_ofed_openib_options/node_desc_update_timeout`
     - required
     - type: long
     - range: 0..
-   - /software/ofed/component_ofed_openib_options/node_desc_time_before_update
+   - `/software/ofed/component_ofed_openib_options/node_desc_time_before_update`
     - required
     - type: long
     - range: 0..
-   - /software/ofed/component_ofed_openib_options/post_start_delay
+   - `/software/ofed/component_ofed_openib_options/post_start_delay`
     - required
     - type: long
     - range: 0..
-  - /software/ofed/component_ofed_openib_modules
-   - /software/ofed/component_ofed_openib_modules/ucm
+  - `/software/ofed/component_ofed_openib_modules`
+   - `/software/ofed/component_ofed_openib_modules/ucm`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_modules/umad
+   - `/software/ofed/component_ofed_openib_modules/umad`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_modules/uverbs
+   - `/software/ofed/component_ofed_openib_modules/uverbs`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_modules/rdma_cm
+   - `/software/ofed/component_ofed_openib_modules/rdma_cm`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_modules/rdma_ucm
+   - `/software/ofed/component_ofed_openib_modules/rdma_ucm`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_modules/ipoib
+   - `/software/ofed/component_ofed_openib_modules/ipoib`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_modules/e_ipoib
+   - `/software/ofed/component_ofed_openib_modules/e_ipoib`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_modules/sdp
+   - `/software/ofed/component_ofed_openib_modules/sdp`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_modules/srp
+   - `/software/ofed/component_ofed_openib_modules/srp`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_modules/srpt
+   - `/software/ofed/component_ofed_openib_modules/srpt`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_modules/rds
+   - `/software/ofed/component_ofed_openib_modules/rds`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_modules/iser
+   - `/software/ofed/component_ofed_openib_modules/iser`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_modules/mlx4_vnic
+   - `/software/ofed/component_ofed_openib_modules/mlx4_vnic`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_modules/mlx4_fc
+   - `/software/ofed/component_ofed_openib_modules/mlx4_fc`
     - required
     - type: boolean
-  - /software/ofed/component_ofed_openib_hardware
-   - /software/ofed/component_ofed_openib_hardware/mthca
+  - `/software/ofed/component_ofed_openib_hardware`
+   - `/software/ofed/component_ofed_openib_hardware/mthca`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_hardware/mlx4
+   - `/software/ofed/component_ofed_openib_hardware/mlx4`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_hardware/mlx5
+   - `/software/ofed/component_ofed_openib_hardware/mlx5`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_hardware/mlx_en
+   - `/software/ofed/component_ofed_openib_hardware/mlx_en`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_hardware/ipath
+   - `/software/ofed/component_ofed_openib_hardware/ipath`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_hardware/qib
+   - `/software/ofed/component_ofed_openib_hardware/qib`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_hardware/qlgc_vnic
+   - `/software/ofed/component_ofed_openib_hardware/qlgc_vnic`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_hardware/cxgb3
+   - `/software/ofed/component_ofed_openib_hardware/cxgb3`
     - required
     - type: boolean
-   - /software/ofed/component_ofed_openib_hardware/nes
+   - `/software/ofed/component_ofed_openib_hardware/nes`
     - required
     - type: boolean
-  - /software/ofed/component_ofed_openib
-   - /software/ofed/component_ofed_openib/config
+  - `/software/ofed/component_ofed_openib`
+   - `/software/ofed/component_ofed_openib/config`
     - required
     - type: string
-   - /software/ofed/component_ofed_openib/options
+   - `/software/ofed/component_ofed_openib/options`
     - required
     - type: component_ofed_openib_options
-   - /software/ofed/component_ofed_openib/modules
+   - `/software/ofed/component_ofed_openib/modules`
     - required
     - type: component_ofed_openib_modules
-   - /software/ofed/component_ofed_openib/hardware
+   - `/software/ofed/component_ofed_openib/hardware`
     - required
     - type: component_ofed_openib_hardware
-  - /software/ofed/component_ofed_type
-   - /software/ofed/component_ofed_type/openib
+  - `/software/ofed/component_ofed_type`
+   - `/software/ofed/component_ofed_type/openib`
     - required
     - type: component_ofed_openib
 

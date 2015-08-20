@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
-openldap -- NCM component to control entries in /etc/openldap/slapd.conf
+openldap -- NCM component to control entries in `/etc/openldap/slapd.conf`
 
-# DESCRIPTION
+### DESCRIPTION
 
 The _openldap_ component manages the openldap server config file
-/etc/openldap/slapd.conf.
+`/etc/openldap/slapd.conf`.

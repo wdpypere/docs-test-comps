@@ -1,53 +1,53 @@
  - Types
-  - /software/aiiserver/structure_aiishellfe
-   - /software/aiiserver/structure_aiishellfe/cdburl
+  - `/software/aiiserver/structure_aiishellfe`
+   - `/software/aiiserver/structure_aiishellfe/cdburl`
     - required
     - type: type_absoluteURI
-   - /software/aiiserver/structure_aiishellfe/nodhcp
+   - `/software/aiiserver/structure_aiishellfe/nodhcp`
     - optional
     - type: boolean
-   - /software/aiiserver/structure_aiishellfe/nonbp
+   - `/software/aiiserver/structure_aiishellfe/nonbp`
     - optional
     - type: boolean
-   - /software/aiiserver/structure_aiishellfe/noosinstall
+   - `/software/aiiserver/structure_aiishellfe/noosinstall`
     - optional
     - type: boolean
-   - /software/aiiserver/structure_aiishellfe/logfile
+   - `/software/aiiserver/structure_aiishellfe/logfile`
     - optional
     - type: string
-   - /software/aiiserver/structure_aiishellfe/profile_prefix
+   - `/software/aiiserver/structure_aiishellfe/profile_prefix`
     - optional
     - type: string
-   - /software/aiiserver/structure_aiishellfe/noaction
+   - `/software/aiiserver/structure_aiishellfe/noaction`
     - optional
     - type: boolean
-   - /software/aiiserver/structure_aiishellfe/use_fqdn
+   - `/software/aiiserver/structure_aiishellfe/use_fqdn`
     - required
     - type: boolean
-   - /software/aiiserver/structure_aiishellfe/profile_format
+   - `/software/aiiserver/structure_aiishellfe/profile_format`
     - required
     - type: string
-   - /software/aiiserver/structure_aiishellfe/osinstalldir
+   - `/software/aiiserver/structure_aiishellfe/osinstalldir`
     - optional
     - type: string
-   - /software/aiiserver/structure_aiishellfe/nbpdir
+   - `/software/aiiserver/structure_aiishellfe/nbpdir`
     - optional
     - type: string
-  - /software/aiiserver/structure_aiidhcp
-   - /software/aiiserver/structure_aiidhcp/dhcpconf
+  - `/software/aiiserver/structure_aiidhcp`
+   - `/software/aiiserver/structure_aiidhcp/dhcpconf`
     - required
     - type: string
-   - /software/aiiserver/structure_aiidhcp/restartcmd
+   - `/software/aiiserver/structure_aiidhcp/restartcmd`
     - optional
     - type: string
-   - /software/aiiserver/structure_aiidhcp/norestart
+   - `/software/aiiserver/structure_aiidhcp/norestart`
     - optional
     - type: boolean
-  - /software/aiiserver/structure_component_aiiserver
-   - /software/aiiserver/structure_component_aiiserver/aii-shellfe
+  - `/software/aiiserver/structure_component_aiiserver`
+   - `/software/aiiserver/structure_component_aiiserver/aii`-shellfe
     - required
     - type: structure_aiishellfe
-   - /software/aiiserver/structure_component_aiiserver/aii-dhcp
+   - `/software/aiiserver/structure_component_aiiserver/aii`-dhcp
     - required
     - type: structure_aiidhcp
 

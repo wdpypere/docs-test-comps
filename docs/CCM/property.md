@@ -1,15 +1,15 @@
-# NAME
+### NAME
 
 EDG::WP4::CCM::Property - Property class
 
-# SYNOPSIS
+### SYNOPSIS
 
     $string = $property->getStringValue();
     $double = $property->getDoubleValue();
     $long = $property->getLongValue();
     $boolean = $property->getBooleanValue();
 
-# DESCRIPTION
+### DESCRIPTION
 
 The class Property is a derived class of Element class, and implements
 methods that are specific to Properties, that is, simple values

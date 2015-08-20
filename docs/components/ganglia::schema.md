@@ -1,223 +1,223 @@
  - Types
-  - /software/ganglia/daemon_ganglia
-   - /software/ganglia/daemon_ganglia/config_file
+  - `/software/ganglia/daemon_ganglia`
+   - `/software/ganglia/daemon_ganglia/config_file`
     - required
     - type: string
-   - /software/ganglia/daemon_ganglia/data_source
+   - `/software/ganglia/daemon_ganglia/data_source`
     - required
     - type: string
-   - /software/ganglia/daemon_ganglia/gridname
+   - `/software/ganglia/daemon_ganglia/gridname`
     - required
     - type: string
-   - /software/ganglia/daemon_ganglia/case_sensitive_hostnames
+   - `/software/ganglia/daemon_ganglia/case_sensitive_hostnames`
     - required
     - type: long
-  - /software/ganglia/metric_collection_groups_client_ganglia
-   - /software/ganglia/metric_collection_groups_client_ganglia/name
+  - `/software/ganglia/metric_collection_groups_client_ganglia`
+   - `/software/ganglia/metric_collection_groups_client_ganglia/name`
     - required
     - type: string
-   - /software/ganglia/metric_collection_groups_client_ganglia/title
+   - `/software/ganglia/metric_collection_groups_client_ganglia/title`
     - optional
     - type: string
-   - /software/ganglia/metric_collection_groups_client_ganglia/value_threshold
+   - `/software/ganglia/metric_collection_groups_client_ganglia/value_threshold`
     - optional
     - type: string
-  - /software/ganglia/collection_groups_client_ganglia
-   - /software/ganglia/collection_groups_client_ganglia/collect_once
+  - `/software/ganglia/collection_groups_client_ganglia`
+   - `/software/ganglia/collection_groups_client_ganglia/collect_once`
     - optional
     - type: boolean
-   - /software/ganglia/collection_groups_client_ganglia/time_threshold
+   - `/software/ganglia/collection_groups_client_ganglia/time_threshold`
     - optional
     - type: long
-   - /software/ganglia/collection_groups_client_ganglia/metric
+   - `/software/ganglia/collection_groups_client_ganglia/metric`
     - required
     - type: metric_collection_groups_client_ganglia
-   - /software/ganglia/collection_groups_client_ganglia/collect_every
+   - `/software/ganglia/collection_groups_client_ganglia/collect_every`
     - optional
     - type: long
-  - /software/ganglia/modules_client_ganglia
-   - /software/ganglia/modules_client_ganglia/name
+  - `/software/ganglia/modules_client_ganglia`
+   - `/software/ganglia/modules_client_ganglia/name`
     - required
     - type: string
-   - /software/ganglia/modules_client_ganglia/path
+   - `/software/ganglia/modules_client_ganglia/path`
     - optional
     - type: string
-   - /software/ganglia/modules_client_ganglia/enabled
+   - `/software/ganglia/modules_client_ganglia/enabled`
     - optional
     - type: boolean
-   - /software/ganglia/modules_client_ganglia/params
+   - `/software/ganglia/modules_client_ganglia/params`
     - optional
     - type: string
-   - /software/ganglia/modules_client_ganglia/param
+   - `/software/ganglia/modules_client_ganglia/param`
     - optional
     - type: string
-  - /software/ganglia/access_acl_client_ganglia
-   - /software/ganglia/access_acl_client_ganglia/ip
+  - `/software/ganglia/access_acl_client_ganglia`
+   - `/software/ganglia/access_acl_client_ganglia/ip`
     - required
     - type: string
-   - /software/ganglia/access_acl_client_ganglia/mask
+   - `/software/ganglia/access_acl_client_ganglia/mask`
     - required
     - type: string
-   - /software/ganglia/access_acl_client_ganglia/action
+   - `/software/ganglia/access_acl_client_ganglia/action`
     - required
     - type: string
-  - /software/ganglia/acl_client_ganglia
-   - /software/ganglia/acl_client_ganglia/default
+  - `/software/ganglia/acl_client_ganglia`
+   - `/software/ganglia/acl_client_ganglia/default`
     - required
     - type: string
-   - /software/ganglia/acl_client_ganglia/access
+   - `/software/ganglia/acl_client_ganglia/access`
     - optional
     - type: access_acl_client_ganglia
-  - /software/ganglia/udp_accept_channel_client_ganglia
-   - /software/ganglia/udp_accept_channel_client_ganglia/port
+  - `/software/ganglia/udp_accept_channel_client_ganglia`
+   - `/software/ganglia/udp_accept_channel_client_ganglia/port`
     - required
     - type: long
-   - /software/ganglia/udp_accept_channel_client_ganglia/bind
+   - `/software/ganglia/udp_accept_channel_client_ganglia/bind`
     - optional
     - type: string
-   - /software/ganglia/udp_accept_channel_client_ganglia/interface
+   - `/software/ganglia/udp_accept_channel_client_ganglia/interface`
     - optional
     - type: string
-   - /software/ganglia/udp_accept_channel_client_ganglia/family
+   - `/software/ganglia/udp_accept_channel_client_ganglia/family`
     - optional
     - type: string
-   - /software/ganglia/udp_accept_channel_client_ganglia/timeout
+   - `/software/ganglia/udp_accept_channel_client_ganglia/timeout`
     - optional
     - type: long
-   - /software/ganglia/udp_accept_channel_client_ganglia/acl
+   - `/software/ganglia/udp_accept_channel_client_ganglia/acl`
     - optional
     - type: acl_client_ganglia
-  - /software/ganglia/udp_recv_channel_client_ganglia
-   - /software/ganglia/udp_recv_channel_client_ganglia/port
+  - `/software/ganglia/udp_recv_channel_client_ganglia`
+   - `/software/ganglia/udp_recv_channel_client_ganglia/port`
     - required
     - type: long
-   - /software/ganglia/udp_recv_channel_client_ganglia/mcast_join
+   - `/software/ganglia/udp_recv_channel_client_ganglia/mcast_join`
     - optional
     - type: string
-   - /software/ganglia/udp_recv_channel_client_ganglia/mcast_if
+   - `/software/ganglia/udp_recv_channel_client_ganglia/mcast_if`
     - optional
     - type: string
-   - /software/ganglia/udp_recv_channel_client_ganglia/bind
+   - `/software/ganglia/udp_recv_channel_client_ganglia/bind`
     - optional
     - type: string
-   - /software/ganglia/udp_recv_channel_client_ganglia/family
+   - `/software/ganglia/udp_recv_channel_client_ganglia/family`
     - optional
     - type: string
-   - /software/ganglia/udp_recv_channel_client_ganglia/acl
+   - `/software/ganglia/udp_recv_channel_client_ganglia/acl`
     - optional
     - type: acl_client_ganglia
-  - /software/ganglia/udp_send_channel_client_ganglia
-   - /software/ganglia/udp_send_channel_client_ganglia/host
+  - `/software/ganglia/udp_send_channel_client_ganglia`
+   - `/software/ganglia/udp_send_channel_client_ganglia/host`
     - required
     - type: string
-   - /software/ganglia/udp_send_channel_client_ganglia/port
+   - `/software/ganglia/udp_send_channel_client_ganglia/port`
     - required
     - type: long
-   - /software/ganglia/udp_send_channel_client_ganglia/ttl
+   - `/software/ganglia/udp_send_channel_client_ganglia/ttl`
     - required
     - type: long
-   - /software/ganglia/udp_send_channel_client_ganglia/mcast_join
+   - `/software/ganglia/udp_send_channel_client_ganglia/mcast_join`
     - optional
     - type: string
-   - /software/ganglia/udp_send_channel_client_ganglia/mcast_if
+   - `/software/ganglia/udp_send_channel_client_ganglia/mcast_if`
     - optional
     - type: string
-  - /software/ganglia/host_client_ganglia
-   - /software/ganglia/host_client_ganglia/location
+  - `/software/ganglia/host_client_ganglia`
+   - `/software/ganglia/host_client_ganglia/location`
     - required
     - type: string
-  - /software/ganglia/cluster_client_ganglia
-   - /software/ganglia/cluster_client_ganglia/name
+  - `/software/ganglia/cluster_client_ganglia`
+   - `/software/ganglia/cluster_client_ganglia/name`
     - required
     - type: string
-   - /software/ganglia/cluster_client_ganglia/owner
+   - `/software/ganglia/cluster_client_ganglia/owner`
     - required
     - type: string
-   - /software/ganglia/cluster_client_ganglia/latlong
+   - `/software/ganglia/cluster_client_ganglia/latlong`
     - required
     - type: string
-   - /software/ganglia/cluster_client_ganglia/url
+   - `/software/ganglia/cluster_client_ganglia/url`
     - required
     - type: string
-  - /software/ganglia/globals_client_ganglia
-   - /software/ganglia/globals_client_ganglia/daemonize
+  - `/software/ganglia/globals_client_ganglia`
+   - `/software/ganglia/globals_client_ganglia/daemonize`
     - required
     - type: boolean
-   - /software/ganglia/globals_client_ganglia/setuid
+   - `/software/ganglia/globals_client_ganglia/setuid`
     - required
     - type: boolean
-   - /software/ganglia/globals_client_ganglia/user
+   - `/software/ganglia/globals_client_ganglia/user`
     - required
     - type: string
-   - /software/ganglia/globals_client_ganglia/debug_level
+   - `/software/ganglia/globals_client_ganglia/debug_level`
     - required
     - type: long
-   - /software/ganglia/globals_client_ganglia/max_udp_msg_len
+   - `/software/ganglia/globals_client_ganglia/max_udp_msg_len`
     - required
     - type: long
-   - /software/ganglia/globals_client_ganglia/mute
+   - `/software/ganglia/globals_client_ganglia/mute`
     - required
     - type: boolean
-   - /software/ganglia/globals_client_ganglia/deaf
+   - `/software/ganglia/globals_client_ganglia/deaf`
     - required
     - type: boolean
-   - /software/ganglia/globals_client_ganglia/allow_extra_data
+   - `/software/ganglia/globals_client_ganglia/allow_extra_data`
     - optional
     - type: boolean
-   - /software/ganglia/globals_client_ganglia/host_dmax
+   - `/software/ganglia/globals_client_ganglia/host_dmax`
     - required
     - type: long
-   - /software/ganglia/globals_client_ganglia/cleanup_threshold
+   - `/software/ganglia/globals_client_ganglia/cleanup_threshold`
     - required
     - type: long
-   - /software/ganglia/globals_client_ganglia/send_metadata_interval
+   - `/software/ganglia/globals_client_ganglia/send_metadata_interval`
     - optional
     - type: long
-   - /software/ganglia/globals_client_ganglia/gexec
+   - `/software/ganglia/globals_client_ganglia/gexec`
     - required
     - type: boolean
-   - /software/ganglia/globals_client_ganglia/module_dir
+   - `/software/ganglia/globals_client_ganglia/module_dir`
     - optional
     - type: string
-  - /software/ganglia/client_ganglia
-   - /software/ganglia/client_ganglia/config_file
+  - `/software/ganglia/client_ganglia`
+   - `/software/ganglia/client_ganglia/config_file`
     - required
     - type: string
-   - /software/ganglia/client_ganglia/globals
+   - `/software/ganglia/client_ganglia/globals`
     - required
     - type: globals_client_ganglia
-   - /software/ganglia/client_ganglia/cluster
+   - `/software/ganglia/client_ganglia/cluster`
     - required
     - type: cluster_client_ganglia
-   - /software/ganglia/client_ganglia/host
+   - `/software/ganglia/client_ganglia/host`
     - required
     - type: host_client_ganglia
-   - /software/ganglia/client_ganglia/udp_send_channel
+   - `/software/ganglia/client_ganglia/udp_send_channel`
     - required
     - type: udp_send_channel_client_ganglia
-   - /software/ganglia/client_ganglia/udp_recv_channel
+   - `/software/ganglia/client_ganglia/udp_recv_channel`
     - required
     - type: udp_recv_channel_client_ganglia
-   - /software/ganglia/client_ganglia/tcp_accept_channel
+   - `/software/ganglia/client_ganglia/tcp_accept_channel`
     - required
     - type: udp_accept_channel_client_ganglia
-   - /software/ganglia/client_ganglia/modules
+   - `/software/ganglia/client_ganglia/modules`
     - optional
     - type: modules_client_ganglia
-   - /software/ganglia/client_ganglia/includes
+   - `/software/ganglia/client_ganglia/includes`
     - optional
     - type: string
-   - /software/ganglia/client_ganglia/collection_groups
+   - `/software/ganglia/client_ganglia/collection_groups`
     - required
     - type: collection_groups_client_ganglia
-  - /software/ganglia/component_ganglia
-   - /software/ganglia/component_ganglia/package
+  - `/software/ganglia/component_ganglia`
+   - `/software/ganglia/component_ganglia/package`
     - required
     - type: string
-   - /software/ganglia/component_ganglia/daemon
+   - `/software/ganglia/component_ganglia/daemon`
     - optional
     - type: daemon_ganglia
-   - /software/ganglia/component_ganglia/client
+   - `/software/ganglia/component_ganglia/client`
     - optional
     - type: client_ganglia
 

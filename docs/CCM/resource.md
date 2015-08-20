@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 EDG::WP4::CCM::Resource - Resource class
 
-# SYNOPSIS
+### SYNOPSIS
 
     %hash = $resource->getHash();
     @list = $resource->getList();
@@ -11,7 +11,7 @@ EDG::WP4::CCM::Resource - Resource class
     [$property | $resource] = $resource->getCurrentElement();
     $resoruce->reset();
 
-# DESCRIPTION
+### DESCRIPTION
 
 The class Resource is a derived class of Element class, and implements
 methods that are specific to Resources, that is, internal nodes of

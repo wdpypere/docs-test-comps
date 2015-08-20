@@ -1,16 +1,16 @@
-# NAME
+### NAME
 
 NCM::pam - NCM pam configuration component
 
-# SYNOPSIS
+### SYNOPSIS
 
-    # declare what pam modules are available.
+    ### declare what pam modules are available.
     "/software/components/pam/modules" = npush("krb5", 
            nlist("path", "/lib/security/$ISA/pam_krb5.so"));
     "/software/components/pam/modules" = npush("cracklib", 
            nlist("path", "/lib/security/$ISA/pam_cracklib.so"));
 
-    # setup a service
+    ### setup a service
     "/software/components/pam/services" = pam_add(
        "sshd", "auth", "required", "env");
     "/software/components/pam/services" = pam_add_stack(
@@ -29,13 +29,13 @@ NCM::pam - NCM pam configuration component
 
     not available.
 
-# RESOURCES
+### RESOURCES
 
-- /software/components/pam/active : boolean
+- `/software/components/pam/active` : boolean
 
     activates/deactivates the component.
 
-- /software/components/pam/modules : nlist
+- `/software/components/pam/modules` : nlist
 
     contains the list of supported PAM modules. For each module, the value
     should be an nlist containing that path for that named module. The
@@ -44,7 +44,7 @@ NCM::pam - NCM pam configuration component
     of modules, so it is the responsibility of the operating system
     templates to define the available modules.
 
-- /software/components/pam/services: nlist
+- `/software/components/pam/services`: nlist
 
     contains an nlist of services that are being controlled by this
     component. Any service controlled will have it's PAM configuration
@@ -71,7 +71,7 @@ NCM::pam - NCM pam configuration component
     PAM config files for services which are not specified within this list
     will not be touched.
 
-- /software/components/pam/acls: nlist
+- `/software/components/pam/acls`: nlist
 
     Every ACL being managed by this component must be given a name
     and placed into this nlist. The value of the ACL is itself an nlist containing:
@@ -83,18 +83,18 @@ NCM::pam - NCM pam configuration component
     - file
 
         optionally the filename for the ACL. If this is not provided, then a filename
-        will be generated based on /software/components/pam/acldir, the name of
+        will be generated based on `/software/components/pam/acldir`, the name of
         the ACL and the sense in which it is being used.
 
-- /software/components/pam/directory: string
+- `/software/components/pam/directory`: string
 
-    The directory where the config files will be placed, defaulting to /etc/pam.d
+    The directory where the config files will be placed, defaulting to `/etc/pam.d`
 
-- /software/components/pam/acldir: string
+- `/software/components/pam/acldir`: string
 
-    The directory where the ACL files will be placed, defaulting to /etc/pam.acls
+    The directory where the ACL files will be placed, defaulting to `/etc/pam.acls`
 
-# FUNCTIONS
+### FUNCTIONS
 
 The component provides the following functions to assist in creating configurations:
 
@@ -113,7 +113,7 @@ The component provides the following functions to assist in creating configurati
 
 - pam\_add\_stack(SERVICE, TYPE, CONTROL, STACKEDSERVICE)
 
-    This function is applied to /software/components/pam/services
+    This function is applied to `/software/components/pam/services`
 
     A mapping is appended to the appropriate point in the configuration
     tree. SERVICE refers to the service being configured (e.g. "sshd").
@@ -124,7 +124,7 @@ The component provides the following functions to assist in creating configurati
 
 - pam\_add\_listfile\_acl(SERVICE, TYPE, CONTROL, SENSE, ITEMTYPE, ITEMS, ONERR?)
 
-    This function should be applied to /software/components/pam/services.
+    This function should be applied to `/software/components/pam/services.`
 
 - pam\_add\_access\_file(KEY, FILENAME, ALLOWPOS, ALLOWNEG)
 
@@ -157,28 +157,28 @@ The component provides the following functions to assist in creating configurati
     This function should be applied to "/software/components/pam/access".
     It adds a user to the access file.
 
-# FILES MODIFIED
+### FILES MODIFIED
 
-The component pam modifies files within the /etc/pam.d directory the /etc/pam.acls directory.
+The component pam modifies files within the `/etc/pam.d` directory the `/etc/pam.acls` directory.
 
-# DEPENDENCIES
+### DEPENDENCIES
 
-## Components to be run before:
-
-none.
-
-## Components to be run after:
+#### Components to be run before:
 
 none.
 
-# EXAMPLES
+#### Components to be run after:
+
+none.
+
+### EXAMPLES
 
 "/software/components/pam/active" = true;
 
-# BUGS
+### BUGS
 
 Cannot stack or include services that are not managed by this module.
 
-# SEE ALSO
+### SEE ALSO
 
 ncm-ncd(1)

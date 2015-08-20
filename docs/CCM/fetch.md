@@ -1,23 +1,21 @@
-# NAME
+### NAME
 
 EDG::WP4::CCM::Fetch
 
-# SYNOPSIS
+### SYNOPSIS
 
     $fetch = EDG::WP4::CCM::Fetch->new({PROFILE_URL => "profile_url or hostname",
                         CONFIG  => "path of config file",
                         FOREIGN => "1/0"});
-
-
     $fetch->fetchProfile();
 
-# DESCRIPTION
+### DESCRIPTION
 
 Module provides Fetch class. This helps in retrieving XML profiles and
 contexts from specified URLs. It allows users to retrieve local, as
 well as foreign node profiles.
 
-# Functions
+### Functions
 
 - new()
 
@@ -27,7 +25,7 @@ well as foreign node profiles.
 
     Creates new Fetch object. Full url of the profile can be provided as
     parameter PROFILE\_URL, if it is not a url a profile url will be
-    calculated using 'base\_url' config option in /etc/ccm.conf.  Path of
+    calculated using 'base\_url' config option in `/etc/ccm.conf`.  Path of
     alternative configuration file can be given as CONFIG.
 
     Returns undef in case of error.

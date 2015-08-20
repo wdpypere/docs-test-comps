@@ -1,65 +1,65 @@
  - Types
-  - /software/mysql/component_mysql_user_right
-  - /software/mysql/component_mysql_db_user
-   - /software/mysql/component_mysql_db_user/password
+  - `/software/mysql/component_mysql_user_right`
+  - `/software/mysql/component_mysql_db_user`
+   - `/software/mysql/component_mysql_db_user/password`
     - required
     - type: string
-   - /software/mysql/component_mysql_db_user/rights
+   - `/software/mysql/component_mysql_db_user/rights`
     - required
     - type: component_mysql_user_right
-   - /software/mysql/component_mysql_db_user/shortPwd
+   - `/software/mysql/component_mysql_db_user/shortPwd`
     - required
     - type: boolean
-  - /software/mysql/component_mysql_db_script
-   - /software/mysql/component_mysql_db_script/file
+  - `/software/mysql/component_mysql_db_script`
+   - `/software/mysql/component_mysql_db_script/file`
     - optional
     - type: string
-   - /software/mysql/component_mysql_db_script/content
+   - `/software/mysql/component_mysql_db_script/content`
     - optional
     - type: string
-  - /software/mysql/component_mysql_db_options
-   - /software/mysql/component_mysql_db_options/server
+  - `/software/mysql/component_mysql_db_options`
+   - `/software/mysql/component_mysql_db_options/server`
     - required
     - type: string
-   - /software/mysql/component_mysql_db_options/users
+   - `/software/mysql/component_mysql_db_options/users`
     - optional
     - type: component_mysql_db_user
-   - /software/mysql/component_mysql_db_options/initScript
+   - `/software/mysql/component_mysql_db_options/initScript`
     - optional
     - type: component_mysql_db_script
-   - /software/mysql/component_mysql_db_options/initOnce
+   - `/software/mysql/component_mysql_db_options/initOnce`
     - required
     - type: boolean
-   - /software/mysql/component_mysql_db_options/createDb
+   - `/software/mysql/component_mysql_db_options/createDb`
     - required
     - type: boolean
-   - /software/mysql/component_mysql_db_options/tableOptions
+   - `/software/mysql/component_mysql_db_options/tableOptions`
     - optional
     - type: string
-  - /software/mysql/component_mysql_server_options
-   - /software/mysql/component_mysql_server_options/host
+  - `/software/mysql/component_mysql_server_options`
+   - `/software/mysql/component_mysql_server_options/host`
     - optional
     - type: string
-   - /software/mysql/component_mysql_server_options/adminuser
+   - `/software/mysql/component_mysql_server_options/adminuser`
     - required
     - type: string
-   - /software/mysql/component_mysql_server_options/adminpwd
+   - `/software/mysql/component_mysql_server_options/adminpwd`
     - required
     - type: string
-   - /software/mysql/component_mysql_server_options/options
+   - `/software/mysql/component_mysql_server_options/options`
     - optional
     - type: string
-   - /software/mysql/component_mysql_server_options/users
+   - `/software/mysql/component_mysql_server_options/users`
     - optional
     - type: component_mysql_db_user
-  - /software/mysql/component_mysql
-   - /software/mysql/component_mysql/databases
+  - `/software/mysql/component_mysql`
+   - `/software/mysql/component_mysql/databases`
     - optional
     - type: component_mysql_db_options
-   - /software/mysql/component_mysql/servers
+   - `/software/mysql/component_mysql/servers`
     - required
     - type: component_mysql_server_options
-   - /software/mysql/component_mysql/serviceName
+   - `/software/mysql/component_mysql/serviceName`
     - required
     - type: string
 

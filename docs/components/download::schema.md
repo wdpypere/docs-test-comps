@@ -1,61 +1,61 @@
  - Types
-  - /software/download/component_download_file
-   - /software/download/component_download_file/href
+  - `/software/download/component_download_file`
+   - `/software/download/component_download_file/href`
     - required
     - type: string
-   - /software/download/component_download_file/post
+   - `/software/download/component_download_file/post`
     - optional
     - type: string
-   - /software/download/component_download_file/proxy
+   - `/software/download/component_download_file/proxy`
     - required
     - type: boolean
-   - /software/download/component_download_file/gssapi
+   - `/software/download/component_download_file/gssapi`
     - optional
     - type: boolean
-   - /software/download/component_download_file/perm
+   - `/software/download/component_download_file/perm`
     - optional
     - type: string
-   - /software/download/component_download_file/owner
+   - `/software/download/component_download_file/owner`
     - optional
     - type: string
-   - /software/download/component_download_file/group
+   - `/software/download/component_download_file/group`
     - optional
     - type: string
-   - /software/download/component_download_file/min_age
+   - `/software/download/component_download_file/min_age`
     - required
     - type: long
-   - /software/download/component_download_file/cacert
+   - `/software/download/component_download_file/cacert`
     - optional
     - type: string
-   - /software/download/component_download_file/capath
+   - `/software/download/component_download_file/capath`
     - optional
     - type: string
-   - /software/download/component_download_file/cert
+   - `/software/download/component_download_file/cert`
     - optional
     - type: string
-   - /software/download/component_download_file/key
+   - `/software/download/component_download_file/key`
     - optional
     - type: string
-   - /software/download/component_download_file/timeout
+   - `/software/download/component_download_file/timeout`
     - optional
     - type: long
-  - /software/download/component_download_type
-   - /software/download/component_download_type/server
+  - `/software/download/component_download_type`
+   - `/software/download/component_download_type/server`
     - optional
     - type: string
-   - /software/download/component_download_type/proto
+   - `/software/download/component_download_type/proto`
     - optional
     - type: string
-   - /software/download/component_download_type/files
+   - `/software/download/component_download_type/files`
     - optional
     - type: component_download_file
-   - /software/download/component_download_type/proxyhosts
+   - `/software/download/component_download_type/proxyhosts`
     - optional
     - type: string
-   - /software/download/component_download_type/head_timeout
+   - `/software/download/component_download_type/head_timeout`
     - optional
     - type: long
-   - /software/download/component_download_type/timeout
+   - `/software/download/component_download_type/timeout`
     - optional
     - type: long
 

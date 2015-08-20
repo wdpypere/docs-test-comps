@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 CAF::Object - provides basic methods for all CAF objects
 
-# SYNOPSIS
+### SYNOPSIS
 
     use vars qw (@ISA);
     use LC::Exception qw (SUCCESS throw_error);
@@ -12,14 +12,14 @@ CAF::Object - provides basic methods for all CAF objects
     ...
     sub _initialize {
       ... initialize your component
-      return SUCCESS; # Success
+      return SUCCESS; ### Success
     }
 
-# INHERITANCE
+### INHERITANCE
 
 none.
 
-# DESCRIPTION
+### DESCRIPTION
 
 **CAF::Object** is a base class which provides basic functionality to
 CAF objects.
@@ -32,16 +32,14 @@ constructor initialisation in an "\_initialize" method which is invoked
 from this base class "new" constructor. Sub-classes should NOT need to
 override the "new" class method.
 
-
-
-## Public methods
+#### Public methods
 
 - new
 - noAction
 
     Returns the NoAction flag value (boolean)
 
-## Private methods
+#### Private methods
 
 - \_initialize
 

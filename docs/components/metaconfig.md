@@ -1,34 +1,34 @@
-\# #
-\# Software subject to following license(s):
-\#   Apache 2 License (http://www.opensource.org/licenses/apache2.0)
-\#   Copyright (c) Responsible Organization
+\### #
+\### Software subject to following license(s):
+\###   Apache 2 License (http://www.opensource.org/licenses/apache2.0)
+\###   Copyright (c) Responsible Organization
 \#
 
-\# #
-\# Current developer(s):
-\#   Luis Fernando Muñoz Mejías <Luis.Munoz@UGent.be>
+\### #
+\### Current developer(s):
+\###   Luis Fernando Muñoz Mejías <Luis.Munoz@UGent.be>
 \#
 
-\# #
-\# Author(s): Luis Fernando Muñoz Mejías
+\### #
+\### Author(s): Luis Fernando Muñoz Mejías
 \#
 
-\# #
-\# metaconfig, 15.4.1-SNAPSHOT, SNAPSHOT20150820170950, 2015-08-20T17:09:47Z
+\### #
+\### metaconfig, 15.4.1-SNAPSHOT, SNAPSHOT20150820170950, 2015-08-20T17:09:47Z
 \#
 
-# NAME
+### NAME
 
 ncm-metaconfig: Configure services whose config format can be 
 rendered via `CAF::TextRender`.
 
-# DESCRIPTION
+### DESCRIPTION
 
 metaconfig
 
-# RESOURCES
+### RESOURCES
 
-## /software/components/metaconfig
+#### `/software/components/metaconfig`
 
 The configuration information for the component.  It is an nlist of
 `services`, indexed by absolute path. Each service contains:
@@ -83,7 +83,7 @@ The configuration information for the component.  It is an nlist of
     config file, and bind it to these contents, to get the best
     validation.
 
-# CONFIGURATION MODULES
+### CONFIGURATION MODULES
 
 The following formats can be rendered via `CAF::TextRender`:
 
@@ -129,13 +129,13 @@ The following formats can be rendered via `CAF::TextRender`:
     relative to `metaconfig/`, and the component actively sanitizes this
     field.
 
-# EXAMPLES
+### EXAMPLES
 
-## Configuring /etc/ccm.conf
+#### Configuring `/etc/ccm.conf`
 
-The well-known /etc/ccm.conf can be defined like this:
+The well-known `/etc/ccm.conf` can be defined like this:
 
-### Define a valid structure for the file
+##### Define a valid structure for the file
 
     type ccm_conf_file = {
         "profile" : type_absoluteURI
@@ -146,37 +146,37 @@ The well-known /etc/ccm.conf can be defined like this:
 
     bind "/software/components/metaconfig/services/{/etc/ccm.conf}/contents" = ccm_conf_file;
 
-### Fill in the contents
+##### Fill in the contents
 
     prefix "/software/components/metaconfig/services/{/etc/ccm.conf}"
 
     "contents/profile" = "http://www.google.com";
     "module" = "general";
 
-### And that's it
+##### And that's it
 
 Now, just compile and deploy. You should get the same results as with
 old good ncm-ccm.
 
-## Generating an INI-like file
+#### Generating an INI-like file
 
 We can generate simple INI-like files with the `Config::Tiny` module.
 
-### Example schema
+##### Example schema
 
 Let's imagine the file has two sections with one key each:
 
-    # This is the first section, labeled "s1"
+    ### This is the first section, labeled "s1"
     type section_1 = {
        "a" : long
     };
 
-    # This is the second section, labeled "s2"
+    ### This is the second section, labeled "s2"
     type section_2 = {
        "b" : string
     };
 
-    # This is the full file structure
+    ### This is the full file structure
     type my_ini_file = {
        "s1" : section_1
        "s2" : section_2
@@ -184,7 +184,7 @@ Let's imagine the file has two sections with one key each:
 
     bind "/software/components/metaconfig/services/{/etc/foo.ini}/contents" = my_ini_file;
 
-### Describing the file
+##### Describing the file
 
 We'll define the permissions, who renders it and which daemons are associated to it.
 
@@ -202,7 +202,7 @@ syntax here):
 
     "/software/packages/{perl-Config-Tiny}" = nlist();
 
-### Describing the file's contents
+##### Describing the file's contents
 
 And now, we only have to specify the contents:
 
@@ -210,18 +210,16 @@ And now, we only have to specify the contents:
     "s1/a" = 42;
     "s2/b" = "hitchicker";
 
-### And that's it
+##### And that's it
 
 That's it!  When you deploy your configuration you should see your
-/etc/foo.ini in the correct location.
-
-# AUTHOR
+`/etc/foo.ini` in the correct location.
 
 \#
-\# Author(s): Luis Fernando Muñoz Mejías
+\### Author(s): Luis Fernando Muñoz Mejías
 \#
 
-# TODO
+### TODO
 
 Anyone knows of a good Apache config renderer for Perl??
 

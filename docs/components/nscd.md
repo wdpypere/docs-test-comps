@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 NCM::nscd - NCM component to configure nscd
 
-# SYNOPSIS
+### SYNOPSIS
 
 - Configure()
 
@@ -10,14 +10,12 @@ NCM::nscd - NCM component to configure nscd
     or the CDB schema file for allowed options. Booleans have to be written as
     _yes_ or _no_ in the template, this is the way _nscd_ expects them.
 
-# FILES
+### FILES
 
 modifies `/etc/nscd.conf` and a temporary file in `/etc`.
 
-# AUTHOR
-
 Jan.I
 
-# SEE ALSO
+### SEE ALSO
 
 nscd(8), nscd.conf(5)

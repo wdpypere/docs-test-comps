@@ -1,15 +1,15 @@
  - Types
-  - /software/sendmail/component_sendmail
-   - /software/sendmail/component_sendmail/smarthost
+  - `/software/sendmail/component_sendmail`
+   - `/software/sendmail/component_sendmail/smarthost`
     - optional
     - type: string
-   - /software/sendmail/component_sendmail/userdomain
+   - `/software/sendmail/component_sendmail/userdomain`
     - optional
     - type: string
-   - /software/sendmail/component_sendmail/localusers
+   - `/software/sendmail/component_sendmail/localusers`
     - optional
     - type: list
-   - /software/sendmail/component_sendmail/allowexternal
+   - `/software/sendmail/component_sendmail/allowexternal`
     - optional
     - type: boolean
 

@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 NCM::systemd - NCM systemd component
 
-# SYNOPSIS
+### SYNOPSIS
 
 - Configure()
 

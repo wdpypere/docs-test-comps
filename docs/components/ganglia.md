@@ -1,20 +1,18 @@
-# NAME
+### NAME
 
 ncm-ganglia: Ganglia components
 
-# DESCRIPTION
+### DESCRIPTION
 
 ganglia
 
-# RESOURCES
+### RESOURCES
 
-## /software/components/ganglia
+#### `/software/components/ganglia`
 
 The configuration information for the component.  Each field should
 be described in this section. 
 
-# AUTHOR
-
 \#
-\# Author(s): Guillaume PHILIPPON
+\### Author(s): Guillaume PHILIPPON
 \#

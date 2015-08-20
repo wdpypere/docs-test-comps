@@ -1,47 +1,47 @@
  - Types
-  - /software/gpfs/component_gpfs_cfg
-   - /software/gpfs/component_gpfs_cfg/url
+  - `/software/gpfs/component_gpfs_cfg`
+   - `/software/gpfs/component_gpfs_cfg/url`
     - required
     - type: string
-   - /software/gpfs/component_gpfs_cfg/subnet
+   - `/software/gpfs/component_gpfs_cfg/subnet`
     - required
     - type: string
-   - /software/gpfs/component_gpfs_cfg/usecurl
+   - `/software/gpfs/component_gpfs_cfg/usecurl`
     - optional
     - type: boolean
-   - /software/gpfs/component_gpfs_cfg/useccmcertwithcurl
+   - `/software/gpfs/component_gpfs_cfg/useccmcertwithcurl`
     - optional
     - type: boolean
-   - /software/gpfs/component_gpfs_cfg/usesindesgetcertcertwithcurl
+   - `/software/gpfs/component_gpfs_cfg/usesindesgetcertcertwithcurl`
     - optional
     - type: boolean
-  - /software/gpfs/component_gpfs_base
-   - /software/gpfs/component_gpfs_base/rpms
+  - `/software/gpfs/component_gpfs_base`
+   - `/software/gpfs/component_gpfs_base/rpms`
     - required
     - type: string
-   - /software/gpfs/component_gpfs_base/baseurl
+   - `/software/gpfs/component_gpfs_base/baseurl`
     - required
     - type: string
-   - /software/gpfs/component_gpfs_base/useproxy
+   - `/software/gpfs/component_gpfs_base/useproxy`
     - optional
     - type: boolean
-   - /software/gpfs/component_gpfs_base/usecurl
+   - `/software/gpfs/component_gpfs_base/usecurl`
     - optional
     - type: boolean
-   - /software/gpfs/component_gpfs_base/useccmcertwithcurl
+   - `/software/gpfs/component_gpfs_base/useccmcertwithcurl`
     - optional
     - type: boolean
-   - /software/gpfs/component_gpfs_base/usesindesgetcertcertwithcurl
+   - `/software/gpfs/component_gpfs_base/usesindesgetcertcertwithcurl`
     - optional
     - type: boolean
-   - /software/gpfs/component_gpfs_base/useyum
+   - `/software/gpfs/component_gpfs_base/useyum`
     - required
     - type: boolean
-  - /software/gpfs/component_gpfs
-   - /software/gpfs/component_gpfs/base
+  - `/software/gpfs/component_gpfs`
+   - `/software/gpfs/component_gpfs/base`
     - required
     - type: component_gpfs_base
-   - /software/gpfs/component_gpfs/cfg
+   - `/software/gpfs/component_gpfs/cfg`
     - required
     - type: component_gpfs_cfg
 

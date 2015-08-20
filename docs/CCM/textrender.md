@@ -1,13 +1,13 @@
-# NAME
+### NAME
 
     CCM::TextRender - Class for rendering structured text using Element instances
 
-# DESCRIPTION
+### DESCRIPTION
 
 This class is an extension of the `CAF::TextRender` class; with the main
 difference the support of a `EDG::WP4::CCM:Element` instance as contents.
 
-## Private methods
+#### Private methods
 
 - `_initialize`
 

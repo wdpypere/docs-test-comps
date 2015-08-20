@@ -1,41 +1,41 @@
  - Types
-  - /software/autofs/autofs_mapentry_type
-   - /software/autofs/autofs_mapentry_type/options
+  - `/software/autofs/autofs_mapentry_type`
+   - `/software/autofs/autofs_mapentry_type/options`
     - optional
     - type: string
-   - /software/autofs/autofs_mapentry_type/location
+   - `/software/autofs/autofs_mapentry_type/location`
     - required
     - type: string
-  - /software/autofs/autofs_map_type
-   - /software/autofs/autofs_map_type/enabled
+  - `/software/autofs/autofs_map_type`
+   - `/software/autofs/autofs_map_type/enabled`
     - required
     - type: boolean
-   - /software/autofs/autofs_map_type/preserve
+   - `/software/autofs/autofs_map_type/preserve`
     - required
     - type: boolean
-   - /software/autofs/autofs_map_type/type
+   - `/software/autofs/autofs_map_type/type`
     - required
     - type: string
-   - /software/autofs/autofs_map_type/mapname
+   - `/software/autofs/autofs_map_type/mapname`
     - required
     - type: string
-   - /software/autofs/autofs_map_type/mountpoint
+   - `/software/autofs/autofs_map_type/mountpoint`
     - optional
     - type: string
-   - /software/autofs/autofs_map_type/mpaliases
+   - `/software/autofs/autofs_map_type/mpaliases`
     - optional
     - type: string
-   - /software/autofs/autofs_map_type/options
+   - `/software/autofs/autofs_map_type/options`
     - optional
     - type: string
-   - /software/autofs/autofs_map_type/entries
+   - `/software/autofs/autofs_map_type/entries`
     - optional
     - type: autofs_mapentry_type
-  - /software/autofs/component_autofs_type
-   - /software/autofs/component_autofs_type/preserveMaster
+  - `/software/autofs/component_autofs_type`
+   - `/software/autofs/component_autofs_type/preserveMaster`
     - required
     - type: boolean
-   - /software/autofs/component_autofs_type/maps
+   - `/software/autofs/component_autofs_type/maps`
     - required
     - type: autofs_map_type
 

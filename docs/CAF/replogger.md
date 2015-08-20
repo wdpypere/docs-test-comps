@@ -1,11 +1,11 @@
-# NAME
+### NAME
 
 CAF::RepLogger - Class for console & log message reporting for generic
 applications
 
-# SYNOPSIS
+### SYNOPSIS
 
-## Object-oriented usage
+#### Object-oriented usage
 
 Allow for more objects to be instantiated, thus several log files can be used.
 
@@ -15,7 +15,7 @@ Allow for more objects to be instantiated, thus several log files can be used.
     my $logger;
     unless($logger = CAF::RepLogger->new(
         'log-file'  => $0.'.log',
-        # no report on console
+        ### no report on console
         'quiet      => 1')) {
         my $err = $ec->error;
         $ec->ignore_error;
@@ -24,7 +24,7 @@ Allow for more objects to be instantiated, thus several log files can be used.
     $logger->warn('ahem...');
     $logger->error('ouch!');
 
-## Procedural usage
+#### Procedural usage
 
 Only a single log file can be used.
 
@@ -47,11 +47,11 @@ Only a single log file can be used.
     log_ok('all fine');
     log_verb('blah, blah');
 
-# INHERITANCE
+### INHERITANCE
 
 [CAF::Object](https://metacpan.org/pod/CAF::Object), [CAF::Reporter](https://metacpan.org/pod/CAF::Reporter).
 
-# DESCRIPTION
+### DESCRIPTION
 
 This modules provides console message reporting and logging facilities to
 applications which can either be or not CAF-based, and want one or more
@@ -62,7 +62,7 @@ your application is composed of more modules, each of them can instantiate
 a different RepLogger object. Conversely, a one-for-all log mode is obtained
 through the procedural interface which uses a shared configuration.
 
-# Public methods/functions
+### Public methods/functions
 
 For each of the following items, the first name is the OO interface's method,
 the second name is procedural interface's function.
@@ -102,14 +102,14 @@ the second name is procedural interface's function.
             my ($sid, $uid);
             setup_replogger('log-file' => 'mylog', 'session-ids' => [\$sid, \$uid]);
             log_ok('initialized');
-            # prints
-            #   [OK] [- -] initialized
+            ### prints
+            ###   [OK] [- -] initialized
             ...
-            # wait for session information to be there
+            ### wait for session information to be there
             ($sid, $uid) = ('sessX', 'userY');
             log_ok('session open');
-            # prints
-            #   [OK] [sessX userY] session open
+            ### prints
+            ###   [OK] [sessX userY] session open
 
         Default is undef.
 
@@ -156,6 +156,6 @@ the second name is procedural interface's function.
 
         log_debug(2, 'this is debug');
 
-# SEE ALSO
+### SEE ALSO
 
 [CAF::Log(3)](http://man.he.net/man3/CAF::Log), [CAF::Reporter(3)](http://man.he.net/man3/CAF::Reporter)

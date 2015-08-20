@@ -1,8 +1,8 @@
-# SYNOPSIS
+### SYNOPSIS
 
     EDG::WP4::CCM::JSONProfileTyped->interpret_node($tag, $jsondoc);
 
-# DESCRIPTION
+### DESCRIPTION
 
 Module that iterprets a JSON profile and generates all the needed
 metadata, to be inserted in the cache DB.
@@ -14,7 +14,7 @@ Should be used by `EDG::WP4::CCM::Fetch` only.
 
 This module has only `interpret_node` method for the outside world.
 
-## Type information from JSON::XS
+#### Type information from JSON::XS
 
 JSON profiles don't contain any explicit type information (as opposed to the
 XMLPAN output), e.g. JSON only supports 'number' where XMLPAN has 'long' and 'double'.
@@ -35,7 +35,7 @@ Anything else will be mapped to string (including the combined classes `PVNV` an
 
 TODO: The validity of this assumption is tested in the `BEGIN{}` (and unittests).
 
-## `interpret_node`
+#### `interpret_node`
 
 `b_obj` is returned by the `B::svref_2object()` method on the `doc`
 (ideally before `doc` is assigned).

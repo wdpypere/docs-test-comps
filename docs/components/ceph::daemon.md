@@ -1,9 +1,7 @@
-# NAME
+### NAME
 
 ncm-ceph: Configuration module for CEPH
 
-# DESCRIPTION
+### DESCRIPTION
 
 Module that handles the daemon tasks ( creation, destroying, restarting, ..)
-
-# AUTHOR

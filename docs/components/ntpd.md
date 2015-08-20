@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 NCM::ntpd - NCM ntpd configuration component
 
-# SYNOPSIS
+### SYNOPSIS
 
 - Configure()
 
@@ -13,14 +13,14 @@ NCM::ntpd - NCM ntpd configuration component
 - Unconfigure()
 Does nothing.
 
-# RESOURCES
+### RESOURCES
 
-- /software/components/ntpd/active : boolean
+- `/software/components/ntpd/active` : boolean
 
     activates/deactivates the component.
 
-- /software/components/ntpd/servers/ : list of time servers
-- /software/components/ntpd/serverlist/ : list of { server=hostname, options=nlist() }
+- `/software/components/ntpd/servers`/ : list of time servers
+- `/software/components/ntpd/serverlist`/ : list of { server=hostname, options=nlist() }
 
 - server : string (required)
 
@@ -30,7 +30,7 @@ Does nothing.
 
     Refer to man ntp.conf for details for command options for server
 
-    Default : /software/components/ntpd/defaultoptions or None if not specified
+    Default : `/software/components/ntpd/defaultoptions` or None if not specified
     and defaultoptions
 
     - autokey:   boolean (optional)
@@ -45,12 +45,12 @@ Does nothing.
     - true:      boolean  (optional)
     - version:   long  (optional)
 
-- /software/components/ntpd/clientnetworks : list of { net=, mask= }
+- `/software/components/ntpd/clientnetworks` : list of { net=, mask= }
 
     optional: clients that can use this server to synchronize. Default allows
     connections from localhost only.
 
-- /software/components/ntpd/defaultoptions : nlist (optional)
+- `/software/components/ntpd/defaultoptions` : nlist (optional)
 
     Specifies default command options for each timeserver defined in servers
     or serverlist.
@@ -70,7 +70,7 @@ Does nothing.
     - true:      boolean  (optional)
     - version:   long  (optional)
 
-- /software/components/ntpd/restrictdefault : nlist (optional)
+- `/software/components/ntpd/restrictdefault` : nlist (optional)
 
     Refer to man ntp\_acc for more information or access control commands.
 
@@ -95,13 +95,13 @@ Does nothing.
 
         Deny packets that do not match the current NTP version
 
-- /software/components/ntpd/authenticate : boolean (optional)
+- `/software/components/ntpd/authenticate` : boolean (optional)
 
     Adds string 'authenticate yes' to ntp.conf
 
     Default : None
 
-- /software/components/ntpd/broadcastdelay : double (optional)
+- `/software/components/ntpd/broadcastdelay` : double (optional)
 
     Double value in seconds to set network delay between local and remote servers.
 
@@ -109,7 +109,7 @@ Does nothing.
 
     Default : None
 
-- /software/components/ntpd/keyfile : string (optional)
+- `/software/components/ntpd/keyfile` : string (optional)
 
     Specifies the complete path and location of the MD5 key file containing the
     keys and key identifiers used by ntpd, ntpq and ntpdc when operating with
@@ -118,14 +118,14 @@ Does nothing.
 
     Default : None
 
-- /software/components/ntpd/trustedkey : list of integers (optional)
+- `/software/components/ntpd/trustedkey` : list of integers (optional)
 
     Requires keyfile set.
     Refer to man ntp\_auth for more details.
 
     Default : None
 
-- /software/components/ntpd/requestkey : long (optional)
+- `/software/components/ntpd/requestkey` : long (optional)
 
     Specifies the key identifier to use with the ntpdc utility program.
     Requires keyfile set.
@@ -133,7 +133,7 @@ Does nothing.
 
     Default : None
 
-- /software/components/ntpd/controlkey : long (optional)
+- `/software/components/ntpd/controlkey` : long (optional)
 
     Specifies the key identifier to use with the ntpq utility.
     Requires keyfile set.
@@ -141,27 +141,27 @@ Does nothing.
 
     Default : None
 
-- /software/components/ntpd/driftfile : string (optional)
+- `/software/components/ntpd/driftfile` : string (optional)
 
     This command specifies the complete path and name of the file used to record
     the frequency of the local clock oscillator.
 
     Default : None
 
-- /software/components/ntpd/includefile : string (optional)
+- `/software/components/ntpd/includefile` : string (optional)
 
     This command allows additional configuration commands to be included
     from a separate file.
 
     Default : None
 
-- /software/components/ntpd/logfile : string (optional)
+- `/software/components/ntpd/logfile` : string (optional)
 
     Refer to man ntp\_misc for more details.
 
     Default : None
 
-- /software/components/ntpd/logconfig : list of strings (optional)
+- `/software/components/ntpd/logconfig` : list of strings (optional)
 Log configuration arguments must be defined in a list of strings.
 Values for each argument must follow the defined in ntp\_misc manual.
 Refer to man ntp\_misc for more details.
@@ -175,13 +175,13 @@ Refer to man ntp\_misc for more details.
 
     Default : None
 
-- /software/components/ntpd/statsdir : string (optional)
+- `/software/components/ntpd/statsdir` : string (optional)
 
     Refer to man ntp\_misc for more details.
 
     Default : None
 
-- /software/components/ntpd/statistics : nlist (optional)
+- `/software/components/ntpd/statistics` : nlist (optional)
 
     Refer to man ntp\_misc for more details.
 
@@ -201,7 +201,7 @@ Refer to man ntp\_misc for more details.
     - rawstats :    boolean (optional)
     - sysstats :    boolean (optional)
 
-- /software/components/ntpd/filegen : list of nlist (optional)
+- `/software/components/ntpd/filegen` : list of nlist (optional)
 
     Refer to man ntp\_misc for more details.
 
@@ -242,7 +242,7 @@ Refer to man ntp\_misc for more details.
 
         value must be either 'enable' or 'disable'
 
-- /software/components/ntpd/enable : nlist (optional)
+- `/software/components/ntpd/enable` : nlist (optional)
 
     Provides a way to enable various system options.
     Flags not mentioned are unaffected.
@@ -261,7 +261,7 @@ Refer to man ntp\_misc for more details.
     - pps :       boolean (optional)
     - stats :     boolean (optional)
 
-- /software/components/ntpd/disable : nlist (optional)
+- `/software/components/ntpd/disable` : nlist (optional)
 
     Provides a way to enable various system options.
     Flags not mentioned are unaffected.
@@ -280,7 +280,7 @@ Refer to man ntp\_misc for more details.
     - pps :        boolean (optional)
     - stats :      boolean (optional)
 
-- /software/components/ntpd/tinker : nlist (optional)
+- `/software/components/ntpd/tinker` : nlist (optional)
 
     Refer to man ntp\_misc for more details.
 
@@ -294,51 +294,51 @@ Refer to man ntp\_misc for more details.
     - step:       long (optional)
     - stepout:    long (optional)
 
-- /software/components/ntpd/servicename : string (optional)
+- `/software/components/ntpd/servicename` : string (optional)
 
     override the deamon name to restart service. some platforms such as solaris
     use a different service name to represent ntpd.
 
     Example:
-    	# solaris
+    	### solaris
     	"/software/components/ntpd/servicename" = "svc:/network/ntpd";
 
-            # linux
+            ### linux
             "/software/components/ntpd/servicename" = "ntpd";
 
     Default : "ntpd" (linux), "svc:/network/ntpd" (solaris)
 
-- /software/components/ntpd/includelocalhost : boolean (optional)
+- `/software/components/ntpd/includelocalhost` : boolean (optional)
 
     includes fudge options for localhost's clock
 
     Default : true
 
-- /software/components/ntpd/enablelocalhostdebug : boolean (optional)
+- `/software/components/ntpd/enablelocalhostdebug` : boolean (optional)
 
     Allows some debugging via ntpdc on localhost but with no modifications
 
     Default : true
 
-# DEPENDENCIES
+### DEPENDENCIES
 
-## Components to be run before:
-
-none.
-
-## Components to be run after:
+#### Components to be run before:
 
 none.
 
-# BUGS
+#### Components to be run after:
+
+none.
+
+### BUGS
 
 none known.
 
-# AUTHORS
+S
 
 - Thorsten Kleinwort <Thorsten.Kleinwort@cern.ch>
 - John Monteiro <John.M>
 
-# SEE ALSO
+### SEE ALSO
 
 ncm-ncd(1), ntpd(1)

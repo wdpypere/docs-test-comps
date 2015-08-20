@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 CAF::Reporter - Class for console & log message reporting in CAF applications
 
-# SYNOPSIS
+### SYNOPSIS
 
     package myclass;
     use CAF::Reporter;
@@ -17,11 +17,11 @@ CAF::Reporter - Class for console & log message reporting in CAF applications
       ...
     }
 
-# INHERITANCE
+### INHERITANCE
 
 none.
 
-# DESCRIPTION
+### DESCRIPTION
 
 CAF::Reporter provides class methods for message (information,
 warnings, error) reporting to standard output and a log file. There is
@@ -31,9 +31,7 @@ wanting to use CAF::Reporter have to inherit from it (using @ISA).
 Usage of a log file is optional. A log file can be attached/detached
 with the set\_logfile method.
 
-
-
-## Public methods
+#### Public methods
 
 - setup\_reporter ($debuglvl,$quiet,$verbose,$facility): boolean
 
@@ -102,4 +100,4 @@ with the set\_logfile method.
 
     Writes @array to the syslog, with the given priority.
 
-## Private methods
+#### Private methods

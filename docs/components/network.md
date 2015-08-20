@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 network: Configure Network Settings
 
-# DESCRIPTION
+### DESCRIPTION
 
 Working type definitions can be found in the README file.
 
@@ -11,7 +11,7 @@ The _network_ component sets the network settings through `/etc/sysconfig/networ
 For restarting, a sleep value of 15 is used to make sure the restarted network is fully restarted (routing may need some time to come up completely). Because of this, adding/changing lots of things may cause some slowdown.
 New/changed settings are first tested by probing the CDB server on the port where the profile should be found. If this fails, the previous settings are reused.
 
-# RESOURCES
+### RESOURCES
 
 - `/system/network/realhostname`
 - `/system/network/hostname`
@@ -22,7 +22,7 @@ New/changed settings are first tested by probing the CDB server on the port wher
 - `/system/network/nisdomain`
 - `/system/network/nozeroconf`
 
-These values are used to generate the /etc/sysconfig/network file. ("realhostname", "guess\_default\_gateway", "default\_gateway", "gatewaydev", "nisdomain" and "nozeroconf" are optional).
+These values are used to generate the `/etc/sysconfig/network` file. ("realhostname", "guess\_default\_gateway", "default\_gateway", "gatewaydev", "nisdomain" and "nozeroconf" are optional).
 By setting guess\_default\_gateway, when default\_gateway is not set, the component will try to guess the default gateway using the first configured gateway set on an interface (old style network config). (The default is true for backward compatible behaviour.)
 
 - `/system/network/interfaces/[dev][i]/ip`
@@ -65,11 +65,11 @@ Set the ethernet transmit or receive buffer ring counts.  See ethtool --show-rin
 Set the wake-on-lan parameter.  See ethtool for more details of the choices.  "d" disables the
 wake-on LAN.
 
-# NOZEROCONF
+### NOZEROCONF
 
 Setting nozeroconf to true stops an interface from being assigned an automatic address in the 169.254. subnet.
 
-# HWADDR
+### HWADDR
 
 Explicitly set the MAC address for the interfaces in the configuration files. The MAC address is taken from `/hardware/cards/nic/eth[i]/hwaddr`.
 
@@ -81,7 +81,7 @@ Explicitly set the MAC address for the interfaces in the configuration files. Th
 
     Set the behaviour for interface eth\[i\]. This overrides the default setting.
 
-# CHANNEL BONDING
+### CHANNEL BONDING
 
 (see `<kernel>/Documentation/networking/bonding.txt` for more info on the driver options)
 
@@ -105,7 +105,7 @@ To enable channel bonding with quattor using devices eth0 and eth1 to form bond0
 
     "/software/components/network/dependencies/pre" = append("modprobe");
 
-# VLAN support
+### VLAN support
 
 Use the `vlan[0-9]{0-4}` interface devices and set the the explicit device name and physdev.
 The VLAN ID is the number of the '.' in the device name. ` Physdev ` is mandatory for `vlan[0-9]{0-4}` device.
@@ -116,7 +116,7 @@ An example:
     "vlan0/device" = "eth0.3";
     "vlan0/physdev" = "eth0";
 
-# IPv6 support
+### IPv6 support
 
 An example:
 

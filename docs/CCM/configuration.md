@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 EDG::WP4::CCM::Configuration - Configuration class
 
-# SYNOPSIS
+### SYNOPSIS
 
     $cid = $cfg->getConfigurationId();
     $elt = $cfg->getElement($path);
@@ -15,7 +15,7 @@ EDG::WP4::CCM::Configuration - Configuration class
     $cfg->unlock();
     $bool = $cfg->isLocked();
 
-# DESCRIPTION
+### DESCRIPTION
 
 Module provides the Configuration class, to manipulate confgurations.
 

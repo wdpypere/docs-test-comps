@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 NCM::sendmail - NCM Sendmail configuration component
 
-# SYNOPSIS
+### SYNOPSIS
 
 - Configure()
     - -
@@ -33,7 +33,7 @@ NCM::sendmail - NCM Sendmail configuration component
 
         - have an existing home directory
         - do **not** have an AFS home directory (`/afs/...`)
-        - do not already have an alias definition in /etc/mail/aliases.db.
+        - do not already have an alias definition in `/etc/mail/aliases.db`.
         - whose _uid_ indicates that this is not a system account (information from `/etc/login.defs`)
 
         "relay" means that a local _mail username_ command on the machine
@@ -50,22 +50,22 @@ NCM::sendmail - NCM Sendmail configuration component
 - - Reset outgoing mail server in sendmail.
 - - Reset relay all unqualified names in sendmail.
 
-# RESOURCES
+### RESOURCES
 
-- /etc/mail/sendmail.mc : sendmail macro configuration file
-- /etc/mail/semdmail.cf : sendmail configuration file
+- `/etc/mail/sendmail.mc` : sendmail macro configuration file
+- `/etc/mail/semdmail.cf` : sendmail configuration file
 
-# DEPENDENCIES
+### DEPENDENCIES
 
-## Components to be run before:
-
-none.
-
-## Components to be run after:
+#### Components to be run before:
 
 none.
 
-# BUGS
+#### Components to be run after:
+
+none.
+
+### BUGS
 
 The "local user relay" functionality seems to interfere with user
 .forward files, they may not be honoured on some sendmail versions.
@@ -74,10 +74,8 @@ Selectively "unconfiguring" certain elements doesn't work, you should
 run the _unconfigure()_ method and re-_configure()_ with the new
 values afterwards.
 
-# AUTHOR
-
 Jan Iven <>
 
-# SEE ALSO
+### SEE ALSO
 
 ncm-ncd(1), sendmail(8)

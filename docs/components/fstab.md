@@ -1,4 +1,4 @@
-# DESCRIPTION
+### DESCRIPTION
 
 The _fstab_ component manages the mount points in a node. It is able
 to manipulate the fstab, and remount filesystems as specified by the
@@ -12,6 +12,6 @@ It doesn't remove any filesystems specified under
 It uses the definition of file systems described in
 https://twiki.cern.ch/twiki/bin/view/FIOgroup/TsiCDBBlockDevices
 
-# SEE ALSO
+### SEE ALSO
 
 [ncm-filesystems](https://metacpan.org/pod/ncm-filesystems)

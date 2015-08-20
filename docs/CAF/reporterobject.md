@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 CAF::ReporterObject - singleton Reporter object class
 
-# SYNOPSIS
+### SYNOPSIS
 
     use CAF::ReporterObject;
     my $r=CAF::ReporterObject->instance();
@@ -11,18 +11,16 @@ CAF::ReporterObject - singleton Reporter object class
     $r->debug("blah blah");
     ...
 
-# INHERITANCE
+### INHERITANCE
 
     CAF::Reporter
     CAF::Object
 
-# DESCRIPTION
+### DESCRIPTION
 
 Provides a wrapper class to instantiate the Reporter as a singleton object.
 
-
-
-## Public methods
+#### Public methods
 
 - instance(): ReporterObject
 
@@ -34,12 +32,12 @@ Provides a wrapper class to instantiate the Reporter as a singleton object.
     new() throws an error, as this method is not to be used (instead,
     create/get the singleton with instance())
 
-## Private methods
+#### Private methods
 
 - \_initialize()
 
     initialize the singleton.
 
-# SEE ALSO
+### SEE ALSO
 
 CAF::Object, LC::Exception, CAF::Reporter

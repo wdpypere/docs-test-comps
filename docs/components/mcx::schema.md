@@ -1,21 +1,21 @@
  - Types
-  - /software/mcx/mcx_entry
-  - /software/mcx/mcx_app_data
-  - /software/mcx/mcx_computer
-   - /software/mcx/mcx_computer/RealName
+  - `/software/mcx/mcx_entry`
+  - `/software/mcx/mcx_app_data`
+  - `/software/mcx/mcx_computer`
+   - `/software/mcx/mcx_computer/RealName`
     - required
     - type: string
-   - /software/mcx/mcx_computer/ENetAddress
+   - `/software/mcx/mcx_computer/ENetAddress`
     - required
     - type: string
-   - /software/mcx/mcx_computer/apps
+   - `/software/mcx/mcx_computer/apps`
     - required
     - type: mcx_app_data
-  - /software/mcx/component_mcx
-   - /software/mcx/component_mcx/node
+  - `/software/mcx/component_mcx`
+   - `/software/mcx/component_mcx/node`
     - required
     - type: string
-   - /software/mcx/component_mcx/computer
+   - `/software/mcx/component_mcx/computer`
     - optional
     - type: mcx_computer
 

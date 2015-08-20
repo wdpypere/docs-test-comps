@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 EDG::WP4::CCM::Options
 
-# DESCRIPTION
+### DESCRIPTION
 
 Use this module to create (commandline) application that interact with CCM directly.
 

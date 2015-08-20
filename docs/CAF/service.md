@@ -1,9 +1,9 @@
-# NAME
+### NAME
 
 CAF::Service - Class for starting and stopping daemons in different
 platforms
 
-# SYNOPSIS
+### SYNOPSIS
 
     use CAF::Service;
     my $srv = CAF::Service->new(['ntpd'], log => $self, %opts);
@@ -16,12 +16,12 @@ platforms
 Will do the right thing with SystemV Init scripts, Systemd units and
 Solaris' `svcadm`.
 
-# DESCRIPTION
+### DESCRIPTION
 
 This class abstracts away the differences when operating with Daemons
 in different Unixes.
 
-## Private methods
+#### Private methods
 
 - `_initialize`
 
@@ -80,7 +80,7 @@ in different Unixes.
 
     ...
 
-## Public methods
+#### Public methods
 
 - `restart`
 

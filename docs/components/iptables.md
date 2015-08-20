@@ -1,17 +1,17 @@
-# NAME
+### NAME
 
 iptables: Setup the IPTABLES firewall rules.
 
-# DESCRIPTION
+### DESCRIPTION
 
 The _IPTABLES_ component perform the setup of the
 **/etc/sysconfig/iptables** configuration file and restarts the
 iptables service.
 
-# SYNOPSIS
+### SYNOPSIS
 
 Note: a detailed HOWTO for this component, including examples, is
-found in /usr/share/doc/ncm-iptables-2.3.13/ncm-iptables-howto.html and in the FIO twiki pages
+found in `/usr/share/doc/ncm`-iptables-2.3.13/ncm-iptables-howto.html and in the FIO twiki pages
 at https://twiki.cern.ch/twiki/bin/view/FIOgroup/Iptables.
 
 - Configure()
@@ -38,9 +38,9 @@ at https://twiki.cern.ch/twiki/bin/view/FIOgroup/Iptables.
 
     Not implemented.
 
-# RESOURCES
+### RESOURCES
 
-## /software/components/iptables
+#### `/software/components/iptables`
 
 Top component description with the following parameters:
 
@@ -50,7 +50,7 @@ Top component description with the following parameters:
 
 These parameters correspond to the three _IPTABLES_ table types.
 
-## type component\_iptables\_acls
+#### type component\_iptables\_acls
 
 The _component\_iptables\_acls_ type is defined as:
 
@@ -68,7 +68,7 @@ ordered in the original array. If set to no is is unset (the default),
 the rules will be ordered by target type (first, all the "log"  rules,
 then "accept","drop", and "logging").
 
-## type component\_iptables\_preamble
+#### type component\_iptables\_preamble
 
 The _component\_iptables\_preamble_ type is defined as:
 
@@ -80,7 +80,7 @@ These parameters contain the global rules for stated rules,
 e.g. ":INPUT ACCEPT \[0:0\]". Presently, no check is performed upon the
 content of this parameters.
 
-## type component\_iptables\_rule
+#### type component\_iptables\_rule
 
 The _component\_iptables\_rule_ type is defined as:
 
@@ -135,7 +135,7 @@ being used as routers, to block packets which do not come from their
 IP address in the OUTPUT tables.
 
 The **"src\_port"** define the packet source port, it may be an integer
-or a service name included in the /etc/services file. This parameter
+or a service name included in the `/etc/services` file. This parameter
 requires **"protocol"** also be set.
 
 The **"dst\_addr"** define the packet destination address, it follow's the same
@@ -163,42 +163,42 @@ The **"out\_interface"** define the output interface for the packet.
 
 The **"target"** define the target for the packet: "log", "accept" or "drop".
 
-## function add\_rule(<table>, <rule>)
+#### function add\_rule(<table>, <rule>)
 
 This function add a new entry rule to the resource list
 
     "/software/components/iptables/<table>/rules"
 
-# DEPENDENCIES
+### DEPENDENCIES
 
 - Pre-installation
 
     The iptables RPM package must be installed.
 
-# FILES
+### FILES
 
-## /etc/sysconfig/iptables:
+#### `/etc/sysconfig/iptables`:
 
 _IPTABLES_ firewall configuration file policy.
 
-## pro\_declaration\_component\_iptables.tpl:
+#### pro\_declaration\_component\_iptables.tpl:
 
 Component declaration.
 
-## pro\_declaration\_functions\_iptables.tpl:
+#### pro\_declaration\_functions\_iptables.tpl:
 
 Component functions declaration.
 
-# BUGS
+### BUGS
 
 Not all valid iptables options are implemented, and not all
 implemented options are properly documented.
 The component is overly strict in what it accepts, some legal combinations
 may be rejected.
 
-# SEE ALSO
+### SEE ALSO
 
 See in particular the **ncm-iptables** HOWTO as found in
-/usr/share/doc/ncm-iptables-2.3.13/ncm-iptables-howto.html, which includes usage examples.
+`/usr/share/doc/ncm`-iptables-2.3.13/ncm-iptables-howto.html, which includes usage examples.
 
 **iptables** man page

@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 CAF::Application - Common Application Framework core class
 
-# SYNOPSIS
+### SYNOPSIS
 
     package example;
     use CAF::Application;
@@ -12,9 +12,7 @@ CAF::Application - Common Application Framework core class
     @ISA= qw (CAF::Application);
 
     <extend/overwrite default methods here...>
-
-
-    # Main loop
+    ### Main loop
     package main;
     use LC::Exception qw (SUCCESS throw_error);
 
@@ -28,18 +26,18 @@ CAF::Application - Common Application Framework core class
     $this_app->report("Hello");
     ...
 
-# INHERITANCE
+### INHERITANCE
 
     CAF::Object
 
-# DESCRIPTION
+### DESCRIPTION
 
 **CAF::Application** is the core class which provides command line and
 configuration file parsing, and general application methods.
 
 Applications can extend or overwrite the default methods.
 
-## Public methods
+#### Public methods
 
 - name(): string
 
@@ -96,7 +94,7 @@ Applications can extend or overwrite the default methods.
 
     see also \_app\_default\_options()
 
-## Private methods
+#### Private methods
 
 - \_initialize
 

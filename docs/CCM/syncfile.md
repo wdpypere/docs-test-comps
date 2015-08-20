@@ -1,14 +1,14 @@
-# NAME
+### NAME
 
 EDG::WP4::CCM::SyncFile
 
-# SYNOPSIS
+### SYNOPSIS
 
     $gl = SyncFile->new ("global.lock");
     $gl -> write ("yes");
     $locked  = $file -> read ();
 
-# DESCRIPTION
+### DESCRIPTION
 
 SyncFile module provides synchronised (exclusive) read/write access to
 cid files and global.lock file. It uses flock (2).

@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 CAF::Log - Simple class for handling log files
 
-# SYNOPSIS
+### SYNOPSIS
 
     use CAF::Log;
 
@@ -11,18 +11,16 @@ CAF::Log - Simple class for handling log files
     $log->print("this goes to the log file\n");
     $log->close();
 
-# INHERITANCE
+### INHERITANCE
 
     CAF::Reporter
 
-# DESCRIPTION
+### DESCRIPTION
 
 The **CAF::Log** class allows to instantiate objects for writing log files.
 A log file line can be prefixed by a time stamp.
 
-
-
-## Public methods
+#### Public methods
 
 - close(): boolean
 
@@ -32,7 +30,7 @@ A log file line can be prefixed by a time stamp.
 
     prints a line into the log file.
 
-## Private methods
+#### Private methods
 
 - \_initialize($filename,$options)
 

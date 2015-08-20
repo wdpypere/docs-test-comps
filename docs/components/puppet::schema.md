@@ -1,52 +1,52 @@
  - Types
-  - /software/puppet/puppet_module
-   - /software/puppet/puppet_module/version
+  - `/software/puppet/puppet_module`
+   - `/software/puppet/puppet_module/version`
     - optional
     - type: string
-  - /software/puppet/puppet_nodefile
-   - /software/puppet/puppet_nodefile/contents
+  - `/software/puppet/puppet_nodefile`
+   - `/software/puppet/puppet_nodefile/contents`
     - optional
     - type: string
-  - /software/puppet/puppet_puppetconf_main
-   - /software/puppet/puppet_puppetconf_main/logdir
+  - `/software/puppet/puppet_puppetconf_main`
+   - `/software/puppet/puppet_puppetconf_main/logdir`
     - required
     - type: string
-   - /software/puppet/puppet_puppetconf_main/rundir
+   - `/software/puppet/puppet_puppetconf_main/rundir`
     - required
     - type: string
-  - /software/puppet/puppet_puppetconf
-   - /software/puppet/puppet_puppetconf/main
+  - `/software/puppet/puppet_puppetconf`
+   - `/software/puppet/puppet_puppetconf/main`
     - required
     - type: puppet_puppetconf_main
-  - /software/puppet/puppet_hieraconf_yaml
-   - /software/puppet/puppet_hieraconf_yaml/_3adatadir
+  - `/software/puppet/puppet_hieraconf_yaml`
+   - `/software/puppet/puppet_hieraconf_yaml/_3adatadir`
     - required
     - type: string
-  - /software/puppet/puppet_hieraconf
-   - /software/puppet/puppet_hieraconf/_3abackends
+  - `/software/puppet/puppet_hieraconf`
+   - `/software/puppet/puppet_hieraconf/_3abackends`
     - required
     - type: string
-   - /software/puppet/puppet_hieraconf/_3ayaml
+   - `/software/puppet/puppet_hieraconf/_3ayaml`
     - required
     - type: puppet_hieraconf_yaml
-   - /software/puppet/puppet_hieraconf/_3ahierarchy
+   - `/software/puppet/puppet_hieraconf/_3ahierarchy`
     - required
     - type: string
-  - /software/puppet/puppet_hieradata
-  - /software/puppet/puppet_component
-   - /software/puppet/puppet_component/modules
+  - `/software/puppet/puppet_hieradata`
+  - `/software/puppet/puppet_component`
+   - `/software/puppet/puppet_component/modules`
     - optional
     - type: puppet_module
-   - /software/puppet/puppet_component/nodefiles
+   - `/software/puppet/puppet_component/nodefiles`
     - required
     - type: puppet_nodefile
-   - /software/puppet/puppet_component/puppetconf
+   - `/software/puppet/puppet_component/puppetconf`
     - required
     - type: puppet_puppetconf
-   - /software/puppet/puppet_component/hieraconf
+   - `/software/puppet/puppet_component/hieraconf`
     - required
     - type: puppet_hieraconf
-   - /software/puppet/puppet_component/hieradata
+   - `/software/puppet/puppet_component/hieradata`
     - optional
     - type: puppet_hieradata
 

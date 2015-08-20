@@ -1,9 +1,9 @@
-# NAME
+### NAME
 
 CAF::ReporterMany - Class for console & log message reporting in CAF applications,
 which allows more than one object instance
 
-# SYNOPSIS
+### SYNOPSIS
 
     package myclass;
     use CAF::ReporterMany;
@@ -25,11 +25,11 @@ which allows more than one object instance
         ...
     }
 
-# INHERITANCE
+### INHERITANCE
 
 none.
 
-# DESCRIPTION
+### DESCRIPTION
 
 CAF::Reporter provides class methods for message (information,
 warnings, error) reporting to standard output and a log file. There is
@@ -39,7 +39,7 @@ wanting to use CAF::Reporter have to inherit from it (using @ISA).
 Usage of a log file is optional. A log file can be attached/detached
 with the set\_logfile method.
 
-## Public methods
+#### Public methods
 
 - **setup\_reporter**(_$debuglvl, $quiet, $verbose, $facility_): boolean
 
@@ -119,6 +119,6 @@ with the set\_logfile method.
 
     Write _@array_ to the syslog, with the given priority.
 
-# SEE ALSO
+### SEE ALSO
 
 [LC::Exception](https://metacpan.org/pod/LC::Exception), [CAF::Application](https://metacpan.org/pod/CAF::Application), [CAF::Log](https://metacpan.org/pod/CAF::Log), [CAF::Reporter](https://metacpan.org/pod/CAF::Reporter).

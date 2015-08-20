@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 EDG::WP4::CCM::Element - Element class
 
-# SYNOPSIS
+### SYNOPSIS
 
     $eid = $element->getEID();
     $name = $element->getName();
@@ -17,7 +17,7 @@ EDG::WP4::CCM::Element - Element class
     $boolean = $element->isProperty();
     $hashref = $element->getRecHash();
 
-# DESCRIPTION
+### DESCRIPTION
 
 The class Element is a base class for classes Property
 and Resource. The class Element implement those methods

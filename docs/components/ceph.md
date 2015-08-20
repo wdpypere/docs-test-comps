@@ -1,12 +1,12 @@
-# NAME
+### NAME
 
 ncm-ceph: Configuration module for CEPH
 
-# DESCRIPTION
+### DESCRIPTION
 
 Configuration module for CEPH
 
-# IMPLEMENTED FEATURES
+### IMPLEMENTED FEATURES
 
 Features that are implemented at this moment:
 
@@ -29,7 +29,7 @@ The implementation keeps safety as top priority. Therefore:
 - When something is not right and returns an error, the whole component exits.
 - You can set the version of ceph and ceph-deploy in the Quattor scheme. The component will then only run if the versions of ceph and ceph-deploy match with those versions.
 
-# INITIAL CREATION
+### INITIAL CREATION
 
 \- The schema details are annotated in the schema file. 
 
@@ -47,14 +47,14 @@ To set up the initial cluster, some steps should be taken:
 - 4. Run this command
 - 5. Run the component again to start the configuration of the new cluster
 
-# RESOURCES
+### RESOURCES
 
-## /software/components/ceph
+#### `/software/components/ceph`
 
 The configuration information for the component.  Each field should
 be described in this section. 
 
-# DEPENDENCIES
+### DEPENDENCIES
 
 The component is tested with Ceph version 0.84-0.89 and ceph-deploy version 1.5.11 and 1.5.21.
 Note: ceph-deploy versions 1.5.12-20 contain a bug where gatherkeys returned a wrong exitcode, which 
@@ -71,5 +71,3 @@ Following package dependencies should be installed to run the component:
 This version of Data-Compare can be found on http://www.city-fan.org/ftp/contrib/perl-modules/
 
 Attention: Some repositories (e.g. rpmforge) are shipping some versions like 1.2101 and 1.2102.
-
-# AUTHOR

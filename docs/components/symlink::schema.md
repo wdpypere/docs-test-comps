@@ -1,61 +1,61 @@
  - Types
-  - /software/symlink/structure_symlink_replace_option_entry
-   - /software/symlink/structure_symlink_replace_option_entry/all
+  - `/software/symlink/structure_symlink_replace_option_entry`
+   - `/software/symlink/structure_symlink_replace_option_entry/all`
     - optional
     - type: string
-   - /software/symlink/structure_symlink_replace_option_entry/dir
+   - `/software/symlink/structure_symlink_replace_option_entry/dir`
     - optional
     - type: string
-   - /software/symlink/structure_symlink_replace_option_entry/dirempty
+   - `/software/symlink/structure_symlink_replace_option_entry/dirempty`
     - optional
     - type: string
-   - /software/symlink/structure_symlink_replace_option_entry/file
+   - `/software/symlink/structure_symlink_replace_option_entry/file`
     - optional
     - type: string
-   - /software/symlink/structure_symlink_replace_option_entry/link
+   - `/software/symlink/structure_symlink_replace_option_entry/link`
     - optional
     - type: string
-   - /software/symlink/structure_symlink_replace_option_entry/none
+   - `/software/symlink/structure_symlink_replace_option_entry/none`
     - optional
     - type: string
-  - /software/symlink/structure_symlink_entry
-   - /software/symlink/structure_symlink_entry/name
+  - `/software/symlink/structure_symlink_entry`
+   - `/software/symlink/structure_symlink_entry/name`
     - required
     - type: string
-   - /software/symlink/structure_symlink_entry/target
+   - `/software/symlink/structure_symlink_entry/target`
     - required
     - type: string
-   - /software/symlink/structure_symlink_entry/exists
+   - `/software/symlink/structure_symlink_entry/exists`
     - optional
     - type: boolean
-   - /software/symlink/structure_symlink_entry/delete
+   - `/software/symlink/structure_symlink_entry/delete`
     - optional
     - type: boolean
-   - /software/symlink/structure_symlink_entry/replace
+   - `/software/symlink/structure_symlink_entry/replace`
     - optional
     - type: structure_symlink_replace_option_entry
-  - /software/symlink/structure_symlink_context_entry
-   - /software/symlink/structure_symlink_context_entry/name
+  - `/software/symlink/structure_symlink_context_entry`
+   - `/software/symlink/structure_symlink_context_entry/name`
     - required
     - type: string
-   - /software/symlink/structure_symlink_context_entry/value
+   - `/software/symlink/structure_symlink_context_entry/value`
     - required
     - type: string
-  - /software/symlink/structure_symlink_option_entry
-   - /software/symlink/structure_symlink_option_entry/exists
+  - `/software/symlink/structure_symlink_option_entry`
+   - `/software/symlink/structure_symlink_option_entry/exists`
     - optional
     - type: boolean
-   - /software/symlink/structure_symlink_option_entry/replace
+   - `/software/symlink/structure_symlink_option_entry/replace`
     - optional
     - type: structure_symlink_replace_option_entry
-  - /software/symlink/component_symlink
-   - /software/symlink/component_symlink/links
+  - `/software/symlink/component_symlink`
+   - `/software/symlink/component_symlink/links`
     - optional
     - type: structure_symlink_entry
-   - /software/symlink/component_symlink/context
+   - `/software/symlink/component_symlink/context`
     - optional
     - type: structure_symlink_context_entry
-   - /software/symlink/component_symlink/options
+   - `/software/symlink/component_symlink/options`
     - optional
     - type: structure_symlink_option_entry
 

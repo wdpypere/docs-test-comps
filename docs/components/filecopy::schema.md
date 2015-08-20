@@ -1,37 +1,37 @@
  - Types
-  - /software/filecopy/structure_filecopy
-   - /software/filecopy/structure_filecopy/config
+  - `/software/filecopy/structure_filecopy`
+   - `/software/filecopy/structure_filecopy/config`
     - optional
     - type: string
-   - /software/filecopy/structure_filecopy/source
+   - `/software/filecopy/structure_filecopy/source`
     - optional
     - type: string
-   - /software/filecopy/structure_filecopy/restart
+   - `/software/filecopy/structure_filecopy/restart`
     - optional
     - type: string
-   - /software/filecopy/structure_filecopy/perms
+   - `/software/filecopy/structure_filecopy/perms`
     - optional
     - type: string
-   - /software/filecopy/structure_filecopy/owner
+   - `/software/filecopy/structure_filecopy/owner`
     - optional
     - type: string
-   - /software/filecopy/structure_filecopy/group
+   - `/software/filecopy/structure_filecopy/group`
     - optional
     - type: string
-   - /software/filecopy/structure_filecopy/no_utf8
+   - `/software/filecopy/structure_filecopy/no_utf8`
     - optional
     - type: boolean
-   - /software/filecopy/structure_filecopy/forceRestart
+   - `/software/filecopy/structure_filecopy/forceRestart`
     - required
     - type: boolean
-   - /software/filecopy/structure_filecopy/backup
+   - `/software/filecopy/structure_filecopy/backup`
     - required
     - type: boolean
-  - /software/filecopy/component_filecopy
-   - /software/filecopy/component_filecopy/services
+  - `/software/filecopy/component_filecopy`
+   - `/software/filecopy/component_filecopy/services`
     - optional
     - type: structure_filecopy
-   - /software/filecopy/component_filecopy/forceRestart
+   - `/software/filecopy/component_filecopy/forceRestart`
     - required
     - type: boolean
 

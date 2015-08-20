@@ -1,8 +1,8 @@
-# SYNOPSIS
+### SYNOPSIS
 
     EDG::WP4::CCM::JSONProfileSimple->interpret_node($tag, $jsondoc);
 
-# DESCRIPTION
+### DESCRIPTION
 
 Module that iterprets a JSON profile and generates all the needed
 metadata, to be inserted in the cache DB.
@@ -15,7 +15,7 @@ Should be used by `EDG::WP4::CCM::Fetch` only.
 
 This module has only one method for the outside world:
 
-## `interpret_node`
+#### `interpret_node`
 
 JSON profiles don't contain any basic type information, and JSON::XS
 may lose it. So, with JSONProfileSimple, we'll store in the caches only two types

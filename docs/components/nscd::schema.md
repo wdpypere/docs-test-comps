@@ -1,67 +1,67 @@
  - Types
-  - /software/nscd/componend_nscd_service_type
-   - /software/nscd/componend_nscd_service_type/enable-cache
+  - `/software/nscd/componend_nscd_service_type`
+   - `/software/nscd/componend_nscd_service_type/enable`-cache
     - optional
     - type: string
-   - /software/nscd/componend_nscd_service_type/positive-time-to-live
+   - `/software/nscd/componend_nscd_service_type/positive`-time-to-live
     - optional
     - type: long
-   - /software/nscd/componend_nscd_service_type/negative-time-to-live
+   - `/software/nscd/componend_nscd_service_type/negative`-time-to-live
     - optional
     - type: long
-   - /software/nscd/componend_nscd_service_type/suggested-size
+   - `/software/nscd/componend_nscd_service_type/suggested`-size
     - optional
     - type: long
-   - /software/nscd/componend_nscd_service_type/check-files
+   - `/software/nscd/componend_nscd_service_type/check`-files
     - optional
     - type: string
-   - /software/nscd/componend_nscd_service_type/persistent
+   - `/software/nscd/componend_nscd_service_type/persistent`
     - optional
     - type: string
-   - /software/nscd/componend_nscd_service_type/shared
+   - `/software/nscd/componend_nscd_service_type/shared`
     - optional
     - type: string
-   - /software/nscd/componend_nscd_service_type/max-db-size
+   - `/software/nscd/componend_nscd_service_type/max`-db-size
     - optional
     - type: long
-   - /software/nscd/componend_nscd_service_type/auto-propagate
+   - `/software/nscd/componend_nscd_service_type/auto`-propagate
     - optional
     - type: string
-  - /software/nscd/component_nscd_type
-   - /software/nscd/component_nscd_type/logfile
+  - `/software/nscd/component_nscd_type`
+   - `/software/nscd/component_nscd_type/logfile`
     - optional
     - type: string
-   - /software/nscd/component_nscd_type/debug-level
+   - `/software/nscd/component_nscd_type/debug`-level
     - optional
     - type: string
-   - /software/nscd/component_nscd_type/threads
+   - `/software/nscd/component_nscd_type/threads`
     - optional
     - type: long
-   - /software/nscd/component_nscd_type/max-threads
+   - `/software/nscd/component_nscd_type/max`-threads
     - optional
     - type: long
-   - /software/nscd/component_nscd_type/server-user
+   - `/software/nscd/component_nscd_type/server`-user
     - optional
     - type: string
-   - /software/nscd/component_nscd_type/stat-user
+   - `/software/nscd/component_nscd_type/stat`-user
     - optional
     - type: string
-   - /software/nscd/component_nscd_type/reload-count
+   - `/software/nscd/component_nscd_type/reload`-count
     - optional
     - type: string
-   - /software/nscd/component_nscd_type/paranoia
+   - `/software/nscd/component_nscd_type/paranoia`
     - optional
     - type: string
-   - /software/nscd/component_nscd_type/restart-interval
+   - `/software/nscd/component_nscd_type/restart`-interval
     - optional
     - type: long
-   - /software/nscd/component_nscd_type/passwd
+   - `/software/nscd/component_nscd_type/passwd`
     - optional
     - type: componend_nscd_service_type
-   - /software/nscd/component_nscd_type/group
+   - `/software/nscd/component_nscd_type/group`
     - optional
     - type: componend_nscd_service_type
-   - /software/nscd/component_nscd_type/hosts
+   - `/software/nscd/component_nscd_type/hosts`
     - optional
     - type: componend_nscd_service_type
 

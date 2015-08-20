@@ -1,28 +1,28 @@
-# NAME
+### NAME
 
 CAF::TextRender - Class for rendering structured text
 
-# SYNOPSIS
+### SYNOPSIS
 
     use CAF::TextRender;
 
     my $module = 'tiny';
     my $trd = CAF::TextRender->new($module, $contents, log => $self);
-    print "$trd"; # stringification
+    print "$trd"; ### stringification
 
     $module = "general";
     $trd = CAF::TextRender->new($module, $contents, log => $self);
-    # return CAF::FileWriter instance (rendered text already added)
+    ### return CAF::FileWriter instance (rendered text already added)
     my $fh = $trd->filewriter('/some/path');
     die "Problem rendering the text" if (!defined($fh));
     $fh->close();
 
-# DESCRIPTION
+### DESCRIPTION
 
 This class simplyfies the generation of structured text like config files.
 (It is based on 14.8.0 ncm-metaconfig).
 
-## Private methods
+#### Private methods
 
 - `_initialize`
 
@@ -105,7 +105,7 @@ This class simplyfies the generation of structured text like config files.
         except for INCLUDE\_PATH which is forced via `includepath` option.
         By default, STRICT (default 0) and RECURSION (default 1) are set.
 
-## `get_text`
+#### `get_text`
 
 `get_text` renders and returns the text.
 
@@ -119,7 +119,7 @@ clear the current cache by passing `1` as first argument
 (or disable caching completely with the option `usecache`
 set to false during the <CAF::TextRender> initialisation).
 
-## `filewriter`
+#### `filewriter`
 
 Create and return an open `CAF::FileWriter` instance with
 first argument as the filename. If the rendering fails,

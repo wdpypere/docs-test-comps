@@ -1,17 +1,17 @@
-# NAME
+### NAME
 
 EDG::WP4::CCM::DB
 
-# SYNOPSIS
+### SYNOPSIS
 
     $success = EDG::WP4::CCM::DB->read($HASHREF, $PREFIX);
 
-# DESCRIPTION
+### DESCRIPTION
 
 This is a wrapper around all access to the profile database
 format, which copes with multiple possible data formats.
 
-# Functions
+### Functions
 
 - write ($HASHREF, $PREFIX, $FORMAT)
 

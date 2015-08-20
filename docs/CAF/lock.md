@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 CAF::Lock - Class for handling application instance locking
 
-# SYNOPSIS
+### SYNOPSIS
 
     use CAF::Lock;
 
@@ -20,17 +20,15 @@ CAF::Lock - Class for handling application instance locking
 
     unless ($lock->unlock()) {....}
 
-# INHERITANCE
+### INHERITANCE
 
     CAF::Reporter
 
-# DESCRIPTION
+### DESCRIPTION
 
 The **CAF::Lock** class provides methods for handling application locking.
 
-
-
-## Public methods
+#### Public methods
 
 - is\_locked()
 
@@ -78,7 +76,7 @@ The **CAF::Lock** class provides methods for handling application locking.
 
     Returns SUCCESS if lock is set by application instance, undef otherwise
 
-## Private methods
+#### Private methods
 
 - \_initialize($lockfilename)
 

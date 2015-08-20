@@ -1,13 +1,13 @@
-# NAME
+### NAME
 
     CCM::TT::Scalar - Class to access scalar/property Element attributes within TT.
 
-# DESCRIPTION
+### DESCRIPTION
 
 This is a wrapper class to access some scalar/property Element attributes
 (in particular the type) within TT.
 
-## Methods
+#### Methods
 
 - new
 

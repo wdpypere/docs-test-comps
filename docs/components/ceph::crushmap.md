@@ -1,9 +1,7 @@
-# NAME
+### NAME
 
 ncm-ceph: Configuration module for CEPH
 
-# DESCRIPTION
+### DESCRIPTION
 
 Module that generates the crushmap
-
-# AUTHOR

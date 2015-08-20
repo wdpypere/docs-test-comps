@@ -1,9 +1,9 @@
-# NAME
+### NAME
 
 CAF::FileEditor - Class for securely making minor changes in CAF
 applications.
 
-# DESCRIPTION
+### DESCRIPTION
 
 This class should be used whenever a file is to be opened for
 modifying its existing contents. For instance, if you want to add a
@@ -12,7 +12,7 @@ single line at the beginning or the end of the file.
 As usual, all operations may be logged by passing a `log` argument to
 the class constructor.
 
-## Public methods
+#### Public methods
 
 - new
 
@@ -116,7 +116,7 @@ the class constructor.
     Remove any lines matching `re` but \*not\* `goodre`.
     If there is no match, nothing will be done.
 
-# EXPORTED CONSTANTS
+### EXPORTED CONSTANTS
 
 The following constants are automatically exported when using this module:
 
@@ -132,9 +132,9 @@ The following constants are automatically exported when using this module:
     end of the file. (To be used in list context, as this is actually 
     `(SEEK_END, 0)`.)
 
-# EXAMPLES
+### EXAMPLES
 
-## Appending to the end of a file
+#### Appending to the end of a file
 
 For instance, you may want to append a line to the end of a file, if
 it doesn't exist already:
@@ -146,7 +146,7 @@ it doesn't exist already:
     }
     $fh->close();
 
-## Cancelling changes in case of error
+#### Cancelling changes in case of error
 
 This is a subclass of `CAF::FileWriter`, so just do as you did with
 it:
@@ -156,7 +156,7 @@ it:
     $fh->cancel() if $error;
     $fh->close();
 
-## Appending a line to the beginning of the file
+#### Appending a line to the beginning of the file
 
 Trivial: use the `head_print` method:
 
@@ -164,7 +164,7 @@ Trivial: use the `head_print` method:
                                     log => $self);
     $fh->head_print ("This is a nice header for my file");
 
-## Replacing configuration lines
+#### Replacing configuration lines
 
 If you want to replace existing lines:
 
@@ -178,7 +178,7 @@ If you want to replace existing lines:
 
 This will **not** add any new lines in case there are no matches.
 
-## Adding or replacing lines
+#### Adding or replacing lines
 
 If you want to replace lines that match a given regular expression,
 and have to add them to the beginning of the file in case there are no
@@ -193,7 +193,7 @@ matches:
                                       file=/some/acl/file)),
                         BEGINNING_OF_FILE);
 
-# SEE ALSO
+### SEE ALSO
 
 This class inherits from [CAF::FileWriter(3pm)](http://man.he.net/man3pm/CAF::FileWriter), and thus from
 [IO::String(3pm)](http://man.he.net/man3pm/IO::String).

@@ -1,15 +1,15 @@
-# NAME
+### NAME
 
 EDG::WP4::CCM::Path - Path class
 
-# SYNOPSIS
+### SYNOPSIS
 
     $path = Path->new(["/hardware/memory/size"]);
     $string = $path->toString();
     $path = $path->down($string);
     $path = $path->up();
 
-# DESCRIPTION
+### DESCRIPTION
 
 Module provides implementation of the Path class. Class is used
 to manipulate absolute paths

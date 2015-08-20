@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 EDG::WP4::CCM::CCfg
 
-# SYNOPSIS
+### SYNOPSIS
 
     init()
       or
@@ -10,7 +10,7 @@ EDG::WP4::CCM::CCfg
 
     $cache_root = getCfgValue ("cache_root");
 
-# DESCRIPTION
+### DESCRIPTION
 
 CCfg is used to get configuration parameters. Defualt values for
 configuration parameters get overwritten if defined in configuration

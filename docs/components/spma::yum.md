@@ -1,21 +1,21 @@
-# NAME
+### NAME
 
 NCM::Component::spma::yum - NCM SPMA configuration component for Yum
 
-# SYNOPSIS
+### SYNOPSIS
 
 This document describes how to control the behaviour of the package
 manager itself.  For information on how to manage packages with
 Quattor, please check
 [http://quattor.org/documentation/2013/04/05/package-management.html](http://quattor.org/documentation/2013/04/05/package-management.html).
 
-# RESOURCES
+### RESOURCES
 
-- /software/components/spma/active : boolean
+- `/software/components/spma/active` : boolean
 
     activates/deactivates the component.
 
-- /software/components/spma/unescape : boolean
+- `/software/components/spma/unescape` : boolean
 
     if defined and set to false, then it is assumed that the package information in
     the profile has not been escaped with PAN's escape() function. This setting is
@@ -24,19 +24,19 @@ Quattor, please check
 
     Currently ignored.
 
-- /software/components/spma/tmpdir : string
+- `/software/components/spma/tmpdir` : string
 
     If defined, set the path to the temporary directory (for compatibility
-    with -bad- packages that need to remove the sticky bit from /tmp)
+    with -bad- packages that need to remove the sticky bit from `/tmp`)
 
-## Flags for Yum processing:
+#### Flags for Yum processing:
 
-- /software/components/spma/process\_obsoletes : boolean
+- `/software/components/spma/process`\_obsoletes : boolean
 
     Make Yum replace obsoleted packages by their recommended counterparts.
     Defaults to `false` to keep backwards compatibility.
 
-- /software/components/spma/userpkgs : string ("yes|no")
+- `/software/components/spma/userpkgs` : string ("yes|no")
 
     Whether SPMA should keep any packages the user may have installed
     manually.
@@ -45,7 +45,7 @@ Quattor, please check
     installations.  Set to `yes` to preserve any packages you installed
     by hand.  If you do so, SPMA will never remove a package.
 
-- /software/components/spma/userpkgs\_retry : boolean
+- `/software/components/spma/userpkgs`\_retry : boolean
 
     Yum-based spma might get confused and fails when it tries 
     to remove packages when `userpkgs` is `no` while installing 
@@ -59,67 +59,67 @@ Quattor, please check
     followed by a second retry where it will (try to) remove leaf packages 
     again.
 
-- /software/components/spma/userprio : string ("yes|no")
+- `/software/components/spma/userprio` : string ("yes|no")
 
     Obsoleted and ignored.
 
-- /software/components/spma/protectkernel : string ("yes|no")
+- `/software/components/spma/protectkernel` : string ("yes|no")
 
     Obsolete and ignored.  This is delegated to Yum.
 
-- /software/components/spma/packager : string
+- `/software/components/spma/packager` : string
 
     Must contain `yum` to use this module.
 
-- /software/components/spma/usespmlist : string ("yes|no")
+- `/software/components/spma/usespmlist` : string ("yes|no")
 
     Obsolete.  Currently ignored.
 
-- /software/components/spma/rpmexclusive: string ("yes|no")
+- `/software/components/spma/rpmexclusive`: string ("yes|no")
 
     Obsolete.  Currently ignored.
 
-- /software/components/spma/debug: string ("0|1|2|3|4|5")
+- `/software/components/spma/debug`: string ("0|1|2|3|4|5")
 
     Obsolete.  Currently ignored.
 
-- /software/components/spma/verbose: string ("0|1")
+- `/software/components/spma/verbose`: string ("0|1")
 
     Obsolete.  Currently ignored.
 
-- /software/components/spma/cachedir: string
+- `/software/components/spma/cachedir`: string
 
     Obsolete.  Currently ignored.
 
-- /software/components/spma/localcache: string ("yes|no")
+- `/software/components/spma/localcache`: string ("yes|no")
 
     Obsolete.  Currently ignored.
 
-- /software/components/spma/proxy: string ("yes|no")
+- `/software/components/spma/proxy`: string ("yes|no")
 
     Whether to use a proxy.
 
-- /software/components/spma/proxytype: string ("forward|reverse")
+- `/software/components/spma/proxytype`: string ("forward|reverse")
 
     Type of proxy (reverse or forward).
 
-- /software/components/spma/proxyhost: string
+- `/software/components/spma/proxyhost`: string
 
     Comma-separated list of proxy hosts.  If you have a forward proxy you
     should specify only one.  You may specify several reverse proxies
     here, and they will be appended to the `baseurl` entry of each
     repository's configuration.
 
-- /software/components/spma/proxyport: string
+- `/software/components/spma/proxyport`: string
 
     Port where the proxies are listening.
 
-- /software/components/spma/run: string ("yes|no")
+- `/software/components/spma/run`: string ("yes|no")
 
     Whether to actually run Yum operations that may install, remove or
     update packages.
 
-- /software/components/spma/fullsearch: boolean 
+- `/software/components/spma/fullsearch`: boolean 
 
     Yum-based spma will try to verify that all version locked packages
     can actually be found in the provided repositories. For packages 
@@ -128,31 +128,31 @@ Quattor, please check
     By default, the fullsearch is not performed, and for any packages that have
     versions with wildcards, it is assumed that the repositories contain them.
 
-- /software/components/spma/headnode: boolean
+- `/software/components/spma/headnode`: boolean
 
     Ignored.
 
-# DEPENDENCIES
+### DEPENDENCIES
 
-## Components to be run before:
+#### Components to be run before:
 
 none.
 
-## Components to be run after:
+#### Components to be run after:
 
 none. However, since the SPMA is typically used for updating components
 in RPM/PKG format, it is convenient to run the SPMA component before any
 other.
 
-# FILES
+### FILES
 
 `/etc/spma.conf`, `/var/lib/spma-target.cf`.
 
-# NOTES
+### NOTES
 
 This component honors the **--noaction** mode.
 
-# SEE ALSO
+### SEE ALSO
 
 You must read this document to understand how to manage packages
 with Quattor:

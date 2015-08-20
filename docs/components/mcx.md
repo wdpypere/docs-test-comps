@@ -1,37 +1,33 @@
-# NAME
+### NAME
 
 mcx : MCX NCM component.
 
-# DESCRIPTION
+### DESCRIPTION
 
 Generic MCX component. This component does not do any filtering of MCX values, but directly applies provided configuration into the local MCX configuration of the OS X computer. 
 
-# RESOURCES
+### RESOURCES
 
-## /software/components/mcx/configuration
+#### `/software/components/mcx/configuration`
 
 An nlist of MCX data to apply.
 
-# DEPENDENCIES
+### DEPENDENCIES
 
 ncm-directoryservices
 
-# BUGS
+### BUGS
 
 None known.
 
-# AUTHOR
+Nick Williams <Nick.W>
 
 Nick Williams <Nick.W>
 
-# MAINTAINER
-
-Nick Williams <Nick.W>
-
-# VERSION
+### VERSION
 
 1.0.0
 
-# SEE ALSO
+### SEE ALSO
 
 ncm-ncd(1), ncm-directoryservices(1)

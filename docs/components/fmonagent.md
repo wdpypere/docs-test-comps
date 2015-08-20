@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 NCM::fmonagent - NCM Lemon Monitoring Agent configuration component
 
-# SYNOPSIS
+### SYNOPSIS
 
 - Configure()
 
@@ -24,38 +24,36 @@ NCM::fmonagent - NCM Lemon Monitoring Agent configuration component
 
     Not available.
 
-# RESOURCES
+### RESOURCES
 
-- /software/components/fmonagent/active     : boolean
+- `/software/components/fmonagent/active`     : boolean
 
     activates/deactivates the component.
 
-# DEPENDENCIES
+### DEPENDENCIES
 
-## Components to be run before:
-
-none.
-
-## Components to be run after:
+#### Components to be run before:
 
 none.
 
-## Warning
+#### Components to be run after:
+
+none.
+
+#### Warning
 
 This version of NCM::fmonagent will not work with sensorAlarm!
 
-## Required programs.
+#### Required programs.
 
 Requires lemon-agent rpm to be installed.
 
-# BUGS
+### BUGS
 
 none known.
 
-# AUTHOR
-
 Miroslav Siket <miroslav.siket@cern.ch>, Dennis Waldron <>
 
-# SEE ALSO
+### SEE ALSO
 
 ncm-ncd(1)

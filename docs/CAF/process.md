@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 CAF::Process - Class for running commands in CAF applications
 
-# SYNOPSIS
+### SYNOPSIS
 
     use CAF::Process;
     my $proc = CAF::Process->new ([qw (my command)], log => $self);
@@ -10,7 +10,7 @@ CAF::Process - Class for running commands in CAF applications
     my $output = $proc->output();
     $proc->execute();
 
-# DESCRIPTION
+### DESCRIPTION
 
 This class provides a convenient wrapper to LC::Process
 functions. Commands are logged at the verbose level.
@@ -23,7 +23,7 @@ Please use these functions, and **do not** use ``` `` ``` or
 `system`. These functions won't spawn a subshell, and thus are more
 secure.
 
-## Private methods
+#### Private methods
 
 - `_initialize`
 
@@ -73,7 +73,7 @@ secure.
 
         These options will only be used by the execute method.
 
-## Public methods
+#### Public methods
 
 - execute
 
@@ -177,12 +177,12 @@ secure.
 
     If this is not the case the method returns 1.
 
-# COMMON USE CASES
+### COMMON USE CASES
 
 On the next examples, no log is used. If you want your component to
 log the command, just add log => $self to the object creation.
 
-## Running a command
+#### Running a command
 
 First, create the command:
 
@@ -193,7 +193,7 @@ Then, choose amongst:
     $proc->run();
     $proc->execute();
 
-## Emulating backticks to get a command's output
+#### Emulating backticks to get a command's output
 
 Create the command:
 
@@ -203,7 +203,7 @@ And get the output:
 
     my $output = $proc->output();
 
-## Piping into a command's stdin
+#### Piping into a command's stdin
 
 Create the contents to be piped:
 
@@ -215,7 +215,7 @@ Create the command, specifying `$contents` as the input, and
     my $proc = CAF::Process->new (["cat", "-"], stdin => $contents);
     $proc->execute();
 
-## Piping in and out
+#### Piping in and out
 
 Suppose we want a bi-directional pipe: we provide the command's stdin,
 and need to get its output and error:
@@ -229,7 +229,7 @@ and need to get its output and error:
 And we'll have the command's standard output and error on $stdout and
 $stderr.
 
-## Creating the command dynamically
+#### Creating the command dynamically
 
 Suppose you want to add options to your command, dynamically:
 
@@ -239,10 +239,10 @@ Suppose you want to add options to your command, dynamically:
         $proc->pushargs ("-S");
     }
 
-    # Runs ls -l -a -h -S
+    ### Runs ls -l -a -h -S
     $proc->run();
 
-## Subshells
+#### Subshells
 
 Okay, you **really** want them. You can't live without them. You found
 some obscure case that really needs a shell. Here is how to get
@@ -254,6 +254,6 @@ it. But please, don't use it without a **good** reason:
 
 It will only work with the `execute` method.
 
-# SEE ALSO
+### SEE ALSO
 
 [LC::Process(8)](http://man.he.net/man8/LC::Process)

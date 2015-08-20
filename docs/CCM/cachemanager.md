@@ -1,8 +1,8 @@
-# NAME
+### NAME
 
 EDG::WP4::CCM::CacheManager
 
-# SYNOPSIS
+### SYNOPSIS
 
     $cm = EDG::WP4::CCM::CacheManager->new(["/path/to/root/of/cache"]);
     $cfg = $cm->getUnlockedConfiguration($cred[, $cid]);
@@ -10,7 +10,7 @@ EDG::WP4::CCM::CacheManager
     $cfg = $cm->getAnonymousConfiguration($cred[, $cid]);
     $bool = $cm->isLocked();
 
-# DESCRIPTION
+### DESCRIPTION
 
 Module provides CacheManager class. This is the top level class
 of the NVA-API library. It is used by the clients to interact with

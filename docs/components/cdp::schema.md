@@ -1,26 +1,26 @@
  - Types
-  - /software/cdp/component_cdp
-   - /software/cdp/component_cdp/configFile
+  - `/software/cdp/component_cdp`
+   - `/software/cdp/component_cdp/configFile`
     - required
     - type: string
-   - /software/cdp/component_cdp/port
+   - `/software/cdp/component_cdp/port`
     - optional
     - type: type_port
-   - /software/cdp/component_cdp/nch
+   - `/software/cdp/component_cdp/nch`
     - optional
     - type: string
-   - /software/cdp/component_cdp/nch_smear
+   - `/software/cdp/component_cdp/nch_smear`
     - optional
     - type: long
     - range: 0..
-   - /software/cdp/component_cdp/fetch
+   - `/software/cdp/component_cdp/fetch`
     - optional
     - type: string
-   - /software/cdp/component_cdp/fetch_offset
+   - `/software/cdp/component_cdp/fetch_offset`
     - optional
     - type: long
     - range: 0..
-   - /software/cdp/component_cdp/fetch_smear
+   - `/software/cdp/component_cdp/fetch_smear`
     - optional
     - type: long
     - range: 0..

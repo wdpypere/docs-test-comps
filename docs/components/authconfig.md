@@ -1,51 +1,51 @@
-# NAME
+### NAME
 
 authconfig: NCM component to manage system authentication services
 
-# DESCRIPTION
+### DESCRIPTION
 
 The _authconfig_ component manages the system authentication methods
 on RedHat systems using the "authconfig" command.  In addition, is can
 set additional operational parameters for LDAP authentication by
-modifying the /etc/ldap.conf (SL5) or the /etc/nslcd.conf (SL6) files
+modifying the `/etc/ldap.conf` (SL5) or the `/etc/nslcd.conf` (SL6) files
 directly.  It will also enable/disable NSCD support on the client.
 
-# RESOURCES
+### RESOURCES
 
-## /software/components/authconfig/safemode
+#### `/software/components/authconfig/safemode`
 
 When set to true, no actual configuration will change.
 Default: false.
 
-## /software/components/authconfig/usecache
+#### `/software/components/authconfig/usecache`
 
 Enable or disable nscd operation
 
-## /software/components/authconfig/usemd5
+#### `/software/components/authconfig/usemd5`
 
 Enable the use of MD5 hashed password
 
-## /software/components/authconfig/useshadow
+#### `/software/components/authconfig/useshadow`
 
 Enable the use of shadow password files
 
-## /software/components/authconfig/method
+#### `/software/components/authconfig/method`
 
 Named list (nlist) of authentication methods to enable. Supported
 methods are: files, ldap, nis, krb5, smb, hesiod and afs.
 Note that "afs" is only supported on the CERN-modified version of
 authconfig. Also, "files" cannot be disabled.
 
-## /software/components/authconfig/method/{}/enable
+#### `/software/components/authconfig/method/{}/enable`
 
 Enable of disable this method. Unlisted methods are 
 always disabled.
 
-# SEE ALSO
+### SEE ALSO
 
 [https://twiki.cern.ch/twiki/bin/view/ELFms/ELFmsZuul](https://twiki.cern.ch/twiki/bin/view/ELFms/ELFmsZuul)
 
-# EXAMPLE
+### EXAMPLE
 
     include  pro_declaration_component_authconfig;
 
@@ -60,8 +60,8 @@ always disabled.
 
     "/software/components/authconfig/method/files/enable" = true;
 
-    #  "/software/components/authconfig/method/afs/enable" = true;
-    #  "/software/components/authconfig/method/afs/cell" = "cern.ch";
+    ###  "/software/components/authconfig/method/afs/enable" = true;
+    ###  "/software/components/authconfig/method/afs/cell" = "cern.ch";
 
     "/software/components/authconfig/method/ldap/enable" = false;
     "/software/components/authconfig/method/ldap/nssonly" = false;
@@ -82,9 +82,9 @@ always disabled.
     "/software/components/authconfig/method/ldap/pam_member_attribute" = "uniquemember";
     "/software/components/authconfig/method/ldap/tls/peercheck" = "yes";
 
-    #  "/software/components/authconfig/method/ldap/tls/cacertfile" = undef;
-    #  "/software/components/authconfig/method/ldap/tls/cacertdir" = undef;
-    #  "/software/components/authconfig/method/ldap/tls/ciphers" = undef;
+    ###  "/software/components/authconfig/method/ldap/tls/cacertfile" = undef;
+    ###  "/software/components/authconfig/method/ldap/tls/cacertdir" = undef;
+    ###  "/software/components/authconfig/method/ldap/tls/ciphers" = undef;
 
     "/software/components/authconfig/method/ldap/nss_base_passwd" = "OU=Users,OU=Organic Units,DC=cern,DC=ch";
     "/software/components/authconfig/method/ldap/nss_base_group" = "OU=SLC,OU=Workgroups,DC=cern,DC=ch";
@@ -98,8 +98,8 @@ always disabled.
     "/software/components/authconfig/method/ldap/pam_login_attribute" = "sAMAccountName";
     "/software/components/authconfig/method/ldap/ssl" = "start_tls";
 
-    #  "/software/components/authconfig/method/ldap/pam_min_uid" = "0"; # NOT IMPLEMENTED #
-    #  "/software/components/authconfig/method/ldap/pam_max_uid" = "0";# NOT IMPLEMENTED #
+    ###  "/software/components/authconfig/method/ldap/pam_min_uid" = "0"; ### NOT IMPLEMENTED #
+    ###  "/software/components/authconfig/method/ldap/pam_max_uid" = "0";### NOT IMPLEMENTED #
 
     "/software/components/authconfig/method/nis/enable" = false;
     "/software/components/authconfig/method/nis/domain" = "nikhef.nl";

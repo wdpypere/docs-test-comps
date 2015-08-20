@@ -1,11 +1,11 @@
-# DESCRIPTION
+### DESCRIPTION
 
 The _nrpe_ component manages the NRPE daemon, which executes Nagios
 plugins on remote hosts. The NRPE service can be run under xinetd or
 as a stand-alone daemon. This component only supports the stand-alone
 way.
 
-# COMPONENT STRUCTURE
+### COMPONENT STRUCTURE
 
 All fields are required (but most have sensible defaults unless otherwise stated).
 
@@ -86,6 +86,6 @@ All fields are required (but most have sensible defaults unless otherwise stated
 
     List of directory names that should be included.
 
-# SEE ALSO
+### SEE ALSO
 
 http://nagios.sourceforge.net/docs/3\_0/toc.html
