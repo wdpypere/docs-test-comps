@@ -215,10 +215,6 @@ And now, we only have to specify the contents:
 That's it!  When you deploy your configuration you should see your
 `/etc/foo.ini` in the correct location.
 
-\#
-\### Author(s): Luis Fernando Muñoz Mejías
-\#
-
 ### TODO
 
 Anyone knows of a good Apache config renderer for Perl??
