@@ -1,4 +1,4 @@
- ### Types
+### Types
 
 - `/software/amandaserver/columnspec`
     - `/software/amandaserver/columnspec/name`
