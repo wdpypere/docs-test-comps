@@ -213,8 +213,6 @@ And now, we only have to specify the contents:
 That's it!  When you deploy your configuration you should see your
 `/etc/foo.ini` in the correct location.
 
-\#
-\#
 
 ### TODO
 
