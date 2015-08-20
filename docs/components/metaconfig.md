@@ -6,11 +6,9 @@
 
 \### #
 \### Current developer(s):
-\###   Luis Fernando Muñoz Mejías <Luis.Munoz@UGent.be>
 \#
 
 \### #
-\### Author(s): Luis Fernando Muñoz Mejías
 \#
 
 \### #
@@ -216,7 +214,6 @@ That's it!  When you deploy your configuration you should see your
 `/etc/foo.ini` in the correct location.
 
 \#
-\### Author(s): Luis Fernando Muñoz Mejías
 \#
 
 ### TODO
