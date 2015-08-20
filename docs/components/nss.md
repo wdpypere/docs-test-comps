@@ -1,12 +1,12 @@
-### NAME
+# NAME
 
 NCM::nss - NCM nsswitch component
 
-### SYNOPSIS
+# SYNOPSIS
 
 - Configure()
 
-    Generates `/etc/nsswitch.conf` Returns error in case of failure. If the
+    Generates /etc/nsswitch.conf Returns error in case of failure. If the
     nsswitch.conf file is modified and nscd is running, then nscd will be
     restarted.
 
@@ -14,18 +14,18 @@ NCM::nss - NCM nsswitch component
 
     not available.
 
-### RESOURCES
+# RESOURCES
 
-- `/software/components/nss/active` : boolean
+- /software/components/nss/active : boolean
 
     activates/deactivates the component.
 
-- `/software/components/nss/databases` : nlist
+- /software/components/nss/databases : nlist
 
     A list of database names (e.g. "passwd", "hosts"). Each
     name should be associated with a list of strings.
 
-- `/software/components/nss/build` : nlist
+- /software/components/nss/build : nlist
 
     A list of database types (e.g. "file", "db"). If any
     nss sources are set to use one of these database types
@@ -53,11 +53,11 @@ NCM::nss - NCM nsswitch component
         that database will be built before processing any
         databases of this type.
 
-### EXAMPLES
+# EXAMPLES
 
     "/software/components/nss" = nlist(
        "build", nlist(
-           "db", nlist("script", "make -f `/usr/local/lib/dbfiles.mk` <DB>")
+           "db", nlist("script", "make -f /usr/local/lib/dbfiles.mk <DB>")
        ),
 
        "database", nlist(
@@ -67,28 +67,28 @@ NCM::nss - NCM nsswitch component
        )
      );
 
-### FILES MODIFIED
+# FILES MODIFIED
 
 The component modifies the following files:
 
-- `/etc/nsswitch.conf`
+- /etc/nsswitch.conf
 
-### DEPENDENCIES
+# DEPENDENCIES
 
-#### Components to be run before:
-
-none.
-
-#### Components to be run after:
+## Components to be run before:
 
 none.
 
-### BUGS
+## Components to be run after:
+
+none.
+
+# BUGS
 
 see code.
 
-S
+# AUTHORS
 
-### SEE ALSO
+# SEE ALSO
 
 ncm-ncd(1), nsswitch.conf(5)

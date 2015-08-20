@@ -1,0 +1,126 @@
+# NAME
+
+CAF::Application - Common Application Framework core class
+
+# SYNOPSIS
+
+    package example;
+    use CAF::Application;
+    use LC::Exception qw (SUCCESS throw_error);
+    use strict;
+    use vars (@ISA);
+    @ISA= qw (CAF::Application);
+
+    <extend/overwrite default methods here...>
+
+
+    # Main loop
+    package main;
+    use LC::Exception qw (SUCCESS throw_error);
+
+    use strict;
+    use vars ($this_app %SIG);
+
+    unless ($this_app = example->new($0,@ARGV)) {
+      throw_error (...);
+    }
+
+    $this_app->report("Hello");
+    ...
+
+# INHERITANCE
+
+    CAF::Object
+
+# DESCRIPTION
+
+**CAF::Application** is the core class which provides command line and
+configuration file parsing, and general application methods.
+
+Applications can extend or overwrite the default methods.
+
+## Public methods
+
+- name(): string
+
+    Return the application name (basename)
+
+- version(): string
+
+    Returns the version number as defined in $self->{'VERSION'}, or
+    <unknown> if not defined.
+
+- hostname(): string
+
+    Returns the machine's hostname.
+
+- username(): string
+
+    Returns the name of the user.
+
+- option($opt): scalar|undef
+
+    Returns the option value coming from the command line and/or
+    configuration file. Scalar can be a string, or a reference to a hash
+    or an array containing the option's value. option() is a wrapper
+    on top of AppConfig->get($opt).
+
+- show\_usage(): boolean
+
+    Prints the usage message of the command based on options and help text.
+
+- show\_version(): boolean
+
+    prints the version number of the Application.
+
+- app\_options(): ref(array)
+
+    to be overloaded by the application with application specific options.
+
+    This function has to return a reference to an array.
+    Every element in the array must be a reference to a hash with the
+    following structure:
+
+        NAME    => option name specification in the Getopt::Long(3pm) format
+                   "name|altname1|altname2|..[argument_type]"
+        DEFAULT => [optional] default value (string). If not specified: undef
+        HELP    => help text (string)
+
+    example:
+
+        push(@array, {NAME =>'M|myoption=s' ,
+                      DEFAULT=>'defaultvalue',
+                      HELP=>'do somewhat on something'});
+
+        return \@array;
+
+    see also \_app\_default\_options()
+
+## Private methods
+
+- \_initialize
+
+    Initialize the Application.
+
+- \_app\_default\_options
+
+    This method specifies a number of default options, with the
+    same format as app\_options. The options are:
+
+        debug <debuglevel> : sets debug level (1 to 5)
+        help               : prints out help message
+        quiet              : no output
+        verbose            : verbose output
+        version            : print out version number & exit
+
+    The 'noaction', 'cfgfile' and 'logfile' options are not enabled
+    by default but recognized (they have to be added to the application
+    specific code - see the 'example' file):
+
+        noaction           : execute no operations
+        cfgfile <string>  : use configuration file <string>
+        logfile  <string>  : use log file <string>
+
+- \_add\_options
+
+    add options coming from \_app\_default\_options() and app\_options()

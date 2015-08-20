@@ -1,0 +1,393 @@
+ - Types
+  - /software/shorewall/component_shorewall_zones_zone
+  - /software/shorewall/component_shorewall_zones_option
+  - /software/shorewall/component_shorewall_zones
+   - /software/shorewall/component_shorewall_zones/zone
+    - required
+    - type: string
+   - /software/shorewall/component_shorewall_zones/parent
+    - optional
+    - type: component_shorewall_zones_zone
+   - /software/shorewall/component_shorewall_zones/type
+    - required
+    - type: string
+   - /software/shorewall/component_shorewall_zones/options
+    - optional
+    - type: component_shorewall_zones_option
+   - /software/shorewall/component_shorewall_zones/inoptions
+    - optional
+    - type: component_shorewall_zones_option
+   - /software/shorewall/component_shorewall_zones/outoptions
+    - optional
+    - type: component_shorewall_zones_option
+  - /software/shorewall/component_shorewall_interfaces_interface
+  - /software/shorewall/component_shorewall_interfaces
+   - /software/shorewall/component_shorewall_interfaces/zone
+    - required
+    - type: component_shorewall_zones_zone
+   - /software/shorewall/component_shorewall_interfaces/interface
+    - required
+    - type: component_shorewall_interfaces_interface
+   - /software/shorewall/component_shorewall_interfaces/port
+    - optional
+    - type: long
+    - range: 0..
+   - /software/shorewall/component_shorewall_interfaces/broadcast
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_interfaces/options
+    - optional
+    - type: string
+  - /software/shorewall/component_shorewall_policy
+   - /software/shorewall/component_shorewall_policy/src
+    - required
+    - type: string
+   - /software/shorewall/component_shorewall_policy/dst
+    - required
+    - type: string
+   - /software/shorewall/component_shorewall_policy/policy
+    - required
+    - type: string
+   - /software/shorewall/component_shorewall_policy/loglevel
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_policy/burst
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_policy/limit
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_policy/connlimit
+    - optional
+    - type: string
+  - /software/shorewall/component_shorewall_rules_action
+  - /software/shorewall/component_shorewall_rules_srcdst
+   - /software/shorewall/component_shorewall_rules_srcdst/zone
+    - required
+    - type: string
+   - /software/shorewall/component_shorewall_rules_srcdst/interface
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_rules_srcdst/address
+    - optional
+    - type: string
+  - /software/shorewall/component_shorewall_rules
+   - /software/shorewall/component_shorewall_rules/action
+    - required
+    - type: component_shorewall_rules_action
+   - /software/shorewall/component_shorewall_rules/src
+    - optional
+    - type: component_shorewall_rules_srcdst
+   - /software/shorewall/component_shorewall_rules/dst
+    - optional
+    - type: component_shorewall_rules_srcdst
+   - /software/shorewall/component_shorewall_rules/proto
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_rules/dstport
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_rules/srcport
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_rules/origdst
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_rules/rate
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_rules/user
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_rules/group
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_rules/mark
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_rules/connlimit
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_rules/time
+    - optional
+    - type: string
+  - /software/shorewall/component_shorewall_shorewall
+   - /software/shorewall/component_shorewall_shorewall/startup_enabled
+    - required
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/log_martians
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/clear_tc
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/adminisabsentminded
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/blacklistnewonly
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/pkttype
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/expand_policies
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/delete_then_add
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/auto_comment
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/mangle_enabled
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/restore_default_route
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/accounting
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/dynamic_blacklist
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/exportmodules
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/logtagonly
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/add_ip_aliases
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/add_snat_aliases
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/retain_aliases
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/tc_expert
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/mark_in_forward_chain
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/clampmss
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/route_filter
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/detect_dnat_ipaddrs
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/disable_ipv6
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/dynamic_zones
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/null_route_rfc1918
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/save_ipsets
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/mapoldactions
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/fastaccept
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/implicit_continue
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/high_route_marks
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/exportparams
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/keep_rt_tables
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/multicast
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/use_default_rt
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/automake
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/wide_tc_marks
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/track_providers
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/optimize_accounting
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/load_helpers_only
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/require_interface
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/complete
+    - optional
+    - type: boolean
+   - /software/shorewall/component_shorewall_shorewall/ip_forwarding
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/verbosity
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/logfile
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/startup_log
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/log_verbosity
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/logformat
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/loglimit
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/logallnew
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/blacklist_loglevel
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/maclist_log_level
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/tcp_flags_log_level
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/smurf_log_level
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/iptables
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/ip
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/tc
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/ipset
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/perl
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/path
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/shorewall_shell
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/subsyslock
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/modulesdir
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/config_path
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/restorefile
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/ipsecfile
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/lockfile
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/drop_default
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/reject_default
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/accept_default
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/queue_default
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/nfqueue_default
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/rsh_command
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/rcp_command
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/tc_enabled
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/tc_priomap
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/mutex_timeout
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/module_suffix
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/maclist_table
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/maclist_ttl
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/optimize
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/dont_load
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/zone2zone
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/forward_clear_mark
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/blacklist_disposition
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/maclist_disposition
+    - optional
+    - type: string
+   - /software/shorewall/component_shorewall_shorewall/tcp_flags_disposition
+    - optional
+    - type: string
+  - /software/shorewall/component_shorewall_type
+   - /software/shorewall/component_shorewall_type/zones
+    - required
+    - type: component_shorewall_zones
+   - /software/shorewall/component_shorewall_type/interfaces
+    - required
+    - type: component_shorewall_interfaces
+   - /software/shorewall/component_shorewall_type/policy
+    - required
+    - type: component_shorewall_policy
+   - /software/shorewall/component_shorewall_type/rules
+    - required
+    - type: component_shorewall_rules
+   - /software/shorewall/component_shorewall_type/shorewall
+    - required
+    - type: component_shorewall_shorewall
+
+ - Functions

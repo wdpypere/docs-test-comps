@@ -1,16 +1,16 @@
-### NAME
+# NAME
 
 ncm-altlogrotate: configuration module to control the log rotate configuration
 
-### DESCRIPTION
+# DESCRIPTION
 
 The _altlogrotate_ component manages the log rotate configuration files.
 
 It replaced the original _logrotate_ which is no longer available.
 
-### RESOURCES
+# RESOURCES
 
-#### `/software/components/altlogrotate/entries/`
+## `/software/components/altlogrotate/entries/`
 
 - `configFile : string`
 
@@ -21,7 +21,7 @@ It replaced the original _logrotate_ which is no longer available.
     Logrotate entries directory path, defaults to `/etc/logrotate.d`,
     entries will be written to individual config files under this path.
 
-#### `/software/components/altlogrotate/entries`
+## `/software/components/altlogrotate/entries`
 
 A named list containing logrotate structures.
 

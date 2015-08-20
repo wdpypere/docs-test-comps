@@ -1,0 +1,257 @@
+ - Types
+  - /software/ntpd/ntpd_clientnet_type
+   - /software/ntpd/ntpd_clientnet_type/net
+    - required
+    - type: type_ip
+   - /software/ntpd/ntpd_clientnet_type/mask
+    - required
+    - type: type_ip
+  - /software/ntpd/ntpd_server_options
+   - /software/ntpd/ntpd_server_options/autokey
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_server_options/burst
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_server_options/iburst
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_server_options/key
+    - optional
+    - type: long
+    - range: 1..655534
+   - /software/ntpd/ntpd_server_options/minpoll
+    - optional
+    - type: long
+    - range: 3..17
+   - /software/ntpd/ntpd_server_options/maxpoll
+    - optional
+    - type: long
+    - range: 3..17
+   - /software/ntpd/ntpd_server_options/noselect
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_server_options/preempt
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_server_options/prefer
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_server_options/true
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_server_options/version
+    - optional
+    - type: long
+    - range: 1..4
+  - /software/ntpd/ntpd_restrict_options
+   - /software/ntpd/ntpd_restrict_options/mask
+    - optional
+    - type: type_ip
+   - /software/ntpd/ntpd_restrict_options/ignore
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_restrict_options/kod
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_restrict_options/limited
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_restrict_options/lowpriotrap
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_restrict_options/nomodify
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_restrict_options/noquery
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_restrict_options/nopeer
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_restrict_options/noserve
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_restrict_options/notrap
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_restrict_options/notrust
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_restrict_options/ntpport
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_restrict_options/version
+    - optional
+    - type: long
+    - range: 1..4
+  - /software/ntpd/ntpd_restrict_default
+  - /software/ntpd/ntpd_server_definition
+   - /software/ntpd/ntpd_server_definition/server
+    - required
+    - type: type_hostname
+   - /software/ntpd/ntpd_server_definition/options
+    - optional
+    - type: ntpd_server_options
+  - /software/ntpd/ntpd_tinker_options
+   - /software/ntpd/ntpd_tinker_options/allan
+    - optional
+    - type: long
+   - /software/ntpd/ntpd_tinker_options/dispersion
+    - optional
+    - type: long
+   - /software/ntpd/ntpd_tinker_options/freq
+    - optional
+    - type: long
+   - /software/ntpd/ntpd_tinker_options/huffpuff
+    - optional
+    - type: long
+   - /software/ntpd/ntpd_tinker_options/panic
+    - optional
+    - type: long
+   - /software/ntpd/ntpd_tinker_options/step
+    - optional
+    - type: long
+   - /software/ntpd/ntpd_tinker_options/stepout
+    - optional
+    - type: long
+  - /software/ntpd/ntpd_system_options
+   - /software/ntpd/ntpd_system_options/auth
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_system_options/blient
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_system_options/calibrate
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_system_options/kernel
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_system_options/monitor
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_system_options/ntp
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_system_options/pps
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_system_options/stats
+    - optional
+    - type: boolean
+  - /software/ntpd/ntpd_disable_options
+  - /software/ntpd/ntpd_enable_options
+  - /software/ntpd/ntpd_logconfig
+  - /software/ntpd/ntpd_statistics
+   - /software/ntpd/ntpd_statistics/clockstats
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_statistics/cryptostats
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_statistics/loopstats
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_statistics/peerstats
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_statistics/rawstats
+    - optional
+    - type: boolean
+   - /software/ntpd/ntpd_statistics/sysstats
+    - optional
+    - type: boolean
+  - /software/ntpd/ntpd_filegen_name
+  - /software/ntpd/ntpd_filegen
+   - /software/ntpd/ntpd_filegen/name
+    - required
+    - type: ntpd_filegen_name
+   - /software/ntpd/ntpd_filegen/file
+    - required
+    - type: string
+   - /software/ntpd/ntpd_filegen/type
+    - optional
+    - type: string
+   - /software/ntpd/ntpd_filegen/linkornolink
+    - optional
+    - type: string
+   - /software/ntpd/ntpd_filegen/enableordisable
+    - optional
+    - type: string
+  - /software/ntpd/component_ntpd_type
+   - /software/ntpd/component_ntpd_type/keyfile
+    - optional
+    - type: string
+   - /software/ntpd/component_ntpd_type/trustedkey
+    - optional
+    - type: long
+   - /software/ntpd/component_ntpd_type/requestkey
+    - optional
+    - type: long
+   - /software/ntpd/component_ntpd_type/controlkey
+    - optional
+    - type: long
+   - /software/ntpd/component_ntpd_type/driftfile
+    - optional
+    - type: string
+   - /software/ntpd/component_ntpd_type/includefile
+    - optional
+    - type: string
+   - /software/ntpd/component_ntpd_type/servers
+    - optional
+    - type: type_hostname
+   - /software/ntpd/component_ntpd_type/defaultoptions
+    - optional
+    - type: ntpd_server_options
+   - /software/ntpd/component_ntpd_type/clientnetworks
+    - optional
+    - type: ntpd_clientnet_type
+   - /software/ntpd/component_ntpd_type/logfile
+    - optional
+    - type: string
+   - /software/ntpd/component_ntpd_type/logconfig
+    - optional
+    - type: ntpd_logconfig
+   - /software/ntpd/component_ntpd_type/statsdir
+    - optional
+    - type: string
+   - /software/ntpd/component_ntpd_type/statistics
+    - optional
+    - type: ntpd_statistics
+   - /software/ntpd/component_ntpd_type/filegen
+    - optional
+    - type: ntpd_filegen
+   - /software/ntpd/component_ntpd_type/disable
+    - optional
+    - type: ntpd_disable_options
+   - /software/ntpd/component_ntpd_type/enable
+    - optional
+    - type: ntpd_enable_options
+   - /software/ntpd/component_ntpd_type/tinker
+    - optional
+    - type: ntpd_tinker_options
+   - /software/ntpd/component_ntpd_type/serverlist
+    - optional
+    - type: ntpd_server_definition
+   - /software/ntpd/component_ntpd_type/restrictdefault
+    - optional
+    - type: ntpd_restrict_default
+   - /software/ntpd/component_ntpd_type/broadcastdelay
+    - optional
+    - type: double
+   - /software/ntpd/component_ntpd_type/authenticate
+    - optional
+    - type: boolean
+   - /software/ntpd/component_ntpd_type/servicename
+    - optional
+    - type: string
+   - /software/ntpd/component_ntpd_type/includelocalhost
+    - optional
+    - type: boolean
+   - /software/ntpd/component_ntpd_type/enablelocalhostdebug
+    - optional
+    - type: boolean
+
+ - Functions
+  - %s

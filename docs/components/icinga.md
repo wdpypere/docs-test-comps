@@ -1,4 +1,4 @@
-### DESCRIPTION
+# DESCRIPTION
 
 The _icinga_ component manages the configuration for the Icinga
 monitoring system.
@@ -6,45 +6,45 @@ monitoring system.
 At the time of this writing, escalations and dependencies are the only
 Icinga settings this component doesn't understand.
 
-### BASIC COMPONENT STRUCTURE
+# BASIC COMPONENT STRUCTURE
 
 Icinga configuration is very complicated. Before reading this, please
 check the Icinga documentation.  All the fields on this component are
 named just like the tags for the appropriate Icinga object.
 
-- `/software/components/icinga/general`
+- /software/components/icinga/general
 
     Global settings for Icinga. These settings will be written in
-    `/etc/icinga/icinga.cfg` .
+    /etc/icinga/icinga.cfg .
 
-- `/software/components/icinga/cgi`
+- /software/components/icinga/cgi
 
     Configuration of the Icinga web interface.
     This path is optional. If it exists, the settings will be
-    written in `/etc/icinga/cgi.cfg`.
+    written in /etc/icinga/cgi.cfg.
 
-- `/software/components/icinga/hosts`
+- /software/components/icinga/hosts
 
     Host definitions, indexed by host name. There is no host\_name option,
     as it is taken from the index. Also, the host\_address field is
     optional. If it's not provided, gethostbyname is used to decide the
     host's IP address.
 
-    These settings are written in `/etc/icinga/objects/hosts.cfg` .
+    These settings are written in /etc/icinga/objects/hosts.cfg .
 
-- `/software/components/icinga/hostgroups`
+- /software/components/icinga/hostgroups
 
     Hostgroup definitions, indexed by hostgroup name. These settings are
-    written in `/etc/icinga/objects/hostgroups.cfg` .
+    written in /etc/icinga/objects/hostgroups.cfg .
 
-- `/software/components/icinga/hostdependencies`
+- /software/components/icinga/hostdependencies
 
     Host dependency defintions, indexed by **depended** host name (this is,
     where the arrow ends in Icinga documentation).
 
-    These settings are written in `/etc/icinga/objects/hostdependencies.cfg`
+    These settings are written in /etc/icinga/objects/hostdependencies.cfg
 
-- `/software/components/icinga/services`
+- /software/components/icinga/services
 
     nlist of lists of service definitions. The keys are the service
     descriptions, escaped. The value is a list of service definitions that
@@ -55,64 +55,64 @@ named just like the tags for the appropriate Icinga object.
     same service, as the validation code won't detect this and will cause
     Icinga to fail.
 
-    These settings are written in `/etc/icinga/objects/services.cfg` .
+    These settings are written in /etc/icinga/objects/services.cfg .
 
-- `/software/components/icinga/servicegroups`
+- /software/components/icinga/servicegroups
 
-    List of service groups. It is written in `/etc/icinga/objects/servicegroups.cfg`
+    List of service groups. It is written in /etc/icinga/objects/servicegroups.cfg
 
-- `/software/components/icinga/servicedependencies`
+- /software/components/icinga/servicedependencies
 
     List of service dependencies. It is written in
-    `/etc/icinga/objects/servicedependencies.cfg`
+    /etc/icinga/objects/servicedependencies.cfg
 
-- `/software/components/icinga/contacts`
+- /software/components/icinga/contacts
 
     Contact definition, indexed by contact name.
 
-    These settings are written in `/etc/icinga/objects/contacts.cfg` .
+    These settings are written in /etc/icinga/objects/contacts.cfg .
 
-- `/software/components/icinga/contactgroups`
+- /software/components/icinga/contactgroups
 
     Contact group definition, indexed by contact group name. These
-    settings are written in `/etc/icinga/objects/contactgroups.cfg` .
+    settings are written in /etc/icinga/objects/contactgroups.cfg .
 
-- `/software/components/icinga/commands`
+- /software/components/icinga/commands
 
     Command lines, indexed by Icinga command name. These settings are
-    stored in `/etc/icinga/objects/commands.cfg` .
+    stored in /etc/icinga/objects/commands.cfg .
 
-- `/software/components/icinga/macros`
+- /software/components/icinga/macros
 
     Icinga $USERx$ macros, indexed by macro name. The macro name must not
     be surrounded by '$'. These settings are stored in
-    `/etc/icinga/resources.cfg` .
+    /etc/icinga/resources.cfg .
 
-- `/software/components/icinga/timeperiods`
+- /software/components/icinga/timeperiods
 
     Icinga time period definition, indexed by time period name. Time
-    periods are stored in `/etc/icinga/objects/timeperiods.cfg` .
+    periods are stored in /etc/icinga/objects/timeperiods.cfg .
 
-- `/software/components/icinga/serviceextinfo`
+- /software/components/icinga/serviceextinfo
 
     Definition for extended service information. These settings are saved
-    in `/etc/icinga/objects/serviceextinfo.cfg` .
+    in /etc/icinga/objects/serviceextinfo.cfg .
 
-- `/software/components/icinga/external`\_files
+- /software/components/icinga/external\_files
 
     Other already existing files to be included in the configuration of
     Icinga. Please note that the component can't validate these, so if you
     include a broken file, you'll break your Icinga server!
 
-- `/software/components/icinga/external`\_dirs
+- /software/components/icinga/external\_dirs
 
     Other already existing dirs to be included in the configuration of
     Icinga. Please note that the component can't validate these, so if you
     include a broken file, you'll break your Icinga server!
 
-### NOTES ON THE USE OF THIS COMPONENT
+# NOTES ON THE USE OF THIS COMPONENT
 
-#### Command usage
+## Command usage
 
 When a service or a host references a command, it separates its arguments with '!', e.g:
 
@@ -128,7 +128,7 @@ strings, where the first element must be an existing command name. For
 the above example to be valid,
 `/software/components/icinga/commands/check_load` must exist.
 
-#### The `use` tag
+## The `use` tag
 
 The `use` tag is not allowed by this component. It makes validation
 almost impossible, and any attempt to implement an incomplete
@@ -140,24 +140,24 @@ and `create` to simulate Icinga inheritance.
 
 The only downside of this approach is the growth of the LLD profile.
 
-### FILES
+# FILES
 
 The following files are written by this component:
 
-- `/etc/icinga/icinga.cfg`
-- `/etc/icinga/cgi.cfg`
-- `/etc/icinga/objects/contacts.cfg`
-- `/etc/icinga/objects/contactgroups.cfg`
-- `/etc/icinga/objects/hosts.cfg`
-- `/etc/icinga/objects/hostgroups.cfg`
-- `/etc/icinga/objects/hostdependencies.cfg`
-- `/etc/icinga/objects/services.cfg`
-- `/etc/icinga/objects/servicegroups.cfg`
-- `/etc/icinga/objects/servicedependencies.cfg`
-- `/etc/icinga/objects/serviceextinfo.cfg`
-- `/etc/icinga/objects/timeperiods.cfg`
-- `/etc/icinga/objects/commands.cfg`
-- `/etc/icinga/resources.cfg`
+- /etc/icinga/icinga.cfg
+- /etc/icinga/cgi.cfg
+- /etc/icinga/objects/contacts.cfg
+- /etc/icinga/objects/contactgroups.cfg
+- /etc/icinga/objects/hosts.cfg
+- /etc/icinga/objects/hostgroups.cfg
+- /etc/icinga/objects/hostdependencies.cfg
+- /etc/icinga/objects/services.cfg
+- /etc/icinga/objects/servicegroups.cfg
+- /etc/icinga/objects/servicedependencies.cfg
+- /etc/icinga/objects/serviceextinfo.cfg
+- /etc/icinga/objects/timeperiods.cfg
+- /etc/icinga/objects/commands.cfg
+- /etc/icinga/resources.cfg
 
 If they exist, they will be truncated, the owner and group set to
 Icinga and the permissions will be set to 0660.
@@ -166,6 +166,6 @@ Note that `config_file` and `resource_file` directives are not
 valid. To keep consistency, everything must be set according to this
 layout.
 
-### SEE ALSO
+# SEE ALSO
 
 http://www.icinga.org/docs/

@@ -1,21 +1,21 @@
-### DESCRIPTION
+# DESCRIPTION
 
 The _libvirtd_ component manages the configuration of the
 the libvirtd daemon.
 
-### CONFIGURATION PARAMETERS
+# CONFIGURATION PARAMETERS
 
 The base path for all of the configuration parameters is
-    `/software/components/libvirtd.`  The following sections describe the
+    /software/components/libvirtd.  The following sections describe the
     elements that are permitted directly below this base path.  With
     further parameters described in each section.  All parameters are
     optional.  Except the configuration file location. 
 
-#### libvirtd\_config (R '/etc/libvirt/libvirtd.conf')
+## libvirtd\_config (R '/etc/libvirt/libvirtd.conf')
 
 This string defines the location of the libvirtd configuration file.
 
-#### network
+## network
 
 This sections contains the networking parameters.
 
@@ -27,7 +27,7 @@ This sections contains the networking parameters.
 - mdns\_adv: 0 or 1, enabled by default
 - mdns\_name: default string is "Virtualization Host HOSTNAME"
 
-#### socket
+## socket
 
 This section contains the configuration for unix sockets.
 
@@ -37,7 +37,7 @@ This section contains the configuration for unix sockets.
 - unix\_sock\_rw\_perms: octal string
 - unix\_sock\_dir: directory of created sockets
 
-#### authn
+## authn
 
 This section contains the authentication parameters.
 
@@ -46,7 +46,7 @@ This section contains the authentication parameters.
 - auth\_tcp' ? 'none|sasl', should be 'sasl' for production
 - auth\_tls' ? 'none|sasl'
 
-#### tls
+## tls
 
 This section contains the parameters for TLS. 
 
@@ -55,7 +55,7 @@ This section contains the parameters for TLS.
 - ca\_file: full path to certificate authority certificate
 - crl\_file: fall path to CRL
 
-#### authz
+## authz
 
 This section contains the authorization parameters. 
 
@@ -63,7 +63,7 @@ This section contains the authorization parameters.
 - tls\_allowed\_dn\_list: list of allowed DNs
 - sasl\_allowed\_username\_list: list of allowed usernames
 
-#### processing
+## processing
 
 This section contains the parameters used to control the processing. 
 
@@ -73,7 +73,7 @@ This section contains the parameters used to control the processing.
 - max\_requests: maximum number of requests
 - max\_client\_requests: maximum number of client requests
 
-#### logging
+## logging
 
 This section contains the parameters used to control the logging.
 

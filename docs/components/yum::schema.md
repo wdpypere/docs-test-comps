@@ -1,0 +1,61 @@
+ - Types
+  - /software/yum/spma_yum_plugin_fastestmirror
+   - /software/yum/spma_yum_plugin_fastestmirror/enabled
+    - required
+    - type: boolean
+   - /software/yum/spma_yum_plugin_fastestmirror/verbose
+    - required
+    - type: boolean
+   - /software/yum/spma_yum_plugin_fastestmirror/always_print_best_host
+    - required
+    - type: boolean
+   - /software/yum/spma_yum_plugin_fastestmirror/socket_timeout
+    - required
+    - type: long
+    - range: 0..
+   - /software/yum/spma_yum_plugin_fastestmirror/hostfilepath
+    - required
+    - type: string
+   - /software/yum/spma_yum_plugin_fastestmirror/maxhostfileage
+    - required
+    - type: long
+    - range: 0..
+   - /software/yum/spma_yum_plugin_fastestmirror/maxthreads
+    - required
+    - type: long
+    - range: 0..
+   - /software/yum/spma_yum_plugin_fastestmirror/exclude
+    - optional
+    - type: string
+   - /software/yum/spma_yum_plugin_fastestmirror/include_only
+    - optional
+    - type: string
+  - /software/yum/spma_yum_plugin_versionlock
+   - /software/yum/spma_yum_plugin_versionlock/enabled
+    - required
+    - type: boolean
+   - /software/yum/spma_yum_plugin_versionlock/locklist
+    - required
+    - type: string
+   - /software/yum/spma_yum_plugin_versionlock/follow_obsoletes
+    - optional
+    - type: boolean
+  - /software/yum/spma_yum_plugins
+   - /software/yum/spma_yum_plugins/fastestmirror
+    - optional
+    - type: spma_yum_plugin_fastestmirror
+   - /software/yum/spma_yum_plugins/versionlock
+    - optional
+    - type: spma_yum_plugin_versionlock
+  - /software/yum/component_spma_yum
+   - /software/yum/component_spma_yum/userpkgs_retry
+    - required
+    - type: boolean
+   - /software/yum/component_spma_yum/fullsearch
+    - required
+    - type: boolean
+   - /software/yum/component_spma_yum/plugins
+    - optional
+    - type: spma_yum_plugins
+
+ - Functions

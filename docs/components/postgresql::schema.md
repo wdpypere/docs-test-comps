@@ -1,0 +1,660 @@
+ - Types
+  - /software/postgresql/pgsql_hba_database
+  - /software/postgresql/pgsql_hba_user
+  - /software/postgresql/pgsql_hba
+   - /software/postgresql/pgsql_hba/host
+    - required
+    - type: string
+   - /software/postgresql/pgsql_hba/database
+    - required
+    - type: pgsql_hba_database
+   - /software/postgresql/pgsql_hba/user
+    - required
+    - type: pgsql_hba_user
+   - /software/postgresql/pgsql_hba/address
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_hba/method
+    - required
+    - type: string
+   - /software/postgresql/pgsql_hba/options
+    - optional
+    - type: string
+  - /software/postgresql/pgsql_mainconfig
+   - /software/postgresql/pgsql_mainconfig/data_directory
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/hba_file
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/ident_file
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/external_pid_file
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/listen_addresses
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/port
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/max_connections
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/superuser_reserved_connections
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/unix_socket_directory
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/unix_socket_group
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/unix_socket_permissions
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/bonjour
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/bonjour_name
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/authentication_timeout
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/ssl
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/ssl_ciphers
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/ssl_renegotiation_limit
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/password_encryption
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/db_user_namespace
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/krb_server_keyfile
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/krb_srvname
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/krb_caseins_users
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/tcp_keepalives_idle
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/tcp_keepalives_interval
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/tcp_keepalives_count
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/shared_buffers
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/temp_buffers
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/max_prepared_transactions
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/work_mem
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/maintenance_work_mem
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/max_stack_depth
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/max_files_per_process
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/shared_preload_libraries
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/vacuum_cost_delay
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/vacuum_cost_page_hit
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/vacuum_cost_page_miss
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/vacuum_cost_page_dirty
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/vacuum_cost_limit
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/bgwriter_delay
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/bgwriter_lru_maxpages
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/bgwriter_lru_multiplier
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/effective_io_concurrency
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/wal_level
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/fsync
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/synchronous_commit
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/wal_sync_method
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/full_page_writes
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/wal_buffers
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/wal_writer_delay
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/commit_delay
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/commit_siblings
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/checkpoint_segments
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/checkpoint_timeout
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/checkpoint_completion_target
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/checkpoint_warning
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/archive_mode
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/archive_command
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/archive_timeout
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/max_wal_senders
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/wal_sender_delay
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/wal_keep_segments
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/vacuum_defer_cleanup_age
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/replication_timeout
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/synchronous_standby_names
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/hot_standby
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/max_standby_archive_delay
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/max_standby_streaming_delay
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/wal_receiver_status_interval
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/hot_standby_feedback
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/enable_bitmapscan
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/enable_hashagg
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/enable_hashjoin
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/enable_indexscan
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/enable_material
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/enable_mergejoin
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/enable_nestloop
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/enable_seqscan
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/enable_sort
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/enable_tidscan
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/seq_page_cost
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/random_page_cost
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/cpu_tuple_cost
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/cpu_index_tuple_cost
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/cpu_operator_cost
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/effective_cache_size
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/geqo
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/geqo_threshold
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/geqo_effort
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/geqo_pool_size
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/geqo_generations
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/geqo_selection_bias
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/geqo_seed
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/default_statistics_target
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/constraint_exclusion
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/cursor_tuple_fraction
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/from_collapse_limit
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/join_collapse_limit
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/log_destination
+    - required
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/logging_collector
+    - required
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/log_directory
+    - required
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/log_filename
+    - required
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/log_file_mode
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/log_truncate_on_rotation
+    - required
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/log_rotation_age
+    - required
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/log_rotation_size
+    - required
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/syslog_facility
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/syslog_ident
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/silent_mode
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/client_min_messages
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/log_min_messages
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/log_min_error_statement
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/log_min_duration_statement
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/debug_print_parse
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/debug_print_rewritten
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/debug_print_plan
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/debug_pretty_print
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/log_checkpoints
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/log_connections
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/log_disconnections
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/log_duration
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/log_error_verbosity
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/log_hostname
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/log_line_prefix
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/log_lock_waits
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/log_statement
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/log_temp_files
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/log_timezone
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/track_activities
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/track_counts
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/track_functions
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/track_activity_query_size
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/update_process_title
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/stats_temp_directory
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/log_parser_stats
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/log_planner_stats
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/log_executor_stats
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/log_statement_stats
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/autovacuum
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/log_autovacuum_min_duration
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/autovacuum_max_workers
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/autovacuum_naptime
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/autovacuum_vacuum_threshold
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/autovacuum_analyze_threshold
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/autovacuum_vacuum_scale_factor
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/autovacuum_analyze_scale_factor
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/autovacuum_freeze_max_age
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/autovacuum_vacuum_cost_delay
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/autovacuum_vacuum_cost_limit
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/search_path
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/default_tablespace
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/temp_tablespaces
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/check_function_bodies
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/default_transaction_isolation
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/default_transaction_read_only
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/default_transaction_deferrable
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/session_replication_role
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/statement_timeout
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/vacuum_freeze_min_age
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/vacuum_freeze_table_age
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/bytea_output
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/xmlbinary
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/xmloption
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/datestyle
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/intervalstyle
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/timezone
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/timezone_abbreviations
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/extra_float_digits
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/client_encoding
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/lc_messages
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/lc_monetary
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/lc_numeric
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/lc_time
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/default_text_search_config
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/dynamic_library_path
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/local_preload_libraries
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/deadlock_timeout
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/max_locks_per_transaction
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/max_pred_locks_per_transaction
+    - optional
+    - type: long
+   - /software/postgresql/pgsql_mainconfig/array_nulls
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/backslash_quote
+    - optional
+    - type: string
+   - /software/postgresql/pgsql_mainconfig/default_with_oids
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/escape_string_warning
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/lo_compat_privileges
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/quote_all_identifiers
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/sql_inheritance
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/standard_conforming_strings
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/synchronize_seqscans
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/transform_null_equals
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/exit_on_error
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/restart_after_crash
+    - optional
+    - type: boolean
+   - /software/postgresql/pgsql_mainconfig/custom_variable_classes
+    - optional
+    - type: string
+  - /software/postgresql/pg_db
+   - /software/postgresql/pg_db/user
+    - optional
+    - type: string
+   - /software/postgresql/pg_db/installfile
+    - optional
+    - type: string
+   - /software/postgresql/pg_db/sql_user
+    - optional
+    - type: string
+   - /software/postgresql/pg_db/lang
+    - optional
+    - type: string
+   - /software/postgresql/pg_db/langfile
+    - optional
+    - type: string
+  - /software/postgresql/structure_pgsql_comp_config
+   - /software/postgresql/structure_pgsql_comp_config/debug_print
+    - optional
+    - type: long
+   - /software/postgresql/structure_pgsql_comp_config/hba
+    - optional
+    - type: pgsql_hba
+   - /software/postgresql/structure_pgsql_comp_config/main
+    - optional
+    - type: pgsql_mainconfig
+  - /software/postgresql/component_pgsql
+   - /software/postgresql/component_pgsql/pg_script_name
+    - optional
+    - type: string
+   - /software/postgresql/component_pgsql/pg_dir
+    - optional
+    - type: string
+   - /software/postgresql/component_pgsql/pg_port
+    - optional
+    - type: string
+   - /software/postgresql/component_pgsql/postgresql_conf
+    - optional
+    - type: string
+   - /software/postgresql/component_pgsql/pg_hba
+    - optional
+    - type: string
+   - /software/postgresql/component_pgsql/roles
+    - optional
+    - type: string
+   - /software/postgresql/component_pgsql/databases
+    - optional
+    - type: pg_db
+   - /software/postgresql/component_pgsql/commands
+    - optional
+    - type: string
+   - /software/postgresql/component_pgsql/config
+    - optional
+    - type: structure_pgsql_comp_config
+   - /software/postgresql/component_pgsql/pg_version
+    - optional
+    - type: string
+   - /software/postgresql/component_pgsql/pg_engine
+    - optional
+    - type: string
+
+ - Functions
+  - %s
+  - %s

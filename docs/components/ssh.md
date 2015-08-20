@@ -1,8 +1,8 @@
-### NAME
+# NAME
 
 NCM::ssh - NCM SSH configuration component
 
-### DESCRIPTION
+# DESCRIPTION
 
 Update the SSH client and/or daemon configuration files, preserving their
 permissions. Replace changed option values and add new options to the end of the
@@ -11,47 +11,47 @@ configuration file(s).
 If any changes were made in the daemon configuration file, tell the SSH daemon to
 reload the new configuration by executing the following command:
 
-    `/sbin/service` sshd reload
+    /sbin/service sshd reload
 
-### RESOURCES
+# RESOURCES
 
-#### `/software/components/ssh/client` : nlist (optional)
+## /software/components/ssh/client : nlist (optional)
 
 This nlist contains 2 option sets describing respectively options that must be defined 
 an their values and options that must be commented out.
 
-##### `/software/components/ssh/client/options` : nlist (optional)
+### /software/components/ssh/client/options : nlist (optional)
 
 Options that must be set and their value. See schema for allowed options.
 
-##### `/software/components/ssh/client/comment`\_options : nlist (optional)
+### /software/components/ssh/client/comment\_options : nlist (optional)
 
 Options that must be commented out. This is the same set of options as those which can be
 set. If an option is in both list, definition takes precedence.
 
 See schema for allowed options.
 
-#### `/software/components/ssh/daemon` : nlist (optional)
+## /software/components/ssh/daemon : nlist (optional)
 
 This nlist contains 2 option sets describing respectively options that must be defined 
 an their values and options that must be commented out.
 
-##### `/software/components/ssh/daemon/options` : nlist (optional)
+### /software/components/ssh/daemon/options : nlist (optional)
 
 Options that must be set and their value. See schema for allowed options.
 
-##### `/software/components/ssh/daemon/comment`\_options : nlist (optional)
+### /software/components/ssh/daemon/comment\_options : nlist (optional)
 
 Options that must be commented out. This is the same set of options as those which can be
 set. If an option is in both list, definition takes precedence.
 
 See schema for allowed options.
 
-### DEPENDENCIES
+# DEPENDENCIES
 
 None.
 
-### FILES
+# FILES
 
 - `/etc/ssh/sshd_config`
 
@@ -61,12 +61,14 @@ None.
 
     The SSH client configuration file.
 
-### BUGS
+# BUGS
 
 None known.
 
-Teemu Sidoroff <Teemu.S>
+# AUTHOR
 
-### SEE ALSO
+Teemu Sidoroff <Teemu.Sidoroff@cern.ch>
+
+# SEE ALSO
 
 ncm-ncd(1), sshd(8), sshd\_config(5), ssh\_config(5)

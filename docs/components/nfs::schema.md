@@ -1,0 +1,38 @@
+ - Types
+  - /software/nfs/structure_nfs_exports
+   - /software/nfs/structure_nfs_exports/path
+    - required
+    - type: string
+   - /software/nfs/structure_nfs_exports/hosts
+    - required
+    - type: string
+  - /software/nfs/structure_nfs_mounts
+   - /software/nfs/structure_nfs_mounts/device
+    - required
+    - type: string
+   - /software/nfs/structure_nfs_mounts/mountpoint
+    - required
+    - type: string
+   - /software/nfs/structure_nfs_mounts/fstype
+    - required
+    - type: string
+   - /software/nfs/structure_nfs_mounts/options
+    - optional
+    - type: string
+   - /software/nfs/structure_nfs_mounts/freq
+    - optional
+    - type: long
+    - range: 0..
+   - /software/nfs/structure_nfs_mounts/passno
+    - optional
+    - type: long
+    - range: 0..
+  - /software/nfs/component_nfs
+   - /software/nfs/component_nfs/exports
+    - optional
+    - type: structure_nfs_exports
+   - /software/nfs/component_nfs/mounts
+    - optional
+    - type: structure_nfs_mounts
+
+ - Functions

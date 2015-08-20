@@ -1,19 +1,19 @@
-### NAME
+# NAME
 
 cron -- NCM component to control cron entries for Linux and Solaris.
 
-### DESCRIPTION
+# DESCRIPTION
 
-The _cron_ component manages files in the `/etc/cron.d` directory on Linux
-and the `/var/spool/cron/crontabs` directory on Solaris.
+The _cron_ component manages files in the /etc/cron.d directory on Linux
+and the /var/spool/cron/crontabs directory on Solaris.
 
-#### Linux
+## Linux
 
 > Files managed by ncm-cron will have the ncm-cron.cron suffix.  Other files in
 > the directory are not affected by this component. The name of each file will be
 > taken from the nlist name.
 
-#### Solaris
+## Solaris
 
 > Solaris uses an older version of cron that does not make use of a cron.d
 > directory for crontabs. Ncm-cron **shares** the crontab with each user. To make
@@ -22,18 +22,18 @@ and the `/var/spool/cron/crontabs` directory on Solaris.
 > and NCM-CRON END:. Entries either side of these section identifiers are not
 > modified.
 >
-> Solaris **does** have a `/etc/cron.d` directory, however it uses this directory
+> Solaris **does** have a /etc/cron.d directory, however it uses this directory
 > for control files such as cron.allow and cron.deny.
 
-### MAIN RESOURCES
+# MAIN RESOURCES
 
-#### `/software/components/cron/entries`
+## /software/components/cron/entries
 
 A list containing cron structures (described above).
 
-### ENTRY RESOURCES
+# ENTRY RESOURCES
 
-Each cron entry in the `/software/components/cron/entries` list may
+Each cron entry in the /software/components/cron/entries list may
 contain the properties and resources described below. One of "frequency"
 or "timing" must be specified.
 
@@ -80,8 +80,8 @@ or "timing" must be specified.
 
     - name
 
-        name of the log file. If the name is not an absolute file name, file is created in `/var/log.`
-        Default name is the cron file name with .log extension in `/var/log.`
+        name of the log file. If the name is not an absolute file name, file is created in /var/log.
+        Default name is the cron file name with .log extension in /var/log.
 
     - owner
 
@@ -106,7 +106,7 @@ or "timing" must be specified.
     If the 'timing' nlist is used to specify the time, it can contain any of the
     keys: 'minute', 'hour', 'day', 'month' and 'weekday'. An unspecified key will
     have a value of '\*'. A further key of 'smear' can be used to specify (in
-    seconds) a maximum interval for smearing the start time, which can be as much
+    minutes) a maximum interval for smearing the start time, which can be as much
     as a day. When a smeared job is created, a random increment between zero and
     the smear time is applied to the start time of the job.  If the start time
     results in the job running on the following day, then all other fields (day,
@@ -122,7 +122,7 @@ or "timing" must be specified.
 
     Default : root
 
-### EXAMPLE
+# EXAMPLE
 
     "/software/components/cron/entries" = list(
       nlist(
@@ -143,28 +143,28 @@ or "timing" must be specified.
         "timing", nlist(
             "minute", "0",
             "hour", "1",
-            "smear", "180"),
+            "smear", 180),
         "command", "/bin/date")
       );
 
-On Linux this will create three files in `/etc/cron.d`:
+On Linux this will create three files in /etc/cron.d:
   ls.ncm-cron.cron
   hostname.ncm-cron.cron
   date.ncm-cron.cron
 
 On Solaris three extra entries will be added to the root crontab.
 
-### DEPENDENCIES
+# DEPENDENCIES
 
 None.
 
-### BUGS
+# BUGS
 
-#### Linux
+## Linux
 
 > None known.
 
-#### Solaris
+## Solaris
 
 > Editing the NCM-CRON BEGIN: and/or the NCM-CRON END: tag within a crontab will
 > cause unpredictable behaviour. Possible behavours are duplicate entries or
@@ -173,18 +173,20 @@ None.
 > Editing BETWEEN the tags will cause the edits to be overwritten the next time
 > ncm-cron runs.
 
+# AUTHOR
+
 Charles Loomis <charles.loomis@cern.ch>
 
-S
+# MAINTAINERS
 
-Guillaume Philippon <>
+Guillaume Philippon <philippo@lal.in2p3.fr>
 
 Mark Wilson <Mark.Wilson@MorganStanley.com>
 
-### VERSION
+# VERSION
 
-14.10.1-SNAPSHOT
+15.4.1-SNAPSHOT
 
-### SEE ALSO
+# SEE ALSO
 
 ncm-ncd(1)

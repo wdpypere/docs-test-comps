@@ -1,0 +1,104 @@
+# NAME
+
+CAF::Service - Class for starting and stopping daemons in different
+platforms
+
+# SYNOPSIS
+
+    use CAF::Service;
+    my $srv = CAF::Service->new(['ntpd'], log => $self, %opts);
+    $srv->reload();
+    $srv->stop();
+    $srv->start();
+    $srv->restart();
+    $srv->stop_sleep_start();
+
+Will do the right thing with SystemV Init scripts, Systemd units and
+Solaris' `svcadm`.
+
+# DESCRIPTION
+
+This class abstracts away the differences when operating with Daemons
+in different Unixes.
+
+## Private methods
+
+- `_initialize`
+
+    Initialize the process object. Arguments:
+
+    - `$services`
+
+        Reference to a list of services to be handled.
+
+    It takes some extra optional arguments:
+
+    - `log`
+
+        A `CAF::Reporter` object to log daemon activities to.
+
+    - `timeout`
+
+        Maximum execution time, in seconds, for any service operations. If
+        it's too slow it will be killed.  If not defined, the command won't
+        time out.
+
+        On Solaris it implies that `svcadm` actions are executed
+        synchronously.  After this timeout, the operation will continue in
+        background, but will NOT mark the service as failed.  For marking
+        timed out services operations as failed, we have to edit the method
+        definition, which is out of the scope of this method.  See the man
+        page for smf\_method for more details.
+
+        On systemd-based systems, the timeout parameter is ignored.  The
+        correct way to handle timeouts in systemd is to store them in the unit
+        file, which will ensure they are respected in any context that unit
+        may be called.
+
+    - `sleep`.
+
+        Used only in `stop_sleep_start`. Determines the number of 
+        seconds to sleep after `stop` before proceeding with `start`.
+
+    - `persistent`
+
+        Used only in the Solaris variant of `start` and `stop`.  Make the
+        enabling or disabling of this service persist in subsequent reboots.
+        Implies not passing the `-t` flag to `svcadm`.
+
+    - `recursive`.
+
+        Used only in the Solaris variant of `start` and `stop`.  Starts or
+        stops all the dependencies for the given daemons, too.
+
+    - `synchronous`
+
+        Used only in the Solaris variant of `restart`.  Waits until all
+        services have been restarted.
+
+        If no `timeout` was passed, it will wait forever.
+
+    ...
+
+## Public methods
+
+- `restart`
+
+    Restarts the daemons.
+
+- `start`
+
+    Starts the daemons.
+
+- `stop`
+
+    Stops the daemons
+
+- `reload`
+
+    Reloads the daemons
+
+- `stop_sleep_start`
+
+    Stops the daemon, sleep, and then start the dameon again. 
+    Only when both `stop` and `start` are successful, return success.

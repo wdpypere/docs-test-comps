@@ -1,12 +1,12 @@
-### NAME
+# NAME
 
 NCM::Component::spma::ips - NCM SPMA configuration component for IPS
 
-### SYNOPSIS
+# SYNOPSIS
 
 **Configure ()**
 
-### DESCRIPTION
+# DESCRIPTION
 
 Invoked by **NCM::Component::spma** via '**ncm-ncd -configure ncm-spma**' when
 **/software/components/spma/packager** is **ips**.  Processes requests for
@@ -16,7 +16,7 @@ command file that may be executed by **spma-run**.
 This module is intended for package management with Quattor on Solaris 11
 or later.
 
-### RESOURCES
+# RESOURCES
 
 - **/software/catalogues** ? nlist {}
 
@@ -126,7 +126,7 @@ or later.
 
     Default is **true**.
 
-### NOTES
+# NOTES
 
 This module does not support making changes in the currently active boot
 environment.  The intention is that it is executed when a host is rebooted
@@ -136,13 +136,13 @@ newly created boot environment if any changes were made.
 
 IPS publisher configuration is currently not supported by this module.
 
-### EXAMPLE CONFIGURATION
+# EXAMPLE CONFIGURATION
 
 The following PAN code snippet demonstrates how to prepare SPMA for
 Solaris:
 
     #
-    ### Configure SPMA appropriately for Solaris
+    # Configure SPMA appropriately for Solaris
     #
     prefix "/software/components/spma";
     "packager" = "ips";
@@ -153,10 +153,12 @@ Solaris:
                              "/software/uninstall");
     "flagfile" = "/var/tmp/spma-run-flag"
 
-Original author: German Cancio <German.C>
+# AUTHOR
+
+Original author: German Cancio <German.Cancio@cern.ch>
 
 Author of the IPS-based package manager: Mark R. Bannister.
 
-### SEE ALSO
+# SEE ALSO
 
 **ncm-ncd**(1), **panc**(5), **pkg**(5), **spma-run --man**, **pkgtree -h**.

@@ -1,8 +1,8 @@
-### NAME
+# NAME
 
 NCM::download - NCM download configuration component
 
-### SYNOPSIS
+# SYNOPSIS
 
 - Configure()
 
@@ -13,30 +13,30 @@ NCM::download - NCM download configuration component
 
     not available.
 
-### DESCRIPTION
+# DESCRIPTION
 
 Downloads files onto the local machine during the configuration, and
 optionally post-processes the files. The download is achieved by
 invoking "curl", so any URLs acceptable to curl (including local
 URL's) are allowed.
 
-### RESOURCES
+# RESOURCES
 
-- `/software/components/download/active` : boolean
+- /software/components/download/active : boolean
 
     activates/deactivates the component.
 
-- `/software/components/download/proto` : string
+- /software/components/download/proto : string
 
     The default protocol to use for any sources which do not
     specify the protocol.
 
-- `/software/components/download/server` : string
+- /software/components/download/server : string
 
     The default server hostname to use for any sources which
     do not specify the source.
 
-- `/software/components/download/proxyhosts` : list
+- /software/components/download/proxyhosts : list
 
     A list of strings. Each string should be a hostname (and possibly with ':port'
     suffix). If this is specifed, then a reverse proxy configuration is assumed
@@ -44,7 +44,7 @@ URL's) are allowed.
     proxy hosts will be used first before attempting the original source URL. The
     first proxy host to respond will be used for all subsequent download attempts.
 
-- `/software/components/download/files` : nlist
+- /software/components/download/files : nlist
 
     An nlist keyed by the escaped filename that is required for the
     destination file. The value associated with each key should be an
@@ -95,22 +95,22 @@ URL's) are allowed.
 
         The minimum number of minutes old that the file must be to be considered valid for download (defaults to 0);
 
-### FILES MODIFIED
+# FILES MODIFIED
 
 The component download modifies only the files specified within
 the configuration.
 
-### DEPENDENCIES
+# DEPENDENCIES
 
-#### Components to be run before:
-
-none.
-
-#### Components to be run after:
+## Components to be run before:
 
 none.
 
-### EXAMPLES
+## Components to be run after:
+
+none.
+
+# EXAMPLES
 
     "/software/components/download/active" = true;
     "/software/components/download" = nlist(
@@ -131,10 +131,10 @@ none.
                  )
     );
 
-### BUGS
+# BUGS
 
 none known.
 
-### SEE ALSO
+# SEE ALSO
 
 ncm-ncd(1)

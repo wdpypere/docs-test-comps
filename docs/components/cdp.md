@@ -1,14 +1,14 @@
-### NAME
+# NAME
 
 The _cdp_ component manages the configuration file
 `/etc/cdp-listend.conf.`
 
-### DESCRIPTION
+# DESCRIPTION
 
 The _cdp_ component manages the configuration file for the
 cdp-listend daemon.
 
-### RESOURCES
+# RESOURCES
 
 - `configfile : string`
 
@@ -49,7 +49,7 @@ cdp-listend daemon.
     The range of time delay for executing the fetch executable.  The
     execution will be delayed by \[0, fetch\_smear\] seconds.
 
-### EXAMPLES
+# EXAMPLES
 
     "/software/components/cdp/fetch" = "/usr/sbin/ccm-fetch";
     "/software/components/cdp/fetch_smear" = 30;

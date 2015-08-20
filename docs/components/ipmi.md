@@ -1,8 +1,8 @@
-### NAME
+# NAME
 
 NCM::ipmi - Components used to manage IPMI configuration
 
-### SYNOPSIS
+# SYNOPSIS
 
 - Configure()
 
@@ -12,32 +12,34 @@ NCM::ipmi - Components used to manage IPMI configuration
 
     Not implemented.
 
-### RESOURCES
+# RESOURCES
 
-- `/software/components/ipmi/active` : boolean
+- /software/components/ipmi/active : boolean
 
     activates/deactivates the component.
 
-### DEPENDENCIES
+# DEPENDENCIES
 
-#### Components to be run before:
-
-none.
-
-#### Components to be run after:
+## Components to be run before:
 
 none.
 
-### FILES
+## Components to be run after:
+
+none.
+
+# FILES
 
 This component doesn't touch any file.
 
-### BUGS
+# BUGS
 
 None.
 
-Guillaume PHILIPPON <>
+# AUTHOR
 
-### SEE ALSO
+Guillaume PHILIPPON <philippo@lal.in2p3.fr>
+
+# SEE ALSO
 
 ncd(1)

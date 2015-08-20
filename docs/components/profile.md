@@ -1,18 +1,18 @@
-### NAME
+# NAME
 
 profile: Create profile scripts defining environment variables and paths.
 
-### DESCRIPTION
+# DESCRIPTION
 
 The _profile_ component creates two scripts (sh and csh flavors, respectively .sh and .csh extension) in
 the given configuration directory.  This directory by default is
-`/etc/profile.d`.  These scripts contain environment variable and path
+/etc/profile.d.  These scripts contain environment variable and path
 definitions.
 
 Note that the only guarantee with respect to order is that all the
 environment variables will be defined before the paths.
 
-### RESOURCES
+# RESOURCES
 
 - configDir (/etc/profile.d)
 
@@ -67,9 +67,9 @@ environment variables will be defined before the paths.
 
         Default : true
 
-### FUNCTIONS
+# FUNCTIONS
 
-#### component\_profile\_add\_env()
+## component\_profile\_add\_env()
 
 This functions adds an environment variable to a script. It returns component profile configuration. There are 2
 calling formats :
@@ -79,7 +79,7 @@ calling formats :
 
 In the second form, 'env\_list' is a list of nlists. Each nlist must be a pair of environment variable name and value.
 
-#### component\_profile\_add\_path()
+## component\_profile\_add\_path()
 
 This functions adds a path variable to a script. It returns component profile configuration. The calling format is:
 
@@ -91,7 +91,7 @@ This functions adds a path variable to a script. It returns component profile co
 - prepend: this value is prepended to an existing value, if any
 - append: this value is appended to an existing value, if any
 
-### EXAMPLE
+# EXAMPLE
 
     '/software/components/profile/configDir' = "/etc/profile.d";
     '/software/components/profile/configDir' = "z_env";

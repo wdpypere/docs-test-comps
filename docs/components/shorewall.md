@@ -1,33 +1,35 @@
-### NAME
+# NAME
 
 NCM::shorewall - NCM shorewall configuration component
 
-### SYNOPSIS
+# SYNOPSIS
 
 - Configure()
 
     This component configures Shorewall.
 
-- `/software/components/shorewall/rules`
-- `/software/components/shorewall/interfaces`
-- `/software/components/shorewall/zones`
+- /software/components/shorewall/rules
+- /software/components/shorewall/interfaces
+- /software/components/shorewall/zones
 
-### DEPENDENCIES
+# DEPENDENCIES
 
-#### Components to be run before:
-
-none.
-
-#### Components to be run after:
+## Components to be run before:
 
 none.
 
-### BUGS
+## Components to be run after:
+
+none.
+
+# BUGS
 
 none known.
 
-Stijn De Weirdt <>
+# AUTHOR
 
-### SEE ALSO
+Stijn De Weirdt <stijn.dweirdt@ugent.be>
+
+# SEE ALSO
 
 ncm-ncd(1), shorewall(1)

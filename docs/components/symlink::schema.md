@@ -1,0 +1,62 @@
+ - Types
+  - /software/symlink/structure_symlink_replace_option_entry
+   - /software/symlink/structure_symlink_replace_option_entry/all
+    - optional
+    - type: string
+   - /software/symlink/structure_symlink_replace_option_entry/dir
+    - optional
+    - type: string
+   - /software/symlink/structure_symlink_replace_option_entry/dirempty
+    - optional
+    - type: string
+   - /software/symlink/structure_symlink_replace_option_entry/file
+    - optional
+    - type: string
+   - /software/symlink/structure_symlink_replace_option_entry/link
+    - optional
+    - type: string
+   - /software/symlink/structure_symlink_replace_option_entry/none
+    - optional
+    - type: string
+  - /software/symlink/structure_symlink_entry
+   - /software/symlink/structure_symlink_entry/name
+    - required
+    - type: string
+   - /software/symlink/structure_symlink_entry/target
+    - required
+    - type: string
+   - /software/symlink/structure_symlink_entry/exists
+    - optional
+    - type: boolean
+   - /software/symlink/structure_symlink_entry/delete
+    - optional
+    - type: boolean
+   - /software/symlink/structure_symlink_entry/replace
+    - optional
+    - type: structure_symlink_replace_option_entry
+  - /software/symlink/structure_symlink_context_entry
+   - /software/symlink/structure_symlink_context_entry/name
+    - required
+    - type: string
+   - /software/symlink/structure_symlink_context_entry/value
+    - required
+    - type: string
+  - /software/symlink/structure_symlink_option_entry
+   - /software/symlink/structure_symlink_option_entry/exists
+    - optional
+    - type: boolean
+   - /software/symlink/structure_symlink_option_entry/replace
+    - optional
+    - type: structure_symlink_replace_option_entry
+  - /software/symlink/component_symlink
+   - /software/symlink/component_symlink/links
+    - optional
+    - type: structure_symlink_entry
+   - /software/symlink/component_symlink/context
+    - optional
+    - type: structure_symlink_context_entry
+   - /software/symlink/component_symlink/options
+    - optional
+    - type: structure_symlink_option_entry
+
+ - Functions

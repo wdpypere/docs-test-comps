@@ -1,14 +1,14 @@
-### NAME
+# NAME
 
 ncm-postfix: Postfix server configuration
 
-### DESCRIPTION
+# DESCRIPTION
 
 postfix
 
-### RESOURCES
+# RESOURCES
 
-#### `/software/components/postfix`
+## /software/components/postfix
 
 The configuration information for the component. This structure
 contains three fields:
@@ -16,7 +16,7 @@ contains three fields:
 - `main`
 
     An nlist with all the possible configuration values for
-    `/etc/postfix/main.cf`. See ["main(5) for more details."](#main-5-for-more-details)
+    `/etc/postfix/main.cf`. See [main(5)](http://man.he.net/man5/main) for more details.
 
 - `master`
 
@@ -59,20 +59,20 @@ contains three fields:
 
     Each subtree is associated with a class of lookup tables. Each class
     of lookup tables is an nlist, in which the keys are the file names
-    (relative to `/etc/postfix`) that configure the access to such a database.
+    (relative to /etc/postfix) that configure the access to such a database.
 
     Currently, only LDAP lookups can be described, see
     [http://www.postfix.org/LDAP\_README.html](http://www.postfix.org/LDAP_README.html)
 
-### EXAMPLES
+# EXAMPLES
 
-#### Minimal configuration
+## Minimal configuration
 
 An empty nlist is valid for `main.cf`:
 
     "/software/components/postfix/main" = nlist();
 
-#### Storing aliases in LDAP
+## Storing aliases in LDAP
 
 Declaring an alias database stored in an LDAP server can be achieved as follows:
 
@@ -89,4 +89,3 @@ And we can instruct Postfix to access this database:
     "search_base" = "OU=foo,CN=bar";
     "query_filter" = "(an-ldap-filter)";
     "result_format" = "%s";
-

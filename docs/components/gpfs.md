@@ -1,32 +1,34 @@
-### NAME
+# NAME
 
 NCM::gpfs - NCM gpfs configuration component
 
-### SYNOPSIS
+# SYNOPSIS
 
 - Configure()
 
     This component configures GPFS.
 
-- `/software/components/gpfs/base`
-- `/software/components/gpfs/cfg`
+- /software/components/gpfs/base
+- /software/components/gpfs/cfg
 
-### DEPENDENCIES
+# DEPENDENCIES
 
-#### Components to be run before:
-
-none.
-
-#### Components to be run after:
+## Components to be run before:
 
 none.
 
-### BUGS
+## Components to be run after:
+
+none.
+
+# BUGS
 
 none known.
 
-Stijn De Weirdt <>
+# AUTHOR
 
-### SEE ALSO
+Stijn De Weirdt <stijn.dweirdt@ugent.be>
+
+# SEE ALSO
 
 ncm-ncd(1), gpfs(1)

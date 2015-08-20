@@ -1,8 +1,8 @@
-### NAME
+# NAME
 
 NCM::Component::spma - Quattor's package manager
 
-### SYNOPSIS
+# SYNOPSIS
 
 The SPMA component passes off to different back-ends depending
 on the type of packaging system specified in

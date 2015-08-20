@@ -1,8 +1,8 @@
-### NAME
+# NAME
 
 NCM::resolver - NCM resolver configuration component
 
-### SYNOPSIS
+# SYNOPSIS
 
 - Configure()
 
@@ -17,23 +17,23 @@ NCM::resolver - NCM resolver configuration component
 
     not available.
 
-### RESOURCES
+# RESOURCES
 
-- `/software/components/resolver/active` : boolean
+- /software/components/resolver/active : boolean
 
     activates/deactivates the component.
 
-- `/software/componens/resolver/search` : list
+- /software/componens/resolver/search : list
 
     A list of strings to use for the resolver search path.
 
-- `/software/components/resolver/servers` : list
+- /software/components/resolver/servers : list
 
     list of server addresses or hostnames. If these are
     hostnames, they will be resolved before the resolver 
     configuration is modified.
 
-- `/software/components/resolver/dnscache` : boolean
+- /software/components/resolver/dnscache : boolean
 
     If true, then configure dnscache with the server list
     and point resolv.conf at the localhost. This will
@@ -41,34 +41,34 @@ NCM::resolver - NCM resolver configuration component
     the dnscache package is available on the machine:
     this component does not enforce that.
 
-### FILES MODIFIED
+# FILES MODIFIED
 
 The component resolver modifies the following files:
 
-- `/etc/resolv.conf`
-- `/var/spool/dnscache/servers`/@
+- /etc/resolv.conf
+- /var/spool/dnscache/servers/@
 
-### DEPENDENCIES
+# DEPENDENCIES
 
-#### Components to be run before:
-
-none.
-
-#### Components to be run after:
+## Components to be run before:
 
 none.
 
-### EXAMPLES
+## Components to be run after:
+
+none.
+
+# EXAMPLES
 
 "/software/components/resolver/active" = true;
 "/software/components/resolver/search" = list("ms.com");
 "/software/components/resolver/servers" = list("server1.ms.com");
 "/software/components/resolver/dnscache" = true;
 
-### BUGS
+# BUGS
 
 none known.
 
-### SEE ALSO
+# SEE ALSO
 
 ncm-ncd(1)

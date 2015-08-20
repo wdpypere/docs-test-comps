@@ -1,0 +1,37 @@
+ - Types
+  - /software/metaconfig/metaconfig_extension
+  - /software/metaconfig/caf_service_action
+  - /software/metaconfig/metaconfig_config
+   - /software/metaconfig/metaconfig_config/mode
+    - required
+    - type: long
+   - /software/metaconfig/metaconfig_config/owner
+    - required
+    - type: string
+   - /software/metaconfig/metaconfig_config/group
+    - required
+    - type: string
+   - /software/metaconfig/metaconfig_config/daemon
+    - optional
+    - type: string
+   - /software/metaconfig/metaconfig_config/daemons
+    - optional
+    - type: caf_service_action
+   - /software/metaconfig/metaconfig_config/module
+    - required
+    - type: string
+   - /software/metaconfig/metaconfig_config/backup
+    - optional
+    - type: string
+   - /software/metaconfig/metaconfig_config/preamble
+    - optional
+    - type: string
+   - /software/metaconfig/metaconfig_config/contents
+    - required
+    - type: metaconfig_extension
+  - /software/metaconfig/metaconfig_component
+   - /software/metaconfig/metaconfig_component/services
+    - required
+    - type: metaconfig_config
+
+ - Functions

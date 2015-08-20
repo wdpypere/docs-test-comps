@@ -1,13 +1,13 @@
-### NAME
+# NAME
 
 NCM::chkconfig - NCM chkconfig component
 
-### SYNOPSIS
+# SYNOPSIS
 
 - Configure()
 
     Updates runlevel information for system services by using **chkconfig** that are
-    defined in `/software/components/chkconfig`/. 
+    defined in /software/components/chkconfig/. 
 
     Also starts/stops those services that have option `startstop` set to true in 
     and have one of the following options specified: 
@@ -22,7 +22,7 @@ NCM::chkconfig - NCM chkconfig component
 
     Not available.
 
-### RESOURCES
+# RESOURCES
 
 - `/software/components/chkconfig/active : boolean`
 
@@ -62,7 +62,7 @@ NCM::chkconfig - NCM chkconfig component
 
     If service has value 'add', and is already known to chkconfig, 'reset'
     will be run. This will restore service runlevel to its default values
-    and protect from any manual changes of runlevels by `/sbin/chkconfig.`
+    and protect from any manual changes of runlevels by /sbin/chkconfig.
 
 - `/software/components/chkconfig/service/<service>/del : boolean`
 
@@ -77,7 +77,7 @@ NCM::chkconfig - NCM chkconfig component
     action, but this relies on the service's init script correctly
     reporting current state.
 
-### EXAMPLES
+# EXAMPLES
 
 The following example will start named on system default runlevels:
 
@@ -96,11 +96,11 @@ Disable and stop xinetd:
 
     "/software/components/chkconfig/service/xinetd" = nlist("off", "", "startstop", true); 
 
-### DEPENDENCIES
+# DEPENDENCIES
 
 None.
 
-### BUGS
+# BUGS
 
 - [https://savannah.cern.ch/bugs/?45924](https://savannah.cern.ch/bugs/?45924)
 
@@ -110,8 +110,10 @@ None.
 - **reset** behaviour should check against current config?
 - **startstop** logic depends on init script, will mindlessly start some services despite them running already
 
-Teemu Sidoroff <Teemu.S>
+# AUTHOR
 
-### SEE ALSO
+Teemu Sidoroff <Teemu.Sidoroff@cern.ch>
+
+# SEE ALSO
 
 ncm-ncd(1), chkconfig(8), http://cern.ch/quattor

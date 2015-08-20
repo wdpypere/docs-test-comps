@@ -1,13 +1,13 @@
-### NAME
+# NAME
 
 postgresql : NCM component to manage PostgreSQL configuration.
 
-### DESCRIPTION
+# DESCRIPTION
 
 This component allows to manage configuration of PostgreSQL.
 It's very basic in functionality (originally developed for dcache usage). 
 
-### RESOURCES
+# RESOURCES
 
 - `/software/components/postgresql/config/debug_print`
 
@@ -21,7 +21,7 @@ It's very basic in functionality (originally developed for dcache usage).
 
 - `/software/components/postgresql/pg_dir`
 
-    Name of the base directory of the postgres install (default = `/var/lib/pgsql`). 
+    Name of the base directory of the postgres install (default = /var/lib/pgsql). 
     This directory will be used for the installation (eg. create the PG\_VERSION in subdirectory data).
 
 - `/software/components/postgresql/pg_port`
@@ -68,12 +68,18 @@ It's very basic in functionality (originally developed for dcache usage).
     Optional: when a database is newly created, and the `/software/components/postgresql/databases/[db_name]/installfile` is defined, initialise the database with this user. 
     (defaults to the owner of the db as defined in `/software/components/postgresql/databases/[db_name]/user`)
 
-### DEPENDENCIES
+# DEPENDENCIES
 
 None.
 
-### BUGS
+# BUGS
 
 None known.
 
+# AUTHOR
 
+wouter.depypere@ugent.be
+
+# MAINTAINER
+
+wouter.depypere@ugent.be

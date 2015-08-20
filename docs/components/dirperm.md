@@ -1,8 +1,8 @@
-### NAME
+# NAME
 
 dirperm: permissions and file/directory creation NCM component
 
-### DESCRIPTION
+# DESCRIPTION
 
 Object to set permissions and ownership of files and directories.
 Will create directories if they do not exist (with the proper
@@ -17,9 +17,9 @@ ownership as the directory.
 When creating a file, all of the parent directories must already
 exist.
 
-### RESOURCES
+# RESOURCES
 
-#### `/software/components/dirperm/paths`
+## `/software/components/dirperm/paths`
 
 A list of files/directories to manage with this component.
 Each entry in the list must be of the `structure_dirperm_entry` type which has the following fields:
@@ -47,7 +47,7 @@ Each entry in the list must be of the `structure_dirperm_entry` type which has t
     If the target is a directory, this can be used to prepopulate the directory by copying files from multiple sources.
     This is particularly useful for home directories.
 
-### EXAMPLES
+# EXAMPLES
 
     "/software/components/dirperm/paths" = list(
         nlist(

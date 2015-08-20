@@ -1,8 +1,8 @@
-### NAME
+# NAME
 
 ncm-accounts: NCM component to manage the local accounts on the machine.
 
-### DESCRIPTION
+# DESCRIPTION
 
 The _accounts_ component manages the local accounts on a machine. LDAP
 authentication depends on the LDAP configuration, which is handled by
@@ -10,7 +10,7 @@ authentication depends on the LDAP configuration, which is handled by
 
 Shadowing of passwords is also controlled by [ncm-authconfig](https://metacpan.org/pod/ncm-authconfig).
 
-### FUNCTIONS
+# FUNCTIONS
 
 accounts provides several functions as an API to handle creation of users and groups.
 They are mainly targeted at helping creating consistent accounts across machines,
@@ -25,7 +25,7 @@ calling them, mainly :
 
 - ACCOUNTS\_USER\_HOME\_ROOT
 
-    defines default root for home directory (D: `/home`)
+    defines default root for home directory (D: /home)
 
 - ACCOUNTS\_USER\_CREATE\_HOME
 
@@ -49,7 +49,7 @@ calling them, mainly :
 
     defines a default value for group comment (D: "Created by ncm-accounts")
 
-#### create\_accounts\_from\_db(userList:nlist, users:list:optional, accountType:optional)
+## create\_accounts\_from\_db(userList:nlist, users:list:optional, accountType:optional)
 
 This function creates users or groups from a nlist containing user or group characteristics.
 It updates a structure\_accounts (return value may be assigned to "/software/components/accounts").
@@ -63,31 +63,31 @@ between nodes.
 By default (accountType undefined or 0), this function creates user accounts.
 To create groups, set third parameter (accountType) to 1.
 
-#### create\_group(groupname:string, params:structure\_groupinfo)
+## create\_group(groupname:string, params:structure\_groupinfo)
 
 This function creates a group, applying some defaults defined by variables and checking
 information consistency.
 It updates a structure\_accounts (return value may be assigned to "/software/components/accounts").
 
-#### create\_user(username:string, params:structure\_userinfo)
+## create\_user(username:string, params:structure\_userinfo)
 
 This function creates a user, applying some defaults defined by variables and checking
  information consistency (e.g. group existence).
 It updates a structure\_accounts (return value may be assigned to "/software/components/accounts").
 
-#### keep\_user\_group(user\_or\_group:string or list of string)
+## keep\_user\_group(user\_or\_group:string or list of string)
 
 This functions adds a user or group to the kept\_users or kept\_groups resources. The
 argument can be a string or list of strings. The return value can be assigned to 
-`/software/components/accounts/kept`\_users or `/software/components/accounts/kept`\_groups.
+/software/components/accounts/kept\_users or /software/components/accounts/kept\_groups.
 
-### RESOURCES
+# RESOURCES
 
-#### `/software/components/accounts/rootpwd`
+## /software/components/accounts/rootpwd
 
 The crypted root password for the machine.
 
-#### `/software/components/accounts/users`
+## /software/components/accounts/users
 
 An nlist of users to configure on the node.  The key is the account
 name (or base name for pool accounts). The numerical UID is
@@ -129,7 +129,7 @@ mandatory. The available fields are:
     is preserved for an existing account (for a new account, it will remain undefined,
     meaning that the default shell on the system will be used). 
 
-    Defaults to `/bin/bash.`
+    Defaults to /bin/bash.
 
 - uid
 
@@ -156,7 +156,7 @@ mandatory. The available fields are:
     user name as a base.  E.g. a base name of "atlas" and a poolSize=3
     will create three accounts atlas0 atlas1 atlas2.
 
-#### `/software/components/accounts/groups`
+## /software/components/accounts/groups
 
 An nlist of groups to configure on the node.  The key is the group
 name.  At least one field must be specified.
@@ -169,9 +169,9 @@ name.  At least one field must be specified.
 
     the optional gid number for the group
 
-#### `/software/components/accounts/login`\_defs
+## /software/components/accounts/login\_defs
 
-A nlist of values to be set in `/etc/login.defs`. NOTE: This
+A nlist of values to be set in /etc/login.defs. NOTE: This
 configuration file is specific to RedHat-like systems; setting will be
 ignored on other systems.  This file configures all kinds of default
 settings such as:
@@ -204,12 +204,12 @@ settings such as:
 
     If useradd should create home directories for users by default
 
-#### `/software/components/accounts/remove`\_unknown
+## /software/components/accounts/remove\_unknown
 
 Flag to indicate whether unknown accounts should be deleted.  The
 default is false.  The root account can never be removed.
 
-#### `/software/components/accounts/preserved`\_accounts
+## /software/components/accounts/preserved\_accounts
 
 This property may have 3 values: 'none', 'system', 'dyn\_user\_group'. It controls
 the accounts/groups that have to be preserved when 'remove\_unknown' is true 
@@ -217,32 +217,34 @@ the accounts/groups that have to be preserved when 'remove\_unknown' is true
 
 The effect of each possible value is
 
-> all accounts/groups in the system range (strictly below GID/UID\_MIN as
-> defined in `/etc/login.defs`) are preserved even though they are not present
-> in the configuration. It is possible to use login\_defs/uid\_min and
-> login\_defs/gid\_min properties to control the preserved ranges.
->
-> dyn\_user\_group
->
-> all accounts/groups in the system range and in the
-> range used for dynamic uid/gid allocation by useradd command, ie. all
-> accounts/groups with uid/gid less or equal to GID/UID\_MAX as defined in 
-> `/etc/login.defs`, are preserved. The exact list of accounts preserved
-> depends on UID/GID\_MAX value. It is possible to use login\_defs/uid\_max and
-> login\_defs/gid\_max properties to control the preserved ranges. Not that
-> remove\_unknown=true with preserved\_accounts=dyn\_user\_group and UID/GID\_MAX
-> set to the highest possible IDs is equivalent to remove\_unknown=false.
->
-> none
->
-> all existing accounts/groups not present in the configuration are
-> removed from the system (except root).
+- system
+
+    all accounts/groups in the system range (strictly below GID/UID\_MIN as
+    defined in /etc/login.defs) are preserved even though they are not present
+    in the configuration. It is possible to use login\_defs/uid\_min and
+    login\_defs/gid\_min properties to control the preserved ranges.
+
+- dyn\_user\_group
+
+    all accounts/groups in the system range and in the
+    range used for dynamic uid/gid allocation by useradd command, ie. all
+    accounts/groups with uid/gid less or equal to GID/UID\_MAX as defined in 
+    /etc/login.defs, are preserved. The exact list of accounts preserved
+    depends on UID/GID\_MAX value. It is possible to use login\_defs/uid\_max and
+    login\_defs/gid\_max properties to control the preserved ranges. Not that
+    remove\_unknown=true with preserved\_accounts=dyn\_user\_group and UID/GID\_MAX
+    set to the highest possible IDs is equivalent to remove\_unknown=false.
+
+- none
+
+    all existing accounts/groups not present in the configuration are
+    removed from the system (except root).
 
 Default: dyn\_user\_group
 
-### LIMITATIONS
+# LIMITATIONS
 
-#### Local users belonging to LDAP groups
+## Local users belonging to LDAP groups
 
 When a local user has to belong to a group defined only on LDAP, a
 local group with the desired numerical ID is created.
@@ -252,14 +254,13 @@ next run of the component if `remove_unknown` is set to true. This is
 somewhat ugly, but doesn't affect the system behaviour at all, so it
 **won't** be fixed.
 
-#### nsswitch.conf status
+## nsswitch.conf status
 
 The component has been tested with `files` as the primary source on
-`/etc/nsswitch.conf` for _group_ and _passwd_. Different settings may
+/etc/nsswitch.conf for _group_ and _passwd_. Different settings may
 produce strange behaviour. These settings are not controlled by
 ncm-accounts but by [ncm-authconfig](https://metacpan.org/pod/ncm-authconfig).
 
-### SEE ALSO
+# SEE ALSO
 
 [ncm-authconfig](https://metacpan.org/pod/ncm-authconfig)
-

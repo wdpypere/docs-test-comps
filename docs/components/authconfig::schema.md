@@ -1,0 +1,1046 @@
+ - Types
+  - /software/authconfig/yesnostring
+  - /software/authconfig/authconfig_pamadditions_line_type
+   - /software/authconfig/authconfig_pamadditions_line_type/order
+    - required
+    - type: string
+   - /software/authconfig/authconfig_pamadditions_line_type/entry
+    - required
+    - type: string
+  - /software/authconfig/authconfig_pamadditions_type
+   - /software/authconfig/authconfig_pamadditions_type/conffile
+    - required
+    - type: string
+   - /software/authconfig/authconfig_pamadditions_type/section
+    - required
+    - type: string
+   - /software/authconfig/authconfig_pamadditions_type/lines
+    - required
+    - type: authconfig_pamadditions_line_type
+  - /software/authconfig/authconfig_method_generic_type
+   - /software/authconfig/authconfig_method_generic_type/enable
+    - required
+    - type: boolean
+  - /software/authconfig/authconfig_method_afs_type
+   - /software/authconfig/authconfig_method_afs_type/cell
+    - required
+    - type: type_fqdn
+  - /software/authconfig/authconfig_method_ldap_tls_type
+   - /software/authconfig/authconfig_method_ldap_tls_type/enable
+    - required
+    - type: boolean
+   - /software/authconfig/authconfig_method_ldap_tls_type/peercheck
+    - required
+    - type: boolean
+   - /software/authconfig/authconfig_method_ldap_tls_type/cacertfile
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_tls_type/cacertdir
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_tls_type/ciphers
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_tls_type/reqcert
+    - required
+    - type: string
+  - /software/authconfig/authconfig_method_ldap_timeouts_type
+   - /software/authconfig/authconfig_method_ldap_timeouts_type/idle
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_method_ldap_timeouts_type/bind
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_method_ldap_timeouts_type/search
+    - optional
+    - type: long
+  - /software/authconfig/authconfig_nss_map_objectclass
+   - /software/authconfig/authconfig_nss_map_objectclass/posixAccount
+    - required
+    - type: string
+   - /software/authconfig/authconfig_nss_map_objectclass/shadowAccount
+    - required
+    - type: string
+   - /software/authconfig/authconfig_nss_map_objectclass/posixGroup
+    - required
+    - type: string
+  - /software/authconfig/authconfig_nss_map_attribute
+   - /software/authconfig/authconfig_nss_map_attribute/uid
+    - required
+    - type: string
+   - /software/authconfig/authconfig_nss_map_attribute/homeDirectory
+    - required
+    - type: string
+   - /software/authconfig/authconfig_nss_map_attribute/uniqueMember
+    - required
+    - type: string
+   - /software/authconfig/authconfig_nss_map_attribute/uidNumber
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nss_map_attribute/gidNumber
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nss_map_attribute/cn
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nss_map_attribute/userPassword
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nss_map_attribute/loginShell
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nss_map_attribute/gecos
+    - optional
+    - type: string
+  - /software/authconfig/authconfig_nss_override_attribute_value
+   - /software/authconfig/authconfig_nss_override_attribute_value/unixHomeDirectory
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nss_override_attribute_value/loginShell
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nss_override_attribute_value/gecos
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nss_override_attribute_value/gidNumber
+    - optional
+    - type: long
+  - /software/authconfig/connect_policy
+  - /software/authconfig/authconfig_method_ldap_type
+   - /software/authconfig/authconfig_method_ldap_type/servers
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/nssonly
+    - optional
+    - type: boolean
+   - /software/authconfig/authconfig_method_ldap_type/conffile
+    - required
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/basedn
+    - required
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/tls
+    - optional
+    - type: authconfig_method_ldap_tls_type
+   - /software/authconfig/authconfig_method_ldap_type/binddn
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/bindpw
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/scope
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/rootbinddn
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/port
+    - optional
+    - type: type_port
+   - /software/authconfig/authconfig_method_ldap_type/timeouts
+    - optional
+    - type: authconfig_method_ldap_timeouts_type
+   - /software/authconfig/authconfig_method_ldap_type/pam_filter
+    - required
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/pam_login_attribute
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/pam_lookup_policy
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/pam_password
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/pam_groupdn
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/pam_member_attribute
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/pam_check_service_attr
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/pam_check_host_attr
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/pam_min_uid
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_method_ldap_type/pam_max_uid
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_method_ldap_type/nss_base_passwd
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/nss_base_group
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/nss_base_shadow
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/bind_policy
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/ssl
+    - required
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/nss_map_objectclass
+    - optional
+    - type: authconfig_nss_map_objectclass
+   - /software/authconfig/authconfig_method_ldap_type/nss_map_attribute
+    - optional
+    - type: authconfig_nss_map_attribute
+   - /software/authconfig/authconfig_method_ldap_type/nss_override_attribute_value
+    - optional
+    - type: authconfig_nss_override_attribute_value
+   - /software/authconfig/authconfig_method_ldap_type/nss_initgroups_ignoreusers
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/debug
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_method_ldap_type/log_dir
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_ldap_type/nss_paged_results
+    - required
+    - type: yesnostring
+   - /software/authconfig/authconfig_method_ldap_type/pagesize
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_method_ldap_type/nss_connect_policy
+    - optional
+    - type: connect_policy
+  - /software/authconfig/authconfig_method_nis_type
+   - /software/authconfig/authconfig_method_nis_type/servers
+    - required
+    - type: type_hostname
+   - /software/authconfig/authconfig_method_nis_type/domain
+    - required
+    - type: string
+  - /software/authconfig/authconfig_method_krb5_type
+   - /software/authconfig/authconfig_method_krb5_type/kdcs
+    - optional
+    - type: type_hostname
+   - /software/authconfig/authconfig_method_krb5_type/adminservers
+    - optional
+    - type: type_hostname
+   - /software/authconfig/authconfig_method_krb5_type/realm
+    - required
+    - type: string
+  - /software/authconfig/authconfig_method_smb_type
+   - /software/authconfig/authconfig_method_smb_type/servers
+    - required
+    - type: type_hostname
+   - /software/authconfig/authconfig_method_smb_type/workgroup
+    - required
+    - type: string
+  - /software/authconfig/authconfig_method_hesiod_type
+   - /software/authconfig/authconfig_method_hesiod_type/lhs
+    - required
+    - type: string
+   - /software/authconfig/authconfig_method_hesiod_type/rhs
+    - required
+    - type: string
+  - /software/authconfig/authconfig_method_files_type
+  - /software/authconfig/authconfig_nslcd_map_attributes
+   - /software/authconfig/authconfig_nslcd_map_attributes/uid
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/gid
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/uidNumber
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/gidNumber
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/gecos
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/homeDirectory
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/loginShell
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/shadowLastChange
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/shadowMin
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/shadowMax
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/shadowWarning
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/shadowInactive
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/shadowExpire
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/shadowFlag
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/memberUid
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/memberNisNetgroup
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/nisNetgroupTriple
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/ipServicePort
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/ipServiceProtocol
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/ipProtocolNumber
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/oncRpcNumber
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/ipHostNumber
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/ipNetworkNumber
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/ipNetmaskNumber
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/macAddress
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/bootParameter
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/bootFile
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/nisMapName
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/nisMapEntry
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_map_attributes/uniqueMember
+    - optional
+    - type: string
+  - /software/authconfig/authconfig_nslcd_maps
+   - /software/authconfig/authconfig_nslcd_maps/alias
+    - optional
+    - type: authconfig_nslcd_map_attributes
+   - /software/authconfig/authconfig_nslcd_maps/ethers
+    - optional
+    - type: authconfig_nslcd_map_attributes
+   - /software/authconfig/authconfig_nslcd_maps/group
+    - optional
+    - type: authconfig_nslcd_map_attributes
+   - /software/authconfig/authconfig_nslcd_maps/host
+    - optional
+    - type: authconfig_nslcd_map_attributes
+   - /software/authconfig/authconfig_nslcd_maps/netgroup
+    - optional
+    - type: authconfig_nslcd_map_attributes
+   - /software/authconfig/authconfig_nslcd_maps/networks
+    - optional
+    - type: authconfig_nslcd_map_attributes
+   - /software/authconfig/authconfig_nslcd_maps/passwd
+    - optional
+    - type: authconfig_nslcd_map_attributes
+   - /software/authconfig/authconfig_nslcd_maps/protocols
+    - optional
+    - type: authconfig_nslcd_map_attributes
+   - /software/authconfig/authconfig_nslcd_maps/service
+    - optional
+    - type: authconfig_nslcd_map_attributes
+   - /software/authconfig/authconfig_nslcd_maps/shadow
+    - optional
+    - type: authconfig_nslcd_map_attributes
+  - /software/authconfig/authconfig_nslcd_filter
+   - /software/authconfig/authconfig_nslcd_filter/alias
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_filter/ethers
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_filter/group
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_filter/host
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_filter/netgroup
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_filter/networks
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_filter/passwd
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_filter/protocols
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_filter/service
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_nslcd_filter/shadow
+    - optional
+    - type: string
+  - /software/authconfig/authconfig_method_nslcd_type
+   - /software/authconfig/authconfig_method_nslcd_type/threads
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_method_nslcd_type/uid
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/gid
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/uri
+    - optional
+    - type: type_hostURI
+   - /software/authconfig/authconfig_method_nslcd_type/binddn
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/rootpwmoddn
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/krb5_ccname
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/basedn
+    - required
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/base
+    - required
+    - type: authconfig_nslcd_filter
+   - /software/authconfig/authconfig_method_nslcd_type/scope
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/deref
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/filter
+    - optional
+    - type: authconfig_nslcd_filter
+   - /software/authconfig/authconfig_method_nslcd_type/map
+    - optional
+    - type: authconfig_nslcd_maps
+   - /software/authconfig/authconfig_method_nslcd_type/bind_timelimit
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_method_nslcd_type/timelimit
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_method_nslcd_type/idle_timelimit
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_method_nslcd_type/reconnect_sleeptime
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_method_nslcd_type/reconnect_retrytime
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_method_nslcd_type/ssl
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/tls_reqcert
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/tls_cacertdir
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/tls_randfile
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/tls_ciphers
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/tls_cert
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/tls_cert
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/tls_key
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/pagesize
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_method_nslcd_type/nss_initgroups_ignoreusers
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/pam_authz_search
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_method_nslcd_type/bindpw
+    - optional
+    - type: string
+  - /software/authconfig/sssd_provider_string
+   - decription: 
+    Valid SSSD providers.  For now we only implement ldap, simple and local
+
+  - /software/authconfig/authconfig_sssd_simple
+   - decription: 
+    Simple access provider for SSSD.  See the sssd-simple man page.
+
+   - /software/authconfig/authconfig_sssd_simple/allow_users
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_simple/deny_users
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_simple/allow_groups
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_simple/deny_groups
+    - optional
+    - type: string
+  - /software/authconfig/ldap_schema
+  - /software/authconfig/ldap_authok
+  - /software/authconfig/ldap_deref
+  - /software/authconfig/ldap_order
+  - /software/authconfig/sssd_chpass
+   - decription: 
+    LDAP chpass fields
+
+   - /software/authconfig/sssd_chpass/uri
+    - optional
+    - type: type_absoluteURI
+   - /software/authconfig/sssd_chpass/backup_uri
+    - optional
+    - type: type_absoluteURI
+   - /software/authconfig/sssd_chpass/dns_service_name
+    - optional
+    - type: string
+   - /software/authconfig/sssd_chpass/update_last_change
+    - required
+    - type: boolean
+  - /software/authconfig/sssd_ldap_defaults
+   - /software/authconfig/sssd_ldap_defaults/bind_dn
+    - optional
+    - type: string
+   - /software/authconfig/sssd_ldap_defaults/authtok_type
+    - required
+    - type: ldap_authok
+   - /software/authconfig/sssd_ldap_defaults/authtok
+    - optional
+    - type: string
+  - /software/authconfig/sssd_netgroup
+   - decription: 
+    LDAP netgroup fields
+
+   - /software/authconfig/sssd_netgroup/object_class
+    - required
+    - type: string
+   - /software/authconfig/sssd_netgroup/name
+    - required
+    - type: string
+   - /software/authconfig/sssd_netgroup/member
+    - required
+    - type: string
+   - /software/authconfig/sssd_netgroup/triple
+    - required
+    - type: string
+   - /software/authconfig/sssd_netgroup/uuid
+    - required
+    - type: string
+   - /software/authconfig/sssd_netgroup/modify_timestamp
+    - required
+    - type: string
+   - /software/authconfig/sssd_netgroup/search_base
+    - optional
+    - type: string
+  - /software/authconfig/sssd_autofs
+   - decription: 
+    LDAP autofs fields
+
+   - /software/authconfig/sssd_autofs/map_object_class
+    - required
+    - type: string
+   - /software/authconfig/sssd_autofs/map_name
+    - required
+    - type: string
+   - /software/authconfig/sssd_autofs/entry_object_class
+    - required
+    - type: string
+   - /software/authconfig/sssd_autofs/entry_key
+    - required
+    - type: string
+   - /software/authconfig/sssd_autofs/entry_value
+    - required
+    - type: string
+   - /software/authconfig/sssd_autofs/search_base
+    - optional
+    - type: string
+  - /software/authconfig/sssd_ldap_service
+   - decription: 
+    LDAP IP service fields
+
+   - /software/authconfig/sssd_ldap_service/object_class
+    - required
+    - type: string
+   - /software/authconfig/sssd_ldap_service/name
+    - required
+    - type: string
+   - /software/authconfig/sssd_ldap_service/port
+    - required
+    - type: string
+   - /software/authconfig/sssd_ldap_service/proto
+    - required
+    - type: string
+   - /software/authconfig/sssd_ldap_service/search_base
+    - optional
+    - type: string
+  - /software/authconfig/authconfig_sssd_ldap
+   - decription: 
+    LDAP access provider for SSSD.  See the sssd-ldap man page.
+    Timeouts are expressed in seconds.
+
+   - /software/authconfig/authconfig_sssd_ldap/user
+    - required
+    - type: sssd_user
+   - /software/authconfig/authconfig_sssd_ldap/group
+    - required
+    - type: sssd_group
+   - /software/authconfig/authconfig_sssd_ldap/chpass
+    - optional
+    - type: sssd_chpass
+   - /software/authconfig/authconfig_sssd_ldap/default
+    - required
+    - type: sssd_ldap_defaults
+   - /software/authconfig/authconfig_sssd_ldap/sasl
+    - optional
+    - type: sssd_sasl
+   - /software/authconfig/authconfig_sssd_ldap/krb5
+    - optional
+    - type: sssd_krb5
+   - /software/authconfig/authconfig_sssd_ldap/sudo
+    - optional
+    - type: sssd_sudo
+   - /software/authconfig/authconfig_sssd_ldap/sudorule
+    - optional
+    - type: sssd_sudorule
+   - /software/authconfig/authconfig_sssd_ldap/tls
+    - optional
+    - type: sssd_tls
+   - /software/authconfig/authconfig_sssd_ldap/netgroup
+    - optional
+    - type: sssd_netgroup
+   - /software/authconfig/authconfig_sssd_ldap/autofs
+    - optional
+    - type: sssd_autofs
+   - /software/authconfig/authconfig_sssd_ldap/uri
+    - required
+    - type: type_absoluteURI
+   - /software/authconfig/authconfig_sssd_ldap/backup_uri
+    - optional
+    - type: type_absoluteURI
+   - /software/authconfig/authconfig_sssd_ldap/search_base
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_ldap/schema
+    - required
+    - type: ldap_schema
+   - /software/authconfig/authconfig_sssd_ldap/service
+    - optional
+    - type: sssd_ldap_service
+   - /software/authconfig/authconfig_sssd_ldap/krb5_backup_server
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_ldap/krb5_canonicalize
+    - optional
+    - type: boolean
+   - /software/authconfig/authconfig_sssd_ldap/krb5_realm
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_ldap/krb5_server
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_ldap/access_filter
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_ldap/access_order
+    - required
+    - type: ldap_order
+   - /software/authconfig/authconfig_sssd_ldap/connection_expire_timeout
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_ldap/deref
+    - required
+    - type: ldap_deref
+   - /software/authconfig/authconfig_sssd_ldap/deref
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_ldap/deref_threshold
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_sssd_ldap/disable_paging
+    - required
+    - type: boolean
+   - /software/authconfig/authconfig_sssd_ldap/dns_service_name
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_ldap/entry_usn
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_ldap/enumeration_refresh_timeout
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_ldap/enumeration_search_timeout
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_ldap/force_upper_case_realm
+    - required
+    - type: boolean
+   - /software/authconfig/authconfig_sssd_ldap/groups_use_matching_rule_in_chain
+    - optional
+    - type: boolean
+   - /software/authconfig/authconfig_sssd_ldap/id_use_start_tls
+    - optional
+    - type: boolean
+   - /software/authconfig/authconfig_sssd_ldap/id_mapping
+    - required
+    - type: boolean
+   - /software/authconfig/authconfig_sssd_ldap/network_timeout
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_ldap/ns_account_lock
+    - required
+    - type: string
+   - /software/authconfig/authconfig_sssd_ldap/offline_timeout
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_sssd_ldap/opt_timeout
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_ldap/page_size
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_ldap/purge_cache_timeout
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_ldap/pwd_policy
+    - required
+    - type: string
+   - /software/authconfig/authconfig_sssd_ldap/referrals
+    - required
+    - type: boolean
+   - /software/authconfig/authconfig_sssd_ldap/rootdse_last_usn
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_ldap/search_timeout
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_ldap/use_object_class
+    - required
+    - type: string
+   - /software/authconfig/authconfig_sssd_ldap/account_expire_policy
+    - optional
+    - type: string
+  - /software/authconfig/sssd_service
+  - /software/authconfig/sssd_global
+   - /software/authconfig/sssd_global/debug_level
+    - required
+    - type: long
+   - /software/authconfig/sssd_global/config_file_version
+    - required
+    - type: long
+   - /software/authconfig/sssd_global/services
+    - required
+    - type: sssd_service
+   - /software/authconfig/sssd_global/reconnection_retries
+    - required
+    - type: long
+   - /software/authconfig/sssd_global/re_expression
+    - optional
+    - type: string
+   - /software/authconfig/sssd_global/full_name_format
+    - optional
+    - type: string
+   - /software/authconfig/sssd_global/try_inotify
+    - required
+    - type: boolean
+   - /software/authconfig/sssd_global/krb5_rcache_dir
+    - optional
+    - type: string
+   - /software/authconfig/sssd_global/default_domain_suffix
+    - optional
+    - type: string
+  - /software/authconfig/sssd_pam
+   - /software/authconfig/sssd_pam/debug_level
+    - required
+    - type: long
+   - /software/authconfig/sssd_pam/offline_credentials_expiration
+    - required
+    - type: long
+   - /software/authconfig/sssd_pam/offline_failed_login_attempts
+    - required
+    - type: long
+   - /software/authconfig/sssd_pam/offline_failed_login_delay
+    - required
+    - type: long
+   - /software/authconfig/sssd_pam/pam_verbosity
+    - required
+    - type: long
+   - /software/authconfig/sssd_pam/pam_id_timeout
+    - required
+    - type: long
+   - /software/authconfig/sssd_pam/pam_pwd_expiration_warning
+    - required
+    - type: long
+   - /software/authconfig/sssd_pam/get_domains_timeout
+    - required
+    - type: long
+  - /software/authconfig/sssd_nss
+   - /software/authconfig/sssd_nss/debug_level
+    - required
+    - type: long
+   - /software/authconfig/sssd_nss/enum_cache_timeout
+    - required
+    - type: long
+   - /software/authconfig/sssd_nss/entry_cache_nowait_percentage
+    - optional
+    - type: long
+   - /software/authconfig/sssd_nss/entry_negative_timeout
+    - required
+    - type: long
+   - /software/authconfig/sssd_nss/filter_users
+    - required
+    - type: string
+   - /software/authconfig/sssd_nss/filter_users_in_groups
+    - required
+    - type: boolean
+   - /software/authconfig/sssd_nss/filter_groups
+    - required
+    - type: string
+   - /software/authconfig/sssd_nss/memcache_timeout
+    - required
+    - type: long
+  - /software/authconfig/authconfig_sssd_local
+   - /software/authconfig/authconfig_sssd_local/default_shell
+    - required
+    - type: string
+   - /software/authconfig/authconfig_sssd_local/base_directory
+    - required
+    - type: string
+   - /software/authconfig/authconfig_sssd_local/create_homedir
+    - required
+    - type: boolean
+   - /software/authconfig/authconfig_sssd_local/remove_homedir
+    - required
+    - type: boolean
+   - /software/authconfig/authconfig_sssd_local/homedir_umask
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_local/skel_dir
+    - required
+    - type: string
+   - /software/authconfig/authconfig_sssd_local/mail_dir
+    - required
+    - type: string
+   - /software/authconfig/authconfig_sssd_local/userdel_cmd
+    - optional
+    - type: string
+  - /software/authconfig/authconfig_sssd_domain
+   - /software/authconfig/authconfig_sssd_domain/ldap
+    - optional
+    - type: authconfig_sssd_ldap
+   - /software/authconfig/authconfig_sssd_domain/simple
+    - optional
+    - type: authconfig_sssd_simple
+   - /software/authconfig/authconfig_sssd_domain/local
+    - optional
+    - type: authconfig_sssd_local
+   - /software/authconfig/authconfig_sssd_domain/access_provider
+    - optional
+    - type: sssd_provider_string
+   - /software/authconfig/authconfig_sssd_domain/id_provider
+    - optional
+    - type: sssd_provider_string
+   - /software/authconfig/authconfig_sssd_domain/auth_provider
+    - optional
+    - type: sssd_provider_string
+   - /software/authconfig/authconfig_sssd_domain/chpass_provider
+    - optional
+    - type: sssd_provider_string
+   - /software/authconfig/authconfig_sssd_domain/debug_level
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/sudo_provider
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_domain/selinux_provider
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_domain/subdomains_provider
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_domain/autofs_provider
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_domain/hostid_provider
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_domain/re_expression
+    - required
+    - type: string
+   - /software/authconfig/authconfig_sssd_domain/full_name_format
+    - required
+    - type: string
+   - /software/authconfig/authconfig_sssd_domain/lookup_family_order
+    - required
+    - type: string
+   - /software/authconfig/authconfig_sssd_domain/dns_resolver_timeout
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/dns_discovery_domain
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_domain/override_gid
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/case_sensitive
+    - required
+    - type: boolean
+   - /software/authconfig/authconfig_sssd_domain/proxy_fast_alias
+    - required
+    - type: boolean
+   - /software/authconfig/authconfig_sssd_domain/subdomain_homedir
+    - required
+    - type: string
+   - /software/authconfig/authconfig_sssd_domain/proxy_pam_target
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_domain/proxy_lib_name
+    - optional
+    - type: string
+   - /software/authconfig/authconfig_sssd_domain/min_id
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/max_id
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/enumerate
+    - required
+    - type: boolean
+   - /software/authconfig/authconfig_sssd_domain/force_timeout
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/entry_cache_timeout
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/entry_cache_user_timeout
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/entry_cache_group_timeout
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/entry_cache_netgroup_timeout
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/entry_cache_service_timeout
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/entry_cache_sudo_timeout
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/entry_cache_autofs_timeout
+    - optional
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/cache_credentials
+    - required
+    - type: boolean
+   - /software/authconfig/authconfig_sssd_domain/account_cache_expiration
+    - required
+    - type: long
+   - /software/authconfig/authconfig_sssd_domain/pwd_expiration_warning
+    - optional
+    - type: long
+  - /software/authconfig/authconfig_method_sssd_type
+   - /software/authconfig/authconfig_method_sssd_type/nssonly
+    - required
+    - type: boolean
+   - /software/authconfig/authconfig_method_sssd_type/domains
+    - required
+    - type: authconfig_sssd_domain
+   - /software/authconfig/authconfig_method_sssd_type/global
+    - required
+    - type: sssd_global
+   - /software/authconfig/authconfig_method_sssd_type/pam
+    - required
+    - type: sssd_pam
+   - /software/authconfig/authconfig_method_sssd_type/nss
+    - required
+    - type: sssd_nss
+  - /software/authconfig/authconfig_method_type
+   - /software/authconfig/authconfig_method_type/files
+    - optional
+    - type: authconfig_method_files_type
+   - /software/authconfig/authconfig_method_type/ldap
+    - optional
+    - type: authconfig_method_ldap_type
+   - /software/authconfig/authconfig_method_type/nis
+    - optional
+    - type: authconfig_method_nis_type
+   - /software/authconfig/authconfig_method_type/krb5
+    - optional
+    - type: authconfig_method_krb5_type
+   - /software/authconfig/authconfig_method_type/smb
+    - optional
+    - type: authconfig_method_smb_type
+   - /software/authconfig/authconfig_method_type/hesiod
+    - optional
+    - type: authconfig_method_hesiod_type
+   - /software/authconfig/authconfig_method_type/afs
+    - optional
+    - type: authconfig_method_afs_type
+   - /software/authconfig/authconfig_method_type/nslcd
+    - optional
+    - type: authconfig_method_nslcd_type
+   - /software/authconfig/authconfig_method_type/sssd
+    - optional
+    - type: authconfig_method_sssd_type
+  - /software/authconfig/hash_string
+  - /software/authconfig/component_authconfig_type
+   - /software/authconfig/component_authconfig_type/safemode
+    - required
+    - type: boolean
+   - /software/authconfig/component_authconfig_type/passalgorithm
+    - required
+    - type: hash_string
+   - /software/authconfig/component_authconfig_type/useshadow
+    - optional
+    - type: boolean
+   - /software/authconfig/component_authconfig_type/usecache
+    - optional
+    - type: boolean
+   - /software/authconfig/component_authconfig_type/enableforcelegacy
+    - required
+    - type: boolean
+   - /software/authconfig/component_authconfig_type/startstop
+    - optional
+    - type: boolean
+   - /software/authconfig/component_authconfig_type/usemd5
+    - required
+    - type: boolean
+   - /software/authconfig/component_authconfig_type/method
+    - optional
+    - type: authconfig_method_type
+   - /software/authconfig/component_authconfig_type/pamadditions
+    - optional
+    - type: authconfig_pamadditions_type
+
+ - Functions

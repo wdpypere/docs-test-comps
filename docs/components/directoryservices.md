@@ -1,31 +1,35 @@
-### NAME
+# NAME
 
 directoryservices : Directory Services NCM component.
 
-### DESCRIPTION
+# DESCRIPTION
 
 Component to manage directory services on OS X. This can both setup local directory (e.g. for MCX purposes) and provide linkage to external open directory services. When defining a network open directory server, the configuration is at the moment pretty "raw" - interpreted and passed "as-is" to OS X.
 
-### RESOURCES
+# RESOURCES
 
-#### `/software/components/directoryservices`/...
+## /software/components/directoryservices/...
 
-### DEPENDENCIES
+# DEPENDENCIES
 
 None.
 
-### BUGS
+# BUGS
 
 None known.
 
-Nick Williams <Nick.W>
+# AUTHOR
 
-Nick Williams <Nick.W>
+Nick Williams <Nick.Williams@morganstanley.com>
 
-### VERSION
+# MAINTAINER
+
+Nick Williams <Nick.Williams@morganstanley.com>
+
+# VERSION
 
 1.1.0
 
-### SEE ALSO
+# SEE ALSO
 
 ncm-ncd(1)
