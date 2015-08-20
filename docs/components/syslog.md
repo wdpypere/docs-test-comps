@@ -46,7 +46,7 @@ none known.
 
 # AUTHOR
 
-Ulrich Schwickerath <ulrich.schwickerath@cern.ch>
+Ulrich Schwickerath <>
 
 # SEE ALSO
 

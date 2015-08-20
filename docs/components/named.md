@@ -43,7 +43,7 @@ None known.
 
 # AUTHOR
 
-Michel Jouvin <jouvin@lal.in2p3.fr>
+Michel Jouvin <>
 
 # SEE ALSO
 

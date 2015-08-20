@@ -27,7 +27,7 @@ none known.
 
 # AUTHOR
 
-Stijn De Weirdt <stijn.dweirdt@ugent.be>
+Stijn De Weirdt <>
 
 # SEE ALSO
 

@@ -16,7 +16,7 @@ modifies `/etc/nscd.conf` and a temporary file in `/etc`.
 
 # AUTHOR
 
-Jan.Iven@cern.ch
+Jan.I
 
 # SEE ALSO
 

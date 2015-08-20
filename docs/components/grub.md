@@ -154,7 +154,7 @@ none known.
 
 # AUTHORS
 
-German Cancio <German.Cancio@cern.ch>, Stephen Childs <Stephen.Childs@cs.tcd.ie>
+German Cancio <German.Cancio@cern.ch>, Stephen Childs <Stephen.C>
 
 # SEE ALSO
 

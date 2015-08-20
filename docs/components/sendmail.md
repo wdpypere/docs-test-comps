@@ -76,7 +76,7 @@ values afterwards.
 
 # AUTHOR
 
-Jan Iven <jan.iven@cern.ch>
+Jan Iven <>
 
 # SEE ALSO
 

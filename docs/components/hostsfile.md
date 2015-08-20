@@ -116,7 +116,7 @@ None known.
 
 # AUTHOR
 
-Tim Bell <tim.bell@cern.ch>
+Tim Bell <>
 
 # SEE ALSO
 

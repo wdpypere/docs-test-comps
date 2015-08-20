@@ -179,7 +179,7 @@ Charles Loomis <charles.loomis@cern.ch>
 
 # MAINTAINERS
 
-Guillaume Philippon <philippo@lal.in2p3.fr>
+Guillaume Philippon <>
 
 Mark Wilson <Mark.Wilson@MorganStanley.com>
 

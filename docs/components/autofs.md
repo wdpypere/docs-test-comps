@@ -144,7 +144,7 @@ David Groep <davidg@nikhef.nl>
 
 # MAINTAINER
 
-David Groep <davidg@nikhef.nl>, Michel Jouvin <jouvin@lal.in2p3.fr>
+David Groep <davidg@nikhef.nl>, Michel Jouvin <>
 
 # VERSION
 

@@ -38,7 +38,7 @@ None.
 
 # AUTHOR
 
-Guillaume PHILIPPON <philippo@lal.in2p3.fr>
+Guillaume PHILIPPON <>
 
 # SEE ALSO
 

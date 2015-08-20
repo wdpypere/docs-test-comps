@@ -45,7 +45,7 @@ None known.
 
 # AUTHOR
 
-Vladimir Bahyl <Vladimir.Bahyl@cern.ch>
+Vladimir Bahyl <Vladimir.B>
 
 # SEE ALSO
 

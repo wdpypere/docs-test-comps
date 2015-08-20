@@ -155,7 +155,7 @@ Solaris:
 
 # AUTHOR
 
-Original author: German Cancio <German.Cancio@cern.ch>
+Original author: German Cancio <German.C>
 
 Author of the IPS-based package manager: Mark R. Bannister.
 

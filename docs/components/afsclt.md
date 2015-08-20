@@ -99,7 +99,7 @@ none.
 
 # AUTHOR
 
-Jaroslaw Polok <jaroslaw.polok@cern.ch>
+Jaroslaw Polok <>
 
 # SEE ALSO
 

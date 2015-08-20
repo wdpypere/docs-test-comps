@@ -42,7 +42,7 @@ Cannot clean out "install" and "remove" lines again.
 
 # AUTHOR
 
-Hugo Cacote <Hugo.Cacote@cern.ch>
+Hugo Cacote <Hugo.C>
 
 # SEE ALSO
 

@@ -337,7 +337,7 @@ none known.
 # AUTHORS
 
 - Thorsten Kleinwort <Thorsten.Kleinwort@cern.ch>
-- John Monteiro <John.Monteiro@morganstanley.com>
+- John Monteiro <John.M>
 
 # SEE ALSO
 

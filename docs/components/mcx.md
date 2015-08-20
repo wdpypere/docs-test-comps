@@ -22,11 +22,11 @@ None known.
 
 # AUTHOR
 
-Nick Williams <Nick.Williams@morganstanley.com>
+Nick Williams <Nick.W>
 
 # MAINTAINER
 
-Nick Williams <Nick.Williams@morganstanley.com>
+Nick Williams <Nick.W>
 
 # VERSION
 

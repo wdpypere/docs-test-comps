@@ -67,7 +67,7 @@ None known.
 
 # AUTHOR
 
-Teemu Sidoroff <Teemu.Sidoroff@cern.ch>
+Teemu Sidoroff <Teemu.S>
 
 # SEE ALSO
 

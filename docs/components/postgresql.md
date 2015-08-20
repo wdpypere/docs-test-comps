@@ -78,8 +78,8 @@ None known.
 
 # AUTHOR
 
-wouter.depypere@ugent.be
+
 
 # MAINTAINER
 
-wouter.depypere@ugent.be
+

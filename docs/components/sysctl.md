@@ -64,7 +64,7 @@ mechanism to represent keys that do not satisfy this requirement.
 
 # AUTHOR
 
-Benjamin Chardi <Benjamin.Chardi.Marco@cern.ch>
+Benjamin Chardi <Benjamin.Chardi.M>
 
 # SEE ALSO
 
