@@ -1,4 +1,3 @@
-
 ### NAME
 
 ncm-metaconfig: Configure services whose config format can be 

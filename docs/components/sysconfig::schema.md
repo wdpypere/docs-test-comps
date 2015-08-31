@@ -4,4 +4,3 @@
     - `/software/sysconfig/component_sysconfig/files`
         - optional
         - type: string
-### Functions
