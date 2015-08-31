@@ -63,6 +63,9 @@
     - `/software/mysql/component_mysql/serviceName`
         - required
         - type: string
-  - %s
-  - %s
-  - %s
+
+### Functions
+
+  - component_mysql_valid
+  - component_mysql_check_db_script
+  - component_mysql_password_valid

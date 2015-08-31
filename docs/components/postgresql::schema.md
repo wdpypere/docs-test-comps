@@ -655,5 +655,8 @@
     - `/software/postgresql/component_pgsql/pg_engine`
         - optional
         - type: string
-  - %s
-  - %s
+
+### Functions
+
+  - pgsql_is_hba_db
+  - pgsql_is_hba_address

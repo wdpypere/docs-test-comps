@@ -33,4 +33,7 @@
     - `/software/profile/component_profile/scripts`
         - optional
         - type: structure_profile_script
-  - %s
+
+### Functions
+
+  - component_profile_script_valid

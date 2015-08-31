@@ -526,7 +526,10 @@
     - `/software/openldap/component_openldap/move_slapdd`
         - optional
         - type: boolean
-  - %s
+
+### Functions
+
+  - openldap_loglevels_to_long
    description: 
     converts a list of named loglevels to its numeric value
     returns undef in case of unknown entry

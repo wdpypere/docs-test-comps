@@ -35,4 +35,7 @@
     - `/software/filecopy/component_filecopy/forceRestart`
         - required
         - type: boolean
-  - %s
+
+### Functions
+
+  - component_filecopy_valid

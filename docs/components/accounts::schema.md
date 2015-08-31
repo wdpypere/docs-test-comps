@@ -134,4 +134,7 @@
     - `/software/accounts/component_accounts/ldap`
         - optional
         - type: boolean
-  - %s
+
+### Functions
+
+  - has_unique_attr

@@ -252,4 +252,7 @@
     - `/software/sudo/structure_component_sudo/ldap`
         - optional
         - type: structure_sudo_ldap
-  - %s
+
+### Functions
+
+  - is_host_sudo

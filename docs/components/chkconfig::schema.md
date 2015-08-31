@@ -29,4 +29,7 @@
     - `/software/chkconfig/component_chkconfig_type/default`
         - optional
         - type: string
-  - %s
+
+### Functions
+
+  - chkconfig_allow_combinations

@@ -289,20 +289,23 @@ For use with dedicated pan code that builds the cluster info from remote templat
         - required
         - type: long
         - range: 0..
-  - %s
+
+### Functions
+
+  - valid_osd_names
    description: check that the ceph osd names are no ceph reserved paths 
    - arg: ceph_component type 
-  - %s
+  - is_crushmap
    description: checks the ceph crushmap, this includes uniqueness of bucket and rule name, recursive bucket typing, and rules using existing buckets 
    - arg: crushmap allowed bucket types 
    - arg: crushmap buckets definitions 
    - arg: rules to traverse crushmap 
-  - %s
+  - is_bucket
    description: check the bucket type recursively, this includes attribute type and value checking and the uniqueness of names 
    - arg: bucket to check 
    - arg: list of already parsed bucket names 
    - arg: accepted bucket types 
    - arg: 1 if bucket is top bucket, 0 otherwise 
-  - %s
+  - is_ceph_crushmap_bucket_alg
    description: check it is a valid algorithm, also used in is_crushmap 
    - arg: bucket algoritm 

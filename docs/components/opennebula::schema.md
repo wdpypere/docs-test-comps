@@ -579,11 +579,14 @@ datastores, vnets, hosts names, etc
     - `/software/opennebula/component_opennebula/tm_system_ds`
         - optional
         - type: string
-  - %s
+
+### Functions
+
+  - is_consistent_database
    description:  
 check if a specific type of database has the right attributes
  
-  - %s
+  - is_consistent_datastore
    description:  
 check if a specific type of datastore has the right attributes
  

@@ -20,4 +20,7 @@
     - `/software/dirperm/component_dirperm/paths`
         - optional
         - type: structure_dirperm_entry
-  - %s
+
+### Functions
+
+  - dirperm_permissions_valid

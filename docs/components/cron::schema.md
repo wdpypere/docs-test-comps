@@ -90,4 +90,7 @@
     - `/software/cron/component_cron/securitypath`
         - required
         - type: string
-  - %s
+
+### Functions
+
+  - structure_cron_log_valid

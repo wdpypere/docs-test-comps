@@ -22,4 +22,7 @@
     - `/software/named/component_named/search`
         - optional
         - type: type_fqdn
-  - %s
+
+### Functions
+
+  - component_named_valid

@@ -253,4 +253,7 @@
     - `/software/ntpd/component_ntpd_type/enablelocalhostdebug`
         - optional
         - type: boolean
-  - %s
+
+### Functions
+
+  - valid_ntpd_logconfig_list
