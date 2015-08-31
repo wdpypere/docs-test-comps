@@ -1,6 +1,6 @@
 site_name: Quattor Documentation
 
-theme: 'bootstrap'
+theme: 'readthedocs'
 
 pages:
 - introduction: 'index.md'

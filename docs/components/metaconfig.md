@@ -1,19 +1,3 @@
-\### #
-\### Software subject to following license(s):
-\###   Apache 2 License (http://www.opensource.org/licenses/apache2.0)
-\###   Copyright (c) Responsible Organization
-\#
-
-\### #
-\### Current developer(s):
-\#
-
-\### #
-\#
-
-\### #
-\### metaconfig, 15.4.1-SNAPSHOT, SNAPSHOT20150820215546, 2015-08-20T21:55:42Z
-\#
 
 ### NAME
 
@@ -212,9 +196,6 @@ And now, we only have to specify the contents:
 
 That's it!  When you deploy your configuration you should see your
 `/etc/foo.ini` in the correct location.
-
-\#
-\#
 
 ### TODO
 
