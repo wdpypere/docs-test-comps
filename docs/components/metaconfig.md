@@ -5,13 +5,9 @@
 \#
 
 \### #
-\### Current developer(s):
-\###   Luis Fernando Muñoz Mejías <Luis.Munoz@UGent.be>
 \#
 
 \### #
-\### Author(s): Luis Fernando Muñoz Mejías
-\#
 
 \### #
 \### metaconfig, 16.2.1-SNAPSHOT, SNAPSHOT20160314125420, 2016-03-14T12:54:20Z
