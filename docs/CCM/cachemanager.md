@@ -88,26 +88,39 @@ the NVA cache.
 
 - getUnlockedConfiguration ($cred; $cid)
 
-    Returns unlocked Configuration object. If the $cid parameter is
-    ommited, the most recently downloaded configuration (when the cache
-    was not globally locked) is returned.
+    This method is deprecated in favour of `getConfiguration`.
+
+    Returns unlocked Configuration object.
+
+    Unless the object is locked explicitly later by calling the `lock` method,
+    `CCM::Element`s will always be fetched from the current CID,
+    not the CID passed via `$cid`. (If the $cid parameter is omitted,
+    the most recently downloaded configuration (when the cache
+    was not globally locked) is returned.)
 
     Security and $cred parameter meaning are not defined.
 
 - getLockedConfiguration ($cred; $cid)
 
+    This method is deprecated in favour of `getConfiguration`.
+
     Returns locked Configuration object. If the $cid parameter is
-    ommited, the most recently downloaded configuration (when the cache
+    omitted, the most recently downloaded configuration (when the cache
     was not globally locked) is returned.
 
     Security and $cred parameter meaning are not defined.
 
 - getAnonymousConfiguration ($cred; $cid)
 
+    This method is deprecated in favour of `getConfiguration`.
+
     Returns unlocked anonymous Configuration object.
-    If the $cid parameter is ommited, the most recently
-    downloaded configuration (when the cache
-    was not globally locked) is returned.
+
+    Unless the object is locked explicitly later by calling the `lock` method,
+    `CCM::Element`s will always be fetched from the current CID,
+    not the CID passed via `$cid`. (If the $cid parameter is omitted,
+    the most recently downloaded configuration (when the cache
+    was not globally locked) is returned.)
 
     Security and $cred parameter meaning are not defined.
 

@@ -503,6 +503,41 @@ sunstone_server.conf file
     - `/software/opennebula/opennebula_sunstone/routes`
         - required
         - type: string
+- `/software/opennebula/opennebula_kvmrc`
+    - decription: 
+Type that sets the OpenNebula
+VMM kvmrc conf files
+
+    - `/software/opennebula/opennebula_kvmrc/lang`
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_kvmrc/libvirt_uri`
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_kvmrc/qemu_protocol`
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_kvmrc/libvirt_keytab`
+        - optional
+        - type: string
+    - `/software/opennebula/opennebula_kvmrc/shutdown_timeout`
+        - required
+        - type: long
+    - `/software/opennebula/opennebula_kvmrc/force_destroy`
+        - optional
+        - type: boolean
+    - `/software/opennebula/opennebula_kvmrc/cancel_no_acpi`
+        - optional
+        - type: boolean
+    - `/software/opennebula/opennebula_kvmrc/default_attach_cache`
+        - optional
+        - type: string
+    - `/software/opennebula/opennebula_kvmrc/migrate_options`
+        - optional
+        - type: string
+    - `/software/opennebula/opennebula_kvmrc/default_attach_discard`
+        - optional
+        - type: string
 - `/software/opennebula/opennebula_rpc`
     - decription:  
 Type that sets the OpenNebula conf
@@ -544,29 +579,32 @@ Type to define ONE basic resources
 datastores, vnets, hosts names, etc
 
     - `/software/opennebula/component_opennebula/datastores`
-        - required
+        - optional
         - type: opennebula_datastore
     - `/software/opennebula/component_opennebula/users`
         - optional
         - type: opennebula_user
     - `/software/opennebula/component_opennebula/vnets`
-        - required
+        - optional
         - type: opennebula_vnet
     - `/software/opennebula/component_opennebula/hosts`
-        - required
+        - optional
         - type: string
     - `/software/opennebula/component_opennebula/rpc`
-        - required
+        - optional
         - type: opennebula_rpc
     - `/software/opennebula/component_opennebula/untouchables`
-        - required
+        - optional
         - type: opennebula_untouchables
     - `/software/opennebula/component_opennebula/oned`
-        - required
+        - optional
         - type: opennebula_oned
     - `/software/opennebula/component_opennebula/sunstone`
         - optional
         - type: opennebula_sunstone
+    - `/software/opennebula/component_opennebula/kvmrc`
+        - optional
+        - type: opennebula_kvmrc
     - `/software/opennebula/component_opennebula/ssh_multiplex`
         - required
         - type: boolean

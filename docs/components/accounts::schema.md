@@ -52,6 +52,12 @@
         - required
         - type: long
         - range: 1..
+    - `/software/accounts/structure_groupinfo/requiredMembers`
+        - optional
+        - type: string
+    - `/software/accounts/structure_groupinfo/replaceMembers`
+        - required
+        - type: boolean
 - `/software/accounts/structure_login_defs`
     - `/software/accounts/structure_login_defs/uid_min`
         - optional

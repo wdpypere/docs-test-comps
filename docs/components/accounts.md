@@ -169,6 +169,25 @@ name.  At least one field must be specified.
 
     the optional gid number for the group
 
+- requiredMembers
+
+    An optional list of users that must be added as member of the group. The users don't have to be
+    local users, defined in the configuration.
+
+    Note 1: group members present in the `/etc/group` file but not defined in the current configuration 
+    are removed by **ncm-accounts** if they are not required members.
+
+    Note 2: for users defined in the configuration the preferred way to add them to groups is by defining
+    their `groups` property.
+
+- replaceMembers (boolean)
+
+    When true, current members of the group (if existing) are replaced by the groups defined in the
+    configuration (coming from `requiredMembers` and user groups). If false, groups from the
+    configuration are merged with existing ones.
+
+    D: false
+
 #### `/software/components/accounts/login`\_defs
 
 A nlist of values to be set in `/etc/login.defs`. NOTE: This

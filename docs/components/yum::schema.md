@@ -41,6 +41,13 @@
     - `/software/yum/spma_yum_plugin_versionlock/follow_obsoletes`
         - optional
         - type: boolean
+- `/software/yum/spma_yum_plugin_priorities`
+    - `/software/yum/spma_yum_plugin_priorities/enabled`
+        - required
+        - type: boolean
+    - `/software/yum/spma_yum_plugin_priorities/check_obsoletes`
+        - optional
+        - type: boolean
 - `/software/yum/spma_yum_plugins`
     - `/software/yum/spma_yum_plugins/fastestmirror`
         - optional
@@ -48,6 +55,32 @@
     - `/software/yum/spma_yum_plugins/versionlock`
         - optional
         - type: spma_yum_plugin_versionlock
+    - `/software/yum/spma_yum_plugins/priorities`
+        - optional
+        - type: spma_yum_plugin_priorities
+- `/software/yum/spma_yum_main_options`
+    - decription: 
+    Main configuration options for yum.conf.
+    The cleanup_on_remove, obsoletes, reposdir and pluginpath are set internally.
+
+    - `/software/yum/spma_yum_main_options/exclude`
+        - optional
+        - type: string
+    - `/software/yum/spma_yum_main_options/installonly_limit`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/yum/spma_yum_main_options/keepcache`
+        - optional
+        - type: boolean
+    - `/software/yum/spma_yum_main_options/retries`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/yum/spma_yum_main_options/timeout`
+        - optional
+        - type: long
+        - range: 0..
 - `/software/yum/component_spma_yum`
     - `/software/yum/component_spma_yum/userpkgs_retry`
         - required
@@ -58,3 +91,6 @@
     - `/software/yum/component_spma_yum/plugins`
         - optional
         - type: spma_yum_plugins
+    - `/software/yum/component_spma_yum/main_options`
+        - optional
+        - type: spma_yum_main_options

@@ -9,7 +9,7 @@ EDG::WP4::CCM::Resource - Resource class
     $boolean = $resource->hasNextElement();
     [$property | $resource] = $resource->getNextElement();
     [$property | $resource] = $resource->getCurrentElement();
-    $resoruce->reset();
+    $resource->reset();
 
 ### DESCRIPTION
 

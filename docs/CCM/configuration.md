@@ -88,4 +88,5 @@ Module provides the Configuration class, to manipulate confgurations.
     returns `getTree` of the element identified by `$path`.
     Any other optional arguments are passed to `getTree`.
 
-    If the path does not exist, undef is returned.
+    If the path does not exist, undef is returned. (Any error
+    reason is set as the `fail` attribute and the error is ignored.)

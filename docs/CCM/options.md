@@ -38,6 +38,15 @@ Available convenience methods:
 
     Retrun arrayref of selected profile path (via the PATH\_SELECTION\_METHODS)
 
+    All options are treated as initial paths.
+
+- default\_action
+
+    Set the default action `$action` if action is defined
+    (use empty string to unset the default value).
+
+    Returns the default action.
+
 - action\_showcids
 
     the showcids action prints all sorted profile CIDs as comma-separated list

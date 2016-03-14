@@ -18,6 +18,9 @@
     - `/software/pam/component_pam_module_stack/options`
         - optional
         - type: component_pam_options
+    - `/software/pam/component_pam_module_stack/options_list`
+        - optional
+        - type: string
     - `/software/pam/component_pam_module_stack/allow`
         - optional
         - type: component_listfile_acl

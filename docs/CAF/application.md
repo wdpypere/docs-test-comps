@@ -5,18 +5,18 @@ CAF::Application - Common Application Framework core class
 ### SYNOPSIS
 
     package example;
-    use CAF::Application;
-    use LC::Exception qw (SUCCESS throw_error);
     use strict;
-    use vars (@ISA);
-    @ISA= qw (CAF::Application);
+    use warnings;
+    use LC::Exception qw (SUCCESS throw_error);
+    use parent qw(CAF::Application);
 
     <extend/overwrite default methods here...>
     ### Main loop
     package main;
+    use strict;
+    use warnings;
     use LC::Exception qw (SUCCESS throw_error);
 
-    use strict;
     use vars ($this_app %SIG);
 
     unless ($this_app = example->new($0,@ARGV)) {
@@ -25,10 +25,6 @@ CAF::Application - Common Application Framework core class
 
     $this_app->report("Hello");
     ...
-
-### INHERITANCE
-
-    CAF::Object
 
 ### DESCRIPTION
 
@@ -99,6 +95,28 @@ Applications can extend or overwrite the default methods.
 - \_initialize
 
     Initialize the Application.
+
+    Arguments
+
+    - `$command`
+
+        Name of the script/command/... (typically `$0`).
+
+    - Remaining arguments `@argv`
+
+        Typically this is the perl builtin variable `@ARGV`,
+        but can be any array of options/arguments,
+        or a single arrayref (in which case all elements
+        of the arrayref are handled as options/arguments).
+
+        Any arguments that are not handled by the options,
+        can be retrieved either via `@ARGV` or by passing
+        an arrayref holding the options/arguments.
+        In these 2 cases, the contents is modified,
+        removing all handled options, leaving the
+        non-option arguments in place.
+        (In particular, using a regular array
+        will leave the original array unmodified).
 
 - \_app\_default\_options
 

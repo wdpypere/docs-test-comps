@@ -17,6 +17,7 @@ Features that are implemented at this moment:
 - Adding/removing hypervirsors 
 - Adding/removing OpenNebula regular users
 - Updates OpenNebula \*\_auth files
+- Updates VMM kvmrc config file
 
 OpenNebula installation is 100% automated. Therefore:
 
@@ -66,7 +67,7 @@ be described in this section.
 
     Includes the Open vSwitch network drives in your hypervisors. (OVS must be installed in each host)
     Open vSwitch replaces Linux bridges, Linux bridges must be disabled.
-    More info: http://docs.opennebula.org/4.4/administration/networking/openvswitch.html
+    More info: http://docs.opennebula.org/4.14/administration/networking/openvswitch.html
 
 - tm\_system\_ds : string (optional)
 
@@ -86,7 +87,7 @@ be described in this section.
 
 ### DEPENDENCIES
 
-The component was tested with OpenNebula version 4.8 and 4.10
+The component was tested with OpenNebula version 4.8 and 4.1x
 
 Following package dependencies should be installed to run the component:
 

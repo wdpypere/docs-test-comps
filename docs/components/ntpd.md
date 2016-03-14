@@ -19,6 +19,7 @@ Does nothing.
 
     activates/deactivates the component.
 
+- `/software/components/ntpd/useserverip` : resolve and use the time server(s) ip address in the config file(s)
 - `/software/components/ntpd/servers`/ : list of time servers
 - `/software/components/ntpd/serverlist`/ : list of { server=hostname, options=nlist() }
 
@@ -319,6 +320,11 @@ Refer to man ntp\_misc for more details.
     Allows some debugging via ntpdc on localhost but with no modifications
 
     Default : true
+
+- `/software/components/ntpd/group` : defined\_group (optional)
+
+    If the group is set, files are written with `<root.<group`>> ownership
+    and `0640` permission.
 
 ### DEPENDENCIES
 

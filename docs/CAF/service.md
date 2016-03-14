@@ -57,7 +57,7 @@ in different Unixes.
 
     - `sleep`.
 
-        Used only in `stop_sleep_start`. Determines the number of 
+        Used only in `stop_sleep_start`. Determines the number of
         seconds to sleep after `stop` before proceeding with `start`.
 
     - `persistent`
@@ -100,5 +100,61 @@ in different Unixes.
 
 - `stop_sleep_start`
 
-    Stops the daemon, sleep, and then start the dameon again. 
+    Stops the daemon, sleep, and then start the dameon again.
     Only when both `stop` and `start` are successful, return success.
+
+- os\_flavour
+
+    Determine and return the OS flavour (/variant)
+
+    Current flavours are
+
+    - linux\_sysv
+
+        Linux OS with SysV int system
+
+    - linux\_systemd
+
+        Linux OS with systemd
+
+    - solaris
+
+        Solaris OS
+
+    (All supported flavours are exported via `@FLAVOURS`.)
+
+#### Private methods
+
+- \_\_make\_method
+
+    A generator for service methods, to be used in e.g.
+    subclassing. In the example below we create a custom service
+    class that supports e.g. 'service myservice init':
+
+        package MyService;
+
+        use CAF::Service qw(__make_method @FLAVOURS);
+        use parent qw(CAF::Service);
+
+        sub _initialize {
+            my ($self, %opts) = @_;
+            return $self->SUPER::_initialize(['myservice'], %opts);
+        }
+
+        my $method = 'init';
+        foreach my $flavour (@FLAVOURS) {
+            no strict 'refs';
+            *{"${method}_${flavour}"} = __make_method($method, $flavour);
+            use strict 'refs';
+        }
+
+        1;
+
+    This class can than be used in the same way as `CAF::Service`
+
+        use MyService;
+        ...
+        my $serv = MyService->new();
+        $serv->init();
+        ...
+        $serv->reload();

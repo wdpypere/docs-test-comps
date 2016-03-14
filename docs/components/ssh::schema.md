@@ -21,6 +21,9 @@
     - `/software/ssh/ssh_core_options_type/GSSAPICleanupCredentials`
         - optional
         - type: ssh_yesnostring
+    - `/software/ssh/ssh_core_options_type/GSSAPIKeyExchange`
+        - optional
+        - type: ssh_yesnostring
     - `/software/ssh/ssh_core_options_type/GatewayPorts`
         - optional
         - type: ssh_yesnostring
@@ -58,12 +61,15 @@
         - optional
         - type: string
 - `/software/ssh/ssh_daemon_options_type`
+    - decription: AcceptEnv, one per line
+    - decription: HostKey, one per line
+    - decription: ListenAddress, one per line
     - `/software/ssh/ssh_daemon_options_type/AFSTokenPassing`
         - optional
         - type: ssh_yesnostring
     - `/software/ssh/ssh_daemon_options_type/AcceptEnv`
         - optional
-        - type: ssh_yesnostring
+        - type: string
     - `/software/ssh/ssh_daemon_options_type/AllowAgentForwarding`
         - optional
         - type: ssh_yesnostring
@@ -100,6 +106,9 @@
     - `/software/ssh/ssh_daemon_options_type/DenyUsers`
         - optional
         - type: string
+    - `/software/ssh/ssh_daemon_options_type/GSSAPIStrictAcceptorCheck`
+        - optional
+        - type: ssh_yesnostring
     - `/software/ssh/ssh_daemon_options_type/HostKey`
         - optional
         - type: string
@@ -130,6 +139,9 @@
     - `/software/ssh/ssh_daemon_options_type/KerberosTgtPassing`
         - optional
         - type: ssh_yesnostring
+    - `/software/ssh/ssh_daemon_options_type/KerberosTicketAuthentication`
+        - optional
+        - type: ssh_yesnostring
     - `/software/ssh/ssh_daemon_options_type/KerberosTicketCleanup`
         - optional
         - type: ssh_yesnostring
@@ -138,7 +150,7 @@
         - type: long
     - `/software/ssh/ssh_daemon_options_type/ListenAddress`
         - optional
-        - type: string
+        - type: type_hostport
     - `/software/ssh/ssh_daemon_options_type/LoginGraceTime`
         - optional
         - type: long
@@ -258,12 +270,22 @@
         - optional
         - type: ssh_yesnostring
 - `/software/ssh/ssh_daemon_type`
+    - decription: if false and sshd doesn't exist, skip config validation
     - `/software/ssh/ssh_daemon_type/options`
         - optional
         - type: ssh_daemon_options_type
     - `/software/ssh/ssh_daemon_type/comment_options`
         - optional
         - type: ssh_daemon_options_type
+    - `/software/ssh/ssh_daemon_type/sshd_path`
+        - optional
+        - type: string
+    - `/software/ssh/ssh_daemon_type/always_validate`
+        - required
+        - type: boolean
+    - `/software/ssh/ssh_daemon_type/config_path`
+        - optional
+        - type: string
 - `/software/ssh/ssh_client_type`
     - `/software/ssh/ssh_client_type/options`
         - optional
@@ -271,6 +293,9 @@
     - `/software/ssh/ssh_client_type/comment_options`
         - optional
         - type: ssh_client_options_type
+    - `/software/ssh/ssh_client_type/config_path`
+        - optional
+        - type: string
 - `/software/ssh/component_ssh_type`
     - `/software/ssh/component_ssh_type/daemon`
         - optional

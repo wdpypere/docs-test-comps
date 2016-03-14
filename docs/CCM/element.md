@@ -54,7 +54,7 @@ Type constants:
     object with the profile. The $ele\_path parameter is the element's
     configuration path (it can be either a Path object or a string).
 
-- \_get\_tied\_db()
+- \_get\_tied\_db
 
     Wrapper around EDG::WP4::CCM::DB::read() to attempt to cache the tied
     hash.  Takes a scalar reference (to be filled in with either a new
@@ -170,6 +170,6 @@ Type constants:
         Array ref of anonymous methods to convert the argument
         (float/double value) to another representation/format.
 
-    The arrayref of anonymous methods are applied as follows: 
+    The arrayref of anonymous methods are applied as follows:
     convert methods `[a, b, c]` will produce `$new = c(b(a($old)))`.
     (An exception is thrown if these methods are not code references).

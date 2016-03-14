@@ -1,5 +1,53 @@
 ### Types
 
+- `/software/autofs/autofs_conf_common`
+- `/software/autofs/autofs_conf_autofs`
+    - `/software/autofs/autofs_conf_autofs/timeout`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/autofs/autofs_conf_autofs/negative_timeout`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/autofs/autofs_conf_autofs/mount_wait`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/autofs/autofs_conf_autofs/umount_wait`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/autofs/autofs_conf_autofs/browse_mode`
+        - optional
+        - type: boolean
+    - `/software/autofs/autofs_conf_autofs/append_options`
+        - optional
+        - type: boolean
+    - `/software/autofs/autofs_conf_autofs/logging`
+        - optional
+        - type: string
+- `/software/autofs/autofs_conf_amd`
+    - `/software/autofs/autofs_conf_amd/dismount_interval`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/autofs/autofs_conf_amd/map_type`
+        - optional
+        - type: string
+    - `/software/autofs/autofs_conf_amd/autofs_use_lofs`
+        - optional
+        - type: boolean
+- `/software/autofs/autofs_conf`
+    - `/software/autofs/autofs_conf/autofs`
+        - optional
+        - type: autofs_conf_autofs
+    - `/software/autofs/autofs_conf/amd`
+        - optional
+        - type: autofs_conf_amd
+    - `/software/autofs/autofs_conf/mountpoints`
+        - optional
+        - type: autofs_conf_amd
 - `/software/autofs/autofs_mapentry_type`
     - `/software/autofs/autofs_mapentry_type/options`
         - optional
@@ -39,3 +87,6 @@
     - `/software/autofs/component_autofs_type/maps`
         - required
         - type: autofs_map_type
+    - `/software/autofs/component_autofs_type/conf`
+        - optional
+        - type: autofs_conf

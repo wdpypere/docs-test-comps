@@ -181,6 +181,7 @@
         - optional
         - type: string
 - `/software/ntpd/component_ntpd_type`
+    - decription: if the group is set, files are written with root.group ownership and 0640 permission
     - `/software/ntpd/component_ntpd_type/keyfile`
         - optional
         - type: string
@@ -199,6 +200,12 @@
     - `/software/ntpd/component_ntpd_type/includefile`
         - optional
         - type: string
+    - `/software/ntpd/component_ntpd_type/useserverip`
+        - optional
+        - type: boolean
+    - `/software/ntpd/component_ntpd_type/serverlist`
+        - optional
+        - type: ntpd_server_definition
     - `/software/ntpd/component_ntpd_type/servers`
         - optional
         - type: type_hostname
@@ -232,9 +239,6 @@
     - `/software/ntpd/component_ntpd_type/tinker`
         - optional
         - type: ntpd_tinker_options
-    - `/software/ntpd/component_ntpd_type/serverlist`
-        - optional
-        - type: ntpd_server_definition
     - `/software/ntpd/component_ntpd_type/restrictdefault`
         - optional
         - type: ntpd_restrict_default
@@ -253,6 +257,9 @@
     - `/software/ntpd/component_ntpd_type/enablelocalhostdebug`
         - optional
         - type: boolean
+    - `/software/ntpd/component_ntpd_type/group`
+        - optional
+        - type: defined_group
 
 ### Functions
 

@@ -1,103 +1,133 @@
 ### NAME
 
-CAF::Reporter - Class for console & log message reporting in CAF applications
+`CAF::Reporter` - Class for console & log message reporting in CAF applications
 
 ### SYNOPSIS
 
     package myclass;
-    use CAF::Reporter;
-    @ISA = qw(CAF::Reporter);
-    ...
-    sub foo {
-      my ($self,$a,$b,$c)=@_;
-      ...
-      $self->report("foo is doing well");
-      $self->verbose("foo called with params $a $b $c");
-      $self->debug(3,"foo is performing operation xyz");
-      ...
+    use CAF::Log;
+    use parent qw(CAF::Reporter);
+
+    my $logger = CAF::Log->new('/path/to/logfile', 'at');
+
+    sub new {
+        ...
+        $self->setup_reporter(2, 0, 1);
+        $self->set_report_logfile($logger);
+        ...
     }
 
-### INHERITANCE
-
-none.
+    sub foo {
+        my ($self, $a, $b, $c) = @_;
+        ...
+        $self->report("foo is doing well");
+        $self->verbose("foo called with params $a $b $c");
+        $self->debug(3, "foo is performing operation xyz");
+        ...
+    }
 
 ### DESCRIPTION
 
-CAF::Reporter provides class methods for message (information,
+`CAF::Reporter` provides class methods for message (information,
 warnings, error) reporting to standard output and a log file. There is
-only one 'instance' of CAF::Reporter in an application. Classes
-wanting to use CAF::Reporter have to inherit from it (using @ISA).
+only one instance of `CAF::Reporter` in an application. (All `CAF::Reporter`
+instances share the same configuration).
+Classes wanting to use `CAF::Reporter` have to inherit from it
+(using `parent qw(CAF::Reporter)` or via `@ISA`).
 
 Usage of a log file is optional. A log file can be attached/detached
-with the set\_logfile method.
+with the `set_logfile` method.
 
 #### Public methods
 
-- setup\_reporter ($debuglvl,$quiet,$verbose,$facility): boolean
+- init\_reporter
+
+    Setup default/initial values for reporter. Returns success.
+
+- `setup_reporter ($debuglvl, $quiet, $verbose, $facility)`: boolean
 
     Reporter setup:
 
-    \- $debuglvl sets the (highest) debug level, for messages reported with
-      the 'debug' method.
-      The following recommendations apply:
-       0: no debug information
-       1: main package
-       2: main libraries/functions
-       3: helper libraries
-       4: core functions (constructors, destructors)
+    - `$debuglvl` sets the (highest) debug level, for messages reported with
+        the 'debug' method.
+        The following recommendations apply:
+            0: no debug information
+            1: main package
+            2: main libraries/functions
+            3: helper libraries
+            4: core functions (constructors, destructors)
+    - `$quiet`: if set to a true value (eg. 1), stops any output to console.
+    - `$verbose`: if set to a true value (eg. 1), produce verbose output
+                (with the `verbose` method). Implied by debug >= 1.
+    - `$facility`: syslog facility the messages will be sent to
 
-    \- $quiet: if set to a true value (eg. 1), stops any output to console.
+    If any of these arguments is `undef`, current application settings
+    will be preserved.
 
-    \- $verbose: if set to a true value (eg. 1), produce verbose output
-                (produced with the 'verbose' method). Implied by debug >= 1.
+- `set_report_logfile($logfile)`: bool
 
-    \- $facility: syslog facility the messages will be sent to
+    If `$logfile` is defined, it will be used as log file. `$logfile` can be
+    any type of class object reference, but the object must support a
+    `print(@array)` method. Typically, it should be an `CAF::Log`
+    instance. If `$logfile` is undefined, no log file will be used.
 
-- set\_report\_logfile($logfile): bool
+- `report(@array)`: boolean
 
-    If $logfile is defined, it will be used as log file. $logfile can be
-    any type of class object reference, but must the object must support a
-    'print(@array)' method. Typically, it should be an CAF::Log
-    instance. If $logfile is undefined (undef), no log file will be used.
+    Report general information about the program progression
+    to stdout (via `print`) and `log` method.
+    The output to the console is supressed if `quiet` is set.
+    The strings in `@array` are concatenated, newline is added
+    and sent as a single line to the output.
+    Then `log` method is called with `@array` (irrespective of `quiet`).
 
-- report(@array): boolean
+    The `report` method does not log to syslog.
 
-    Report general information about the program progression. The output
-    to the console is supressed if 'quiet' is set. The strings in @array
-    are concatenated and sent as a single line to the output(s).
+- `info(@array)`: boolean
 
-- info (@array): boolean
+    Logs using `syslog` method with `info` priority
+    and reports `@array` using the `report` method, but with a `[INFO]` prefix.
 
-    Reports @array using the 'report' method, but with a '\[INFO\]' prefix.
+- `OK(@array)`: boolean
 
-- OK (@array): boolean
+    Logs using `syslog` method with `notice` priority
+    and reports `@array` using the `report` method, but with a `[OK]` prefix.
 
-    Reports @array using the 'report' method, but with a '\[OK\]' prefix.
+- `warn(@array)`: boolean
 
-- warn (@array): boolean
+    Logs using `syslog` method with `warning` priority
+    and reports `@array` using the `report` method, but with a `[WARN]` prefix.
 
-    Reports @array using the 'report' method, but with a '\[WARN\]' prefix.
+- `error(@array)`: boolean
 
-- warn (@array): boolean
+    Logs using `syslog` method with `err` priority
+    and reports `@array` using the `report` method, but with a `[ERROR]` prefix.
 
-    Reports @array using the 'report' method, but with a '\[ERROR\]' prefix.
+- `verbose(@array)`: boolean
 
-- verbose (@array): boolean
+    If `verbose` is enabled (via `setup_reporter`), the `verbose` method
+    logs using `syslog` method with `notice` priority
+    and reports `@array` using the `report` method, but with a `[VERB]` prefix.
 
-    Reports @array using the 'report' method, but only if 'verbose' is set
-    to 1. Output is prefixed with \[VERB\].
+- `debug($debuglvl, @array)`: boolean
 
-- debug ($debuglvl,@array): boolean
+    If `$debuglvl` is higher or equal than then one set via `setup_reporter`,
+    the `debug` method
+    logs to syslog with `debug` priority
+    and reports `@array` using the `report` method, but with a `[DEBUG]` prefix.
 
-    Reports @array using the 'report' method iff the current debug level is
-    higher or equal than $debuglvl.
+    If the `$debuglvl` is not an integer in interval \[0-9\], an error is thrown
+    and undef returned (and nothing logged).
 
-- log (@array): boolean
+- `log(@array)`: boolean
 
-    Writes @array to the log file, if any.
+    Writes `@array` as a concatenated string with added newline
+    to the log file, if one is setup (via `set_report_logfile`).
 
-- syslog ($priority, @array);
+- `syslog($priority, @array)`
 
-    Writes @array to the syslog, with the given priority.
+    Writes `@array` as concatenated string to syslog, with the given priority.
 
-#### Private methods
+    Nothing will happen is no 'SYSLOG' attribute of logfile is set.
+    This attribute is prepended to every message.
+
+    (Return value is always undef.)

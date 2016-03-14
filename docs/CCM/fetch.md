@@ -30,32 +30,9 @@ well as foreign node profiles.
 
     Returns undef in case of error.
 
-- retrieve
-
-    Stores $url into $cache if it's newer than $time, or if $self->{FORCE}
-    is set.
-
-    It returns undef in case of error, 0 if it there were no changes (the
-    server returned a 304 code) and a `CAF::FileWriter` object with the
-    downloaded contents if they had to be downloaded.
-
-    Should be called ony by `download`
-
-- download
-
-    Downloads the files associated with $type (profile or context). In
-    case of error it retries $self->{RETRIEVE\_RETRIES} times, falling back
-    to a failover URL if necessary (thus up to 2\*$self->{RETRIEVE\_RETRIES}
-    may happen.
-
-    Returns -1 in case of error, 0 if nothing had to be retrieved (files
-    in the server were older than our local cache) and a `CAF::FileWriter`
-    object with the downloaded contents, if something was actually
-    downloaded.
-
 - fetchProfile()
 
-    fetchProfile  fetches the  profile  from  profile  url and keeps it at
+    fetchProfile  fetches the  profile  from  profile url and keeps it at
     configured area.  The  cache  root variable is set as
     $fetch\_handle{'CACHE\_ROOT'} which can further be passed to CacheManager
     object and use NVA-API to access Resources and Properties.
@@ -69,27 +46,3 @@ well as foreign node profiles.
 
     Returns undef if it cannot fetch the profile due to a network error,
     \-1 in case of other failure, `SUCCESS` in case of successful fetch.
-
-- setProfileFormat
-
-    Define the profile format. If receives an argument, it will use it
-    with no further questions. If not, it will try to derive it from the
-    URL, being:
-
-    - URLs ending in `xml` are for XML profiles.
-    - URLs ending in `json` are for JSON profiles.
-
-    and their gzipped equivalents.
-
-- setNotificationTime()
-
-    Define notification time, if profile modification time is greater than
-    notification time then only the profile will be downloaded
-
-- setTimeout()
-
-    Define timeout after which profile fetch will be terminated.
-
-- setProfileFailover()
-
-    Define failover profile url

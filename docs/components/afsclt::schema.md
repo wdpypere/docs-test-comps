@@ -4,16 +4,13 @@
     - `/software/afsclt/component_afsclt_entry/thiscell`
         - required
         - type: string
-    - `/software/afsclt/component_afsclt_entry/suidcells`
+    - `/software/afsclt/component_afsclt_entry/thesecells`
         - optional
-        - type: list
+        - type: string
     - `/software/afsclt/component_afsclt_entry/settime`
         - optional
         - type: boolean
     - `/software/afsclt/component_afsclt_entry/cellservdb`
-        - optional
-        - type: string
-    - `/software/afsclt/component_afsclt_entry/afsmount`
         - optional
         - type: string
     - `/software/afsclt/component_afsclt_entry/cachemount`
@@ -28,27 +25,6 @@
     - `/software/afsclt/component_afsclt_entry/enabled`
         - required
         - type: string
-    - `/software/afsclt/component_afsclt_entry/libpam`
+    - `/software/afsclt/component_afsclt_entry/afsd_args`
         - optional
         - type: string
-    - `/software/afsclt/component_afsclt_entry/libpam_options_auth_auth`
-        - optional
-        - type: string
-    - `/software/afsclt/component_afsclt_entry/libpam_options_auth_session`
-        - optional
-        - type: string
-    - `/software/afsclt/component_afsclt_entry/libpam_options_auth_passwd`
-        - optional
-        - type: string
-    - `/software/afsclt/component_afsclt_entry/libpam_options_auth`
-        - optional
-        - type: string
-    - `/software/afsclt/component_afsclt_entry/libpam_options_refresh`
-        - optional
-        - type: string
-    - `/software/afsclt/component_afsclt_entry/verbose`
-        - optional
-        - type: string
-    - `/software/afsclt/component_afsclt_entry/debug`
-        - optional
-        - type: boolean

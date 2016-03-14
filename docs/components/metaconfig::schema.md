@@ -1,6 +1,35 @@
 ### Types
 
 - `/software/metaconfig/metaconfig_extension`
+- `/software/metaconfig/metaconfig_textrender_convert`
+    - decription: 
+    Convert value of certain types (e.g. boolean to string yes/no)
+    (using the CCM::TextRender element options)
+
+    - decription: Convert boolean to (lowercase) 'yes' and 'no'.
+    - decription: Convert boolean to (uppercase) 'YES' and 'NO'.
+    - decription: Convert boolean to (lowercase) 'true' and 'false'.
+    - decription: Convert boolean to (uppercase) 'TRUE' and 'FALSE'.
+    - decription: Convert string to doublequoted string.
+    - decription: Convert string to singlequoted string.
+    - `/software/metaconfig/metaconfig_textrender_convert/yesno`
+        - optional
+        - type: boolean
+    - `/software/metaconfig/metaconfig_textrender_convert/YESNO`
+        - optional
+        - type: boolean
+    - `/software/metaconfig/metaconfig_textrender_convert/truefalse`
+        - optional
+        - type: boolean
+    - `/software/metaconfig/metaconfig_textrender_convert/TRUEFALSE`
+        - optional
+        - type: boolean
+    - `/software/metaconfig/metaconfig_textrender_convert/doublequote`
+        - optional
+        - type: boolean
+    - `/software/metaconfig/metaconfig_textrender_convert/singlequote`
+        - optional
+        - type: boolean
 - `/software/metaconfig/caf_service_action`
 - `/software/metaconfig/metaconfig_config`
     - `/software/metaconfig/metaconfig_config/mode`
@@ -11,9 +40,6 @@
         - type: string
     - `/software/metaconfig/metaconfig_config/group`
         - required
-        - type: string
-    - `/software/metaconfig/metaconfig_config/daemon`
-        - optional
         - type: string
     - `/software/metaconfig/metaconfig_config/daemons`
         - optional
@@ -30,6 +56,9 @@
     - `/software/metaconfig/metaconfig_config/contents`
         - required
         - type: metaconfig_extension
+    - `/software/metaconfig/metaconfig_config/convert`
+        - optional
+        - type: metaconfig_textrender_convert
 - `/software/metaconfig/metaconfig_component`
     - `/software/metaconfig/metaconfig_component/services`
         - required

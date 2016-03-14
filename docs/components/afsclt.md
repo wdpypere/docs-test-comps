@@ -35,10 +35,6 @@ NCM::afsclt - NCM AFS client configuration component
 
     various command-line options for the afsd daemon
 
-- `/software/components/afsclt/verbose` : boolean
-
-    lots of debugging output in the logs.
-
 - `/software/components/afsclt/cachesize` : int
 
     desired AFS cache size on disk, in 1K blocks. The running AFS cache
@@ -54,38 +50,6 @@ NCM::afsclt - NCM AFS client configuration component
     A regularly-updated AFS CellServDB URL or filename (e.g. from AFS)
     that this component will copy to local disk. The local AFS client will
     get notified of any additions or changes within a cell.
-
-- `/software/components/afsclt/libpam` : string
-
-    Full path to PAM library to use for (Kerberos) authentication. The
-    reason this is hooked here instead of in the Kerberos component is
-    that a valid Kerberos config may be useful on a standalone
-    (non-AFS-account) system, but as soon as AFS user accounts are present
-    we absolutely need to properly configure authentication for
-    them. Besides, this is historic - on Linux we used authconfig to set
-    the Cell and the PAM config at the same time.
-
-    Default is to use the pam\_krb5 "flavour" of PAM. If you set this,
-    please also set the PAM library options below.
-
-- `/software/components/afsclt/libpam`\_options\_auth\_auth : string
-- `/software/components/afsclt/libpam`\_options\_auth\_session : string
-- `/software/components/afsclt/libpam`\_options\_auth\_passwd : string
-- `/software/components/afsclt/libpam`\_options\_auth : string
-
-    Options for the PAM library for the "new session starts"
-    case. `.._auth` is the default for PAM blocks where nothing is
-    configured explicitly.
-
-- `/software/components/afsclt/libpam`\_options\_refresh: string
-
-    Options for the PAM library for "old session should get refreshed" case, all PAM blocks.
-
-### BUGS
-
-The "debug" and "suidcell" parameters are silently ignored for now.
-
-The component configures Kerberos authentication.
 
 ### DEPENDENCIES
 

@@ -1,25 +1,25 @@
 ### Types
 
-- `/software/nagios/hoststring`
-- `/software/nagios/hostgroupstring`
-- `/software/nagios/commandstrings`
-- `/software/nagios/timeperiodstring`
-- `/software/nagios/contactgroupstring`
-- `/software/nagios/contactstring`
-- `/software/nagios/servicegroupstring`
-- `/software/nagios/servicestring`
-- `/software/nagios/service_notification_string`
-- `/software/nagios/host_notification_string`
-- `/software/nagios/stalking_string`
-- `/software/nagios/execution_failure_string`
-- `/software/nagios/notification_failure_string`
+- `/software/nagios/nagios_hoststring`
+- `/software/nagios/nagios_hostgroupstring`
+- `/software/nagios/nagios_commandstrings`
+- `/software/nagios/nagios_timeperiodstring`
+- `/software/nagios/nagios_contactgroupstring`
+- `/software/nagios/nagios_contactstring`
+- `/software/nagios/nagios_servicegroupstring`
+- `/software/nagios/nagios_servicestring`
+- `/software/nagios/nagios_service_notification_string`
+- `/software/nagios/nagios_host_notification_string`
+- `/software/nagios/nagios_stalking_string`
+- `/software/nagios/nagios_execution_failure_string`
+- `/software/nagios/nagios_notification_failure_string`
 - `/software/nagios/structure_nagios_host_generic`
     - `/software/nagios/structure_nagios_host_generic/name`
         - optional
         - type: string
     - `/software/nagios/structure_nagios_host_generic/check_command`
         - required
-        - type: commandstrings
+        - type: nagios_commandstrings
     - `/software/nagios/structure_nagios_host_generic/max_check_attempts`
         - required
         - type: long
@@ -37,7 +37,7 @@
         - type: boolean
     - `/software/nagios/structure_nagios_host_generic/check_period`
         - required
-        - type: timeperiodstring
+        - type: nagios_timeperiodstring
     - `/software/nagios/structure_nagios_host_generic/obsess_over_host`
         - optional
         - type: boolean
@@ -49,7 +49,7 @@
         - type: long
     - `/software/nagios/structure_nagios_host_generic/event_handler`
         - optional
-        - type: commandstrings
+        - type: nagios_commandstrings
     - `/software/nagios/structure_nagios_host_generic/event_handler_enabled`
         - optional
         - type: boolean
@@ -73,16 +73,16 @@
         - type: boolean
     - `/software/nagios/structure_nagios_host_generic/contact_groups`
         - required
-        - type: contactgroupstring
+        - type: nagios_contactgroupstring
     - `/software/nagios/structure_nagios_host_generic/notification_interval`
         - required
         - type: long
     - `/software/nagios/structure_nagios_host_generic/notification_period`
         - required
-        - type: timeperiodstring
+        - type: nagios_timeperiodstring
     - `/software/nagios/structure_nagios_host_generic/notification_options`
         - required
-        - type: host_notification_string
+        - type: nagios_host_notification_string
     - `/software/nagios/structure_nagios_host_generic/notifications_enabled`
         - optional
         - type: boolean
@@ -104,13 +104,13 @@
         - type: type_ip
     - `/software/nagios/structure_nagios_host/parents`
         - optional
-        - type: hoststring
+        - type: nagios_hoststring
     - `/software/nagios/structure_nagios_host/hostgroups`
         - optional
-        - type: hostgroupstring
+        - type: nagios_hostgroupstring
     - `/software/nagios/structure_nagios_host/check_command`
         - required
-        - type: commandstrings
+        - type: nagios_commandstrings
     - `/software/nagios/structure_nagios_host/max_check_attempts`
         - required
         - type: long
@@ -125,7 +125,7 @@
         - type: boolean
     - `/software/nagios/structure_nagios_host/check_period`
         - required
-        - type: timeperiodstring
+        - type: nagios_timeperiodstring
     - `/software/nagios/structure_nagios_host/obsess_over_host`
         - optional
         - type: boolean
@@ -137,7 +137,7 @@
         - type: long
     - `/software/nagios/structure_nagios_host/event_handler`
         - optional
-        - type: commandstrings
+        - type: nagios_commandstrings
     - `/software/nagios/structure_nagios_host/event_handler_enabled`
         - optional
         - type: boolean
@@ -161,16 +161,16 @@
         - type: boolean
     - `/software/nagios/structure_nagios_host/contact_groups`
         - required
-        - type: contactgroupstring
+        - type: nagios_contactgroupstring
     - `/software/nagios/structure_nagios_host/notification_interval`
         - required
         - type: long
     - `/software/nagios/structure_nagios_host/notification_period`
         - required
-        - type: timeperiodstring
+        - type: nagios_timeperiodstring
     - `/software/nagios/structure_nagios_host/notification_options`
         - required
-        - type: host_notification_string
+        - type: nagios_host_notification_string
     - `/software/nagios/structure_nagios_host/notifications_enabled`
         - optional
         - type: boolean
@@ -189,14 +189,14 @@
         - type: string
     - `/software/nagios/structure_nagios_hostgroup/members`
         - optional
-        - type: hoststring
+        - type: nagios_hoststring
 - `/software/nagios/structure_nagios_hostdependency`
     - `/software/nagios/structure_nagios_hostdependency/dependent_host_name`
         - required
-        - type: hoststring
+        - type: nagios_hoststring
     - `/software/nagios/structure_nagios_hostdependency/notification_failure_criteria`
         - required
-        - type: host_notification_string
+        - type: nagios_host_notification_string
 - `/software/nagios/structure_nagios_service`
     - `/software/nagios/structure_nagios_service/name`
         - optional
@@ -206,19 +206,19 @@
         - type: string
     - `/software/nagios/structure_nagios_service/host_name`
         - optional
-        - type: hoststring
+        - type: nagios_hoststring
     - `/software/nagios/structure_nagios_service/hostgroup_name`
         - optional
-        - type: hostgroupstring
+        - type: nagios_hostgroupstring
     - `/software/nagios/structure_nagios_service/servicegroups`
         - optional
-        - type: servicegroupstring
+        - type: nagios_servicegroupstring
     - `/software/nagios/structure_nagios_service/is_volatile`
         - optional
         - type: boolean
     - `/software/nagios/structure_nagios_service/check_command`
         - optional
-        - type: commandstrings
+        - type: nagios_commandstrings
     - `/software/nagios/structure_nagios_service/max_check_attempts`
         - required
         - type: long
@@ -236,7 +236,7 @@
         - type: boolean
     - `/software/nagios/structure_nagios_service/check_period`
         - optional
-        - type: timeperiodstring
+        - type: nagios_timeperiodstring
     - `/software/nagios/structure_nagios_service/parallelize_check`
         - optional
         - type: boolean
@@ -251,7 +251,7 @@
         - type: long
     - `/software/nagios/structure_nagios_service/event_handler`
         - optional
-        - type: commandstrings
+        - type: nagios_commandstrings
     - `/software/nagios/structure_nagios_service/event_handler_enabled`
         - optional
         - type: boolean
@@ -278,19 +278,19 @@
         - type: long
     - `/software/nagios/structure_nagios_service/notification_period`
         - required
-        - type: timeperiodstring
+        - type: nagios_timeperiodstring
     - `/software/nagios/structure_nagios_service/notification_options`
         - required
-        - type: service_notification_string
+        - type: nagios_service_notification_string
     - `/software/nagios/structure_nagios_service/notifications_enabled`
         - optional
         - type: boolean
     - `/software/nagios/structure_nagios_service/contact_groups`
         - required
-        - type: contactgroupstring
+        - type: nagios_contactgroupstring
     - `/software/nagios/structure_nagios_service/stalking_options`
         - optional
-        - type: stalking_string
+        - type: nagios_stalking_string
     - `/software/nagios/structure_nagios_service/register`
         - required
         - type: boolean
@@ -306,10 +306,10 @@
         - type: string
     - `/software/nagios/structure_nagios_servicegroup/members`
         - optional
-        - type: servicestring
+        - type: nagios_servicestring
     - `/software/nagios/structure_nagios_servicegroup/servicegroup_members`
         - optional
-        - type: servicegroupstring
+        - type: nagios_servicegroupstring
     - `/software/nagios/structure_nagios_servicegroup/notes`
         - optional
         - type: string
@@ -322,19 +322,19 @@
 - `/software/nagios/structure_nagios_servicedependency`
     - `/software/nagios/structure_nagios_servicedependency/dependent_host_name`
         - required
-        - type: hoststring
+        - type: nagios_hoststring
     - `/software/nagios/structure_nagios_servicedependency/dependent_hostgroup_name`
         - optional
-        - type: hostgroupstring
+        - type: nagios_hostgroupstring
     - `/software/nagios/structure_nagios_servicedependency/dependent_service_description`
         - required
-        - type: servicestring
+        - type: nagios_servicestring
     - `/software/nagios/structure_nagios_servicedependency/host_name`
         - optional
-        - type: hoststring
+        - type: nagios_hoststring
     - `/software/nagios/structure_nagios_servicedependency/hostgroup_name`
         - optional
-        - type: hostgroupstring
+        - type: nagios_hostgroupstring
     - `/software/nagios/structure_nagios_servicedependency/service_description`
         - required
         - type: string
@@ -343,38 +343,38 @@
         - type: boolean
     - `/software/nagios/structure_nagios_servicedependency/execution_failure_criteria`
         - optional
-        - type: execution_failure_string
+        - type: nagios_execution_failure_string
     - `/software/nagios/structure_nagios_servicedependency/notification_failure_criteria`
         - optional
-        - type: notification_failure_string
+        - type: nagios_notification_failure_string
     - `/software/nagios/structure_nagios_servicedependency/dependency_period`
         - optional
-        - type: timeperiodstring
+        - type: nagios_timeperiodstring
 - `/software/nagios/structure_nagios_contact`
     - `/software/nagios/structure_nagios_contact/alias`
         - required
         - type: string
     - `/software/nagios/structure_nagios_contact/contactgroups`
         - required
-        - type: contactgroupstring
+        - type: nagios_contactgroupstring
     - `/software/nagios/structure_nagios_contact/host_notification_period`
         - required
-        - type: timeperiodstring
+        - type: nagios_timeperiodstring
     - `/software/nagios/structure_nagios_contact/service_notification_period`
         - required
-        - type: timeperiodstring
+        - type: nagios_timeperiodstring
     - `/software/nagios/structure_nagios_contact/host_notification_options`
         - required
-        - type: host_notification_string
+        - type: nagios_host_notification_string
     - `/software/nagios/structure_nagios_contact/service_notification_options`
         - required
-        - type: service_notification_string
+        - type: nagios_service_notification_string
     - `/software/nagios/structure_nagios_contact/host_notification_commands`
         - required
-        - type: commandstrings
+        - type: nagios_commandstrings
     - `/software/nagios/structure_nagios_contact/service_notification_commands`
         - required
-        - type: commandstrings
+        - type: nagios_commandstrings
     - `/software/nagios/structure_nagios_contact/email`
         - required
         - type: string
@@ -387,43 +387,43 @@
         - type: string
     - `/software/nagios/structure_nagios_contactgroup/members`
         - required
-        - type: contactstring
-- `/software/nagios/timerange`
+        - type: nagios_contactstring
+- `/software/nagios/nagios_timerange`
 - `/software/nagios/structure_nagios_timeperiod`
     - `/software/nagios/structure_nagios_timeperiod/alias`
         - optional
         - type: string
     - `/software/nagios/structure_nagios_timeperiod/monday`
         - optional
-        - type: timerange
+        - type: nagios_timerange
     - `/software/nagios/structure_nagios_timeperiod/tuesday`
         - optional
-        - type: timerange
+        - type: nagios_timerange
     - `/software/nagios/structure_nagios_timeperiod/wednesday`
         - optional
-        - type: timerange
+        - type: nagios_timerange
     - `/software/nagios/structure_nagios_timeperiod/thursday`
         - optional
-        - type: timerange
+        - type: nagios_timerange
     - `/software/nagios/structure_nagios_timeperiod/friday`
         - optional
-        - type: timerange
+        - type: nagios_timerange
     - `/software/nagios/structure_nagios_timeperiod/saturday`
         - optional
-        - type: timerange
+        - type: nagios_timerange
     - `/software/nagios/structure_nagios_timeperiod/sunday`
         - optional
-        - type: timerange
+        - type: nagios_timerange
 - `/software/nagios/structure_nagios_serviceextinfo`
     - `/software/nagios/structure_nagios_serviceextinfo/host_name`
         - optional
-        - type: hoststring
+        - type: nagios_hoststring
     - `/software/nagios/structure_nagios_serviceextinfo/service_description`
         - required
         - type: string
     - `/software/nagios/structure_nagios_serviceextinfo/hostgroup_name`
         - optional
-        - type: hostgroupstring
+        - type: nagios_hostgroupstring
     - `/software/nagios/structure_nagios_serviceextinfo/notes`
         - optional
         - type: string
@@ -698,10 +698,10 @@
         - type: boolean
     - `/software/nagios/structure_nagios_nagios_cfg/service_perfdata_command`
         - required
-        - type: commandstrings
+        - type: nagios_commandstrings
     - `/software/nagios/structure_nagios_nagios_cfg/host_perfdata_command`
         - required
-        - type: commandstrings
+        - type: nagios_commandstrings
     - `/software/nagios/structure_nagios_nagios_cfg/host_perfdata_file`
         - required
         - type: string
@@ -728,10 +728,10 @@
         - type: long
     - `/software/nagios/structure_nagios_nagios_cfg/host_perfdata_file_processing_command`
         - optional
-        - type: commandstrings
+        - type: nagios_commandstrings
     - `/software/nagios/structure_nagios_nagios_cfg/service_perfdata_file_processing_command`
         - optional
-        - type: commandstrings
+        - type: nagios_commandstrings
     - `/software/nagios/structure_nagios_nagios_cfg/obsess_over_services`
         - required
         - type: boolean

@@ -1,5 +1,9 @@
 ### Types
 
+- `/software/ccm/kerberos_principal_string`
+    - decription: 
+    kerberos_principal_string is a string with format principal[/component1[/component2[...]]]@REALM
+
 - `/software/ccm/component_ccm`
     - `/software/ccm/component_ccm/configFile`
         - required
@@ -72,3 +76,13 @@
     - `/software/ccm/component_ccm/json_typed`
         - optional
         - type: boolean
+    - `/software/ccm/component_ccm/tabcompletion`
+        - optional
+        - type: boolean
+    - `/software/ccm/component_ccm/keep_old`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/ccm/component_ccm/trust`
+        - optional
+        - type: kerberos_principal_string

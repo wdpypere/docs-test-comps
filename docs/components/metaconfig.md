@@ -1,6 +1,25 @@
+\### #
+\### Software subject to following license(s):
+\###   Apache 2 License (http://www.opensource.org/licenses/apache2.0)
+\###   Copyright (c) Responsible Organization
+\#
+
+\### #
+\### Current developer(s):
+\###   Luis Fernando Muñoz Mejías <Luis.Munoz@UGent.be>
+\#
+
+\### #
+\### Author(s): Luis Fernando Muñoz Mejías
+\#
+
+\### #
+\### metaconfig, 16.2.1-SNAPSHOT, SNAPSHOT20160314125420, 2016-03-14T12:54:20Z
+\#
+
 ### NAME
 
-ncm-metaconfig: Configure services whose config format can be 
+ncm-metaconfig: Configure services whose config format can be
 rendered via `CAF::TextRender`.
 
 ### DESCRIPTION
@@ -37,10 +56,10 @@ The configuration information for the component.  It is an nlist of
 
 - daemons ? caf\_service\_action{}
 
-    An nlist with foreach daemon the `CAF::Service` action to take 
+    An nlist with foreach daemon the `CAF::Service` action to take
     if the file changes.
 
-    Even if multiple `services` are associated to the same daemon, each action 
+    Even if multiple `services` are associated to the same daemon, each action
     for the daemon will be taken at most once.
 
     If multiple actions are to be taken for the same daemon, all actions
@@ -63,6 +82,34 @@ The configuration information for the component.  It is an nlist of
     configuration file. It is recommended to define another type for each
     config file, and bind it to these contents, to get the best
     validation.
+
+- element
+
+    Predefined conversions from [EDG::WP4::CCM::TextRender](https://metacpan.org/pod/EDG::WP4::CCM::TextRender):
+
+    - yesno ? boolean
+
+        Convert boolean to (lowercase) 'yes' and 'no'.
+
+    - YESNO ? boolean
+
+        Convert boolean to (uppercase) 'YES' and 'NO'.
+
+    - truefalse ? boolean
+
+        Convert boolean to (lowercase) 'true' and 'false'.
+
+    - TRUEFALSE ? boolean
+
+        Convert boolean to (uppercase) 'TRUE' and 'FALSE'.
+
+    - doublequote ? boolean
+
+        Convert string to doublequoted string.
+
+    - singlequote ? boolean
+
+        Convert string to singlequoted string.
 
 ### CONFIGURATION MODULES
 
@@ -195,6 +242,10 @@ And now, we only have to specify the contents:
 
 That's it!  When you deploy your configuration you should see your
 `/etc/foo.ini` in the correct location.
+
+\#
+\### Author(s): Luis Fernando Muñoz Mejías
+\#
 
 ### TODO
 

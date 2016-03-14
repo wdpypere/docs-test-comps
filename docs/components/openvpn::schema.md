@@ -176,6 +176,10 @@
     - `/software/openvpn/structure_component_openvpn_client/tls`-client
         - required
         - type: boolean
+    - `/software/openvpn/structure_component_openvpn_client/max`-routes
+        - optional
+        - type: long
+        - range: 0..
 - `/software/openvpn/structure_component_openvpn`
     - `/software/openvpn/structure_component_openvpn/server`
         - optional

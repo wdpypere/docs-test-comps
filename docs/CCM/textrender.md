@@ -15,7 +15,50 @@ difference the support of a `EDG::WP4::CCM:Element` instance as contents.
 
     - module
 
-        The rendering module to use (see `CAF::TextRender` for details).
+        The rendering module to use (see [CAF::TextRender](https://metacpan.org/pod/CAF::TextRender) for details).
+
+        CCM provides following additional builtin modules:
+
+        - general
+
+            using TT to render a `Config::General` compatible file.
+            (This is an alias for the `CCM/general` TT module).
+
+            Contents is a hashref (does not require a `Element` instance),
+            with key/value pairs generated according to
+            the basetype of the value as follows:
+
+            - scalar
+
+                converted in a single line
+                    <key> <value>
+
+            - arrayref of scalars
+
+                converted in multiple lines as follows
+                    <key> <scalar element0>
+                    <key> <scalar element1>
+                    ...
+
+            - hashref
+
+                generates a block with format
+                    <"key">
+                        <recursive rendering of the value>
+                    </"key">
+
+            - arrayref of hashref
+
+                generates series of blocks
+                    <"key">
+                        <recursive rendering of the element0>
+                    </"key">
+                    <"key">
+                        <recursive rendering of the element1>
+                    </"key">
+                    ...
+
+            (Whitespace in the block name is enforced with double quotes.)
 
     - contents
 
@@ -110,9 +153,10 @@ difference the support of a `EDG::WP4::CCM:Element` instance as contents.
     Supported formats are:
 
     - json
-    - yaml
     - pan
     - pancxml
+    - query
+    - yaml
 
     Usage example:
 

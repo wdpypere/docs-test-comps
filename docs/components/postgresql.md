@@ -9,11 +9,6 @@ It's very basic in functionality (originally developed for dcache usage).
 
 ### RESOURCES
 
-- `/software/components/postgresql/config/debug_print`
-
-    Set the debug logging level (default = 15). The default is very verbose (but best to leave as is). 
-    The component can be a bit aggressive when things don't work, this will log everything. 
-
 - `/software/components/postgresql/pg_script_name`
 
     Name of the service to start postgresql (default = postgresql). 

@@ -6,14 +6,10 @@ CAF::Log - Simple class for handling log files
 
     use CAF::Log;
 
-    my $log=CAF::Log->new('/foo/bar','at');
+    my $log = CAF::Log->new('/foo/bar', 'at');
 
     $log->print("this goes to the log file\n");
     $log->close();
-
-### INHERITANCE
-
-    CAF::Reporter
 
 ### DESCRIPTION
 
@@ -22,29 +18,50 @@ A log file line can be prefixed by a time stamp.
 
 #### Public methods
 
-- close(): boolean
+- `close()`: boolean
 
-    closes the log file.
+    closes the log file, returns SUCCESS on success, undef otherwise
+    (if no FH attribute exists).
 
-- print($string):boolean
+- `print($msg)`: boolean
 
-    prints a line into the log file.
+    Prints `$msg` into the log file.
+
+    If `PROCID` attribute is defined (value is irrelevant),
+    the proces id in square brackets (`[PID]`) and additional
+    space are prepended.
+
+    If `TSTAMP` attribute is defined (value is irrelevant),
+    a `YYYY/MM/DD-HH:mm:ss` timestamp and additional space
+    are prepended.
+
+    No newline is added to the message.
+
+    Returns the return value of invocation of FH print method.
 
 #### Private methods
 
-- \_initialize($filename,$options)
+- `_initialize($filename, $options)`
 
-    initialize the object. Called by new($filename,$options).
+    `$options` is a string with magic letters
 
-    $options can be 'a' for appending to a logfile, and 'w' for
-    truncating, and 't' for generating a timestamp on every
-    print. If the 'w' option is used and there was a previous
+    - a: append to a logfile
+    - w: truncate a loglfile
+    - t: generate a timestamp on every print
+    - p: add PID
+
+    Only one of `w` or `a` can and has to be set. (There is no default.)
+
+    If the `w` option is used and there was a previous
     log file, it is renamed with the extension '.prev'.
 
     Examples:
-    open('/foo/bar','at'): append, enable timestamp
-    open('/foo/bar','w') : truncate logfile, no timestamp
+        CAF::Log->new('/foo/bar', 'at'): append, enable timestamp
+        CAF::Log->new('/foo/bar', 'w') : truncate logfile, no timestamp
+
+    If the filename ends with `.log`, the `SYSLOG` attribute is set to
+    basename of the file without suffix (relevant for [CAF::Reporter::syslog](https://metacpan.org/pod/CAF::Reporter::syslog)).
 
 - DESTROY
 
-    called during garbage collection. Invokes close()
+    Called during garbage collection. Invokes close().
