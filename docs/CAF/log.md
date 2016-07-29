@@ -46,7 +46,7 @@ A log file line can be prefixed by a time stamp.
     `$options` is a string with magic letters
 
     - a: append to a logfile
-    - w: truncate a loglfile
+    - w: truncate a logfile
     - t: generate a timestamp on every print
     - p: add PID
 

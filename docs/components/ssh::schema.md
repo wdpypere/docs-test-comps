@@ -1,6 +1,5 @@
 ### Types
 
-- `/software/ssh/ssh_yesnostring`
 - `/software/ssh/ssh_preferred_authentication`
 - `/software/ssh/ssh_core_options_type`
     - `/software/ssh/ssh_core_options_type/AddressFamily`
@@ -8,7 +7,7 @@
         - type: string
     - `/software/ssh/ssh_core_options_type/ChallengeResponseAuthentication`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_core_options_type/Ciphers`
         - optional
         - type: string
@@ -17,19 +16,19 @@
         - type: string
     - `/software/ssh/ssh_core_options_type/GSSAPIAuthentication`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_core_options_type/GSSAPICleanupCredentials`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_core_options_type/GSSAPIKeyExchange`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_core_options_type/GatewayPorts`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_core_options_type/HostbasedAuthentication`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_core_options_type/LogLevel`
         - optional
         - type: string
@@ -38,25 +37,25 @@
         - type: string
     - `/software/ssh/ssh_core_options_type/PasswordAuthentication`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_core_options_type/Protocol`
         - optional
         - type: string
     - `/software/ssh/ssh_core_options_type/PubkeyAuthentication`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_core_options_type/RSAAuthentication`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_core_options_type/RhostsRSAAuthentication`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_core_options_type/SendEnv`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_core_options_type/TCPKeepAlive`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_core_options_type/XAuthLocation`
         - optional
         - type: string
@@ -66,19 +65,19 @@
     - decription: ListenAddress, one per line
     - `/software/ssh/ssh_daemon_options_type/AFSTokenPassing`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/AcceptEnv`
         - optional
         - type: string
     - `/software/ssh/ssh_daemon_options_type/AllowAgentForwarding`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/AllowGroups`
         - optional
         - type: string
     - `/software/ssh/ssh_daemon_options_type/AllowTcpForwarding`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/AllowUsers`
         - optional
         - type: string
@@ -108,43 +107,43 @@
         - type: string
     - `/software/ssh/ssh_daemon_options_type/GSSAPIStrictAcceptorCheck`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/HostKey`
         - optional
         - type: string
     - `/software/ssh/ssh_daemon_options_type/HPNDisabled`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/HPNBufferSize`
         - optional
         - type: long
     - `/software/ssh/ssh_daemon_options_type/IgnoreRhosts`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/IgnoreUserKnownHosts`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/KbdInteractiveAuthentication`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/KerberosAuthentication`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/KerberosGetAFSToken`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/KerberosOrLocalPasswd`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/KerberosTgtPassing`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/KerberosTicketAuthentication`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/KerberosTicketCleanup`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/KeyRegenerationInterval`
         - optional
         - type: long
@@ -162,10 +161,10 @@
         - type: long
     - `/software/ssh/ssh_daemon_options_type/NoneEnabled`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/PermitEmptyPasswords`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/PermitRootLogin`
         - optional
         - type: string
@@ -174,7 +173,7 @@
         - type: string
     - `/software/ssh/ssh_daemon_options_type/PermitUserEnvironment`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/PidFile`
         - optional
         - type: string
@@ -183,22 +182,22 @@
         - type: long
     - `/software/ssh/ssh_daemon_options_type/PrintLastLog`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/PrintMotd`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/RhostsAuthentication`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/ServerKeyBits`
         - optional
         - type: long
     - `/software/ssh/ssh_daemon_options_type/ShowPatchLevel`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/StrictModes`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/Subsystem`
         - optional
         - type: string
@@ -210,50 +209,50 @@
         - type: long
     - `/software/ssh/ssh_daemon_options_type/TcpRcvBufPoll`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/UseDNS`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/UseLogin`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/UsePAM`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/UsePrivilegeSeparation`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/VerifyReverseMapping`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/X11DisplayOffset`
         - optional
         - type: long
     - `/software/ssh/ssh_daemon_options_type/X11Forwarding`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/X11UseLocalhost`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
 - `/software/ssh/ssh_client_options_type`
     - `/software/ssh/ssh_client_options_type/BatchMode`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_client_options_type/ConnectTimeout`
         - optional
         - type: long
     - `/software/ssh/ssh_client_options_type/EnableSSHKeysign`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_client_options_type/ForwardAgent`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_client_options_type/ForwardX11`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_client_options_type/GSSAPIDelegateCredentials`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_client_options_type/Port`
         - optional
         - type: long
@@ -262,13 +261,13 @@
         - type: ssh_preferred_authentication
     - `/software/ssh/ssh_client_options_type/RhostsAuthentication`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_client_options_type/StrictHostKeyChecking`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_client_options_type/UsePrivilegedPort`
         - optional
-        - type: ssh_yesnostring
+        - type: legacy_binary_affirmation_string
 - `/software/ssh/ssh_daemon_type`
     - decription: if false and sshd doesn't exist, skip config validation
     - `/software/ssh/ssh_daemon_type/options`

@@ -86,6 +86,12 @@ manpage for more details.
     The directory containing accepted CA certificates when using the https
     protocol.
 
+- `group_readable : defined_group`
+
+    Wether the profiles should be group-readable (value is the groupname).
+    There is no default, and it is not allowed to set both `group_readable`
+    and enable `world_readable`.
+
 - `world_readable : long(0..1)`
 
     Whether the profiles should be world-readable.  This takes either a 0

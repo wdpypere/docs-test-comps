@@ -17,7 +17,17 @@ the class constructor.
 - new
 
     Returns a new object it accepts the same arguments as the constructor
-    for `CAF::FileWriter`
+    for `CAF::FileWriter` with one additional option:
+
+    - source
+
+        This option, when present, must be a file name whose contents will be used
+        as the initial contents for the edited file if the source modification time
+        is more recent than the edited file modification time. This allows to rebuild
+        the file contents based on a new version of the reference file.
+
+        The `source` can be a pipe: in this case, it is always considered more recent
+        than the edited file.
 
 - open
 
@@ -64,7 +74,7 @@ the class constructor.
 - add\_or\_replace\_sysconfig\_lines(key, value, whence)
 
     Replace the `value` in lines matching the `key`. If
-    there is no match, a new line will be added to the where `whence` 
+    there is no match, a new line will be added to the where `whence`
     and `offset` tells us.
     The sysconfig\_separator value can be changed if it's not the usual '='.
 
@@ -72,40 +82,40 @@ the class constructor.
 
     Replace lines matching `re` but not `goodre` with `newvalue`. If
     there is no match, a new line will be added where the `whence`
-    and `offset` tell us. See `IO::String::seek` 
-    for details; e.g. use the constants tuple 
+    and `offset` tell us. See `IO::String::seek`
+    for details; e.g. use the constants tuple
     BEGINNING\_OF\_FILE or ENDING\_OF\_FILE.
     If `add_after_newline` is true or undef, before adding the new line,
     it is verified that a newline precedes this position. If no newline
     char is found, one is added first.
 
-    `whence` must be one of SEEK\_SET, SEEK\_CUR or SEEK\_END; 
-    everything else will be ignored (an error is logged if 
-    logging is set)). 
+    `whence` must be one of SEEK\_SET, SEEK\_CUR or SEEK\_END;
+    everything else will be ignored (an error is logged if
+    logging is set)).
 
-    Reminder: if the offset position lies beyond SEEK\_END, padding will 
+    Reminder: if the offset position lies beyond SEEK\_END, padding will
     occur with $self->pad, which defaults to `\0`.
 
 - get\_all\_positions(regex, whence, offset)
 
-    Return reference to the arrays with the positions 
-    before and after all matches of the compiled regular expression 
-    `regex`, starting from `whence` (default 
-    beginning) and `offset` (default 0). (If the regexp 
+    Return reference to the arrays with the positions
+    before and after all matches of the compiled regular expression
+    `regex`, starting from `whence` (default
+    beginning) and `offset` (default 0). (If the regexp
     does not match, references to empty arrays are returned).
 
-    Global regular expression matching is performed (i.e. `m/$regex/g`). 
-    The text is searched without line-splitting, but multiline regular 
+    Global regular expression matching is performed (i.e. `m/$regex/g`).
+    The text is searched without line-splitting, but multiline regular
     expressions like `qr{^something.*$}m` can be used for per line matching.
 
 - get\_header\_positions(regex, whence, offset)
 
     Return the position before and after the "header".
-    A header is a block of lines that start with same 
-    compiled regular expression `regex`. 
+    A header is a block of lines that start with same
+    compiled regular expression `regex`.
     Default value for `regex` is `qr{^\s*#.*$}m`
-    (matching a block of text with each line starting with a `#`); 
-    the default value is also used when `regex` is `undef`. 
+    (matching a block of text with each line starting with a `#`);
+    the default value is also used when `regex` is `undef`.
     `(-1, -1)` is returned if no match was found.
 
     `whence` and `offset` are passed to underlying `get_all_positions`
@@ -123,13 +133,13 @@ The following constants are automatically exported when using this module:
 - `BEGINNING_OF_FILE`
 
     Flag to pass to `add_or_replace_lines`. Lines should be added at the
-    beginning of the file. (To be used in list context, as this is actually 
+    beginning of the file. (To be used in list context, as this is actually
     `(SEEK_SET, 0)`.)
 
 - `ENDING_OF_FILE`
 
     Flag to pass to `add_or_replace_lines`. Lines should be added at the
-    end of the file. (To be used in list context, as this is actually 
+    end of the file. (To be used in list context, as this is actually
     `(SEEK_END, 0)`.)
 
 ### EXAMPLES

@@ -1,6 +1,5 @@
 ### Types
 
-- `/software/authconfig/yesnostring`
 - `/software/authconfig/authconfig_pamadditions_line_type`
     - `/software/authconfig/authconfig_pamadditions_line_type/order`
         - required
@@ -206,7 +205,7 @@
         - type: string
     - `/software/authconfig/authconfig_method_ldap_type/nss_paged_results`
         - required
-        - type: yesnostring
+        - type: legacy_binary_affirmation_string
     - `/software/authconfig/authconfig_method_ldap_type/pagesize`
         - optional
         - type: long

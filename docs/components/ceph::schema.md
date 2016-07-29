@@ -44,6 +44,9 @@
         - optional
         - type: long
         - range: 0..
+    - `/software/ceph/ceph_cluster_config/mon_osd_max_op_age`
+        - optional
+        - type: long
     - `/software/ceph/ceph_cluster_config/osd_crush_update_on_start`
         - optional
         - type: boolean

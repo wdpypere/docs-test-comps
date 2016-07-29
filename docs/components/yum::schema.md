@@ -88,6 +88,24 @@
     - `/software/yum/component_spma_yum/fullsearch`
         - required
         - type: boolean
+    - `/software/yum/component_spma_yum/excludes`
+        - optional
+        - type: string
+    - `/software/yum/component_spma_yum/yumconf`
+        - optional
+        - type: string
+    - `/software/yum/component_spma_yum/whitelist`
+        - optional
+        - type: string
+    - `/software/yum/component_spma_yum/quattor_os_file`
+        - optional
+        - type: string
+    - `/software/yum/component_spma_yum/quattor_os_release`
+        - optional
+        - type: string
+    - `/software/yum/component_spma_yum/suffix`
+        - optional
+        - type: string
     - `/software/yum/component_spma_yum/plugins`
         - optional
         - type: spma_yum_plugins

@@ -1,6 +1,5 @@
 ### Types
 
-- `/software/spma/boolean_yes_no`
 - `/software/spma/component_spma_type`
     - `/software/spma/component_spma_type/cmdfile`
         - required
@@ -28,13 +27,13 @@
         - type: boolean
     - `/software/spma/component_spma_type/localcache`
         - optional
-        - type: boolean_yes_no
+        - type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_type/protectkernel`
         - optional
-        - type: boolean_yes_no
+        - type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_type/proxy`
         - optional
-        - type: boolean_yes_no
+        - type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_type/proxyhost`
         - optional
         - type: string
@@ -43,16 +42,16 @@
         - type: string
     - `/software/spma/component_spma_type/proxyrandom`
         - optional
-        - type: boolean_yes_no
+        - type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_type/proxytype`
         - optional
         - type: string
     - `/software/spma/component_spma_type/rpmexclusive`
         - optional
-        - type: boolean_yes_no
+        - type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_type/run`
         - optional
-        - type: boolean_yes_no
+        - type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_type/tmpdir`
         - optional
         - type: string
@@ -67,13 +66,13 @@
         - type: string
     - `/software/spma/component_spma_type/userpkgs`
         - optional
-        - type: boolean_yes_no
+        - type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_type/userprio`
         - optional
-        - type: boolean_yes_no
+        - type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_type/usespmlist`
         - optional
-        - type: boolean_yes_no
+        - type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_type/verbose`
         - optional
         - type: string

@@ -17,3 +17,12 @@ and no modifications are expected.
 
 Printing to this file is allowed, but changes will be discarded (in
 effect, the `FileWriter` is `cancel`-ed.
+
+- new
+
+    Create a new instance: open the file `$fn`, read it,
+    seek to the beginning and `cancel` any (future) changes.
+
+- open
+
+    Synonym for `new()`

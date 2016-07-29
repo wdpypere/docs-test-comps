@@ -15,7 +15,7 @@
         - type: boolean
     - `/software/named/component_named/servers`
         - optional
-        - type: string
+        - type: type_ip
     - `/software/named/component_named/options`
         - optional
         - type: string

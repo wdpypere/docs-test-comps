@@ -108,6 +108,9 @@
     - `/software/sudo/structure_sudo_default_options/use_loginclass`
         - optional
         - type: boolean
+    - `/software/sudo/structure_sudo_default_options/visiblepw`
+        - optional
+        - type: boolean
     - `/software/sudo/structure_sudo_default_options/passwd_tries`
         - optional
         - type: long

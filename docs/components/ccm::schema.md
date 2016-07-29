@@ -63,6 +63,9 @@
     - `/software/ccm/component_ccm/ca_dir`
         - optional
         - type: string
+    - `/software/ccm/component_ccm/group_readable`
+        - optional
+        - type: string
     - `/software/ccm/component_ccm/world_readable`
         - required
         - type: long
@@ -86,3 +89,9 @@
     - `/software/ccm/component_ccm/trust`
         - optional
         - type: kerberos_principal_string
+    - `/software/ccm/component_ccm/principal`
+        - optional
+        - type: kerberos_principal_string
+    - `/software/ccm/component_ccm/keytab`
+        - optional
+        - type: string

@@ -14,7 +14,7 @@ To create a new ticket for principal SERVICE/host@REALM
         principal => 'SERVICE/host@REALM',
         log => $self,
     );
-    return if(! defined($krb->get_context());
+    return if(! defined($krb->get_context()));
 
     ### set environment to temporary credential cache
     ### temporary cache is cleaned-up during destroy of $krb
@@ -101,7 +101,7 @@ To create a new ticket for principal SERVICE/host@REALM
 
     - itoken
 
-        Input token (`GSS_C_NO_BUFFER` is used if not defined).
+        Input token (`q{}` is used if not defined).
 
     Returns the output token in case of succes, undef in case of failure.
 

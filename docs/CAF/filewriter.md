@@ -70,7 +70,7 @@ This is just a wrapper class for `LC::Check::file`
 
 - open
 
-    Synonimous of new.
+    Synonym for `new()`
 
 - close
 
@@ -98,6 +98,27 @@ This is just a wrapper class for `LC::Check::file`
     Returns a string with the contents of the file, so far. It overloads
     `""`, so it's now possible to do "$fh" and get the contents of the
     file so far.
+
+- error, warn, info, verbose, debug, report, OK
+
+    Convenience methods to access the log/reporter instance that might
+    be passed during initialisation and set to `*$self-`{LOG}>.
+
+- is\_verbose
+
+    Determine if the reporter level is verbose.
+    If it can't be determined from the reporter instance,
+    use the global `CAF::Reporter` state.
+
+- event
+
+    Method to track an event via LOG `CAF::History` instance (if any).
+
+    Following metadata is added
+
+    - filename
+
+        Adds the filename as metadata
 
 #### Private methods
 

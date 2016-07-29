@@ -51,6 +51,11 @@ be described in this section.
 
     Set ssh multiplex options
 
+- cfg\_group : string
+
+    In some cases (such a Sunstone standalone conf with apache), some ONE conf files should be accessible by a different group (as apache).
+    This variable sets the group name to change these files permissions.
+
 - host\_hyp : string
 
     Set host hypervisor type

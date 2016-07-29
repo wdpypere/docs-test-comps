@@ -193,6 +193,9 @@
     - `/software/iptables/component_iptables_rule/pkt`-type
         - optional
         - type: string
+    - `/software/iptables/component_iptables_rule/comment`
+        - optional
+        - type: string
 - `/software/iptables/component_iptables_preamble`
     - `/software/iptables/component_iptables_preamble/input`
         - optional

@@ -51,10 +51,10 @@ In particular, one should avoid to return the `$self` instance at the end of
 
     This method must be overwritten in a derived class
 
-- error, warn, info, verbose, debug, report, OK
+- error, warn, info, verbose, debug, report, OK, event
 
-    Convenience methods to access the log instance that might
-    be passed during initialisation and set to $self->{log}.
+    Convenience methods to access the log/reporter instance that might
+    be passed during initialisation and set to `$self-`{log}>.
 
     (When constructing classes via multiple inheritance,
     `CAF::Reporter` should precede `CAF::Object` if you want

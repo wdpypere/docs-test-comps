@@ -13,18 +13,18 @@
     - `/software/afsclt/component_afsclt_entry/cellservdb`
         - optional
         - type: string
+    - `/software/afsclt/component_afsclt_entry/afs_mount`
+        - optional
+        - type: string
     - `/software/afsclt/component_afsclt_entry/cachemount`
         - optional
         - type: string
     - `/software/afsclt/component_afsclt_entry/cachesize`
         - optional
         - type: string
-    - `/software/afsclt/component_afsclt_entry/options`
-        - optional
-        - type: nlist
     - `/software/afsclt/component_afsclt_entry/enabled`
         - required
-        - type: string
+        - type: legacy_binary_affirmation_string
     - `/software/afsclt/component_afsclt_entry/afsd_args`
         - optional
         - type: string

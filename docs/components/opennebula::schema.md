@@ -239,7 +239,7 @@ shared DS is also supported
         - required
         - type: string
     - `/software/opennebula/opennebula_user/password`
-        - required
+        - optional
         - type: string
 - `/software/opennebula/opennebula_remoteconf_ceph`
     - `/software/opennebula/opennebula_remoteconf_ceph/pool_name`
@@ -608,6 +608,9 @@ datastores, vnets, hosts names, etc
     - `/software/opennebula/component_opennebula/ssh_multiplex`
         - required
         - type: boolean
+    - `/software/opennebula/component_opennebula/cfg_group`
+        - optional
+        - type: string
     - `/software/opennebula/component_opennebula/host_ovs`
         - optional
         - type: boolean

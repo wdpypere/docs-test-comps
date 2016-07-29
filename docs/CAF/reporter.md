@@ -64,12 +64,39 @@ with the `set_logfile` method.
     If any of these arguments is `undef`, current application settings
     will be preserved.
 
-- `set_report_logfile($logfile)`: bool
+- `set_report_logfile($loginstance)`: bool
 
-    If `$logfile` is defined, it will be used as log file. `$logfile` can be
+    If `$loginstance` is defined, it will be used as log file. `$loginstance` can be
     any type of class object reference, but the object must support a
     `print(@array)` method. Typically, it should be an `CAF::Log`
-    instance. If `$logfile` is undefined, no log file will be used.
+    instance. If `$loginstance` is undefined, no log file will be used.
+
+    Returns SUCCESS on success, undef otherwise.
+
+    (The method name is slightly misleading, because is it does not set the logfile's
+    filename, but the internal `$LOGFILE` attribute).
+
+- `init_logfile($filename, $options)`: bool
+
+    Create a new [CAF::Log](https://metacpan.org/pod/CAF::Log) instance with `$filename` and `$options` and
+    set it using `set_report_logfile`.
+    Returns SUCCESS on success, undef otherwise.
+
+    (The method name is slightly misleading, because is it does
+    create the logfile with filename, but the internal
+    `$LOGFILE` attribute).
+
+- `get_debuglevel`: int
+
+    Return current debuglevel
+
+- `is_quiet`: bool
+
+    Return true if reporter is quiet, false otherwise
+
+- `is_verbose`: bool
+
+    Return true if reporter is verbose, false otherwise
 
 - `report(@array)`: boolean
 
@@ -131,3 +158,26 @@ with the `set_logfile` method.
     This attribute is prepended to every message.
 
     (Return value is always undef.)
+
+- `set_report_history($historyinstance)`: bool
+
+    Set `$historyinstance` as the reporter's history
+    (using the `$HISTORY` attribute).
+
+    Returns SUCCESS on success, undef otherwise.
+
+- init\_history
+
+    Create a [CAF::History](https://metacpan.org/pod/CAF::History) instance to track events.
+    Argument `keepinstances` is passed to the `CAF::History`
+    initialization.
+
+    Returns SUCCESS on success, undef otherwise.
+
+- event
+
+    If a `CAF::History` is initialized, track the event. The following metadata is added
+
+    - `$WHOAMI`
+
+        Current class name `ref($self)`.
