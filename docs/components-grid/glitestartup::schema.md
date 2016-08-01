@@ -1,0 +1,44 @@
+### Types
+
+- `/software/glitestartup/glitestartup_component_service`
+    - `/software/glitestartup/glitestartup_component_service/args`
+        - optional
+        - type: string
+- `/software/glitestartup/glitestartup_component_post_restart`
+    - `/software/glitestartup/glitestartup_component_post_restart/cmd`
+        - required
+        - type: string
+    - `/software/glitestartup/glitestartup_component_post_restart/expectedStatus`
+        - optional
+        - type: long
+- `/software/glitestartup/glitestartup_component`
+    - `/software/glitestartup/glitestartup_component/configFile`
+        - required
+        - type: string
+    - `/software/glitestartup/glitestartup_component/initScript`
+        - required
+        - type: string
+    - `/software/glitestartup/glitestartup_component/disableOutput`
+        - optional
+        - type: boolean
+    - `/software/glitestartup/glitestartup_component/disableError`
+        - optional
+        - type: boolean
+    - `/software/glitestartup/glitestartup_component/restartEnv`
+        - optional
+        - type: string
+    - `/software/glitestartup/glitestartup_component/postRestart`
+        - optional
+        - type: glitestartup_component_post_restart
+    - `/software/glitestartup/glitestartup_component/restartServices`
+        - optional
+        - type: boolean
+    - `/software/glitestartup/glitestartup_component/createProxy`
+        - required
+        - type: boolean
+    - `/software/glitestartup/glitestartup_component/scriptPaths`
+        - required
+        - type: string
+    - `/software/glitestartup/glitestartup_component/services`
+        - required
+        - type: glitestartup_component_service

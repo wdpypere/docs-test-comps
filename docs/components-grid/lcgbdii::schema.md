@@ -1,0 +1,119 @@
+### Types
+
+- `/software/lcgbdii/lcgbdii_component`
+    - `/software/lcgbdii/lcgbdii_component/dir`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/varDir`
+        - required
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/configFile`
+        - required
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/logFile`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/logLevel`
+        - required
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/schemaFile`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/schemas`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/port`
+        - optional
+        - type: type_port
+    - `/software/lcgbdii/lcgbdii_component/portRead`
+        - optional
+        - type: type_port
+    - `/software/lcgbdii/lcgbdii_component/portsWrite`
+        - optional
+        - type: type_port
+    - `/software/lcgbdii/lcgbdii_component/user`
+        - required
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/bind`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/passwd`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/searchFilter`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/searchTimeout`
+        - optional
+        - type: long
+        - range: 1..
+    - `/software/lcgbdii/lcgbdii_component/readTimeout`
+        - optional
+        - type: long
+        - range: 1..
+    - `/software/lcgbdii/lcgbdii_component/breatheTime`
+        - optional
+        - type: long
+        - range: 1..
+    - `/software/lcgbdii/lcgbdii_component/archiveSize`
+        - optional
+        - type: long
+    - `/software/lcgbdii/lcgbdii_component/autoUpdate`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/autoModify`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/isCache`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/modifyDN`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/RAMDisk`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/deleteDelay`
+        - optional
+        - type: long
+    - `/software/lcgbdii/lcgbdii_component/fixGlue`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/updateUrl`
+        - optional
+        - type: type_absoluteURI
+    - `/software/lcgbdii/lcgbdii_component/updateLdif`
+        - optional
+        - type: type_absoluteURI
+    - `/software/lcgbdii/lcgbdii_component/defaultLdif`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/slapd`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/slapadd`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/slapdConf`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/slapdDebugLevel`
+        - optional
+        - type: long
+        - range: 0..5
+    - `/software/lcgbdii/lcgbdii_component/urls`
+        - optional
+        - type: type_absoluteURI
+    - `/software/lcgbdii/lcgbdii_component/ldifDir`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/pluginDir`
+        - optional
+        - type: string
+    - `/software/lcgbdii/lcgbdii_component/providerDir`
+        - optional
+        - type: string
+
+### Functions
+
+  - lcgbdii_check_params

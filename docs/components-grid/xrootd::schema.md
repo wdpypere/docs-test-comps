@@ -1,0 +1,281 @@
+### Types
+
+- `/software/xrootd/xrootd_component_exported_path`
+    - `/software/xrootd/xrootd_component_exported_path/path`
+        - optional
+        - type: string
+- `/software/xrootd/xrootd_component_access_rules`
+    - `/software/xrootd/xrootd_component_access_rules/path`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_access_rules/authenticated`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_access_rules/unauthenticated`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_access_rules/vo`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_access_rules/cert`
+        - required
+        - type: string
+- `/software/xrootd/xrootd_component_token_authz_options`
+    - `/software/xrootd/xrootd_component_token_authz_options/authzConf`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_token_authz_options/tokenPrivateKey`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_token_authz_options/tokenPublicKey`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_token_authz_options/accessRules`
+        - required
+        - type: xrootd_component_access_rules
+    - `/software/xrootd/xrootd_component_token_authz_options/exportedVOs`
+        - required
+        - type: xrootd_component_exported_path
+    - `/software/xrootd/xrootd_component_token_authz_options/exportedPathRoot`
+        - required
+        - type: string
+- `/software/xrootd/xrootd_component_dpm_options`
+    - `/software/xrootd/xrootd_component_dpm_options/alternateNames`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_dpm_options/coreMaxSize`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_dpm_options/dpmConnectionRetry`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_dpm_options/dpmHost`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_dpm_options/dpnsConnectionRetry`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_dpm_options/dpnsHost`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_dpm_options/defaultPrefix`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_dpm_options/replacementPrefix`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_dpm_options/mappedFQANs`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_dpm_options/authorizedPaths`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_dpm_options/principal`
+        - optional
+        - type: string
+- `/software/xrootd/xrootd_component_fed_options`
+    - `/software/xrootd/xrootd_component_fed_options/federationCmsdManager`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_fed_options/federationXrdManager`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_fed_options/n2nLibrary`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_fed_options/namePrefix`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_fed_options/localPort`
+        - required
+        - type: long
+    - `/software/xrootd/xrootd_component_fed_options/localRedirector`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_fed_options/lfcHost`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_fed_options/lfcConnectionRetry`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_fed_options/lfcSecurityMechanism`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_fed_options/validPathPrefix`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_fed_options/redirectParams`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_fed_options/localRedirectParams`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_fed_options/monitoringOptions`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_fed_options/reportingOptions`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_fed_options/siteName`
+        - optional
+        - type: string
+- `/software/xrootd/xrootd_logKeep`
+- `/software/xrootd/xrootd_component_instances`
+    - `/software/xrootd/xrootd_component_instances/configFile`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_instances/federation`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_instances/logFile`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_instances/logKeep`
+        - required
+        - type: xrootd_logKeep
+    - `/software/xrootd/xrootd_component_instances/type`
+        - required
+        - type: string
+- `/software/xrootd/xrootd_component_security_protocols`
+    - `/software/xrootd/xrootd_component_security_protocols/authzfun`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/authzfunparams`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/authzto`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_security_protocols/authzpxy`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_security_protocols/ca`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_security_protocols/cert`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/certdir`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/cipher`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/crl`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_security_protocols/crldir`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/crlext`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/crlrefresh`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_security_protocols/digpxy`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_security_protocols/exppxy`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/gmapopt`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_security_protocols/gmapto`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_security_protocols/gmapfun`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/gmapfunparams`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/gridmap`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/key`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/md`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/vomsat`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_security_protocols/vomsfun`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_security_protocols/vomsfunparams`
+        - optional
+        - type: string
+- `/software/xrootd/xrootd_component_global_options`
+    - `/software/xrootd/xrootd_component_global_options/installDir`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_global_options/configDir`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_global_options/authzLibraries`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_global_options/daemonUser`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_global_options/daemonGroup`
+        - required
+        - type: string
+    - `/software/xrootd/xrootd_component_global_options/restartServices`
+        - required
+        - type: boolean
+    - `/software/xrootd/xrootd_component_global_options/mallocArenaMax`
+        - optional
+        - type: long
+    - `/software/xrootd/xrootd_component_global_options/MonALISAHost`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_global_options/monitoringOptions`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_global_options/reportingOptions`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_global_options/siteName`
+        - optional
+        - type: string
+    - `/software/xrootd/xrootd_component_global_options/cmsdInstances`
+        - optional
+        - type: xrootd_component_instances
+    - `/software/xrootd/xrootd_component_global_options/xrootdInstances`
+        - optional
+        - type: xrootd_component_instances
+    - `/software/xrootd/xrootd_component_global_options/federations`
+        - optional
+        - type: xrootd_component_fed_options
+    - `/software/xrootd/xrootd_component_global_options/tokenAuthz`
+        - optional
+        - type: xrootd_component_token_authz_options
+    - `/software/xrootd/xrootd_component_global_options/dpm`
+        - optional
+        - type: xrootd_component_dpm_options
+    - `/software/xrootd/xrootd_component_global_options/securityProtocol`
+        - optional
+        - type: xrootd_component_security_protocols
+- `/software/xrootd/xrootd_component_node_config`
+    - `/software/xrootd/xrootd_component_node_config/roles`
+        - required
+        - type: string
+- `/software/xrootd/xrootd_component`
+    - `/software/xrootd/xrootd_component/hosts`
+        - required
+        - type: xrootd_component_node_config
+    - `/software/xrootd/xrootd_component/options`
+        - required
+        - type: xrootd_component_global_options
+
+### Functions
+
+  - xrootd_component_node_config_valid
+  - xrootd_component_options_valid
+  - xrootd_component_access_rules_valid
+  - is_xrootd_logKeep

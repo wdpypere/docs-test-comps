@@ -1,0 +1,42 @@
+### Types
+
+- `/software/yaim_usersconf/structure_yaim_usersconf_gridusers`
+    - `/software/yaim_usersconf/structure_yaim_usersconf_gridusers/name`
+        - required
+        - type: string
+    - `/software/yaim_usersconf/structure_yaim_usersconf_gridusers/flag`
+        - optional
+        - type: string
+- `/software/yaim_usersconf/structure_yaim_usersconf_gridgroups`
+    - `/software/yaim_usersconf/structure_yaim_usersconf_gridgroups/role`
+        - required
+        - type: string
+    - `/software/yaim_usersconf/structure_yaim_usersconf_gridgroups/flag`
+        - optional
+        - type: string
+- `/software/yaim_usersconf/structure_yaim_usersconf_vo`
+    - `/software/yaim_usersconf/structure_yaim_usersconf_vo/name`
+        - required
+        - type: string
+    - `/software/yaim_usersconf/structure_yaim_usersconf_vo/staticusers`
+        - optional
+        - type: structure_yaim_usersconf_gridusers
+    - `/software/yaim_usersconf/structure_yaim_usersconf_vo/gridusers`
+        - optional
+        - type: structure_yaim_usersconf_gridusers
+    - `/software/yaim_usersconf/structure_yaim_usersconf_vo/gridgroups`
+        - optional
+        - type: structure_yaim_usersconf_gridgroups
+- `/software/yaim_usersconf/yaim_usersconf_component`
+    - `/software/yaim_usersconf/yaim_usersconf_component/users_conf_file`
+        - optional
+        - type: string
+    - `/software/yaim_usersconf/yaim_usersconf_component/groups_conf_file`
+        - optional
+        - type: string
+    - `/software/yaim_usersconf/yaim_usersconf_component/vo`
+        - optional
+        - type: structure_yaim_usersconf_vo
+    - `/software/yaim_usersconf/yaim_usersconf_component/usecache`
+        - optional
+        - type: boolean

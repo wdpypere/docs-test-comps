@@ -1,0 +1,1037 @@
+### Types
+
+- `/software/yaim/structure_yaim_conf`
+    - `/software/yaim/structure_yaim_conf/YAIM_HOME`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/YAIM_SCRIPT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/YAIM_VERSION`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/USERS_CONF`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GROUPS_CONF`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/QUEUES`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/BDII_REGIONS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/LCG_REPOSITORY`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/CA_REPOSITORY`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/REPOSITORY_TYPE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/CE_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/CLASSIC_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/RB_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/PX_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/BDII_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/MON_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/REG_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRID_TRUSTED_BROKERS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRID_ACCEPTED_CREDENTIALS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRID_AUTHORIZED_RENEWERS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRID_DEFAULT_RENEWERS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRID_AUTHORIZED_RETRIEVERS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRID_DEFAULT_RETRIEVERS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRID_AUTHORIZED_KEY_RETRIEVERS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRID_DEFAULT_KEY_RETRIEVERS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRID_TRUSTED_RETRIEVERS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRID_DEFAULT_TRUSTED_RETRIEVERS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/WN_LIST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/FUNCTIONS_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/MYSQL_PASSWORD`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRIDICE_SERVER_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_EMAIL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_SUPPORT_EMAIL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_BDII_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_NAME`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_VERSION`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_HTTP_PROXY`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/INSTALL_DATE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/INSTALL_ROOT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/OUTPUT_STORAGE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/BDII_HTTP_URL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DCACHE_ADMIN`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DCACHE_POOLS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DCACHE_PORT_RANGE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/RESET_DCACHE_CONFIGURATION`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/MY_DOMAIN`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPMCONFIG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPMDATA`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPMDB_PWD`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPMFSIZE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPM_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPMLOGS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPMPOOL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPM_POOLS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPM_PORT_RANGE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPMUSER_PWD`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPMMGR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPM_FILESYSTEMS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPM_DB_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPM_DB_USER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPM_DB`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPNS_DB`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPM_DB_PASSWORD`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPM_INFO_USER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPM_INFO_PASS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/FTS_SERVER_URL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GLOBUS_TCP_PORT_RANGE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRIDMAP_AUTH`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/JAVA_LOCATION`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/JOB_MANAGER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/LFC_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SE_TYPE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/LFC_DB_PASSWORD`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/LFC_DB`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/LFC_DB_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/LFC_LOCAL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/LFC_CENTRAL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/CRON_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_LOC`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_LAT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_LONG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_WEB`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_TIER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_SUPPORT_SITE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/APEL_DB_PASSWORD`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/VOBOX_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/VOBOX_PORT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GSSKLOG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GSSKLOG_SERVER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/LFC_TYPE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/LFC_HOST_ALIAS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/TORQUE_SERVER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/BATCH_SERVER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/EDG_WL_SCRATCH`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/BATCH_LOG_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/BDII_FCR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/CE_DATADIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/CLASSIC_STORAGE_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/DPMPOOL_NODES`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/RB_RLS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SE_ARCH`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/YAIM_VERSION`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/VOMS_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/BATCH_BIN_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/BATCH_VERSION`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/BATCH_CONF_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/RFIO_PORT_RANGE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/VO_SW_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/WMS_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/ORACLE_LOCATION`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/LB_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRIDVIEW_WSDL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GLITE_LOCATION`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/USERS_DN_WMS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_DESC`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_SECURITY_EMAIL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_OTHER_GRID`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_OTHER_EGEE_ROC`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_OTHER_EGEE_SERVICE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/SITE_OTHER_WLCG_TIER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/MYSQL_ADMIN`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NAGIOS_ADMIN_DNS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NAGIOS_CGI_ENABLE_CONFIG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NAGIOS_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NAGIOS_HTTPD_ENABLE_CONFIG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NAGIOS_NAGIOS_ENABLE_CONFIG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NAGIOS_NCG_ENABLE_CONFIG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NAGIOS_NSCA_PASS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NAGIOS_ROLE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NCG_VO`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NAGIOS_MYPROXY_NAME`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NCG_GOCDB_COUNTRY_NAME`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NCG_GOCDB_ROC_NAME`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NCG_LDAP_FILTER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NCG_NRPE_UI`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/NCG_PROBES_TYPE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/CEMON_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/ACCESS_BY_DOMAIN`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/CREAM_DB_USER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/BLPARSER_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/BLP_PORT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/CREAM_PORT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/BLAH_JOBID_PREFIX`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/CREAM_CE_STATE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/WMS_EXPIRY_PERIOD`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/WMS_MATCH_RETRY_PERIOD`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GLITE_LB_TYPE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GLITE_LB_SUPER_USERS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GLITE_LB_RTM_ENABLED`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GLITE_LB_RTM_DN`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/GRIDFTP_CONNECTIONS_MAX`
+        - optional
+        - type: long
+    - `/software/yaim/structure_yaim_conf/USE_ARGUS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/ARGUS_PEPD_ENDPOINTS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_conf/CREAM_PEPC_RESOURCEID`
+        - optional
+        - type: string
+- `/software/yaim/structure_yaim_close_se`
+    - `/software/yaim/structure_yaim_close_se/HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_close_se/ACCESS_POINT`
+        - optional
+        - type: string
+- `/software/yaim/structure_yaim_ce`
+    - `/software/yaim/structure_yaim_ce/closeSE`
+        - optional
+        - type: structure_yaim_close_se
+    - `/software/yaim/structure_yaim_ce/BATCH_SYS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/CAPABILITY`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/CPU_MODEL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/CPU_VENDOR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/CPU_SPEED`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/OS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/OS_RELEASE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/OS_ARCH`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/OS_VERSION`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/OTHERDESCR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/MINPHYSMEM`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/MINVIRTMEM`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/SMPSIZE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/SI00`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/SF00`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/OUTBOUNDIP`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/INBOUNDIP`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/RUNTIMEENV`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/BDII_SITE_TIMEOUT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/BDII_RESOURCE_TIMEOUT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/GIP_RESPONSE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/GIP_FRESHNESS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/GIP_CACHE_TTL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/GIP_TIMEOUT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/PHYSCPU`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_ce/LOGCPU`
+        - optional
+        - type: string
+- `/software/yaim/structure_yaim_fts`
+    - `/software/yaim/structure_yaim_fts/HOST_ALIAS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/DBURL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/STATS_GENERATION_INTERVAL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/SUBMIT_VOMS_ATTRIBUTES`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/ADMIN_VOMS_ATTRIBUTES`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/DB_SQLPLUS_CONNECTSTRING`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/DB_USER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/DB_PASSWORD`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_ACTIVE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_BROKER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_COMPLETE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_START`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_CRON`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_ENABLELOG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_ENABLEMSGLOG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_PASSWORD`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_TOPIC`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_TTL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_USERNAME`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_FQDN`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_LOGFILEDIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_LOGFILENAME`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_fts/MSG_USE_BROKER_CREDENTIALS`
+        - optional
+        - type: string
+- `/software/yaim/structure_yaim_vomsadmin`
+    - `/software/yaim/structure_yaim_vomsadmin/INSTALL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vomsadmin/TOMCAT_GROUP`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vomsadmin/DEPLOY_DATABASE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vomsadmin/ORACLE_CLIENT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vomsadmin/SMTP_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vomsadmin/ORACLE_CONNECTION_STRING`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vomsadmin/DB_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vomsadmin/WEB_REGISTRATION_DISABLE`
+        - optional
+        - type: string
+- `/software/yaim/structure_yaim_vo_services`
+    - `/software/yaim/structure_yaim_vo_services/SW_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/DEFAULT_SE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/SE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/QUEUES`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/SGM`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/USERS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/STORAGE_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_SERVERS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_EXTRA_MAPS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_POOL_PATH`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMSES`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_CA_DN`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_DB_NAME`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_PORT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_DB_USER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_CORE_DB_USER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_ADMIN_DB_USER`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_CORE_TIMEOUT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_ADMIN_MAIL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_ADMIN_WEB_REGISTRATION_DISABLE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_DB_USER_PASSWORD`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/ORACLE_CONNECTION_STRING`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/VOMS_ADMIN_WEB_REGISTRATION_DISABLE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/groupsroles`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/UNPRIVILEGED_MKGRIDMAP`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/MAP_WILDCARDS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/LFC`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo_services/WMS_HOSTS`
+        - optional
+        - type: string
+- `/software/yaim/structure_yaim_scas`
+    - `/software/yaim/structure_yaim_scas/SCAS_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_scas/SCAS_PORT`
+        - optional
+        - type: long
+        - range: 1..65534
+    - `/software/yaim/structure_yaim_scas/SCAS_CONFIG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_scas/SCAS_DEBUG_LEVEL`
+        - optional
+        - type: long
+    - `/software/yaim/structure_yaim_scas/SCAS_GROUP`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_scas/SCAS_HOST_CERT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_scas/SCAS_HOST_KEY`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_scas/SCAS_LCMAPS_CONFIG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_scas/SCAS_LCMAPS_DEBUG_LEVEL`
+        - optional
+        - type: long
+    - `/software/yaim/structure_yaim_scas/SCAS_LCMAPS_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_scas/SCAS_LCMAPS_LOG_LEVEL`
+        - optional
+        - type: long
+    - `/software/yaim/structure_yaim_scas/SCAS_LCAS_CONFIG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_scas/SCAS_LCAS_DEBUG_LEVEL`
+        - optional
+        - type: long
+    - `/software/yaim/structure_yaim_scas/SCAS_LCAS_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_scas/SCAS_LCAS_LOG_LEVEL`
+        - optional
+        - type: long
+    - `/software/yaim/structure_yaim_scas/SCAS_LOG_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_scas/SCAS_LOG_FILE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_scas/SCAS_LOG_LEVEL`
+        - optional
+        - type: long
+    - `/software/yaim/structure_yaim_scas/SCAS_USER`
+        - optional
+        - type: string
+- `/software/yaim/structure_yaim_glexec`
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_OPMODE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_SCAS_ENABLED`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_ARGUS_ENABLED`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_LCASLCMAPS_LOG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_LCAS_DEBUG_LEVEL`
+        - optional
+        - type: long
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_LCAS_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_LCAS_CONFIG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_LCAS_LOG_LEVEL`
+        - optional
+        - type: long
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_LCMAPS_DEBUG_LEVEL`
+        - optional
+        - type: long
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_LCMAPS_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_LCMAPS_CONFIG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_LCMAPS_LOG_LEVEL`
+        - optional
+        - type: long
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_LOG_DIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_LOG_FILE`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_LOG_LEVEL`
+        - optional
+        - type: long
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_WN_LOG_DESTINATION`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/PILOT_JOB_FLAG`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/GLEXEC_EXTRA_WHITELIST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/SCAS_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_glexec/SCAS_PORT`
+        - optional
+        - type: long
+    - `/software/yaim/structure_yaim_glexec/SCAS_ENDPOINTS`
+        - optional
+        - type: string
+- `/software/yaim/structure_yaim_vo`
+    - `/software/yaim/structure_yaim_vo/name`
+        - required
+        - type: string
+    - `/software/yaim/structure_yaim_vo/auth`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_vo/services`
+        - optional
+        - type: structure_yaim_vo_services
+- `/software/yaim/structure_yaim_argus`
+    - `/software/yaim/structure_yaim_argus/ARGUS_HOST`
+        - required
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_ADMIN_DN`
+        - required
+        - type: string
+    - `/software/yaim/structure_yaim_argus/CONFIG_PAP`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/CONFIG_PDP`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/CONFIG_PEP`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_HOME`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_ENTITY_ID`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_CONF_INI`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_AUTHZ_INI`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_ADMIN_PROPS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_REPO_LOCATION`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_POLL_INTERVAL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_ORDERING`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_CONSISTENCY_CHECK`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_CONSISTENCY_CHECK_REPAIR`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_PORT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_SHUTDOWN_PORT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PAP_SHUTDOWN_COMMAND`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PDP_HOME`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PDP_CONF_INI`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PDP_ENTITY_ID`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PDP_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PDP_PORT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PDP_ADMIN_PORT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PDP_ADMIN_PASSWORD`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PDP_RETENTION_INTERVAL`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PDP_PAP_ENDPOINTS`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PEP_HOME`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PEP_CONF_INI`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PEP_ENTITY_ID`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PEP_HOST`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PEP_PORT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PEP_ADMIN_PORT`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PEP_ADMIN_PASSWORD`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PEP_MAX_CACHEDRESP`
+        - optional
+        - type: string
+    - `/software/yaim/structure_yaim_argus/PEP_PDP_ENDPOINTS`
+        - optional
+        - type: string
+- `/software/yaim/yaim_component`
+    - `/software/yaim/yaim_component/configure`
+        - optional
+        - type: boolean
+    - `/software/yaim/yaim_component/force`
+        - optional
+        - type: boolean
+    - `/software/yaim/yaim_component/require_vos`
+        - optional
+        - type: boolean
+    - `/software/yaim/yaim_component/conf`
+        - required
+        - type: structure_yaim_conf
+    - `/software/yaim/yaim_component/nodetype`
+        - required
+        - type: string
+    - `/software/yaim/yaim_component/CE`
+        - optional
+        - type: structure_yaim_ce
+    - `/software/yaim/yaim_component/ARGUS`
+        - optional
+        - type: structure_yaim_argus
+    - `/software/yaim/yaim_component/FTA`
+        - optional
+        - type: string
+    - `/software/yaim/yaim_component/FTS`
+        - optional
+        - type: structure_yaim_fts
+    - `/software/yaim/yaim_component/FTM`
+        - optional
+        - type: string
+    - `/software/yaim/yaim_component/SCAS`
+        - optional
+        - type: structure_yaim_scas
+    - `/software/yaim/yaim_component/GLEXEC`
+        - optional
+        - type: structure_yaim_glexec
+    - `/software/yaim/yaim_component/extra`
+        - optional
+        - type: string
+    - `/software/yaim/yaim_component/vo`
+        - optional
+        - type: structure_yaim_vo
+    - `/software/yaim/yaim_component/SECRET_PASSWORDS`
+        - optional
+        - type: string
+    - `/software/yaim/yaim_component/SITE_INFO_DEF_FILE`
+        - optional
+        - type: string
+    - `/software/yaim/yaim_component/USE_VO_D`
+        - optional
+        - type: boolean
+    - `/software/yaim/yaim_component/VOs`
+        - optional
+        - type: string
+    - `/software/yaim/yaim_component/force_uppercase_variables`
+        - required
+        - type: boolean

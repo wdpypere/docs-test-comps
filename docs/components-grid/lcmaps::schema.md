@@ -1,0 +1,58 @@
+### Types
+
+- `/software/lcmaps/lcmaps_modulespec_type`
+    - `/software/lcmaps/lcmaps_modulespec_type/path`
+        - required
+        - type: string
+    - `/software/lcmaps/lcmaps_modulespec_type/args`
+        - optional
+        - type: string
+- `/software/lcmaps/lcmaps_policy_type`
+    - `/software/lcmaps/lcmaps_policy_type/name`
+        - required
+        - type: string
+    - `/software/lcmaps/lcmaps_policy_type/ruleset`
+        - required
+        - type: string
+- `/software/lcmaps/lcmaps_file_type`
+    - `/software/lcmaps/lcmaps_file_type/dbpath`
+        - required
+        - type: string
+    - `/software/lcmaps/lcmaps_file_type/modulepath`
+        - required
+        - type: string
+    - `/software/lcmaps/lcmaps_file_type/module`
+        - optional
+        - type: lcmaps_modulespec_type
+    - `/software/lcmaps/lcmaps_file_type/policies`
+        - optional
+        - type: lcmaps_policy_type
+- `/software/lcmaps/lcmaps_component`
+    - `/software/lcmaps/lcmaps_component/flavor`
+        - optional
+        - type: string
+    - `/software/lcmaps/lcmaps_component/dbpath`
+        - optional
+        - type: string
+    - `/software/lcmaps/lcmaps_component/modulepath`
+        - optional
+        - type: string
+    - `/software/lcmaps/lcmaps_component/multifile`
+        - optional
+        - type: boolean
+    - `/software/lcmaps/lcmaps_component/module`
+        - optional
+        - type: lcmaps_modulespec_type
+    - `/software/lcmaps/lcmaps_component/policies`
+        - optional
+        - type: lcmaps_policy_type
+    - `/software/lcmaps/lcmaps_component/config`
+        - optional
+        - type: lcmaps_file_type
+    - `/software/lcmaps/lcmaps_component/multifile`
+        - optional
+        - type: boolean
+
+### Functions
+
+  - component_lcmaps_valid

@@ -1,0 +1,305 @@
+### Types
+
+- `/software/dpmlfc/dpmlfc_component_fs_entry`
+    - `/software/dpmlfc/dpmlfc_component_fs_entry/host`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_fs_entry/name`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_fs_entry/status`
+        - optional
+        - type: string
+- `/software/dpmlfc/dpmlfc_component_pool_entry`
+    - `/software/dpmlfc/dpmlfc_component_pool_entry/def_filesize`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_pool_entry/gc_start_thresh`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/dpmlfc/dpmlfc_component_pool_entry/gc_stop_thresh`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/dpmlfc/dpmlfc_component_pool_entry/def_pintime`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/dpmlfc/dpmlfc_component_pool_entry/gid`
+        - optional
+        - type: long
+        - range: 1..
+    - `/software/dpmlfc/dpmlfc_component_pool_entry/group`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_pool_entry/put_retenp`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/dpmlfc/dpmlfc_component_pool_entry/s_type`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_pool_entry/fs`
+        - optional
+        - type: dpmlfc_component_fs_entry
+- `/software/dpmlfc/dpmlfc_component_vo_entry`
+    - `/software/dpmlfc/dpmlfc_component_vo_entry/gid`
+        - optional
+        - type: long
+- `/software/dpmlfc/dpmlfc_component_node_config`
+    - `/software/dpmlfc/dpmlfc_component_node_config/logfile`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_node_config/port`
+        - optional
+        - type: type_port
+    - `/software/dpmlfc/dpmlfc_component_node_config/allowCoreDump`
+        - optional
+        - type: boolean
+    - `/software/dpmlfc/dpmlfc_component_node_config/threads`
+        - optional
+        - type: long
+    - `/software/dpmlfc/dpmlfc_component_node_config/maxOpenFiles`
+        - optional
+        - type: long
+    - `/software/dpmlfc/dpmlfc_component_node_config/globusThreadModel`
+        - required
+        - type: string
+- `/software/dpmlfc/dpmlfc_component_dpm_node_config`
+    - `/software/dpmlfc/dpmlfc_component_dpm_node_config/requestMaxAge`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dpm_node_config/fastThreads`
+        - optional
+        - type: long
+    - `/software/dpmlfc/dpmlfc_component_dpm_node_config/slowThreads`
+        - optional
+        - type: long
+    - `/software/dpmlfc/dpmlfc_component_dpm_node_config/useSyncGet`
+        - optional
+        - type: boolean
+- `/software/dpmlfc/dpmlfc_component_rfio_gsiftp_node_config`
+    - `/software/dpmlfc/dpmlfc_component_rfio_gsiftp_node_config/portRange`
+        - optional
+        - type: string
+- `/software/dpmlfc/dpmlfc_component_dpns_node_config`
+    - `/software/dpmlfc/dpmlfc_component_dpns_node_config/readonly`
+        - optional
+        - type: boolean
+- `/software/dpmlfc/dpmlfc_component_dav_node_config`
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/DiskAnonUser`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/DiskFlags`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/NSAnonUser`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/NSFlags`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/NSMaxReplicas`
+        - optional
+        - type: long
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/NSRedirectPort`
+        - optional
+        - type: long
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/NSSecureRedirect`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/NSServer`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/NSTrustedDNs`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/NSType`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/SSLCertFile`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/SSLCertKey`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/SSLCACertPath`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/SSLCARevocationPath`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/SSLCipherSuite`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/SSLHonorCipherOrder`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/SSLOptions`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/SSLProtocol`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/SSLSessionCache`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/SSLSessionCacheTimeout`
+        - optional
+        - type: long
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/SSLVerifyClient`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_dav_node_config/SSLVerifyDepth`
+        - optional
+        - type: long
+- `/software/dpmlfc/dpmlfc_component_lfc_node_config`
+    - `/software/dpmlfc/dpmlfc_component_lfc_node_config/disableAutoVirtualIDs`
+        - optional
+        - type: boolean
+- `/software/dpmlfc/dpmlfc_component_protocol_options`
+    - `/software/dpmlfc/dpmlfc_component_protocol_options/dav`
+        - optional
+        - type: dpmlfc_component_dav_node_config
+    - `/software/dpmlfc/dpmlfc_component_protocol_options/dpm`
+        - optional
+        - type: dpmlfc_component_dpm_node_config
+    - `/software/dpmlfc/dpmlfc_component_protocol_options/dpns`
+        - optional
+        - type: dpmlfc_component_dpns_node_config
+    - `/software/dpmlfc/dpmlfc_component_protocol_options/gsiftp`
+        - optional
+        - type: dpmlfc_component_rfio_gsiftp_node_config
+    - `/software/dpmlfc/dpmlfc_component_protocol_options/rfio`
+        - optional
+        - type: dpmlfc_component_rfio_gsiftp_node_config
+    - `/software/dpmlfc/dpmlfc_component_protocol_options/srmv1`
+        - optional
+        - type: dpmlfc_component_node_config
+    - `/software/dpmlfc/dpmlfc_component_protocol_options/srmv2`
+        - optional
+        - type: dpmlfc_component_node_config
+    - `/software/dpmlfc/dpmlfc_component_protocol_options/srmv22`
+        - optional
+        - type: dpmlfc_component_node_config
+    - `/software/dpmlfc/dpmlfc_component_protocol_options/xroot`
+        - optional
+        - type: dpmlfc_component_node_config
+    - `/software/dpmlfc/dpmlfc_component_protocol_options/copyd`
+        - optional
+        - type: dpmlfc_component_node_config
+- `/software/dpmlfc/dpmlfc_component_db_conn_options`
+    - `/software/dpmlfc/dpmlfc_component_db_conn_options/configfile`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_db_conn_options/configmode`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_db_conn_options/server`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_db_conn_options/user`
+        - required
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_db_conn_options/password`
+        - required
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_db_conn_options/infoFile`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_db_conn_options/infoUser`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_db_conn_options/infoPwd`
+        - optional
+        - type: string
+- `/software/dpmlfc/dpmlfc_component_global_options`
+    - `/software/dpmlfc/dpmlfc_component_global_options/user`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_global_options/group`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_global_options/db`
+        - optional
+        - type: dpmlfc_component_db_conn_options
+    - `/software/dpmlfc/dpmlfc_component_global_options/installDir`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_global_options/gridmapfile`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_global_options/gridmapdir`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_global_options/accessProtocols`
+        - optional
+        - type: string
+    - `/software/dpmlfc/dpmlfc_component_global_options/controlProtocols`
+        - optional
+        - type: string
+- `/software/dpmlfc/dpmlfc_component_global_options_tree`
+    - `/software/dpmlfc/dpmlfc_component_global_options_tree/dpm`
+        - optional
+        - type: dpmlfc_component_global_options
+    - `/software/dpmlfc/dpmlfc_component_global_options_tree/lfc`
+        - optional
+        - type: dpmlfc_component_global_options
+- `/software/dpmlfc/dpmlfc_component`
+    - `/software/dpmlfc/dpmlfc_component/dav`
+        - optional
+        - type: dpmlfc_component_dav_node_config
+    - `/software/dpmlfc/dpmlfc_component/dpm`
+        - optional
+        - type: dpmlfc_component_dpm_node_config
+    - `/software/dpmlfc/dpmlfc_component/dpns`
+        - optional
+        - type: dpmlfc_component_dpns_node_config
+    - `/software/dpmlfc/dpmlfc_component/gsiftp`
+        - optional
+        - type: dpmlfc_component_rfio_gsiftp_node_config
+    - `/software/dpmlfc/dpmlfc_component/rfio`
+        - optional
+        - type: dpmlfc_component_rfio_gsiftp_node_config
+    - `/software/dpmlfc/dpmlfc_component/srmv1`
+        - optional
+        - type: dpmlfc_component_node_config
+    - `/software/dpmlfc/dpmlfc_component/srmv2`
+        - optional
+        - type: dpmlfc_component_node_config
+    - `/software/dpmlfc/dpmlfc_component/srmv22`
+        - optional
+        - type: dpmlfc_component_node_config
+    - `/software/dpmlfc/dpmlfc_component/xroot`
+        - optional
+        - type: dpmlfc_component_node_config
+    - `/software/dpmlfc/dpmlfc_component/copyd`
+        - optional
+        - type: dpmlfc_component_node_config
+    - `/software/dpmlfc/dpmlfc_component/pools`
+        - optional
+        - type: dpmlfc_component_pool_entry
+    - `/software/dpmlfc/dpmlfc_component/vos`
+        - optional
+        - type: dpmlfc_component_vo_entry
+    - `/software/dpmlfc/dpmlfc_component/lfc`
+        - optional
+        - type: dpmlfc_component_lfc_node_config
+    - `/software/dpmlfc/dpmlfc_component/lfc`-dli
+        - optional
+        - type: dpmlfc_component_node_config
+    - `/software/dpmlfc/dpmlfc_component/options`
+        - optional
+        - type: dpmlfc_component_global_options_tree
+    - `/software/dpmlfc/dpmlfc_component/protocols`
+        - optional
+        - type: dpmlfc_component_protocol_options
+
+### Functions
+
+  - component_dpmlfc_number_string_valid
+  - component_dpmlfc_global_options_valid
+  - component_dpmlfc_xroot_access_rules_valid
+  - component_dpmlfc_node_config_valid
+  - component_dpmlfc_dav_config_valid

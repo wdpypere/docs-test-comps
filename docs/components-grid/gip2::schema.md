@@ -1,0 +1,77 @@
+### Types
+
+- `/software/gip2/structure_gip2_attribute`
+- `/software/gip2/structure_gip2_ldif`
+    - `/software/gip2/structure_gip2_ldif/confFile`
+        - optional
+        - type: string
+    - `/software/gip2/structure_gip2_ldif/template`
+        - optional
+        - type: string
+    - `/software/gip2/structure_gip2_ldif/ldifFile`
+        - required
+        - type: string
+    - `/software/gip2/structure_gip2_ldif/entries`
+        - optional
+        - type: structure_gip2_attribute
+    - `/software/gip2/structure_gip2_ldif/staticInfoCmd`
+        - optional
+        - type: string
+- `/software/gip2/gip2_component`
+    - `/software/gip2/gip2_component/user`
+        - required
+        - type: string
+    - `/software/gip2/gip2_component/group`
+        - required
+        - type: string
+    - `/software/gip2/gip2_component/flavor`
+        - required
+        - type: string
+    - `/software/gip2/gip2_component/basedir`
+        - required
+        - type: string
+    - `/software/gip2/gip2_component/etcDir`
+        - optional
+        - type: string
+    - `/software/gip2/gip2_component/ldifDir`
+        - optional
+        - type: string
+    - `/software/gip2/gip2_component/pluginDir`
+        - optional
+        - type: string
+    - `/software/gip2/gip2_component/providerDir`
+        - optional
+        - type: string
+    - `/software/gip2/gip2_component/workDirs`
+        - optional
+        - type: string
+    - `/software/gip2/gip2_component/staticInfoCmd`
+        - optional
+        - type: string
+    - `/software/gip2/gip2_component/bdiiRestartAllowed`
+        - required
+        - type: boolean
+    - `/software/gip2/gip2_component/confFiles`
+        - optional
+        - type: string
+    - `/software/gip2/gip2_component/ldif`
+        - optional
+        - type: structure_gip2_ldif
+    - `/software/gip2/gip2_component/ldifConfEntries`
+        - optional
+        - type: structure_gip2_attribute
+    - `/software/gip2/gip2_component/plugin`
+        - optional
+        - type: string
+    - `/software/gip2/gip2_component/provider`
+        - optional
+        - type: string
+    - `/software/gip2/gip2_component/scripts`
+        - optional
+        - type: string
+    - `/software/gip2/gip2_component/stubs`
+        - optional
+        - type: structure_gip2_attribute
+    - `/software/gip2/gip2_component/external`
+        - optional
+        - type: string

@@ -1,0 +1,78 @@
+### Types
+
+- `/software/wmsclient/wmsclient_component_mw_ce_attrs`
+    - `/software/wmsclient/wmsclient_component_mw_ce_attrs/rank`
+        - optional
+        - type: string
+    - `/software/wmsclient/wmsclient_component_mw_ce_attrs/rankMPI`
+        - optional
+        - type: string
+    - `/software/wmsclient/wmsclient_component_mw_ce_attrs/requirements`
+        - optional
+        - type: string
+- `/software/wmsclient/wmsclient_component_mw_def_attrs`
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/defaultSchema`
+        - optional
+        - type: string
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/CEAttrs`
+        - optional
+        - type: wmsclient_component_mw_ce_attrs
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/defaultVO`
+        - optional
+        - type: string
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/errorStorage`
+        - optional
+        - type: string
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/loggingDestination`
+        - optional
+        - type: string
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/listenerPort`
+        - optional
+        - type: type_port
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/listenerStorage`
+        - optional
+        - type: string
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/loggingLevel`
+        - optional
+        - type: long
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/loggingSyncTimeout`
+        - optional
+        - type: long
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/loggingTimeout`
+        - optional
+        - type: long
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/NSLoggerLevel`
+        - optional
+        - type: long
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/outputStorage`
+        - optional
+        - type: string
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/retryCount`
+        - optional
+        - type: long
+    - `/software/wmsclient/wmsclient_component_mw_def_attrs/statusLevel`
+        - optional
+        - type: long
+- `/software/wmsclient/wmsclient_component_mw_entry`
+    - `/software/wmsclient/wmsclient_component_mw_entry/active`
+        - required
+        - type: boolean
+    - `/software/wmsclient/wmsclient_component_mw_entry/configDir`
+        - optional
+        - type: string
+    - `/software/wmsclient/wmsclient_component_mw_entry/classAdsHelper`
+        - optional
+        - type: string
+    - `/software/wmsclient/wmsclient_component_mw_entry/defaultAttrs`
+        - optional
+        - type: wmsclient_component_mw_def_attrs
+- `/software/wmsclient/wmsclient_component`
+    - `/software/wmsclient/wmsclient_component/edg`
+        - optional
+        - type: wmsclient_component_mw_entry
+    - `/software/wmsclient/wmsclient_component/glite`
+        - optional
+        - type: wmsclient_component_mw_entry
+    - `/software/wmsclient/wmsclient_component/wmproxy`
+        - optional
+        - type: wmsclient_component_mw_entry
