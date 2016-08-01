@@ -56,7 +56,7 @@ Type constants:
 
 - \_get\_tied\_db
 
-    Wrapper around read\_db() to attempt to cache the tied
+    Wrapper around EDG::WP4::CCM::DB::read() to attempt to cache the tied
     hash.  Takes a scalar reference (to be filled in with either a new
     hash ref or the cached hash ref) instead of a hash ref.
 

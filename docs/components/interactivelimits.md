@@ -39,12 +39,6 @@ NCM::interactivelimits - NCM interactivelimits configuration component
 
 None.
 
-### BUGS
-
-None known.
-
-Vladimir Bahyl <Vladimir.B>
-
 ### SEE ALSO
 
 pam(8), ncm-ncd(1)

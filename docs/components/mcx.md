@@ -16,14 +16,6 @@ An nlist of MCX data to apply.
 
 ncm-directoryservices
 
-### BUGS
-
-None known.
-
-Nick Williams <Nick.W>
-
-Nick Williams <Nick.W>
-
 ### VERSION
 
 1.0.0

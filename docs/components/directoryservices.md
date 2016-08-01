@@ -14,18 +14,3 @@ Component to manage directory services on OS X. This can both setup local direct
 
 None.
 
-### BUGS
-
-None known.
-
-Nick Williams <Nick.W>
-
-Nick Williams <Nick.W>
-
-### VERSION
-
-1.1.0
-
-### SEE ALSO
-
-ncm-ncd(1)

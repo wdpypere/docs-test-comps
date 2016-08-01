@@ -54,7 +54,7 @@ This class simplyfies the generation of structured text like config files.
 
         (Previously available module &lt;general> was removed in 15.12.
         Component writers needing this functionality can use
-        the [CCM::TextRender](https://metacpan.org/pod/CCM::TextRender) subclass instead).
+        the [CCM::TextRender](../CCM/textrender.md) subclass instead).
 
         Or, for any other value, `Template::Toolkit` is used, and the `module` then indicates
         the relative path of the template to use.
@@ -67,7 +67,7 @@ This class simplyfies the generation of structured text like config files.
 
     - `log`, `eol` and `usecache`
 
-        Handled by `_initialize_textopts` from [CAF::ObjectText](https://metacpan.org/pod/CAF::ObjectText)
+        Handled by `_initialize_textopts` from [CAF::ObjectText](../CAF/objecttext.md)
 
     - `includepath`
 

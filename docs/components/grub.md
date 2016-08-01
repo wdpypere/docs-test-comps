@@ -148,14 +148,6 @@ title Xen 3 / XenLinux 2.6.16
         module `/vmlinuz`-2.6.16-xen3\_86.1\_rhel4.1 max\_loop=128 root=/dev/hda2 ro
         module `/initrd`-2.6.16-xen3\_86.1\_rhel4.1
 
-### BUGS
-
-none known.
-
-S
-
-German Cancio <German.Cancio@cern.ch>, Stephen Childs <Stephen.C>
-
 ### SEE ALSO
 
 ncm-ncd(1)

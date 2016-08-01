@@ -78,7 +78,7 @@ with the `set_logfile` method.
 
 - `init_logfile($filename, $options)`: bool
 
-    Create a new [CAF::Log](https://metacpan.org/pod/CAF::Log) instance with `$filename` and `$options` and
+    Create a new [CAF::Log](../CAF/log.md) instance with `$filename` and `$options` and
     set it using `set_report_logfile`.
     Returns SUCCESS on success, undef otherwise.
 
@@ -168,7 +168,7 @@ with the `set_logfile` method.
 
 - init\_history
 
-    Create a [CAF::History](https://metacpan.org/pod/CAF::History) instance to track events.
+    Create a [CAF::History](../CAF/history.md) instance to track events.
     Argument `keepinstances` is passed to the `CAF::History`
     initialization.
 

@@ -32,16 +32,6 @@ NCM::modprobe - NCM modprobe configuration component
     command to run when loading module, "remove" command to run when
     removing module and "blacklist" to disable a module.
 
-### DEPENDENCIES
-
-None.
-
-### BUGS
-
-Cannot clean out "install" and "remove" lines again.
-
-Hugo Cacote <Hugo.C>
-
 ### SEE ALSO
 
 ncm-ncd(1), modules.conf(5), modprobe.conf(5), modprobe(8), mkinitrd(8)

@@ -17,8 +17,8 @@ The following fields are provided:
     Configures the aii-dhcp legacy tool. See `aii-dhcp(8)`, section
     OPTIONS for more information.
 
-    This components also uses configuration parameters related to https from [ncm-ccm](https://metacpan.org/pod/ncm-ccm): ca\_dir, ca\_file, cert\_file, key\_file.
+    This components also uses configuration parameters related to https from `ncm-ccm`: ca\_dir, ca\_file, cert\_file, key\_file.
 
 ### SEE ALSO
 
-`aii-shellfe(8)`, `aii-dhcp(8)`, `aii`, [ccm](https://metacpan.org/pod/..#ccm)
+`aii-shellfe(8)`, `aii-dhcp(8)`, `aii`, `ccm`)

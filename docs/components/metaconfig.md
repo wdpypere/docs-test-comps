@@ -14,7 +14,7 @@
 \#
 
 \### #
-\### metaconfig, 16.6.1-SNAPSHOT, SNAPSHOT20160729143358, Fri Jul 29 2016
+\### metaconfig, 16.6.0, 1, Fri Jul 29 2016
 \#
 
 ### NAME
@@ -85,7 +85,7 @@ The configuration information for the component.  It is an nlist of
 
 - element
 
-    Predefined conversions from [EDG::WP4::CCM::TextRender](https://metacpan.org/pod/EDG::WP4::CCM::TextRender):
+    Predefined conversions from [EDG::WP4::CCM::TextRender](../CCM/textrender.md):
 
     - yesno ? boolean
 

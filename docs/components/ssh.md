@@ -61,12 +61,6 @@ None.
 
     The SSH client configuration file.
 
-### BUGS
-
-None known.
-
-Teemu Sidoroff <Teemu.S>
-
 ### SEE ALSO
 
 ncm-ncd(1), sshd(8), sshd\_config(5), ssh\_config(5)

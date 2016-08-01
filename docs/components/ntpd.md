@@ -326,25 +326,6 @@ Refer to man ntp\_misc for more details.
     If the group is set, files are written with `<root.<group`>> ownership
     and `0640` permission.
 
-### DEPENDENCIES
-
-#### Components to be run before:
-
-none.
-
-#### Components to be run after:
-
-none.
-
-### BUGS
-
-none known.
-
-S
-
-- Thorsten Kleinwort <Thorsten.Kleinwort@cern.ch>
-- John Monteiro <John.M>
-
 ### SEE ALSO
 
 ncm-ncd(1), ntpd(1)

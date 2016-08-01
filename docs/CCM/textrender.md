@@ -15,7 +15,7 @@ difference the support of a `EDG::WP4::CCM:Element` instance as contents.
 
     - module
 
-        The rendering module to use (see [CAF::TextRender](https://metacpan.org/pod/CAF::TextRender) for details).
+        The rendering module to use (see [CAF::TextRender](../CAF/textrender.md) for details).
 
         CCM provides following additional builtin modules:
 

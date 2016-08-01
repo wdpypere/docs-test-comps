@@ -8,9 +8,9 @@ the rule-based editor is called from a configuration module. Conditions can be d
 based on the contents of this configuration. Lines in the configuration file
 that don't match any rule are kept unmodified.
 
-This module is a subclass of the [CAF::FileEditor](https://metacpan.org/pod/CAF::FileEditor): it extends the base methods of
-the [CAF::FileEditor](https://metacpan.org/pod/CAF::FileEditor). It has only one public method (it uses the [CAF::FileEditor](https://metacpan.org/pod/CAF::FileEditor) constructor).
-The methods provided in this module can be combined with [CAF::FileEditor](https://metacpan.org/pod/CAF::FileEditor)
+This module is a subclass of the [CAF::FileEditor](../CAF/fileeditor.md): it extends the base methods of
+the [CAF::FileEditor](../CAF/fileeditor.md). It has only one public method (it uses the [CAF::FileEditor](../CAF/fileeditor.md) constructor).
+The methods provided in this module can be combined with [CAF::FileEditor](../CAF/fileeditor.md)
 methods to edit a file.
 
 Rules used to edit the file are defined in a hash: each entry (key/value pair) defines a rule.
@@ -87,7 +87,7 @@ An example of rule declaration is:
         "DISKFLAGS" =>"DiskFlags:dpm;".LINE_FORMAT_SH_VAR.";".LINE_VALUE_ARRAY,
        );
 
-For more comprehensive examples of rules, look at [ncm-dpmlfc](https://metacpan.org/pod/ncm-dpmlfc) or [ncm-xrootd](https://metacpan.org/pod/ncm-xrootd) source code in
+For more comprehensive examples of rules, look at `ncm-dpmlfc` or `ncm-xrootd` source code in
 configuration-modules-grid repository.
 
 #### Rule Constants
@@ -117,10 +117,10 @@ There is a different group of constants for each part of the rule.
     Same remarks as for LINE\_FORMAT\_KW\_VAL.
 
 - LINE\_FORMAT\_ENV\_VAR:        export keyword=value (e.g. SH shell family). A comment is added at the
-end of the line if it is modified by [CAF::RuleBasedEditor](https://metacpan.org/pod/CAF::RuleBasedEditor). If the value contains whitespaces, it
+end of the line if it is modified by [CAF::RuleBasedEditor](../CAF/rulebasededitor.md). If the value contains whitespaces, it
 is quoted.
 - LINE\_FORMAT\_SH\_VAR:         keyword=value (e.g. SH shell family). A comment is added at the
-end of the line if it is modified by [CAF::RuleBasedEditor](https://metacpan.org/pod/CAF::RuleBasedEditor). If the value contains whitespaces, it
+end of the line if it is modified by [CAF::RuleBasedEditor](../CAF/rulebasededitor.md). If the value contains whitespaces, it
 is quoted.
 
 Inline comments are not supported for the LINE\_FORMAT\_KW\_VAL\_xxx formats.
@@ -138,7 +138,7 @@ LINE\_VALUE\_xxx: how to interpret the configuration value
 - LINE\_VALUE\_HASH: the value is a hash of strings. Rendering controlled by LINE\_OPT\_xxx constants.
 - LINE\_VALUE\_HASH\_KEYS: the value is a hash whose keys are the value. Rendering similar to arrays with 
 `LINE_VALUE_ARRAY` (the key list is treated as an array).
-- LINE\_VALUE\_INSTANCE\_PARAMS: specific to [ncm-xrootd](https://metacpan.org/pod/ncm-xrootd)
+- LINE\_VALUE\_INSTANCE\_PARAMS: specific to `ncm-xrootd`
 
 ##### LINE\_OPT\_xxx: options for rendering the config line
 

@@ -62,8 +62,6 @@ None.
 Key names must begin with a letter or underscore, there is no
 mechanism to represent keys that do not satisfy this requirement.
 
-Benjamin Chardi <Benjamin.Chardi.M>
-
 ### SEE ALSO
 
 sysctl.conf(5), sysctl(8), ncm-ncd(1)
