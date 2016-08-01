@@ -6,4 +6,4 @@ This is the official documentation for Quattor:
  - CAF
  - CCM
 
-Also see https://quattor.org 
+Also see [https://www.quattor.org]
