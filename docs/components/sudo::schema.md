@@ -258,4 +258,4 @@
 
 ### Functions
 
-  - is_host_sudo
+- is_host_sudo

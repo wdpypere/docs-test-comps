@@ -187,3 +187,4 @@
     - `/software/openvpn/structure_component_openvpn/clients`
         - optional
         - type: structure_component_openvpn_client
+

@@ -4,3 +4,4 @@
     - `/software/interactivelimits/component_interactivelimits_type/values`
         - required
         - type: list
+

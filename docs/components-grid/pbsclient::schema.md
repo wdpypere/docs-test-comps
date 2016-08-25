@@ -126,6 +126,9 @@
     - `/software/pbsclient/pbsclient_component_structure_initialisation/nospool_dir_list`
         - optional
         - type: string
+    - `/software/pbsclient/pbsclient_component_structure_initialisation/job_oom_score_adjust`
+        - optional
+        - type: long
     - `/software/pbsclient/pbsclient_component_structure_initialisation/prologalarm`
         - optional
         - type: long
@@ -239,3 +242,4 @@
     - `/software/pbsclient/pbsclient_component_type/submitonly`
         - optional
         - type: boolean
+

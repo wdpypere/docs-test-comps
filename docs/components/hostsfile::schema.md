@@ -10,3 +10,4 @@
     - `/software/hostsfile/component_hostsfile_type/takeover`
         - required
         - type: boolean
+

@@ -12,7 +12,7 @@ Please read Ganglia's documentation on the configuration of gmond for details.
 - `/software/components/gmond/file` : string
 
     The location of the configuration file. The correct value differs between 
-    Ganglia 3.0 (/etc/gmond.conf) and Ganglia 3.1 (/etc/ganglia/gmond.conf).
+    Ganglia 3.0 (`/etc/gmond.conf`) and Ganglia 3.1 (`/etc/ganglia/gmond.conf`).
     There is no default value.
 
 - `/software/components/gmond/cluster`
@@ -28,22 +28,22 @@ Please read Ganglia's documentation on the configuration of gmond for details.
     Configuration of gmond, with attributes daemonize, setuid, user, debug\_level,
     mute, deaf, host\_dmax, cleanup\_threshold, gexec, send\_metadata\_interval and module\_dir.
 
-- `/software/components/gmond/udp`\_send\_channel
+- `/software/components/gmond/udp_send_channel`
 
     List of UDP channels to send information to. 
     Per channel the attributes mcast\_join, mcast\_if, host, port and ttl may be configured.
 
-- `/software/components/gmond/udp`\_recv\_channel
+- `/software/components/gmond/udp_recv_channel`
 
     List of UDP channels to receive information from. 
     Per channel the attributes mcast\_join, mcast\_if, bind, port, family and an acl may be configured.
 
-- `/software/components/gmond/tcp`\_accept\_channel
+- `/software/components/gmond/tcp_accept_channel`
 
     List of TCP channels from which information is accepted.
     Per channel the attributes bind, port, family, timeout and an acl may be configured.
 
-- `/software/components/gmond/collection`\_group
+- `/software/components/gmond/collection_group`
 
     List of collection groups.
     Per collection group the attributes collect\_once, collect\_every, time\_threshold and a list of
@@ -58,9 +58,3 @@ Please read Ganglia's documentation on the configuration of gmond for details.
 - `/software/components/gmond/include`
 
     Optional list of additional files to include.
-
-### SEE ALSO
-
-See 
-http://ganglia.wiki.sourceforge.net/
-for documentation on Ganglia and gmond.

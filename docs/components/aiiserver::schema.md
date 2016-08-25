@@ -51,3 +51,4 @@
     - `/software/aiiserver/structure_component_aiiserver/aii`-dhcp
         - required
         - type: structure_aiidhcp
+

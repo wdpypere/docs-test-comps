@@ -112,3 +112,4 @@
     - `/software/yum/component_spma_yum/main_options`
         - optional
         - type: spma_yum_main_options
+

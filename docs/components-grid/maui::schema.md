@@ -10,3 +10,4 @@
     - `/software/maui/maui_component/contents`
         - optional
         - type: string
+

@@ -195,3 +195,4 @@
     - `/software/wlconfig/wlconfig_component/workloadManager`
         - required
         - type: structure_wl_workloadmanager
+

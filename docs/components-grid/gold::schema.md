@@ -301,3 +301,4 @@
     - `/software/gold/gold_component/server`
         - optional
         - type: gold_component_server
+

@@ -93,4 +93,4 @@
 
 ### Functions
 
-  - structure_cron_log_valid
+- structure_cron_log_valid

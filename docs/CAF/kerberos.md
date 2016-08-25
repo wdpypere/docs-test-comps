@@ -103,7 +103,34 @@ To create a new ticket for principal SERVICE/host@REALM
 
         Input token (`q{}` is used if not defined).
 
+    - usecred
+
+        Boolean, if true, (try to) get a credential before getting the context.
+
     Returns the output token in case of succes, undef in case of failure.
+
+- get\_cred
+
+    Acquire a `GSSAPI::Cred` instance.
+
+    Following options are supported
+
+    - name
+
+        The `GSSAPI::Name` instance to use. If undef,
+        `get_name` method will be used to create one.
+
+    - usage
+
+        Specify the credential usage, one of `GSSAPI` constants
+        `GSS_C_INITIATE`, `GSS_C_ACCEPT` or (default) `GSS_C_BOTH`.
+
+    Returns the `GSSAPI::Cred` instance in case of succes, undef in case of failure.
+
+- get\_hrname
+
+    Return human readablename from `GSSAPI::Name` instance.
+    Return undef on failure (and set `fail` attribute with reason).
 
 - get\_name
 
