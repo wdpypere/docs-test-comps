@@ -47,6 +47,9 @@
     - `/software/opennebula/opennebula_im/arguments`
         - required
         - type: string
+    - `/software/opennebula/opennebula_im/sunstone_name`
+        - optional
+        - type: string
 - `/software/opennebula/opennebula_im_mad_collectd`
 - `/software/opennebula/opennebula_im_mad_kvm`
 - `/software/opennebula/opennebula_im_mad_xen`
@@ -58,7 +61,7 @@
         - required
         - type: opennebula_im_mad_kvm
     - `/software/opennebula/opennebula_im_mad/xen`
-        - required
+        - optional
         - type: opennebula_im_mad_xen
 - `/software/opennebula/opennebula_vm`
     - `/software/opennebula/opennebula_vm/executable`
@@ -70,6 +73,15 @@
     - `/software/opennebula/opennebula_vm/default`
         - required
         - type: string
+    - `/software/opennebula/opennebula_vm/sunstone_name`
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_vm/imported_vms_actions`
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_vm/keep_snapshots`
+        - required
+        - type: boolean
 - `/software/opennebula/opennebula_vm_mad_kvm`
 - `/software/opennebula/opennebula_vm_mad_xen`
 - `/software/opennebula/opennebula_vm_mad`
@@ -77,7 +89,7 @@
         - required
         - type: opennebula_vm_mad_kvm
     - `/software/opennebula/opennebula_vm_mad/xen`
-        - required
+        - optional
         - type: opennebula_vm_mad_xen
 - `/software/opennebula/opennebula_tm_mad`
     - `/software/opennebula/opennebula_tm_mad/executable`
@@ -117,9 +129,61 @@
     - `/software/opennebula/opennebula_tm_mad_conf/shared`
         - required
         - type: boolean
+    - `/software/opennebula/opennebula_tm_mad_conf/ds_migrate`
+        - optional
+        - type: boolean
+- `/software/opennebula/opennebula_ds_mad_conf`
+    - decription: 
+The  configuration for each driver is defined in DS_MAD_CONF.
+These values are used when creating a new datastore and should not be modified
+since they defined the datastore behavior.
+
+    - decription: name of the transfer driver, listed in the -d option of the DS_MAD section
+    - decription: comma separated list of required attributes in the DS template
+    - decription: specifies whether the datastore can only manage persistent images
+    - `/software/opennebula/opennebula_ds_mad_conf/name`
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_ds_mad_conf/required_attrs`
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_ds_mad_conf/persistent_only`
+        - required
+        - type: boolean
+    - `/software/opennebula/opennebula_ds_mad_conf/marketplace_actions`
+        - optional
+        - type: string
+- `/software/opennebula/opennebula_market_mad_conf`
+    - decription: 
+The  configuration for each driver is defined in MARKET_MAD_CONF.
+These values are used when creating a new marketplace and should not be modified
+since they define the marketplace behavior.
+A public marketplace can be removed even if it has registered apps.
+
+    - decription: name of the market driver
+    - decription: comma separated list of required attributes in the Market template
+    - decription: list of actions allowed for a MarketPlaceApp.
+        monitor: the apps of the marketplace will be monitored.
+        create: the app in the marketplace.
+        delete: the app from the marketplace.
+    
+    - decription: set to TRUE for external marketplaces
+    - `/software/opennebula/opennebula_market_mad_conf/name`
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_market_mad_conf/required_attrs`
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_market_mad_conf/app_actions`
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_market_mad_conf/public`
+        - optional
+        - type: boolean
 - `/software/opennebula/opennebula_default_cost`
     - decription:  
-The following attributes define the default cost for Virtual Machines that don't have a CPU or MEMORY cost.
+The following attributes define the default cost for Virtual Machines that don't have 
+a CPU, MEMORY or DISK cost.
 This is used by the oneshowback calculate method.
 
     - `/software/opennebula/opennebula_default_cost/cpu_cost`
@@ -128,10 +192,68 @@ This is used by the oneshowback calculate method.
     - `/software/opennebula/opennebula_default_cost/memory_cost`
         - required
         - type: long
+    - `/software/opennebula/opennebula_default_cost/disk_cost`
+        - required
+        - type: long
+- `/software/opennebula/opennebula_vnc_ports`
+    - decription: 
+VNC_BASE_PORT is deprecated since OpenNebula 5.0
+OpenNebula will automatically assign start + vmid,
+allowing to generate different ports for VMs so they do not collide.
+
+    - decription: VNC port pool for automatic VNC port assignment,
+    if possible the port will be set to START + VMID
+    - `/software/opennebula/opennebula_vnc_ports/start`
+        - required
+        - type: long
+    - `/software/opennebula/opennebula_vnc_ports/reserved`
+        - optional
+        - type: long
+- `/software/opennebula/opennebula_vlan_ids`
+    - decription: 
+LAN ID pool for the automatic VLAN_ID assignment.
+This pool is for 802.1Q networks (Open vSwitch and 802.1Q drivers).
+The driver will try first to allocate VLAN_IDS[START] + VNET_ID
+
+    - decription: first VLAN_ID to use
+    - `/software/opennebula/opennebula_vlan_ids/start`
+        - required
+        - type: long
+    - `/software/opennebula/opennebula_vlan_ids/reserved`
+        - optional
+        - type: long
+- `/software/opennebula/opennebula_vxlan_ids`
+    - decription: 
+Automatic VXLAN Network ID (VNI) assignment. 
+This is used or vxlan networks.
+NOTE: reserved is not supported by this pool
+
+    - decription: first VNI (Virtual Network ID) to use
+    - `/software/opennebula/opennebula_vxlan_ids/start`
+        - required
+        - type: long
+- `/software/opennebula/opennebula_market_mad`
+    - decription: 
+Drivers to manage different marketplaces, specialized for the storage backend.
+
+    - decription: path of the transfer driver executable, can be an absolute path or
+    relative to $ONE_LOCATION/lib/mads (or `/usr/lib/one/mads`/ if OpenNebula was 
+    installed in /)
+    
+    - decription: arguments for the driver executable:
+        -t number of threads, i.e. number of repo operations at the same time
+        -m marketplace mads separated by commas
+    
+    - `/software/opennebula/opennebula_market_mad/executable`
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_market_mad/arguments`
+        - required
+        - type: string
 - `/software/opennebula/opennebula_ceph_datastore`
     - decription:  
 type for ceph datastore specific attributes. 
-ceph_host, ceph_secret, ceph_user, ceph_user_key and pool_name are mandatory 
+ceph_host, ceph_secret, ceph_user, ceph_user_key and pool_name are mandatory
 
     - `/software/opennebula/opennebula_ceph_datastore/ceph_host`
         - optional
@@ -209,15 +331,33 @@ shared DS is also supported
     - `/software/opennebula/opennebula_vnet/bridge`
         - required
         - type: string
+    - `/software/opennebula/opennebula_vnet/vn_mad`
+        - required
+        - type: string
     - `/software/opennebula/opennebula_vnet/gateway`
-        - required
+        - optional
         - type: type_ipv4
+    - `/software/opennebula/opennebula_vnet/gateway6`
+        - optional
+        - type: type_network_name
     - `/software/opennebula/opennebula_vnet/dns`
-        - required
+        - optional
         - type: type_ipv4
     - `/software/opennebula/opennebula_vnet/network_mask`
-        - required
+        - optional
         - type: type_ipv4
+    - `/software/opennebula/opennebula_vnet/network_address`
+        - optional
+        - type: type_ipv4
+    - `/software/opennebula/opennebula_vnet/guest_mtu`
+        - optional
+        - type: long
+    - `/software/opennebula/opennebula_vnet/context_force_ipv4`
+        - optional
+        - type: boolean
+    - `/software/opennebula/opennebula_vnet/search_domain`
+        - optional
+        - type: string
     - `/software/opennebula/opennebula_vnet/bridge_ovs`
         - optional
         - type: string
@@ -232,6 +372,10 @@ shared DS is also supported
         - optional
         - type: opennebula_ar
 - `/software/opennebula/opennebula_user`
+    - decription: 
+Set OpenNebula regular users and their primary groups.
+By default new users are assigned to the users group.
+
     - `/software/opennebula/opennebula_user/ssh_public_key`
         - optional
         - type: string
@@ -239,6 +383,19 @@ shared DS is also supported
         - required
         - type: string
     - `/software/opennebula/opennebula_user/password`
+        - optional
+        - type: string
+    - `/software/opennebula/opennebula_user/group`
+        - optional
+        - type: string
+- `/software/opennebula/opennebula_group`
+    - decription: 
+Set a group name and an optional decription
+
+    - `/software/opennebula/opennebula_group/group`
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_group/description`
         - optional
         - type: string
 - `/software/opennebula/opennebula_remoteconf_ceph`
@@ -386,19 +543,46 @@ oned.conf file
     - `/software/opennebula/opennebula_oned/auth_mad`
         - required
         - type: opennebula_auth_mad
+    - `/software/opennebula/opennebula_oned/market_mad`
+        - required
+        - type: opennebula_market_mad
     - `/software/opennebula/opennebula_oned/default_cost`
         - required
         - type: opennebula_default_cost
+    - `/software/opennebula/opennebula_oned/listen_address`
+        - required
+        - type: type_ipv4
+    - `/software/opennebula/opennebula_oned/vnc_ports`
+        - required
+        - type: opennebula_vnc_ports
+    - `/software/opennebula/opennebula_oned/vlan_ids`
+        - required
+        - type: opennebula_vlan_ids
+    - `/software/opennebula/opennebula_oned/vxlan_ids`
+        - required
+        - type: opennebula_vxlan_ids
     - `/software/opennebula/opennebula_oned/tm_mad_conf`
         - required
         - type: opennebula_tm_mad_conf
+    - `/software/opennebula/opennebula_oned/ds_mad_conf`
+        - required
+        - type: opennebula_ds_mad_conf
+    - `/software/opennebula/opennebula_oned/market_mad_conf`
+        - required
+        - type: opennebula_market_mad_conf
     - `/software/opennebula/opennebula_oned/vm_restricted_attr`
         - required
         - type: string
     - `/software/opennebula/opennebula_oned/image_restricted_attr`
         - required
         - type: string
+    - `/software/opennebula/opennebula_oned/vnet_restricted_attr`
+        - required
+        - type: string
     - `/software/opennebula/opennebula_oned/inherit_datastore_attr`
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_oned/inherit_image_attr`
         - required
         - type: string
     - `/software/opennebula/opennebula_oned/inherit_vnet_attr`
@@ -570,6 +754,9 @@ untouchable resources
     - `/software/opennebula/opennebula_untouchables/users`
         - optional
         - type: string
+    - `/software/opennebula/opennebula_untouchables/groups`
+        - optional
+        - type: string
     - `/software/opennebula/opennebula_untouchables/hosts`
         - optional
         - type: string
@@ -581,6 +768,9 @@ datastores, vnets, hosts names, etc
     - `/software/opennebula/component_opennebula/datastores`
         - optional
         - type: opennebula_datastore
+    - `/software/opennebula/component_opennebula/groups`
+        - optional
+        - type: opennebula_group
     - `/software/opennebula/component_opennebula/users`
         - optional
         - type: opennebula_user
@@ -623,11 +813,11 @@ datastores, vnets, hosts names, etc
 
 ### Functions
 
-  - is_consistent_database
+- is_consistent_database
    description:  
 check if a specific type of database has the right attributes
  
-  - is_consistent_datastore
+- is_consistent_datastore
    description:  
 check if a specific type of datastore has the right attributes
  

@@ -13,3 +13,4 @@
     - `/software/sendmail/component_sendmail/allowexternal`
         - optional
         - type: boolean
+

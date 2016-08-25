@@ -32,4 +32,4 @@
 
 ### Functions
 
-  - chkconfig_allow_combinations
+- chkconfig_allow_combinations

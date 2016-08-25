@@ -56,7 +56,7 @@ Type constants:
 
 - \_get\_tied\_db
 
-    Wrapper around EDG::WP4::CCM::DB::read() to attempt to cache the tied
+    Wrapper around read\_db() to attempt to cache the tied
     hash.  Takes a scalar reference (to be filled in with either a new
     hash ref or the cached hash ref) instead of a hash ref.
 
@@ -91,10 +91,6 @@ Type constants:
 - getName()
 
     Returns the name of the object
-
-- getUnescapedName()
-
-    Returns the name of the object, unescaped
 
 - getPath()
 
@@ -169,6 +165,20 @@ Type constants:
 
         Array ref of anonymous methods to convert the argument
         (float/double value) to another representation/format.
+
+    - convert\_list
+
+        Array ref of anonymous methods to convert the argument
+        (list of elements) to another representation/format.
+
+        Each element is already processed before the conversion.
+
+    - convert\_nlist
+
+        Array ref of anonymous methods to convert the argument
+        (nlist of elements) to another representation/format.
+
+        Each element is already processed before the conversion.
 
     The arrayref of anonymous methods are applied as follows:
     convert methods `[a, b, c]` will produce `$new = c(b(a($old)))`.

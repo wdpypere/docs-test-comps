@@ -40,3 +40,4 @@
     - `/software/yaim_usersconf/yaim_usersconf_component/usecache`
         - optional
         - type: boolean
+

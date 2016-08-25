@@ -76,3 +76,4 @@
     - `/software/spma/component_spma_type/verbose`
         - optional
         - type: string
+

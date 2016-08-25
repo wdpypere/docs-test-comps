@@ -42,3 +42,4 @@
     - `/software/syslog/component_syslog_entries/fullcontrol`
         - optional
         - type: boolean
+

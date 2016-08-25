@@ -4,3 +4,4 @@
     - `/software/etcservices/component_etcservices_type/entries`
         - required
         - type: string
+

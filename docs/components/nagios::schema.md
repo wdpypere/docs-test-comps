@@ -942,3 +942,4 @@
     - `/software/nagios/structure_component_nagios/external_dirs`
         - optional
         - type: string
+

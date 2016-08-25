@@ -57,3 +57,4 @@
     - `/software/nsca/structure_component_nsca/send`
         - optional
         - type: structure_component_nsca_send
+

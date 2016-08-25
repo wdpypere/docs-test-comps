@@ -1035,3 +1035,4 @@
     - `/software/yaim/yaim_component/force_uppercase_variables`
         - required
         - type: boolean
+

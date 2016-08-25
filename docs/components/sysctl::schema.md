@@ -13,3 +13,4 @@
     - `/software/sysctl/component_sysctl_structure/variables`
         - optional
         - type: string
+
