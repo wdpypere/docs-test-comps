@@ -263,4 +263,4 @@
 
 ### Functions
 
-- valid_ntpd_logconfig_list
+  - valid_ntpd_logconfig_list

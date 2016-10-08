@@ -17,4 +17,3 @@
     - `/software/ips/component_spma_ips/ips`
         - optional
         - type: component_spma_ips_type
-

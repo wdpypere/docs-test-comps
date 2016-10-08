@@ -401,4 +401,3 @@
     - `/software/syslogng/structure_component_syslogng/log_rules`
         - required
         - type: structure_syslogng_log_rule
-

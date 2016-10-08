@@ -1747,4 +1747,3 @@
     - `/software/postfix/postfix_component/databases`
         - optional
         - type: postfix_databases
-

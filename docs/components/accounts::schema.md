@@ -143,4 +143,4 @@
 
 ### Functions
 
-- has_unique_attr
+  - has_unique_attr

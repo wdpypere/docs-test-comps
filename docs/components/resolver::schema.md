@@ -10,4 +10,3 @@
     - `/software/resolver/component_resolver_type/dnscache`
         - required
         - type: boolean
-

@@ -7,25 +7,26 @@ This daemon collects performance information from various nodes and stores it in
 
 The configuration of gmetad is stored in the file `/etc/gmetad.conf`.
 
-The schema for this component is very similar to the options in the configuration file.
+The schema for this component are very similar to the options in the configuration file.
+More detailed information about the options can be found on the website (**SEE ALSO**).
 
-- `/software/components/gmetad/data_source/[srcindex]/name` : string
+- `/software/components/gmetad/data`\_source/\[srcindex\]/name : string
 
     Name of the data source.
 
-- `/software/components/gmetad/data_source/[srcindex]/polling_interval` : long(1..)
+- `/software/components/gmetad/data`\_source/\[srcindex\]/polling\_interval : long(1..)
 
     Optional polling interval for the data source, in seconds.
 
-- `/software/components/gmetad/data_source/[srcindex]/host/[hostindex]/address` : type\_hostname
+- `/software/components/gmetad/data`\_source/\[srcindex\]/host/\[hostindex\]/address : type\_hostname
 
     Host name or IP address per machine serving the data source.
 
-- `/software/components/gmetad/data_source/[srcindex]/host/[hostindex]/port` : type\_port
+- `/software/components/gmetad/data`\_source/\[srcindex\]/host/\[hostindex\]/port : type\_port
 
-    Optional port per machine serving the data source.
+    Optional port for per machine serving the data source.
 
-- `/software/components/gmetad/debug_level` : long(0..)
+- `/software/components/gmetad/debug`\_level : long(0..)
 
     Optional level of debug output for the daemon.
 
@@ -48,11 +49,11 @@ The schema for this component is very similar to the options in the configuratio
 
     Optional authority URL for this grid.
 
-- `/software/components/gmetad/trusted_hosts` : type\_hostname\[\]
+- `/software/components/gmetad/trusted`\_hosts : type\_hostname\[\]
 
     Optional list of trusted hosts.
 
-- `/software/components/gmetad/all_trusted` : string
+- `/software/components/gmetad/all`\_trusted : string
 
     Optional field to enable trust of all hosts.
     Valid values are `on` and `off`.
@@ -62,22 +63,26 @@ The schema for this component is very similar to the options in the configuratio
     Optional flag to control setuid mode of the daemon.
     Valid values are `on` and `off`.
 
-- `/software/components/gmetad/setuid_username` : string
+- `/software/components/gmetad/setuid`\_username : string
 
     Optional name of the user account running the daemon.
 
-- `/software/components/gmetad/xml_port` : type\_port
+- `/software/components/gmetad/xml`\_port : type\_port
 
-    Optional port on which gmetad will answer requests for XML.
+    Optional port gmetad will answer requests for XML.
 
-- `/software/components/gmetad/interactive_port` : type\_port
+- `/software/components/gmetad/interactive`\_port : type\_port
 
-    Optional port on which gmetad will answer queries for XML.
+    Optional port gmetad will answer queries for XML.
 
-- `/software/components/gmetad/server_threads` : long(1..)
+- `/software/components/gmetad/server`\_threads : long(1..)
 
     Optional number of threads answering XML requests.
 
-- `/software/components/gmetad/rrd_rootdir` : string
+- `/software/components/gmetad/rrd`\_rootdir : string
 
     Optional directory where gmetad stores its RRD databases.
+
+### SEE ALSO
+
+http://ganglia.wiki.sourceforge.net/

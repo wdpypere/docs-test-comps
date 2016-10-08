@@ -95,4 +95,3 @@
     - `/software/ccm/component_ccm/keytab`
         - optional
         - type: string
-

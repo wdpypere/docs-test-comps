@@ -302,4 +302,3 @@
     - `/software/ssh/component_ssh_type/client`
         - optional
         - type: ssh_client_type
-

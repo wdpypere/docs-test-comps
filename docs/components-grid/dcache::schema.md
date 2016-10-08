@@ -417,4 +417,3 @@
     - `/software/dcache/dcache_component/postgresql`
         - optional
         - type: string
-

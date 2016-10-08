@@ -36,4 +36,4 @@
 
 ### Functions
 
-- component_profile_script_valid
+  - component_profile_script_valid

@@ -76,4 +76,3 @@
     - `/software/wmsclient/wmsclient_component/wmproxy`
         - optional
         - type: wmsclient_component_mw_entry
-

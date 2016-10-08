@@ -31,4 +31,4 @@
 
 ### Functions
 
-- dirperm_permissions_valid
+  - dirperm_permissions_valid

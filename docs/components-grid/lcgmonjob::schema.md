@@ -7,4 +7,3 @@
     - `/software/lcgmonjob/lcgmonjob_component/LCG_LOCATION`
         - required
         - type: string
-

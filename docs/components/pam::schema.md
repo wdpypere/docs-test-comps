@@ -89,4 +89,3 @@
     - `/software/pam/component_pam_entry/access`
         - optional
         - type: component_pam_access
-

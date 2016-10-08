@@ -75,4 +75,3 @@
     - `/software/gip2/gip2_component/external`
         - optional
         - type: string
-

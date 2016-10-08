@@ -129,4 +129,3 @@
     - `/software/altlogrotate/component_altlogrotate/entries`
         - optional
         - type: structure_altlogrotate_logrot
-

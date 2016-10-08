@@ -6,11 +6,15 @@ NCM::interactivelimits - NCM interactivelimits configuration component
 
 - Configure()
 
-    Updates the `/etc/security/limits.conf` file with system limits
+    Updates the `/etc/security/limits.conf` - file with system limits
     for interactive users.
-    This file is read by `/lib/security/pam_limits.so` and the values
+    This file is read by `/lib/security/pam`\_limits.so and the values
     defined there are respected.
     Returns error in case of failure.
+
+- Unconfigure()
+
+    not available.
 
 ### RESOURCES
 
@@ -30,3 +34,11 @@ NCM::interactivelimits - NCM interactivelimits configuration component
           list("username", "soft", "nproc", "16384"),
           list("username", "hard", "as", "unlimited"),
         );
+
+### DEPENDENCIES
+
+None.
+
+### SEE ALSO
+
+pam(8), ncm-ncd(1)

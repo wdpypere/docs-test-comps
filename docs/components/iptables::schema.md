@@ -235,4 +235,3 @@
     - `/software/iptables/component_iptables/mangle`
         - optional
         - type: component_iptables_acls
-

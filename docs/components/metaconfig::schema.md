@@ -12,8 +12,6 @@
     - decription: Convert boolean to (uppercase) 'TRUE' and 'FALSE'.
     - decription: Convert string to doublequoted string.
     - decription: Convert string to singlequoted string.
-    - decription: Convert list to comma-separated string
-    - decription: Convert list to space-separated string
     - `/software/metaconfig/metaconfig_textrender_convert/yesno`
         - optional
         - type: boolean
@@ -30,12 +28,6 @@
         - optional
         - type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/singlequote`
-        - optional
-        - type: boolean
-    - `/software/metaconfig/metaconfig_textrender_convert/joincomma`
-        - optional
-        - type: boolean
-    - `/software/metaconfig/metaconfig_textrender_convert/joinspace`
         - optional
         - type: boolean
 - `/software/metaconfig/caf_service_action`
@@ -71,4 +63,3 @@
     - `/software/metaconfig/metaconfig_component/services`
         - required
         - type: metaconfig_config
-

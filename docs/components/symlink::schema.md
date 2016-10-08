@@ -59,4 +59,3 @@
     - `/software/symlink/component_symlink/options`
         - optional
         - type: structure_symlink_option_entry
-

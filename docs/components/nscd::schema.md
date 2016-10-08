@@ -65,4 +65,3 @@
     - `/software/nscd/component_nscd_type/hosts`
         - optional
         - type: componend_nscd_service_type
-

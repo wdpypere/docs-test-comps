@@ -153,7 +153,7 @@ Please refer to the YAIM documentation for the precise meaning of
 these configuration keys.
 
 The VO output is by default written to the generated configuration file. However, if the
-value USE\_VO\_D is defined and true, the configuration per VO is written to a file vo.d/<VO\_NAME>
+value USE\_VO\_D is defined and true, the configuration per VO is written to a file vo.d/VO\_NAME
 under the directory containing the SITE\_INFO file.
 
 Example (assuming that `/software/components/yaim/vo/0` is ATLAS):
@@ -346,8 +346,8 @@ The location of the Yaim script itself is configurable via:
 
     "/software/components/yaim/YAIM_SCRIPT" = "/path/to/my/yaim/script";
 
-This allows to use wrappers for Yaim. By default, <YAIM\_SCRIPT> is undefined
-and the script to be executed is <YAIM\_HOME>/bin/yaim.
+This allows to use wrappers for Yaim. By default, \<YAIM\_SCRIPT\> is undefined
+and the script to be executed is \<YAIM\_HOME\>/bin/yaim.
 
 ### DEPENDENCIES
 
@@ -375,7 +375,7 @@ Savannah under https://savannah.cern.ch/bugs/?group=lcgoperation,
 category 'yaim').
 
 The Yaim functions used for any particular node type are defined in
-<YAIM\_HOME>/node-info.d/\*. These files are provided as part of the gLite release
+\<YAIM\_HOME\>/node-info.d/\*. These files are provided as part of the gLite release
 and cannot be edited by ncm-yaim in order to add/remove/change functions.
 
 ### CHANGES SINCE VERSION 1.1

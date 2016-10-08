@@ -1,0 +1,24 @@
+language: ruby
+rvm:
+- 2.1
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y python-pip
+  - sudo pip -q install mkdocs
+
+# Assume bundler is being used, therefore
+# the `install` step will run `bundle install` by default.
+script: ./travis-build
+
+# branch whitelist, only for GitHub Pages
+branches:
+  only:
+  - master
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+cache: bundler
+

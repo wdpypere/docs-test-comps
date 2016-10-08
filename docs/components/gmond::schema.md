@@ -195,4 +195,3 @@
     - `/software/gmond/structure_component_gmond/file`
         - required
         - type: string
-
