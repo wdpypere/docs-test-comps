@@ -25,4 +25,4 @@
 
 ### Functions
 
-- component_named_valid
+  - component_named_valid

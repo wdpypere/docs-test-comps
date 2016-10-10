@@ -298,8 +298,8 @@
 
 ### Functions
 
-- component_dpmlfc_number_string_valid
-- component_dpmlfc_global_options_valid
-- component_dpmlfc_xroot_access_rules_valid
-- component_dpmlfc_node_config_valid
-- component_dpmlfc_dav_config_valid
+  - component_dpmlfc_number_string_valid
+  - component_dpmlfc_global_options_valid
+  - component_dpmlfc_xroot_access_rules_valid
+  - component_dpmlfc_node_config_valid
+  - component_dpmlfc_dav_config_valid

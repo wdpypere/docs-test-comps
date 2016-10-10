@@ -35,4 +35,3 @@
     - `/software/nfs/component_nfs/mounts`
         - optional
         - type: structure_nfs_mounts
-

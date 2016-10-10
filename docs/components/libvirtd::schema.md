@@ -132,4 +132,3 @@
     - `/software/libvirtd/structure_component_libvirtd/logging`
         - optional
         - type: structure_libvirtd_logging
-

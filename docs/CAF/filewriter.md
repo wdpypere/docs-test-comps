@@ -64,23 +64,9 @@ This is just a wrapper class for `LC::Check::file`
 
         File's permissions.
 
-    - `mtime`
-
-        File's modification time.
-
     - `backup`
 
         Path for the backup file, if this one has to be re-written.
-
-    - keeps\_state
-
-        A boolean specifying whether a file change respects the current system
-        state or not. A file with `keeps_state` will be created/modified,
-        regardless of any value for `NoAction`.
-        This is useful when creating temporary files that are required for a NoAction run.
-
-        By default, file changes modify the state and thus `keeps_state` is
-        false.
 
 - open
 

@@ -50,4 +50,3 @@
     - `/software/useraccess/structure_component_useraccess/acl_services`
         - optional
         - type: string
-

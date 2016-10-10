@@ -30,4 +30,3 @@ protected_mounts is still here for backwards compability, and is the same as kee
     - `/software/fstab/structure_component_fstab/protected_mounts`
         - optional
         - type: string
-

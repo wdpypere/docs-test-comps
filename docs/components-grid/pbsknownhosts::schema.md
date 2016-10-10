@@ -31,4 +31,3 @@
     - `/software/pbsknownhosts/pbsknownhosts_component/shostsscript`
         - optional
         - type: string
-

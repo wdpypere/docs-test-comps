@@ -16,8 +16,6 @@ Features that are implemented at this moment:
 - Adding/removing datastores (only Ceph and shared datastores for the moment)
 - Adding/removing hypervirsors 
 - Adding/removing OpenNebula regular users
-- Adding/removing OpenNebula groups
-- Assign OpenNebula users to primary groups
 - Updates OpenNebula \*\_auth files
 - Updates VMM kvmrc config file
 
@@ -94,7 +92,7 @@ be described in this section.
 
 ### DEPENDENCIES
 
-The component was tested with OpenNebula version 4.1x and 5.0
+The component was tested with OpenNebula version 4.8 and 4.1x
 
 Following package dependencies should be installed to run the component:
 

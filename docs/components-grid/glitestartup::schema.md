@@ -42,4 +42,3 @@
     - `/software/glitestartup/glitestartup_component/services`
         - required
         - type: glitestartup_component_service
-

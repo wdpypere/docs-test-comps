@@ -90,4 +90,3 @@
     - `/software/autofs/component_autofs_type/conf`
         - optional
         - type: autofs_conf
-

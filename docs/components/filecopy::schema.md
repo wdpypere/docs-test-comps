@@ -38,4 +38,4 @@
 
 ### Functions
 
-- component_filecopy_valid
+  - component_filecopy_valid

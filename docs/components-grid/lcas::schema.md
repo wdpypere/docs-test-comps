@@ -40,4 +40,4 @@
 
 ### Functions
 
-- component_lcas_valid
+  - component_lcas_valid

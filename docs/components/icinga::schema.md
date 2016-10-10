@@ -1231,4 +1231,3 @@
     - `/software/icinga/structure_component_icinga/ido2db`
         - required
         - type: structure_icinga_ido2db_cfg
-

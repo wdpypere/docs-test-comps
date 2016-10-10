@@ -60,4 +60,3 @@
     - `/software/moab/moab_component/priority`
         - optional
         - type: string
-

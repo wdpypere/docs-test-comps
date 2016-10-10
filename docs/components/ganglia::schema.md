@@ -221,4 +221,3 @@
     - `/software/ganglia/component_ganglia/client`
         - optional
         - type: client_ganglia
-

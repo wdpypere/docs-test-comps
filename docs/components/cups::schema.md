@@ -93,4 +93,3 @@
     - `/software/cups/component_cups/printers`
         - optional
         - type: component_cups_printer
-

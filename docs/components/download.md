@@ -6,7 +6,12 @@ NCM::download - NCM download configuration component
 
 - Configure()
 
-    Returns error in case of failure.
+    Returns
+    error in case of failure.
+
+- Unconfigure()
+
+    not available.
 
 ### DESCRIPTION
 
@@ -19,7 +24,7 @@ URL's) are allowed.
 
 - `/software/components/download/active` : boolean
 
-    Activates/deactivates the component.
+    activates/deactivates the component.
 
 - `/software/components/download/proto` : string
 
@@ -51,7 +56,7 @@ URL's) are allowed.
         file. The URL can be specified as relative by ommitting the server
         name and/or the protocol, in which case the component defaults will be
         used. Local files can be used as source, such as
-        `file://localhost/etc/foo.txt` or even `file:///etc/foo.txt`.
+        file://localhost/etc/foo.txt or even file:///etc/foo.txt.
 
     - post
 
@@ -95,6 +100,16 @@ URL's) are allowed.
 The component download modifies only the files specified within
 the configuration.
 
+### DEPENDENCIES
+
+#### Components to be run before:
+
+none.
+
+#### Components to be run after:
+
+none.
+
 ### EXAMPLES
 
     "/software/components/download/active" = true;
@@ -115,3 +130,11 @@ the configuration.
                    "perm", "0400"
                  )
     );
+
+### BUGS
+
+none known.
+
+### SEE ALSO
+
+ncm-ncd(1)

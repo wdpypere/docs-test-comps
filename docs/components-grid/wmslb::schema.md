@@ -747,4 +747,3 @@
     - `/software/wmslb/wmslb_component/workDirDefaultParent`
         - optional
         - type: string
-

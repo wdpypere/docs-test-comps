@@ -8,4 +8,3 @@
     - `/software/lbconfig/lbconfig_component/indicies`
         - required
         - type: structure_index_list
-

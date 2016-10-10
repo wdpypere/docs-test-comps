@@ -1042,4 +1042,3 @@
     - `/software/authconfig/component_authconfig_type/pamadditions`
         - optional
         - type: authconfig_pamadditions_type
-

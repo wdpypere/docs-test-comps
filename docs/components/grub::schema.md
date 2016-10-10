@@ -32,4 +32,3 @@
     - `/software/grub/component_grub_type/kernels`
         - optional
         - type: type_kernel
-

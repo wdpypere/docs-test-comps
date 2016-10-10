@@ -63,4 +63,3 @@
     - `/software/gmetad/structure_component_gmetad/file`
         - required
         - type: string
-

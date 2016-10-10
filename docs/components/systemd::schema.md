@@ -87,6 +87,9 @@ http://www.freedesktop.org/software/systemd/man/systemd.unit.html#%5BUnit%5D%20S
     - `/software/systemd/systemd_unitfile_config_unit/After`
         - optional
         - type: systemd_valid_unit
+    - `/software/systemd/systemd_unitfile_config_unit/After`
+        - optional
+        - type: systemd_valid_unit
     - `/software/systemd/systemd_unitfile_config_unit/AllowIsolate`
         - optional
         - type: boolean
@@ -552,4 +555,3 @@ so do not forget to set those as well (can be dummy value).
     - `/software/systemd/component_systemd/unit`
         - optional
         - type: systemd_unit_type
-

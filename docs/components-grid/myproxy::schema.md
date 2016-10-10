@@ -35,4 +35,4 @@
 
 ### Functions
 
-- component_myproxy_options_valid
+  - component_myproxy_options_valid

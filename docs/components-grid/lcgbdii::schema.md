@@ -116,4 +116,4 @@
 
 ### Functions
 
-- lcgbdii_check_params
+  - lcgbdii_check_params
