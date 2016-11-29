@@ -10,11 +10,11 @@ NCM::afsclt - NCM AFS client configuration component
 
 ### RESOURCES
 
-- `/software/components/afsclt/afsd`\_args : nlist (optional)
+- `/software/components/afsclt/afsd_args` : nlist (optional)
 
     various command-line options for the afsd daemon
 
-- `/software/components/afsclt/afs`\_mount : string (optional)
+- `/software/components/afsclt/afs_mount` : string (optional)
 
     AFS mount point. If not defined, `/afs` is used.
 
@@ -25,11 +25,11 @@ NCM::afsclt - NCM AFS client configuration component
 - `/software/components/afsclt/cachesize` : string (optional)
 
     desired AFS cache size on disk, in 1K blocks, or `AUTOMATIC`. The running AFS cache
-    will get adjusted online, and $afs\_cacheinfo will be changed if
+    will get adjusted online, and `$afs_cacheinfo` will be changed if
     required. Please note that an available (mounted) AFS cache partition
     has precedence over this value, i.e. you cannot force a lower usage of
     the cache partition. For Linux machines, a cache partition will use
-    CACHESIZE=AUTOMATIC, for other OSes, a hardcoded fill rate of 85% is
+    `CACHESIZE=AUTOMATIC`, for other OSes, a hardcoded fill rate of 85% is
     used.
 
 - `/software/components/afsclt/cellservdb` : string (optional)
@@ -53,24 +53,3 @@ NCM::afsclt - NCM AFS client configuration component
 - `/software/components/afsclt/thesecells` : list of string (optional)
 
     List of AFS cells to authenticate to. No default.
-
-### DEPENDENCIES
-
-#### Components to be run before:
-
-none.
-
-#### Components to be run after:
-
-none.
-
-Jaroslaw Polok <>
-
-### SEE ALSO
-
-authconfig(1), `fs help`, iptables documentation
-
-\-head1 BUGS
-
-Previous versions insisted on configuring a PAM `account` entry, 
-this didn't really work for local accounts such as _root_...

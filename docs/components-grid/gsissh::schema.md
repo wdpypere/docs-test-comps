@@ -24,3 +24,4 @@
     - `/software/gsissh/gsissh_component/client`
         - optional
         - type: structure_gsissh_client
+

@@ -86,6 +86,10 @@
         - optional
         - type: long
         - range: 0..
+    - `/software/ccm/component_ccm/purge_time`
+        - optional
+        - type: long
+        - range: 0..
     - `/software/ccm/component_ccm/trust`
         - optional
         - type: kerberos_principal_string
@@ -95,3 +99,4 @@
     - `/software/ccm/component_ccm/keytab`
         - optional
         - type: string
+

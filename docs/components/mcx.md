@@ -11,15 +11,3 @@ Generic MCX component. This component does not do any filtering of MCX values, b
 #### `/software/components/mcx/configuration`
 
 An nlist of MCX data to apply.
-
-### DEPENDENCIES
-
-ncm-directoryservices
-
-### VERSION
-
-1.0.0
-
-### SEE ALSO
-
-ncm-ncd(1), ncm-directoryservices(1)

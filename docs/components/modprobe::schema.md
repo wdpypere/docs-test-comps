@@ -26,3 +26,4 @@
     - `/software/modprobe/component_modprobe_type/modules`
         - required
         - type: module_type
+

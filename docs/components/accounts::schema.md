@@ -93,7 +93,7 @@
         - range: 1..
     - `/software/accounts/structure_login_defs/create_home`
         - optional
-        - type: string
+        - type: legacy_binary_affirmation_string
     - `/software/accounts/structure_login_defs/mail_dir`
         - optional
         - type: string
@@ -143,4 +143,4 @@
 
 ### Functions
 
-  - has_unique_attr
+- has_unique_attr

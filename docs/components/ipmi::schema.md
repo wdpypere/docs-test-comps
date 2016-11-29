@@ -23,3 +23,4 @@
     - `/software/ipmi/component_ipmi_type/net_interface`
         - required
         - type: string
+

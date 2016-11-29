@@ -318,3 +318,4 @@
     - `/software/amandaserver/structure_component_amandaserver/amandahosts`
         - required
         - type: structure_amandaserver_amandahost
+

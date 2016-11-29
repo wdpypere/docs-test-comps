@@ -56,3 +56,4 @@
     - `/software/nrpe/structure_component_nrpe/options`
         - required
         - type: component_nrpe_options
+

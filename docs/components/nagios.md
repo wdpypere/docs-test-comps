@@ -9,19 +9,19 @@ Nagios settings this component doesn't understand.
 ### BASIC COMPONENT STRUCTURE
 
 Nagios configuration is very complicated. Before reading this, please
-check the Nagios documentation.  All the fields on this component are
+check the Nagios documentation. All the fields on this component are
 named just like the tags for the appropriate Nagios object.
 
 - `/software/components/nagios/general`
 
     Global settings for Nagios. These settings will be written in
-    `/etc/nagios/nagios.cfg` .
+    `/etc/nagios/nagios.cfg`.
 
 - `/software/components/nagios/cgi`
 
-    Configuration of the Nagios web interface. 
+    Configuration of the Nagios web interface.
     This path is optional. If it exists, the settings will be
-    written in `/etc/nagios/cgi.cfg`. 
+    written in `/etc/nagios/cgi.cfg`.
 
 - `/software/components/nagios/hosts`
 
@@ -30,19 +30,19 @@ named just like the tags for the appropriate Nagios object.
     optional. If it's not provided, gethostbyname is used to decide the
     host's IP address.
 
-    These settings are written in `/etc/nagios/hosts.cfg` .
+    These settings are written in `/etc/nagios/hosts.cfg`.
 
 - `/software/components/nagios/hostgroups`
 
     Hostgroup definitions, indexed by hostgroup name. These settings are
-    written in `/etc/nagios/hostgroups.cfg` .
+    written in `/etc/nagios/hostgroups.cfg`.
 
 - `/software/components/nagios/hostdependencies`
 
     Host dependency defintions, indexed by **depended** host name (this is,
     where the arrow ends in Nagios documentation).
 
-    These settings are written in `/etc/nagios/hostdependencies.cfg`
+    These settings are written in `/etc/nagios/hostdependencies.cfg`.
 
 - `/software/components/nagios/services`
 
@@ -55,22 +55,22 @@ named just like the tags for the appropriate Nagios object.
     same service, as the validation code won't detect this and will cause
     Nagios to fail.
 
-    These settings are written in `/etc/nagios/services.cfg` .
+    These settings are written in `/etc/nagios/services.cfg`.
 
 - `/software/components/nagios/servicegroups`
 
-    List of service groups. It is written in `/etc/nagios/servicegroups.cfg`
+    List of service groups. It is written in `/etc/nagios/servicegroups.cfg`.
 
 - `/software/components/nagios/servicedependencies`
 
     List of service dependencies. It is written in
-    `/etc/nagios/servicedependencies.cfg`
+    `/etc/nagios/servicedependencies.cfg`.
 
 - `/software/components/nagios/contacts`
 
     Contact definition, indexed by contact name.
 
-    These settings are written in `/etc/nagios/contacts.cfg` .
+    These settings are written in `/etc/nagios/contacts.cfg`.
 
 - `/software/components/nagios/contactgroups`
 
@@ -80,31 +80,31 @@ named just like the tags for the appropriate Nagios object.
 - `/software/components/nagios/commands`
 
     Command lines, indexed by Nagios command name. These settings are
-    stored in `/etc/nagios/commands.cfg` .
+    stored in `/etc/nagios/commands.cfg`.
 
 - `/software/components/nagios/macros`
 
-    Nagios $USERx$ macros, indexed by macro name. The macro name must not
-    be surrounded by '$'. These settings are stored in
-    `/etc/nagios/resources.cfg` .
+    Nagios `$USERx$` macros, indexed by macro name. The macro name must not
+    be surrounded by `'$'`. These settings are stored in
+    `/etc/nagios/resources.cfg`.
 
 - `/software/components/nagios/timeperiods`
 
     Nagios time period definition, indexed by time period name. Time
-    periods are stored in `/etc/nagios/timeperiods.cfg` .
+    periods are stored in `/etc/nagios/timeperiods.cfg`.
 
 - `/software/components/nagios/serviceextinfo`
 
     Definition for extended service information. These settings are saved
-    in `/etc/nagios/serviceextinfo.cfg` .
+    in `/etc/nagios/serviceextinfo.cfg`.
 
-- `/software/components/nagios/external`\_files
+- `/software/components/nagios/external_files`
 
     Other already existing files to be included in the configuration of
     Nagios. Please note that the component can't validate these, so if you
     include a broken file, you'll break your Nagios server!
 
-- `/software/components/nagios/external`\_dirs
+- `/software/components/nagios/external_dirs`
 
     Other already existing dirs to be included in the configuration of
     Nagios. Please note that the component can't validate these, so if you
@@ -165,7 +165,3 @@ Nagios and the permissions will be set to 0660.
 Note that `config_file` and `resource_file` directives are not
 valid. To keep consistency, everything must be set according to this
 layout.
-
-### SEE ALSO
-
-http://www.nagios.org/docs/

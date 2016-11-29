@@ -31,7 +31,6 @@ This sections contains the networking parameters.
 
 This section contains the configuration for unix sockets.
 
--
 - unix\_sock\_group: restricted to root by default
 - unix\_sock\_ro\_perms: octal string, default allows any user
 - unix\_sock\_rw\_perms: octal string
@@ -41,10 +40,10 @@ This section contains the configuration for unix sockets.
 
 This section contains the authentication parameters.
 
-- auth\_unix\_ro: 'none|sasl|polkit', default anyone
-- auth\_unix\_rw: 'none|sasl|polkit', default polkit
-- auth\_tcp' ? 'none|sasl', should be 'sasl' for production
-- auth\_tls' ? 'none|sasl'
+- auth\_unix\_ro: `'none|sasl|polkit'`, default anyone
+- auth\_unix\_rw: `'none|sasl|polkit'`, default polkit
+- auth\_tcp' ? `'none|sasl'`, should be 'sasl' for production
+- auth\_tls' ? `'none|sasl'`
 
 #### tls
 

@@ -12,7 +12,7 @@ EDG::WP4::CCM::Fetch
 ### DESCRIPTION
 
 Module provides Fetch class. This helps in retrieving XML profiles and
-contexts from specified URLs. It allows users to retrieve local, as
+from specified URLs. It allows users to retrieve local, as
 well as foreign node profiles.
 
 ### Functions
@@ -45,4 +45,7 @@ well as foreign node profiles.
     then the fetch will fail.
 
     Returns undef if it cannot fetch the profile due to a network error,
-    \-1 in case of other failure, `SUCCESS` in case of successful fetch.
+    `<$EDG::WP4::CCM::Fetch::ProfileCache::ERROR`> in case of other failure,
+    `SUCCESS` in case of successful fetch, but no updated profile
+    and `CHANGED` in case of successful fetch and
+    updated profile.

@@ -134,3 +134,4 @@
     - `/software/ofed/component_ofed_type/openib`
         - required
         - type: component_ofed_openib
+

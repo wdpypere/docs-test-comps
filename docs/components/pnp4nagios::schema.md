@@ -328,3 +328,4 @@
     - `/software/pnp4nagios/structure_component_pnp4nagios/nagios`
         - required
         - type: pnp4nagios_nagios_config
+

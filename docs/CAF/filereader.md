@@ -2,6 +2,8 @@
 
 CAF::FileReader - Class for only reading files in CAF applications.
 
+### DESCRIPTION
+
 Normal use:
 
     use CAF::FileReader;
@@ -9,8 +11,6 @@ Normal use:
     while (my $line = <$fh>) {
        ### Do something
     }
-
-### DESCRIPTION
 
 This class should be used whenever a file is to be opened for reading,
 and no modifications are expected.

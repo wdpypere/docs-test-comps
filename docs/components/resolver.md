@@ -10,12 +10,6 @@ NCM::resolver - NCM resolver configuration component
     If dnscache is used, then dnscache will be restarted on any change.
     If DNS resolution fails after making the change, then resolv.conf
     is left in it's previous state.
-    Returns
-    error in case of failure.
-
-- Unconfigure()
-
-    not available.
 
 ### RESOURCES
 
@@ -38,37 +32,19 @@ NCM::resolver - NCM resolver configuration component
     If true, then configure dnscache with the server list
     and point resolv.conf at the localhost. This will
     cause dnscache to be restarted. This implies that
-    the dnscache package is available on the machine:
-    this component does not enforce that.
+    the dnscache package is available on the machine, 
+    but this component does not enforce that.
 
 ### FILES MODIFIED
 
 The component resolver modifies the following files:
 
 - `/etc/resolv.conf`
-- `/var/spool/dnscache/servers`/@
-
-### DEPENDENCIES
-
-#### Components to be run before:
-
-none.
-
-#### Components to be run after:
-
-none.
+- `/var/spool/dnscache/servers/@`
 
 ### EXAMPLES
 
-"/software/components/resolver/active" = true;
-"/software/components/resolver/search" = list("ms.com");
-"/software/components/resolver/servers" = list("server1.ms.com");
-"/software/components/resolver/dnscache" = true;
-
-### BUGS
-
-none known.
-
-### SEE ALSO
-
-ncm-ncd(1)
+    "/software/components/resolver/active" = true;
+    "/software/components/resolver/search" = list("ms.com");
+    "/software/components/resolver/servers" = list("server1.ms.com");
+    "/software/components/resolver/dnscache" = true;

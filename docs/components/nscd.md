@@ -1,6 +1,6 @@
 ### NAME
 
-NCM::nscd - NCM component to configure nscd
+NCM::nscd - NCM component to configure nscd.
 
 ### SYNOPSIS
 
@@ -13,9 +13,3 @@ NCM::nscd - NCM component to configure nscd
 ### FILES
 
 modifies `/etc/nscd.conf` and a temporary file in `/etc`.
-
-Jan.I
-
-### SEE ALSO
-
-nscd(8), nscd.conf(5)

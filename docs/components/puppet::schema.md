@@ -50,3 +50,4 @@
     - `/software/puppet/puppet_component/hieradata`
         - optional
         - type: puppet_hieradata
+

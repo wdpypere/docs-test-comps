@@ -55,4 +55,4 @@
 
 ### Functions
 
-  - component_lcmaps_valid
+- component_lcmaps_valid

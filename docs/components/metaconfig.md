@@ -1,22 +1,3 @@
-\### #
-\### Software subject to following license(s):
-\###   Apache 2 License (http://www.opensource.org/licenses/apache2.0)
-\###   Copyright (c) Responsible Organization
-\#
-
-\### #
-\### Current developer(s):
-\###   Luis Fernando Muñoz Mejías <Luis.Munoz@UGent.be>
-\#
-
-\### #
-\### Author(s): Luis Fernando Muñoz Mejías
-\#
-
-\### #
-\### metaconfig, 16.6.0, 1, Fri Jul 29 2016
-\#
-
 ### NAME
 
 ncm-metaconfig: Configure services whose config format can be
@@ -45,16 +26,16 @@ The configuration information for the component.  It is an nlist of
 
     File group. Defaults to root.
 
-- backup ? string
+- `backup` ? string
 
     Extension for the file's backup.
 
-- module : string
+- `module` : string
 
     Module to render the configuration file. See ["CONFIGURATION MODULES"](#configuration-modules)
     below.
 
-- daemons ? caf\_service\_action{}
+- `daemons` ? `caf_service_action{}`
 
     An nlist with foreach daemon the `CAF::Service` action to take
     if the file changes.
@@ -65,7 +46,7 @@ The configuration information for the component.  It is an nlist of
     If multiple actions are to be taken for the same daemon, all actions
     will be taken (no attempt to optimize is made).
 
-- preamble ? string
+- `preamble` ? string
 
     Text to place at start of file.
 
@@ -76,38 +57,38 @@ The configuration information for the component.  It is an nlist of
     verbatim, before the contents is generated. No comment character is added,
     the user must specify this as part of the preamble string.
 
-- contents
+- `contents`
 
     A free-form structure describing the valid entries for the
     configuration file. It is recommended to define another type for each
     config file, and bind it to these contents, to get the best
     validation.
 
-- element
+- `element`
 
-    Predefined conversions from [EDG::WP4::CCM::TextRender](../CCM/textrender.md):
+    Predefined conversions from `EDG::WP4::CCM::TextRender`:
 
-    - yesno ? boolean
+    - `yesno` ? boolean
 
         Convert boolean to (lowercase) 'yes' and 'no'.
 
-    - YESNO ? boolean
+    - `YESNO` ? boolean
 
         Convert boolean to (uppercase) 'YES' and 'NO'.
 
-    - truefalse ? boolean
+    - `truefalse` ? boolean
 
         Convert boolean to (lowercase) 'true' and 'false'.
 
-    - TRUEFALSE ? boolean
+    - `TRUEFALSE` ? boolean
 
         Convert boolean to (uppercase) 'TRUE' and 'FALSE'.
 
-    - doublequote ? boolean
+    - `doublequote` ? boolean
 
         Convert string to doublequoted string.
 
-    - singlequote ? boolean
+    - `singlequote` ? boolean
 
         Convert string to singlequoted string.
 
@@ -242,14 +223,3 @@ And now, we only have to specify the contents:
 
 That's it!  When you deploy your configuration you should see your
 `/etc/foo.ini` in the correct location.
-
-\#
-\### Author(s): Luis Fernando Muñoz Mejías
-\#
-
-### TODO
-
-Anyone knows of a good Apache config renderer for Perl??
-
-A better way for deriving the name of the template from the file name
-would be appreciated.

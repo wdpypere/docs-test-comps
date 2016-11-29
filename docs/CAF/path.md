@@ -10,7 +10,7 @@ Simplify common file and directory related operations e.g.
 - cleanup
 - (mockable) file/directory tests
 
-The class is based on `LC::Check` with following major difference
+The class is based on **LC::Check** with following major difference
 
 - `CAF::Object::NoAction` support builtin (and `keeps_state` option to override it).
 - support `CAF::Reporter` (incl. `CAF::History`)
@@ -65,6 +65,12 @@ undef on failure and store the error message in the `fail` attribute.
 
     The function is executed with `_function_catch`.
 
+- \_untaint\_path
+
+    Untaint the `path` argument.
+
+    Returns undef on failure and sets the fail attribute with `msg`
+
 - directory\_exists
 
     Test if `directory` exists and is a directory.
@@ -113,6 +119,10 @@ undef on failure and store the error message in the `fail` attribute.
     (Aside from the `backup` attribute, this is the same as `LC::Check::_unlink`
     (and thus also `CAF::File*`)).
 
+    Additional options
+
+    - keeps\_state: boolean passed to `_get_noaction`.
+
 - directory
 
     Make sure a directory exists with proper options.
@@ -134,7 +144,7 @@ undef on failure and store the error message in the `fail` attribute.
     - temp
 
         A boolean if true will create a a temporary directory using
-        `File::Temp::tempdir`.
+        **File::Temp::tempdir**.
 
         The directory name is the template to use (any trailing
         `X` characters will be replaced with random characters by `tempdir`;
@@ -143,6 +153,8 @@ undef on failure and store the error message in the `fail` attribute.
         The `CLEANUP` option is also set (an removal
         attempt (incl. any files and/or subdirectries)
         will be made at the end of the program).
+
+    - keeps\_state: boolean passed to `_get_noaction`.
 
 - status
 
@@ -153,3 +165,25 @@ undef on failure and store the error message in the `fail` attribute.
 
     Returns CHANGED if a change was made, SUCCESS if no changes were made
     and undef in case of failure (and the `fail` attribute is set).
+
+    Additional options
+
+    - keeps\_state: boolean passed to `_get_noaction`.
+
+- move
+
+    Move/rename `src` to `dest`.
+
+    The final goal is to make sure `src` does not exist anymore,
+    not that `dest` exists after move (in particular, if `src`
+    does not exist to start with, success is immediately returned,
+    and no backup of `dest` is created).
+
+    The &lt;backup> is a suffix for the cleanup of `dest`
+    (and passed to `cleanup` method).
+
+    (The basedir of `dest` is created using `directory` method.)
+
+    Additional options
+
+    - keeps\_state: boolean passed to `_get_noaction`.

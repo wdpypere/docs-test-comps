@@ -35,3 +35,4 @@
     - `/software/vomsclient/vomsclient_component/vos`
         - optional
         - type: structure_vomsclient_voms_info
+

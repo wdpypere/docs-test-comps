@@ -31,7 +31,3 @@ NCM::modprobe - NCM modprobe configuration component
     loadable module, "options" options for the loadable module, "install"
     command to run when loading module, "remove" command to run when
     removing module and "blacklist" to disable a module.
-
-### SEE ALSO
-
-ncm-ncd(1), modules.conf(5), modprobe.conf(5), modprobe(8), mkinitrd(8)

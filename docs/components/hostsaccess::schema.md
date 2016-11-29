@@ -14,3 +14,4 @@
     - `/software/hostsaccess/component_hostsaccess/deny`
         - optional
         - type: structure_hostsaccess_entry
+

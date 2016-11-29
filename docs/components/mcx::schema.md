@@ -19,3 +19,4 @@
     - `/software/mcx/component_mcx/computer`
         - optional
         - type: mcx_computer
+

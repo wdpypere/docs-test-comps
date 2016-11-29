@@ -1,6 +1,9 @@
 ### Types
 
 - `/software/download/component_download_file`
+    - decription: command (no options) to run after download, the filename is added as first and (only) argument
+    - decription: Don't consider the remote file to be new until it is this number of minutes old
+    - decription: seconds, overrides setting in component
     - `/software/download/component_download_file/href`
         - required
         - type: string
@@ -41,6 +44,8 @@
         - optional
         - type: long
 - `/software/download/component_download_type`
+    - decription: seconds, timeout for HEAD requests which checks for changes
+    - decription: seconds, total timeout for fetch of file, can be overridden per file
     - `/software/download/component_download_type/server`
         - optional
         - type: string
@@ -59,3 +64,4 @@
     - `/software/download/component_download_type/timeout`
         - optional
         - type: long
+

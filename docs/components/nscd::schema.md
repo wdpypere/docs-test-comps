@@ -3,7 +3,7 @@
 - `/software/nscd/componend_nscd_service_type`
     - `/software/nscd/componend_nscd_service_type/enable`-cache
         - optional
-        - type: string
+        - type: legacy_binary_affirmation_string
     - `/software/nscd/componend_nscd_service_type/positive`-time-to-live
         - optional
         - type: long
@@ -15,19 +15,19 @@
         - type: long
     - `/software/nscd/componend_nscd_service_type/check`-files
         - optional
-        - type: string
+        - type: legacy_binary_affirmation_string
     - `/software/nscd/componend_nscd_service_type/persistent`
         - optional
-        - type: string
+        - type: legacy_binary_affirmation_string
     - `/software/nscd/componend_nscd_service_type/shared`
         - optional
-        - type: string
+        - type: legacy_binary_affirmation_string
     - `/software/nscd/componend_nscd_service_type/max`-db-size
         - optional
         - type: long
     - `/software/nscd/componend_nscd_service_type/auto`-propagate
         - optional
-        - type: string
+        - type: legacy_binary_affirmation_string
 - `/software/nscd/component_nscd_type`
     - `/software/nscd/component_nscd_type/logfile`
         - optional
@@ -52,7 +52,7 @@
         - type: string
     - `/software/nscd/component_nscd_type/paranoia`
         - optional
-        - type: string
+        - type: legacy_binary_affirmation_string
     - `/software/nscd/component_nscd_type/restart`-interval
         - optional
         - type: long
@@ -65,3 +65,4 @@
     - `/software/nscd/component_nscd_type/hosts`
         - optional
         - type: componend_nscd_service_type
+

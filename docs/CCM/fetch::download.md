@@ -22,7 +22,7 @@ Module provides methods to handle the retrieval of the profiles.
 
 - download
 
-    Downloads the files associated with $type (profile or context). In
+    Downloads the files associated with $type (profile). In
     case of error it retries $self->{RETRIEVE\_RETRIES} times, falling back
     to a failover URL if necessary (thus up to 2\*$self->{RETRIEVE\_RETRIES}
     may happen.

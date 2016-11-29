@@ -11,19 +11,19 @@ and the `/var/spool/cron/crontabs` directory on Solaris.
 
 > Files managed by ncm-cron will have the ncm-cron.cron suffix.  Other files in
 > the directory are not affected by this component. The name of each file will be
-> taken from the nlist name.
+> taken from the nlist `name`.
 
 #### Solaris
 
 > Solaris uses an older version of cron that does not make use of a cron.d
 > directory for crontabs. Ncm-cron **shares** the crontab with each user. To make
 > this work ncm-cron uses the concept of separate file **sections** within the
-> crontab.  Each **section** is identified by the use of the tags NCM-CRON BEGIN:
-> and NCM-CRON END:. Entries either side of these section identifiers are not
+> crontab.  Each **section** is identified by the use of the tags `NCM-CRON BEGIN:`
+> and `NCM-CRON END:`. Entries either side of these section identifiers are not
 > modified.
 >
 > Solaris **does** have a `/etc/cron.d` directory, however it uses this directory
-> for control files such as cron.allow and cron.deny.
+> for control files such as `cron.allow` and `cron.deny`.
 
 ### MAIN RESOURCES
 
@@ -34,8 +34,8 @@ A list containing cron structures (described above).
 ### ENTRY RESOURCES
 
 Each cron entry in the `/software/components/cron/entries` list may
-contain the properties and resources described below. One of "frequency"
-or "timing" must be specified.
+contain the properties and resources described below. One of `frequency`
+or `timing` must be specified.
 
 - **command** : string (required)
 
@@ -60,10 +60,10 @@ or "timing" must be specified.
 - **frequency** : string (optional)
 
     Execution frequency for the command, using standard cron syntax.
-    Minutes field can be 'AUTO' : in this case,
+    Minutes field can be `AUTO :` in this case,
     a random value between 0 and 59 inclusive is generated.
     This can be used to avoid too many machines executing the same
-    cron at the same time. See also the "timing" element.
+    cron at the same time. See also the `timing` element.
 
     Default : None
 
@@ -80,16 +80,16 @@ or "timing" must be specified.
 
     - name
 
-        name of the log file. If the name is not an absolute file name, file is created in `/var/log.`
-        Default name is the cron file name with .log extension in `/var/log.`
+        Name of the log file. If the name is not an absolute file name, file is created in `/var/log`.
+        Default name is the cron file name with .log extension in `/var/log`.
 
     - owner
 
-        owner/group of the log file, using owner:group format. group can be ommitted.
+        Owner/group of the log file, using `owner:group` format. group can be ommitted.
 
     - mode
 
-        permissions of log file specified as a string interpreted as an octal number.
+        Permissions of log file specified as a string interpreted as an octal number.
 
     - disabled
 
@@ -103,9 +103,9 @@ or "timing" must be specified.
 
 - **timing** : nlist (optional)
 
-    If the 'timing' nlist is used to specify the time, it can contain any of the
-    keys: 'minute', 'hour', 'day', 'month' and 'weekday'. An unspecified key will
-    have a value of '\*'. A further key of 'smear' can be used to specify (in
+    If the `timing` nlist is used to specify the time, it can contain any of the
+    keys: `minute`, `hour`, `day`, `month` and `weekday`. An unspecified key will
+    have a value of `*`. A further key of 'smear' can be used to specify (in
     minutes) a maximum interval for smearing the start time, which can be as much
     as a day. When a smeared job is created, a random increment between zero and
     the smear time is applied to the start time of the job.  If the start time
@@ -148,43 +148,18 @@ or "timing" must be specified.
       );
 
 On Linux this will create three files in `/etc/cron.d`:
-  ls.ncm-cron.cron
-  hostname.ncm-cron.cron
-  date.ncm-cron.cron
+
+    ls.ncm-cron.cron
+    hostname.ncm-cron.cron
+    date.ncm-cron.cron
 
 On Solaris three extra entries will be added to the root crontab.
 
-### DEPENDENCIES
+### Solaris
 
-None.
-
-### BUGS
-
-#### Linux
-
-> None known.
-
-#### Solaris
-
-> Editing the NCM-CRON BEGIN: and/or the NCM-CRON END: tag within a crontab will
+> Editing the `NCM-CRON BEGIN:` and/or the `NCM-CRON END:` tag within a crontab will
 > cause unpredictable behaviour. Possible behavours are duplicate entries or
 > entries being removed altogether.
 >
 > Editing BETWEEN the tags will cause the edits to be overwritten the next time
 > ncm-cron runs.
-
-Charles Loomis <charles.loomis@cern.ch>
-
-S
-
-Guillaume Philippon <>
-
-Mark Wilson <Mark.Wilson@MorganStanley.com>
-
-### VERSION
-
-16.6.0
-
-### SEE ALSO
-
-ncm-ncd(1)

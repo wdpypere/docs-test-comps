@@ -26,6 +26,7 @@ Module provides the Configuration class, to manipulate confgurations.
         `cid`: the configuration id
         `locked`: boolean lock flag
         `anonymous`: boolean anonymous flag
+        `name_template`: name template
 
     If a configuration with specified CID does not exists, an exception is
     thrown.
@@ -69,6 +70,29 @@ Module provides the Configuration class, to manipulate confgurations.
 - isLocked ()
 
     Returns true if the configuration is locked, otherwise false
+
+- getName
+
+    Return the name of the Configuration
+    based on the name template set during initialisation.
+
+    The `type` argument (default `name`) specifies which
+    name format is used.
+    The actual template used is `` CCM/names/<name_template>/`type`.tt ``.
+
+    Following types are defined
+
+    - name: (compact) name
+
+    The data used for rendering is the `/metadata` tree.
+
+    The rendered text is stripped from any leading and/or trailing whitespace
+    and is added to the `name` attribute,
+    the next `getName` call will return the cached value.
+
+    If no template was set, undef is returned.
+    If there was rendering (or any other) failure,
+    undef is returned and the fail attribute is set.
 
 - getElement ($path)
 
