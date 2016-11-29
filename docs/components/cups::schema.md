@@ -37,7 +37,7 @@
 - `/software/cups/component_cups_options`
     - `/software/cups/component_cups_options/AutoPurgeJobs`
         - optional
-        - type: string
+        - type: legacy_binary_affirmation_string
     - `/software/cups/component_cups_options/Classification`
         - optional
         - type: string
@@ -67,10 +67,10 @@
         - type: long
     - `/software/cups/component_cups_options/PreserveJobHistory`
         - optional
-        - type: string
+        - type: legacy_binary_affirmation_string
     - `/software/cups/component_cups_options/PreserveJobFiles`
         - optional
-        - type: string
+        - type: legacy_binary_affirmation_string
     - `/software/cups/component_cups_options/Printcap`
         - optional
         - type: string
@@ -93,3 +93,4 @@
     - `/software/cups/component_cups/printers`
         - optional
         - type: component_cups_printer
+

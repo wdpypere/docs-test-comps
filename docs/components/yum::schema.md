@@ -1,5 +1,15 @@
 ### Types
 
+- `/software/yum/SOFTWARE_GROUP`
+    - `/software/yum/SOFTWARE_GROUP/default`
+        - required
+        - type: boolean
+    - `/software/yum/SOFTWARE_GROUP/mandatory`
+        - required
+        - type: boolean
+    - `/software/yum/SOFTWARE_GROUP/optional`
+        - required
+        - type: boolean
 - `/software/yum/spma_yum_plugin_fastestmirror`
     - `/software/yum/spma_yum_plugin_fastestmirror/enabled`
         - required
@@ -103,12 +113,10 @@
     - `/software/yum/component_spma_yum/quattor_os_release`
         - optional
         - type: string
-    - `/software/yum/component_spma_yum/suffix`
-        - optional
-        - type: string
     - `/software/yum/component_spma_yum/plugins`
         - optional
         - type: spma_yum_plugins
     - `/software/yum/component_spma_yum/main_options`
         - optional
         - type: spma_yum_main_options
+

@@ -86,6 +86,9 @@ the NVA cache.
     (but is kept for compatibility with other
     `get{Locked,Unlock,Anonymous}Configuration` methods).
 
+    The configuration template name can also be passed via an
+    optional named argument `name_template` (e.g. `name_template => basic`).
+
 - getUnlockedConfiguration ($cred; $cid)
 
     This method is deprecated in favour of `getConfiguration`.

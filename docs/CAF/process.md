@@ -19,7 +19,7 @@ All these methods return the return value of their LC::Process
 equivalent. This is different from the command's exit status, which is
 stored in $?.
 
-Please use these functions, and **do not** use ``` `` ``` or
+Please use these functions, and **do not** use ``` `` ```, `qx//` or
 `system`. These functions won't spawn a subshell, and thus are more
 secure.
 
@@ -73,6 +73,15 @@ secure.
 
         These options will only be used by the execute method.
 
+- \_LC\_Process
+
+    Run `LC::Process` `function` with arrayref arguments `args`.
+
+    `noaction_value` is is the value to return with `NoAction`.
+
+    `msg` and `postmsg` are used to construct log message
+    `<<msg` command: <COMMAND>\[ &lt;postmsg>\]>>.
+
 #### Public methods
 
 - execute
@@ -97,23 +106,23 @@ secure.
 
 - stream\_output
 
-    Execute the commands using `execute`, but the `stderr` is 
+    Execute the commands using `execute`, but the `stderr` is
     redirected to `stdout`, and `stdout` is processed with `process`
     function. The total output is aggregated and returned when finished.
 
-    Extra option is the process `mode`. By default (or value `undef`), 
-    the new output is passed to `process`. With mode `line`, `process` 
-    is called for each line of output (i.e. separated by newline), and 
+    Extra option is the process `mode`. By default (or value `undef`),
+    the new output is passed to `process`. With mode `line`, `process`
+    is called for each line of output (i.e. separated by newline), and
     the remainder of the output when the process is finished.
 
     Another option are the process `arguments`. This is a reference to the
-    array of arguments passed to the `process` function. 
+    array of arguments passed to the `process` function.
     The arguments are passed before the output to the `process`: e.g.
-    if `arguments =\` \[qw(a b)\]> is used, the `process` function is 
-    called like `process(a,b,$newoutput)` (with `$newoutput` the 
+    if `arguments =\` \[qw(a b)\]> is used, the `process` function is
+    called like `process(a,b,$newoutput)` (with `$newoutput` the
     new streamed output)
 
-    Example usage: during a `yum install`, you want to stop the yum process 
+    Example usage: during a `yum install`, you want to stop the yum process
     when an error message is detected.
 
         sub act {
@@ -146,33 +155,33 @@ secure.
 
 - stringify\_command
 
-    Return the command and its arguments as a space separated string. 
+    Return the command and its arguments as a space separated string.
 
 - get\_command
 
-    Return the reference to the array with the command and its arguments. 
+    Return the reference to the array with the command and its arguments.
 
 - get\_executable
 
-    Return the executable (i.e. the first element of the command). 
+    Return the executable (i.e. the first element of the command).
 
 - is\_executable
 
-    Checks if the first element of the 
+    Checks if the first element of the
     array with the command and its arguments, is executable.
 
-    It returns the result of the `-x` test on the filename 
+    It returns the result of the `-x` test on the filename
     (or `undef` if filename can't be resolved).
 
-    If the filename is equal to the `basename`, then the 
-    filename to test is resolved using the 
-    `File::Which::which` method.  
-    (Use `./script` if you want to check a script in the 
+    If the filename is equal to the `basename`, then the
+    filename to test is resolved using the
+    `File::Which::which` method.
+    (Use `./script` if you want to check a script in the
     current working directory).
 
 - execute\_if\_exists
 
-    Execute after verifying the executable (i.e. the first 
+    Execute after verifying the executable (i.e. the first
     element of the command) exists and is executable.
 
     If this is not the case the method returns 1.

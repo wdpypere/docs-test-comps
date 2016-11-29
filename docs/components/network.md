@@ -58,11 +58,11 @@ Set the TCP segment offload parameter to "off" or "on"
 
 - `/system/network/interfaces/eth[i]/ring/[rt]x`
 
-Set the ethernet transmit or receive buffer ring counts.  See ethtool --show-ring for the values.
+Set the ethernet transmit or receive buffer ring counts. See ethtool --show-ring for the values.
 
 - `/system/network/interfaces/eth[i]/ethtool/wol`
 
-Set the wake-on-lan parameter.  See ethtool for more details of the choices.  "d" disables the
+Set the wake-on-lan parameter. See ethtool for more details of the choices. "d" disables the
 wake-on LAN.
 
 ### NOZEROCONF

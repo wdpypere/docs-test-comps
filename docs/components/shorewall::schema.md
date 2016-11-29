@@ -390,3 +390,4 @@
     - `/software/shorewall/component_shorewall_type/shorewall`
         - required
         - type: component_shorewall_shorewall
+

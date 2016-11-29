@@ -47,6 +47,12 @@
     - `/software/ceph/ceph_cluster_config/mon_osd_max_op_age`
         - optional
         - type: long
+    - `/software/ceph/ceph_cluster_config/ms_type`
+        - optional
+        - type: string
+    - `/software/ceph/ceph_cluster_config/op_queue`
+        - optional
+        - type: string
     - `/software/ceph/ceph_cluster_config/osd_crush_update_on_start`
         - optional
         - type: boolean
@@ -231,20 +237,20 @@ For use with dedicated pan code that builds the cluster info from remote templat
 
 ### Functions
 
-  - valid_osd_names
+- valid_osd_names
    description: check that the ceph osd names are no ceph reserved paths 
-   - arg: ceph_component type 
-  - is_crushmap
+- arg: ceph_component type 
+- is_crushmap
    description: checks the ceph crushmap, this includes uniqueness of bucket and rule name, recursive bucket typing, and rules using existing buckets 
-   - arg: crushmap allowed bucket types 
-   - arg: crushmap buckets definitions 
-   - arg: rules to traverse crushmap 
-  - is_bucket
+- arg: crushmap allowed bucket types 
+- arg: crushmap buckets definitions 
+- arg: rules to traverse crushmap 
+- is_bucket
    description: check the bucket type recursively, this includes attribute type and value checking and the uniqueness of names 
-   - arg: bucket to check 
-   - arg: list of already parsed bucket names 
-   - arg: accepted bucket types 
-   - arg: 1 if bucket is top bucket, 0 otherwise 
-  - is_ceph_crushmap_bucket_alg
+- arg: bucket to check 
+- arg: list of already parsed bucket names 
+- arg: accepted bucket types 
+- arg: 1 if bucket is top bucket, 0 otherwise 
+- is_ceph_crushmap_bucket_alg
    description: check it is a valid algorithm, also used in is_crushmap 
-   - arg: bucket algoritm 
+- arg: bucket algoritm 

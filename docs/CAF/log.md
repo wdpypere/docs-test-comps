@@ -60,7 +60,7 @@ A log file line can be prefixed by a time stamp.
         CAF::Log->new('/foo/bar', 'w') : truncate logfile, no timestamp
 
     If the filename ends with `.log`, the `SYSLOG` attribute is set to
-    basename of the file without suffix (relevant for [CAF::Reporter](../CAF/reporter.md)).
+    basename of the file without suffix (relevant for **CAF::Reporter::syslog**).
 
 - DESTROY
 

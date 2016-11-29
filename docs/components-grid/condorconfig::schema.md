@@ -493,3 +493,4 @@
     - `/software/condorconfig/condorconfig_component/TOOL_TIMEOUT_MULTIPLIER`
         - optional
         - type: string
+

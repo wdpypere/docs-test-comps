@@ -675,5 +675,5 @@
 
 ### Functions
 
-  - postgresql_is_hba_db
-  - postgresql_is_hba_address
+- postgresql_is_hba_db
+- postgresql_is_hba_address

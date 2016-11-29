@@ -1,78 +1,79 @@
 ### Types
 
-- `/software/spma/component_spma_type`
-    - `/software/spma/component_spma_type/cmdfile`
+- `/software/spma/component_spma_common`
+    - `/software/spma/component_spma_common/cmdfile`
         - required
         - type: string
-    - `/software/spma/component_spma_type/packager`
+    - `/software/spma/component_spma_common/packager`
         - required
         - type: string
-    - `/software/spma/component_spma_type/pkgpaths`
+    - `/software/spma/component_spma_common/pkgpaths`
         - required
         - type: string
-    - `/software/spma/component_spma_type/process_obsoletes`
+    - `/software/spma/component_spma_common/process_obsoletes`
         - required
         - type: boolean
-    - `/software/spma/component_spma_type/cachedir`
+    - `/software/spma/component_spma_common/cachedir`
         - optional
         - type: string
-    - `/software/spma/component_spma_type/debug`
+    - `/software/spma/component_spma_common/debug`
         - optional
         - type: string
-    - `/software/spma/component_spma_type/flagfile`
+    - `/software/spma/component_spma_common/flagfile`
         - optional
         - type: string
-    - `/software/spma/component_spma_type/headnode`
+    - `/software/spma/component_spma_common/headnode`
         - optional
         - type: boolean
-    - `/software/spma/component_spma_type/localcache`
+    - `/software/spma/component_spma_common/localcache`
         - optional
         - type: legacy_binary_affirmation_string
-    - `/software/spma/component_spma_type/protectkernel`
+    - `/software/spma/component_spma_common/protectkernel`
         - optional
         - type: legacy_binary_affirmation_string
-    - `/software/spma/component_spma_type/proxy`
+    - `/software/spma/component_spma_common/proxy`
         - optional
         - type: legacy_binary_affirmation_string
-    - `/software/spma/component_spma_type/proxyhost`
+    - `/software/spma/component_spma_common/proxyhost`
         - optional
         - type: string
-    - `/software/spma/component_spma_type/proxyport`
+    - `/software/spma/component_spma_common/proxyport`
         - optional
         - type: string
-    - `/software/spma/component_spma_type/proxyrandom`
+    - `/software/spma/component_spma_common/proxyrandom`
         - optional
         - type: legacy_binary_affirmation_string
-    - `/software/spma/component_spma_type/proxytype`
+    - `/software/spma/component_spma_common/proxytype`
         - optional
         - type: string
-    - `/software/spma/component_spma_type/rpmexclusive`
+    - `/software/spma/component_spma_common/rpmexclusive`
         - optional
         - type: legacy_binary_affirmation_string
-    - `/software/spma/component_spma_type/run`
+    - `/software/spma/component_spma_common/run`
         - optional
         - type: legacy_binary_affirmation_string
-    - `/software/spma/component_spma_type/tmpdir`
+    - `/software/spma/component_spma_common/tmpdir`
         - optional
         - type: string
-    - `/software/spma/component_spma_type/trailprefix`
+    - `/software/spma/component_spma_common/trailprefix`
         - optional
         - type: boolean
-    - `/software/spma/component_spma_type/unescape`
+    - `/software/spma/component_spma_common/unescape`
         - optional
         - type: boolean
-    - `/software/spma/component_spma_type/uninstpaths`
+    - `/software/spma/component_spma_common/uninstpaths`
         - optional
         - type: string
-    - `/software/spma/component_spma_type/userpkgs`
+    - `/software/spma/component_spma_common/userpkgs`
         - optional
         - type: legacy_binary_affirmation_string
-    - `/software/spma/component_spma_type/userprio`
+    - `/software/spma/component_spma_common/userprio`
         - optional
         - type: legacy_binary_affirmation_string
-    - `/software/spma/component_spma_type/usespmlist`
+    - `/software/spma/component_spma_common/usespmlist`
         - optional
         - type: legacy_binary_affirmation_string
-    - `/software/spma/component_spma_type/verbose`
+    - `/software/spma/component_spma_common/verbose`
         - optional
         - type: string
+

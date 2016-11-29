@@ -66,6 +66,6 @@
 
 ### Functions
 
-  - component_mysql_valid
-  - component_mysql_check_db_script
-  - component_mysql_password_valid
+- component_mysql_valid
+- component_mysql_check_db_script
+- component_mysql_password_valid

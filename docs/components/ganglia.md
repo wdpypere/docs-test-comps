@@ -12,7 +12,3 @@ ganglia
 
 The configuration information for the component.  Each field should
 be described in this section. 
-
-\#
-\### Author(s): Guillaume PHILIPPON
-\#

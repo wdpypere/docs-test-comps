@@ -10,30 +10,17 @@ NCM::ofed - NCM ofed configuration component
 
 - `/software/components/ofed/openib`
 - config 
-Config file loaction for openib (default `/etc/infiniband/openib.conf`).
+
+    Config file loaction for openib (default `/etc/infiniband/openib.conf`).
+
 - options
-Config options
+
+    Config options
+
 - modules
-Modules to load
+
+    Modules to load
+
 - hardware
-Hardware modules to load
 
-### DEPENDENCIES
-
-#### Components to be run before:
-
-none.
-
-#### Components to be run after:
-
-none.
-
-### BUGS
-
-none known.
-
-Stijn De Weirdt <>
-
-### SEE ALSO
-
-ncm-ncd(1), ofed(1)
+    Hardware modules to load

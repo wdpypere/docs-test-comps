@@ -275,7 +275,7 @@
 
 ### Functions
 
-  - xrootd_component_node_config_valid
-  - xrootd_component_options_valid
-  - xrootd_component_access_rules_valid
-  - is_xrootd_logKeep
+- xrootd_component_node_config_valid
+- xrootd_component_options_valid
+- xrootd_component_access_rules_valid
+- is_xrootd_logKeep

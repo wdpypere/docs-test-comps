@@ -224,7 +224,7 @@
         - type: string
     - `/software/iptables/component_iptables_acls/ordered_rules`
         - optional
-        - type: string
+        - type: legacy_binary_affirmation_string
 - `/software/iptables/component_iptables`
     - `/software/iptables/component_iptables/filter`
         - optional
@@ -235,3 +235,4 @@
     - `/software/iptables/component_iptables/mangle`
         - optional
         - type: component_iptables_acls
+

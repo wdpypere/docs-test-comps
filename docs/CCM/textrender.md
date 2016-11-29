@@ -15,7 +15,7 @@ difference the support of a `EDG::WP4::CCM:Element` instance as contents.
 
     - module
 
-        The rendering module to use (see [CAF::TextRender](../CAF/textrender.md) for details).
+        The rendering module to use (see **CAF::TextRender** for details).
 
         CCM provides following additional builtin modules:
 
@@ -133,6 +133,20 @@ difference the support of a `EDG::WP4::CCM:Element` instance as contents.
         - singlequote
 
             Convert string to singlequoted string.
+
+        - joincomma
+
+            Convert list of scalars in comma-separated list of strings
+            (if first element is scalar). List where first element is
+            non-scalar is not converted (but any of the nested list could).
+
+        - joinspace
+
+            Convert list of scalars in space-separated list of strings
+            (if first element is scalar). List where first element is
+            non-scalar is not converted (but any of the nested list could).
+
+            Caveat: is preceded by `joincomma` option.
 
         Other `getTree` options
 

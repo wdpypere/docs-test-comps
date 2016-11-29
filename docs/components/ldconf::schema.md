@@ -7,3 +7,4 @@
     - `/software/ldconf/component_ldconf/paths`
         - optional
         - type: string
+

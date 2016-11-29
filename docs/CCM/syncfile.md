@@ -10,13 +10,8 @@ EDG::WP4::CCM::SyncFile
 
 ### DESCRIPTION
 
-SyncFile module provides synchronised (exclusive) read/write access to
-cid files and global.lock file. It uses flock (2).
-
-flock non blocking call is used for acquiring the lock in lock
-acquiring subroutine. The subroutine retries several times if lock
-cannot be acquired. If after retries lock is still not acquired, error
-is reported.
+SyncFile module provides read/write access to
+cid files and global.lock file.
 
 - read ()
 
@@ -34,7 +29,7 @@ is reported.
 
     get file name
 
-- new ($file\_name)
+- new
 
     create new SyncFile object where $file\_name is the name of the sync
     file

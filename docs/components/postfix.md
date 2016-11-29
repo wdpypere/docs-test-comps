@@ -2,10 +2,6 @@
 
 ncm-postfix: Postfix server configuration
 
-### DESCRIPTION
-
-postfix
-
 ### RESOURCES
 
 #### `/software/components/postfix`
@@ -16,18 +12,18 @@ contains three fields:
 - `main`
 
     An nlist with all the possible configuration values for
-    `/etc/postfix/main.cf`. See [main(5)](http://man.he.net/man5/main) for more details.
+    `/etc/postfix/main.cf`.
 
 - `master`
 
-    A list with all entries for `/etc/postfix/master.cf`. See
-    [master(5)](http://man.he.net/man5/master) for all the details. For each line, we have to provide:
+    A list with all entries for `/etc/postfix/master.cf`.
+    For each line, we have to provide:
 
     - `name` : string
 
         Name of the entry (first field in the line).
 
-    - `type` :  string
+    - `type` : string
 
         Type of service/socket for this entry.
 
@@ -77,9 +73,9 @@ An empty nlist is valid for `main.cf`:
 Declaring an alias database stored in an LDAP server can be achieved as follows:
 
     "/software/components/postfix/main/alias_maps" = append(
-        nlist(
-           "type", "ldap",
-           "name", "/etc/postfix/ldap-aliases.cf"));
+      nlist(
+        "type", "ldap",
+        "name", "/etc/postfix/ldap-aliases.cf"));
 
 And we can instruct Postfix to access this database:
 

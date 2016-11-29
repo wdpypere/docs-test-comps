@@ -45,3 +45,4 @@
     - `/software/gpfs/component_gpfs/cfg`
         - required
         - type: component_gpfs_cfg
+

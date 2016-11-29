@@ -15,41 +15,37 @@ reload the new configuration by executing the following command:
 
 ### RESOURCES
 
-#### `/software/components/ssh/client` : nlist (optional)
+- `/software/components/ssh/client` : nlist (optional)
 
-This nlist contains 2 option sets describing respectively options that must be defined 
-an their values and options that must be commented out.
+    This nlist contains 2 option sets describing respectively options that must be defined
+    an their values and options that must be commented out.
 
-##### `/software/components/ssh/client/options` : nlist (optional)
+    - `/software/components/ssh/client/options` : nlist (optional)
 
-Options that must be set and their value. See schema for allowed options.
+        Options that must be set and their value. See schema for allowed options.
 
-##### `/software/components/ssh/client/comment`\_options : nlist (optional)
+    - `/software/components/ssh/client/comment_options` : nlist (optional)
 
-Options that must be commented out. This is the same set of options as those which can be
-set. If an option is in both list, definition takes precedence.
+        Options that must be commented out. This is the same set of options as those which can be
+        set. If an option is in both list, definition takes precedence.
 
-See schema for allowed options.
+        See schema for allowed options.
 
-#### `/software/components/ssh/daemon` : nlist (optional)
+- `/software/components/ssh/daemon` : nlist (optional)
 
-This nlist contains 2 option sets describing respectively options that must be defined 
-an their values and options that must be commented out.
+    This nlist contains 2 option sets describing respectively options that must be defined
+    an their values and options that must be commented out.
 
-##### `/software/components/ssh/daemon/options` : nlist (optional)
+    - `/software/components/ssh/daemon/options` : nlist (optional)
 
-Options that must be set and their value. See schema for allowed options.
+        Options that must be set and their value. See schema for allowed options.
 
-##### `/software/components/ssh/daemon/comment`\_options : nlist (optional)
+    - `/software/components/ssh/daemon/comment_options` : nlist (optional)
 
-Options that must be commented out. This is the same set of options as those which can be
-set. If an option is in both list, definition takes precedence.
+        Options that must be commented out. This is the same set of options as those which can be
+        set. If an option is in both list, definition takes precedence.
 
-See schema for allowed options.
-
-### DEPENDENCIES
-
-None.
+        See schema for allowed options.
 
 ### FILES
 
@@ -60,7 +56,3 @@ None.
 - `/etc/ssh/ssh_config`
 
     The SSH client configuration file.
-
-### SEE ALSO
-
-ncm-ncd(1), sshd(8), sshd\_config(5), ssh\_config(5)

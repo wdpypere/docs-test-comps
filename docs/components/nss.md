@@ -6,13 +6,9 @@ NCM::nss - NCM nsswitch component
 
 - Configure()
 
-    Generates `/etc/nsswitch.conf` Returns error in case of failure. If the
-    nsswitch.conf file is modified and nscd is running, then nscd will be
+    Generates `/etc/nsswitch.conf` and returns error in case of failure. If the
+    `nsswitch.conf` file is modified and nscd is running, then nscd will be
     restarted.
-
-- Unconfigure()
-
-    not available.
 
 ### RESOURCES
 
@@ -35,12 +31,12 @@ NCM::nss - NCM nsswitch component
     nsswitch.conf. The script will be run once for each
     entry in nsswitch.conf that uses that data source.
     The value of each key should be an nlist
-    with the following possible keys
+    with the following possible keys:
 
     - script
 
         the command line to run to generate once for each database.
-        Any token of the form "<DB>" will be substituted with the
+        Any token of the form `"<DB>"` will be substituted with the
         name of the database being built.
 
     - active
@@ -72,23 +68,3 @@ NCM::nss - NCM nsswitch component
 The component modifies the following files:
 
 - `/etc/nsswitch.conf`
-
-### DEPENDENCIES
-
-#### Components to be run before:
-
-none.
-
-#### Components to be run after:
-
-none.
-
-### BUGS
-
-see code.
-
-S
-
-### SEE ALSO
-
-ncm-ncd(1), nsswitch.conf(5)

@@ -58,7 +58,7 @@ All fields are required (but most have sensible defaults unless otherwise stated
 - `/software/components/nrpe/options/command_prefix ? string`
 
     Optional prefix for every single command to be run. For instance,
-    "/usr/bin/sudo"
+    `/usr/bin/sudo`.
 
     Optional field.
 
@@ -85,7 +85,3 @@ All fields are required (but most have sensible defaults unless otherwise stated
 - `/software/components/nrpe/options/include_dir : string []`
 
     List of directory names that should be included.
-
-### SEE ALSO
-
-http://nagios.sourceforge.net/docs/3\_0/toc.html

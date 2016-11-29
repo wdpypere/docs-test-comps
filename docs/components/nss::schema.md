@@ -37,3 +37,4 @@
     - `/software/nss/component_nss_type/databases`
         - required
         - type: component_nss_db
+
