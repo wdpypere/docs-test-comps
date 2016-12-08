@@ -1,0 +1,79 @@
+### Types
+
+- `/software/spma/software_repository_url`
+- `/software/spma/SOFTWARE_PACKAGE_REP`
+- `/software/spma/SOFTWARE_PACKAGE`
+    - `/software/spma/SOFTWARE_PACKAGE/arch`
+        - optional
+        - type: string
+- `/software/spma/SOFTWARE_REPOSITORY_PACKAGE`
+    - `/software/spma/SOFTWARE_REPOSITORY_PACKAGE/arch`
+        - required
+        - type: string
+    - `/software/spma/SOFTWARE_REPOSITORY_PACKAGE/name`
+        - required
+        - type: string
+    - `/software/spma/SOFTWARE_REPOSITORY_PACKAGE/version`
+        - required
+        - type: string
+- `/software/spma/SOFTWARE_REPOSITORY_PROTOCOL`
+    - `/software/spma/SOFTWARE_REPOSITORY_PROTOCOL/name`
+        - required
+        - type: string
+    - `/software/spma/SOFTWARE_REPOSITORY_PROTOCOL/url`
+        - required
+        - type: software_repository_url
+    - `/software/spma/SOFTWARE_REPOSITORY_PROTOCOL/cacert`
+        - optional
+        - type: string
+    - `/software/spma/SOFTWARE_REPOSITORY_PROTOCOL/clientcert`
+        - optional
+        - type: string
+    - `/software/spma/SOFTWARE_REPOSITORY_PROTOCOL/clientkey`
+        - optional
+        - type: string
+    - `/software/spma/SOFTWARE_REPOSITORY_PROTOCOL/verify`
+        - optional
+        - type: boolean
+- `/software/spma/SOFTWARE_REPOSITORY`
+    - `/software/spma/SOFTWARE_REPOSITORY/enabled`
+        - required
+        - type: boolean
+    - `/software/spma/SOFTWARE_REPOSITORY/gpgcheck`
+        - required
+        - type: boolean
+    - `/software/spma/SOFTWARE_REPOSITORY/repo_gpgcheck`
+        - optional
+        - type: boolean
+    - `/software/spma/SOFTWARE_REPOSITORY/gpgkey`
+        - optional
+        - type: software_repository_url
+    - `/software/spma/SOFTWARE_REPOSITORY/gpgcakey`
+        - optional
+        - type: software_repository_url
+    - `/software/spma/SOFTWARE_REPOSITORY/excludepkgs`
+        - optional
+        - type: string
+    - `/software/spma/SOFTWARE_REPOSITORY/includepkgs`
+        - optional
+        - type: string
+    - `/software/spma/SOFTWARE_REPOSITORY/name`
+        - optional
+        - type: string
+    - `/software/spma/SOFTWARE_REPOSITORY/owner`
+        - optional
+        - type: string
+    - `/software/spma/SOFTWARE_REPOSITORY/priority`
+        - optional
+        - type: long
+        - range: 1..99
+    - `/software/spma/SOFTWARE_REPOSITORY/protocols`
+        - optional
+        - type: SOFTWARE_REPOSITORY_PROTOCOL
+    - `/software/spma/SOFTWARE_REPOSITORY/proxy`
+        - optional
+        - type: string
+    - `/software/spma/SOFTWARE_REPOSITORY/skip_if_unavailable`
+        - required
+        - type: boolean
+

@@ -19,9 +19,10 @@ EDG::WP4::CCM::Element - Element class
 
 ### DESCRIPTION
 
-The class Element is a base class for classes Property
-and Resource. The class Element implement those methods
-that are common to all elments.
+The class `EDG::WP4::CCM::Element` implements those methods
+that are common to all elements and represents a `Property`.
+The class <EDG::WP4::CCM::Element> is a base class for
+`EDG::WP4::CCM::Resource`, which has additional methods.
 
 Type constants:
 
@@ -62,7 +63,7 @@ Type constants:
 
 - createElement($config, $ele\_path)
 
-    Create a new Resource or Property object, depending on the type of
+    Create a new Resource or Element object, depending on the type of
     the element given by $ele\_path. The $config parameter is a Configuration
     object with the profile. The $ele\_path parameter is the element's
     configuration path (it can be either a Path object or a string).

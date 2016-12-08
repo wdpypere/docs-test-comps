@@ -181,7 +181,6 @@
         - optional
         - type: string
 - `/software/ntpd/component_ntpd_type`
-    - decription: if the group is set, files are written with root.group ownership and 0640 permission
     - `/software/ntpd/component_ntpd_type/keyfile`
         - optional
         - type: string
@@ -258,6 +257,7 @@
         - optional
         - type: boolean
     - `/software/ntpd/component_ntpd_type/group`
+        - description: if the group is set, files are written with root.group ownership and 0640 permission
         - optional
         - type: defined_group
 

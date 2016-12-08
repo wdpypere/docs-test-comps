@@ -602,24 +602,24 @@
         - optional
         - type: string
 - `/software/postgresql/postgresql_db`
-    - decription: this file is used to initialise the database (using the pgsql -f option)
-    - decription: sets the pg language for the db (using createlang), this runs after installfile. 
-    - decription: this file is used to add procedures in certain lang (using pgsql -f option), this runs after successful lang is added
-    - decription: apply the installfile with this user (if not defined, the owner is used)
-    - decription: database owner
     - `/software/postgresql/postgresql_db/installfile`
+        - description: this file is used to initialise the database (using the pgsql -f option)
         - optional
         - type: string
     - `/software/postgresql/postgresql_db/lang`
+        - description: sets the pg language for the db (using createlang), this runs after installfile. 
         - optional
         - type: string
     - `/software/postgresql/postgresql_db/langfile`
+        - description: this file is used to add procedures in certain lang (using pgsql -f option), this runs after successful lang is added
         - optional
         - type: string
     - `/software/postgresql/postgresql_db/sql_user`
+        - description: apply the installfile with this user (if not defined, the owner is used)
         - optional
         - type: string
     - `/software/postgresql/postgresql_db/user`
+        - description: database owner
         - required
         - type: string
 - `/software/postgresql/postgresql_config`
@@ -637,8 +637,6 @@
     The raw ALTER ROLE sql (cannot contain a ';'; use ENCRYPTED PASSWORD instead)
 
 - `/software/postgresql/component_postgresql`
-    - decription: Databases are only added/created, never updated, modified or removed.
-    - decription: role name with ROLE ALTER SQL command. Roles are only added and updated, never removed.
     - `/software/postgresql/component_postgresql/commands`
         - optional
         - type: string
@@ -646,6 +644,7 @@
         - optional
         - type: postgresql_config
     - `/software/postgresql/component_postgresql/databases`
+        - description: Databases are only added/created, never updated, modified or removed.
         - optional
         - type: postgresql_db
     - `/software/postgresql/component_postgresql/pg_dir`
@@ -670,6 +669,7 @@
         - optional
         - type: string
     - `/software/postgresql/component_postgresql/roles`
+        - description: role name with ROLE ALTER SQL command. Roles are only added and updated, never removed.
         - optional
         - type: postgresql_role_sql
 

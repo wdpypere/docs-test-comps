@@ -473,9 +473,9 @@ Unit configuration sections
         unit and install are mandatory, but not enforced by schema (possible issues in case of replace=true)
     the other attributes are only valid for a specific type
 
-    - decription: list of existing/other units to base the configuration on
-      (e.g. when creating a new service with a different name, based on an exsiting one)
     - `/software/systemd/systemd_unitfile_config/includes`
+        - description: list of existing/other units to base the configuration on
+      (e.g. when creating a new service with a different name, based on an exsiting one)
         - optional
         - type: string
     - `/software/systemd/systemd_unitfile_config/install`
@@ -493,37 +493,36 @@ Custom unit configuration to allow inserting computed configuration data
 It overrides the data defined in the regular config schema,
 so do not forget to set those as well (can be dummy value).
 
-    - decription: CPUAffinity list determined via
+    - `/software/systemd/systemd_unitfile_custom/CPUAffinity`
+        - description: CPUAffinity list determined via
       'hwloc-calc --physical-output --intersect PU <location0> <location1>'
       Allows to cpubind on numanodes (as we cannot trust logical CPU indices, which regular CPUAffinity requires)
       Forces an empty list to reset any possible previously defined affinity.
-    - `/software/systemd/systemd_unitfile_custom/CPUAffinity`
         - optional
         - type: hwloc_location
 - `/software/systemd/systemd_unitfile`
     - decription: 
     Unit file configuration
 
-    - decription: unitfile configuration data
-    - decription: custom unitfile configuration data
-    - decription: replaceunitfile configuration: if true, only the defined parameters will be used by the unit; anything else is ignored
-    - decription: only use the unit parameters for unitfile configuration,
-      ignore other defined here such as targets (but still allow e.g. values defined by legacy chkconfig)
     - `/software/systemd/systemd_unitfile/config`
+        - description: unitfile configuration data
         - required
         - type: systemd_unitfile_config
     - `/software/systemd/systemd_unitfile/custom`
+        - description: custom unitfile configuration data
         - optional
         - type: systemd_unitfile_custom
     - `/software/systemd/systemd_unitfile/replace`
+        - description: replaceunitfile configuration: if true, only the defined parameters will be used by the unit; anything else is ignored
         - required
         - type: boolean
     - `/software/systemd/systemd_unitfile/only`
+        - description: only use the unit parameters for unitfile configuration,
+      ignore other defined here such as targets (but still allow e.g. values defined by legacy chkconfig)
         - optional
         - type: boolean
 - `/software/systemd/systemd_target`
 - `/software/systemd/systemd_unit_type`
-    - decription: unitfile configuration
     - `/software/systemd/systemd_unit_type/name`
         - optional
         - type: string
@@ -540,6 +539,7 @@ so do not forget to set those as well (can be dummy value).
         - required
         - type: string
     - `/software/systemd/systemd_unit_type/file`
+        - description: unitfile configuration
         - optional
         - type: systemd_unitfile
 - `/software/systemd/component_systemd`

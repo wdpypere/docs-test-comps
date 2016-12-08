@@ -1,8 +1,6 @@
 ### Types
 
 - `/software/dirperm/structure_dirperm_entry`
-    - decription: ensure that a directory is within a mountpoint configured in the profile
-    - decription: ensure that a directory is within a mountpoint
     - `/software/dirperm/structure_dirperm_entry/path`
         - required
         - type: string
@@ -19,9 +17,11 @@
         - optional
         - type: string
     - `/software/dirperm/structure_dirperm_entry/checkmount`
+        - description: ensure that a directory is within a mountpoint configured in the profile
         - required
         - type: boolean
     - `/software/dirperm/structure_dirperm_entry/within_mount`
+        - description: ensure that a directory is within a mountpoint
         - required
         - type: boolean
 - `/software/dirperm/component_dirperm`

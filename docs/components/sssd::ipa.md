@@ -1,0 +1,113 @@
+### Types
+
+- `/software/sssd/authconfig_sssd_ipa_krb5`
+    - decription: 
+    Kerberos settings for the IPA access provider
+
+    - `/software/sssd/authconfig_sssd_ipa_krb5/validate`
+        - optional
+        - type: boolean
+    - `/software/sssd/authconfig_sssd_ipa_krb5/realm`
+        - optional
+        - type: string
+    - `/software/sssd/authconfig_sssd_ipa_krb5/canonicalize`
+        - optional
+        - type: boolean
+    - `/software/sssd/authconfig_sssd_ipa_krb5/use_fast`
+        - optional
+        - type: string
+    - `/software/sssd/authconfig_sssd_ipa_krb5/confd_path`
+        - optional
+        - type: absolute_file_path
+- `/software/sssd/authconfig_sssd_ipa_dyndns`
+    - decription: 
+    dyndns settings for the IPA access provider
+
+    - `/software/sssd/authconfig_sssd_ipa_dyndns/update`
+        - optional
+        - type: boolean
+    - `/software/sssd/authconfig_sssd_ipa_dyndns/ttl`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/sssd/authconfig_sssd_ipa_dyndns/iface`
+        - optional
+        - type: valid_interface
+    - `/software/sssd/authconfig_sssd_ipa_dyndns/refresh_interval`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/sssd/authconfig_sssd_ipa_dyndns/update_ptr`
+        - optional
+        - type: boolean
+    - `/software/sssd/authconfig_sssd_ipa_dyndns/force_tcp`
+        - optional
+        - type: boolean
+    - `/software/sssd/authconfig_sssd_ipa_dyndns/server`
+        - optional
+        - type: type_ip
+- `/software/sssd/authconfig_sssd_ipa_search_base`
+    - decription: 
+    search_base settings for the IPA access provider
+
+    - `/software/sssd/authconfig_sssd_ipa_search_base/hbac`
+        - optional
+        - type: string
+    - `/software/sssd/authconfig_sssd_ipa_search_base/host`
+        - optional
+        - type: string
+    - `/software/sssd/authconfig_sssd_ipa_search_base/selinux`
+        - optional
+        - type: string
+    - `/software/sssd/authconfig_sssd_ipa_search_base/subdomains`
+        - optional
+        - type: string
+    - `/software/sssd/authconfig_sssd_ipa_search_base/master_domain`
+        - optional
+        - type: string
+    - `/software/sssd/authconfig_sssd_ipa_search_base/views`
+        - optional
+        - type: string
+- `/software/sssd/authconfig_sssd_ipa`
+    - decription: 
+    IPA access provider for SSSD.  See the sssd-ipa man page.
+
+    - `/software/sssd/authconfig_sssd_ipa/krb5`
+        - optional
+        - type: authconfig_sssd_ipa_krb5
+    - `/software/sssd/authconfig_sssd_ipa/dyndns`
+        - optional
+        - type: authconfig_sssd_ipa_dyndns
+    - `/software/sssd/authconfig_sssd_ipa/search_base`
+        - optional
+        - type: authconfig_sssd_ipa_search_base
+    - `/software/sssd/authconfig_sssd_ipa/domain`
+        - optional
+        - type: string
+    - `/software/sssd/authconfig_sssd_ipa/server`
+        - required
+        - type: type_hostname
+    - `/software/sssd/authconfig_sssd_ipa/backup_server`
+        - optional
+        - type: type_hostname
+    - `/software/sssd/authconfig_sssd_ipa/hostname`
+        - optional
+        - type: type_hostname
+    - `/software/sssd/authconfig_sssd_ipa/enable_dns_sites`
+        - optional
+        - type: boolean
+    - `/software/sssd/authconfig_sssd_ipa/hbac_refresh`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/sssd/authconfig_sssd_ipa/hbac_selinux`
+        - optional
+        - type: long
+        - range: 0..
+    - `/software/sssd/authconfig_sssd_ipa/server_mode`
+        - optional
+        - type: boolean
+    - `/software/sssd/authconfig_sssd_ipa/automount_location`
+        - optional
+        - type: string
+

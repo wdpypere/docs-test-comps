@@ -4,6 +4,12 @@
     - `/software/gpfs/component_gpfs_cfg/url`
         - required
         - type: string
+    - `/software/gpfs/component_gpfs_cfg/keyData`
+        - optional
+        - type: string
+    - `/software/gpfs/component_gpfs_cfg/sdrrestore`
+        - required
+        - type: boolean
     - `/software/gpfs/component_gpfs_cfg/subnet`
         - required
         - type: string
