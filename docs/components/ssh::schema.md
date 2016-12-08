@@ -60,13 +60,11 @@
         - optional
         - type: string
 - `/software/ssh/ssh_daemon_options_type`
-    - decription: AcceptEnv, one per line
-    - decription: HostKey, one per line
-    - decription: ListenAddress, one per line
     - `/software/ssh/ssh_daemon_options_type/AFSTokenPassing`
         - optional
         - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/AcceptEnv`
+        - description: AcceptEnv, one per line
         - optional
         - type: string
     - `/software/ssh/ssh_daemon_options_type/AllowAgentForwarding`
@@ -109,6 +107,7 @@
         - optional
         - type: legacy_binary_affirmation_string
     - `/software/ssh/ssh_daemon_options_type/HostKey`
+        - description: HostKey, one per line
         - optional
         - type: string
     - `/software/ssh/ssh_daemon_options_type/HPNDisabled`
@@ -148,6 +147,7 @@
         - optional
         - type: long
     - `/software/ssh/ssh_daemon_options_type/ListenAddress`
+        - description: ListenAddress, one per line
         - optional
         - type: type_hostport
     - `/software/ssh/ssh_daemon_options_type/LoginGraceTime`
@@ -269,7 +269,6 @@
         - optional
         - type: legacy_binary_affirmation_string
 - `/software/ssh/ssh_daemon_type`
-    - decription: if false and sshd doesn't exist, skip config validation
     - `/software/ssh/ssh_daemon_type/options`
         - optional
         - type: ssh_daemon_options_type
@@ -280,6 +279,7 @@
         - optional
         - type: string
     - `/software/ssh/ssh_daemon_type/always_validate`
+        - description: if false and sshd doesn't exist, skip config validation
         - required
         - type: boolean
     - `/software/ssh/ssh_daemon_type/config_path`

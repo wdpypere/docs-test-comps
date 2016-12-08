@@ -2,101 +2,121 @@
 
 - `/software/ccm/kerberos_principal_string`
     - decription: 
-    kerberos_principal_string is a string with format principal[/component1[/component2[...]]]@REALM
+    kerberos_principal_string is a string with format `principal[/component1[/component2[...]]]@REALM`
 
 - `/software/ccm/component_ccm`
     - `/software/ccm/component_ccm/configFile`
+        - description: The location of the configuration file. Normally this should not be changed. Defaults to `/etc/ccm.conf`.
         - required
         - type: string
     - `/software/ccm/component_ccm/profile`
+        - description: The URL for the machine's profile. You can use either the http or https protocols (the file protocol is also possible eg. for tests). (see ccm-fetch manpage)
         - required
         - type: type_hostURI
     - `/software/ccm/component_ccm/profile_failover`
-        - optional
-        - type: type_hostURI
-    - `/software/ccm/component_ccm/context`
+        - description: list of profile failover URL(s) in case the above is not working. (see ccm-fetch manpage)
         - optional
         - type: type_hostURI
     - `/software/ccm/component_ccm/debug`
+        - description: Turn on debugging. Defaults to 0.
         - required
         - type: long
         - range: 0..1
     - `/software/ccm/component_ccm/force`
+        - description: Force fetching of the machine profile. Turning this on ignores the modification times. Defaults to 0. 
         - required
         - type: long
         - range: 0..1
-    - `/software/ccm/component_ccm/preprocessor`
-        - optional
-        - type: string
     - `/software/ccm/component_ccm/cache_root`
+        - description: The root directory of the CCM cache.  Defaults to `/var/lib/ccm`.
         - required
         - type: string
     - `/software/ccm/component_ccm/get_timeout`
+        - description: The timeout for the download operation in seconds.  Defaults to 30.
         - required
         - type: long
         - range: 0..
     - `/software/ccm/component_ccm/lock_retries`
+        - description: Number of times to try to get the lock on the cache.  Defaults to 3.
         - required
         - type: long
         - range: 0..
     - `/software/ccm/component_ccm/lock_wait`
+        - description: Number of seconds to wait between attempts to acquire the lock.  Defaults to 30.
         - required
         - type: long
         - range: 0..
     - `/software/ccm/component_ccm/retrieve_retries`
+        - description: Number of times to try to get the context from the server.  Defaults to 3.
         - required
         - type: long
         - range: 0..
     - `/software/ccm/component_ccm/retrieve_wait`
+        - description: Number of seconds to wait between attempts to get the context from the server.  Defaults to 30.
         - required
         - type: long
         - range: 0..
     - `/software/ccm/component_ccm/cert_file`
+        - description: The certificate file to use for an https protocol.
         - optional
         - type: string
     - `/software/ccm/component_ccm/key_file`
+        - description: The key file to use for an https protocol.
         - optional
         - type: string
     - `/software/ccm/component_ccm/ca_file`
+        - description: The CA file to use for an https protocol.
         - optional
         - type: string
     - `/software/ccm/component_ccm/ca_dir`
+        - description: The directory containing accepted CA certificates when using the https protocol.
         - optional
         - type: string
     - `/software/ccm/component_ccm/group_readable`
+        - description: Wether the profiles should be group-readable (value is the groupname). There is no default, and it is not allowed to set both C<group_readable> and enable C<world_readable>.
         - optional
         - type: string
     - `/software/ccm/component_ccm/world_readable`
+        - description: Whether the profiles should be world-readable. Defaults to 0. 
         - required
         - type: long
         - range: 0..1
     - `/software/ccm/component_ccm/base_url`
+        - description: If `profile` is not a URL, a profile url will be calculated from `base_url` and the local hostname.
         - optional
         - type: type_absoluteURI
     - `/software/ccm/component_ccm/dbformat`
+        - description: Format of the local database, must be `DB_File`, `CDB_File` or `GDBM_File`. Defaults to `GDBM_File`. 
         - optional
         - type: string
     - `/software/ccm/component_ccm/json_typed`
+        - description: Extract typed data from JSON profiles
         - optional
         - type: boolean
     - `/software/ccm/component_ccm/tabcompletion`
+        - description: Create the tabcompletion file (during profile fetch)
         - optional
         - type: boolean
     - `/software/ccm/component_ccm/keep_old`
+        - description: Number of old profiles to keep before purging
         - optional
         - type: long
         - range: 0..
     - `/software/ccm/component_ccm/purge_time`
+        - description: Number of seconds before purging inactive profiles.
         - optional
         - type: long
         - range: 0..
     - `/software/ccm/component_ccm/trust`
+        - description: Comma-separated list of kerberos principals to trust when using encrypted profiles
         - optional
         - type: kerberos_principal_string
     - `/software/ccm/component_ccm/principal`
+        - description: Principal to use for Kerberos setup
         - optional
         - type: kerberos_principal_string
     - `/software/ccm/component_ccm/keytab`
+        - description: Keytab to use for Kerberos setup
         - optional
         - type: string
 

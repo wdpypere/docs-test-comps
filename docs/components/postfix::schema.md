@@ -8,12 +8,12 @@
     - decription: 
     Definition of a lookup in Postfix
 
-    - decription:  The type of the database for this lookup 
-    - decription:  The name of the lookup (DB connection, file name...) 
     - `/software/postfix/postfix_lookup/type`
+        - description:  The type of the database for this lookup 
         - required
         - type: postfix_lookup_type_string
     - `/software/postfix/postfix_lookup/name`
+        - description:  The name of the lookup (DB connection, file name...) 
         - required
         - type: string
 - `/software/postfix/postfix_ldap_database`
@@ -1701,8 +1701,8 @@
     - decription: 
     Define multiple Postfix databases
 
-    - decription:  LDAP databases, indexed by file name (relative to `/etc/postfix`)
     - `/software/postfix/postfix_databases/ldap`
+        - description:  LDAP databases, indexed by file name (relative to `/etc/postfix`)
         - optional
         - type: postfix_ldap_database
 - `/software/postfix/postfix_master`
@@ -1735,16 +1735,16 @@
         - required
         - type: string
 - `/software/postfix/postfix_component`
-    - decription:  Contents of the main.cf file 
-    - decription:  Contents of the master.cf file 
-    - decription:  Definition of Postfix databases 
     - `/software/postfix/postfix_component/main`
+        - description:  Contents of the main.cf file 
         - required
         - type: postfix_main
     - `/software/postfix/postfix_component/master`
+        - description:  Contents of the master.cf file 
         - required
         - type: postfix_master
     - `/software/postfix/postfix_component/databases`
+        - description:  Definition of Postfix databases 
         - optional
         - type: postfix_databases
 

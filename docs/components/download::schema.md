@@ -1,13 +1,11 @@
 ### Types
 
 - `/software/download/component_download_file`
-    - decription: command (no options) to run after download, the filename is added as first and (only) argument
-    - decription: Don't consider the remote file to be new until it is this number of minutes old
-    - decription: seconds, overrides setting in component
     - `/software/download/component_download_file/href`
         - required
         - type: string
     - `/software/download/component_download_file/post`
+        - description: command (no options) to run after download, the filename is added as first and (only) argument
         - optional
         - type: string
     - `/software/download/component_download_file/proxy`
@@ -26,6 +24,7 @@
         - optional
         - type: string
     - `/software/download/component_download_file/min_age`
+        - description: Don't consider the remote file to be new until it is this number of minutes old
         - required
         - type: long
     - `/software/download/component_download_file/cacert`
@@ -41,11 +40,10 @@
         - optional
         - type: string
     - `/software/download/component_download_file/timeout`
+        - description: seconds, overrides setting in component
         - optional
         - type: long
 - `/software/download/component_download_type`
-    - decription: seconds, timeout for HEAD requests which checks for changes
-    - decription: seconds, total timeout for fetch of file, can be overridden per file
     - `/software/download/component_download_type/server`
         - optional
         - type: string
@@ -59,9 +57,11 @@
         - optional
         - type: string
     - `/software/download/component_download_type/head_timeout`
+        - description: seconds, timeout for HEAD requests which checks for changes
         - optional
         - type: long
     - `/software/download/component_download_type/timeout`
+        - description: seconds, total timeout for fetch of file, can be overridden per file
         - optional
         - type: long
 

@@ -25,4 +25,7 @@
         - optional
         - type: long
         - range: 0..
+    - `/software/cdp/component_cdp/hostname`
+        - optional
+        - type: type_hostname
 

@@ -6,36 +6,36 @@
     Convert value of certain types (e.g. boolean to string yes/no)
     (using the CCM::TextRender element options)
 
-    - decription: Convert boolean to (lowercase) 'yes' and 'no'.
-    - decription: Convert boolean to (uppercase) 'YES' and 'NO'.
-    - decription: Convert boolean to (lowercase) 'true' and 'false'.
-    - decription: Convert boolean to (uppercase) 'TRUE' and 'FALSE'.
-    - decription: Convert string to doublequoted string.
-    - decription: Convert string to singlequoted string.
-    - decription: Convert list to comma-separated string
-    - decription: Convert list to space-separated string
     - `/software/metaconfig/metaconfig_textrender_convert/yesno`
+        - description: Convert boolean to (lowercase) 'yes' and 'no'.
         - optional
         - type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/YESNO`
+        - description: Convert boolean to (uppercase) 'YES' and 'NO'.
         - optional
         - type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/truefalse`
+        - description: Convert boolean to (lowercase) 'true' and 'false'.
         - optional
         - type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/TRUEFALSE`
+        - description: Convert boolean to (uppercase) 'TRUE' and 'FALSE'.
         - optional
         - type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/doublequote`
+        - description: Convert string to doublequoted string.
         - optional
         - type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/singlequote`
+        - description: Convert string to singlequoted string.
         - optional
         - type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/joincomma`
+        - description: Convert list to comma-separated string
         - optional
         - type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/joinspace`
+        - description: Convert list to space-separated string
         - optional
         - type: boolean
 - `/software/metaconfig/caf_service_action`

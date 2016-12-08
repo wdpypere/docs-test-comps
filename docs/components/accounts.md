@@ -197,11 +197,11 @@ settings such as:
 
 - uid\_min, uid\_max
 
-    Min/max values for automatic uid selection in useradd
+    Min/max values for automatic uid selection in useradd.
 
 - gid\_min, gid\_max
 
-    Min/max values for automatic gid selection in groupadd
+    Min/max values for automatic gid selection in groupadd.
 
 - pass\_max\_days
 
@@ -221,7 +221,7 @@ settings such as:
 
 - create\_home
 
-    If useradd should create home directories for users by default
+    If useradd should create home directories for users by default.
 
 #### `/software/components/accounts/remove_unknown`
 
@@ -276,6 +276,6 @@ somewhat ugly, but doesn't affect the system behaviour at all, so it
 #### nsswitch.conf status
 
 The component has been tested with `files` as the primary source on
-`/etc/nsswitch.conf` for _group_ and _passwd_. Different settings may
+`/etc/nsswitch.conf` for `group` and `passwd`. Different settings may
 produce strange behaviour. These settings are not controlled by
 ncm-accounts but by `ncm-authconfig`.

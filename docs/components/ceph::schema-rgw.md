@@ -1,0 +1,51 @@
+### Types
+
+- `/software/ceph/type_quoted_string`
+- `/software/ceph/ceph_radosgw_config`
+    - decription:  configuration options for a ceph rados gateway instance 
+    - `/software/ceph/ceph_radosgw_config/host`
+        - required
+        - type: string
+    - `/software/ceph/ceph_radosgw_config/keyring`
+        - required
+        - type: string
+    - `/software/ceph/ceph_radosgw_config/rgw_socket_path`
+        - required
+        - type: string
+    - `/software/ceph/ceph_radosgw_config/log_file`
+        - required
+        - type: string
+    - `/software/ceph/ceph_radosgw_config/rgw_frontends`
+        - required
+        - type: type_quoted_string
+    - `/software/ceph/ceph_radosgw_config/rgw_print_continue`
+        - required
+        - type: boolean
+    - `/software/ceph/ceph_radosgw_config/rgw_dns_name`
+        - required
+        - type: type_fqdn
+    - `/software/ceph/ceph_radosgw_config/rgw_enable_ops_log`
+        - required
+        - type: boolean
+    - `/software/ceph/ceph_radosgw_config/rgw_enable_usage_log`
+        - required
+        - type: boolean
+    - `/software/ceph/ceph_radosgw_config/user`
+        - optional
+        - type: string
+- `/software/ceph/ceph_radosgw`
+    - decription:  ceph rados gateway type 
+http://ceph.com/docs/master/radosgw/ 
+
+    - `/software/ceph/ceph_radosgw/config`
+        - optional
+        - type: ceph_radosgw_config
+- `/software/ceph/ceph_radosgwh`
+    - decription:  ceph rados gateway host, defining all gateways on a host 
+    - `/software/ceph/ceph_radosgwh/fqdn`
+        - required
+        - type: type_fqdn
+    - `/software/ceph/ceph_radosgwh/gateways`
+        - required
+        - type: ceph_radosgw
+

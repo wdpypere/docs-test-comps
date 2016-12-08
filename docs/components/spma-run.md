@@ -1,8 +1,8 @@
-##### NAME
+### NAME
 
 spma-run - Executes command output from ncm-spma component
 
-##### SYNOPSIS
+### SYNOPSIS
 
 **spma-run** \[**--cmdfile** _file_\] \[**--forcelock**\] \[**--ignorelock**\]
             \[**--logfile** _file_\] \[**--retries** _n_\]
@@ -11,7 +11,7 @@ spma-run - Executes command output from ncm-spma component
             {**--execute**|**--noaction**|
                **--get-be-name**|**--get-install**|**--get-reject**}
 
-##### DESCRIPTION
+### DESCRIPTION
 
 **spma-run --execute** executes the package changes determined by the
 Quattor NCM **spma** configuration component.  Currently supported
@@ -27,7 +27,7 @@ recommended that **ncm-ncd -configure spma** is run immediately
 prior to executing **spma-run** so that the commands are
 up-to-date with the current system state.
 
-##### RETURN VALUE
+### RETURN VALUE
 
 **spma-run --execute** returns 1 if no changes were made, or 0 if changes
 have been made indicating that a new boot environment has
@@ -37,7 +37,7 @@ occurred.
 In **noaction** mode returns 1 if no changes would have been made,
 or 0 if changes would have been made, or >1 if an error occurred.
 
-##### OPTIONS
+### OPTIONS
 
 The following options are supported:
 
@@ -130,7 +130,7 @@ The following options are supported:
 
     Display version number.
 
-##### FILES
+### FILES
 
 - **/var/log/spma-run.log**
 

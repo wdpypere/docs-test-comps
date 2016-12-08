@@ -137,16 +137,16 @@ The  configuration for each driver is defined in DS_MAD_CONF.
 These values are used when creating a new datastore and should not be modified
 since they defined the datastore behavior.
 
-    - decription: name of the transfer driver, listed in the -d option of the DS_MAD section
-    - decription: comma separated list of required attributes in the DS template
-    - decription: specifies whether the datastore can only manage persistent images
     - `/software/opennebula/opennebula_ds_mad_conf/name`
+        - description: name of the transfer driver, listed in the -d option of the DS_MAD section
         - required
         - type: string
     - `/software/opennebula/opennebula_ds_mad_conf/required_attrs`
+        - description: comma separated list of required attributes in the DS template
         - required
         - type: string
     - `/software/opennebula/opennebula_ds_mad_conf/persistent_only`
+        - description: specifies whether the datastore can only manage persistent images
         - required
         - type: boolean
     - `/software/opennebula/opennebula_ds_mad_conf/marketplace_actions`
@@ -159,24 +159,24 @@ These values are used when creating a new marketplace and should not be modified
 since they define the marketplace behavior.
 A public marketplace can be removed even if it has registered apps.
 
-    - decription: name of the market driver
-    - decription: comma separated list of required attributes in the Market template
-    - decription: list of actions allowed for a MarketPlaceApp.
+    - `/software/opennebula/opennebula_market_mad_conf/name`
+        - description: name of the market driver
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_market_mad_conf/required_attrs`
+        - description: comma separated list of required attributes in the Market template
+        - required
+        - type: string
+    - `/software/opennebula/opennebula_market_mad_conf/app_actions`
+        - description: list of actions allowed for a MarketPlaceApp.
         monitor: the apps of the marketplace will be monitored.
         create: the app in the marketplace.
         delete: the app from the marketplace.
     
-    - decription: set to TRUE for external marketplaces
-    - `/software/opennebula/opennebula_market_mad_conf/name`
-        - required
-        - type: string
-    - `/software/opennebula/opennebula_market_mad_conf/required_attrs`
-        - required
-        - type: string
-    - `/software/opennebula/opennebula_market_mad_conf/app_actions`
         - required
         - type: string
     - `/software/opennebula/opennebula_market_mad_conf/public`
+        - description: set to TRUE for external marketplaces
         - optional
         - type: boolean
 - `/software/opennebula/opennebula_default_cost`
@@ -200,9 +200,9 @@ VNC_BASE_PORT is deprecated since OpenNebula 5.0
 OpenNebula will automatically assign start + vmid,
 allowing to generate different ports for VMs so they do not collide.
 
-    - decription: VNC port pool for automatic VNC port assignment,
-    if possible the port will be set to START + VMID
     - `/software/opennebula/opennebula_vnc_ports/start`
+        - description: VNC port pool for automatic VNC port assignment,
+    if possible the port will be set to START + VMID
         - required
         - type: long
         - range: 5900..65535
@@ -215,8 +215,8 @@ LAN ID pool for the automatic VLAN_ID assignment.
 This pool is for 802.1Q networks (Open vSwitch and 802.1Q drivers).
 The driver will try first to allocate VLAN_IDS[START] + VNET_ID
 
-    - decription: first VLAN_ID to use
     - `/software/opennebula/opennebula_vlan_ids/start`
+        - description: first VLAN_ID to use
         - required
         - type: long
     - `/software/opennebula/opennebula_vlan_ids/reserved`
@@ -228,26 +228,26 @@ Automatic VXLAN Network ID (VNI) assignment.
 This is used or vxlan networks.
 NOTE: reserved is not supported by this pool
 
-    - decription: first VNI (Virtual Network ID) to use
     - `/software/opennebula/opennebula_vxlan_ids/start`
+        - description: first VNI (Virtual Network ID) to use
         - required
         - type: long
 - `/software/opennebula/opennebula_market_mad`
     - decription: 
 Drivers to manage different marketplaces, specialized for the storage backend.
 
-    - decription: path of the transfer driver executable, can be an absolute path or
+    - `/software/opennebula/opennebula_market_mad/executable`
+        - description: path of the transfer driver executable, can be an absolute path or
     relative to $ONE_LOCATION/lib/mads (or `/usr/lib/one/mads`/ if OpenNebula was 
     installed in /)
     
-    - decription: arguments for the driver executable:
-        -t number of threads, i.e. number of repo operations at the same time
-        -m marketplace mads separated by commas
-    
-    - `/software/opennebula/opennebula_market_mad/executable`
         - required
         - type: string
     - `/software/opennebula/opennebula_market_mad/arguments`
+        - description: arguments for the driver executable:
+        -t number of threads, i.e. number of repo operations at the same time
+        -m marketplace mads separated by commas
+    
         - required
         - type: string
 - `/software/opennebula/opennebula_ceph_datastore`
@@ -321,6 +321,12 @@ shared DS is also supported
     - `/software/opennebula/opennebula_datastore/type`
         - required
         - type: string
+    - `/software/opennebula/opennebula_datastore/labels`
+        - description: datastore labels is a list of strings to group the datastores under a given name and filter them 
+    in the admin and cloud views. It is also possible to include in the list 
+    sub-labels using a common slash: list("Name", "Name/SubName")
+        - optional
+        - type: string
 - `/software/opennebula/opennebula_vnet`
     - `/software/opennebula/opennebula_vnet/bridge`
         - required
@@ -365,6 +371,12 @@ shared DS is also supported
     - `/software/opennebula/opennebula_vnet/ar`
         - optional
         - type: opennebula_ar
+    - `/software/opennebula/opennebula_vnet/labels`
+        - description: vnet labels is a list of strings to group the vnets under a given name and filter them 
+    in the admin and cloud views. It is also possible to include in the list 
+    sub-labels using a common slash: list("Name", "Name/SubName")
+        - optional
+        - type: string
 - `/software/opennebula/opennebula_user`
     - decription: 
 Set OpenNebula regular users and their primary groups.
@@ -379,11 +391,20 @@ By default new users are assigned to the users group.
     - `/software/opennebula/opennebula_user/group`
         - optional
         - type: string
+    - `/software/opennebula/opennebula_user/labels`
+        - description: user labels is a list of strings to group the users under a given name and filter them 
+    in the admin and cloud views. It is also possible to include in the list 
+    sub-labels using a common slash: list("Name", "Name/SubName")
+        - optional
+        - type: string
 - `/software/opennebula/opennebula_group`
     - decription: 
 Set a group name and an optional decription
 
     - `/software/opennebula/opennebula_group/description`
+        - optional
+        - type: string
+    - `/software/opennebula/opennebula_group/labels`
         - optional
         - type: string
 - `/software/opennebula/opennebula_remoteconf_ceph`
@@ -598,12 +619,12 @@ oned.conf file
     - decription:  
 type for opennebula service common RPC attributes. 
 
-    - decription: OpenNebula daemon RPC contact information
-    - decription: authentication driver to communicate with OpenNebula core
     - `/software/opennebula/opennebula_rpc_service/one_xmlrpc`
+        - description: OpenNebula daemon RPC contact information
         - required
         - type: type_absoluteURI
     - `/software/opennebula/opennebula_rpc_service/core_auth`
+        - description: authentication driver to communicate with OpenNebula core
         - required
         - type: string
 - `/software/opennebula/opennebula_sunstone`
@@ -689,45 +710,32 @@ sunstone_server.conf file
 Type that sets the OpenNebula
 oneflow-server.conf file
 
-    - decription: host where OneFlow server will run
-    - decription: port where OneFlow server will run
-    - decription: time in seconds between Life Cycle Manager steps
-    - decription: default cooldown period after a scale operation, in seconds
-    - decription: default shutdown action
-    terminate : OpenNebula >= 5.0.0
-    shutdown  : OpenNebula < 5.0.0
-    
-    - decription: default numner of virtual machines that will receive the given call in each interval
-    defined by action_period, when an action is performed on a role
-    - decription: default name for the Virtual Machines created by OneFlow.
-    You can use any of the following placeholders:
-        $SERVICE_ID
-        $SERVICE_NAME
-        $ROLE_NAME
-        $VM_NUMBER
-    
-    - decription: log debug level
-        0 = ERROR
-        1 = WARNING
-        2 = INFO 
-        3 = DEBUG
-    
     - `/software/opennebula/opennebula_oneflow/host`
+        - description: host where OneFlow server will run
         - required
         - type: type_ipv4
     - `/software/opennebula/opennebula_oneflow/port`
+        - description: port where OneFlow server will run
         - required
         - type: type_port
     - `/software/opennebula/opennebula_oneflow/lcm_interval`
+        - description: time in seconds between Life Cycle Manager steps
         - required
         - type: long
     - `/software/opennebula/opennebula_oneflow/default_cooldown`
+        - description: default cooldown period after a scale operation, in seconds
         - required
         - type: long
     - `/software/opennebula/opennebula_oneflow/shutdown_action`
+        - description: default shutdown action
+    terminate : OpenNebula >= 5.0.0
+    shutdown  : OpenNebula < 5.0.0
+    
         - required
         - type: string
     - `/software/opennebula/opennebula_oneflow/action_number`
+        - description: default numner of virtual machines that will receive the given call in each interval
+    defined by action_period, when an action is performed on a role
         - required
         - type: long
         - range: 1..
@@ -736,9 +744,22 @@ oneflow-server.conf file
         - type: long
         - range: 1..
     - `/software/opennebula/opennebula_oneflow/vm_name_template`
+        - description: default name for the Virtual Machines created by OneFlow.
+    You can use any of the following placeholders:
+        $SERVICE_ID
+        $SERVICE_NAME
+        $ROLE_NAME
+        $VM_NUMBER
+    
         - required
         - type: string
     - `/software/opennebula/opennebula_oneflow/debug_level`
+        - description: log debug level
+        0 = ERROR
+        1 = WARNING
+        2 = INFO 
+        3 = DEBUG
+    
         - required
         - type: long
         - range: 0..3
@@ -871,10 +892,10 @@ datastores, vnets, hosts names, etc
 ### Functions
 
 - is_consistent_database
-   description:  
+    - description:  
 check if a specific type of database has the right attributes
  
 - is_consistent_datastore
-   description:  
+    - description:  
 check if a specific type of datastore has the right attributes
  
