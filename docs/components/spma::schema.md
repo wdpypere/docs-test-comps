@@ -1,79 +1,79 @@
+
 ### Types
 
-- `/software/spma/component_spma_common`
+ - `/software/spma/component_spma_common`
     - `/software/spma/component_spma_common/cmdfile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/spma/component_spma_common/packager`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/spma/component_spma_common/pkgpaths`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/spma/component_spma_common/process_obsoletes`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/spma/component_spma_common/cachedir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/spma/component_spma_common/debug`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/spma/component_spma_common/flagfile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/spma/component_spma_common/headnode`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/spma/component_spma_common/localcache`
-        - optional
-        - type: legacy_binary_affirmation_string
+        - Optional
+        - Type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_common/protectkernel`
-        - optional
-        - type: legacy_binary_affirmation_string
+        - Optional
+        - Type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_common/proxy`
-        - optional
-        - type: legacy_binary_affirmation_string
+        - Optional
+        - Type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_common/proxyhost`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/spma/component_spma_common/proxyport`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/spma/component_spma_common/proxyrandom`
-        - optional
-        - type: legacy_binary_affirmation_string
+        - Optional
+        - Type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_common/proxytype`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/spma/component_spma_common/rpmexclusive`
-        - optional
-        - type: legacy_binary_affirmation_string
+        - Optional
+        - Type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_common/run`
-        - optional
-        - type: legacy_binary_affirmation_string
+        - Optional
+        - Type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_common/tmpdir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/spma/component_spma_common/trailprefix`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/spma/component_spma_common/unescape`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/spma/component_spma_common/uninstpaths`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/spma/component_spma_common/userpkgs`
-        - optional
-        - type: legacy_binary_affirmation_string
+        - Optional
+        - Type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_common/userprio`
-        - optional
-        - type: legacy_binary_affirmation_string
+        - Optional
+        - Type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_common/usespmlist`
-        - optional
-        - type: legacy_binary_affirmation_string
+        - Optional
+        - Type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_common/verbose`
-        - optional
-        - type: string
-
+        - Optional
+        - Type: string

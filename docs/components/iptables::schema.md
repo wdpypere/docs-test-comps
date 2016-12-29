@@ -1,238 +1,238 @@
+
 ### Types
 
-- `/software/iptables/component_iptables_rule`
+ - `/software/iptables/component_iptables_rule`
     - `/software/iptables/component_iptables_rule/new_chain`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/append`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/delete`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/insert`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/replace`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/target`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/jump`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/src_addr`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/src`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/source`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/src_port`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/src_ports`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/dst_addr`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/dst`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/destination`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/dst_port`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/dst_ports`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/in_interface`
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/in`-interface
-        - optional
-        - type: string
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/in-interface`
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/out_interface`
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/out`-interface
-        - optional
-        - type: string
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/out-interface`
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/match`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/state`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/ctstate`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/ttl`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/tos`
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/sid`-owner
-        - optional
-        - type: string
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/sid-owner`
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/limit`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/syn`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/iptables/component_iptables_rule/nosyn`
-        - optional
-        - type: boolean
-    - `/software/iptables/component_iptables_rule/icmp`-type
-        - optional
-        - type: string
+        - Optional
+        - Type: boolean
+    - `/software/iptables/component_iptables_rule/icmp-type`
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/protocol`
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/log`-prefix
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/log`-level
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/log`-tcp-options
-        - optional
-        - type: boolean
-    - `/software/iptables/component_iptables_rule/log`-tcp-sequence
-        - optional
-        - type: boolean
-    - `/software/iptables/component_iptables_rule/log`-ip-options
-        - optional
-        - type: boolean
-    - `/software/iptables/component_iptables_rule/log`-uid
-        - optional
-        - type: boolean
-    - `/software/iptables/component_iptables_rule/reject`-with
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/set`-class
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/limit`-burst
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/to`-destination
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/to`-ports
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/to`-source
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/uid`-owner
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/tcp`-flags
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/tcp`-option
-        - optional
-        - type: string
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/log-prefix`
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/log-level`
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/log-tcp-options`
+        - Optional
+        - Type: boolean
+    - `/software/iptables/component_iptables_rule/log-tcp-sequence`
+        - Optional
+        - Type: boolean
+    - `/software/iptables/component_iptables_rule/log-ip-options`
+        - Optional
+        - Type: boolean
+    - `/software/iptables/component_iptables_rule/log-uid`
+        - Optional
+        - Type: boolean
+    - `/software/iptables/component_iptables_rule/reject-with`
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/set-class`
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/limit-burst`
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/to-destination`
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/to-ports`
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/to-source`
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/uid-owner`
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/tcp-flags`
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/tcp-option`
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/command`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/chain`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/icmp_type`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/fragment`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/iptables/component_iptables_rule/nofragment`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/iptables/component_iptables_rule/length`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/set`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/iptables/component_iptables_rule/rcheck`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/iptables/component_iptables_rule/remove`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/iptables/component_iptables_rule/rdest`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/iptables/component_iptables_rule/rsource`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/iptables/component_iptables_rule/rttl`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/iptables/component_iptables_rule/update`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/iptables/component_iptables_rule/seconds`
-        - optional
-        - type: number
+        - Optional
+        - Type: number
     - `/software/iptables/component_iptables_rule/hitcount`
-        - optional
-        - type: number
+        - Optional
+        - Type: number
     - `/software/iptables/component_iptables_rule/name`
-        - optional
-        - type: string
-    - `/software/iptables/component_iptables_rule/pkt`-type
-        - optional
-        - type: string
+        - Optional
+        - Type: string
+    - `/software/iptables/component_iptables_rule/pkt-type`
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_rule/comment`
-        - optional
-        - type: string
-- `/software/iptables/component_iptables_preamble`
+        - Optional
+        - Type: string
+ - `/software/iptables/component_iptables_preamble`
     - `/software/iptables/component_iptables_preamble/input`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_preamble/output`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_preamble/forward`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_preamble/prerouting`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_preamble/postrouting`
-        - optional
-        - type: string
-- `/software/iptables/component_iptables_acls`
+        - Optional
+        - Type: string
+ - `/software/iptables/component_iptables_acls`
     - `/software/iptables/component_iptables_acls/preamble`
-        - optional
-        - type: component_iptables_preamble
+        - Optional
+        - Type: component_iptables_preamble
     - `/software/iptables/component_iptables_acls/rules`
-        - optional
-        - type: component_iptables_rule
+        - Optional
+        - Type: component_iptables_rule
     - `/software/iptables/component_iptables_acls/epilogue`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/iptables/component_iptables_acls/ordered_rules`
-        - optional
-        - type: legacy_binary_affirmation_string
-- `/software/iptables/component_iptables`
+        - Optional
+        - Type: legacy_binary_affirmation_string
+ - `/software/iptables/component_iptables`
     - `/software/iptables/component_iptables/filter`
-        - optional
-        - type: component_iptables_acls
+        - Optional
+        - Type: component_iptables_acls
     - `/software/iptables/component_iptables/nat`
-        - optional
-        - type: component_iptables_acls
+        - Optional
+        - Type: component_iptables_acls
     - `/software/iptables/component_iptables/mangle`
-        - optional
-        - type: component_iptables_acls
-
+        - Optional
+        - Type: component_iptables_acls

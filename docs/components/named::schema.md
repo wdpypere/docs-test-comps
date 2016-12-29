@@ -1,28 +1,30 @@
+
 ### Types
 
-- `/software/named/component_named`
+ - `/software/named/component_named`
     - `/software/named/component_named/serverConfig`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/named/component_named/configfile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/named/component_named/use_localhost`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/named/component_named/start`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/named/component_named/servers`
-        - optional
-        - type: type_ip
+        - Optional
+        - Type: type_ip
     - `/software/named/component_named/options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/named/component_named/search`
-        - optional
-        - type: type_fqdn
+        - Optional
+        - Type: type_fqdn
 
 ### Functions
 
-- component_named_valid
+ - component_named_valid
+    - Arguments:

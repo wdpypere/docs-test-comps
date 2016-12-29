@@ -1,13 +1,13 @@
+
 ### Types
 
-- `/software/ceph/ceph_mon_config`
-    - decription:  configuration options for a ceph monitor daemon 
-- `/software/ceph/ceph_monitor`
-    - decription:  ceph monitor-specific type 
+ - `/software/ceph/ceph_mon_config`
+    - Description:  configuration options for a ceph monitor daemon 
+ - `/software/ceph/ceph_monitor`
+    - Description:  ceph monitor-specific type 
     - `/software/ceph/ceph_monitor/fqdn`
-        - required
-        - type: type_fqdn
+        - Optional
+        - Type: type_fqdn
     - `/software/ceph/ceph_monitor/config`
-        - optional
-        - type: ceph_mon_config
-
+        - Optional
+        - Type: ceph_mon_config

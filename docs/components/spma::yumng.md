@@ -1,3 +1,4 @@
+
 ### NAME
 
 NCM::Component::spma::yumng - NCM SPMA configuration component for Yum, new generation

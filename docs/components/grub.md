@@ -1,3 +1,4 @@
+
 ### NAME
 
 NCM::grub - NCM grub configuration component

@@ -1,3 +1,4 @@
+
 ### NAME
 
 `CAF::Reporter` - Class for console & log message reporting in CAF applications

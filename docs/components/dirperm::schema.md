@@ -1,34 +1,36 @@
+
 ### Types
 
-- `/software/dirperm/structure_dirperm_entry`
+ - `/software/dirperm/structure_dirperm_entry`
     - `/software/dirperm/structure_dirperm_entry/path`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dirperm/structure_dirperm_entry/perm`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dirperm/structure_dirperm_entry/owner`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dirperm/structure_dirperm_entry/type`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dirperm/structure_dirperm_entry/initdir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dirperm/structure_dirperm_entry/checkmount`
-        - description: ensure that a directory is within a mountpoint configured in the profile
-        - required
-        - type: boolean
+        - Description: ensure that a directory is within a mountpoint configured in the profile
+        - Optional
+        - Type: boolean
     - `/software/dirperm/structure_dirperm_entry/within_mount`
-        - description: ensure that a directory is within a mountpoint
-        - required
-        - type: boolean
-- `/software/dirperm/component_dirperm`
+        - Description: ensure that a directory is within a mountpoint
+        - Optional
+        - Type: boolean
+ - `/software/dirperm/component_dirperm`
     - `/software/dirperm/component_dirperm/paths`
-        - optional
-        - type: structure_dirperm_entry
+        - Optional
+        - Type: structure_dirperm_entry
 
 ### Functions
 
-- dirperm_permissions_valid
+ - dirperm_permissions_valid
+    - Arguments:

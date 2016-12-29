@@ -1,3 +1,4 @@
+
 ### NAME
 
 NCM::Component::spma::ips - NCM SPMA configuration component for IPS
@@ -142,7 +143,7 @@ The following PAN code snippet demonstrates how to prepare SPMA for
 Solaris:
 
     #
-    ### Configure SPMA appropriately for Solaris
+    # Configure SPMA appropriately for Solaris
     #
     prefix "/software/components/spma";
     "packager" = "ips";

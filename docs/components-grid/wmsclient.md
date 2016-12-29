@@ -1,3 +1,4 @@
+
 ### NAME
 
 wmsclient: NCM component to configure gLite WMS and EDG RB clients
@@ -43,40 +44,40 @@ VO specific configuration is under `/system/vo` configuration path. There is one
 each VO, this component uses the items described below. Except for VO full name, information is under 'services'
 for EDG RB and under 'services/wms' for gLite WMS. 
 
-##### `/system/vo`/\*/name
+### `/system/vo`/\*/name
 
 The official name of the VO.
 
 Default : none.
 
-##### services/lbhosts (required)
+### services/lbhosts (required)
 
 The list of logging and bookkeeping servers for this VO.  (Usually the
 same as the resource broker list). If not present, configuration of WMS/RB client for this VO is ignored.
 
 Default : none.
 
-##### services/nshosts
+### services/nshosts
 
 The list of network server hosts (i.e. resource brokers) for this VO. It is a required property for EDG RB and for
 gLite WMS with NS/LB interface ('glite' variant). They are ignored for 'wmproxy'.
 
 Default : none.
 
-##### services/wmproxies ('wmproxy' only, required)
+### services/wmproxies ('wmproxy' only, required)
 
 The list of gLite WMS proxy endpoints for this VO. It is a required property for gLite WMS and it is not supported
 for EDG RB.
 
 Default : none.
 
-##### services/myproxy (optional)
+### services/myproxy (optional)
 
 The myproxy server to use for this VO.
 
 Default : none.
 
-##### services/hlr (optional)
+### services/hlr (optional)
 
 The HLR (accounting) server to use for this VO.
 

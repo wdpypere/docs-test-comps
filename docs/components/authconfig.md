@@ -1,3 +1,4 @@
+
 ### NAME
 
 authconfig: NCM component to manage system authentication services.
@@ -56,8 +57,8 @@ directly.  It will also enable/disable NSCD support on the client.
 
     "/software/components/authconfig/method/files/enable" = true;
 
-    ###  "/software/components/authconfig/method/afs/enable" = true;
-    ###  "/software/components/authconfig/method/afs/cell" = "cern.ch";
+    #  "/software/components/authconfig/method/afs/enable" = true;
+    #  "/software/components/authconfig/method/afs/cell" = "cern.ch";
 
     "/software/components/authconfig/method/ldap/enable" = false;
     "/software/components/authconfig/method/ldap/nssonly" = false;
@@ -78,9 +79,9 @@ directly.  It will also enable/disable NSCD support on the client.
     "/software/components/authconfig/method/ldap/pam_member_attribute" = "uniquemember";
     "/software/components/authconfig/method/ldap/tls/peercheck" = "yes";
 
-    ###  "/software/components/authconfig/method/ldap/tls/cacertfile" = undef;
-    ###  "/software/components/authconfig/method/ldap/tls/cacertdir" = undef;
-    ###  "/software/components/authconfig/method/ldap/tls/ciphers" = undef;
+    #  "/software/components/authconfig/method/ldap/tls/cacertfile" = undef;
+    #  "/software/components/authconfig/method/ldap/tls/cacertdir" = undef;
+    #  "/software/components/authconfig/method/ldap/tls/ciphers" = undef;
 
     "/software/components/authconfig/method/ldap/nss_base_passwd" = "OU=Users,OU=Organic Units,DC=cern,DC=ch";
     "/software/components/authconfig/method/ldap/nss_base_group" = "OU=SLC,OU=Workgroups,DC=cern,DC=ch";
@@ -94,8 +95,8 @@ directly.  It will also enable/disable NSCD support on the client.
     "/software/components/authconfig/method/ldap/pam_login_attribute" = "sAMAccountName";
     "/software/components/authconfig/method/ldap/ssl" = "start_tls";
 
-    ###  "/software/components/authconfig/method/ldap/pam_min_uid" = "0"; ### NOT IMPLEMENTED #
-    ###  "/software/components/authconfig/method/ldap/pam_max_uid" = "0";### NOT IMPLEMENTED #
+    #  "/software/components/authconfig/method/ldap/pam_min_uid" = "0"; # NOT IMPLEMENTED #
+    #  "/software/components/authconfig/method/ldap/pam_max_uid" = "0";# NOT IMPLEMENTED #
 
     "/software/components/authconfig/method/nis/enable" = false;
     "/software/components/authconfig/method/nis/domain" = "nikhef.nl";

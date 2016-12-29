@@ -1,3 +1,4 @@
+
 ### NAME
 
 ncm-puppet: Component for running puppet standalone within quattor

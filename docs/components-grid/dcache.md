@@ -1,3 +1,4 @@
+
 ### NAME
 
 dcache : NCM component to manage dcache configuration.
@@ -13,10 +14,6 @@ None.
 ### BUGS
 
 None known.
-
-Stijn.De.W
-
-Stijn.De.W
 
 ### VERSION
 

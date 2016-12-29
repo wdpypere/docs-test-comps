@@ -1,3 +1,4 @@
+
 ### NAME
 
 ncm-gip2:  NCM component for generic LCG information provider
@@ -35,27 +36,27 @@ or as a configuration file processed by staticInfoCmd. This nlist properties are
 
 Default : none.
 
-##### LDIF confFile : string (optional)
+### LDIF confFile : string (optional)
 
 Name of the file to create with 'entries', used as the input file for staticInfoCmd. Ignored when
 staticInfoCmd is ommitted.
 
 Default : key of the `/software/components/gip2/ldif` nlist.
 
-##### LDIF template : string (deprecated)
+### LDIF template : string (deprecated)
 
 Kept for backward compatibility. Ignored if specified.
 
 Default : none.
 
-##### LDIF ldifFile : string (required)
+### LDIF ldifFile : string (required)
 
 Name of the LDIF file to produce. It can be either a name or an absolute path. When using a name without a path,
 the file will be created in the LDIF directory (basedir/ldif).
 
 Default : none.
 
-##### LDIF entries : nlist (optional)
+### LDIF entries : nlist (optional)
 
 nlist of LDIF entries (key is the DN, value is a nlist of attribute/value pairs) to put in the resulting file 
 if staticInfoCmd is not specified or sets of key value/pairs (key is the set name and and value is a nlist of key/value pairs).
@@ -67,7 +68,7 @@ key matching confFile.
 
 Default : none.
 
-##### LDIF staticInfoCmd : string (optional)
+### LDIF staticInfoCmd : string (optional)
 
 Path of the command to execute to transform entries into a LDIF file. If absent, the global
 staticInfoCmd is used.
@@ -173,9 +174,9 @@ None.
 
 None known.
 
-Charles Loomis <charles.loomis@cern.ch>
+Charles Loomis <>
 
-Charles Loomis <charles.loomis@cern.ch>,Michel Jouvin <>
+Charles Loomis <>,Michel Jouvin <>
 
 ### VERSION
 

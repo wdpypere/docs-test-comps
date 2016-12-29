@@ -1,3 +1,4 @@
+
 ### NAME
 
 NCM::ntpd - NCM ntpd configuration component
@@ -299,10 +300,10 @@ NCM::ntpd - NCM ntpd configuration component
 
     Example:
 
-        ### solaris
+        # solaris
         "/software/components/ntpd/servicename" = "svc:/network/ntpd";
 
-        ### linux
+        # linux
         "/software/components/ntpd/servicename" = "ntpd";
 
     Default : `"ntpd" (linux), "svc:/network/ntpd"` (solaris)

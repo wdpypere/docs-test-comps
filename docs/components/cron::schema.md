@@ -1,96 +1,98 @@
+
 ### Types
 
-- `/software/cron/structure_cron_syslog`
+ - `/software/cron/structure_cron_syslog`
     - `/software/cron/structure_cron_syslog/facility`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron_syslog/level`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron_syslog/tagprefix`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron_syslog/tag`
-        - optional
-        - type: string
-- `/software/cron/structure_cron_log`
+        - Optional
+        - Type: string
+ - `/software/cron/structure_cron_log`
     - `/software/cron/structure_cron_log/disabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/cron/structure_cron_log/name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron_log/owner`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron_log/mode`
-        - optional
-        - type: string
-- `/software/cron/structure_cron_timing`
+        - Optional
+        - Type: string
+ - `/software/cron/structure_cron_timing`
     - `/software/cron/structure_cron_timing/minute`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron_timing/hour`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron_timing/day`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron_timing/month`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron_timing/weekday`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron_timing/smear`
-        - optional
-        - type: long
-        - range: 0..1440
-- `/software/cron/structure_cron`
+        - Optional
+        - Type: long
+        - Range: 0..1440
+ - `/software/cron/structure_cron`
     - `/software/cron/structure_cron/name`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron/user`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron/group`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron/frequency`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron/timing`
-        - optional
-        - type: structure_cron_timing
+        - Optional
+        - Type: structure_cron_timing
     - `/software/cron/structure_cron/command`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron/comment`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron/env`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/structure_cron/log`
-        - optional
-        - type: structure_cron_log
+        - Optional
+        - Type: structure_cron_log
     - `/software/cron/structure_cron/syslog`
-        - optional
-        - type: structure_cron_syslog
-- `/software/cron/component_cron`
+        - Optional
+        - Type: structure_cron_syslog
+ - `/software/cron/component_cron`
     - `/software/cron/component_cron/entries`
-        - optional
-        - type: structure_cron
+        - Optional
+        - Type: structure_cron
     - `/software/cron/component_cron/deny`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/component_cron/allow`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/cron/component_cron/securitypath`
-        - required
-        - type: string
+        - Optional
+        - Type: string
 
 ### Functions
 
-- structure_cron_log_valid
+ - structure_cron_log_valid
+    - Arguments:

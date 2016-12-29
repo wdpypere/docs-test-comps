@@ -1,34 +1,34 @@
+
 ### Types
 
-- `/software/pbsknownhosts/pbsknownhosts_component`
+ - `/software/pbsknownhosts/pbsknownhosts_component`
     - `/software/pbsknownhosts/pbsknownhosts_component/configFile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsknownhosts/pbsknownhosts_component/pbsbin`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsknownhosts/pbsknownhosts_component/nodes`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsknownhosts/pbsknownhosts_component/keytypes`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsknownhosts/pbsknownhosts_component/knownhosts`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsknownhosts/pbsknownhosts_component/knownhostsscript`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsknownhosts/pbsknownhosts_component/targets`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsknownhosts/pbsknownhosts_component/shostsConfigFile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsknownhosts/pbsknownhosts_component/shosts`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsknownhosts/pbsknownhosts_component/shostsscript`
-        - optional
-        - type: string
-
+        - Optional
+        - Type: string

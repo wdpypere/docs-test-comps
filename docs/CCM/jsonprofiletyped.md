@@ -1,3 +1,4 @@
+
 ### SYNOPSIS
 
     EDG::WP4::CCM::JSONProfileTyped->interpret_node($tag, $jsondoc);

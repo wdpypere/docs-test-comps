@@ -1,3 +1,4 @@
+
 ### NAME
 
 CAF::Application - Common Application Framework core class
@@ -11,7 +12,7 @@ CAF::Application - Common Application Framework core class
     use parent qw(CAF::Application);
 
     <extend/overwrite default methods here...>
-    ### Main loop
+    # Main loop
     package main;
     use strict;
     use warnings;

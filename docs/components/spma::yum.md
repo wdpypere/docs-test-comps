@@ -1,3 +1,4 @@
+
 ### NAME
 
 NCM::Component::spma::yum - NCM SPMA configuration component for Yum

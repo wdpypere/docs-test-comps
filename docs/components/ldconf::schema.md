@@ -1,10 +1,10 @@
+
 ### Types
 
-- `/software/ldconf/component_ldconf`
+ - `/software/ldconf/component_ldconf`
     - `/software/ldconf/component_ldconf/conffile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ldconf/component_ldconf/paths`
-        - optional
-        - type: string
-
+        - Optional
+        - Type: string

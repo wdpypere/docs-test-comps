@@ -1,3 +1,4 @@
+
 ### NAME
 
 ncm-metaconfig: Configure services whose config format can be
@@ -144,7 +145,7 @@ The following formats can be rendered via `CAF::TextRender`:
 
 The well-known `/etc/ccm.conf` can be defined like this:
 
-##### Define a valid structure for the file
+### Define a valid structure for the file
 
     type ccm_conf_file = {
         "profile" : type_absoluteURI
@@ -155,14 +156,14 @@ The well-known `/etc/ccm.conf` can be defined like this:
 
     bind "/software/components/metaconfig/services/{/etc/ccm.conf}/contents" = ccm_conf_file;
 
-##### Fill in the contents
+### Fill in the contents
 
     prefix "/software/components/metaconfig/services/{/etc/ccm.conf}"
 
     "contents/profile" = "http://www.google.com";
     "module" = "general";
 
-##### And that's it
+### And that's it
 
 Now, just compile and deploy. You should get the same results as with
 old good ncm-ccm.
@@ -171,21 +172,21 @@ old good ncm-ccm.
 
 We can generate simple INI-like files with the `Config::Tiny` module.
 
-##### Example schema
+### Example schema
 
 Let's imagine the file has two sections with one key each:
 
-    ### This is the first section, labeled "s1"
+    # This is the first section, labeled "s1"
     type section_1 = {
        "a" : long
     };
 
-    ### This is the second section, labeled "s2"
+    # This is the second section, labeled "s2"
     type section_2 = {
        "b" : string
     };
 
-    ### This is the full file structure
+    # This is the full file structure
     type my_ini_file = {
        "s1" : section_1
        "s2" : section_2
@@ -193,7 +194,7 @@ Let's imagine the file has two sections with one key each:
 
     bind "/software/components/metaconfig/services/{/etc/foo.ini}/contents" = my_ini_file;
 
-##### Describing the file
+### Describing the file
 
 We'll define the permissions, who renders it and which daemons are associated to it.
 
@@ -211,7 +212,7 @@ syntax here):
 
     "/software/packages/{perl-Config-Tiny}" = nlist();
 
-##### Describing the file's contents
+### Describing the file's contents
 
 And now, we only have to specify the contents:
 
@@ -219,7 +220,7 @@ And now, we only have to specify the contents:
     "s1/a" = 42;
     "s2/b" = "hitchicker";
 
-##### And that's it
+### And that's it
 
 That's it!  When you deploy your configuration you should see your
 `/etc/foo.ini` in the correct location.

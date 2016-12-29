@@ -1,3 +1,4 @@
+
 ### NAME
 
 The _gridmapdir_ component manages the gridmapdir directory.
@@ -32,7 +33,7 @@ None.
 
 None known.
 
-Charles Loomis <charles.loomis@cern.ch>
+Charles Loomis <>
 
 Michel Jouvin <>
 

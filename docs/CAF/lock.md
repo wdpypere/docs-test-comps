@@ -1,3 +1,4 @@
+
 ### NAME
 
 CAF::Lock - Class for handling application instance locking

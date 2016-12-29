@@ -1,67 +1,67 @@
+
 ### Types
 
-- `/software/download/component_download_file`
+ - `/software/download/component_download_file`
     - `/software/download/component_download_file/href`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/download/component_download_file/post`
-        - description: command (no options) to run after download, the filename is added as first and (only) argument
-        - optional
-        - type: string
+        - Description: command (no options) to run after download, the filename is added as first and (only) argument
+        - Optional
+        - Type: string
     - `/software/download/component_download_file/proxy`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/download/component_download_file/gssapi`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/download/component_download_file/perm`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/download/component_download_file/owner`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/download/component_download_file/group`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/download/component_download_file/min_age`
-        - description: Don't consider the remote file to be new until it is this number of minutes old
-        - required
-        - type: long
+        - Description: Don't consider the remote file to be new until it is this number of minutes old
+        - Optional
+        - Type: long
     - `/software/download/component_download_file/cacert`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/download/component_download_file/capath`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/download/component_download_file/cert`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/download/component_download_file/key`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/download/component_download_file/timeout`
-        - description: seconds, overrides setting in component
-        - optional
-        - type: long
-- `/software/download/component_download_type`
+        - Description: seconds, overrides setting in component
+        - Optional
+        - Type: long
+ - `/software/download/component_download_type`
     - `/software/download/component_download_type/server`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/download/component_download_type/proto`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/download/component_download_type/files`
-        - optional
-        - type: component_download_file
+        - Optional
+        - Type: component_download_file
     - `/software/download/component_download_type/proxyhosts`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/download/component_download_type/head_timeout`
-        - description: seconds, timeout for HEAD requests which checks for changes
-        - optional
-        - type: long
+        - Description: seconds, timeout for HEAD requests which checks for changes
+        - Optional
+        - Type: long
     - `/software/download/component_download_type/timeout`
-        - description: seconds, total timeout for fetch of file, can be overridden per file
-        - optional
-        - type: long
-
+        - Description: seconds, total timeout for fetch of file, can be overridden per file
+        - Optional
+        - Type: long

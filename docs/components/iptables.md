@@ -1,3 +1,4 @@
+
 ### NAME
 
 iptables: Setup the IPTABLES firewall rules.
@@ -206,7 +207,7 @@ Alternatively you can specify the specific port number yourself.
 
 #### Additional rules
 
-##### DHCP
+### DHCP
 
     "/software/components/iptables/filter/rules" = append(nlist(
                            "command", "-A",
@@ -216,7 +217,7 @@ Alternatively you can specify the specific port number yourself.
                            "src_port", "67:68",
                            "dst_port", "67:68"));
 
-##### NTP
+### NTP
 
     "/software/components/iptables/filter/rules" = append(nlist(
                            "command", "-A",
@@ -226,7 +227,7 @@ Alternatively you can specify the specific port number yourself.
                            "src_port", "123",
                            "dst_port", "123"));
 
-##### Samhain
+### Samhain
 
     "/software/components/iptables/filter/rules" = append(nlist(
                            "command", "-A",
@@ -236,7 +237,7 @@ Alternatively you can specify the specific port number yourself.
                            "src_port", "49777",
                            "dst_port", "49777"));
 
-##### GridFTP Server
+### GridFTP Server
 
     "/software/components/iptables/filter/rules" = append(nlist(
                            "command", "-A",

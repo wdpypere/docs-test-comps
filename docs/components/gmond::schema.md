@@ -1,198 +1,198 @@
+
 ### Types
 
-- `/software/gmond/structure_component_gmond_acl_access`
+ - `/software/gmond/structure_component_gmond_acl_access`
     - `/software/gmond/structure_component_gmond_acl_access/ip`
-        - required
-        - type: type_ip
+        - Optional
+        - Type: type_ip
     - `/software/gmond/structure_component_gmond_acl_access/mask`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/gmond/structure_component_gmond_acl_access/action`
-        - required
-        - type: string
-- `/software/gmond/structure_component_gmond_acl`
+        - Optional
+        - Type: string
+ - `/software/gmond/structure_component_gmond_acl`
     - `/software/gmond/structure_component_gmond_acl/default`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_acl/access`
-        - required
-        - type: structure_component_gmond_acl_access
-- `/software/gmond/structure_component_gmond_cluster`
+        - Optional
+        - Type: structure_component_gmond_acl_access
+ - `/software/gmond/structure_component_gmond_cluster`
     - `/software/gmond/structure_component_gmond_cluster/name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_cluster/owner`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_cluster/latlong`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_cluster/url`
-        - optional
-        - type: type_absoluteURI
-- `/software/gmond/structure_component_gmond_host`
+        - Optional
+        - Type: type_absoluteURI
+ - `/software/gmond/structure_component_gmond_host`
     - `/software/gmond/structure_component_gmond_host/location`
-        - required
-        - type: string
-- `/software/gmond/structure_component_gmond_globals`
+        - Optional
+        - Type: string
+ - `/software/gmond/structure_component_gmond_globals`
     - `/software/gmond/structure_component_gmond_globals/daemonize`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/gmond/structure_component_gmond_globals/setuid`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/gmond/structure_component_gmond_globals/user`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_globals/debug_level`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/gmond/structure_component_gmond_globals/mute`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/gmond/structure_component_gmond_globals/deaf`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/gmond/structure_component_gmond_globals/host_dmax`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/gmond/structure_component_gmond_globals/cleanup_threshold`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/gmond/structure_component_gmond_globals/gexec`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/gmond/structure_component_gmond_globals/send_metadata_interval`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/gmond/structure_component_gmond_globals/module_dir`
-        - optional
-        - type: string
-- `/software/gmond/structure_component_gmond_udp_send_channel`
+        - Optional
+        - Type: string
+ - `/software/gmond/structure_component_gmond_udp_send_channel`
     - `/software/gmond/structure_component_gmond_udp_send_channel/mcast_join`
-        - optional
-        - type: type_ipv4
+        - Optional
+        - Type: type_ipv4
     - `/software/gmond/structure_component_gmond_udp_send_channel/mcast_if`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_udp_send_channel/host`
-        - optional
-        - type: type_hostname
+        - Optional
+        - Type: type_hostname
     - `/software/gmond/structure_component_gmond_udp_send_channel/port`
-        - required
-        - type: type_port
+        - Optional
+        - Type: type_port
     - `/software/gmond/structure_component_gmond_udp_send_channel/ttl`
-        - optional
-        - type: long
-        - range: 1..
-- `/software/gmond/structure_component_gmond_udp_recv_channel`
+        - Optional
+        - Type: long
+        - Range: 1..
+ - `/software/gmond/structure_component_gmond_udp_recv_channel`
     - `/software/gmond/structure_component_gmond_udp_recv_channel/mcast_join`
-        - optional
-        - type: type_ipv4
+        - Optional
+        - Type: type_ipv4
     - `/software/gmond/structure_component_gmond_udp_recv_channel/bind`
-        - optional
-        - type: type_ip
+        - Optional
+        - Type: type_ip
     - `/software/gmond/structure_component_gmond_udp_recv_channel/mcast_if`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_udp_recv_channel/port`
-        - required
-        - type: type_port
+        - Optional
+        - Type: type_port
     - `/software/gmond/structure_component_gmond_udp_recv_channel/family`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_udp_recv_channel/acl`
-        - optional
-        - type: structure_component_gmond_acl
-- `/software/gmond/structure_component_gmond_tcp_accept_channel`
+        - Optional
+        - Type: structure_component_gmond_acl
+ - `/software/gmond/structure_component_gmond_tcp_accept_channel`
     - `/software/gmond/structure_component_gmond_tcp_accept_channel/bind`
-        - optional
-        - type: type_ip
+        - Optional
+        - Type: type_ip
     - `/software/gmond/structure_component_gmond_tcp_accept_channel/port`
-        - required
-        - type: type_port
+        - Optional
+        - Type: type_port
     - `/software/gmond/structure_component_gmond_tcp_accept_channel/family`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_tcp_accept_channel/timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/gmond/structure_component_gmond_tcp_accept_channel/acl`
-        - optional
-        - type: structure_component_gmond_acl
-- `/software/gmond/structure_component_gmond_metric`
+        - Optional
+        - Type: structure_component_gmond_acl
+ - `/software/gmond/structure_component_gmond_metric`
     - `/software/gmond/structure_component_gmond_metric/name`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_metric/value_threshold`
-        - optional
-        - type: double
+        - Optional
+        - Type: double
     - `/software/gmond/structure_component_gmond_metric/title`
-        - optional
-        - type: string
-- `/software/gmond/structure_component_gmond_collection_group`
+        - Optional
+        - Type: string
+ - `/software/gmond/structure_component_gmond_collection_group`
     - `/software/gmond/structure_component_gmond_collection_group/collect_once`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/gmond/structure_component_gmond_collection_group/collect_every`
-        - optional
-        - type: long
-        - range: 1..
+        - Optional
+        - Type: long
+        - Range: 1..
     - `/software/gmond/structure_component_gmond_collection_group/time_threshold`
-        - optional
-        - type: long
-        - range: 1..
+        - Optional
+        - Type: long
+        - Range: 1..
     - `/software/gmond/structure_component_gmond_collection_group/metric`
-        - required
-        - type: structure_component_gmond_metric
-- `/software/gmond/structure_component_gmond_module`
+        - Optional
+        - Type: structure_component_gmond_metric
+ - `/software/gmond/structure_component_gmond_module`
     - `/software/gmond/structure_component_gmond_module/name`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_module/language`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_module/path`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_module/params`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond_module/param`
-        - optional
-        - type: nlist
-- `/software/gmond/structure_component_gmond`
+        - Optional
+        - Type: dict
+ - `/software/gmond/structure_component_gmond`
     - `/software/gmond/structure_component_gmond/cluster`
-        - optional
-        - type: structure_component_gmond_cluster
+        - Optional
+        - Type: structure_component_gmond_cluster
     - `/software/gmond/structure_component_gmond/host`
-        - optional
-        - type: structure_component_gmond_host
+        - Optional
+        - Type: structure_component_gmond_host
     - `/software/gmond/structure_component_gmond/globals`
-        - required
-        - type: structure_component_gmond_globals
+        - Optional
+        - Type: structure_component_gmond_globals
     - `/software/gmond/structure_component_gmond/udp_send_channel`
-        - required
-        - type: structure_component_gmond_udp_send_channel
+        - Optional
+        - Type: structure_component_gmond_udp_send_channel
     - `/software/gmond/structure_component_gmond/udp_recv_channel`
-        - required
-        - type: structure_component_gmond_udp_recv_channel
+        - Optional
+        - Type: structure_component_gmond_udp_recv_channel
     - `/software/gmond/structure_component_gmond/tcp_accept_channel`
-        - required
-        - type: structure_component_gmond_tcp_accept_channel
+        - Optional
+        - Type: structure_component_gmond_tcp_accept_channel
     - `/software/gmond/structure_component_gmond/collection_group`
-        - required
-        - type: structure_component_gmond_collection_group
+        - Optional
+        - Type: structure_component_gmond_collection_group
     - `/software/gmond/structure_component_gmond/module`
-        - optional
-        - type: structure_component_gmond_module
+        - Optional
+        - Type: structure_component_gmond_module
     - `/software/gmond/structure_component_gmond/include`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gmond/structure_component_gmond/file`
-        - required
-        - type: string
-
+        - Optional
+        - Type: string

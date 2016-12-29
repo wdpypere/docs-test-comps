@@ -1,3 +1,4 @@
+
 ### NAME
 
 The _ccm_ component manages the configuration file

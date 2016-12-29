@@ -1,5 +1,7 @@
-### Types
+
 ### Functions
 
-- glitestartup_mod_service
-- glitestartup_add_dependency
+ - glitestartup_mod_service
+    - Arguments:
+ - glitestartup_add_dependency
+    - Arguments:

@@ -1,3 +1,4 @@
+
 ### NAME
 
 The _lcgbdii_ component manages the configuration file of BDII service.  
@@ -186,9 +187,9 @@ None.
 
 None known.
 
-Charles Loomis <charles.loomis@cern.ch>
+Charles Loomis <>
 
-Charles Loomis <charles.loomis@cern.ch>, Michel Jouvin <>
+Charles Loomis <>, Michel Jouvin <>
 
 ### VERSION
 

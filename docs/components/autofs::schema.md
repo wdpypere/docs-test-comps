@@ -1,93 +1,93 @@
+
 ### Types
 
-- `/software/autofs/autofs_conf_common`
-- `/software/autofs/autofs_conf_autofs`
+ - `/software/autofs/autofs_conf_common`
+ - `/software/autofs/autofs_conf_autofs`
     - `/software/autofs/autofs_conf_autofs/timeout`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/autofs/autofs_conf_autofs/negative_timeout`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/autofs/autofs_conf_autofs/mount_wait`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/autofs/autofs_conf_autofs/umount_wait`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/autofs/autofs_conf_autofs/browse_mode`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/autofs/autofs_conf_autofs/append_options`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/autofs/autofs_conf_autofs/logging`
-        - optional
-        - type: string
-- `/software/autofs/autofs_conf_amd`
+        - Optional
+        - Type: string
+ - `/software/autofs/autofs_conf_amd`
     - `/software/autofs/autofs_conf_amd/dismount_interval`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/autofs/autofs_conf_amd/map_type`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/autofs/autofs_conf_amd/autofs_use_lofs`
-        - optional
-        - type: boolean
-- `/software/autofs/autofs_conf`
+        - Optional
+        - Type: boolean
+ - `/software/autofs/autofs_conf`
     - `/software/autofs/autofs_conf/autofs`
-        - optional
-        - type: autofs_conf_autofs
+        - Optional
+        - Type: autofs_conf_autofs
     - `/software/autofs/autofs_conf/amd`
-        - optional
-        - type: autofs_conf_amd
+        - Optional
+        - Type: autofs_conf_amd
     - `/software/autofs/autofs_conf/mountpoints`
-        - optional
-        - type: autofs_conf_amd
-- `/software/autofs/autofs_mapentry_type`
+        - Optional
+        - Type: autofs_conf_amd
+ - `/software/autofs/autofs_mapentry_type`
     - `/software/autofs/autofs_mapentry_type/options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/autofs/autofs_mapentry_type/location`
-        - required
-        - type: string
-- `/software/autofs/autofs_map_type`
+        - Optional
+        - Type: string
+ - `/software/autofs/autofs_map_type`
     - `/software/autofs/autofs_map_type/enabled`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/autofs/autofs_map_type/preserve`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/autofs/autofs_map_type/type`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/autofs/autofs_map_type/mapname`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/autofs/autofs_map_type/mountpoint`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/autofs/autofs_map_type/mpaliases`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/autofs/autofs_map_type/options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/autofs/autofs_map_type/entries`
-        - optional
-        - type: autofs_mapentry_type
-- `/software/autofs/component_autofs_type`
+        - Optional
+        - Type: autofs_mapentry_type
+ - `/software/autofs/component_autofs_type`
     - `/software/autofs/component_autofs_type/preserveMaster`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/autofs/component_autofs_type/maps`
-        - required
-        - type: autofs_map_type
+        - Optional
+        - Type: autofs_map_type
     - `/software/autofs/component_autofs_type/conf`
-        - optional
-        - type: autofs_conf
-
+        - Optional
+        - Type: autofs_conf

@@ -1,3 +1,4 @@
+
 ### DESCRIPTION
 
 The _sudo_ component manages the sudo configuracion, I.E: edits
@@ -82,7 +83,7 @@ But this is **NOT**:
     "/software/components/sudo/sudo/general_options" =
         list (
             nlist ("user", "foo",
-                "host", "localhost" ### Error: only one of user and host!
+                "host", "localhost" # Error: only one of user and host!
                 "options", nlist ("insults", true)
                 );
             );

@@ -1,13 +1,13 @@
+
 ### Types
 
-- `/software/maui/maui_component`
+ - `/software/maui/maui_component`
     - `/software/maui/maui_component/configPath`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/maui/maui_component/configFile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/maui/maui_component/contents`
-        - optional
-        - type: string
-
+        - Optional
+        - Type: string

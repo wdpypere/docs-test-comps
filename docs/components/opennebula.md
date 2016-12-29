@@ -1,3 +1,4 @@
+
 ### NAME
 
 ncm-opennebula: Configuration module for OpenNebula
@@ -40,7 +41,7 @@ To set up the initial cluster, some steps should be taken:
 You can use OpenNebula installgems addon : [https://github.com/OpenNebula/addon-installgems](https://github.com/OpenNebula/addon-installgems).
 - 2. The OpenNebula server(s) should have passwordless ssh access as oneadmin user to all the hypervisor hosts of the cluster.
  e.g. by distributing the public key(s) of the OpenNebula host over the cluster.
-- 3. Start OpenNebula services: `### for i in '' -econe -gate -novnc -occi -sunstone; do service opennebula$i stop; done`
+- 3. Start OpenNebula services: `# for i in '' -econe -gate -novnc -occi -sunstone; do service opennebula$i stop; done`
 - 4. Run the component a first time.
 - 5. The new oneadmin password will be available from `/var/lib/one/.one/one_auth` file.
 The old auth files are stored with .quattor.backup extension.

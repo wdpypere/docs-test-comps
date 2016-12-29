@@ -1,3 +1,4 @@
+
 ### DESCRIPTION
 
 The _nsca_ component manages the NSCA daemon and the NSCA client configuration.

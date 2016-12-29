@@ -1,3 +1,4 @@
+
 ### NAME
 
 NCM::resolver - NCM resolver configuration component

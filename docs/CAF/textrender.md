@@ -1,3 +1,4 @@
+
 ### NAME
 
 CAF::TextRender - Class for rendering structured text
@@ -8,11 +9,11 @@ CAF::TextRender - Class for rendering structured text
 
     my $module = 'tiny';
     my $trd = CAF::TextRender->new($module, $contents, log => $self);
-    print "$trd"; ### stringification
+    print "$trd"; # stringification
 
     $module = "yaml";
     $trd = CAF::TextRender->new($module, $contents, log => $self);
-    ### return CAF::FileWriter instance (rendered text already added)
+    # return CAF::FileWriter instance (rendered text already added)
     my $fh = $trd->filewriter('/some/path');
     die "Problem rendering the text" if (!defined($fh));
     $fh->close();

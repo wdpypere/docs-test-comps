@@ -1,1234 +1,1234 @@
+
 ### Types
 
-- `/software/icinga/icinga_hoststring`
-- `/software/icinga/icinga_hostgroupstring`
-- `/software/icinga/icinga_commandstrings`
-- `/software/icinga/icinga_timeperiodstring`
-- `/software/icinga/icinga_contactgroupstring`
-- `/software/icinga/icinga_contactstring`
-- `/software/icinga/icinga_servicegroupstring`
-- `/software/icinga/icinga_servicestring`
-- `/software/icinga/icinga_service_notification_string`
-- `/software/icinga/icinga_host_notification_string`
-- `/software/icinga/icinga_stalking_string`
-- `/software/icinga/icinga_execution_failure_string`
-- `/software/icinga/icinga_notification_failure_string`
-- `/software/icinga/structure_icinga_host_generic`
+ - `/software/icinga/icinga_hoststring`
+ - `/software/icinga/icinga_hostgroupstring`
+ - `/software/icinga/icinga_commandstrings`
+ - `/software/icinga/icinga_timeperiodstring`
+ - `/software/icinga/icinga_contactgroupstring`
+ - `/software/icinga/icinga_contactstring`
+ - `/software/icinga/icinga_servicegroupstring`
+ - `/software/icinga/icinga_servicestring`
+ - `/software/icinga/icinga_service_notification_string`
+ - `/software/icinga/icinga_host_notification_string`
+ - `/software/icinga/icinga_stalking_string`
+ - `/software/icinga/icinga_execution_failure_string`
+ - `/software/icinga/icinga_notification_failure_string`
+ - `/software/icinga/structure_icinga_host_generic`
     - `/software/icinga/structure_icinga_host_generic/name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host_generic/check_command`
-        - required
-        - type: icinga_commandstrings
+        - Optional
+        - Type: icinga_commandstrings
     - `/software/icinga/structure_icinga_host_generic/max_check_attempts`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_host_generic/check_interval`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_host_generic/active_checks_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host_generic/passive_checks_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host_generic/check_period`
-        - required
-        - type: icinga_timeperiodstring
+        - Optional
+        - Type: icinga_timeperiodstring
     - `/software/icinga/structure_icinga_host_generic/obsess_over_host`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host_generic/check_freshness`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host_generic/freshness_threshold`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_host_generic/event_handler`
-        - optional
-        - type: icinga_commandstrings
+        - Optional
+        - Type: icinga_commandstrings
     - `/software/icinga/structure_icinga_host_generic/event_handler_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host_generic/low_flap_threshold`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_host_generic/high_flap_threshold`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_host_generic/flap_detection_enabled`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host_generic/process_perf_data`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host_generic/retain_status_information`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host_generic/retain_nonstatus_information`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host_generic/contact_groups`
-        - required
-        - type: icinga_contactgroupstring
+        - Optional
+        - Type: icinga_contactgroupstring
     - `/software/icinga/structure_icinga_host_generic/notification_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_host_generic/notification_period`
-        - required
-        - type: icinga_timeperiodstring
+        - Optional
+        - Type: icinga_timeperiodstring
     - `/software/icinga/structure_icinga_host_generic/notification_options`
-        - required
-        - type: icinga_host_notification_string
+        - Optional
+        - Type: icinga_host_notification_string
     - `/software/icinga/structure_icinga_host_generic/notifications_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host_generic/stalking_options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host_generic/register`
-        - required
-        - type: boolean
-- `/software/icinga/structure_icinga_host`
+        - Optional
+        - Type: boolean
+ - `/software/icinga/structure_icinga_host`
     - `/software/icinga/structure_icinga_host/alias`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host/use`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host/address`
-        - optional
-        - type: type_ip
+        - Optional
+        - Type: type_ip
     - `/software/icinga/structure_icinga_host/parents`
-        - optional
-        - type: icinga_hoststring
+        - Optional
+        - Type: icinga_hoststring
     - `/software/icinga/structure_icinga_host/hostgroups`
-        - optional
-        - type: icinga_hostgroupstring
+        - Optional
+        - Type: icinga_hostgroupstring
     - `/software/icinga/structure_icinga_host/check_command`
-        - required
-        - type: icinga_commandstrings
+        - Optional
+        - Type: icinga_commandstrings
     - `/software/icinga/structure_icinga_host/max_check_attempts`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_host/check_interval`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_host/active_checks_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host/passive_checks_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host/check_period`
-        - required
-        - type: icinga_timeperiodstring
+        - Optional
+        - Type: icinga_timeperiodstring
     - `/software/icinga/structure_icinga_host/obsess_over_host`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host/check_freshness`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host/freshness_threshold`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_host/event_handler`
-        - optional
-        - type: icinga_commandstrings
+        - Optional
+        - Type: icinga_commandstrings
     - `/software/icinga/structure_icinga_host/event_handler_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host/low_flap_threshold`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_host/high_flap_threshold`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_host/flap_detection_enabled`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host/process_perf_data`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host/failure_prediction_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host/retain_status_information`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host/retain_nonstatus_information`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host/contact_groups`
-        - required
-        - type: icinga_contactgroupstring
+        - Optional
+        - Type: icinga_contactgroupstring
     - `/software/icinga/structure_icinga_host/notification_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_host/notification_period`
-        - required
-        - type: icinga_timeperiodstring
+        - Optional
+        - Type: icinga_timeperiodstring
     - `/software/icinga/structure_icinga_host/notification_options`
-        - required
-        - type: icinga_host_notification_string
+        - Optional
+        - Type: icinga_host_notification_string
     - `/software/icinga/structure_icinga_host/notifications_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host/stalking_options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host/register`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_host/action_url`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host/notes`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host/notes_url`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host/_mgmt`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host/_mgmtip`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host/_quattorserver`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host/_quattorserverip`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host/_dimms`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host/_cpus`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host/_enclosureip`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_host/_enclosureslot`
-        - optional
-        - type: long
-- `/software/icinga/structure_icinga_hostgroup`
+        - Optional
+        - Type: long
+ - `/software/icinga/structure_icinga_hostgroup`
     - `/software/icinga/structure_icinga_hostgroup/alias`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_hostgroup/members`
-        - optional
-        - type: icinga_hoststring
-- `/software/icinga/structure_icinga_hostdependency`
+        - Optional
+        - Type: icinga_hoststring
+ - `/software/icinga/structure_icinga_hostdependency`
     - `/software/icinga/structure_icinga_hostdependency/dependent_host_name`
-        - required
-        - type: icinga_hoststring
+        - Optional
+        - Type: icinga_hoststring
     - `/software/icinga/structure_icinga_hostdependency/notification_failure_criteria`
-        - required
-        - type: icinga_host_notification_string
-- `/software/icinga/structure_icinga_service`
+        - Optional
+        - Type: icinga_host_notification_string
+ - `/software/icinga/structure_icinga_service`
     - `/software/icinga/structure_icinga_service/name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_service/use`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_service/host_name`
-        - optional
-        - type: icinga_hoststring
+        - Optional
+        - Type: icinga_hoststring
     - `/software/icinga/structure_icinga_service/hostgroup_name`
-        - optional
-        - type: icinga_hostgroupstring
+        - Optional
+        - Type: icinga_hostgroupstring
     - `/software/icinga/structure_icinga_service/servicegroups`
-        - optional
-        - type: icinga_servicegroupstring
+        - Optional
+        - Type: icinga_servicegroupstring
     - `/software/icinga/structure_icinga_service/is_volatile`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/check_command`
-        - optional
-        - type: icinga_commandstrings
+        - Optional
+        - Type: icinga_commandstrings
     - `/software/icinga/structure_icinga_service/max_check_attempts`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_service/check_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_service/retry_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_service/active_checks_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/passive_checks_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/check_period`
-        - optional
-        - type: icinga_timeperiodstring
+        - Optional
+        - Type: icinga_timeperiodstring
     - `/software/icinga/structure_icinga_service/parallelize_check`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/obsess_over_service`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/check_freshness`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/freshness_threshold`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_service/event_handler`
-        - optional
-        - type: icinga_commandstrings
+        - Optional
+        - Type: icinga_commandstrings
     - `/software/icinga/structure_icinga_service/event_handler_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/low_flap_threshold`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_service/high_flap_threshold`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_service/flap_detection_enabled`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/process_perf_data`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/retain_status_information`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/retain_nonstatus_information`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/notification_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_service/notification_period`
-        - required
-        - type: icinga_timeperiodstring
+        - Optional
+        - Type: icinga_timeperiodstring
     - `/software/icinga/structure_icinga_service/notification_options`
-        - required
-        - type: icinga_service_notification_string
+        - Optional
+        - Type: icinga_service_notification_string
     - `/software/icinga/structure_icinga_service/notifications_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/contact_groups`
-        - required
-        - type: icinga_contactgroupstring
+        - Optional
+        - Type: icinga_contactgroupstring
     - `/software/icinga/structure_icinga_service/stalking_options`
-        - optional
-        - type: icinga_stalking_string
+        - Optional
+        - Type: icinga_stalking_string
     - `/software/icinga/structure_icinga_service/register`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/failure_prediction_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_service/action_url`
-        - optional
-        - type: string
-- `/software/icinga/structure_icinga_servicegroup`
+        - Optional
+        - Type: string
+ - `/software/icinga/structure_icinga_servicegroup`
     - `/software/icinga/structure_icinga_servicegroup/alias`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_servicegroup/members`
-        - optional
-        - type: icinga_servicestring
+        - Optional
+        - Type: icinga_servicestring
     - `/software/icinga/structure_icinga_servicegroup/servicegroup_members`
-        - optional
-        - type: icinga_servicegroupstring
+        - Optional
+        - Type: icinga_servicegroupstring
     - `/software/icinga/structure_icinga_servicegroup/notes`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_servicegroup/notes_url`
-        - optional
-        - type: type_absoluteURI
+        - Optional
+        - Type: type_absoluteURI
     - `/software/icinga/structure_icinga_servicegroup/action_url`
-        - optional
-        - type: type_absoluteURI
-- `/software/icinga/structure_icinga_servicedependency`
+        - Optional
+        - Type: type_absoluteURI
+ - `/software/icinga/structure_icinga_servicedependency`
     - `/software/icinga/structure_icinga_servicedependency/dependent_host_name`
-        - required
-        - type: icinga_hoststring
+        - Optional
+        - Type: icinga_hoststring
     - `/software/icinga/structure_icinga_servicedependency/dependent_hostgroup_name`
-        - optional
-        - type: icinga_hostgroupstring
+        - Optional
+        - Type: icinga_hostgroupstring
     - `/software/icinga/structure_icinga_servicedependency/dependent_service_description`
-        - required
-        - type: icinga_servicestring
+        - Optional
+        - Type: icinga_servicestring
     - `/software/icinga/structure_icinga_servicedependency/host_name`
-        - optional
-        - type: icinga_hoststring
+        - Optional
+        - Type: icinga_hoststring
     - `/software/icinga/structure_icinga_servicedependency/hostgroup_name`
-        - optional
-        - type: icinga_hostgroupstring
+        - Optional
+        - Type: icinga_hostgroupstring
     - `/software/icinga/structure_icinga_servicedependency/service_description`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_servicedependency/inherits_parent`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_servicedependency/execution_failure_criteria`
-        - optional
-        - type: icinga_execution_failure_string
+        - Optional
+        - Type: icinga_execution_failure_string
     - `/software/icinga/structure_icinga_servicedependency/notification_failure_criteria`
-        - optional
-        - type: icinga_notification_failure_string
+        - Optional
+        - Type: icinga_notification_failure_string
     - `/software/icinga/structure_icinga_servicedependency/dependency_period`
-        - optional
-        - type: icinga_timeperiodstring
-- `/software/icinga/structure_icinga_contact`
+        - Optional
+        - Type: icinga_timeperiodstring
+ - `/software/icinga/structure_icinga_contact`
     - `/software/icinga/structure_icinga_contact/alias`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_contact/contactgroups`
-        - optional
-        - type: icinga_contactgroupstring
+        - Optional
+        - Type: icinga_contactgroupstring
     - `/software/icinga/structure_icinga_contact/host_notification_period`
-        - required
-        - type: icinga_timeperiodstring
+        - Optional
+        - Type: icinga_timeperiodstring
     - `/software/icinga/structure_icinga_contact/service_notification_period`
-        - required
-        - type: icinga_timeperiodstring
+        - Optional
+        - Type: icinga_timeperiodstring
     - `/software/icinga/structure_icinga_contact/host_notification_options`
-        - required
-        - type: icinga_host_notification_string
+        - Optional
+        - Type: icinga_host_notification_string
     - `/software/icinga/structure_icinga_contact/service_notification_options`
-        - required
-        - type: icinga_service_notification_string
+        - Optional
+        - Type: icinga_service_notification_string
     - `/software/icinga/structure_icinga_contact/host_notification_commands`
-        - required
-        - type: icinga_commandstrings
+        - Optional
+        - Type: icinga_commandstrings
     - `/software/icinga/structure_icinga_contact/service_notification_commands`
-        - required
-        - type: icinga_commandstrings
+        - Optional
+        - Type: icinga_commandstrings
     - `/software/icinga/structure_icinga_contact/email`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_contact/pager`
-        - optional
-        - type: string
-- `/software/icinga/structure_icinga_contactgroup`
+        - Optional
+        - Type: string
+ - `/software/icinga/structure_icinga_contactgroup`
     - `/software/icinga/structure_icinga_contactgroup/alias`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_contactgroup/members`
-        - required
-        - type: icinga_contactstring
-- `/software/icinga/icinga_timerange`
-- `/software/icinga/structure_icinga_timeperiod`
+        - Optional
+        - Type: icinga_contactstring
+ - `/software/icinga/icinga_timerange`
+ - `/software/icinga/structure_icinga_timeperiod`
     - `/software/icinga/structure_icinga_timeperiod/alias`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_timeperiod/monday`
-        - optional
-        - type: icinga_timerange
+        - Optional
+        - Type: icinga_timerange
     - `/software/icinga/structure_icinga_timeperiod/tuesday`
-        - optional
-        - type: icinga_timerange
+        - Optional
+        - Type: icinga_timerange
     - `/software/icinga/structure_icinga_timeperiod/wednesday`
-        - optional
-        - type: icinga_timerange
+        - Optional
+        - Type: icinga_timerange
     - `/software/icinga/structure_icinga_timeperiod/thursday`
-        - optional
-        - type: icinga_timerange
+        - Optional
+        - Type: icinga_timerange
     - `/software/icinga/structure_icinga_timeperiod/friday`
-        - optional
-        - type: icinga_timerange
+        - Optional
+        - Type: icinga_timerange
     - `/software/icinga/structure_icinga_timeperiod/saturday`
-        - optional
-        - type: icinga_timerange
+        - Optional
+        - Type: icinga_timerange
     - `/software/icinga/structure_icinga_timeperiod/sunday`
-        - optional
-        - type: icinga_timerange
-- `/software/icinga/structure_icinga_serviceextinfo`
+        - Optional
+        - Type: icinga_timerange
+ - `/software/icinga/structure_icinga_serviceextinfo`
     - `/software/icinga/structure_icinga_serviceextinfo/host_name`
-        - optional
-        - type: icinga_hoststring
+        - Optional
+        - Type: icinga_hoststring
     - `/software/icinga/structure_icinga_serviceextinfo/service_description`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_serviceextinfo/hostgroup_name`
-        - optional
-        - type: icinga_hostgroupstring
+        - Optional
+        - Type: icinga_hostgroupstring
     - `/software/icinga/structure_icinga_serviceextinfo/notes`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_serviceextinfo/notes_url`
-        - optional
-        - type: type_absoluteURI
+        - Optional
+        - Type: type_absoluteURI
     - `/software/icinga/structure_icinga_serviceextinfo/action_url`
-        - optional
-        - type: type_absoluteURI
+        - Optional
+        - Type: type_absoluteURI
     - `/software/icinga/structure_icinga_serviceextinfo/icon_image`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_serviceextinfo/icon_image_alt`
-        - optional
-        - type: string
-- `/software/icinga/structure_icinga_cgi_cfg`
+        - Optional
+        - Type: string
+ - `/software/icinga/structure_icinga_cgi_cfg`
     - `/software/icinga/structure_icinga_cgi_cfg/main_config_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/physical_html_path`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/url_html_path`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/url_stylesheets_path`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/http_charset`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/show_context_help`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/highlight_table_rows`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/use_pending_states`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/use_logging`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/cgi_log_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/cgi_log_rotation_method`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/cgi_log_archive_path`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/enforce_comments_on_actions`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/first_day_of_week`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/use_authentication`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/use_ssl_authentication`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/authorized_for_system_information`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/authorized_for_configuration_information`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/authorized_for_system_commands`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/authorized_for_all_services`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/authorized_for_all_hosts`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/authorized_for_all_service_commands`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/authorized_for_all_host_commands`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/show_all_services_host_is_authorized_for`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/show_partial_hostgroups`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/statusmap_background_image`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/default_statusmap_layout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_cgi_cfg/default_statuswrl_layout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_cgi_cfg/statuswrl_include`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/ping_syntax`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/refresh_rate`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_cgi_cfg/escape_html_tags`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/persistent_ack_comments`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/action_url_target`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/notes_url_target`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/lock_author_names`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/default_downtime_duration`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_cgi_cfg/status_show_long_plugin_output`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/tac_show_only_hard_state`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/suppress_maintenance_downtime`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/show_tac_header`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/show_tac_header_pending`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/tab_friendly_titles`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/default_expiring_acknowledgement_duration`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_cgi_cfg/default_expiring_disabled_notifications_duration`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_cgi_cfg/display_status_totals`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/extinfo_show_child_hosts`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_cgi_cfg/log_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/log_rotation_method`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_cgi_cfg/lowercase_user_name`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/result_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_cgi_cfg/send_ack_notifications`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/set_expire_ack_by_default`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_cgi_cfg/standalone_installation`
-        - optional
-        - type: boolean
-- `/software/icinga/structure_icinga_icinga_cfg`
+        - Optional
+        - Type: boolean
+ - `/software/icinga/structure_icinga_icinga_cfg`
     - `/software/icinga/structure_icinga_icinga_cfg/log_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/object_cache_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/resource_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/status_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/icinga_user`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/icinga_group`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/check_external_commands`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/command_check_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/command_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/external_command_buffer_slots`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/lock_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/temp_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/event_broker_options`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/log_rotation_method`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/log_archive_path`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/use_syslog`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/log_notifications`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/log_service_retries`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/log_host_retries`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/log_event_handlers`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/log_initial_states`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/log_current_states`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/log_external_commands`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/log_passive_checks`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/log_external_commands_user`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/log_long_plugin_output`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/global_host_event_handler`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/service_inter_check_delay_method`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/max_service_check_spread`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/service_interleave_factor`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/host_inter_check_delay_method`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/max_host_check_spread`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/max_concurrent_checks`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/service_reaper_frequency`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/check_result_buffer_slots`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/auto_reschedule_checks`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/auto_rescheduling_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/auto_rescheduling_window`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/sleep_time`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/service_check_timeout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/host_check_timeout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/event_handler_timeout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/notification_timeout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/ocsp_timeout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/perfdata_timeout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/retain_state_information`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/state_retention_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/retention_update_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/use_retained_program_state`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/dump_retained_host_service_states_to_neb`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/use_retained_scheduling_info`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/interval_length`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/use_aggressive_host_checking`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/execute_service_checks`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/accept_passive_service_checks`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/execute_host_checks`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/accept_passive_host_checks`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/enable_notifications`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/enable_event_handlers`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/process_performance_data`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/service_perfdata_command`
-        - required
-        - type: icinga_commandstrings
+        - Optional
+        - Type: icinga_commandstrings
     - `/software/icinga/structure_icinga_icinga_cfg/host_perfdata_command`
-        - required
-        - type: icinga_commandstrings
+        - Optional
+        - Type: icinga_commandstrings
     - `/software/icinga/structure_icinga_icinga_cfg/host_perfdata_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/service_perfdata_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/host_perfdata_file_template`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/service_perfdata_file_template`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/host_perfdata_file_mode`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/service_perfdata_file_mode`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/host_perfdata_file_processing_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/service_perfdata_file_processing_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/host_perfdata_file_processing_command`
-        - optional
-        - type: icinga_commandstrings
+        - Optional
+        - Type: icinga_commandstrings
     - `/software/icinga/structure_icinga_icinga_cfg/service_perfdata_file_processing_command`
-        - optional
-        - type: icinga_commandstrings
+        - Optional
+        - Type: icinga_commandstrings
     - `/software/icinga/structure_icinga_icinga_cfg/allow_empty_hostgroup_assignment`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/obsess_over_services`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/check_for_orphaned_services`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/check_service_freshness`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/service_freshness_check_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/check_host_freshness`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/host_freshness_check_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/status_update_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/enable_flap_detection`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/low_service_flap_threshold`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/high_service_flap_threshold`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/low_host_flap_threshold`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/high_host_flap_threshold`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/date_format`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/p1_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/enable_embedded_perl`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/use_embedded_perl_implicitly`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/stalking_event_handlers_for_hosts`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/stalking_event_handlers_for_services`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/illegal_object_name_chars`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/illegal_macro_output_chars`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/use_regexp_matching`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/use_true_regexp_matching`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/admin_email`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/admin_pager`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/daemon_dumps_core`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/check_result_path`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/precached_object_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/temp_path`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/retained_host_attribute_mask`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/retained_service_attribute_mask`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/retained_process_host_attribute_mask`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/retained_process_service_attribute_mask`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/retained_contact_host_attribute_mask`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/retained_contact_service_attribute_mask`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/max_check_result_file_age`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/translate_passive_host_checks`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/passive_host_checks_are_soft`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/enable_predictive_host_dependency_checks`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/enable_predictive_service_dependency_checks`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/cached_host_check_horizon`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/cached_service_check_horizon`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/use_large_installation_tweaks`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/free_child_process_memory`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/child_processes_fork_twice`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/enable_environment_macros`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/soft_state_dependencies`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/ochp_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/ochp_command`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/use_timezone`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/broker_module`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/module`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/debug_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/debug_level`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/debug_verbosity`
-        - optional
-        - type: long
-        - range: 0..2
+        - Optional
+        - Type: long
+        - Range: 0..2
     - `/software/icinga/structure_icinga_icinga_cfg/max_debug_file_size`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/ocsp_command`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/check_result_path`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/event_profiling_enabled`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/additional_freshness_latency`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/check_for_orphaned_hosts`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/check_result_reaper_frequency`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/keep_unknown_macros`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/max_check_result_reaper_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/obsess_over_hosts`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/service_check_timeout_state`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_icinga_cfg/stalking_notifications_for_hosts`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/stalking_notifications_for_services`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/syslog_local_facility`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_icinga_cfg/use_daemon_log`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_icinga_cfg/use_syslog_local_facility`
-        - optional
-        - type: boolean
-- `/software/icinga/structure_icinga_service_list`
-- `/software/icinga/structure_icinga_ido2db_cfg`
+        - Optional
+        - Type: boolean
+ - `/software/icinga/structure_icinga_service_list`
+ - `/software/icinga/structure_icinga_ido2db_cfg`
     - `/software/icinga/structure_icinga_ido2db_cfg/lock_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_ido2db_cfg/ido2db_user`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_ido2db_cfg/ido2db_group`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_ido2db_cfg/socket_type`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_ido2db_cfg/socket_name`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_ido2db_cfg/tcp_port`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/use_ssl`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_ido2db_cfg/db_servertype`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_ido2db_cfg/db_host`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_ido2db_cfg/db_port`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/db_name`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_ido2db_cfg/db_prefix`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_ido2db_cfg/db_user`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_ido2db_cfg/db_pass`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_ido2db_cfg/max_timedevents_age`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/max_systemcommands_age`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/max_servicechecks_age`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/max_hostchecks_age`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/max_eventhandlers_age`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/max_externalcommands_age`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/clean_realtime_tables_on_core_startup`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_ido2db_cfg/clean_config_tables_on_core_startup`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_ido2db_cfg/trim_db_interval`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/housekeeping_thread_startup_delay`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/debug_level`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/debug_verbosity`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/debug_file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_icinga_ido2db_cfg/max_debug_file_size`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/oci_errors_to_syslog`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_ido2db_cfg/debug_readable_timestamp`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/icinga/structure_icinga_ido2db_cfg/max_acknowledgements_age`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/max_contactnotificationmethods_age`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/max_contactnotifications_age`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/max_logentries_age`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/max_notifications_age`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/icinga/structure_icinga_ido2db_cfg/socket_perm`
-        - optional
-        - type: string
-- `/software/icinga/structure_component_icinga`
+        - Optional
+        - Type: string
+ - `/software/icinga/structure_component_icinga`
     - `/software/icinga/structure_component_icinga/ignore_hosts`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_component_icinga/hosts`
-        - required
-        - type: structure_icinga_host
+        - Optional
+        - Type: structure_icinga_host
     - `/software/icinga/structure_component_icinga/hosts_generic`
-        - optional
-        - type: structure_icinga_host_generic
+        - Optional
+        - Type: structure_icinga_host_generic
     - `/software/icinga/structure_component_icinga/hostgroups`
-        - optional
-        - type: structure_icinga_hostgroup
+        - Optional
+        - Type: structure_icinga_hostgroup
     - `/software/icinga/structure_component_icinga/hostdependencies`
-        - optional
-        - type: structure_icinga_hostdependency
+        - Optional
+        - Type: structure_icinga_hostdependency
     - `/software/icinga/structure_component_icinga/services`
-        - required
-        - type: structure_icinga_service_list
+        - Optional
+        - Type: structure_icinga_service_list
     - `/software/icinga/structure_component_icinga/servicegroups`
-        - optional
-        - type: structure_icinga_servicegroup
+        - Optional
+        - Type: structure_icinga_servicegroup
     - `/software/icinga/structure_component_icinga/general`
-        - required
-        - type: structure_icinga_icinga_cfg
+        - Optional
+        - Type: structure_icinga_icinga_cfg
     - `/software/icinga/structure_component_icinga/cgi`
-        - required
-        - type: structure_icinga_cgi_cfg
+        - Optional
+        - Type: structure_icinga_cgi_cfg
     - `/software/icinga/structure_component_icinga/serviceextinfo`
-        - optional
-        - type: structure_icinga_serviceextinfo
+        - Optional
+        - Type: structure_icinga_serviceextinfo
     - `/software/icinga/structure_component_icinga/servicedependencies`
-        - optional
-        - type: structure_icinga_servicedependency
+        - Optional
+        - Type: structure_icinga_servicedependency
     - `/software/icinga/structure_component_icinga/timeperiods`
-        - required
-        - type: structure_icinga_timeperiod
+        - Optional
+        - Type: structure_icinga_timeperiod
     - `/software/icinga/structure_component_icinga/contacts`
-        - required
-        - type: structure_icinga_contact
+        - Optional
+        - Type: structure_icinga_contact
     - `/software/icinga/structure_component_icinga/contactgroups`
-        - required
-        - type: structure_icinga_contactgroup
+        - Optional
+        - Type: structure_icinga_contactgroup
     - `/software/icinga/structure_component_icinga/commands`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_component_icinga/macros`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_component_icinga/external_files`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_component_icinga/external_dirs`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/icinga/structure_component_icinga/ido2db`
-        - required
-        - type: structure_icinga_ido2db_cfg
-
+        - Optional
+        - Type: structure_icinga_ido2db_cfg

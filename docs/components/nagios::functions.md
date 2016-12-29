@@ -1,4 +1,5 @@
-### Types
+
 ### Functions
 
-- nagios_has_host_or_hostgroup
+ - nagios_has_host_or_hostgroup
+    - Arguments:

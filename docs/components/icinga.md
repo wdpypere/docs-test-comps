@@ -1,3 +1,4 @@
+
 ### DESCRIPTION
 
 The _icinga_ component manages the configuration for the Icinga

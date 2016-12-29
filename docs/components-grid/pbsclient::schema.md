@@ -1,245 +1,245 @@
+
 ### Types
 
-- `/software/pbsclient/pbsclient_component_pathmapping_type`
+ - `/software/pbsclient/pbsclient_component_pathmapping_type`
     - `/software/pbsclient/pbsclient_component_pathmapping_type/locations`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_pathmapping_type/path`
-        - required
-        - type: string
-- `/software/pbsclient/pbsclient_component_scripts_type`
+        - Optional
+        - Type: string
+ - `/software/pbsclient/pbsclient_component_scripts_type`
     - `/software/pbsclient/pbsclient_component_scripts_type/epilogue`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_scripts_type/epilogue.user`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_scripts_type/epilogue.parallel`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_scripts_type/prologue`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_scripts_type/prologue.user`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_scripts_type/prologue.parallel`
-        - optional
-        - type: string
-- `/software/pbsclient/pbsclient_component_structure_initialisation`
+        - Optional
+        - Type: string
+ - `/software/pbsclient/pbsclient_component_structure_initialisation`
     - `/software/pbsclient/pbsclient_component_structure_initialisation/auto_ideal_load`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/auto_max_load`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/check_poll_time`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/pbsclient/pbsclient_component_structure_initialisation/checkpoint_interval`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/pbsclient/pbsclient_component_structure_initialisation/checkpoint_script`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/checkpoint_run_exe`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/configversion`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/cputmult`
-        - optional
-        - type: double
+        - Optional
+        - Type: double
     - `/software/pbsclient/pbsclient_component_structure_initialisation/down_on_error`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/pbsclient/pbsclient_component_structure_initialisation/enablemomrestart`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/pbsclient/pbsclient_component_structure_initialisation/ideal_load`
-        - optional
-        - type: double
+        - Optional
+        - Type: double
     - `/software/pbsclient/pbsclient_component_structure_initialisation/igncput`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/pbsclient/pbsclient_component_structure_initialisation/ignmem`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/pbsclient/pbsclient_component_structure_initialisation/ignvmem`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/pbsclient/pbsclient_component_structure_initialisation/ignwalltime`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/pbsclient/pbsclient_component_structure_initialisation/job_output_file_mask`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/log_directory`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/logevent`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/pbsclient/pbsclient_component_structure_initialisation/log_file_suffix`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/log_keep_days`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/pbsclient/pbsclient_component_structure_initialisation/loglevel`
-        - optional
-        - type: long
-        - range: 0..7
+        - Optional
+        - Type: long
+        - Range: 0..7
     - `/software/pbsclient/pbsclient_component_structure_initialisation/log_file_max_size`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/pbsclient/pbsclient_component_structure_initialisation/log_file_roll_depth`
-        - optional
-        - type: long
-        - range: 1..
+        - Optional
+        - Type: long
+        - Range: 1..
     - `/software/pbsclient/pbsclient_component_structure_initialisation/max_conn_timeout_micro_sec`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/pbsclient/pbsclient_component_structure_initialisation/max_load`
-        - optional
-        - type: double
+        - Optional
+        - Type: double
     - `/software/pbsclient/pbsclient_component_structure_initialisation/memory_pressure_threshold`
-        - optional
-        - type: double
+        - Optional
+        - Type: double
     - `/software/pbsclient/pbsclient_component_structure_initialisation/memory_pressure_duration`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/pbsclient/pbsclient_component_structure_initialisation/node_check_script`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/node_check_interval`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/nodefile_suffix`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/nospool_dir_list`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/job_oom_score_adjust`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/pbsclient/pbsclient_component_structure_initialisation/prologalarm`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/pbsclient/pbsclient_component_structure_initialisation/rcpcmd`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/remote_checkpoint_dirs`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/remote_reconfig`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/pbsclient/pbsclient_component_structure_initialisation/restart_script`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/source_login_batch`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/pbsclient/pbsclient_component_structure_initialisation/source_login_interactive`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/pbsclient/pbsclient_component_structure_initialisation/spool_as_final_name`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/pbsclient/pbsclient_component_structure_initialisation/status_update_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/pbsclient/pbsclient_component_structure_initialisation/tmpdir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/pbsclient/pbsclient_component_structure_initialisation/use_smt`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/pbsclient/pbsclient_component_structure_initialisation/wallmult`
-        - optional
-        - type: double
+        - Optional
+        - Type: double
     - `/software/pbsclient/pbsclient_component_structure_initialisation/cpuTimeMultFactor`
-        - optional
-        - type: double
+        - Optional
+        - Type: double
     - `/software/pbsclient/pbsclient_component_structure_initialisation/idealLoad`
-        - optional
-        - type: double
+        - Optional
+        - Type: double
     - `/software/pbsclient/pbsclient_component_structure_initialisation/logEvent`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/pbsclient/pbsclient_component_structure_initialisation/maxLoad`
-        - optional
-        - type: double
+        - Optional
+        - Type: double
     - `/software/pbsclient/pbsclient_component_structure_initialisation/nodeCheckScriptPath`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_initialisation/nodeCheckIntervalSec`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/pbsclient/pbsclient_component_structure_initialisation/prologAlarmSec`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/pbsclient/pbsclient_component_structure_initialisation/wallTimeMultFactor`
-        - optional
-        - type: double
-- `/software/pbsclient/pbsclient_component_structure_options`
+        - Optional
+        - Type: double
+ - `/software/pbsclient/pbsclient_component_structure_options`
     - `/software/pbsclient/pbsclient_component_structure_options/mom_host`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_structure_options/xauthpath`
-        - optional
-        - type: string
-- `/software/pbsclient/pbsclient_component_type`
+        - Optional
+        - Type: string
+ - `/software/pbsclient/pbsclient_component_type`
     - `/software/pbsclient/pbsclient_component_type/pbsroot`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_type/configPath`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_type/initScriptPath`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_type/behaviour`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_type/masters`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_type/pbsclient`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_type/aliases`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_type/restricted`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_type/cpuinfo`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_type/varattr`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_type/resources`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/pbsclient/pbsclient_component_type/directPaths`
-        - optional
-        - type: pbsclient_component_pathmapping_type
+        - Optional
+        - Type: pbsclient_component_pathmapping_type
     - `/software/pbsclient/pbsclient_component_type/scripts`
-        - optional
-        - type: pbsclient_component_scripts_type
+        - Optional
+        - Type: pbsclient_component_scripts_type
     - `/software/pbsclient/pbsclient_component_type/submitonly`
-        - optional
-        - type: boolean
-
+        - Optional
+        - Type: boolean

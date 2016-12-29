@@ -1,38 +1,38 @@
+
 ### Types
 
-- `/software/vomsclient/structure_vomsclient_voms_info`
+ - `/software/vomsclient/structure_vomsclient_voms_info`
     - `/software/vomsclient/structure_vomsclient_voms_info/name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/vomsclient/structure_vomsclient_voms_info/host`
-        - required
-        - type: type_fqdn
+        - Optional
+        - Type: type_fqdn
     - `/software/vomsclient/structure_vomsclient_voms_info/port`
-        - required
-        - type: type_port
+        - Optional
+        - Type: type_port
     - `/software/vomsclient/structure_vomsclient_voms_info/cert`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/vomsclient/structure_vomsclient_voms_info/oldcert`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/vomsclient/structure_vomsclient_voms_info/DN`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/vomsclient/structure_vomsclient_voms_info/issuer`
-        - optional
-        - type: string
-- `/software/vomsclient/vomsclient_component`
+        - Optional
+        - Type: string
+ - `/software/vomsclient/vomsclient_component`
     - `/software/vomsclient/vomsclient_component/lscfile`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/vomsclient/vomsclient_component/vomsCertsDir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/vomsclient/vomsclient_component/vomsServersDir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/vomsclient/vomsclient_component/vos`
-        - optional
-        - type: structure_vomsclient_voms_info
-
+        - Optional
+        - Type: structure_vomsclient_voms_info

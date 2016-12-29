@@ -1,3 +1,4 @@
+
 ### NAME
 
 `CAF::History` - Class to keep history of events

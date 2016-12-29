@@ -1,3 +1,4 @@
+
 ### NAME
 
 EDG::WP4::CCM::Path - Path class
@@ -5,7 +6,7 @@ EDG::WP4::CCM::Path - Path class
 ### SYNOPSIS
 
     $path = EDG::WP4::CCM::Path->new("/hardware/memory/size");
-    print "$path"; ### stringification
+    print "$path"; # stringification
 
     $path = $path->down($level);
 

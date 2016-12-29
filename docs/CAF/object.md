@@ -1,3 +1,4 @@
+
 ### NAME
 
 CAF::Object - provides basic methods for all CAF objects
@@ -8,7 +9,7 @@ CAF::Object - provides basic methods for all CAF objects
     ...
     sub _initialize {
         ... initialize your package
-        return SUCCESS; ### Success
+        return SUCCESS; # Success
     }
 
 ### DESCRIPTION
@@ -78,16 +79,16 @@ In particular, one should avoid to return the `$self` instance at the end of
     Returns the `env` hashref.
 
     To be used as
-        ### Setup local environment
+        # Setup local environment
         local %ENV;
         $self->update\_env(\\%ENV);
 
     Example:
-        ### some method\_1 that prepares a shared environment
+        # some method\_1 that prepares a shared environment
         sub method\_1
         {
             ...
-            ### Prepare enviroment modifications
+            # Prepare enviroment modifications
             $self->{ENV}->{PATH} = "/some/new/path:$ENV{PATH}";
             ...
         }
@@ -95,11 +96,11 @@ In particular, one should avoid to return the `$self` instance at the end of
         sub do_something
         {
            ...
-           ### Setup local environment
+           # Setup local environment
            local %ENV;
            $self->update_env(\%ENV);
 
-           ### everything in the remainder of the method runs in modified environment
-           ### is limited to the scope of this method due to 'local'
+           # everything in the remainder of the method runs in modified environment
+           # is limited to the scope of this method due to 'local'
            ...
         }

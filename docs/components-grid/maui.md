@@ -1,3 +1,4 @@
+
 ### NAME
 
 maui: NCM component to configure Maui server.
@@ -18,7 +19,7 @@ The absolute path for the maui configuration directory.
 
 The file name for the maui configuration file.
 
-##### contents
+### contents
 
 The full contents of the maui configuration file.  The syntax is too
 complex to fully translate into pan.  You must supply the complete

@@ -1,420 +1,420 @@
+
 ### Types
 
-- `/software/dcache/structure_dcache_unit_units`
+ - `/software/dcache/structure_dcache_unit_units`
     - `/software/dcache/structure_dcache_unit_units/cond`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_unit_units/ugroup`
-        - required
-        - type: string
-- `/software/dcache/structure_dcache_unit`
+        - Optional
+        - Type: string
+ - `/software/dcache/structure_dcache_unit`
     - `/software/dcache/structure_dcache_unit/units`
-        - required
-        - type: structure_dcache_unit_units
+        - Optional
+        - Type: structure_dcache_unit_units
     - `/software/dcache/structure_dcache_unit/ignore_ugroup`
-        - optional
-        - type: string
-- `/software/dcache/structure_dcache_link_preference`
+        - Optional
+        - Type: string
+ - `/software/dcache/structure_dcache_link_preference`
     - `/software/dcache/structure_dcache_link_preference/read`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/dcache/structure_dcache_link_preference/write`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/dcache/structure_dcache_link_preference/cache`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/dcache/structure_dcache_link_preference/p2p`
-        - optional
-        - type: long
-- `/software/dcache/structure_dcache_link_default_preference`
+        - Optional
+        - Type: long
+ - `/software/dcache/structure_dcache_link_default_preference`
     - `/software/dcache/structure_dcache_link_default_preference/default`
-        - optional
-        - type: long
-- `/software/dcache/structure_dcache_link_policy`
+        - Optional
+        - Type: long
+ - `/software/dcache/structure_dcache_link_policy`
     - `/software/dcache/structure_dcache_link_policy/nearline`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_link_policy/online`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_link_policy/custodial`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_link_policy/output`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_link_policy/replica`
-        - optional
-        - type: boolean
-- `/software/dcache/structure_dcache_link_default_policy`
+        - Optional
+        - Type: boolean
+ - `/software/dcache/structure_dcache_link_default_policy`
     - `/software/dcache/structure_dcache_link_default_policy/default`
-        - optional
-        - type: boolean
-- `/software/dcache/structure_dcache_link_linkgroups`
+        - Optional
+        - Type: boolean
+ - `/software/dcache/structure_dcache_link_linkgroups`
     - `/software/dcache/structure_dcache_link_linkgroups/links`
-        - optional
-        - type: string
-- `/software/dcache/structure_dcache_link_links`
+        - Optional
+        - Type: string
+ - `/software/dcache/structure_dcache_link_links`
     - `/software/dcache/structure_dcache_link_links/ugroup`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_link_links/pgroup`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_link_links/lgroup`
-        - optional
-        - type: string
-- `/software/dcache/structure_dcache_link`
+        - Optional
+        - Type: string
+ - `/software/dcache/structure_dcache_link`
     - `/software/dcache/structure_dcache_link/links`
-        - required
-        - type: structure_dcache_link_links
+        - Optional
+        - Type: structure_dcache_link_links
     - `/software/dcache/structure_dcache_link/ignore_link`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_link/def_preference`
-        - optional
-        - type: structure_dcache_link_default_preference
+        - Optional
+        - Type: structure_dcache_link_default_preference
     - `/software/dcache/structure_dcache_link/def_policy`
-        - optional
-        - type: structure_dcache_link_default_policy
+        - Optional
+        - Type: structure_dcache_link_default_policy
     - `/software/dcache/structure_dcache_link/ignore_linkgroup`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_link/linkgroups`
-        - optional
-        - type: structure_dcache_link_linkgroups
-- `/software/dcache/structure_dcache_pool_pools`
+        - Optional
+        - Type: structure_dcache_link_linkgroups
+ - `/software/dcache/structure_dcache_pool_pools`
     - `/software/dcache/structure_dcache_pool_pools/path`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pool_pools/size`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/dcache/structure_dcache_pool_pools/opt`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pool_pools/pgroup`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pool_pools/mover_max`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/dcache/structure_dcache_pool_pools/ulimit_n`
-        - optional
-        - type: long
-- `/software/dcache/structure_dcache_pool`
+        - Optional
+        - Type: long
+ - `/software/dcache/structure_dcache_pool`
     - `/software/dcache/structure_dcache_pool/pools`
-        - optional
-        - type: structure_dcache_pool_pools
+        - Optional
+        - Type: structure_dcache_pool_pools
     - `/software/dcache/structure_dcache_pool/ignore_pgroup`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pool/default_mover_max`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/dcache/structure_dcache_pool/default_ulimit_n`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/dcache/structure_dcache_pool/max_true_pool_size_prom`
-        - optional
-        - type: long
-- `/software/dcache/structure_dcache_dcachesetup`
+        - Optional
+        - Type: long
+ - `/software/dcache/structure_dcache_dcachesetup`
     - `/software/dcache/structure_dcache_dcachesetup/serviceLocatorHost`
-        - required
-        - type: type_fqdn
+        - Optional
+        - Type: type_fqdn
     - `/software/dcache/structure_dcache_dcachesetup/cacheInfo`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_dcachesetup/java`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_dcachesetup/pnfs`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_dcachesetup/ftpBase`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_dcachesetup/portBase`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/dcache/structure_dcache_dcachesetup/logArea`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_dcachesetup/parallelStreams`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/dcache/structure_dcache_dcachesetup/bufferSize`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/dcache/structure_dcache_dcachesetup/tcpBufferSize`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/dcache/structure_dcache_dcachesetup/billingToDb`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_dcachesetup/infoProviderStaticFile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_dcachesetup/metaDataRepository`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_dcachesetup/metaDataRepositoryImport`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_dcachesetup/PermissionHandlerDataSource`
-        - optional
-        - type: string
-- `/software/dcache/structure_dcache_node_config`
+        - Optional
+        - Type: string
+ - `/software/dcache/structure_dcache_node_config`
     - `/software/dcache/structure_dcache_node_config/node_type`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_node_config/dcache_home`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_node_config/pnfs_root`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_node_config/pnfs_install_dir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_node_config/pnfs_start`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/pnfs_overwrite`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/pool_path`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_node_config/number_of_movers`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/dcache/structure_dcache_node_config/server_id`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_node_config/admin_node`
-        - optional
-        - type: type_fqdn
+        - Optional
+        - Type: type_fqdn
     - `/software/dcache/structure_dcache_node_config/gsidcap`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/gridftp`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/srm`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/xrootd`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/dcap`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/replicaManager`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/pnfsManager`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/lmDomain`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/httpDomain`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/adminDoor`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/poolManager`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/utilityDomain`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/dirDomain`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/gPlazmaService`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/infoProvider`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_node_config/namespace`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_node_config/namespace_node`
-        - optional
-        - type: string
-- `/software/dcache/structure_dcache_pnfs_setup`
+        - Optional
+        - Type: string
+ - `/software/dcache/structure_dcache_pnfs_setup`
     - `/software/dcache/structure_dcache_pnfs_setup/shmservers`
-        - optional
-        - type: long
-- `/software/dcache/structure_dcache_pnfs_config`
+        - Optional
+        - Type: long
+ - `/software/dcache/structure_dcache_pnfs_config`
     - `/software/dcache/structure_dcache_pnfs_config/pnfs_install_dir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pnfs_config/pnfs_root`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pnfs_config/pnfs_db`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pnfs_config/pnfs_log`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pnfs_config/pnfs_overwrite`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/dcache/structure_dcache_pnfs_config/pnfs_psql_user`
-        - optional
-        - type: string
-- `/software/dcache/structure_dcache_pnfs_db`
+        - Optional
+        - Type: string
+ - `/software/dcache/structure_dcache_pnfs_db`
     - `/software/dcache/structure_dcache_pnfs_db/path`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pnfs_db/name`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pnfs_db/user`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pnfs_db/group`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pnfs_db/perm`
-        - optional
-        - type: string
-- `/software/dcache/structure_dcache_pnfs_exports_rule`
+        - Optional
+        - Type: string
+ - `/software/dcache/structure_dcache_pnfs_exports_rule`
     - `/software/dcache/structure_dcache_pnfs_exports_rule/mount`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pnfs_exports_rule/path`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pnfs_exports_rule/perm`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pnfs_exports_rule/opt`
-        - optional
-        - type: string
-- `/software/dcache/structure_dcache_pnfs_exports`
+        - Optional
+        - Type: string
+ - `/software/dcache/structure_dcache_pnfs_exports`
     - `/software/dcache/structure_dcache_pnfs_exports/ip`
-        - required
-        - type: type_ip
+        - Optional
+        - Type: type_ip
     - `/software/dcache/structure_dcache_pnfs_exports/netmask`
-        - optional
-        - type: type_ip
+        - Optional
+        - Type: type_ip
     - `/software/dcache/structure_dcache_pnfs_exports/rule`
-        - required
-        - type: structure_dcache_pnfs_exports_rule
-- `/software/dcache/structure_dcache_pnfs`
+        - Optional
+        - Type: structure_dcache_pnfs_exports_rule
+ - `/software/dcache/structure_dcache_pnfs`
     - `/software/dcache/structure_dcache_pnfs/pnfs_config`
-        - optional
-        - type: structure_dcache_pnfs_config
+        - Optional
+        - Type: structure_dcache_pnfs_config
     - `/software/dcache/structure_dcache_pnfs/pnfs_config_def`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_pnfs/databases`
-        - optional
-        - type: structure_dcache_pnfs_db
+        - Optional
+        - Type: structure_dcache_pnfs_db
     - `/software/dcache/structure_dcache_pnfs/exports`
-        - required
-        - type: structure_dcache_pnfs_exports
+        - Optional
+        - Type: structure_dcache_pnfs_exports
     - `/software/dcache/structure_dcache_pnfs/pnfs_setup`
-        - optional
-        - type: structure_dcache_pnfs_setup
+        - Optional
+        - Type: structure_dcache_pnfs_setup
     - `/software/dcache/structure_dcache_pnfs/pnfs_setup_def`
-        - optional
-        - type: string
-- `/software/dcache/structure_dcache_create`
+        - Optional
+        - Type: string
+ - `/software/dcache/structure_dcache_create`
     - `/software/dcache/structure_dcache_create/batchname`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_create/name`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_create/cell`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_create/context`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_create/opt`
-        - optional
-        - type: string
-- `/software/dcache/structure_dcache_batch`
+        - Optional
+        - Type: string
+ - `/software/dcache/structure_dcache_batch`
     - `/software/dcache/structure_dcache_batch/create`
-        - required
-        - type: structure_dcache_create
+        - Optional
+        - Type: structure_dcache_create
     - `/software/dcache/structure_dcache_batch/batch_read`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_batch/batch_write`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_batch/batch_template`
-        - optional
-        - type: boolean
-- `/software/dcache/structure_dcache_config`
+        - Optional
+        - Type: boolean
+ - `/software/dcache/structure_dcache_config`
     - `/software/dcache/structure_dcache_config/dc_dir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_config/node_config_def`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_config/node_config`
-        - required
-        - type: structure_dcache_node_config
+        - Optional
+        - Type: structure_dcache_node_config
     - `/software/dcache/structure_dcache_config/dCacheSetup_def`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_config/dCacheSetup`
-        - required
-        - type: structure_dcache_dcachesetup
+        - Optional
+        - Type: structure_dcache_dcachesetup
     - `/software/dcache/structure_dcache_config/admin_passwd`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_config/debug_print`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/dcache/structure_dcache_config/jythonjavahome`
-        - required
-        - type: string
-- `/software/dcache/structure_dcache_chimera`
+        - Optional
+        - Type: string
+ - `/software/dcache/structure_dcache_chimera`
     - `/software/dcache/structure_dcache_chimera/paths`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_chimera/exports`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/dcache/structure_dcache_chimera/default_dcap`
-        - optional
-        - type: string
-- `/software/dcache/dcache_component`
+        - Optional
+        - Type: string
+ - `/software/dcache/dcache_component`
     - `/software/dcache/dcache_component/pool`
-        - optional
-        - type: structure_dcache_pool
+        - Optional
+        - Type: structure_dcache_pool
     - `/software/dcache/dcache_component/config`
-        - required
-        - type: structure_dcache_config
+        - Optional
+        - Type: structure_dcache_config
     - `/software/dcache/dcache_component/pnfs`
-        - optional
-        - type: structure_dcache_pnfs
+        - Optional
+        - Type: structure_dcache_pnfs
     - `/software/dcache/dcache_component/chimera`
-        - optional
-        - type: structure_dcache_chimera
+        - Optional
+        - Type: structure_dcache_chimera
     - `/software/dcache/dcache_component/unit`
-        - optional
-        - type: structure_dcache_unit
+        - Optional
+        - Type: structure_dcache_unit
     - `/software/dcache/dcache_component/link`
-        - optional
-        - type: structure_dcache_link
+        - Optional
+        - Type: structure_dcache_link
     - `/software/dcache/dcache_component/batch`
-        - optional
-        - type: structure_dcache_batch
+        - Optional
+        - Type: structure_dcache_batch
     - `/software/dcache/dcache_component/postgresql`
-        - optional
-        - type: string
-
+        - Optional
+        - Type: string

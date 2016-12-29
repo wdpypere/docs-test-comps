@@ -1,3 +1,4 @@
+
 ### NAME
 
 NCM::ipmi - Components used to manage IPMI configuration

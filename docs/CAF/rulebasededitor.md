@@ -1,3 +1,4 @@
+
 ### DESCRIPTION
 
 This module implements a rule-based editor that is used to modify the content
@@ -99,7 +100,7 @@ constants are exported. Add the following to use them:
 
 There is a different group of constants for each part of the rule.
 
-##### LINE\_FORMAT\_xxx: general syntax of the line
+### LINE\_FORMAT\_xxx: general syntax of the line
 
 - LINE\_FORMAT\_KW\_VAL:        keyword value (e.g. Xrootd, Apache)
 
@@ -125,7 +126,7 @@ is quoted.
 
 Inline comments are not supported for the LINE\_FORMAT\_KW\_VAL\_xxx formats.
 
-##### LINE\_VALUE\_xxx: how to interpret the configuration value
+### LINE\_VALUE\_xxx: how to interpret the configuration value
 
 - LINE\_VALUE\_AS\_IS: take the value as it is, do not attempt any conversion.
 
@@ -138,7 +139,7 @@ Inline comments are not supported for the LINE\_FORMAT\_KW\_VAL\_xxx formats.
 `LINE_VALUE_ARRAY` (the key list is treated as an array).
 - LINE\_VALUE\_INSTANCE\_PARAMS: specific to **ncm-xrootd**
 
-##### LINE\_OPT\_xxx: options for rendering the config line
+### LINE\_OPT\_xxx: options for rendering the config line
 
 These options mainly apply to lists and hashes and are interpreted as a bitmask.
 

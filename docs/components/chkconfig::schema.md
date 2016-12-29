@@ -1,35 +1,37 @@
+
 ### Types
 
-- `/software/chkconfig/service_type`
+ - `/software/chkconfig/service_type`
     - `/software/chkconfig/service_type/name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/chkconfig/service_type/add`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/chkconfig/service_type/del`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/chkconfig/service_type/on`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/chkconfig/service_type/off`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/chkconfig/service_type/reset`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/chkconfig/service_type/startstop`
-        - optional
-        - type: boolean
-- `/software/chkconfig/component_chkconfig_type`
+        - Optional
+        - Type: boolean
+ - `/software/chkconfig/component_chkconfig_type`
     - `/software/chkconfig/component_chkconfig_type/service`
-        - required
-        - type: service_type
+        - Optional
+        - Type: service_type
     - `/software/chkconfig/component_chkconfig_type/default`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
 
 ### Functions
 
-- chkconfig_allow_combinations
+ - chkconfig_allow_combinations
+    - Arguments:

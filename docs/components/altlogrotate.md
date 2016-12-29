@@ -1,3 +1,4 @@
+
 ### NAME
 
 ncm-altlogrotate: configuration module to control the log rotate configuration.
