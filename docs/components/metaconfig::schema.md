@@ -1,74 +1,74 @@
+
 ### Types
 
-- `/software/metaconfig/metaconfig_extension`
-- `/software/metaconfig/metaconfig_textrender_convert`
-    - decription: 
+ - `/software/metaconfig/metaconfig_extension`
+ - `/software/metaconfig/metaconfig_textrender_convert`
+    - Description: 
     Convert value of certain types (e.g. boolean to string yes/no)
     (using the CCM::TextRender element options)
 
     - `/software/metaconfig/metaconfig_textrender_convert/yesno`
-        - description: Convert boolean to (lowercase) 'yes' and 'no'.
-        - optional
-        - type: boolean
+        - Description: Convert boolean to (lowercase) 'yes' and 'no'.
+        - Optional
+        - Type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/YESNO`
-        - description: Convert boolean to (uppercase) 'YES' and 'NO'.
-        - optional
-        - type: boolean
+        - Description: Convert boolean to (uppercase) 'YES' and 'NO'.
+        - Optional
+        - Type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/truefalse`
-        - description: Convert boolean to (lowercase) 'true' and 'false'.
-        - optional
-        - type: boolean
+        - Description: Convert boolean to (lowercase) 'true' and 'false'.
+        - Optional
+        - Type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/TRUEFALSE`
-        - description: Convert boolean to (uppercase) 'TRUE' and 'FALSE'.
-        - optional
-        - type: boolean
+        - Description: Convert boolean to (uppercase) 'TRUE' and 'FALSE'.
+        - Optional
+        - Type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/doublequote`
-        - description: Convert string to doublequoted string.
-        - optional
-        - type: boolean
+        - Description: Convert string to doublequoted string.
+        - Optional
+        - Type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/singlequote`
-        - description: Convert string to singlequoted string.
-        - optional
-        - type: boolean
+        - Description: Convert string to singlequoted string.
+        - Optional
+        - Type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/joincomma`
-        - description: Convert list to comma-separated string
-        - optional
-        - type: boolean
+        - Description: Convert list to comma-separated string
+        - Optional
+        - Type: boolean
     - `/software/metaconfig/metaconfig_textrender_convert/joinspace`
-        - description: Convert list to space-separated string
-        - optional
-        - type: boolean
-- `/software/metaconfig/caf_service_action`
-- `/software/metaconfig/metaconfig_config`
+        - Description: Convert list to space-separated string
+        - Optional
+        - Type: boolean
+ - `/software/metaconfig/caf_service_action`
+ - `/software/metaconfig/metaconfig_config`
     - `/software/metaconfig/metaconfig_config/mode`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/metaconfig/metaconfig_config/owner`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/metaconfig/metaconfig_config/group`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/metaconfig/metaconfig_config/daemons`
-        - optional
-        - type: caf_service_action
+        - Optional
+        - Type: caf_service_action
     - `/software/metaconfig/metaconfig_config/module`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/metaconfig/metaconfig_config/backup`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/metaconfig/metaconfig_config/preamble`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/metaconfig/metaconfig_config/contents`
-        - required
-        - type: metaconfig_extension
+        - Optional
+        - Type: metaconfig_extension
     - `/software/metaconfig/metaconfig_config/convert`
-        - optional
-        - type: metaconfig_textrender_convert
-- `/software/metaconfig/metaconfig_component`
+        - Optional
+        - Type: metaconfig_textrender_convert
+ - `/software/metaconfig/metaconfig_component`
     - `/software/metaconfig/metaconfig_component/services`
-        - required
-        - type: metaconfig_config
-
+        - Optional
+        - Type: metaconfig_config

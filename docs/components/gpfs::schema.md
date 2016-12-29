@@ -1,54 +1,54 @@
+
 ### Types
 
-- `/software/gpfs/component_gpfs_cfg`
+ - `/software/gpfs/component_gpfs_cfg`
     - `/software/gpfs/component_gpfs_cfg/url`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gpfs/component_gpfs_cfg/keyData`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gpfs/component_gpfs_cfg/sdrrestore`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/gpfs/component_gpfs_cfg/subnet`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gpfs/component_gpfs_cfg/usecurl`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/gpfs/component_gpfs_cfg/useccmcertwithcurl`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/gpfs/component_gpfs_cfg/usesindesgetcertcertwithcurl`
-        - optional
-        - type: boolean
-- `/software/gpfs/component_gpfs_base`
+        - Optional
+        - Type: boolean
+ - `/software/gpfs/component_gpfs_base`
     - `/software/gpfs/component_gpfs_base/rpms`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gpfs/component_gpfs_base/baseurl`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/gpfs/component_gpfs_base/useproxy`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/gpfs/component_gpfs_base/usecurl`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/gpfs/component_gpfs_base/useccmcertwithcurl`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/gpfs/component_gpfs_base/usesindesgetcertcertwithcurl`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/gpfs/component_gpfs_base/useyum`
-        - required
-        - type: boolean
-- `/software/gpfs/component_gpfs`
+        - Optional
+        - Type: boolean
+ - `/software/gpfs/component_gpfs`
     - `/software/gpfs/component_gpfs/base`
-        - required
-        - type: component_gpfs_base
+        - Optional
+        - Type: component_gpfs_base
     - `/software/gpfs/component_gpfs/cfg`
-        - required
-        - type: component_gpfs_cfg
-
+        - Optional
+        - Type: component_gpfs_cfg

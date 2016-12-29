@@ -1,3 +1,4 @@
+
 ### NAME
 
 NCM::ssh - NCM SSH configuration component

@@ -1,1750 +1,1750 @@
+
 ### Types
 
-- `/software/postfix/postfix_lookup_type_string`
-    - decription: 
+ - `/software/postfix/postfix_lookup_type_string`
+    - Description: 
     Types of lookup tables (databases) Postfix is capable to handle.
 
-- `/software/postfix/postfix_lookup`
-    - decription: 
+ - `/software/postfix/postfix_lookup`
+    - Description: 
     Definition of a lookup in Postfix
 
     - `/software/postfix/postfix_lookup/type`
-        - description:  The type of the database for this lookup 
-        - required
-        - type: postfix_lookup_type_string
+        - Description:  The type of the database for this lookup 
+        - Optional
+        - Type: postfix_lookup_type_string
     - `/software/postfix/postfix_lookup/name`
-        - description:  The name of the lookup (DB connection, file name...) 
-        - required
-        - type: string
-- `/software/postfix/postfix_ldap_database`
-    - decription: 
+        - Description:  The name of the lookup (DB connection, file name...) 
+        - Optional
+        - Type: string
+ - `/software/postfix/postfix_ldap_database`
+    - Description: 
     Description of a Postfix LDAP database. See
-	http://www.postfix.org/ldap_table.5.html
+    http://www.postfix.org/ldap_table.5.html
 
     - `/software/postfix/postfix_ldap_database/server_host`
-        - required
-        - type: type_fqdn
+        - Optional
+        - Type: type_fqdn
     - `/software/postfix/postfix_ldap_database/server_host_protocol`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/server_port`
-        - optional
-        - type: type_port
+        - Optional
+        - Type: type_port
     - `/software/postfix/postfix_ldap_database/timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_ldap_database/search_base`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/query_filter`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/result_format`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/domain`
-        - optional
-        - type: type_fqdn
+        - Optional
+        - Type: type_fqdn
     - `/software/postfix/postfix_ldap_database/result_attribute`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/special_result_attribute`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/terminal_result_attribute`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/leaf_result_attribute`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/scope`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/bind`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_ldap_database/bind_dn`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/bind_pw`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/recursion_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_ldap_database/expansion_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_ldap_database/size_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_ldap_database/dereference`
-        - optional
-        - type: long
-        - range: 0..3
+        - Optional
+        - Type: long
+        - Range: 0..3
     - `/software/postfix/postfix_ldap_database/chase_referrals`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_ldap_database/version`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_ldap_database/debuglevel`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_ldap_database/start_tls`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_ldap_database/tls_ca_cert_dir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/tls_ca_cert_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/tls_cert`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/tls_key`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/tls_require_cert`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_ldap_database/tls_random_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_ldap_database/tls_cipher_suite`
-        - optional
-        - type: string
-- `/software/postfix/postfix_main`
-    - decription: 
+        - Optional
+        - Type: string
+ - `/software/postfix/postfix_main`
+    - Description: 
     All fields available in main.cf. Nothing is mandatory here, since
     it all has default values. Time limits are expressed in
     SECONDS. Multiply by the appropriate constant above to simplify
     your code.
 
     - `/software/postfix/postfix_main/_2bounce_notice_recipient`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/access_map_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/address_verify_default_transport`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/address_verify_local_transport`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/address_verify_map`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/address_verify_negative_cache`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/address_verify_negative_expire_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/address_verify_negative_refresh_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/address_verify_poll_count`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/address_verify_poll_delay`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/address_verify_positive_expire_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/address_verify_positive_refresh_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/address_verify_relay_transport`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/address_verify_relayhost`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/address_verify_sender`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/address_verify_sender_dependent_relayhost_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/address_verify_service_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/address_verify_transport_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/address_verify_virtual_transport`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/alias_database`
-        - optional
-        - type: postfix_lookup
+        - Optional
+        - Type: postfix_lookup
     - `/software/postfix/postfix_main/alias_maps`
-        - optional
-        - type: postfix_lookup
+        - Optional
+        - Type: postfix_lookup
     - `/software/postfix/postfix_main/allow_mail_to_commands`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/allow_mail_to_files`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/allow_min_user`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/allow_percent_hack`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/allow_untrusted_routing`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/alternate_config_directories`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/always_bcc`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/anvil_rate_time_unit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/anvil_status_update_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/append_at_myorigin`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/append_dot_mydomain`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/application_event_drain_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/authorized_flush_users`
-        - optional
-        - type: postfix_lookup
+        - Optional
+        - Type: postfix_lookup
     - `/software/postfix/postfix_main/authorized_mailq_users`
-        - optional
-        - type: postfix_lookup
+        - Optional
+        - Type: postfix_lookup
     - `/software/postfix/postfix_main/authorized_submit_users`
-        - optional
-        - type: postfix_lookup
+        - Optional
+        - Type: postfix_lookup
     - `/software/postfix/postfix_main/backwards_bounce_logfile_compatibility`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/berkeley_db_create_buffer_size`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/berkeley_db_read_buffer_size`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/best_mx_transport`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/biff`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/body_checks`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/body_checks_size_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/bounce_notice_recipient`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/bounce_queue_lifetime`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/bounce_service_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/bounce_size_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/bounce_template_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/broken_sasl_auth_clients`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/canonical_classes`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/canonical_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/cleanup_service_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/command_directory`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/command_execution_directory`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/command_expansion_filter`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/command_time_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/config_directory`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/connection_cache_protocol_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/connection_cache_service_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/connection_cache_status_update_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/connection_cache_ttl_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/content_filter`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/daemon_directory`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/daemon_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/debug_peer_level`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/debug_peer_list`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/default_database_type`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/default_delivery_slot_cost`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/default_delivery_slot_discount`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/default_delivery_slot_loan`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/default_destination_concurrency_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/default_destination_recipient_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/default_extra_recipient_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/default_minimum_delivery_slots`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/default_privs`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/default_process_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/default_rbl_reply`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/default_recipient_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/default_transport`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/default_verp_delimiters`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/defer_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/defer_service_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/defer_transports`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/delay_logging_resolution_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/delay_notice_recipient`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/delay_warning_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/deliver_lock_attempts`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/deliver_lock_delay`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/disable_dns_lookups`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/disable_mime_input_processing`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/disable_mime_output_conversion`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/disable_verp_bounces`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/disable_vrfy_command`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/dont_remove`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/double_bounce_sender`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/duplicate_filter_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/empty_address_recipient`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/enable_original_recipient`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/error_notice_recipient`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/error_service_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/execution_directory_expansion_filter`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/expand_owner_alias`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/export_environment`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/fallback_transport`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/fallback_transport_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/fast_flush_domains`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/fast_flush_purge_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/fast_flush_refresh_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/fault_injection_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/flush_service_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/fork_attempts`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/fork_delay`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/forward_expansion_filter`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/forward_path`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/frozen_delivered_to`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/hash_queue_depth`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/hash_queue_names`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/header_address_token_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/header_checks`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/header_size_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/helpful_warnings`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/home_mailbox`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/hopcount_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/html_directory`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/ignore_mx_lookup_error`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/import_environment`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/in_flow_delay`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/inet_interfaces`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/inet_protocols`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/initial_destination_concurrency`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/internal_mail_filter_classes`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/invalid_hostname_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/ipc_idle`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/ipc_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/ipc_ttl`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/line_length_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_bind_address`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_bind_address6`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_cname_overrides_servername`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/lmtp_connect_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_connection_cache_destinations`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_connection_cache_on_demand`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/lmtp_connection_cache_time_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_connection_reuse_time_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_data_done_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_data_init_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_data_xfer_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_defer_if_no_mx_address_found`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/lmtp_destination_concurrency_limit`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_destination_recipient_limit`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_discard_lhlo_keyword_address_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_discard_lhlo_keywords`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_enforce_tls`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/lmtp_generic_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_host_lookup`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_lhlo_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_lhlo_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_line_length_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_mail_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_mx_address_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_mx_session_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_pix_workaround_delay_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_pix_workaround_threshold_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_quit_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_quote_rfc821_envelope`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/lmtp_randomize_addresses`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/lmtp_rcpt_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_rset_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_sasl_auth_enable`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/lmtp_sasl_mechanism_filter`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_sasl_password_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_sasl_path`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_sasl_security_options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_sasl_tls_security_options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_sasl_tls_verified_security_options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_sasl_type`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_send_xforward_command`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/lmtp_sender_dependent_authentication`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/lmtp_skip_5xx_greeting`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/lmtp_starttls_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_tcp_port`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_tls_CAfile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_CApath`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_cert_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_dcert_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_dkey_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_enforce_peername`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/lmtp_tls_exclude_ciphers`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_key_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_loglevel`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_tls_mandatory_ciphers`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_mandatory_exclude_ciphers`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_mandatory_protocols`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_note_starttls_offer`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/lmtp_tls_per_site`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_policy_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_scert_verifydepth`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_tls_secure_cert_match`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_security_level`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_session_cache_database`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_tls_session_cache_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/lmtp_tls_verify_cert_match`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/lmtp_use_tls`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/lmtp_xforward_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/local_command_shell`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/local_destination_concurrency_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/local_destination_recipient_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/local_header_rewrite_clients`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/local_recipient_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/local_transport`
-        - optional
-        - type: postfix_lookup
+        - Optional
+        - Type: postfix_lookup
     - `/software/postfix/postfix_main/luser_relay`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mail_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mail_owner`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mail_release_date`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/mail_spool_directory`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mail_version`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mailbox_command`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mailbox_command_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mailbox_delivery_lock`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mailbox_size_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/mailbox_transport`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mailbox_transport_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mailq_path`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/manpage_directory`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/maps_rbl_domains`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/maps_rbl_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/masquerade_classes`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/masquerade_domains`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/masquerade_exceptions`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/max_idle`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/max_use`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/maximal_backoff_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/maximal_queue_lifetime`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/message_reject_characters`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/message_size_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/message_strip_characters`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/milter_command_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/milter_connect_macros`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/milter_connect_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/milter_content_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/milter_data_macros`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/milter_default_action`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/milter_end_of_data_macros`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/milter_helo_macros`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/milter_macro_daemon_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/milter_macro_v`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/milter_mail_macros`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/milter_protocol`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/milter_rcpt_macros`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/milter_unknown_command_macros`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mime_boundary_length_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/mime_header_checks`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mime_nesting_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/minimal_backoff_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/multi_recipient_bounce_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/mydestination`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mydomain`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/myhostname`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mynetworks`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/mynetworks_style`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/myorigin`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/nested_header_checks`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/newaliases_path`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/non_fqdn_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/non_smtpd_milters`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/notify_classes`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/owner_request_special`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/parent_domain_matches_subdomains`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/permit_mx_backup_networks`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/pickup_service_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/plaintext_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/prepend_delivered_header`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/process_id_directory`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/propagate_unmatched_extensions`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/proxy_interfaces`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/proxy_read_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/qmgr_clog_warn_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/qmgr_fudge_factor`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/qmgr_message_active_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/qmgr_message_recipient_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/qmgr_message_recipient_minimum`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/qmqpd_authorized_clients`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/qmqpd_error_delay`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/qmqpd_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/queue_directory`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/queue_file_attribute_count_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/queue_minfree`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/queue_run_delay`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/queue_service_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/rbl_reply_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/readme_directory`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/receive_override_options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/recipient_bcc_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/recipient_canonical_classes`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/recipient_canonical_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/recipient_delimiter`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/relay_clientcerts`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/relay_destination_concurrency_limit`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/relay_destination_recipient_limit`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/relay_domains`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/relay_domains_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/relay_recipient_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/relay_transport`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/relayhost`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/relocated_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/remote_header_rewrite_domain`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/require_home_directory`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/resolve_dequoted_address`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/resolve_null_domain`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/resolve_numeric_domain`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/rewrite_service_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/sample_directory`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/sender_bcc_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/sender_canonical_classes`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/sender_canonical_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/sender_dependent_relayhost_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/sendmail_path`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/service_throttle_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/setgid_group`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/show_user_unknown_table_name`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/showq_service_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_always_send_ehlo`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_bind_address`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_bind_address6`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_cname_overrides_servername`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_connect_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_connection_cache_destinations`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_connection_cache_on_demand`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_connection_cache_time_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_connection_reuse_time_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_data_done_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_data_init_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_data_xfer_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_defer_if_no_mx_address_found`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_destination_concurrency_limit`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_destination_recipient_limit`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_discard_ehlo_keyword_address_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_discard_ehlo_keywords`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_enforce_tls`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_fallback_relay`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_generic_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_helo_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_helo_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_host_lookup`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_line_length_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_mail_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_mx_address_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_mx_session_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_never_send_ehlo`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_pix_workaround_delay_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_pix_workaround_threshold_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_quit_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_quote_rfc821_envelope`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_randomize_addresses`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_rcpt_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_rset_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_sasl_auth_enable`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_sasl_mechanism_filter`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_sasl_password_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_sasl_path`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_sasl_security_options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_sasl_tls_security_options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_sasl_tls_verified_security_options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_sasl_type`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_send_xforward_command`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_sender_dependent_authentication`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_skip_5xx_greeting`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_skip_quit_response`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_starttls_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_tls_CAfile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_CApath`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_cert_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_dcert_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_dkey_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_enforce_peername`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_tls_exclude_ciphers`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_key_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_loglevel`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_tls_mandatory_ciphers`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_mandatory_exclude_ciphers`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_mandatory_protocols`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_note_starttls_offer`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_tls_per_site`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_policy_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_scert_verifydepth`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_tls_secure_cert_match`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_security_level`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_session_cache_database`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_tls_session_cache_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtp_tls_verify_cert_match`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtp_use_tls`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtp_xforward_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_authorized_verp_clients`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_authorized_xclient_hosts`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_authorized_xforward_hosts`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_banner`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_client_connection_count_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_client_connection_rate_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_client_event_limit_exceptions`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_client_message_rate_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_client_new_tls_session_rate_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_client_recipient_rate_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_client_restrictions`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_data_restrictions`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_delay_open_until_valid_rcpt`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_delay_reject`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_discard_ehlo_keyword_address_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_discard_ehlo_keywords`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_end_of_data_restrictions`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_enforce_tls`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_error_sleep_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_etrn_restrictions`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_expansion_filter`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_forbidden_commands`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_hard_error_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_helo_required`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_helo_restrictions`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_history_flush_threshold`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_junk_command_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_milters`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_noop_commands`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_null_access_lookup_key`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_peername_lookup`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_policy_service_max_idle`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_policy_service_max_ttl`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_policy_service_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_proxy_ehlo`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_proxy_filter`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_proxy_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_recipient_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_recipient_overshoot_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_recipient_restrictions`
-        - optional
-        - type: string
-    - `/software/postfix/postfix_main/smtpd_reject_unlisted_recipient`
-        - optional
-        - type: boolean
-    - `/software/postfix/postfix_main/smtpd_reject_unlisted_sender`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: string
+    - `/software/postfix/postfix_main/smtpd_reject_udicted_recipient`
+        - Optional
+        - Type: boolean
+    - `/software/postfix/postfix_main/smtpd_reject_udicted_sender`
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_restriction_classes`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_sasl_auth_enable`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_sasl_authenticated_header`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_sasl_exceptions_networks`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_sasl_local_domain`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_sasl_path`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_sasl_security_options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_sasl_tls_security_options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_sasl_type`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_sender_login_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_sender_restrictions`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_soft_error_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_starttls_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_tls_CAfile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_CApath`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_always_issue_session_ids`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_tls_ask_ccert`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_tls_auth_only`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_tls_ccert_verifydepth`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_tls_cert_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_dcert_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_dh1024_param_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_dh512_param_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_dkey_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_exclude_ciphers`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_key_file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_loglevel`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_tls_mandatory_ciphers`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_mandatory_exclude_ciphers`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_mandatory_protocols`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_received_header`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_tls_req_ccert`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_tls_security_level`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_session_cache_database`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/smtpd_tls_session_cache_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/smtpd_tls_wrappermode`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/smtpd_use_tls`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/soft_bounce`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/stale_lock_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/strict_7bit_headers`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/strict_8bitmime`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/strict_8bitmime_body`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/strict_mime_encoding_domain`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/strict_rfc821_envelopes`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/sun_mailtool_compatibility`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/swap_bangpath`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_main/syslog_facility`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/syslog_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/tls_daemon_random_bytes`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/tls_export_cipherlist`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/tls_high_cipherlist`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/tls_low_cipherlist`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/tls_medium_cipherlist`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/tls_null_cipherlist`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/tls_random_bytes`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/tls_random_exchange_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/tls_random_prng_update_period`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/tls_random_reseed_period`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/tls_random_source`
-        - optional
-        - type: postfix_lookup
+        - Optional
+        - Type: postfix_lookup
     - `/software/postfix/postfix_main/trace_service_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/transport_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/transport_retry_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/trigger_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/undisclosed_recipients_header`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/unknown_address_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/unknown_client_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/unknown_hostname_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/unknown_local_recipient_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/unknown_relay_recipient_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/unknown_virtual_alias_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/unknown_virtual_mailbox_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/unverified_recipient_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/unverified_sender_reject_code`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/verp_delimiter_filter`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/virtual_alias_domains`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/virtual_alias_expansion_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/virtual_alias_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/virtual_alias_recursion_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/virtual_destination_concurrency_limit`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/virtual_destination_recipient_limit`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/virtual_gid_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/virtual_mailbox_base`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/virtual_mailbox_domains`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/virtual_mailbox_limit`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/virtual_mailbox_lock`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/virtual_mailbox_maps`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/virtual_minimum_uid`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_main/virtual_transport`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_main/virtual_uid_maps`
-        - optional
-        - type: string
-- `/software/postfix/postfix_databases`
-    - decription: 
+        - Optional
+        - Type: string
+ - `/software/postfix/postfix_databases`
+    - Description: 
     Define multiple Postfix databases
 
     - `/software/postfix/postfix_databases/ldap`
-        - description:  LDAP databases, indexed by file name (relative to `/etc/postfix`)
-        - optional
-        - type: postfix_ldap_database
-- `/software/postfix/postfix_master`
-    - decription: 
+        - Description:  LDAP databases, indexed by file name (relative to /etc/postfix)
+        - Optional
+        - Type: postfix_ldap_database
+ - `/software/postfix/postfix_master`
+    - Description: 
     Entries in the master.cf file. See the master man page for more
     details.
 
     - `/software/postfix/postfix_master/type`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_master/private`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_master/unprivileged`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_master/chroot`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/postfix/postfix_master/wakeup`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_master/maxproc`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/postfix/postfix_master/command`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/postfix/postfix_master/name`
-        - required
-        - type: string
-- `/software/postfix/postfix_component`
+        - Optional
+        - Type: string
+ - `/software/postfix/postfix_component`
     - `/software/postfix/postfix_component/main`
-        - description:  Contents of the main.cf file 
-        - required
-        - type: postfix_main
+        - Description:  Contents of the main.cf file 
+        - Optional
+        - Type: postfix_main
     - `/software/postfix/postfix_component/master`
-        - description:  Contents of the master.cf file 
-        - required
-        - type: postfix_master
+        - Description:  Contents of the master.cf file 
+        - Optional
+        - Type: postfix_master
     - `/software/postfix/postfix_component/databases`
-        - description:  Definition of Postfix databases 
-        - optional
-        - type: postfix_databases
-
+        - Description:  Definition of Postfix databases 
+        - Optional
+        - Type: postfix_databases

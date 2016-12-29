@@ -1,3 +1,4 @@
+
 ### NAME
 
     CCM::TextRender - Class for rendering structured text using Element instances

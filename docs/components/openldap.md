@@ -1,3 +1,4 @@
+
 ### NAME
 
 openldap -- NCM component to control entries in `/etc/openldap/slapd.conf`

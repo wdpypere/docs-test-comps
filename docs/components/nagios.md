@@ -1,3 +1,4 @@
+
 ### DESCRIPTION
 
 The _nagios_ component manages the configuration for the Nagios

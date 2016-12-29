@@ -1,41 +1,43 @@
+
 ### Types
 
-- `/software/filecopy/structure_filecopy`
+ - `/software/filecopy/structure_filecopy`
     - `/software/filecopy/structure_filecopy/config`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/filecopy/structure_filecopy/source`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/filecopy/structure_filecopy/restart`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/filecopy/structure_filecopy/perms`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/filecopy/structure_filecopy/owner`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/filecopy/structure_filecopy/group`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/filecopy/structure_filecopy/no_utf8`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/filecopy/structure_filecopy/forceRestart`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/filecopy/structure_filecopy/backup`
-        - required
-        - type: boolean
-- `/software/filecopy/component_filecopy`
+        - Optional
+        - Type: boolean
+ - `/software/filecopy/component_filecopy`
     - `/software/filecopy/component_filecopy/services`
-        - optional
-        - type: structure_filecopy
+        - Optional
+        - Type: structure_filecopy
     - `/software/filecopy/component_filecopy/forceRestart`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
 
 ### Functions
 
-- component_filecopy_valid
+ - component_filecopy_valid
+    - Arguments:

@@ -1,3 +1,4 @@
+
 ### DESCRIPTION
 
 The useraccess NCM component allows to manage the different ways an user
@@ -131,7 +132,7 @@ get all the appropriate settings:
 
     "/software/components/useraccess/users/root/roles" = list ("myrole");
 
-And now, me@UAM.ES can login as root using Kerberos v4 tickets.
+And now,  can login as root using Kerberos v4 tickets.
 
 Also, roles can be nested. However, there are no checks for cyclic
 inclusions. Cyclic nesting will produce infinite loops at runtime, and
@@ -187,7 +188,7 @@ on the Simpson family. And Homer wants to spy women at home:
            "realm", "SPRINGFIELD.COM",
            "principal", "homer",
            "instance", "another_silly_project")),
-       "acls", list ("system-auth") ### Woops! now Homer can't log-in!
+       "acls", list ("system-auth") # Woops! now Homer can't log-in!
        );
 
     "/software/components/useraccess/users/marge/roles" = list (

@@ -1,3 +1,4 @@
+
 ### NAME
 
 CAF::FileReader - Class for only reading files in CAF applications.
@@ -9,7 +10,7 @@ Normal use:
     use CAF::FileReader;
     my $fh = CAF::FileReader->open ("my/path");
     while (my $line = <$fh>) {
-       ### Do something
+       # Do something
     }
 
 This class should be used whenever a file is to be opened for reading,

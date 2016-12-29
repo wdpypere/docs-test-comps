@@ -1,31 +1,31 @@
+
 ### Types
 
-- `/software/afsclt/component_afsclt_entry`
+ - `/software/afsclt/component_afsclt_entry`
     - `/software/afsclt/component_afsclt_entry/thiscell`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/afsclt/component_afsclt_entry/thesecells`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/afsclt/component_afsclt_entry/settime`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/afsclt/component_afsclt_entry/cellservdb`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/afsclt/component_afsclt_entry/afs_mount`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/afsclt/component_afsclt_entry/cachemount`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/afsclt/component_afsclt_entry/cachesize`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/afsclt/component_afsclt_entry/enabled`
-        - required
-        - type: legacy_binary_affirmation_string
+        - Optional
+        - Type: legacy_binary_affirmation_string
     - `/software/afsclt/component_afsclt_entry/afsd_args`
-        - optional
-        - type: string
-
+        - Optional
+        - Type: string

@@ -1,256 +1,261 @@
+
 ### Types
 
-- `/software/ceph/ceph_daemon_config`
-    - decription:  ceph daemon config parameters 
-- `/software/ceph/ceph_daemon`
-    - decription:  type for a generic ceph daemon 
+ - `/software/ceph/ceph_daemon_config`
+    - Description:  ceph daemon config parameters 
+ - `/software/ceph/ceph_daemon`
+    - Description:  type for a generic ceph daemon 
     - `/software/ceph/ceph_daemon/up`
-        - required
-        - type: boolean
-- `/software/ceph/ceph_cluster_config`
-    - decription:  ceph cluster-wide config parameters 
+        - Optional
+        - Type: boolean
+ - `/software/ceph/ceph_cluster_config`
+    - Description:  ceph cluster-wide config parameters 
     - `/software/ceph/ceph_cluster_config/auth_client_required`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_cluster_config/auth_cluster_required`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_cluster_config/auth_service_required`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_cluster_config/cluster_network`
-        - optional
-        - type: type_network_name
+        - Optional
+        - Type: type_network_name
     - `/software/ceph/ceph_cluster_config/enable_experimental_unrecoverable_data_corrupting_features`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_cluster_config/filestore_xattr_use_omap`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/ceph/ceph_cluster_config/fsid`
-        - required
-        - type: type_uuid
+        - Optional
+        - Type: type_uuid
     - `/software/ceph/ceph_cluster_config/mon_cluster_log_to_syslog`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/ceph/ceph_cluster_config/mon_initial_members`
-        - required
-        - type: type_network_name
+        - Optional
+        - Type: type_network_name
     - `/software/ceph/ceph_cluster_config/mon_osd_min_down_reporters`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/ceph/ceph_cluster_config/mon_osd_min_down_reports`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/ceph/ceph_cluster_config/mon_osd_max_op_age`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/ceph/ceph_cluster_config/ms_type`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_cluster_config/op_queue`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_cluster_config/osd_crush_update_on_start`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/ceph/ceph_cluster_config/osd_journal_size`
-        - required
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/ceph/ceph_cluster_config/osd_objectstore`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_cluster_config/osd_pool_default_min_size`
-        - required
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/ceph/ceph_cluster_config/osd_pool_default_pg_num`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/ceph/ceph_cluster_config/osd_pool_default_pgp_num`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/ceph/ceph_cluster_config/osd_pool_default_size`
-        - required
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/ceph/ceph_cluster_config/public_network`
-        - required
-        - type: type_network_name
-- `/software/ceph/ceph_crushmap_bucket`
-    - decription:  ceph crushmap bucket definition 
+        - Optional
+        - Type: type_network_name
+ - `/software/ceph/ceph_crushmap_bucket`
+    - Description:  ceph crushmap bucket definition 
     - `/software/ceph/ceph_crushmap_bucket/name`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_crushmap_bucket/type`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_crushmap_bucket/alg`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_crushmap_bucket/hash`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/ceph/ceph_crushmap_bucket/weight`
-        - optional
-        - type: double
+        - Optional
+        - Type: double
     - `/software/ceph/ceph_crushmap_bucket/defaultalg`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_crushmap_bucket/defaulthash`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/ceph/ceph_crushmap_bucket/labels`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_crushmap_bucket/buckets`
-        - optional
-        - type: nlist
-- `/software/ceph/ceph_crushmap_rule_choice`
-    - decription:  ceph crushmap rule step 
+        - Optional
+        - Type: dict
+ - `/software/ceph/ceph_crushmap_rule_choice`
+    - Description:  ceph crushmap rule step 
     - `/software/ceph/ceph_crushmap_rule_choice/chtype`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_crushmap_rule_choice/number`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/ceph/ceph_crushmap_rule_choice/bktype`
-        - required
-        - type: string
-- `/software/ceph/ceph_crushmap_rule_step`
-    - decription:  ceph crushmap rule step 
+        - Optional
+        - Type: string
+ - `/software/ceph/ceph_crushmap_rule_step`
+    - Description:  ceph crushmap rule step 
     - `/software/ceph/ceph_crushmap_rule_step/take`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_crushmap_rule_step/set_choose_tries`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/ceph/ceph_crushmap_rule_step/set_chooseleaf_tries`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/ceph/ceph_crushmap_rule_step/choices`
-        - required
-        - type: ceph_crushmap_rule_choice
-- `/software/ceph/ceph_crushmap_rule`
-    - decription:  ceph crushmap rule definition 
+        - Optional
+        - Type: ceph_crushmap_rule_choice
+ - `/software/ceph/ceph_crushmap_rule`
+    - Description:  ceph crushmap rule definition 
     - `/software/ceph/ceph_crushmap_rule/name`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_crushmap_rule/type`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_crushmap_rule/ruleset`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/ceph/ceph_crushmap_rule/min_size`
-        - required
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/ceph/ceph_crushmap_rule/max_size`
-        - required
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/ceph/ceph_crushmap_rule/steps`
-        - required
-        - type: ceph_crushmap_rule_step
-- `/software/ceph/ceph_crushmap`
-    - decription:  
-ceph crushmap definition 
+        - Optional
+        - Type: ceph_crushmap_rule_step
+ - `/software/ceph/ceph_crushmap`
+    - Description: 
+ceph crushmap definition
 The crushmap defines some types of buckets,
 a hierarchical bucket structure,
 rules for traversing these buckets
 and tunables for magic numbers.
 
     - `/software/ceph/ceph_crushmap/types`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_crushmap/buckets`
-        - required
-        - type: ceph_crushmap_bucket
+        - Optional
+        - Type: ceph_crushmap_bucket
     - `/software/ceph/ceph_crushmap/rules`
-        - required
-        - type: ceph_crushmap_rule
+        - Optional
+        - Type: ceph_crushmap_rule
     - `/software/ceph/ceph_crushmap/tunables`
-        - optional
-        - type: long
-- `/software/ceph/ceph_cluster`
-    - decription:  overarching ceph cluster type, with osds, mons and msds 
+        - Optional
+        - Type: long
+ - `/software/ceph/ceph_cluster`
+    - Description:  overarching ceph cluster type, with osds, mons and msds 
     - `/software/ceph/ceph_cluster/config`
-        - required
-        - type: ceph_cluster_config
+        - Optional
+        - Type: ceph_cluster_config
     - `/software/ceph/ceph_cluster/osdhosts`
-        - required
-        - type: ceph_osd_host
+        - Optional
+        - Type: ceph_osd_host
     - `/software/ceph/ceph_cluster/monitors`
-        - required
-        - type: ceph_monitor
+        - Optional
+        - Type: ceph_monitor
     - `/software/ceph/ceph_cluster/mdss`
-        - optional
-        - type: ceph_mds
+        - Optional
+        - Type: ceph_mds
     - `/software/ceph/ceph_cluster/radosgwh`
-        - optional
-        - type: ceph_radosgwh
+        - Optional
+        - Type: ceph_radosgwh
     - `/software/ceph/ceph_cluster/deployhosts`
-        - required
-        - type: type_fqdn
+        - Optional
+        - Type: type_fqdn
     - `/software/ceph/ceph_cluster/crushmap`
-        - optional
-        - type: ceph_crushmap
-- `/software/ceph/ceph_localdaemons`
-    - decription: 
+        - Optional
+        - Type: ceph_crushmap
+ - `/software/ceph/ceph_localdaemons`
+    - Description: 
 Decentralized config feature:
 For use with dedicated pan code that builds the cluster info from remote templates.
 
     - `/software/ceph/ceph_localdaemons/osds`
-        - required
-        - type: ceph_osd
-- `/software/ceph/ceph_component`
-    - decription:  ceph clusters 
+        - Optional
+        - Type: ceph_osd
+ - `/software/ceph/ceph_component`
+    - Description:  ceph clusters 
     - `/software/ceph/ceph_component/clusters`
-        - optional
-        - type: ceph_cluster
+        - Optional
+        - Type: ceph_cluster
     - `/software/ceph/ceph_component/localdaemons`
-        - optional
-        - type: ceph_localdaemons
+        - Optional
+        - Type: ceph_localdaemons
     - `/software/ceph/ceph_component/ceph_version`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_component/deploy_version`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_component/key_accept`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/ceph/ceph_component/ssh_multiplex`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/ceph/ceph_component/max_add_osd_failures_per_host`
-        - required
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
 
 ### Functions
 
-- valid_osd_names
-    - description: check that the ceph osd names are no ceph reserved paths 
-    - arg: ceph_component type
-- is_crushmap
-    - description: checks the ceph crushmap, this includes uniqueness of bucket and rule name, recursive bucket typing, and rules using existing buckets 
-    - arg: crushmap allowed bucket types
-    - arg: crushmap buckets definitions
-    - arg: rules to traverse crushmap
-- is_bucket
-    - description: check the bucket type recursively, this includes attribute type and value checking and the uniqueness of names 
-    - arg: bucket to check
-    - arg: list of already parsed bucket names
-    - arg: accepted bucket types
-    - arg: 1 if bucket is top bucket, 0 otherwise
-- is_ceph_crushmap_bucket_alg
-    - description: check it is a valid algorithm, also used in is_crushmap 
-    - arg: bucket algoritm
+ - valid_osd_names
+    - Description: check that the ceph osd names are no ceph reserved paths
+    - Arguments:
+        - ceph_component type
+ - is_crushmap
+    - Description: checks the ceph crushmap, this includes uniqueness of bucket and rule name, recursive bucket typing, and rules using existing buckets
+    - Arguments:
+        - crushmap allowed bucket types
+        - crushmap buckets definitions
+        - rules to traverse crushmap
+ - is_bucket
+    - Description: check the bucket type recursively, this includes attribute type and value checking and the uniqueness of names
+    - Arguments:
+        - bucket to check
+        - list of already parsed bucket names
+        - accepted bucket types
+        - 1 if bucket is top bucket, 0 otherwise
+ - is_ceph_crushmap_bucket_alg
+    - Description: check it is a valid algorithm, also used in is_crushmap
+    - Arguments:
+        - bucket algoritm

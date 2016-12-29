@@ -1,3 +1,4 @@
+
 ### NAME
 
 CAF::ReporterMany - Class for console & log message reporting in CAF applications,

@@ -1,3 +1,4 @@
+
 ### DESCRIPTION
 
 The _nrpe_ component manages the NRPE daemon, which executes Nagios

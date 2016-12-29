@@ -1,16 +1,16 @@
+
 ### Types
 
-- `/software/sysctl/component_sysctl_structure`
+ - `/software/sysctl/component_sysctl_structure`
     - `/software/sysctl/component_sysctl_structure/command`
-        - required
-        - type: string
-    - `/software/sysctl/component_sysctl_structure/compat`-v1
-        - required
-        - type: boolean
+        - Optional
+        - Type: string
+    - `/software/sysctl/component_sysctl_structure/compat-v1`
+        - Optional
+        - Type: boolean
     - `/software/sysctl/component_sysctl_structure/confFile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sysctl/component_sysctl_structure/variables`
-        - optional
-        - type: string
-
+        - Optional
+        - Type: string

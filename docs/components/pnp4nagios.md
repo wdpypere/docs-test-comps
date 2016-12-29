@@ -1,3 +1,4 @@
+
 ### DESCRIPTION
 
 This component configures the nagios/icinga addon, pnp4nagios.

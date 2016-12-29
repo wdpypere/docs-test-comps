@@ -1,3 +1,4 @@
+
 ### DESCRIPTION
 
 The _fstab_ component manages the mount points in a node. It is able

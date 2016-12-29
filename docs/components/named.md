@@ -1,3 +1,4 @@
+
 ### NAME
 
 NCM::named - NCM named configuration component

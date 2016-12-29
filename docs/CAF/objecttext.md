@@ -1,3 +1,4 @@
+
 ### NAME
 
 CAF::ObjectText - Base class for handling text
@@ -16,10 +17,10 @@ Define subclass via
 
 And use it via
     my $sc = SubClass->new(log => $self);
-    print "$sc"; ### stringification
+    print "$sc"; # stringification
 
     $sc = SubClass->new(log => $self);
-    ### return CAF::FileWriter instance (text already added)
+    # return CAF::FileWriter instance (text already added)
     my $fh = $sc->filewriter('/some/path');
     if (!defined($fh)) {
         $self->error("Failed to retrieve filewriter: $sc->{fail}");

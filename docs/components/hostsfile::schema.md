@@ -1,13 +1,13 @@
+
 ### Types
 
-- `/software/hostsfile/component_hostsfile_type`
+ - `/software/hostsfile/component_hostsfile_type`
     - `/software/hostsfile/component_hostsfile_type/file`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/hostsfile/component_hostsfile_type/entries`
-        - required
-        - type: nlist
+        - Optional
+        - Type: dict
     - `/software/hostsfile/component_hostsfile_type/takeover`
-        - required
-        - type: boolean
-
+        - Optional
+        - Type: boolean

@@ -1,3 +1,4 @@
+
 ### NAME
 
 NCM::sendmail - NCM Sendmail configuration component

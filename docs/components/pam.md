@@ -1,16 +1,17 @@
+
 ### NAME
 
 NCM::pam - NCM pam configuration component
 
 ### SYNOPSIS
 
-    ### declare what pam modules are available.
+    # declare what pam modules are available.
     "/software/components/pam/modules" = npush("krb5",
       nlist("path", "/lib/security/$ISA/pam_krb5.so"));
     "/software/components/pam/modules" = npush("cracklib",
       nlist("path", "/lib/security/$ISA/pam_cracklib.so"));
 
-    ### setup a service
+    # setup a service
     "/software/components/pam/services" = pam_add(
       "sshd", "auth", "required", "env");
     "/software/components/pam/services" = pam_add_stack(

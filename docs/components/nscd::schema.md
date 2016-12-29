@@ -1,68 +1,68 @@
+
 ### Types
 
-- `/software/nscd/componend_nscd_service_type`
-    - `/software/nscd/componend_nscd_service_type/enable`-cache
-        - optional
-        - type: legacy_binary_affirmation_string
-    - `/software/nscd/componend_nscd_service_type/positive`-time-to-live
-        - optional
-        - type: long
-    - `/software/nscd/componend_nscd_service_type/negative`-time-to-live
-        - optional
-        - type: long
-    - `/software/nscd/componend_nscd_service_type/suggested`-size
-        - optional
-        - type: long
-    - `/software/nscd/componend_nscd_service_type/check`-files
-        - optional
-        - type: legacy_binary_affirmation_string
+ - `/software/nscd/componend_nscd_service_type`
+    - `/software/nscd/componend_nscd_service_type/enable-cache`
+        - Optional
+        - Type: legacy_binary_affirmation_string
+    - `/software/nscd/componend_nscd_service_type/positive-time-to-live`
+        - Optional
+        - Type: long
+    - `/software/nscd/componend_nscd_service_type/negative-time-to-live`
+        - Optional
+        - Type: long
+    - `/software/nscd/componend_nscd_service_type/suggested-size`
+        - Optional
+        - Type: long
+    - `/software/nscd/componend_nscd_service_type/check-files`
+        - Optional
+        - Type: legacy_binary_affirmation_string
     - `/software/nscd/componend_nscd_service_type/persistent`
-        - optional
-        - type: legacy_binary_affirmation_string
+        - Optional
+        - Type: legacy_binary_affirmation_string
     - `/software/nscd/componend_nscd_service_type/shared`
-        - optional
-        - type: legacy_binary_affirmation_string
-    - `/software/nscd/componend_nscd_service_type/max`-db-size
-        - optional
-        - type: long
-    - `/software/nscd/componend_nscd_service_type/auto`-propagate
-        - optional
-        - type: legacy_binary_affirmation_string
-- `/software/nscd/component_nscd_type`
+        - Optional
+        - Type: legacy_binary_affirmation_string
+    - `/software/nscd/componend_nscd_service_type/max-db-size`
+        - Optional
+        - Type: long
+    - `/software/nscd/componend_nscd_service_type/auto-propagate`
+        - Optional
+        - Type: legacy_binary_affirmation_string
+ - `/software/nscd/component_nscd_type`
     - `/software/nscd/component_nscd_type/logfile`
-        - optional
-        - type: string
-    - `/software/nscd/component_nscd_type/debug`-level
-        - optional
-        - type: string
+        - Optional
+        - Type: string
+    - `/software/nscd/component_nscd_type/debug-level`
+        - Optional
+        - Type: string
     - `/software/nscd/component_nscd_type/threads`
-        - optional
-        - type: long
-    - `/software/nscd/component_nscd_type/max`-threads
-        - optional
-        - type: long
-    - `/software/nscd/component_nscd_type/server`-user
-        - optional
-        - type: string
-    - `/software/nscd/component_nscd_type/stat`-user
-        - optional
-        - type: string
-    - `/software/nscd/component_nscd_type/reload`-count
-        - optional
-        - type: string
+        - Optional
+        - Type: long
+    - `/software/nscd/component_nscd_type/max-threads`
+        - Optional
+        - Type: long
+    - `/software/nscd/component_nscd_type/server-user`
+        - Optional
+        - Type: string
+    - `/software/nscd/component_nscd_type/stat-user`
+        - Optional
+        - Type: string
+    - `/software/nscd/component_nscd_type/reload-count`
+        - Optional
+        - Type: string
     - `/software/nscd/component_nscd_type/paranoia`
-        - optional
-        - type: legacy_binary_affirmation_string
-    - `/software/nscd/component_nscd_type/restart`-interval
-        - optional
-        - type: long
+        - Optional
+        - Type: legacy_binary_affirmation_string
+    - `/software/nscd/component_nscd_type/restart-interval`
+        - Optional
+        - Type: long
     - `/software/nscd/component_nscd_type/passwd`
-        - optional
-        - type: componend_nscd_service_type
+        - Optional
+        - Type: componend_nscd_service_type
     - `/software/nscd/component_nscd_type/group`
-        - optional
-        - type: componend_nscd_service_type
+        - Optional
+        - Type: componend_nscd_service_type
     - `/software/nscd/component_nscd_type/hosts`
-        - optional
-        - type: componend_nscd_service_type
-
+        - Optional
+        - Type: componend_nscd_service_type

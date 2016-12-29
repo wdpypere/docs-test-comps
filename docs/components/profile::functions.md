@@ -1,5 +1,7 @@
-### Types
+
 ### Functions
 
-- component_profile_add_env
-- component_profile_add_path
+ - component_profile_add_env
+    - Arguments:
+ - component_profile_add_path
+    - Arguments:

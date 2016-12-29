@@ -1,3 +1,4 @@
+
 ### NAME
 
 gsissh: NCM component to manage gsissh configuration file(s)
@@ -14,11 +15,11 @@ both the client and server sides of the GSI-enabled SSH daemon.
 An optional nlist with the server-side configuration.  If not
 specified, then the server is not configured. 
 
-##### `/software/components/gsissh/server/port`
+### `/software/components/gsissh/server/port`
 
 The port to use for the daemon.  This is mandatory. 
 
-##### `/software/components/gsissh/server/options`
+### `/software/components/gsissh/server/options`
 
 An nlist giving the options to use.  Typical options are:
 PermitRootLogin, RSAAuthentication, PubkeyAuthentication,

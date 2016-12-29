@@ -1,3 +1,4 @@
+
 ### NAME
 
 CAF::FileWriter - Class for securely writing to files in CAF
@@ -163,7 +164,7 @@ Owner and group are set at the time of creating the object:
                                     owner => 100
                                     group => 200);
     print $fh "Hello, world!\n";
-    ### I don't like what I did, just drop the changes:
+    # I don't like what I did, just drop the changes:
     $fh->cancel();
     $fh->close();
 

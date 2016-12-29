@@ -1,198 +1,198 @@
+
 ### Types
 
-- `/software/wlconfig/structure_wl_log`
+ - `/software/wlconfig/structure_wl_log`
     - `/software/wlconfig/structure_wl_log/file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_log/level`
-        - required
-        - type: long
-        - range: 1..
-- `/software/wlconfig/structure_wl_jobcontroller`
+        - Optional
+        - Type: long
+        - Range: 1..
+ - `/software/wlconfig/structure_wl_jobcontroller`
     - `/software/wlconfig/structure_wl_jobcontroller/condorSubmit`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_jobcontroller/condorRemove`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_jobcontroller/condorQuery`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_jobcontroller/condorSubmitDAG`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_jobcontroller/condorRelease`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_jobcontroller/container`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wlconfig/structure_wl_jobcontroller/submitFile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_jobcontroller/outputFile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_jobcontroller/queueFile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_jobcontroller/lockFile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_jobcontroller/log`
-        - required
-        - type: structure_wl_log
-- `/software/wlconfig/structure_wl_logmonitor`
+        - Optional
+        - Type: structure_wl_log
+ - `/software/wlconfig/structure_wl_logmonitor`
     - `/software/wlconfig/structure_wl_logmonitor/jobsPerCondorLog`
-        - required
-        - type: long
-        - range: 1..
+        - Optional
+        - Type: long
+        - Range: 1..
     - `/software/wlconfig/structure_wl_logmonitor/mainLoopDuration`
-        - required
-        - type: long
-        - range: 1..
+        - Optional
+        - Type: long
+        - Range: 1..
     - `/software/wlconfig/structure_wl_logmonitor/condorLogDir`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_logmonitor/condorRecycleDir`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_logmonitor/monitorInternalDir`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_logmonitor/idRepositoryName`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_logmonitor/abortedJobsTimeout`
-        - required
-        - type: long
-        - range: 1..
+        - Optional
+        - Type: long
+        - Range: 1..
     - `/software/wlconfig/structure_wl_logmonitor/externalLogFile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_logmonitor/lockFile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_logmonitor/log`
-        - required
-        - type: structure_wl_log
-- `/software/wlconfig/structure_wl_networkserver`
+        - Optional
+        - Type: structure_wl_log
+ - `/software/wlconfig/structure_wl_networkserver`
     - `/software/wlconfig/structure_wl_networkserver/iiPort`
-        - required
-        - type: type_port
+        - Optional
+        - Type: type_port
     - `/software/wlconfig/structure_wl_networkserver/iiTimeout`
-        - required
-        - type: long
-        - range: 1..
+        - Optional
+        - Type: long
+        - Range: 1..
     - `/software/wlconfig/structure_wl_networkserver/iiDN`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_networkserver/iiHost`
-        - required
-        - type: type_hostname
+        - Optional
+        - Type: type_hostname
     - `/software/wlconfig/structure_wl_networkserver/grisPort`
-        - required
-        - type: type_port
+        - Optional
+        - Type: type_port
     - `/software/wlconfig/structure_wl_networkserver/grisTimeout`
-        - required
-        - type: long
-        - range: 1..
+        - Optional
+        - Type: long
+        - Range: 1..
     - `/software/wlconfig/structure_wl_networkserver/grisDN`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_networkserver/backLogSize`
-        - required
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/wlconfig/structure_wl_networkserver/listeningPort`
-        - required
-        - type: type_port
+        - Optional
+        - Type: type_port
     - `/software/wlconfig/structure_wl_networkserver/masterThreads`
-        - required
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/wlconfig/structure_wl_networkserver/dispatcherThreads`
-        - required
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/wlconfig/structure_wl_networkserver/sandboxStagingPath`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_networkserver/quotaManagement`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wlconfig/structure_wl_networkserver/quotaSandboxSize`
-        - required
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/wlconfig/structure_wl_networkserver/quotaAdjustment`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wlconfig/structure_wl_networkserver/quotaAdjustmentAmount`
-        - required
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/wlconfig/structure_wl_networkserver/reservedDiskPercentage`
-        - required
-        - type: double
+        - Optional
+        - Type: double
     - `/software/wlconfig/structure_wl_networkserver/log`
-        - required
-        - type: structure_wl_log
+        - Optional
+        - Type: structure_wl_log
     - `/software/wlconfig/structure_wl_networkserver/DLICatalog`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_networkserver/RLSCatalog`
-        - optional
-        - type: string
-- `/software/wlconfig/structure_wl_workloadmanager`
+        - Optional
+        - Type: string
+ - `/software/wlconfig/structure_wl_workloadmanager`
     - `/software/wlconfig/structure_wl_workloadmanager/pipeDepth`
-        - required
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/wlconfig/structure_wl_workloadmanager/workerThreads`
-        - required
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/wlconfig/structure_wl_workloadmanager/dispatcherType`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_workloadmanager/inputFile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/structure_wl_workloadmanager/maxRetryCount`
-        - required
-        - type: long
-        - range: 1..
+        - Optional
+        - Type: long
+        - Range: 1..
     - `/software/wlconfig/structure_wl_workloadmanager/log`
-        - required
-        - type: structure_wl_log
-- `/software/wlconfig/wlconfig_component`
+        - Optional
+        - Type: structure_wl_log
+ - `/software/wlconfig/wlconfig_component`
     - `/software/wlconfig/wlconfig_component/configFile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/wlconfig_component/user`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/wlconfig_component/hostProxyFile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wlconfig/wlconfig_component/grisCache`
-        - required
-        - type: long
-        - range: 1..
+        - Optional
+        - Type: long
+        - Range: 1..
     - `/software/wlconfig/wlconfig_component/useCachedResourceInfo`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wlconfig/wlconfig_component/jobController`
-        - required
-        - type: structure_wl_jobcontroller
+        - Optional
+        - Type: structure_wl_jobcontroller
     - `/software/wlconfig/wlconfig_component/logMonitor`
-        - required
-        - type: structure_wl_logmonitor
+        - Optional
+        - Type: structure_wl_logmonitor
     - `/software/wlconfig/wlconfig_component/networkServer`
-        - required
-        - type: structure_wl_networkserver
+        - Optional
+        - Type: structure_wl_networkserver
     - `/software/wlconfig/wlconfig_component/workloadManager`
-        - required
-        - type: structure_wl_workloadmanager
-
+        - Optional
+        - Type: structure_wl_workloadmanager

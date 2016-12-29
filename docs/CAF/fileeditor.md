@@ -1,3 +1,4 @@
+
 ### NAME
 
 CAF::FileEditor - Class for securely making minor changes in CAF

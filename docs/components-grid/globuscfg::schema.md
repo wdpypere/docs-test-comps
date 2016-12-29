@@ -1,211 +1,212 @@
+
 ### Types
 
-- `/software/globuscfg/reg_type`
+ - `/software/globuscfg/reg_type`
     - `/software/globuscfg/reg_type/recordname`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/reg_type/regname`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/reg_type/reghn`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/reg_type/regport`
-        - optional
-        - type: type_port
+        - Optional
+        - Type: type_port
     - `/software/globuscfg/reg_type/regperiod`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/globuscfg/reg_type/ttl`
-        - optional
-        - type: long
-- `/software/globuscfg/globus_mds_gris_type`
+        - Optional
+        - Type: long
+ - `/software/globuscfg/globus_mds_gris_type`
     - `/software/globuscfg/globus_mds_gris_type/suffix`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_mds_gris_type/provider`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_mds_gris_type/registration`
-        - optional
-        - type: reg_type
-- `/software/globuscfg/globus_mds_giis_allowedregs_type`
+        - Optional
+        - Type: reg_type
+ - `/software/globuscfg/globus_mds_giis_allowedregs_type`
     - `/software/globuscfg/globus_mds_giis_allowedregs_type/recordname`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_mds_giis_allowedregs_type/name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_mds_giis_allowedregs_type/allowreg`
-        - optional
-        - type: string
-- `/software/globuscfg/globus_mds_giis_reg_type`
+        - Optional
+        - Type: string
+ - `/software/globuscfg/globus_mds_giis_reg_type`
     - `/software/globuscfg/globus_mds_giis_reg_type/regname`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_mds_giis_reg_type/reghn`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_mds_giis_reg_type/regport`
-        - optional
-        - type: type_port
+        - Optional
+        - Type: type_port
     - `/software/globuscfg/globus_mds_giis_reg_type/regperiod`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/globuscfg/globus_mds_giis_reg_type/ttl`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/globuscfg/globus_mds_giis_reg_type/name`
-        - optional
-        - type: string
-- `/software/globuscfg/globus_mds_giis_type`
+        - Optional
+        - Type: string
+ - `/software/globuscfg/globus_mds_giis_type`
     - `/software/globuscfg/globus_mds_giis_type/allowedregs`
-        - optional
-        - type: globus_mds_giis_allowedregs_type
+        - Optional
+        - Type: globus_mds_giis_allowedregs_type
     - `/software/globuscfg/globus_mds_giis_type/registration`
-        - optional
-        - type: globus_mds_giis_reg_type
-- `/software/globuscfg/globus_mds_type`
+        - Optional
+        - Type: globus_mds_giis_reg_type
+ - `/software/globuscfg/globus_mds_type`
     - `/software/globuscfg/globus_mds_type/globus_flavor_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_mds_type/user`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_mds_type/x509_user_cert`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_mds_type/x509_user_key`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_mds_type/gris`
-        - optional
-        - type: globus_mds_gris_type
+        - Optional
+        - Type: globus_mds_gris_type
     - `/software/globuscfg/globus_mds_type/giis`
-        - optional
-        - type: globus_mds_giis_type
-- `/software/globuscfg/globus_gridftp_type`
+        - Optional
+        - Type: globus_mds_giis_type
+ - `/software/globuscfg/globus_gridftp_type`
     - `/software/globuscfg/globus_gridftp_type/globus_flavor_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gridftp_type/X509_USER_CERT`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gridftp_type/X509_USER_KEY`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gridftp_type/ftpd`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gridftp_type/port`
-        - optional
-        - type: type_port
+        - Optional
+        - Type: type_port
     - `/software/globuscfg/globus_gridftp_type/umask`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gridftp_type/log`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gridftp_type/user`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gridftp_type/maxConnections`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/globuscfg/globus_gridftp_type/options`
-        - optional
-        - type: string
-- `/software/globuscfg/globus_gatekeeper_jobmanager_type`
+        - Optional
+        - Type: string
+ - `/software/globuscfg/globus_gatekeeper_jobmanager_type`
     - `/software/globuscfg/globus_gatekeeper_jobmanager_type/recordname`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gatekeeper_jobmanager_type/type`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gatekeeper_jobmanager_type/job_manager`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gatekeeper_jobmanager_type/extra_config`
-        - optional
-        - type: string
-- `/software/globuscfg/globus_gatekeeper_type`
+        - Optional
+        - Type: string
+ - `/software/globuscfg/globus_gatekeeper_type`
     - `/software/globuscfg/globus_gatekeeper_type/globus_flavor_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gatekeeper_type/job_manager_path`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gatekeeper_type/globus_gatekeeper`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gatekeeper_type/extra_options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gatekeeper_type/user`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gatekeeper_type/port`
-        - optional
-        - type: type_port
+        - Optional
+        - Type: type_port
     - `/software/globuscfg/globus_gatekeeper_type/logfile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_gatekeeper_type/jobmanagers`
-        - optional
-        - type: globus_gatekeeper_jobmanager_type
-- `/software/globuscfg/globus_global_type`
+        - Optional
+        - Type: globus_gatekeeper_jobmanager_type
+ - `/software/globuscfg/globus_global_type`
     - `/software/globuscfg/globus_global_type/services`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/paths`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/globus_flavor_name`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/GLOBUS_LOCATION`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/GPT_LOCATION`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/GLOBUS_CONFIG`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/GLOBUS_TCP_PORT_RANGE`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/GLOBUS_UDP_PORT_RANGE`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/LD_LIBRARY_PATH`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/x509_user_cert`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/x509_user_key`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/x509_cert_dir`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/gridmap`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/gridmapdir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/globuscfg/globus_global_type/mds`
-        - optional
-        - type: globus_mds_type
+        - Optional
+        - Type: globus_mds_type
     - `/software/globuscfg/globus_global_type/gridftp`
-        - optional
-        - type: globus_gridftp_type
+        - Optional
+        - Type: globus_gridftp_type
     - `/software/globuscfg/globus_global_type/gatekeeper`
-        - optional
-        - type: globus_gatekeeper_type
+        - Optional
+        - Type: globus_gatekeeper_type
     - `/software/globuscfg/globus_global_type/sysconfigUpdate`
-        - optional
-        - type: boolean
-- `/software/globuscfg/globuscfg_component_type`
+        - Optional
+        - Type: boolean
+ - `/software/globuscfg/globuscfg_component_type`

@@ -1,38 +1,40 @@
+
 ### Types
 
-- `/software/myproxy/myproxy_component_policies`
+ - `/software/myproxy/myproxy_component_policies`
     - `/software/myproxy/myproxy_component_policies/renewers`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/myproxy/myproxy_component_policies/retrievers`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/myproxy/myproxy_component_policies/keyRetrievers`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/myproxy/myproxy_component_policies/trustedRetrievers`
-        - optional
-        - type: string
-- `/software/myproxy/myproxy_component`
+        - Optional
+        - Type: string
+ - `/software/myproxy/myproxy_component`
     - `/software/myproxy/myproxy_component/flavor`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/myproxy/myproxy_component/confFile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/myproxy/myproxy_component/daemonName`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/myproxy/myproxy_component/trustedDNs`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/myproxy/myproxy_component/authorizedDNs`
-        - optional
-        - type: myproxy_component_policies
+        - Optional
+        - Type: myproxy_component_policies
     - `/software/myproxy/myproxy_component/defaultDNs`
-        - optional
-        - type: myproxy_component_policies
+        - Optional
+        - Type: myproxy_component_policies
 
 ### Functions
 
-- component_myproxy_options_valid
+ - component_myproxy_options_valid
+    - Arguments:

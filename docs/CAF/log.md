@@ -1,3 +1,4 @@
+
 ### NAME
 
 CAF::Log - Simple class for handling log files

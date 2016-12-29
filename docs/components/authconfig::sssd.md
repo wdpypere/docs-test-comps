@@ -1,261 +1,261 @@
+
 ### Types
 
-- `/software/authconfig/sssd_provider_string`
-    - decription: 
+ - `/software/authconfig/sssd_provider_string`
+    - Description: 
     Valid SSSD providers.  For now we only implement ldap, simple and local
 
-- `/software/authconfig/authconfig_sssd_simple`
-    - decription: 
+ - `/software/authconfig/authconfig_sssd_simple`
+    - Description: 
     Simple access provider for SSSD.  See the sssd-simple man page.
 
     - `/software/authconfig/authconfig_sssd_simple/allow_users`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_simple/deny_users`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_simple/allow_groups`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_simple/deny_groups`
-        - optional
-        - type: string
-- `/software/authconfig/sssd_service`
-- `/software/authconfig/sssd_global`
+        - Optional
+        - Type: string
+ - `/software/authconfig/sssd_service`
+ - `/software/authconfig/sssd_global`
     - `/software/authconfig/sssd_global/debug_level`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_global/config_file_version`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_global/services`
-        - required
-        - type: sssd_service
+        - Optional
+        - Type: sssd_service
     - `/software/authconfig/sssd_global/reconnection_retries`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_global/re_expression`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/sssd_global/full_name_format`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/sssd_global/try_inotify`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/authconfig/sssd_global/krb5_rcache_dir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/sssd_global/default_domain_suffix`
-        - optional
-        - type: string
-- `/software/authconfig/sssd_pam`
+        - Optional
+        - Type: string
+ - `/software/authconfig/sssd_pam`
     - `/software/authconfig/sssd_pam/debug_level`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_pam/offline_credentials_expiration`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_pam/offline_failed_login_attempts`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_pam/offline_failed_login_delay`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_pam/pam_verbosity`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_pam/pam_id_timeout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_pam/pam_pwd_expiration_warning`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_pam/get_domains_timeout`
-        - required
-        - type: long
-- `/software/authconfig/sssd_nss`
+        - Optional
+        - Type: long
+ - `/software/authconfig/sssd_nss`
     - `/software/authconfig/sssd_nss/debug_level`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_nss/enum_cache_timeout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_nss/entry_cache_nowait_percentage`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_nss/entry_negative_timeout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/sssd_nss/filter_users`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/sssd_nss/filter_users_in_groups`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/authconfig/sssd_nss/filter_groups`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/sssd_nss/memcache_timeout`
-        - required
-        - type: long
-- `/software/authconfig/authconfig_sssd_local`
+        - Optional
+        - Type: long
+ - `/software/authconfig/authconfig_sssd_local`
     - `/software/authconfig/authconfig_sssd_local/default_shell`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_local/base_directory`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_local/create_homedir`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/authconfig/authconfig_sssd_local/remove_homedir`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/authconfig/authconfig_sssd_local/homedir_umask`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_local/skel_dir`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_local/mail_dir`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_local/userdel_cmd`
-        - optional
-        - type: string
-- `/software/authconfig/authconfig_sssd_domain`
+        - Optional
+        - Type: string
+ - `/software/authconfig/authconfig_sssd_domain`
     - `/software/authconfig/authconfig_sssd_domain/ldap`
-        - optional
-        - type: authconfig_sssd_ldap
+        - Optional
+        - Type: authconfig_sssd_ldap
     - `/software/authconfig/authconfig_sssd_domain/ipa`
-        - optional
-        - type: authconfig_sssd_ipa
+        - Optional
+        - Type: authconfig_sssd_ipa
     - `/software/authconfig/authconfig_sssd_domain/simple`
-        - optional
-        - type: authconfig_sssd_simple
+        - Optional
+        - Type: authconfig_sssd_simple
     - `/software/authconfig/authconfig_sssd_domain/local`
-        - optional
-        - type: authconfig_sssd_local
+        - Optional
+        - Type: authconfig_sssd_local
     - `/software/authconfig/authconfig_sssd_domain/access_provider`
-        - optional
-        - type: sssd_provider_string
+        - Optional
+        - Type: sssd_provider_string
     - `/software/authconfig/authconfig_sssd_domain/id_provider`
-        - optional
-        - type: sssd_provider_string
+        - Optional
+        - Type: sssd_provider_string
     - `/software/authconfig/authconfig_sssd_domain/auth_provider`
-        - optional
-        - type: sssd_provider_string
+        - Optional
+        - Type: sssd_provider_string
     - `/software/authconfig/authconfig_sssd_domain/chpass_provider`
-        - optional
-        - type: sssd_provider_string
+        - Optional
+        - Type: sssd_provider_string
     - `/software/authconfig/authconfig_sssd_domain/debug_level`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/sudo_provider`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_domain/selinux_provider`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_domain/subdomains_provider`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_domain/autofs_provider`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_domain/hostid_provider`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_domain/re_expression`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_domain/full_name_format`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_domain/lookup_family_order`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_domain/dns_resolver_timeout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/dns_discovery_domain`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_domain/override_gid`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/case_sensitive`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/authconfig/authconfig_sssd_domain/proxy_fast_alias`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/authconfig/authconfig_sssd_domain/subdomain_homedir`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_domain/proxy_pam_target`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_domain/proxy_lib_name`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/authconfig/authconfig_sssd_domain/min_id`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/max_id`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/enumerate`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/authconfig/authconfig_sssd_domain/force_timeout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/entry_cache_timeout`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/entry_cache_user_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/entry_cache_group_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/entry_cache_netgroup_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/entry_cache_service_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/entry_cache_sudo_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/entry_cache_autofs_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/cache_credentials`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/authconfig/authconfig_sssd_domain/account_cache_expiration`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/pwd_expiration_warning`
-        - optional
-        - type: long
-- `/software/authconfig/authconfig_method_sssd_type`
+        - Optional
+        - Type: long
+ - `/software/authconfig/authconfig_method_sssd_type`
     - `/software/authconfig/authconfig_method_sssd_type/nssonly`
-        - required
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/authconfig/authconfig_method_sssd_type/domains`
-        - required
-        - type: authconfig_sssd_domain
+        - Optional
+        - Type: authconfig_sssd_domain
     - `/software/authconfig/authconfig_method_sssd_type/global`
-        - required
-        - type: sssd_global
+        - Optional
+        - Type: sssd_global
     - `/software/authconfig/authconfig_method_sssd_type/pam`
-        - required
-        - type: sssd_pam
+        - Optional
+        - Type: sssd_pam
     - `/software/authconfig/authconfig_method_sssd_type/nss`
-        - required
-        - type: sssd_nss
-
+        - Optional
+        - Type: sssd_nss

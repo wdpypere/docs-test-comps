@@ -1,3 +1,4 @@
+
 ### NAME
 
 CAF::Kerberos - Class for Kerberos handling using [GSSAPI](https://metacpan.org/pod/GSSAPI).
@@ -16,8 +17,8 @@ To create a new ticket for principal SERVICE/host@REALM
     );
     return if(! defined($krb->get_context()));
 
-    ### set environment to temporary credential cache
-    ### temporary cache is cleaned-up during destroy of $krb
+    # set environment to temporary credential cache
+    # temporary cache is cleaned-up during destroy of $krb
     local %ENV;
     $krb->update_env(\%ENV);
 

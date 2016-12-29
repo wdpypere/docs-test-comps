@@ -1,3 +1,4 @@
+
 ### NAME
 
 myproxy:  NCM component to configure MyProxy server.
@@ -62,7 +63,7 @@ None.
 
 None known.
 
-Charles Loomis <charles.loomis@cern.ch>
+Charles Loomis <>
 
 Michel Jouvin <>
 

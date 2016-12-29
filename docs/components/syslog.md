@@ -1,3 +1,4 @@
+
 ### NAME
 
 NCM::syslog - adding entries and editing `/etc/syslog.conf`

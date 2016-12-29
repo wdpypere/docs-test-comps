@@ -1,3 +1,4 @@
+
 ### NAME
 
 lcas: NCM component to manage LCAS configuration file(s)
@@ -31,13 +32,13 @@ Deprecated. Mutually exclusive with `/software/components/lcas/db.`
 List of LCAS databases and associated module configaration files to configure. For each database,
 the following attributes can be specified.
 
-##### path : string (required)
+### path : string (required)
 
 The database file name. This attribute is required for any database entry.
 
 Default: none.
 
-##### module : list (optional)
+### module : list (optional)
 
 A list of each module to configure in the database, with their arguments and optionally their
 associated configuration file. See next section for supported module attributes.
@@ -67,7 +68,7 @@ Optional: write out the contents of a single configuration file
 for this plugin module. The following attributes (nlist keys) are available
 for the configuration file.
 
-##### path : string (required)
+### path : string (required)
 
 Location (absolute path) of the module configuration file. This attribute
 is required if a configuration file is configured.
@@ -94,9 +95,9 @@ None.
 
 None known.
 
-David Groep <davidg@nikhef.nl>
+David Groep <>
 
-David Groep <davidg@nikhef.nl>, Michel Jouvin <>
+David Groep <>, Michel Jouvin <>
 
 ### VERSION
 

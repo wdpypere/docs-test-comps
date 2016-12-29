@@ -1,4 +1,5 @@
-### Types
+
 ### Functions
 
-- icinga_has_host_or_hostgroup
+ - icinga_has_host_or_hostgroup
+    - Arguments:

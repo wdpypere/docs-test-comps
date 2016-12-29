@@ -1,3 +1,4 @@
+
 ### DESCRIPTION
 
 The _filesystems_ component manages the filesystems on a node. It is able
@@ -34,7 +35,7 @@ This is how the block devices definition looks like:
                    "hdb", nlist ("label", "none"),
                    "hdc", nlist ("label", "none")
                    ),
-           ### No partitions here
+           # No partitions here
            "md", nlist (
                    "md0", nlist (
                            "device_list", list (
@@ -71,7 +72,7 @@ And then, we can define the filesystems:
                    "block_device", "logical_volumes/Flanders",
                    "mount", true,
                    "mountopts", "defaults",
-                   "type", "ext2", ### God saves from crashes, you know
+                   "type", "ext2", # God saves from crashes, you know
                    "freq", 0,
                    "pass", 0,
                    "format", false,
@@ -82,7 +83,7 @@ And then, we can define the filesystems:
                    "block_device", "logical_volumes/Simpsons",
                    "mount", true,
                    "mountopts", "defaults",
-                   "type", "xfs", ### Lisa's on charge!
+                   "type", "xfs", # Lisa's on charge!
                    "freq", 0,
                    "pass", 0,
                    "format", false,

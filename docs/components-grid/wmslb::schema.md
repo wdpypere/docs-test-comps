@@ -1,750 +1,750 @@
+
 ### Types
 
-- `/software/wmslb/wmslb_component_env`
+ - `/software/wmslb/wmslb_component_env`
     - `/software/wmslb/wmslb_component_env/GLITE_LOCATION`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_LOCATION_LOG`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_LOCATION_TMP`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_LOCATION_VAR`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_LB_TYPE`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_WMS_LOCATION_VAR`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_WMS_TMP`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_WMS_USER`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_WMS_GROUP`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_HOST_CERT`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_HOST_KEY`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_WMS_QUERY_TIMEOUT`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_env/GLITE_WMS_WMPROXY_MAX_SERVED_REQUESTS`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_env/GLITE_PR_TIMEOUT`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_env/GLITE_SD_PLUGIN`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_HOST_KEY`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_HOST_CERT`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLOBUS_LOCATION`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/CONDORG_INSTALL_PATH`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/CONDOR_CONFIG`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_USER`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/X509_CERT_DIR`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/X509_VOMS_DIR`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/MYPROXY_TCP_PORT_RANGE`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/HOSTNAME`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/WMS_JOBWRAPPER_TEMPLATE`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/WMS_LOCATION_USR`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/WMS_LOCATION_BIN`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/WMS_LOCATION_ETC`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/WMS_LOCATION_LIBEXEC`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/WMS_LOCATION_LOG`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/WMS_LOCATION_SBIN`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/WMS_LOCATION_TMP`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/WMS_LOCATION_VAR`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/GLITE_WMS_CONFIG_DIR`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/LCG_GFAL_INFOSYS`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_env/LD_LIBRARY_PATH`
-        - optional
-        - type: string
-- `/software/wmslb/wmslb_component_service_special_dirs`
+        - Optional
+        - Type: string
+ - `/software/wmslb/wmslb_component_service_special_dirs`
     - `/software/wmslb/wmslb_component_service_special_dirs/perms`
-        - required
-        - type: string
-- `/software/wmslb/wmslb_component_service_conf_file`
+        - Optional
+        - Type: string
+ - `/software/wmslb/wmslb_component_service_conf_file`
     - `/software/wmslb/wmslb_component_service_conf_file/template`
-        - required
-        - type: string
-- `/software/wmslb/wmslb_component_service_common`
+        - Optional
+        - Type: string
+ - `/software/wmslb/wmslb_component_service_common`
     - `/software/wmslb/wmslb_component_service_common/name`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_common/workDirs`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_common/specialDirs`
-        - optional
-        - type: wmslb_component_service_special_dirs
+        - Optional
+        - Type: wmslb_component_service_special_dirs
     - `/software/wmslb/wmslb_component_service_common/confFiles`
-        - optional
-        - type: wmslb_component_service_conf_file
-- `/software/wmslb/wmslb_component_service_ice_opts`
+        - Optional
+        - Type: wmslb_component_service_conf_file
+ - `/software/wmslb/wmslb_component_service_ice_opts`
     - `/software/wmslb/wmslb_component_service_ice_opts/log_on_file`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_ice_opts/log_on_console`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_ice_opts/listener_port`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/Input`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ice_opts/InputType`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ice_opts/logfile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ice_opts/start_poller`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_ice_opts/purge_jobs`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_ice_opts/start_listener`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_ice_opts/start_subscription_updater`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_ice_opts/subscription_update_threshold_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/subscription_duration`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/poller_delay`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/poller_status_threshold_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/start_job_killer`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_ice_opts/job_cancellation_threshold_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/start_proxy_renewer`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_ice_opts/start_lease_updater`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_ice_opts/ice_host_cert`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ice_opts/ice_host_key`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ice_opts/cream_url_prefix`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ice_opts/cream_url_postfix`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ice_opts/creamdelegation_url_prefix`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ice_opts/creamdelegation_url_postfix`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ice_opts/cemon_url_prefix`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ice_opts/cemon_url_postfix`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ice_opts/ice_topic`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ice_opts/lease_delta_time`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/notification_frequency`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/ice_log_level`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/listener_enable_authn`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_ice_opts/listener_enable_authz`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_ice_opts/max_logfile_size`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/max_logfile_rotations`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/max_ice_threads`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/persist_dir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ice_opts/soap_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/proxy_renewal_frequency`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/bulk_query_size`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/lease_update_frequency`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/max_ice_mem`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ice_opts/ice_empty_threshold`
-        - optional
-        - type: long
-- `/software/wmslb/wmslb_component_service_ice`
+        - Optional
+        - Type: long
+ - `/software/wmslb/wmslb_component_service_ice`
     - `/software/wmslb/wmslb_component_service_ice/options`
-        - required
-        - type: wmslb_component_service_ice_opts
-- `/software/wmslb/wmslb_component_service_jc_opts`
+        - Optional
+        - Type: wmslb_component_service_ice_opts
+ - `/software/wmslb/wmslb_component_service_jc_opts`
     - `/software/wmslb/wmslb_component_service_jc_opts/CondorSubmit`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_jc_opts/CondorRemove`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_jc_opts/CondorQuery`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_jc_opts/CondorRelease`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_jc_opts/CondorDagman`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_jc_opts/SubmitFileDir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_jc_opts/OutputFileDir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_jc_opts/Input`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_jc_opts/InputType`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_jc_opts/MaximumTimeAllowedForCondorMatch`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_jc_opts/DagmanMaxPre`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_jc_opts/LockFile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_jc_opts/LogFile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_jc_opts/LogLevel`
-        - optional
-        - type: long
-        - range: 1..6
+        - Optional
+        - Type: long
+        - Range: 1..6
     - `/software/wmslb/wmslb_component_service_jc_opts/ContainerRefreshThreshold`
-        - optional
-        - type: long
-- `/software/wmslb/wmslb_component_service_jc`
+        - Optional
+        - Type: long
+ - `/software/wmslb/wmslb_component_service_jc`
     - `/software/wmslb/wmslb_component_service_jc/options`
-        - required
-        - type: wmslb_component_service_jc_opts
-- `/software/wmslb/wmslb_component_service_lbproxy_opts`
-- `/software/wmslb/wmslb_component_service_lbproxy`
+        - Optional
+        - Type: wmslb_component_service_jc_opts
+ - `/software/wmslb/wmslb_component_service_lbproxy_opts`
+ - `/software/wmslb/wmslb_component_service_lbproxy`
     - `/software/wmslb/wmslb_component_service_lbproxy/options`
-        - optional
-        - type: wmslb_component_service_lbproxy_opts
-- `/software/wmslb/wmslb_component_service_lm_opts`
+        - Optional
+        - Type: wmslb_component_service_lbproxy_opts
+ - `/software/wmslb/wmslb_component_service_lm_opts`
     - `/software/wmslb/wmslb_component_service_lm_opts/JobsPerCondorLog`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_lm_opts/LockFile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_lm_opts/LogFile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_lm_opts/LogLevel`
-        - optional
-        - type: long
-        - range: 1..6
+        - Optional
+        - Type: long
+        - Range: 1..6
     - `/software/wmslb/wmslb_component_service_lm_opts/ExternalLogFile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_lm_opts/MainLoopDuration`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_lm_opts/CondorLogDir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_lm_opts/CondorLogRecycleDir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_lm_opts/MonitorInternalDir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_lm_opts/IdRepositoryName`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_lm_opts/AbortedJobsTimeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_lm_opts/RemoveJobFiles`
-        - optional
-        - type: boolean
-- `/software/wmslb/wmslb_component_service_lm`
+        - Optional
+        - Type: boolean
+ - `/software/wmslb/wmslb_component_service_lm`
     - `/software/wmslb/wmslb_component_service_lm/options`
-        - required
-        - type: wmslb_component_service_lm_opts
-- `/software/wmslb/wmslb_component_service_logger_opts`
-- `/software/wmslb/wmslb_component_service_logger`
+        - Optional
+        - Type: wmslb_component_service_lm_opts
+ - `/software/wmslb/wmslb_component_service_logger_opts`
+ - `/software/wmslb/wmslb_component_service_logger`
     - `/software/wmslb/wmslb_component_service_logger/options`
-        - optional
-        - type: wmslb_component_service_logger_opts
-- `/software/wmslb/wmslb_component_service_ns_opts`
+        - Optional
+        - Type: wmslb_component_service_logger_opts
+ - `/software/wmslb/wmslb_component_service_ns_opts`
     - `/software/wmslb/wmslb_component_service_ns_opts/II_Port`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ns_opts/Gris_Port`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ns_opts/II_Timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ns_opts/Gris_Timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ns_opts/II_DN`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ns_opts/Gris_DN`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ns_opts/II_Contact`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ns_opts/BacklogSize`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ns_opts/ListeningPort`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ns_opts/MasterThreads`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ns_opts/DispatcherThreads`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ns_opts/SandboxStagingPath`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ns_opts/LogFile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_ns_opts/LogLevel`
-        - optional
-        - type: long
-        - range: 1..6
+        - Optional
+        - Type: long
+        - Range: 1..6
     - `/software/wmslb/wmslb_component_service_ns_opts/EnableQuotaManagement`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_ns_opts/MaxInputSandboxSize`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ns_opts/EnableDynamicQuotaAdjustment`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_ns_opts/QuotaAdjustmentAmount`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_ns_opts/QuotaInsensibleDiskPortion`
-        - optional
-        - type: long
-- `/software/wmslb/wmslb_component_service_ns`
+        - Optional
+        - Type: long
+ - `/software/wmslb/wmslb_component_service_ns`
     - `/software/wmslb/wmslb_component_service_ns/options`
-        - required
-        - type: wmslb_component_service_ns_opts
-- `/software/wmslb/wmslb_component_service_wm_opts`
+        - Optional
+        - Type: wmslb_component_service_ns_opts
+ - `/software/wmslb/wmslb_component_service_wm_opts`
     - `/software/wmslb/wmslb_component_service_wm_opts/CeMonitorAsyncPort`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wm_opts/CeMonitorServices`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_opts/DispatcherType`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_opts/EnableBulkMM`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_wm_opts/EnableIsmIiGlue13Purchasing`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_wm_opts/EnableIsmIiGlue20Purchasing`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_wm_opts/EnableRecovery`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_wm_opts/ExpiryPeriod`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wm_opts/Input`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_opts/IsmBlackList`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_opts/IsmDump`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_opts/IsmIiG2LDAPCEFilterExt`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_opts/IsmIiG2LDAPSEFilterExt`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_opts/IsmIiLDAPCEFilterExt`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_opts/IsmIiPurchasingRate`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wm_opts/IsmThreads`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_wm_opts/IsmUpdateRate`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wm_opts/JobWrapperTemplateDir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_opts/LogFile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_opts/LogLevel`
-        - optional
-        - type: long
-        - range: 1..6
+        - Optional
+        - Type: long
+        - Range: 1..6
     - `/software/wmslb/wmslb_component_service_wm_opts/MaxReplansCount`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wm_opts/MatchRetryPeriod`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wm_opts/MaxOutputSandboxSize`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wm_opts/MaxRetryCount`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wm_opts/PropagateToLRMS`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_opts/QueueSize`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wm_opts/ReplanGracePeriod`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wm_opts/RuntimeMalloc`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_opts/SbRetryDifferentProtocols`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_wm_opts/WmsRequirements`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_opts/WorkerThreads`
-        - optional
-        - type: long
-- `/software/wmslb/wmslb_component_service_wm_jw`
+        - Optional
+        - Type: long
+ - `/software/wmslb/wmslb_component_service_wm_jw`
     - `/software/wmslb/wmslb_component_service_wm_jw/file`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wm_jw/contents`
-        - required
-        - type: string
-- `/software/wmslb/wmslb_component_service_wm`
+        - Optional
+        - Type: string
+ - `/software/wmslb/wmslb_component_service_wm`
     - `/software/wmslb/wmslb_component_service_wm/jobWrapper`
-        - optional
-        - type: wmslb_component_service_wm_jw
+        - Optional
+        - Type: wmslb_component_service_wm_jw
     - `/software/wmslb/wmslb_component_service_wm/options`
-        - required
-        - type: wmslb_component_service_wm_opts
-- `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_script`
+        - Optional
+        - Type: wmslb_component_service_wm_opts
+ - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_script`
     - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_script/name`
-        - required
-        - type: string
-- `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts`
+        - Optional
+        - Type: string
+ - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts`
     - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts/ThresholdCPULoad1`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts/ThresholdCPULoad5`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts/ThresholdCPULoad15`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts/ThresholdMemUsage`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts/ThresholdSwapUsage`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts/ThresholdFDNum`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts/ThresholdDiskUsage`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts/ThresholdFLSize`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts/ThresholdFLNum`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts/ThresholdJDSize`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts/ThresholdJDNum`
-        - required
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_loadmonitor_opts/ThresholdFTPConn`
-        - required
-        - type: long
-- `/software/wmslb/wmslb_component_service_wmproxy_opts`
+        - Optional
+        - Type: long
+ - `/software/wmslb/wmslb_component_service_wmproxy_opts`
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/ApacheLogLevel`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/ArgusAuthz`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/ArgusPepEndpoints`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/AsyncJobStart`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/EnableServiceDiscovery`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/GridFTPPort`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/LBLocalLogger`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/LBServer`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/LBServiceDiscoveryType`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/ListMatchRootPath`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/LoadMonitor`
-        - required
-        - type: wmslb_component_service_wmproxy_loadmonitor_opts
+        - Optional
+        - Type: wmslb_component_service_wmproxy_loadmonitor_opts
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/LogFile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/LogLevel`
-        - optional
-        - type: long
-        - range: 1..6
+        - Optional
+        - Type: long
+        - Range: 1..6
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/MaxServedRequests`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/MinPerusalTimeInterval`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/SandboxStagingPath`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/ServiceDiscoveryInfoValidity`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmproxy_opts/WeightsCacheValidity`
-        - optional
-        - type: long
-- `/software/wmslb/wmslb_component_service_wmproxy`
+        - Optional
+        - Type: long
+ - `/software/wmslb/wmslb_component_service_wmproxy`
     - `/software/wmslb/wmslb_component_service_wmproxy/LoadMonitorScript`
-        - required
-        - type: wmslb_component_service_wmproxy_loadmonitor_script
+        - Optional
+        - Type: wmslb_component_service_wmproxy_loadmonitor_script
     - `/software/wmslb/wmslb_component_service_wmproxy/options`
-        - required
-        - type: wmslb_component_service_wmproxy_opts
-- `/software/wmslb/wmslb_component_service_wmsclient_opts`
+        - Optional
+        - Type: wmslb_component_service_wmproxy_opts
+ - `/software/wmslb/wmslb_component_service_wmsclient_opts`
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/ErrorStorage`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/OutputStorage`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/ListenerStorage`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/virtualorganisation`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/rank`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/requirements`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/RetryCount`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/ShallowRetryCount`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/WMProxyEndPoints`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/LBAddress`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/MyProxyServer`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/JobProvenance`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/PerusalFileEnable`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/AllowZippedISB`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/LBServiceDiscoveryType`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component_service_wmsclient_opts/WMProxyServiceDiscoveryType`
-        - optional
-        - type: string
-- `/software/wmslb/wmslb_component_service_wmsclient`
+        - Optional
+        - Type: string
+ - `/software/wmslb/wmslb_component_service_wmsclient`
     - `/software/wmslb/wmslb_component_service_wmsclient/options`
-        - optional
-        - type: wmslb_component_service_wmsclient_opts
-- `/software/wmslb/wmslb_component_common_opts`
+        - Optional
+        - Type: wmslb_component_service_wmsclient_opts
+ - `/software/wmslb/wmslb_component_common_opts`
     - `/software/wmslb/wmslb_component_common_opts/LBProxy`
-        - optional
-        - type: boolean
-- `/software/wmslb/wmslb_component_services`
+        - Optional
+        - Type: boolean
+ - `/software/wmslb/wmslb_component_services`
     - `/software/wmslb/wmslb_component_services/ice`
-        - optional
-        - type: wmslb_component_service_ice
+        - Optional
+        - Type: wmslb_component_service_ice
     - `/software/wmslb/wmslb_component_services/jc`
-        - optional
-        - type: wmslb_component_service_jc
+        - Optional
+        - Type: wmslb_component_service_jc
     - `/software/wmslb/wmslb_component_services/lbproxy`
-        - optional
-        - type: wmslb_component_service_lbproxy
+        - Optional
+        - Type: wmslb_component_service_lbproxy
     - `/software/wmslb/wmslb_component_services/logger`
-        - optional
-        - type: wmslb_component_service_logger
+        - Optional
+        - Type: wmslb_component_service_logger
     - `/software/wmslb/wmslb_component_services/lm`
-        - optional
-        - type: wmslb_component_service_lm
+        - Optional
+        - Type: wmslb_component_service_lm
     - `/software/wmslb/wmslb_component_services/ns`
-        - optional
-        - type: wmslb_component_service_ns
+        - Optional
+        - Type: wmslb_component_service_ns
     - `/software/wmslb/wmslb_component_services/wm`
-        - optional
-        - type: wmslb_component_service_wm
+        - Optional
+        - Type: wmslb_component_service_wm
     - `/software/wmslb/wmslb_component_services/wmproxy`
-        - optional
-        - type: wmslb_component_service_wmproxy
+        - Optional
+        - Type: wmslb_component_service_wmproxy
     - `/software/wmslb/wmslb_component_services/wmsclient`
-        - optional
-        - type: wmslb_component_service_wmsclient
-- `/software/wmslb/wmslb_component`
+        - Optional
+        - Type: wmslb_component_service_wmsclient
+ - `/software/wmslb/wmslb_component`
     - `/software/wmslb/wmslb_component/confFile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component/env`
-        - optional
-        - type: wmslb_component_env
+        - Optional
+        - Type: wmslb_component_env
     - `/software/wmslb/wmslb_component/envScript`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/wmslb/wmslb_component/services`
-        - optional
-        - type: wmslb_component_services
+        - Optional
+        - Type: wmslb_component_services
     - `/software/wmslb/wmslb_component/common`
-        - optional
-        - type: wmslb_component_common_opts
+        - Optional
+        - Type: wmslb_component_common_opts
     - `/software/wmslb/wmslb_component/workDirDefaultParent`
-        - optional
-        - type: string
-
+        - Optional
+        - Type: string

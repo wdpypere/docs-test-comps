@@ -1,3 +1,4 @@
+
 ### NAME
 
 ncm-filecopy: NCM component to manage simple configuration files and services.
@@ -36,37 +37,37 @@ This nlist contains one entry by file to manage. The key is the escaped file nam
 property described below may be specified. Most properties are optional (or have a default value) but either
 'config' or 'source' MUST be specified and they are mutually exclusive.
 
-##### config: string (optional but 'config' OR 'source' required)
+### config: string (optional but 'config' OR 'source' required)
 
 The file content specified as a string.
 
 Default: none
 
-##### source: string (optional but 'config' OR 'source' required)
+### source: string (optional but 'config' OR 'source' required)
 
 The name of a source file already present on the machine to use as the content for the managed file.
 
 Default: none
 
-##### owner: string (optional)
+### owner: string (optional)
 
 The userid of the file owner. It can also be a 'user:group' specification (like with chown).
 
 Default: none
 
-##### group: string (optional)
+### group: string (optional)
 
 The group of the file owner. It is ignored is owner is specified as 'user:group'.
 
 Default: none
 
-##### perms: string (optional)
+### perms: string (optional)
 
 Permissions of the managed file. If not specified, the default permissions on the system will be used.
 
 Default: none
 
-##### restart: string (optional)
+### restart: string (optional)
 
 A command to execute if the file is modified. It is typically used to restart a service but any valid
 command can be specified, including several commands separated by ';'. If not specified, the file is
@@ -75,21 +76,21 @@ have been updated and if several files specify the same restart command, it is e
 
 Default: none
 
-##### backup: boolean (required)
+### backup: boolean (required)
 
 This property specifies if an existing version of the file must be backuped before being updated (backup
 extension is '.old').
 
 Default: true
 
-##### no\_utf8: boolean (optional)
+### no\_utf8: boolean (optional)
 
 By default, the file content is converted to UTF8. Define this property to 'true' to prevent this
 conversion.
 
 Default: none
 
-##### forceRestart: boolean (required)
+### forceRestart: boolean (required)
 
 A boolean that defines if the restart command (if any defined) 
 must be executed even though the file was up-to-date (default behaviour is to execute the
@@ -101,14 +102,14 @@ Default: false
 
 ### EXAMPLE
 
-##### scenario 1 : Create a file
+### scenario 1 : Create a file
 
     prefix '/software/components/filecopy/services/{/tmp/test}';
     'config'='Contents of the file';
     'owner'='root:root';
     'perms'='0644';
 
-##### scenario 2 : Create a script and execute it
+### scenario 2 : Create a script and execute it
 
     prefix '/software/components/filecopy/services/{/tmp/test.sh}';
     'config' = "#!/bin/bash\n echo Hello World";
@@ -116,7 +117,7 @@ Default: false
     'owner'='root:root';
     'perms'='0755';
 
-##### scenario 3 : Copy a file (/tmp/source)
+### scenario 3 : Copy a file (/tmp/source)
 
     prefix '/software/components/filecopy/services/{/tmp/second-file}';
     'source'='/tmp/source';

@@ -1,3 +1,4 @@
+
 ### NAME
 
 NCM::Component::spma - Quattor's package manager

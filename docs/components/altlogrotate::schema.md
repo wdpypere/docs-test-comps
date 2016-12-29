@@ -1,132 +1,132 @@
+
 ### Types
 
-- `/software/altlogrotate/structure_altlogrotate_scripts`
+ - `/software/altlogrotate/structure_altlogrotate_scripts`
     - `/software/altlogrotate/structure_altlogrotate_scripts/prerotate`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_scripts/postrotate`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_scripts/firstaction`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_scripts/lastaction`
-        - optional
-        - type: string
-- `/software/altlogrotate/structure_altlogrotate_create_params`
+        - Optional
+        - Type: string
+ - `/software/altlogrotate/structure_altlogrotate_create_params`
     - `/software/altlogrotate/structure_altlogrotate_create_params/mode`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_create_params/owner`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_create_params/group`
-        - required
-        - type: string
-- `/software/altlogrotate/structure_altlogrotate_logrot`
+        - Optional
+        - Type: string
+ - `/software/altlogrotate/structure_altlogrotate_logrot`
     - `/software/altlogrotate/structure_altlogrotate_logrot/pattern`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_logrot/global`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/overwrite`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/include`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_logrot/compress`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/copy`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/copytruncate`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/delaycompress`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/ifempty`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/missingok`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/sharedscripts`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/dateext`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/compresscmd`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_logrot/uncompresscmd`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_logrot/compressext`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_logrot/compressoptions`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_logrot/create`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/createparams`
-        - optional
-        - type: structure_altlogrotate_create_params
+        - Optional
+        - Type: structure_altlogrotate_create_params
     - `/software/altlogrotate/structure_altlogrotate_logrot/extension`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_logrot/mail`
-        - optional
-        - type: type_email
+        - Optional
+        - Type: type_email
     - `/software/altlogrotate/structure_altlogrotate_logrot/nomail`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/mailselect`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_logrot/olddir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_logrot/noolddir`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/rotate`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/altlogrotate/structure_altlogrotate_logrot/start`
-        - optional
-        - type: long
-        - range: 0..
+        - Optional
+        - Type: long
+        - Range: 0..
     - `/software/altlogrotate/structure_altlogrotate_logrot/size`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_logrot/taboo_replace`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/altlogrotate/structure_altlogrotate_logrot/tabooext`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_logrot/frequency`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/structure_altlogrotate_logrot/scripts`
-        - optional
-        - type: structure_altlogrotate_scripts
-- `/software/altlogrotate/component_altlogrotate`
+        - Optional
+        - Type: structure_altlogrotate_scripts
+ - `/software/altlogrotate/component_altlogrotate`
     - `/software/altlogrotate/component_altlogrotate/configFile`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/component_altlogrotate/configDir`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/altlogrotate/component_altlogrotate/entries`
-        - optional
-        - type: structure_altlogrotate_logrot
-
+        - Optional
+        - Type: structure_altlogrotate_logrot

@@ -1,3 +1,4 @@
+
 ### NAME
 
 vomsclient: NCM component to manage VOMS client configuration
@@ -34,38 +35,38 @@ supporting the VO. Supported properties for each VOMS server are described below
 Each VOMS server is described with a nlist. The following properties 
 can be used to describe one VOMS server.
 
-##### name (optional, deprecated)
+### name (optional, deprecated)
 
 The complete name of the VO, if the 'vos' key is an alias name. This
 property is deprecated : it is recommended to use the complete name of the 
 VO as 'vos' key. 
 
-##### host (required)
+### host (required)
 
 The complete hostname of the VOMS server.
 
-##### port (required)
+### port (required)
 
 The port number of the VOMS server.
 
-##### cert (required)
+### cert (required)
 
 The certificate for the server. 
 
-##### oldcert (optional)
+### oldcert (optional)
 
 The expiring certificate for the server. This allows smooth transition
 between 2 certificates. 
 
-##### DN (optional)
+### DN (optional)
 
 DN of VOMS server certificate
 
-##### issuer (optional)
+### issuer (optional)
 
 DN of VOMS server certificate issuer.
 
-##### lscfile (optional)
+### lscfile (optional)
 
 Use LSC format instead of certificate to configure vomsCertsDir
 

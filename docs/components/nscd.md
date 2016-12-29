@@ -1,3 +1,4 @@
+
 ### NAME
 
 NCM::nscd - NCM component to configure nscd.

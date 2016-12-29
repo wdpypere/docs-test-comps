@@ -1,3 +1,4 @@
+
 ### DESCRIPTION
 
 This component configures syslog-ng, an alternative logging facility

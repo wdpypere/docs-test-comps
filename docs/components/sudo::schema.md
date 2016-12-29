@@ -1,261 +1,263 @@
+
 ### Types
 
-- `/software/sudo/type_host_sudo`
-- `/software/sudo/type_user_alias`
-- `/software/sudo/type_cmd_alias`
-- `/software/sudo/type_host_alias`
-- `/software/sudo/structure_privilege_line`
+ - `/software/sudo/type_host_sudo`
+ - `/software/sudo/type_user_alias`
+ - `/software/sudo/type_cmd_alias`
+ - `/software/sudo/type_host_alias`
+ - `/software/sudo/structure_privilege_line`
     - `/software/sudo/structure_privilege_line/user`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_privilege_line/run_as`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_privilege_line/host`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_privilege_line/options`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_privilege_line/cmd`
-        - required
-        - type: string
-- `/software/sudo/structure_sudo_default_options`
+        - Optional
+        - Type: string
+ - `/software/sudo/structure_sudo_default_options`
     - `/software/sudo/structure_sudo_default_options/long_otp_prompt`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/ignore_dot`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/mail_always`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/mail_badpass`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/mail_no_user`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/mail_no_host`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/mail_no_perms`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/tty_tickets`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/lecture`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/authenticate`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/root_sudo`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/log_host`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/log_year`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/shell_noargs`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/set_home`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/always_set_home`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/path_info`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/preserve_groups`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/fqdn`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/insults`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/requiretty`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/env_editor`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/rootpw`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/runaspw`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/targetpw`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/set_logname`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/stay_setuid`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/env_reset`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/use_loginclass`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/visiblepw`
-        - optional
-        - type: boolean
+        - Optional
+        - Type: boolean
     - `/software/sudo/structure_sudo_default_options/passwd_tries`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/sudo/structure_sudo_default_options/loglinelen`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/sudo/structure_sudo_default_options/timestamp_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/sudo/structure_sudo_default_options/passwd_timeout`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/sudo/structure_sudo_default_options/umask`
-        - optional
-        - type: long
+        - Optional
+        - Type: long
     - `/software/sudo/structure_sudo_default_options/mailsub`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/env_keep`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/env_delete`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/badpass_message`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/timestampdir`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/timestampowner`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/passprompt`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/runas_default`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/syslog_goodpri`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/syslog_badpri`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/editor`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/logfile`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/syslog`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/mailerpath`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/mailerflags`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/mailto`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/exempt_group`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/verifypw`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/listpw`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_default_options/secure_path`
-        - optional
-        - type: string
-- `/software/sudo/structure_sudo_defaults`
+        - Optional
+        - Type: string
+ - `/software/sudo/structure_sudo_defaults`
     - `/software/sudo/structure_sudo_defaults/user`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_defaults/run_as`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_defaults/host`
-        - optional
-        - type: type_host_sudo
+        - Optional
+        - Type: type_host_sudo
     - `/software/sudo/structure_sudo_defaults/cmd`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_defaults/options`
-        - required
-        - type: structure_sudo_default_options
-- `/software/sudo/structure_sudo_ldap`
+        - Optional
+        - Type: structure_sudo_default_options
+ - `/software/sudo/structure_sudo_ldap`
     - `/software/sudo/structure_sudo_ldap/dn`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_ldap/objectClass`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_ldap/sudoOption`
-        - optional
-        - type: structure_sudo_default_options
+        - Optional
+        - Type: structure_sudo_default_options
     - `/software/sudo/structure_sudo_ldap/description`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_ldap/sudoUser`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_ldap/sudoRunAsUser`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_ldap/sudoHost`
-        - required
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_sudo_ldap/sudoCommand`
-        - required
-        - type: string
-- `/software/sudo/structure_component_sudo`
+        - Optional
+        - Type: string
+ - `/software/sudo/structure_component_sudo`
     - `/software/sudo/structure_component_sudo/general_options`
-        - optional
-        - type: structure_sudo_defaults
+        - Optional
+        - Type: structure_sudo_defaults
     - `/software/sudo/structure_component_sudo/user_aliases`
-        - optional
-        - type: type_user_alias
+        - Optional
+        - Type: type_user_alias
     - `/software/sudo/structure_component_sudo/run_as_aliases`
-        - optional
-        - type: type_user_alias
+        - Optional
+        - Type: type_user_alias
     - `/software/sudo/structure_component_sudo/host_aliases`
-        - optional
-        - type: type_host_alias
+        - Optional
+        - Type: type_host_alias
     - `/software/sudo/structure_component_sudo/cmd_aliases`
-        - optional
-        - type: type_cmd_alias
+        - Optional
+        - Type: type_cmd_alias
     - `/software/sudo/structure_component_sudo/privilege_lines`
-        - optional
-        - type: structure_privilege_line
+        - Optional
+        - Type: structure_privilege_line
     - `/software/sudo/structure_component_sudo/includes`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_component_sudo/includes_dirs`
-        - optional
-        - type: string
+        - Optional
+        - Type: string
     - `/software/sudo/structure_component_sudo/ldap`
-        - optional
-        - type: structure_sudo_ldap
+        - Optional
+        - Type: structure_sudo_ldap
 
 ### Functions
 
-- is_host_sudo
+ - is_host_sudo
+    - Arguments:
