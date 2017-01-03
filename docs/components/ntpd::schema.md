@@ -265,4 +265,3 @@
 ### Functions
 
  - valid_ntpd_logconfig_list
-    - Arguments:

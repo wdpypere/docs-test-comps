@@ -19,7 +19,7 @@ Module provides methods to handle the retrieval of the profiles.
     and a `CAF::FileWriter` object with the
     downloaded contents if they had to be downloaded.
 
-    Should be called ony by [download](../components/download.md).
+    Should be called ony by `download`.
 
 - download
 

@@ -83,7 +83,7 @@
         - Type: long
         - Range: 0..1
     - `/software/ccm/component_ccm/base_url`
-        - Description: If [profile](../components/profile.md) is not a URL, a profile url will be calculated from `base_url` and the local hostname.
+        - Description: If `profile` is not a URL, a profile url will be calculated from `base_url` and the local hostname.
         - Optional
         - Type: type_absoluteURI
     - `/software/ccm/component_ccm/dbformat`

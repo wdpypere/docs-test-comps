@@ -118,4 +118,3 @@
 ### Functions
 
  - lcgbdii_check_params
-    - Arguments:

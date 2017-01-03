@@ -677,6 +677,4 @@
 ### Functions
 
  - postgresql_is_hba_db
-    - Arguments:
  - postgresql_is_hba_address
-    - Arguments:

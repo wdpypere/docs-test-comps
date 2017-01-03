@@ -538,4 +538,3 @@
       0 if one of the values is 'nologging'
       -1 if one of the values is 'any'
 
-    - Arguments:

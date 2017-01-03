@@ -38,4 +38,3 @@
 ### Functions
 
  - component_profile_script_valid
-    - Arguments:

@@ -34,4 +34,3 @@
 ### Functions
 
  - chkconfig_allow_combinations
-    - Arguments:

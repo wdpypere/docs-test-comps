@@ -27,4 +27,3 @@
 ### Functions
 
  - component_named_valid
-    - Arguments:

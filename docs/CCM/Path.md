@@ -48,7 +48,7 @@ to manipulate absolute paths
 
 - \_boolean
 
-    bool overload: [Path](../CAF/Path.md) instance is always true (avoids stringification on logic test)
+    bool overload: `Path` instance is always true (avoids stringification on logic test)
 
 - \_stringify
 

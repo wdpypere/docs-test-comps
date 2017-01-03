@@ -113,28 +113,28 @@ with the `set_logfile` method.
 
 - `info(@array)`: boolean
 
-    Logs using [syslog](../components/syslog.md) method with `info` priority
+    Logs using `syslog` method with `info` priority
     and reports `@array` using the `report` method, but with a `[INFO]` prefix.
 
 - `OK(@array)`: boolean
 
-    Logs using [syslog](../components/syslog.md) method with `notice` priority
+    Logs using `syslog` method with `notice` priority
     and reports `@array` using the `report` method, but with a `[OK]` prefix.
 
 - `warn(@array)`: boolean
 
-    Logs using [syslog](../components/syslog.md) method with `warning` priority
+    Logs using `syslog` method with `warning` priority
     and reports `@array` using the `report` method, but with a `[WARN]` prefix.
 
 - `error(@array)`: boolean
 
-    Logs using [syslog](../components/syslog.md) method with `err` priority
+    Logs using `syslog` method with `err` priority
     and reports `@array` using the `report` method, but with a `[ERROR]` prefix.
 
 - `verbose(@array)`: boolean
 
     If `verbose` is enabled (via `setup_reporter`), the `verbose` method
-    logs using [syslog](../components/syslog.md) method with `notice` priority
+    logs using `syslog` method with `notice` priority
     and reports `@array` using the `report` method, but with a `[VERB]` prefix.
 
 - `debug($debuglvl, @array)`: boolean

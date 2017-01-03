@@ -896,9 +896,7 @@ datastores, vnets, hosts names, etc
     - Description: 
 check if a specific type of database has the right attributes
 
-    - Arguments:
  - is_consistent_datastore
     - Description: 
 check if a specific type of datastore has the right attributes
 
-    - Arguments:

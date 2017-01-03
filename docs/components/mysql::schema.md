@@ -68,8 +68,5 @@
 ### Functions
 
  - component_mysql_valid
-    - Arguments:
  - component_mysql_check_db_script
-    - Arguments:
  - component_mysql_password_valid
-    - Arguments:

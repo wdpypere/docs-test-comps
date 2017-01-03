@@ -277,10 +277,6 @@
 ### Functions
 
  - xrootd_component_node_config_valid
-    - Arguments:
  - xrootd_component_options_valid
-    - Arguments:
  - xrootd_component_access_rules_valid
-    - Arguments:
  - is_xrootd_logKeep
-    - Arguments:

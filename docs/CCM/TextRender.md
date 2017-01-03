@@ -25,7 +25,7 @@ difference the support of a `EDG::WP4::CCM:Element` instance as contents.
             using TT to render a `Config::General` compatible file.
             (This is an alias for the `CCM/general` TT module).
 
-            Contents is a hashref (does not require a [Element](../CCM/Element.md) instance),
+            Contents is a hashref (does not require a `Element` instance),
             with key/value pairs generated according to
             the basetype of the value as follows:
 

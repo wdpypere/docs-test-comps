@@ -1,7 +1,7 @@
 
 ### NAME
 
-NCM::Component::Systemd::UnitFile handles the configuration of [ncm-systemd](../components/systemd.md) unitfiles.
+NCM::Component::Systemd::UnitFile handles the configuration of `ncm-systemd` unitfiles.
 
 #### Public methods
 

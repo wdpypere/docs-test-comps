@@ -57,4 +57,3 @@
 ### Functions
 
  - component_lcmaps_valid
-    - Arguments:

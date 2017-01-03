@@ -7,7 +7,7 @@ NCM::systemd - NCM systemd component
 
 - Configure()
 
-    Configures [systemd](../components/systemd.md) for each supported sub-system
+    Configures `systemd` for each supported sub-system
 
     - Service
 

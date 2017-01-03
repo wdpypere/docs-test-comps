@@ -42,4 +42,3 @@
 ### Functions
 
  - component_lcas_valid
-    - Arguments:

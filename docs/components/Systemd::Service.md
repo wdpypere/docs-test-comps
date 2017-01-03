@@ -1,7 +1,7 @@
 
 ### NAME
 
-NCM::Component::Systemd::Service handles the [ncm-systemd](../components/systemd.md) units.
+NCM::Component::Systemd::Service handles the `ncm-systemd` units.
 
 #### Public methods
 
@@ -23,22 +23,22 @@ NCM::Component::Systemd::Service handles the [ncm-systemd](../components/systemd
 - set\_unconfigured\_default
 
     Set the default behaviour for unconfigured units from `ncn-systemd`
-    and legacy [ncm-chkconfig](../components/chkconfig.md).
+    and legacy `ncm-chkconfig`.
 
 - gather\_configured\_units
 
     Gather the list of all configured units from both `ncm-systemd`
-    and legacy [ncm-chkconfig](../components/chkconfig.md) location, and take appropriate actions.
+    and legacy `ncm-chkconfig` location, and take appropriate actions.
 
-    For any unit defined in both [ncm-systemd](../components/systemd.md) and [ncm-chkconfig](../components/chkconfig.md) location,
-    the [ncm-systemd](../components/systemd.md) settings will be used.
+    For any unit defined in both `ncm-systemd` and `ncm-chkconfig` location,
+    the `ncm-systemd` settings will be used.
 
     Returns a hash reference with key the unit name and value the unit detail.
 
 - gather\_current\_units
 
     Gather list of current units from both `systemctl` and legacy `chkconfig`
-    using resp. `unit` and [chkconfig](../components/chkconfig.md) `current_units` methods.
+    using resp. `unit` and `chkconfig` `current_units` methods.
 
     The hashref `relevant_units` is used to run minimal set
     of system commands where possible: e.g. if the hashref represents the

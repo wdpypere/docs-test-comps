@@ -33,4 +33,3 @@
 ### Functions
 
  - dirperm_permissions_valid
-    - Arguments:

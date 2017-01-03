@@ -40,4 +40,3 @@
 ### Functions
 
  - component_filecopy_valid
-    - Arguments:

@@ -145,4 +145,3 @@
 ### Functions
 
  - has_unique_attr
-    - Arguments:

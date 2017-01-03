@@ -300,12 +300,7 @@
 ### Functions
 
  - component_dpmlfc_number_string_valid
-    - Arguments:
  - component_dpmlfc_global_options_valid
-    - Arguments:
  - component_dpmlfc_xroot_access_rules_valid
-    - Arguments:
  - component_dpmlfc_node_config_valid
-    - Arguments:
  - component_dpmlfc_dav_config_valid
-    - Arguments:

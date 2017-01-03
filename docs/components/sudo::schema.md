@@ -260,4 +260,3 @@
 ### Functions
 
  - is_host_sudo
-    - Arguments:

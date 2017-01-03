@@ -37,4 +37,3 @@
 ### Functions
 
  - component_myproxy_options_valid
-    - Arguments:
