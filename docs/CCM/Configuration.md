@@ -45,7 +45,7 @@ Module provides the Configuration class, to manipulate confgurations.
     Unless the anonymous flag is set to true, each process that creates a
     Configuration instance, creates a file named `ccm-active-profile.$cid.$pid`
     (with `$cid` the CID and `$pid` the process ID) under the `profile.$cid`
-    directory in the `CacheManager` cache path. The presence of this file protects
+    directory in the [CacheManager](../CCM/CacheManager.md) cache path. The presence of this file protects
     the process from getting this particular CID removed by the `ccm-purge` command
     (e.g. by the daily purge cron job).
     If the anonymous flag is set to -1, the permissions of the user to create this file
