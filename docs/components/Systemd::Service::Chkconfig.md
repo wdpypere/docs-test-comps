@@ -2,7 +2,7 @@
 ### NAME
 
 NCM::Component::Systemd::Service::Chkconfig is a class handling services
-that can be controlled via (older) `ncm-chkconfig`.
+that can be controlled via (older) [ncm-chkconfig](../components/chkconfig.md).
 
 #### Public methods
 
@@ -67,7 +67,7 @@ that can be controlled via (older) `ncm-chkconfig`.
 
 - convert\_runlevels
 
-    Convert the `ncm-chkconfig` levels to new systemsctl targets
+    Convert the [ncm-chkconfig](../components/chkconfig.md) levels to new systemsctl targets
 
     `legacylevel` is a string with integers e.g. "234".
     Retrun a array reference with the targets.

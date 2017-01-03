@@ -6,7 +6,7 @@ authconfig: NCM component to manage system authentication services.
 ### DESCRIPTION
 
 The _authconfig_ component manages the system authentication methods
-on RedHat systems using the `authconfig` command.  In addition, it can
+on RedHat systems using the [authconfig](../components/authconfig.md) command.  In addition, it can
 set additional operational parameters for LDAP authentication by
 modifying the `/etc/ldap.conf` (SL5) or the `/etc/nslcd.conf` (SL6) files
 directly.  It will also enable/disable NSCD support on the client.
