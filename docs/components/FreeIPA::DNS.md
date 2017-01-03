@@ -2,7 +2,7 @@
 ### NAME
 
 NCM::Component::FreeIPA::DNS adds DNS related methods to
-[NCM::Component::FreeIPA::Client](https://metacpan.org/pod/NCM::Component::FreeIPA::Client).
+[FreeIPA::Client](../components/FreeIPA::Client.md).
 
 #### Public methods
 

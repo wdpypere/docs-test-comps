@@ -2,7 +2,7 @@
 ### NAME
 
 NCM::Component::FreeIPA::Group adds group related methods to
-[NCM::Component::FreeIPA::Client](https://metacpan.org/pod/NCM::Component::FreeIPA::Client).
+[FreeIPA::Client](../components/FreeIPA::Client.md).
 
 #### Public methods
 

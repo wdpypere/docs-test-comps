@@ -12,7 +12,7 @@ NCM::Component::spma::ips - NCM SPMA configuration component for IPS
 Invoked by **NCM::Component::spma** via `ncm-ncd --configure ncm-spma` when
 `/software/components/spma/packager` is **ips**. Processes requests for
 IPS packages to be added to a new Solaris boot environment and generates a
-command file that may be executed by `spma-run`.
+command file that may be executed by [spma-run](../components/spma-run.md).
 
 This module is intended for package management with Quattor on Solaris 11
 or later.
@@ -92,7 +92,7 @@ or later.
 
 - `/software/components/spma/cmdfile` : string
 
-    Where to save commands for the `spma-run` script. Default location
+    Where to save commands for the [spma-run](../components/spma-run.md) script. Default location
     is `/var/tmp/spma-commands`.
 
 - `/software/components/spma/flagfile` ? string
@@ -105,7 +105,7 @@ or later.
 
 - `/software/components/spma/ips/bename` ? string
 
-    Name of boot environment that `spma-run` will use when making any
+    Name of boot environment that [spma-run](../components/spma-run.md) will use when making any
     changes to packages. If a BE by that name already exists, then a
     unique number will be appended to the name. Package changes will
     be effected via `pkg install --be-name <bename>`.
