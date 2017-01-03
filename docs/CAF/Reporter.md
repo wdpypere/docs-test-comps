@@ -178,7 +178,7 @@ with the `set_logfile` method.
 
 - event
 
-    If a `CAF::History` is initialized, track the event. The following metadata is added
+    If a [History](../CAF/History.md) is initialized, track the event. The following metadata is added
 
     - `$WHOAMI`
 

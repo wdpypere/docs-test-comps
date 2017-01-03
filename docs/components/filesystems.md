@@ -6,7 +6,7 @@ to create and remove blockdevices without restarting or
 re-installing.
 
 These filesystems will be later mounted/unmounted, and added/removed
-from `/etc/fstab`, using ncm-fstab.
+from `/etc/fstab`, using [fstab](../components/fstab.md).
 
 The component doesn't provide any special resources at the moment. It
 just watches for changes on `/system/filesystems` and `/system/blockdevices`

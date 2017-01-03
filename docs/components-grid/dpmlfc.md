@@ -6,7 +6,7 @@ ncm-dpmlfc : NCM component to manage DPM and LFC configuration.
 ### DESCRIPTION
 
 This component allows to manage configuration of DPM and LFC services, with the exception of DPM xrootd protocol which is managed by 
-the ncm-xrootd configuration module.
+the [xrootd](../components-grid/xrootd.md) configuration module.
 
 Configuration module **ncm-dpmlfc** requires that the DPM and/or LFC configuration describes all nodes participating to the service and their respective 
 role (in term of daemon running on each node). Each daemon/host combination is called a daemon instance in this documentation.
@@ -37,7 +37,7 @@ DPM and LFC accept the same global options but there is a separate set for each 
 
     List of access protocols supported on disk servers. Supported protocols are : https, gsiftp, rfio, xroot.
     Note that xrootd configuration itself, including the DPM/Xrootd plug-in, must be configured with
-    ncm-xrootd.
+    [xrootd](../components-grid/xrootd.md).
 
     Default: None (default configuration provided by RPM will be used)
 
@@ -231,7 +231,7 @@ option is undefined, look at `/etc/httpd/conf.d/zlcgdm-dav.conf`
 
 #### xrootd options
 
-xrootd options are ignored. Use ncm-xrootd instead.
+xrootd options are ignored. Use [xrootd](../components-grid/xrootd.md) instead.
 
 #### Options for other (legacy) protocols
 

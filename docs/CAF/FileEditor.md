@@ -18,7 +18,7 @@ the class constructor.
 - new
 
     Returns a new object it accepts the same arguments as the constructor
-    for `CAF::FileWriter` with one additional option:
+    for [FileWriter](../CAF/FileWriter.md) with one additional option:
 
     - source
 
@@ -38,7 +38,7 @@ the class constructor.
 
     Sets the contents of the file to the given argument. Usually, it
     doesn't make sense to use this method directly. Just use a
-    `CAF::FileWriter` object instead.
+    [FileWriter](../CAF/FileWriter.md) object instead.
 
 - head\_print
 
@@ -159,7 +159,7 @@ it doesn't exist already:
 
 #### Cancelling changes in case of error
 
-This is a subclass of `CAF::FileWriter`, so just do as you did with
+This is a subclass of [FileWriter](../CAF/FileWriter.md), so just do as you did with
 it:
 
     my $fh = CAF::FileEditor->open ("/foo/bar",

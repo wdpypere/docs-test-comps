@@ -123,11 +123,11 @@ This is just a wrapper class for `LC::Check::file`
 
     Determine if the reporter level is verbose.
     If it can't be determined from the reporter instance,
-    use the global `CAF::Reporter` state.
+    use the global [Reporter](../CAF/Reporter.md) state.
 
 - event
 
-    Method to track an event via LOG `CAF::History` instance (if any).
+    Method to track an event via LOG [History](../CAF/History.md) instance (if any).
 
     Following metadata is added
 

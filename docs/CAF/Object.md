@@ -58,7 +58,7 @@ In particular, one should avoid to return the `$self` instance at the end of
     be passed during initialisation and set to `$self-`{log}>.
 
     (When constructing classes via multiple inheritance,
-    `CAF::Reporter` should precede `CAF::Object` if you want
+    [Reporter](../CAF/Reporter.md) should precede `CAF::Object` if you want
     to use an absolute rather than a conditional logger).
 
 - fail

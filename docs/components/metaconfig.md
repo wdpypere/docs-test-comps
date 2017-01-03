@@ -2,7 +2,7 @@
 ### NAME
 
 ncm-metaconfig: Configure services whose config format can be
-rendered via `CAF::TextRender`.
+rendered via [TextRender](../CAF/TextRender.md).
 
 ### DESCRIPTION
 
@@ -38,7 +38,7 @@ The configuration information for the component.  It is an nlist of
 
 - `daemons` ? `caf_service_action{}`
 
-    An nlist with foreach daemon the `CAF::Service` action to take
+    An nlist with foreach daemon the [Service](../CAF/Service.md) action to take
     if the file changes.
 
     Even if multiple `services` are associated to the same daemon, each action
@@ -166,7 +166,7 @@ The well-known `/etc/ccm.conf` can be defined like this:
 ### And that's it
 
 Now, just compile and deploy. You should get the same results as with
-old good ncm-ccm.
+old good [ccm](../components/ccm.md).
 
 #### Generating an INI-like file
 

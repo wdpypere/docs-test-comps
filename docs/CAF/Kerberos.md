@@ -32,7 +32,7 @@ To create a new ticket for principal SERVICE/host@REALM
 
     - `log`
 
-        A `CAF::Reporter` object to log to.
+        A [Reporter](../CAF/Reporter.md) object to log to.
 
     - lifetime, keytab
 

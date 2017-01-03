@@ -12,7 +12,7 @@ class for Quattor
 
     - log
 
-        An `CAF::Reporter` instance that can be used for logging
+        An [Reporter](../CAF/Reporter.md) instance that can be used for logging
         (it is converted in a logger appropriate for `Net::FreeIPA`).
 
     All other arguments and options are passed to [Net::FreeIPA](https://metacpan.org/pod/Net::FreeIPA)

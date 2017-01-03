@@ -30,7 +30,7 @@ format, which copes with multiple possible data formats.
 
     - log
 
-        A `CAF::Reporter` instance for logging/reporting.
+        A [Reporter](../CAF/Reporter.md) instance for logging/reporting.
 
 - test\_supported\_format
 
@@ -51,7 +51,7 @@ format, which copes with multiple possible data formats.
 
     `perms` is an optional hashref with the file permissions
     for both database file and format description
-    (owner/mode/group, `CAF::FileWriter` style).
+    (owner/mode/group, [FileWriter](../CAF/FileWriter.md) style).
 
     Returns undef on success, a string with error message otherwise.
 

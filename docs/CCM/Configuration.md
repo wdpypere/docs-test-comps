@@ -36,7 +36,7 @@ Module provides the Configuration class, to manipulate confgurations.
     the Configuration instance is bound to the specific CID, even if this is not
     the CacheManager's current one (e.g. when a new profile is fetched during the lifetime
     of the process, the CacheManager current CID is updated to the latest one).
-    The locking is relevant when a `CCM::Element` is accessed via
+    The locking is relevant when a [Element](../CCM/Element.md) is accessed via
     a `CCM::Configuration` instance (in particular, when a call to `_prepareElement`
     is made).
     As a consequence, an unlocked Configuration instance will always use the

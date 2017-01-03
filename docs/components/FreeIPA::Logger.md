@@ -9,4 +9,4 @@ using `CAf::Reporter`.
 - new
 
     Creates simple instance wrapper arond mandatory argument `reporter`,
-    a `CAF::Reporter` instance.
+    a [Reporter](../CAF/Reporter.md) instance.

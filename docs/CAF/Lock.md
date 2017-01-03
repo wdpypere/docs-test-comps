@@ -60,7 +60,7 @@ The **CAF::Lock** class provides methods for handling application locking.
 
     - `log`
 
-        A `CAF::Reporter` object to log to.
+        A [Reporter](../CAF/Reporter.md) object to log to.
 
 - \_try\_lock(_force_)
 

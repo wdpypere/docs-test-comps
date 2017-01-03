@@ -14,7 +14,7 @@ Simplify common file and directory related operations e.g.
 The class is based on **LC::Check** with following major difference
 
 - `CAF::Object::NoAction` support builtin (and `keeps_state` option to override it).
-- support `CAF::Reporter` (incl. `CAF::History`)
+- support [Reporter](../CAF/Reporter.md) (incl. `CAF::History`)
 - raised exceptions are catched, methods return SUCCESS on succes,
 undef on failure and store the error message in the `fail` attribute.
 - available as class-methods

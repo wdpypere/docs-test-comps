@@ -31,7 +31,7 @@ And use it via
 ### DESCRIPTION
 
 This class simplifies text handling via stringification and produces
-a `CAF::FileWriter` instance.
+a [FileWriter](../CAF/FileWriter.md) instance.
 
 #### Methods
 
@@ -41,7 +41,7 @@ a `CAF::FileWriter` instance.
 
     - `log`
 
-        A `CAF::Reporter` object to log to.
+        A [Reporter](../CAF/Reporter.md) object to log to.
 
     - `eol`
 
@@ -94,7 +94,7 @@ a `CAF::FileWriter` instance.
 
 - `filewriter`
 
-    Create and return an open `CAF::FileWriter` instance with
+    Create and return an open [FileWriter](../CAF/FileWriter.md) instance with
     first argument as the filename. If the `get_text` method fails
     (i.e. returns undef), `undef` is returned.
 
@@ -102,7 +102,7 @@ a `CAF::FileWriter` instance.
     It's up to the consumer to cancel
     and/or close the instance.
 
-    All `CAF::FileWriter` initialisation options are supported
+    All [FileWriter](../CAF/FileWriter.md) initialisation options are supported
     and passed on. (If no `log` option is provided,
      the one from the current instance is passed).
 

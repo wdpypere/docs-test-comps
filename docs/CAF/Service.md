@@ -36,7 +36,7 @@ in different Unixes.
 
     - `log`
 
-        A `CAF::Reporter` object to log daemon activities to.
+        A [Reporter](../CAF/Reporter.md) object to log daemon activities to.
 
     - `timeout`
 
