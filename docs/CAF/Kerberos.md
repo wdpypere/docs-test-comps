@@ -19,7 +19,7 @@ To create a new ticket for principal SERVICE/host@REALM
 
     # set environment to temporary credential cache
     # temporary cache is cleaned-up during destroy of $krb
-    local %ENV;
+    local %ENV = %ENV;
     $krb->update_env(\%ENV);
 
 #### Methods

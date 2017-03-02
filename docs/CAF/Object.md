@@ -80,7 +80,7 @@ In particular, one should avoid to return the `$self` instance at the end of
 
     To be used as
         # Setup local environment
-        local %ENV;
+        local %ENV = %ENV;
         $self->update\_env(\\%ENV);
 
     Example:
@@ -97,7 +97,7 @@ In particular, one should avoid to return the `$self` instance at the end of
         {
            ...
            # Setup local environment
-           local %ENV;
+           local %ENV = %ENV;
            $self->update_env(\%ENV);
 
            # everything in the remainder of the method runs in modified environment

@@ -132,6 +132,28 @@
     - `/software/shorewall/component_shorewall_policy/connlimit`
         - Optional
         - Type: string
+ - `/software/shorewall/component_shorewall_stoppedrules`
+    - Description: a stoppedrules entry: action src dst proto dport sport
+    - `/software/shorewall/component_shorewall_stoppedrules/action`
+        - Optional
+        - Type: string
+    - `/software/shorewall/component_shorewall_stoppedrules/src`
+        - Optional
+        - Type: string
+    - `/software/shorewall/component_shorewall_stoppedrules/dst`
+        - Optional
+        - Type: string
+    - `/software/shorewall/component_shorewall_stoppedrules/proto`
+        - Optional
+        - Type: string
+    - `/software/shorewall/component_shorewall_stoppedrules/dport`
+        - Optional
+        - Type: long
+        - Range: 0..
+    - `/software/shorewall/component_shorewall_stoppedrules/sport`
+        - Optional
+        - Type: long
+        - Range: 0..
  - `/software/shorewall/component_shorewall_rules_srcdst`
     - Description: a rules src or dst entry: zone[:interface][:address] (default: all zones)
     - `/software/shorewall/component_shorewall_rules_srcdst/zone`
@@ -566,6 +588,10 @@
         - Description: masq configuration
         - Optional
         - Type: component_shorewall_masq
+    - `/software/shorewall/component_shorewall/stoppedrules`
+        - Description: rules to use when shorewall is stopped
+        - Optional
+        - Type: component_shorewall_stoppedrules
  - `/software/shorewall/shorewall_sysconfig`
     - Description: metaconfig schema for shorewall 5.x sysconfig (you cannot set RESTARTOPTIONS)
     - `/software/shorewall/shorewall_sysconfig/OPTIONS`
