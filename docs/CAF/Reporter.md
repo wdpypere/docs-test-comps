@@ -13,8 +13,7 @@
 
     sub new {
         ...
-        $self->setup_reporter(2, 0, 1);
-        $self->set_report_logfile($logger);
+        $self->config_reporter(debuglvl => 2, verbose => 1, logfile => $logger);
         ...
     }
 
@@ -45,11 +44,15 @@ with the `set_logfile` method.
 
     Setup default/initial values for reporter. Returns success.
 
-- `setup_reporter ($debuglvl, $quiet, $verbose, $facility)`: boolean
+- config\_reporter
 
-    Reporter setup:
+    Reporter configuration:
 
-    - `$debuglvl` sets the (highest) debug level, for messages reported with
+    Following options are supported
+
+    - debuglvl
+
+        Set the (highest) debug level, for messages reported with
         the 'debug' method.
         The following recommendations apply:
             0: no debug information
@@ -57,31 +60,49 @@ with the `set_logfile` method.
             2: main libraries/functions
             3: helper libraries
             4: core functions (constructors, destructors)
-    - `$quiet`: if set to a true value (eg. 1), stops any output to console.
-    - `$verbose`: if set to a true value (eg. 1), produce verbose output
-                (with the `verbose` method). Implied by debug >= 1.
-    - `$facility`: syslog facility the messages will be sent to
-    - `$verbose_logfile`: reporting to logfiles will be verbose
+
+    - quiet
+
+        If set to a true value (eg. 1), stops any output to console.
+
+    - verbose
+
+        If set to a true value (eg. 1), produce verbose output
+        (with the `verbose` method). Implied by debug >= 1.
+
+    - facility
+
+        The syslog facility the messages will be sent to
+
+    - verbose\_logfile
+
+        All reporting to logfiles will be verbose
+
+    - logfile
+
+        `logfile` can be any type of class object reference,
+        but the object must support a `print(@array)` method.
+        Typically, it should be an [Log](../CAF/Log.md) instance.
+
+        If `logfile` is defined but false, no logfile will be used.
+
+        (The name is slightly misleading, because is it does not set the logfile's
+        filename, but the internal `$LOGFILE` attribute).
+
+    - struct
+
+        Enable the structured logging type `struct` (implemented by method
+        ` <_struct_<struct` >>).
+
+        If `struct` is defined but false, structured logging will be disabled.
 
     If any of these arguments is `undef`, current application settings
     will be preserved.
 
-- `set_report_logfile($loginstance)`: bool
-
-    If `$loginstance` is defined, it will be used as log file. `$loginstance` can be
-    any type of class object reference, but the object must support a
-    `print(@array)` method. Typically, it should be an `CAF::Log`
-    instance. If `$loginstance` is undefined, no log file will be used.
-
-    Returns SUCCESS on success, undef otherwise.
-
-    (The method name is slightly misleading, because is it does not set the logfile's
-    filename, but the internal `$LOGFILE` attribute).
-
 - `init_logfile($filename, $options)`: bool
 
     Create a new **CAF::Log** instance with `$filename` and `$options` and
-    set it using `set_report_logfile`.
+    set it using `config_reporter`.
     Returns SUCCESS on success, undef otherwise.
 
     (The method name is slightly misleading, because is it does
@@ -133,13 +154,13 @@ with the `set_logfile` method.
 
 - `verbose(@array)`: boolean
 
-    If `verbose` is enabled (via `setup_reporter`), the `verbose` method
+    If `verbose` is enabled (via `config_reporter`), the `verbose` method
     logs using [syslog](../components/syslog.md) method with `notice` priority
     and reports `@array` using the `report` method, but with a `[VERB]` prefix.
 
 - `debug($debuglvl, @array)`: boolean
 
-    If `$debuglvl` is higher or equal than then one set via `setup_reporter`,
+    If `$debuglvl` is higher or equal than then one set via `config_reporter`,
     the `debug` method
     logs to syslog with `debug` priority
     and reports `@array` using the `report` method, but with a `[DEBUG]` prefix.
@@ -150,7 +171,12 @@ with the `set_logfile` method.
 - `log(@array)`: boolean
 
     Writes `@array` as a concatenated string with added newline
-    to the log file, if one is setup (via `set_report_logfile`).
+    to the log file, if one is setup
+    (via `<config_reporter(logfile =` $loginst) >>).
+
+    If the last argument is a hashref and structured logging is enabled
+    (via `<config_reporter(struct =` $type) >>), call the structured
+    logging method with this hashref as argument.
 
 - `syslog($priority, @array)`
 
@@ -160,6 +186,11 @@ with the `set_logfile` method.
     This attribute is prepended to every message.
 
     (Return value is always undef.)
+
+- \_struct\_CEEsyslog
+
+    A structured logging method that uses CEE `Common Event Expression` format
+    and reports it via syslog with info facility.
 
 - `set_report_history($historyinstance)`: bool
 
@@ -183,3 +214,27 @@ with the `set_logfile` method.
     - `$WHOAMI`
 
         Current class name `ref($self)`.
+
+#### Deprecated/legacy methods
+
+- setup\_reporter
+
+    Deprecated method to configure the reporter.
+
+    The configure options `debuglvl`, `quiet`, `verbose`, `facility`, `verbose_logfile`
+    are passed as postional arguments in that order.
+        $self->setup\_reporter(2, 0, 1);
+    is equal to
+        $self->config\_reporter(debuglvl => 2, quiet => 0, verbose => 1);
+
+- set\_report\_logfile
+
+    Deprecated method to configure the reporter `LOGFILE` attribute:
+        $self->setup\_report\_logfile($instance);
+    is equal to
+        $self->config\_reporter(logfile => $instance);
+
+    Returns SUCCESS on success, undef otherwise.
+
+    (The method name is slightly misleading, because is it does not set the logfile's
+    filename, but the internal `$LOGFILE` attribute).

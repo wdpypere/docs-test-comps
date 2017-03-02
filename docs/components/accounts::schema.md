@@ -107,38 +107,38 @@
     - `/software/accounts/structure_login_defs/usergroups_enab`
         - Optional
         - Type: boolean
- - `/software/accounts/component_accounts`
-    - `/software/accounts/component_accounts/rootpwd`
+ - `/software/accounts/accounts_component`
+    - `/software/accounts/accounts_component/rootpwd`
         - Optional
         - Type: string
-    - `/software/accounts/component_accounts/rootshell`
+    - `/software/accounts/accounts_component/rootshell`
         - Optional
         - Type: string
-    - `/software/accounts/component_accounts/shadowpwd`
+    - `/software/accounts/accounts_component/shadowpwd`
         - Optional
         - Type: boolean
-    - `/software/accounts/component_accounts/users`
+    - `/software/accounts/accounts_component/users`
         - Optional
         - Type: structure_userinfo
-    - `/software/accounts/component_accounts/groups`
+    - `/software/accounts/accounts_component/groups`
         - Optional
         - Type: structure_groupinfo
-    - `/software/accounts/component_accounts/login_defs`
+    - `/software/accounts/accounts_component/login_defs`
         - Optional
         - Type: structure_login_defs
-    - `/software/accounts/component_accounts/remove_unknown`
+    - `/software/accounts/accounts_component/remove_unknown`
         - Optional
         - Type: boolean
-    - `/software/accounts/component_accounts/preserved_accounts`
+    - `/software/accounts/accounts_component/preserved_accounts`
         - Optional
         - Type: string
-    - `/software/accounts/component_accounts/kept_users`
+    - `/software/accounts/accounts_component/kept_users`
         - Optional
         - Type: string
-    - `/software/accounts/component_accounts/kept_groups`
+    - `/software/accounts/accounts_component/kept_groups`
         - Optional
         - Type: string
-    - `/software/accounts/component_accounts/ldap`
+    - `/software/accounts/accounts_component/ldap`
         - Optional
         - Type: boolean
 

@@ -79,18 +79,20 @@ undef on failure and store the error message in the `fail` attribute.
     This is basically the perl builtin `-d`,
     wrapped in a method to allow unittesting.
 
-    A broken symlink is not a directory. (As `-d` follows a symlink,
-    a broken symlink either exists with `-l` or not.)
+    If  `directory` is a symlink, the symlink target
+    is tested. If the symlink is broken (no target), 
+    `directory_exists` returns false.
 
 - file\_exists
 
-    Test if `filename` exists ans is a directory.
+    Test if `filename` exists and is a file.
 
     This is basically the perl builtin `-f`,
     wrapped in a method to allow unittesting.
 
-    A broken symlink is not a file. (As `-f` follows a symlink,
-    a broken symlink either exists with `-l` or not.)
+    If  `filename` is a symlink, the symlink target
+    is tested. If the symlink is broken (no target), 
+    `file_exists` returns false.
 
 - any\_exists
 
@@ -99,8 +101,8 @@ undef on failure and store the error message in the `fail` attribute.
     This is basically the perl builtin `-e || -l`,
     wrapped in a method to allow unittesting.
 
-    A broken symlink exists. As `-e` follows a symlink,
-    a broken symlink either exists with `-l` or not.
+    A broken symlink (symlink whose target doesn't
+    exist) exists: `any_exists` returns true.
 
 - cleanup
 

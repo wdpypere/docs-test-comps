@@ -210,6 +210,9 @@
     - `/software/authconfig/authconfig_sssd_domain/enumerate`
         - Optional
         - Type: boolean
+    - `/software/authconfig/authconfig_sssd_domain/timeout`
+        - Optional
+        - Type: long
     - `/software/authconfig/authconfig_sssd_domain/force_timeout`
         - Optional
         - Type: long
@@ -232,6 +235,9 @@
         - Optional
         - Type: long
     - `/software/authconfig/authconfig_sssd_domain/entry_cache_autofs_timeout`
+        - Optional
+        - Type: long
+    - `/software/authconfig/authconfig_sssd_domain/refresh_expired_interval`
         - Optional
         - Type: long
     - `/software/authconfig/authconfig_sssd_domain/cache_credentials`

@@ -2,52 +2,71 @@
 ### Types
 
  - `/software/ofed/component_ofed_openib_options`
+    - Description: openib options
     - `/software/ofed/component_ofed_openib_options/onboot`
+        - Description: Start HCA driver upon boot
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_options/renice_ib_mad`
+        - Description: MAD datagrams thread priority
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_options/set_ipoib_cm`
+        - Description: disable CM for IPoIB for large clusters
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_options/set_ipoib_channels`
         - Optional
         - Type: boolean
+    - `/software/ofed/component_ofed_openib_options/ipoib_mtu`
+        - Description: IPoIB MTU setting for CM
+        - Optional
+        - Type: long
+        - Range: 0..65536
     - `/software/ofed/component_ofed_openib_options/srpha_enable`
+        - Description: SRP High Availability
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_options/srp_daemon_enable`
         - Optional
         - Type: boolean
-    - `/software/ofed/component_ofed_openib_options/ipoib_mtu`
-        - Optional
-        - Type: long
     - `/software/ofed/component_ofed_openib_options/run_sysctl`
+        - Description: sysctl tuning
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_options/run_affinity_tuner`
+        - Description: affinity tuning
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_options/run_mlnx_tune`
+        - Description: Enable MLNX autotuning
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_options/node_desc`
+        - Description: node description
         - Optional
         - Type: string
     - `/software/ofed/component_ofed_openib_options/node_desc_update_timeout`
+        - Description: Max time in seconds to wait for node's hostname to be set
         - Optional
         - Type: long
         - Range: 0..
     - `/software/ofed/component_ofed_openib_options/node_desc_time_before_update`
+        - Description: Wait (in sec) before node description update
         - Optional
         - Type: long
         - Range: 0..
     - `/software/ofed/component_ofed_openib_options/post_start_delay`
+        - Description: Seconds to sleep after openibd start finished and before releasing the shell
         - Optional
         - Type: long
         - Range: 0..
+    - `/software/ofed/component_ofed_openib_options/cx3_eth_only`
+        - Description: ConnectX-3 ethernet only
+        - Optional
+        - Type: boolean
  - `/software/ofed/component_ofed_openib_modules`
+    - Description: openib modules to load
     - `/software/ofed/component_ofed_openib_modules/ucm`
         - Optional
         - Type: boolean
@@ -58,68 +77,96 @@
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_modules/rdma_cm`
+        - Description: RDMA CM (connected mode) mode
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_modules/rdma_ucm`
+        - Description: RDMA UD (unreliable datagram) mode
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_modules/ipoib`
+        - Description: IPoIB
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_modules/e_ipoib`
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_modules/sdp`
+        - Description: SDP (Socket Direct Protocol)
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_modules/srp`
+        - Description: SRP SCSI RDMA Protocol
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_modules/srpt`
+        - Description: SRP Target
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_modules/rds`
+        - Description: Reliable datagram socket
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_modules/iser`
+        - Description: ISCSI RDMA
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_modules/mlx4_vnic`
+        - Description: Mellanox ConnectX-3 Virtual NICs
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_modules/mlx4_fc`
+        - Description: Mellanox ConnectX-3 FibreChannel over Ethernet
+        - Optional
+        - Type: boolean
+    - `/software/ofed/component_ofed_openib_modules/mlx4_en`
+        - Description: Mellanox ConnectX-3 Ethernet
         - Optional
         - Type: boolean
  - `/software/ofed/component_ofed_openib_hardware`
+    - Description: openib hardware modules to load
     - `/software/ofed/component_ofed_openib_hardware/mthca`
+        - Description: Mellanox Inifinihost III
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_hardware/mlx4`
+        - Description: Mellanox ConnectX-2/3
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_hardware/mlx5`
+        - Description: Mellanox ConnectX-4/5 / ConnectIB
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_hardware/mlx_en`
+        - Description: Mellanox ethernet-only
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_hardware/ipath`
+        - Description: Legacy Qlogic IB
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_hardware/qib`
+        - Description: Qlogic/Intel TrueScale IB
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_hardware/qlgc_vnic`
+        - Description: Qlogic ethernet
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_hardware/cxgb3`
+        - Description: Chelsio T3/T4
+        - Optional
+        - Type: boolean
+    - `/software/ofed/component_ofed_openib_hardware/cxgb4`
         - Optional
         - Type: boolean
     - `/software/ofed/component_ofed_openib_hardware/nes`
+        - Description: NetEffect
         - Optional
         - Type: boolean
  - `/software/ofed/component_ofed_openib`
     - `/software/ofed/component_ofed_openib/config`
+        - Description: location of openibd config file
         - Optional
         - Type: string
     - `/software/ofed/component_ofed_openib/options`
@@ -131,7 +178,7 @@
     - `/software/ofed/component_ofed_openib/hardware`
         - Optional
         - Type: component_ofed_openib_hardware
- - `/software/ofed/component_ofed_type`
-    - `/software/ofed/component_ofed_type/openib`
+ - `/software/ofed/ofed_component`
+    - `/software/ofed/ofed_component/openib`
         - Optional
         - Type: component_ofed_openib

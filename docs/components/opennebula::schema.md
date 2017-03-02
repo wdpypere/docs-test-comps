@@ -875,18 +875,30 @@ datastores, vnets, hosts names, etc
         - Optional
         - Type: opennebula_kvmrc
     - `/software/opennebula/component_opennebula/ssh_multiplex`
+        - Description: set ssh host multiplex options
         - Optional
         - Type: boolean
     - `/software/opennebula/component_opennebula/cfg_group`
+        - Description: in some cases (such a Sunstone standalone configuration with apache), 
+    some OpenNebula configuration files should be accessible by a different group (as apache).
+    This variable sets the group name to change these files permissions.
         - Optional
         - Type: string
     - `/software/opennebula/component_opennebula/host_ovs`
+        - Description: includes the Open vSwitch network drives in your hosts. (OVS must be installed in each host).
+    This option is not longer used by ONE >= 5.x versions.
         - Optional
         - Type: boolean
     - `/software/opennebula/component_opennebula/host_hyp`
+        - Description: set OpenNebula hosts type
         - Optional
         - Type: string
     - `/software/opennebula/component_opennebula/tm_system_ds`
+        - Description: set system Datastore TM_MAD value.
+        shared: The storage area for the system datastore is a shared directory across the hosts.
+        vmfs: A specialized version of the shared one to use the vmfs file system.
+        ssh: Uses a local storage area from each host for the system datastore.
+    
         - Optional
         - Type: string
 

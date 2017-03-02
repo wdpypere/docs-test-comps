@@ -5,9 +5,12 @@ ncm-opennebula: Configuration module for OpenNebula
 
 ### DESCRIPTION
 
-Configuration module for OpenNebula.
+ncm-opennebula provides support for OpenNebula configuration for:
 
-### IMPLEMENTED FEATURES
+- server: setup OpenNebula server and hosts
+- AII: add VM management support with OpenNebula
+
+#### server
 
 Features that are implemented at this moment:
 
@@ -16,7 +19,7 @@ Features that are implemented at this moment:
 - OneFlow service configuration
 - Adding/removing VNETs
 - Adding/removing datastores (only Ceph and shared datastores for the moment)
-- Adding/removing hypervirsors
+- Adding/removing hosts
 - Adding/removing OpenNebula regular users
 - Adding/removing OpenNebula groups
 - Assign OpenNebula users to primary groups
@@ -28,7 +31,7 @@ OpenNebula installation is 100% automated. Therefore:
 
 - All the new OpenNebula templates created by the component will include a QUATTOR flag.
 - The component only will modify/remove resources with the QUATTOR flag set, otherwise the resource is ignored.
-- If the component finds any issue during hypervisor host configuration then the node is included within OpenNebula infrastructure but as disabled host.
+- If the component finds any issue during host configuration then the node is set as disabled.
 
 ### INITIAL CREATION
 
@@ -39,7 +42,7 @@ To set up the initial cluster, some steps should be taken:
 
 - 1. First install the required Ruby gems in your OpenNebula server.
 You can use OpenNebula installgems addon : [https://github.com/OpenNebula/addon-installgems](https://github.com/OpenNebula/addon-installgems).
-- 2. The OpenNebula server(s) should have passwordless ssh access as oneadmin user to all the hypervisor hosts of the cluster.
+- 2. The OpenNebula server(s) should have passwordless ssh access as oneadmin user to all the host hosts of the cluster.
  e.g. by distributing the public key(s) of the OpenNebula host over the cluster.
 - 3. Start OpenNebula services: `# for i in '' -econe -gate -novnc -occi -sunstone; do service opennebula$i stop; done`
 - 4. Run the component a first time.
@@ -49,62 +52,37 @@ The old auth files are stored with .quattor.backup extension.
 'serveradmin' user and passwd within opennebula/users tree.
 In that case the component also updates the `sunstone_auth` file.
 
-### RESOURCES
+### METHODS
 
-#### `/software/components/opennebula`
+#### make\_one
 
-The configuration information for the component.  Each field should
-be described in this section.
+Sets `OpenNebula` `RPC` endpoint info to connect to ONE API.
 
-- ssh\_multiplex : boolean
+#### process\_template
 
-    Set ssh multiplex options
+Detect and process ONE templates.
+It could return a [TextRender](../CAF/TextRender.md) instance or a plain text template for ONE `RPC`.
 
-- cfg\_group : string
+#### create\_or\_update\_something
 
-    In some cases (such a Sunstone standalone conf with apache), some ONE conf files should be accessible by a different group (as apache).
-    This variable sets the group name to change these files permissions.
+Creates/updates ONE resources based on resource type.
 
-- host\_hyp : string
+#### remove\_something
 
-    Set host hypervisor type
+Removes `OpenNebula` resources.
 
-    - kvm
+#### update\_something
 
-        Set KVM hypervisor
+Updates `OpenNebula` resource templates.
 
-    - xen
+#### detect\_used\_resource
 
-        Set XEN hypervisor
+Detects if the resource is already there and if QUATTOR flag is present.
 
-- host\_ovs : boolean (optional)
+- Returns undef: resource not used yet.
+- Returns 1: resource already used without QUATTOR flag.
+- Returns -1: resource already used with QUATTOR flag set
 
-    Includes the Open vSwitch network drives in your hypervisors. (OVS must be installed in each host)
-    Open vSwitch replaces Linux bridges, Linux bridges must be disabled.
-    More info: [http://docs.opennebula.org/4.14/administration/networking/openvswitch.html](http://docs.opennebula.org/4.14/administration/networking/openvswitch.html)
+#### Configure
 
-- tm\_system\_ds : string (optional)
-
-    Set system datastore TM\_MAD value (shared by default). Valid values:
-
-    - shared
-
-        The storage area for the system datastore is a shared directory across the hosts.
-
-    - vmfs
-
-        A specialized version of the shared one to use the vmfs file system.
-
-    - ssh
-
-        Uses a local storage area from each host for the system datastore.
-
-### DEPENDENCIES
-
-The component was tested with OpenNebula version 4.1x and 5.0.
-
-Following package dependencies should be installed to run the component:
-
-- perl-Config-Tiny
-- perl-LC
-- perl-Net-OpenNebula >= 0.2.2 !
+Configure basic OpenNebula server resources.
