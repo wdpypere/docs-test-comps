@@ -11,6 +11,8 @@ pages:
     - afsclt: components/afsclt.md
     - afsclt::schema: components/afsclt::schema.md
     - aii::freeipa::schema: components/aii::freeipa::schema.md
+    - aii::opennebula::functions: components/aii::opennebula::functions.md
+    - aii::opennebula::schema: components/aii::opennebula::schema.md
     - aiiserver: components/aiiserver.md
     - aiiserver::schema: components/aiiserver::schema.md
     - altlogrotate: components/altlogrotate.md
@@ -137,8 +139,16 @@ pages:
     - openldap: components/openldap.md
     - openldap::schema: components/openldap::schema.md
     - opennebula: components/opennebula.md
-    - OpenNebula::commands: components/OpenNebula::commands.md
+    - OpenNebula::Account: components/OpenNebula::Account.md
+    - OpenNebula::AII: components/OpenNebula::AII.md
+    - OpenNebula::Ceph: components/OpenNebula::Ceph.md
+    - OpenNebula::Commands: components/OpenNebula::Commands.md
+    - OpenNebula::Host: components/OpenNebula::Host.md
+    - OpenNebula::Image: components/OpenNebula::Image.md
+    - OpenNebula::Network: components/OpenNebula::Network.md
     - opennebula::schema: components/opennebula::schema.md
+    - OpenNebula::Server: components/OpenNebula::Server.md
+    - OpenNebula::VM: components/OpenNebula::VM.md
     - openvpn: components/openvpn.md
     - openvpn::schema: components/openvpn::schema.md
     - pam: components/pam.md
@@ -199,6 +209,7 @@ pages:
     - useraccess::schema: components/useraccess::schema.md
 - CAF:
     - Application: CAF/Application.md
+    - Download::LWP: CAF/Download::LWP.md
     - FileEditor: CAF/FileEditor.md
     - FileReader: CAF/FileReader.md
     - FileWriter: CAF/FileWriter.md
@@ -286,3 +297,23 @@ pages:
     - wmslb::schema: components-grid/wmslb::schema.md
     - xrootd: components-grid/xrootd.md
     - xrootd::schema: components-grid/xrootd::schema.md
+- Unittesting:
+    - Quattor: Unittesting/Quattor.md
+    - Quattor::CommonDeps: Unittesting/Quattor::CommonDeps.md
+    - Quattor::Component: Unittesting/Quattor::Component.md
+    - Quattor::Critic: Unittesting/Quattor::Critic.md
+    - Quattor::Doc: Unittesting/Quattor::Doc.md
+    - Quattor::Filetools: Unittesting/Quattor::Filetools.md
+    - Quattor::Namespace: Unittesting/Quattor::Namespace.md
+    - Quattor::Object: Unittesting/Quattor::Object.md
+    - Quattor::Panc: Unittesting/Quattor::Panc.md
+    - Quattor::ProfileCache: Unittesting/Quattor::ProfileCache.md
+    - Quattor::RegexpTest: Unittesting/Quattor::RegexpTest.md
+    - Quattor::TextRender: Unittesting/Quattor::TextRender.md
+    - Quattor::TextRender::Base: Unittesting/Quattor::TextRender::Base.md
+    - Quattor::TextRender::Component: Unittesting/Quattor::TextRender::Component.md
+    - Quattor::TextRender::Metaconfig: Unittesting/Quattor::TextRender::Metaconfig.md
+    - Quattor::TextRender::RegexpTest: Unittesting/Quattor::TextRender::RegexpTest.md
+    - Quattor::TextRender::Suite: Unittesting/Quattor::TextRender::Suite.md
+    - Quattor::Tidy: Unittesting/Quattor::Tidy.md
+    - Quattor::Unittest: Unittesting/Quattor::Unittest.md
