@@ -1,8 +1,3 @@
-
-###############
-RuleBasedEditor
-###############
-
 .. highlight:: perl
 
 
@@ -291,34 +286,19 @@ updateFile
  Update configuration file contents,  applying configuration rules.
  
  Arguments :
- 
- 
- .. code-block:: perl
- 
-      config_rules: a hashref containing config rules corresponding to the file to build
-      config_options: a hashref for configuration parameters used to build actual configuration
-      options: a hashref defining options to modify the behaviour of this function
- 
+     config_rules: a hashref containing config rules corresponding to the file to build
+     config_options: a hashref for configuration parameters used to build actual configuration
+     options: a hashref defining options to modify the behaviour of this function
  
  Supported entries for options hash:
- 
- 
- .. code-block:: perl
- 
-      always_rules_only: if true, apply only rules with ALWAYS condition (D: false). See introduction
-                         about the ALWAYS condition.
-      remove_if_undef: if true, remove matching configuration line if rule condition is not met (D: false)
- 
+     always_rules_only: if true, apply only rules with ALWAYS condition (D: false). See introduction
+                        about the ALWAYS condition.
+     remove_if_undef: if true, remove matching configuration line if rule condition is not met (D: false)
  
  Return value
- 
- 
- .. code-block:: perl
- 
-      sucess: 1
-      error processing of one or more rules: 0
-      argument error or error duing rule processing: undef
- 
+     sucess: 1
+     error processing of one or more rules: 0
+     argument error or error duing rule processing: undef
  
 
 
@@ -333,24 +313,14 @@ formatAttributeValue
  This function formats an attribute value based on the value format specified.
  
  Arguments:
- 
- 
- .. code-block:: perl
- 
-      attr_value : attribute value (type interpreted based on C<value_fmt>)
-      line_fmt : line format (see LINE_FORMAT_xxx constants)
-      value_fmt : value format (see LINE_VALUE_xxx constants)
-      line_opt: line rendering options
- 
+     attr_value : attribute value (type interpreted based on \ ``value_fmt``\ )
+     line_fmt : line format (see LINE_FORMAT_xxx constants)
+     value_fmt : value format (see LINE_VALUE_xxx constants)
+     line_opt: line rendering options
  
  Return value:
- 
- 
- .. code-block:: perl
- 
-      A string corresponding to the value formatted according to the format specified by arguments
-      or undef in case of an internal error (missing arguments)
- 
+     A string corresponding to the value formatted according to the format specified by arguments
+     or undef in case of an internal error (missing arguments)
  
 
 
@@ -361,24 +331,14 @@ _formatConfigLine
  quoted if the line format is not LINE_FORMAT_KW_VAL.
  
  Arguments :
- 
- 
- .. code-block:: perl
- 
-      keyword : line keyword
-      value : keyword value (can be an empty string)
-      line_fmt : line format (see LINE_FORMAT_xxx constants)
-      line_opt: line rendering options
- 
+     keyword : line keyword
+     value : keyword value (can be an empty string)
+     line_fmt : line format (see LINE_FORMAT_xxx constants)
+     line_opt: line rendering options
  
  Return value:
- 
- 
- .. code-block:: perl
- 
-      A string corresponding to the line formatted according to line_fmt
-      or undef in case of an internal error (missing arguments)
- 
+     A string corresponding to the line formatted according to line_fmt
+     or undef in case of an internal error (missing arguments)
  
 
 
@@ -388,20 +348,10 @@ _escape_regexp_string
  of a regexp.
  
  Arguments:
- 
- 
- .. code-block:: perl
- 
-      regexp_str: initial regexp string (characters not escaped)
- 
+     regexp_str: initial regexp string (characters not escaped)
  
  Return value:
- 
- 
- .. code-block:: perl
- 
-      string: regexp with all specail characters escaped
- 
+     string: regexp with all specail characters escaped
  
 
 
@@ -415,25 +365,15 @@ _buildLinePattern
  directive as a keyword with no value.
  
  Arguments :
- 
- 
- .. code-block:: perl
- 
-      config_param: parameter to update
-      line_fmt: line format (see LINE_FORMAT_xxx constants)
-      line_opt: line rendering options
-      config_value: when defined, make it part of the pattern (used when multiple lines
-                    with the same keyword are allowed)
- 
+     config_param: parameter to update
+     line_fmt: line format (see LINE_FORMAT_xxx constants)
+     line_opt: line rendering options
+     config_value: when defined, make it part of the pattern (used when multiple lines
+                   with the same keyword are allowed)
  
  Return value:
- 
- 
- .. code-block:: perl
- 
-      A string containing the pattern to use to match the line in the file or undef
-      in case of an internal error (missing argument or an invalid line format).
- 
+     A string containing the pattern to use to match the line in the file or undef
+     in case of an internal error (missing argument or an invalid line format).
  
 
 
@@ -443,24 +383,14 @@ _commentConfigLine
  Match operation takes into account the line format.
  
  Arguments :
- 
- 
- .. code-block:: perl
- 
-      config_param: parameter to update
-      line_fmt : line format (see LINE_FORMAT_xxx constants)
-      line_opt: line rendering options
- 
+     config_param: parameter to update
+     line_fmt : line format (see LINE_FORMAT_xxx constants)
+     line_opt: line rendering options
  
  Return value:
- 
- 
- .. code-block:: perl
- 
-      success: 1
-      error during processing: 0
-      internal error (missing argument): undef
- 
+     success: 1
+     error during processing: 0
+     internal error (missing argument): undef
  
 
 
@@ -470,24 +400,14 @@ _updateConfigLine
  line formatting based on the line format.
  
  Arguments :
- 
- 
- .. code-block:: perl
- 
-      config_param: parameter to update
-      config_value: parameter value (can be an empty string)
-      line_fmt: line format (see LINE_FORMAT_xxx constants)
-      line_opt: line rendering options
-      multiple: if true, multiple lines with the same keyword can exist (D: false)
- 
+     config_param: parameter to update
+     config_value: parameter value (can be an empty string)
+     line_fmt: line format (see LINE_FORMAT_xxx constants)
+     line_opt: line rendering options
+     multiple: if true, multiple lines with the same keyword can exist (D: false)
  
  Return value:
- 
- 
- .. code-block:: perl
- 
-      undef or 1 in case of an internal error (missing argument)
- 
+     undef or 1 in case of an internal error (missing argument)
  
 
 
@@ -498,35 +418,20 @@ _parse_rule
  information about the error.
  
  Arguments :
- 
- 
- .. code-block:: perl
- 
-      rule: rule to parse
-      config_options: configuration parameters used to build actual configuration
-      parser_options: a hashref defining options to modify the behaviour of this function
- 
+     rule: rule to parse
+     config_options: configuration parameters used to build actual configuration
+     parser_options: a hashref defining options to modify the behaviour of this function
  
  Supported entries for options hash:
- 
- 
- .. code-block:: perl
- 
-      always_rules_only: if true, apply only rules with ALWAYS condition (D: false). See introduction
-                         about the ALWAYS condition.
-      remove_if_undef: if true, remove matching configuration line if rule condition is not met (D: false)
- 
+     always_rules_only: if true, apply only rules with ALWAYS condition (D: false). See introduction
+                        about the ALWAYS condition.
+     remove_if_undef: if true, remove matching configuration line if rule condition is not met (D: false)
  
  Return value: undef if the rule condition is not met or a hash with the following information:
- 
- 
- .. code-block:: perl
- 
-      error_msg: a non empty string if an error happened during parsing
-      remove_matching_lines: a boolean indicating that the matching lines must be removed
-      option_sets: a list of option sets containing the attribute to use in the updated line
-      attribute: the option attribute to use in the updated line
- 
+     error_msg: a non empty string if an error happened during parsing
+     remove_matching_lines: a boolean indicating that the matching lines must be removed
+     option_sets: a list of option sets containing the attribute to use in the updated line
+     attribute: the option attribute to use in the updated line
  
 
 
@@ -535,36 +440,21 @@ _apply_rules
  Apply configuration rules. This method is the real workhorse of the rule-based editor.
  
  Arguments :
- 
- 
- .. code-block:: perl
- 
-      config_rules: config rules corresponding to the file to build
-      config_options: configuration parameters used to build actual configuration. Note that keys in the
-                      config_options hash are interpreted as escaped (generally harmless if they are not as the
-                      killing sequence, '_'+ 2 hex digit, is unlikely to occur in this context. Use camel case
-                      for keys to prevent problems).
-      parser_options: a hash setting options to modify the behaviour of this function
- 
+     config_rules: config rules corresponding to the file to build
+     config_options: configuration parameters used to build actual configuration. Note that keys in the
+                     config_options hash are interpreted as escaped (generally harmless if they are not as the
+                     killing sequence, '_'+ 2 hex digit, is unlikely to occur in this context. Use camel case
+                     for keys to prevent problems).
+     parser_options: a hash setting options to modify the behaviour of this function
  
  Supported entries for options hash:
- 
- 
- .. code-block:: perl
- 
-      always_rules_only: if true, apply only rules with ALWAYS condition (D: false)
-      remove_if_undef: if true, remove matching configuration line if rule condition is not met (D: false)
- 
+     always_rules_only: if true, apply only rules with ALWAYS condition (D: false)
+     remove_if_undef: if true, remove matching configuration line if rule condition is not met (D: false)
  
  Return value:
- 
- 
- .. code-block:: perl
- 
-      success: 1
-      error processing one or more rules: 0
-      undef in case of an internal error (missing argument)
- 
+     success: 1
+     error processing one or more rules: 0
+     undef in case of an internal error (missing argument)
  
 
 
