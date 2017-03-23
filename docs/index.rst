@@ -10,7 +10,15 @@ This is the official documentation for Quattor:
 
 Also see the `Quattor homepage`_ for more information.
 
-.. include:: gendocs.rst
+Content
+=======
+
+.. toctree::
+    :maxdepth: 1
+
+    toc_CAF
+    toc_CCM
+
 
 Search
 ======
@@ -18,4 +26,3 @@ Search
 
 
 .. _Quattor homepage: http://www.quattor.org
-

@@ -49,6 +49,8 @@ project = u'Quattor'
 copyright = u'2017, Quattor Community'
 author = u'Quattor Community'
 
+show_authors = False
+
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
@@ -83,7 +85,7 @@ todo_include_todos = False
 # a list of builtin themes.
 #
 html_theme = 'classic'
-
+html_title = project
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
@@ -93,7 +95,12 @@ html_theme_options = {
     "sidebarbgcolor": "#333",
     "footerbgcolor": "#333",
     "headtextcolor": "#333",
+    "bodyfont": "'Lato', 'Helvetica', sans-serif",
+    "headfont": "'Lato', 'Helvetica', sans-serif",
 }
+
+html_logo='quattor_logo_navbar.png'
+html_favico='favicon.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -103,8 +110,9 @@ html_static_path = ['.static']
 
 # -- Options for HTMLHelp output ------------------------------------------
 html_sidebars = {
-   '**': ['searchbox.html', 'globaltoc.html', 'sourcelink.html'],
-   'using/windows': ['searchbox.html', 'windowssidebar.html'],
+   'index': ['globaltoc.html', 'searchbox.html'],
+   'CAF/*': ['localtoc.html', 'globaltoc.html', 'searchbox.html'],
+   'toc_*': ['localtoc.html', 'globaltoc.html', 'searchbox.html'],
 }
 html_use_modindex = False
 html_use_index = False
@@ -138,16 +146,6 @@ latex_elements = {
 latex_documents = [
     (master_doc, 'Quattor.tex', u'Quattor Documentation',
      u'Quattor Community', 'manual'),
-]
-
-
-# -- Options for manual page output ---------------------------------------
-
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc, 'quattor', u'Quattor Documentation',
-     [author], 1)
 ]
 
 
