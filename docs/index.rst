@@ -20,9 +20,4 @@ Content
     toc_CCM
 
 
-Search
-======
-* :ref:`search`
-
-
 .. _Quattor homepage: http://www.quattor.org
