@@ -115,6 +115,7 @@ html_sidebars = {
    'index': ['globaltoc.html', 'searchbox.html'],
    '*/*': ['localtoc.html', 'globaltoc.html', 'relations.html', 'searchbox.html'],
    'toc_*': ['localtoc.html', 'globaltoc.html', 'searchbox.html'],
+   'search': ['globaltoc.html'],
 }
 html_use_modindex = False
 html_use_index = False
