@@ -148,7 +148,7 @@ close
  the old and the newly-generated contents for this file before actually
  saving to disk. This diff will \ **not**\  be stored in any logs to prevent
  any leakages of confidential information (f.i. when writing to
- `/etc/shadow`).
+ /etc/shadow).
  
 
 

@@ -119,25 +119,29 @@ update_env
  
  To be used as
  
-     # Setup local environment
-     local %ENV = %ENV;
-     $self->update_env(\%ENV);
+ 
+ .. code-block:: perl
+ 
+      # Setup local environment
+      local %ENV = %ENV;
+      $self->update_env(\%ENV);
+ 
  
  Example:
-
-.. code-block:: perl
- 
-
-     # some method_1 that prepares a shared environment
-     sub method_1
-     {
-         ...
-         # Prepare enviroment modifications
-         $self->{ENV}->{PATH} = "/some/new/path:$ENV{PATH}";
-         ...
-     }
  
  
+ .. code-block:: perl
+ 
+      # some method_1 that prepares a shared environment
+      sub method_1
+      {
+          ...
+          # Prepare enviroment modifications
+          $self->{ENV}->{PATH} = "/some/new/path:$ENV{PATH}";
+          ...
+      }
+  
+  
       sub do_something
       {
          ...

@@ -84,11 +84,15 @@ config_reporter
   the 'debug' method.
   The following recommendations apply:
   
-      0: no debug information
-      1: main package
-      2: main libraries/functions
-      3: helper libraries
-      4: core functions (constructors, destructors)
+  
+  .. code-block:: perl
+  
+       0: no debug information
+       1: main package
+       2: main libraries/functions
+       3: helper libraries
+       4: core functions (constructors, destructors)
+  
   
  
  
@@ -309,12 +313,20 @@ setup_reporter
  
  The configure options \ ``debuglvl``\ , \ ``quiet``\ , \ ``verbose``\ , \ ``facility``\ , \ ``verbose_logfile``\ 
  are passed as postional arguments in that order.
-
-     $self->setup_reporter(2, 0, 1);
-
+ 
+ 
+ .. code-block:: perl
+ 
+      $self->setup_reporter(2, 0, 1);
+ 
+ 
  is equal to
  
-     $self->config_reporter(debuglvl => 2, quiet => 0, verbose => 1);
+ 
+ .. code-block:: perl
+ 
+      $self->config_reporter(debuglvl => 2, quiet => 0, verbose => 1);
+ 
  
 
 
@@ -322,11 +334,19 @@ set_report_logfile
  
  Deprecated method to configure the reporter \ ``LOGFILE``\  attribute:
  
-     $self->setup_report_logfile($instance);
-
+ 
+ .. code-block:: perl
+ 
+      $self->setup_report_logfile($instance);
+ 
+ 
  is equal to
  
-     $self->config_reporter(logfile => $instance);
+ 
+ .. code-block:: perl
+ 
+      $self->config_reporter(logfile => $instance);
+ 
  
  Returns SUCCESS on success, undef otherwise.
  
