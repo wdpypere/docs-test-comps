@@ -148,10 +148,10 @@ _initialize_textopts
  
  All \ ``CAF::FileWriter``\  initialisation options are supported
  and passed on. (If no \ ``log``\  option is provided,
-  the one from the current instance is passed).
+ the one from the current instance is passed).
  
  Two new options \ ``header``\  and \ ``footer``\  are supported
-  to respectively prepend and append to the text.
+ to respectively prepend and append to the text.
  
  If \ ``eol``\  was set during initialisation, the header and footer
  will also be checked for EOL.

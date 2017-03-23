@@ -222,7 +222,7 @@ EXAMPLES
 ********
 
 
-Opening `/etc/sudoers`
+Opening /etc/sudoers
 ====================
 
 

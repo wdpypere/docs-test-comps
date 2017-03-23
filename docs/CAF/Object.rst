@@ -118,11 +118,16 @@ update_env
  Returns the \ ``env``\  hashref.
  
  To be used as
+ 
      # Setup local environment
      local %ENV = %ENV;
      $self->update_env(\%ENV);
  
  Example:
+
+.. code-block:: perl
+ 
+
      # some method_1 that prepares a shared environment
      sub method_1
      {
@@ -132,8 +137,6 @@ update_env
          ...
      }
  
- 
- .. code-block:: perl
  
       sub do_something
       {
