@@ -101,6 +101,8 @@ html_theme_options = {
 
 html_logo='quattor_logo_navbar.png'
 html_favico='favicon.ico'
+html_show_sphinx=False
+html_show_copyright=False
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -111,7 +113,7 @@ html_static_path = ['.static']
 # -- Options for HTMLHelp output ------------------------------------------
 html_sidebars = {
    'index': ['globaltoc.html', 'searchbox.html'],
-   'CAF/*': ['localtoc.html', 'globaltoc.html', 'searchbox.html'],
+   '*/*': ['localtoc.html', 'globaltoc.html', 'relations.html', 'searchbox.html'],
    'toc_*': ['localtoc.html', 'globaltoc.html', 'searchbox.html'],
 }
 html_use_modindex = False
