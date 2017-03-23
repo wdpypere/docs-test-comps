@@ -10,7 +10,7 @@ This is the official documentation for Quattor:
 
 Also see the `Quattor homepage`_ for more information.
 
-.. include:: generated.rst
+.. include:: gendocs.rst
 
 Search
 ======
