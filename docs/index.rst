@@ -15,9 +15,9 @@ Content
 
 .. toctree::
     :maxdepth: 1
+    :glob:
 
-    toc_CAF
-    toc_CCM
+    toc_*
 
 
 .. _Quattor homepage: http://www.quattor.org
