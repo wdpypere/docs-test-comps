@@ -31,6 +31,7 @@
     - `/software/syslog/syslog_component/daemontype`
         - Optional
         - Type: string
+        - Default value: syslog
     - `/software/syslog/syslog_component/file`
         - Description: Configuration filename. Defaults to /etc/<daemontype>.conf.
         - Optional

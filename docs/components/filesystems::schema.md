@@ -10,3 +10,4 @@ from fstab component, "/system/filesystems" and "/system/blockdevices"
     - `/software/filesystems/structure_component_filesystems/manage_blockdevs`
         - Optional
         - Type: boolean
+        - Default value: true

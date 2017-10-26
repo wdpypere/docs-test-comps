@@ -56,16 +56,19 @@
     - `/software/aiiserver/structure_aiishellfe/profile_format`
         - Optional
         - Type: string
+        - Default value: xml
     - `/software/aiiserver/structure_aiishellfe/profile_prefix`
         - Optional
         - Type: string
     - `/software/aiiserver/structure_aiishellfe/use_fqdn`
         - Optional
         - Type: boolean
+        - Default value: true
  - `/software/aiiserver/structure_aiidhcp`
     - `/software/aiiserver/structure_aiidhcp/dhcpconf`
         - Optional
         - Type: absolute_file_path
+        - Default value: /etc/dhcpd.conf
     - `/software/aiiserver/structure_aiidhcp/restartcmd`
         - Optional
         - Type: string

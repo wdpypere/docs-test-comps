@@ -36,6 +36,7 @@
       If false, missing exports has no effect.
         - Optional
         - Type: boolean
+        - Default value: true
     - `/software/nfs/nfs_component/exports`
         - Description: This is a list of dicts with "path" giving the export path and
       "hosts" being a dict of host/option entries where the key is the escaped host name and

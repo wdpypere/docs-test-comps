@@ -62,6 +62,7 @@
     - `/software/ntpd/ntpd_restrict_options/ignore`
         - Optional
         - Type: boolean
+        - Default value: true
     - `/software/ntpd/ntpd_restrict_options/kod`
         - Optional
         - Type: boolean
@@ -326,10 +327,12 @@
         - Description: Includes fudge options for localhost's clock. Defaults to true
         - Optional
         - Type: boolean
+        - Default value: true
     - `/software/ntpd/ntpd_component/enablelocalhostdebug`
         - Description: Allows some debugging via ntpdc on localhost but does not allow modifications. Defaults to true
         - Optional
         - Type: boolean
+        - Default value: true
     - `/software/ntpd/ntpd_component/group`
         - Description: if the group is set, files are written with root.group ownership and 0640 permission
         - Optional

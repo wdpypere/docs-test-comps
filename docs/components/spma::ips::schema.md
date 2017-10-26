@@ -11,12 +11,14 @@
     - `/software/spma/component_spma_ips_type/cmdfile`
         - Optional
         - Type: string
+        - Default value: /var/tmp/spma-commands
     - `/software/spma/component_spma_ips_type/flagfile`
         - Optional
         - Type: string
     - `/software/spma/component_spma_ips_type/freeze`
         - Optional
         - Type: boolean
+        - Default value: true
     - `/software/spma/component_spma_ips_type/imagedir`
         - Optional
         - Type: string
@@ -26,6 +28,7 @@
     - `/software/spma/component_spma_ips_type/rejectidr`
         - Optional
         - Type: boolean
+        - Default value: true
     - `/software/spma/component_spma_ips_type/uninstpaths`
         - Optional
         - Type: string
