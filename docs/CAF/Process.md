@@ -266,4 +266,4 @@ It will only work with the `execute` method.
 
 ### SEE ALSO
 
-[LC::Process(8)](http://man.he.net/man8/LC::Process)
+`LC::Process`

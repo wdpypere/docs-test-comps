@@ -51,8 +51,6 @@ pages:
     - cron::schema: components/cron::schema.md
     - cups: components/cups.md
     - cups::schema: components/cups::schema.md
-    - directoryservices: components/directoryservices.md
-    - directoryservices::schema: components/directoryservices::schema.md
     - dirperm: components/dirperm.md
     - dirperm::schema: components/dirperm::schema.md
     - download: components/download.md
@@ -106,8 +104,6 @@ pages:
     - ldconf::schema: components/ldconf::schema.md
     - libvirtd: components/libvirtd.md
     - libvirtd::schema: components/libvirtd::schema.md
-    - mcx: components/mcx.md
-    - mcx::schema: components/mcx::schema.md
     - metaconfig: components/metaconfig.md
     - metaconfig::schema: components/metaconfig::schema.md
     - modprobe: components/modprobe.md
@@ -154,6 +150,8 @@ pages:
     - pam: components/pam.md
     - pam::config: components/pam::config.md
     - pam::schema: components/pam::schema.md
+    - path: components/path.md
+    - path::schema: components/path::schema.md
     - pnp4nagios: components/pnp4nagios.md
     - pnp4nagios::schema: components/pnp4nagios::schema.md
     - postfix: components/postfix.md
@@ -172,9 +170,12 @@ pages:
     - shorewall::schema: components/shorewall::schema.md
     - spma-run: components/spma-run.md
     - spma: components/spma.md
+    - spma::apt: components/spma::apt.md
+    - spma::apt::schema: components/spma::apt::schema.md
     - spma::functions: components/spma::functions.md
     - spma::ips: components/spma::ips.md
     - spma::ips::schema: components/spma::ips::schema.md
+    - spma::schema-common-yum: components/spma::schema-common-yum.md
     - spma::schema: components/spma::schema.md
     - spma::software: components/spma::software.md
     - spma::yum: components/spma::yum.md
@@ -228,23 +229,24 @@ pages:
     - TextRender: CAF/TextRender.md
 - CCM:
     - CacheManager: CCM/CacheManager.md
+    - CacheManager::Configuration: CCM/CacheManager::Configuration.md
+    - CacheManager::DB: CCM/CacheManager::DB.md
+    - CacheManager::Element: CCM/CacheManager::Element.md
+    - CacheManager::Encode: CCM/CacheManager::Encode.md
+    - CacheManager::Resource: CCM/CacheManager::Resource.md
     - CCfg: CCM/CCfg.md
     - CLI: CCM/CLI.md
-    - Configuration: CCM/Configuration.md
-    - DB: CCM/DB.md
-    - Element: CCM/Element.md
     - Fetch: CCM/Fetch.md
     - Fetch::Config: CCM/Fetch::Config.md
     - Fetch::Download: CCM/Fetch::Download.md
+    - Fetch::JSONProfileSimple: CCM/Fetch::JSONProfileSimple.md
+    - Fetch::JSONProfileTyped: CCM/Fetch::JSONProfileTyped.md
     - Fetch::ProfileCache: CCM/Fetch::ProfileCache.md
-    - JSONProfileSimple: CCM/JSONProfileSimple.md
-    - JSONProfileTyped: CCM/JSONProfileTyped.md
+    - Fetch::XMLPanProfile: CCM/Fetch::XMLPanProfile.md
     - Options: CCM/Options.md
     - Path: CCM/Path.md
-    - Resource: CCM/Resource.md
     - TextRender: CCM/TextRender.md
-    - TT::Scalar: CCM/TT::Scalar.md
-    - XMLPanProfile: CCM/XMLPanProfile.md
+    - TextRender::Scalar: CCM/TextRender::Scalar.md
 - components-grid:
     - condorconfig: components-grid/condorconfig.md
     - condorconfig::schema: components-grid/condorconfig::schema.md

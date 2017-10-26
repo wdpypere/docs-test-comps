@@ -328,6 +328,9 @@ shared DS is also supported
     sub-labels using a common slash: list("Name", "Name/SubName")
         - Optional
         - Type: string
+    - `/software/opennebula/opennebula_datastore/permissions`
+        - Optional
+        - Type: opennebula_permissions
  - `/software/opennebula/opennebula_vnet`
     - `/software/opennebula/opennebula_vnet/bridge`
         - Optional
@@ -378,6 +381,26 @@ shared DS is also supported
     sub-labels using a common slash: list("Name", "Name/SubName")
         - Optional
         - Type: string
+    - `/software/opennebula/opennebula_vnet/filter_ip_spoofing`
+        - Description: set network filter to avoid IP spoofing for the current vnet
+        - Optional
+        - Type: boolean
+    - `/software/opennebula/opennebula_vnet/filter_mac_spoofing`
+        - Description: set network filter to avoid MAC spoofing for the current vnet
+        - Optional
+        - Type: boolean
+    - `/software/opennebula/opennebula_vnet/phydev`
+        - Description: Name of the physical network device that will be attached to the bridge (VXLAN)
+        - Optional
+        - Type: string
+    - `/software/opennebula/opennebula_vnet/mtu`
+        - Description: MTU for the tagged interface and bridge (VXLAN)
+        - Optional
+        - Type: long
+        - Range: 1500..
+    - `/software/opennebula/opennebula_vnet/permissions`
+        - Optional
+        - Type: opennebula_permissions
  - `/software/opennebula/opennebula_user`
     - Description: 
 Set OpenNebula regular users and their primary groups.
@@ -799,6 +822,30 @@ VMM kvmrc conf files
     - `/software/opennebula/opennebula_kvmrc/default_attach_discard`
         - Optional
         - Type: string
+ - `/software/opennebula/opennebula_vnm_conf`
+    - Description: 
+Type that sets the OpenNebula
+VNM (Virtual Network Manager) configuration file on the nodes
+
+    - `/software/opennebula/opennebula_vnm_conf/validate_vlan_id`
+        - Description: set to true to check that no other vlans are connected to the bridge.
+     Works with 802.1Q and VXLAN.
+        - Optional
+        - Type: boolean
+    - `/software/opennebula/opennebula_vnm_conf/arp_cache_poisoning`
+        - Description: enable ARP Cache Poisoning Prevention Rules for Open vSwitch.
+        - Optional
+        - Type: boolean
+    - `/software/opennebula/opennebula_vnm_conf/vxlan_mc`
+        - Description: base multicast address for each VLAN. The mc address is :vxlan_mc + :vlan_id.
+    Used by VXLAN.
+        - Optional
+        - Type: type_ipv4
+    - `/software/opennebula/opennebula_vnm_conf/vxlan_ttl`
+        - Description: Time To Live (TTL) should be > 1 in routed multicast networks (IGMP).
+    Used by VXLAN.
+        - Optional
+        - Type: long
  - `/software/opennebula/opennebula_rpc`
     - Description: 
 Type that sets the OpenNebula conf
@@ -874,6 +921,10 @@ datastores, vnets, hosts names, etc
     - `/software/opennebula/component_opennebula/kvmrc`
         - Optional
         - Type: opennebula_kvmrc
+    - `/software/opennebula/component_opennebula/vnm_conf`
+        - Description: set vnm remote configuration
+        - Optional
+        - Type: opennebula_vnm_conf
     - `/software/opennebula/component_opennebula/ssh_multiplex`
         - Description: set ssh host multiplex options
         - Optional
@@ -911,4 +962,8 @@ check if a specific type of database has the right attributes
  - is_consistent_datastore
     - Description: 
 check if a specific type of datastore has the right attributes
+
+ - is_consistent_vnet
+    - Description: 
+check if a specific type of vnet has the right attributes
 

@@ -548,6 +548,7 @@ so do not forget to set those as well (can be dummy value).
         - Optional
         - Type: systemd_skip
     - `/software/systemd/component_systemd/unconfigured`
+        - Description: what to do with unconfigured units: ignore, enabled, disabled, on (enabled+start), off (disabled+stop; advanced option)
         - Optional
         - Type: string
     - `/software/systemd/component_systemd/unit`
