@@ -3,6 +3,7 @@
 
  - `/software/authconfig/authconfig_method_generic_type`
     - `/software/authconfig/authconfig_method_generic_type/enable`
+        - Description: Enable this method. Unlisted methods are always disabled.
         - Optional
         - Type: boolean
  - `/software/authconfig/authconfig_pamadditions_line_type`
@@ -22,10 +23,6 @@
     - `/software/authconfig/authconfig_pamadditions_type/lines`
         - Optional
         - Type: authconfig_pamadditions_line_type
- - `/software/authconfig/authconfig_method_afs_type`
-    - `/software/authconfig/authconfig_method_afs_type/cell`
-        - Optional
-        - Type: type_fqdn
  - `/software/authconfig/authconfig_method_ldap_tls_type`
     - `/software/authconfig/authconfig_method_ldap_tls_type/enable`
         - Optional
@@ -246,6 +243,7 @@
         - Type: string
  - `/software/authconfig/authconfig_method_files_type`
  - `/software/authconfig/authconfig_nslcd_map_attributes`
+    - Description: LDAP attributes, as per RFC 2307
     - `/software/authconfig/authconfig_nslcd_map_attributes/uid`
         - Optional
         - Type: string
@@ -508,9 +506,6 @@
     - `/software/authconfig/authconfig_method_type/hesiod`
         - Optional
         - Type: authconfig_method_hesiod_type
-    - `/software/authconfig/authconfig_method_type/afs`
-        - Optional
-        - Type: authconfig_method_afs_type
     - `/software/authconfig/authconfig_method_type/nslcd`
         - Optional
         - Type: authconfig_method_nslcd_type
@@ -518,31 +513,35 @@
         - Optional
         - Type: authconfig_method_sssd_type
  - `/software/authconfig/hash_string`
- - `/software/authconfig/component_authconfig_type`
-    - `/software/authconfig/component_authconfig_type/safemode`
+ - `/software/authconfig/authconfig_component`
+    - `/software/authconfig/authconfig_component/safemode`
+        - Description: When set to true, no actual configuration will change. Default: false.
         - Optional
         - Type: boolean
-    - `/software/authconfig/component_authconfig_type/passalgorithm`
+    - `/software/authconfig/authconfig_component/passalgorithm`
         - Optional
         - Type: hash_string
-    - `/software/authconfig/component_authconfig_type/useshadow`
+    - `/software/authconfig/authconfig_component/useshadow`
+        - Description: Enable the use of shadow password files.
         - Optional
         - Type: boolean
-    - `/software/authconfig/component_authconfig_type/usecache`
+    - `/software/authconfig/authconfig_component/usecache`
+        - Description: Enable or disable nscd operation.
         - Optional
         - Type: boolean
-    - `/software/authconfig/component_authconfig_type/enableforcelegacy`
+    - `/software/authconfig/authconfig_component/enableforcelegacy`
         - Optional
         - Type: boolean
-    - `/software/authconfig/component_authconfig_type/startstop`
+    - `/software/authconfig/authconfig_component/usemd5`
+        - Description: Enable the use of MD5 hashed password.
         - Optional
         - Type: boolean
-    - `/software/authconfig/component_authconfig_type/usemd5`
-        - Optional
-        - Type: boolean
-    - `/software/authconfig/component_authconfig_type/method`
+    - `/software/authconfig/authconfig_component/method`
+        - Description: dict of authentication methods to enable. Supported
+    methods are: files, ldap, nis, krb5, smb, hesiod, nslcd and sssd.
+    The "files" method cannot be disabled.
         - Optional
         - Type: authconfig_method_type
-    - `/software/authconfig/component_authconfig_type/pamadditions`
+    - `/software/authconfig/authconfig_component/pamadditions`
         - Optional
         - Type: authconfig_pamadditions_type

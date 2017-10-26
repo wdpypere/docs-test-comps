@@ -4,10 +4,10 @@
  - `/software/aiiserver/structure_aiishellfe`
     - `/software/aiiserver/structure_aiishellfe/cachedir`
         - Optional
-        - Type: string
+        - Type: absolute_file_path
     - `/software/aiiserver/structure_aiishellfe/ca_dir`
         - Optional
-        - Type: string
+        - Type: absolute_file_path
     - `/software/aiiserver/structure_aiishellfe/ca_file`
         - Optional
         - Type: string
@@ -17,16 +17,25 @@
     - `/software/aiiserver/structure_aiishellfe/cert_file`
         - Optional
         - Type: string
+    - `/software/aiiserver/structure_aiishellfe/grub2_efi_kernel_root`
+        - Optional
+        - Type: string
+    - `/software/aiiserver/structure_aiishellfe/grub2_efi_linux_cmd`
+        - Optional
+        - Type: string
     - `/software/aiiserver/structure_aiishellfe/key_file`
         - Optional
         - Type: string
     - `/software/aiiserver/structure_aiishellfe/lockdir`
         - Optional
-        - Type: string
+        - Type: absolute_file_path
     - `/software/aiiserver/structure_aiishellfe/logfile`
         - Optional
         - Type: string
     - `/software/aiiserver/structure_aiishellfe/nbpdir`
+        - Optional
+        - Type: string
+    - `/software/aiiserver/structure_aiishellfe/nbpdir_grub2`
         - Optional
         - Type: string
     - `/software/aiiserver/structure_aiishellfe/noaction`
@@ -43,7 +52,7 @@
         - Type: boolean
     - `/software/aiiserver/structure_aiishellfe/osinstalldir`
         - Optional
-        - Type: string
+        - Type: absolute_file_path
     - `/software/aiiserver/structure_aiishellfe/profile_format`
         - Optional
         - Type: string
@@ -56,17 +65,19 @@
  - `/software/aiiserver/structure_aiidhcp`
     - `/software/aiiserver/structure_aiidhcp/dhcpconf`
         - Optional
-        - Type: string
+        - Type: absolute_file_path
     - `/software/aiiserver/structure_aiidhcp/restartcmd`
         - Optional
         - Type: string
     - `/software/aiiserver/structure_aiidhcp/norestart`
         - Optional
         - Type: boolean
- - `/software/aiiserver/structure_component_aiiserver`
-    - `/software/aiiserver/structure_component_aiiserver/aii-shellfe`
+ - `/software/aiiserver/aiiserver_component`
+    - `/software/aiiserver/aiiserver_component/aii-shellfe`
+        - Description: Configures the aii-shellfe tool.
         - Optional
         - Type: structure_aiishellfe
-    - `/software/aiiserver/structure_component_aiiserver/aii-dhcp`
+    - `/software/aiiserver/aiiserver_component/aii-dhcp`
+        - Description: Configures AII::DHCP and the aii-dhcp legacy tool.
         - Optional
         - Type: structure_aiidhcp

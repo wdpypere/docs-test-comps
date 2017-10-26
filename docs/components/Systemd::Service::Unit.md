@@ -250,14 +250,19 @@ NCM::Component::Systemd::Service::Unit is a class handling services with units
 
         Refresh the cache `force` (passed to `get_ufstate` method).
 
+    - derived
+
+        Boolean (default true) to use derived information when UnitFileState itself
+        is empty/undefined.
+
 #### Private methods
 
 - \_getTree
 
     The `getTree` method is similar to the regular
-    **EDG::WP4::CCM::Element::getTree**, except that
+    **EDG::WP4::CCM::CacheManager::Element::getTree**, except that
     it keeps the unitfile configuration as an Element instance
     (as required by **NCM::Component::Systemd::UnitFile**).
 
-    It takes as arguments a **EDG::WP4::CCM::Configuration** instance
+    It takes as arguments a **EDG::WP4::CCM::CacheManager::Configuration** instance
     `$config` and a `$path` to the root of the whole unit tree.
