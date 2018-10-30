@@ -3,8 +3,6 @@
 TextRender
 ##########
 
-.. highlight:: perl
-
 
 ****
 NAME

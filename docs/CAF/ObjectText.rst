@@ -3,8 +3,6 @@
 ObjectText
 ##########
 
-.. highlight:: perl
-
 
 ****
 NAME

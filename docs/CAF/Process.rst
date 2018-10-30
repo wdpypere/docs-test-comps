@@ -3,8 +3,6 @@
 Process
 #######
 
-.. highlight:: perl
-
 
 ****
 NAME
@@ -115,9 +113,61 @@ Private methods
    
   
   
+  \ ``sensitive``\ 
+   
+   A boolean, hashref or functionref specifying whether the arguments contain
+   sensitive information (like passwords).
+   
+   If \ ``sensitive``\  is true, the commandline will not be reported
+   (by default when \ ``log``\  option is used, the commandline is reported
+   with verbose level).
+   
+   If \ ``sensitive``\  is a hash reference, a basic search (key) and replace (value) is performed.
+   The keys and values are not interpreted as regexp patterns. The order of the search and
+   replace is determined by the sorted values (this gives you some control over the order).
+   Be aware that all occurences are replaced, and when e.g. weak passwords are used,
+   it might reveal the password by replacing other parts of the commandline
+   (\ ``--password=password``\  might be replaced by \ ``--SECRET=SECRET``\ ,
+   thus revealing the weak password).
+   Also, when a key is a substring of another key,
+   it will reveal (parts of) sensitive data if the order is not correct.
+   
+   If \ ``sensitive``\  is a function reference, the command arrayref is passed
+   as only argument, and the stringified return value is reported.
+       my $replace = sub {
+           my $command = shift;
+           return join("_", @$command);
+       };
+   
+   
+   .. code-block:: perl
+   
+        ...
+    
+        CAF::Process->new(..., sensitive => $replace);
+   
+   
+   This does not cover command output. If the output (stdout and/or stderr) contains
+   sensitve information, make sure to handle it yourself via \ ``stdout``\  and/or \ ``stderr``\ 
+   options (or by using the \ ``output``\  method).
+   
+  
+  
   These options will only be used by the execute method.
   
  
+ 
+
+
+_sensitive_commandline
+ 
+ Generate the reported command line text, in particular it deals with
+ the \ ``sensitive``\  attribute.
+ When the sensitive attribute is not set, it returns \ ``stringify_command``\ .
+ 
+ This method does not report, only returns text.
+ 
+ See the description of the \ ``sensitive``\  option in \ ``_initialize``\ .
  
 
 
@@ -424,5 +474,5 @@ SEE ALSO
 ********
 
 
-`LC::Process(8) <http://search.cpan.org/search?query=LC%3a%3aProcess%288%29&mode=module>`_
+\ ``LC::Process``\ 
 

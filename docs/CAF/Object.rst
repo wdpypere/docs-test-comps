@@ -3,8 +3,6 @@
 Object
 ######
 
-.. highlight:: perl
-
 
 ****
 NAME

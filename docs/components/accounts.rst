@@ -3,8 +3,6 @@
 accounts
 ########
 
-.. highlight:: perl
-
 
 ****
 NAME
@@ -112,7 +110,7 @@ create_user(username:string, params:structure_userinfo)
 
 
 This function creates a user, applying some defaults defined by variables and checking
-information consistency (e.g. group existence).
+ information consistency (e.g. group existence).
 It updates a structure_accounts (return value may be assigned to Default: \ ``/software/components/accounts``\ ).
 
 
@@ -376,7 +374,7 @@ none
  
 
 
- \ ** Default: ** \  \ ``dyn_user_group``\ 
+\ ** Default: **\  \ ``dyn_user_group``\ 
 
 
 

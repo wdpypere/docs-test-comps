@@ -3,8 +3,6 @@
 Service
 #######
 
-.. highlight:: perl
-
 
 ****
 NAME

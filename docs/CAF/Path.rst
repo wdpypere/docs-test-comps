@@ -3,8 +3,6 @@
 Path
 ####
 
-.. highlight:: perl
-
 
 ****
 NAME
@@ -70,57 +68,32 @@ return values
  
 
 
+Functions
+=========
+
+
+
+mkcafpath
+ 
+ Returns an instance of \ ``CAF::Object``\  and \ ``CAF::Path``\ .
+ This instance is a simple way to use \ ``CAF::Path``\  when
+ subclassing is not possible. Allowed options are
+ \ ``<log =``\  $logger>> and \ ``<NoAction =``\  $noaction>>.
+ 
+ This function is not exported, to be used as e.g.
+     use CAF::Path;
+     ...
+     my $cafpath = CAF::Path::mkcafpath(log => $logger);
+     if(! defined($cafpath->directory($name)) {
+         $logger->error("Failed to make directory $name: $cafpath->{fail}");
+     };
+ 
+
+
+
 Methods
 =======
 
-
-
-_get_noaction
- 
- Return NoAction setting:
- 
- 
- Return 0 is \ ``keeps_state``\  is true
-  
-  Any other value of \ ``keeps_state``\  is ignored. (In particular,
-  you cannot use \ ``keeps_state``\  to enable NoAction).
-  
- 
- 
- Return value of \ ``CAF::Object::NoAction``\  otherwise.
- 
- 
- 
- Supports an optional \ ``msg``\  that is prefixed to reporter.
- 
-
-
-_reset_exception_fail
- 
- Reset previous exceptions and/or fail attribute.
- 
-
-
-_function_catch
- 
- Execute function reference \ ``funcref``\  with arrayref \ ``$args``\  and hashref \ ``$opts``\ .
- 
- Method resets/ignores any existing errors and fail attribute, and catches any exception thrown.
- No error is reported, it returns undef in this case and the fail attribute is set.
- 
-
-
-_safe_eval
- 
- Run function reference \ ``funcref``\  with arrayref \ ``argsref``\  and hashref \ ``optsref``\ .
- 
- Return and set fail attribute with \ ``failmsg``\  on die or an error (\ ``undef``\  returned
- by \ ``funcref``\ ), or print (at verbose level) \ ``msg``\  on success (respectively $@ and 
- stringified result are appended). Note that \ ``_safe_eval``\  doesn't work with functions
- that don't return a defined value when they succeed.
- 
- Resets previous exceptions and/or fail attribute
- 
 
 
 LC_Check
@@ -149,7 +122,7 @@ directory_exists
  wrapped in a method to allow unittesting.
  
  If  \ ``directory``\  is a symlink, the symlink target
- is tested. If the symlink is broken (no target), 
+ is tested. If the symlink is broken (no target),
  \ ``directory_exists``\  returns false.
  
 
@@ -162,7 +135,7 @@ file_exists
  wrapped in a method to allow unittesting.
  
  If  \ ``filename``\  is a symlink, the symlink target
- is tested. If the symlink is broken (no target), 
+ is tested. If the symlink is broken (no target),
  \ ``file_exists``\  returns false.
  
 
@@ -183,7 +156,7 @@ is_symlink
  
  Test if \ ``path``\  is a symlink.
  
- Returns true as long as \ ``path``\  is a symlink, including when the 
+ Returns true as long as \ ``path``\  is a symlink, including when the
  symlink target doesn't exist.
  
 
@@ -279,9 +252,9 @@ hardlink
  Create a hardlink \ ``link_path``\  whose target is \ ``target``\ .
  
  On failure, returns undef and sets the fail attribute.
- If \ ``link_path``\  exists and is a file, it is updated. 
+ If \ ``link_path``\  exists and is a file, it is updated.
  \ ``target``\  must exist (\ ``check``\  flag available in symlink()
- is ignored for hardlinks) and it must reside in the same 
+ is ignored for hardlinks) and it must reside in the same
  filesystem as \ ``link_path``\ . If \ ``target_path``\  is a
  relative path, it is interpreted from the current directory.
  \ ``link_name``\  parent directory is created if it doesn't exist.
@@ -299,14 +272,14 @@ symlink
  
  Create a symlink \ ``link_path``\  whose target is \ ``target``\ .
  
- Returns undef and sets the fail attribute if \ ``link_path``\  
+ Returns undef and sets the fail attribute if \ ``link_path``\ 
  already exists and is not a symlink, except if this is a file
  and option \ ``force``\  is defined and true. If \ ``link_path``\  exists
- and is a symlink, it is updated. By default, the target is not 
- required to exist. If you want to ensure that it exists, 
+ and is a symlink, it is updated. By default, the target is not
+ required to exist. If you want to ensure that it exists,
  define option \ ``check``\  to true. Both \ ``link_path``\  and \ ``target``\ 
  can be relative paths: \ ``link_path``\  is interpreted as relatif
- to the current directory and \ ``target``\  is kept relative. 
+ to the current directory and \ ``target``\  is kept relative.
  \ ``link_path``\  parent directory is created if it doesn't exist.
  
  Returns SUCCESS on sucess if the symlink already existed
@@ -376,6 +349,68 @@ move
  
  keeps_state: boolean passed to \ ``_get_noaction``\ .
  
+ 
+ 
+
+
+listdir
+ 
+ Return an arrayref of sorted directory entry names or undef on failure.
+ (The \ ``.``\  and \ ``..``\  are removed).
+ 
+ Can be used to replace \ ``glob()``\  as follows:
+ 
+ 
+ .. code-block:: perl
+ 
+      ...
+      foreach my $file (glob('/path/*.ext')) {
+      ...
+  
+      replace by
+  
+      ...
+      foreach my $file (@{$self->listdir('/path', filter => '\.ext$', adddir => 1)}) {
+      ...
+ 
+ 
+ Options
+ 
+ 
+ test
+  
+  An (anonymous) sub used for testing.
+  The return value is interpreted as boolean value for filtering the
+  directory entry names (true value means the name is kept).
+  
+  Accepts 2 arguments: first argument (\ ``$_[0]``\ ) the directory entry name,
+  2nd argument (\ ``$_[1]``\ ) the directory.
+  
+ 
+ 
+ filter
+  
+  A pattern or compiled pattern to filter directory entry names.
+  Matching names are kept.
+  
+ 
+ 
+ inverse
+  
+  Apply inverse test (or filter) logic.
+  
+ 
+ 
+ adddir
+  
+  Prefix the directory to the returned filenames (default false).
+  
+ 
+ 
+ file_exists
+  
+  Shortcut for test function that uses \ ``CAF::Path::file_exists``\  as test function.
+  
  
  
 

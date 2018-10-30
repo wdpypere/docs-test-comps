@@ -3,8 +3,6 @@
 Reporter
 ########
 
-.. highlight:: perl
-
 
 ****
 NAME
@@ -175,6 +173,9 @@ config_reporter
 \ ``is_verbose``\ : bool
  
  Return true if reporter is verbose, false otherwise
+ 
+ Supports boolean option \ ``verbose_logfile``\  to check if
+ reporting to logfile is verbose.
  
 
 

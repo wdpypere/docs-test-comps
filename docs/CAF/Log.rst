@@ -3,8 +3,6 @@
 Log
 ###
 
-.. highlight:: perl
-
 
 ****
 NAME

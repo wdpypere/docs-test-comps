@@ -3,8 +3,6 @@
 Download :: LWP
 ###############
 
-.. highlight:: perl
-
 
 ****
 NAME

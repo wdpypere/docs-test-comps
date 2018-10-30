@@ -3,8 +3,6 @@
 ReporterMany
 ############
 
-.. highlight:: perl
-
 
 ****
 NAME

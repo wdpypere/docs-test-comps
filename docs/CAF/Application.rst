@@ -3,8 +3,6 @@
 Application
 ###########
 
-.. highlight:: perl
-
 
 ****
 NAME

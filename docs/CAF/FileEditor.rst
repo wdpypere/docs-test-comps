@@ -3,8 +3,6 @@
 FileEditor
 ##########
 
-.. highlight:: perl
-
 
 ****
 NAME
@@ -311,6 +309,6 @@ SEE ALSO
 ********
 
 
-This class inherits from `CAF::FileWriter(3pm) <http://search.cpan.org/search?query=CAF%3a%3aFileWriter%283pm%29&mode=module>`_, and thus from
-`IO::String(3pm) <http://search.cpan.org/search?query=IO%3a%3aString%283pm%29&mode=module>`_.
+This class inherits from \ ``CAF::FileWriter``\ , and thus from
+\ ``IO::String``\ .
 

@@ -3,8 +3,6 @@
 Lock
 ####
 
-.. highlight:: perl
-
 
 ****
 NAME

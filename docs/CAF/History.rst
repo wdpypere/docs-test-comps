@@ -3,8 +3,6 @@
 History
 #######
 
-.. highlight:: perl
-
 
 ****
 NAME

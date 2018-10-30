@@ -3,8 +3,6 @@
 Kerberos
 ########
 
-.. highlight:: perl
-
 
 ****
 NAME
