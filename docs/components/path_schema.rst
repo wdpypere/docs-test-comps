@@ -1,1 +1,5 @@
-pan.tt
+
+Types
+-----
+
+ - `/software/path/path_component`
