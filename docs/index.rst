@@ -7,6 +7,7 @@ This is the official documentation for Quattor:
  * configuration-modules-grid
  * CAF
  * CCM
+ * Unit Testing
 
 Also see the `Quattor homepage`_ for more information.
 

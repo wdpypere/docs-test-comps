@@ -15,5 +15,5 @@ Content
     :caption: configuration-modules-core
     :maxdepth: 1
     :glob:
-       
+
     components/*
