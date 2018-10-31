@@ -16,9 +16,7 @@ Types
         - Optional
         - Type: string
  - `/software/cron/structure_cron_log`
-    - Description: 
-    Define specific attributes for cron log file.
-
+    - Description: Define specific attributes for cron log file.
     - `/software/cron/structure_cron_log/disabled`
         - Description: A boolean disabling the redirection of script output/error to a log file
         - Optional
@@ -38,27 +36,27 @@ Types
         - Type: string
  - `/software/cron/structure_cron_timing`
     - `/software/cron/structure_cron_timing/minute`
-        - Description:  minute of hour (0-59) 
+        - Description: minute of hour (0-59)
         - Optional
         - Type: string
     - `/software/cron/structure_cron_timing/hour`
-        - Description:  hour of day (0-23) 
+        - Description: hour of day (0-23)
         - Optional
         - Type: string
     - `/software/cron/structure_cron_timing/day`
-        - Description:  day of month (1-31) 
+        - Description: day of month (1-31)
         - Optional
         - Type: string
     - `/software/cron/structure_cron_timing/month`
-        - Description:  month of year (1-12 or three-letter abbreviated lowercase name) 
+        - Description: month of year (1-12 or three-letter abbreviated lowercase name)
         - Optional
         - Type: string
     - `/software/cron/structure_cron_timing/weekday`
-        - Description:  day of week (0-7 or three-letter abbreviated lowercase name) 
+        - Description: day of week (0-7 or three-letter abbreviated lowercase name)
         - Optional
         - Type: string
     - `/software/cron/structure_cron_timing/smear`
-        - Description:  Interval (in minutes) over which to randomly smear the start time of the job 
+        - Description: Interval (in minutes) over which to randomly smear the start time of the job
         - Optional
         - Type: long
         - Range: 0..1440
@@ -137,30 +135,24 @@ Functions
 ---------
 
  - structure_cron_log_valid
-    - Description: 
-    Function to check that other log properties are not present when disabled is true
-
+    - Description: Function to check that other log properties are not present when disabled is true
  - valid_cron_timing
-    - Description: 
-    Validate contents of cron timing fields (see CRONTAB(5) for details)
+    - Description: Validate contents of cron timing fields (see CRONTAB(5) for details)
 
     Cron timing fields can contain complex expressions (e.g. "1,5,13-23/2"). Rather than validate these in
     depth the aim here is to catch things that are obviously wrong, such as:
         * characters which are not valid in cron fields
         * out of range numbers (e.g. "35" in the hour field)
         * names in the wrong field (e.g. "tue" in the day of month field)
-
  - valid_cron_minute
-    - Description:  Convenience wrapper for validating cron minute field 
+    - Description: Convenience wrapper for validating cron minute field
  - valid_cron_hour
-    - Description:  Convenience wrapper for validating cron hour field 
+    - Description: Convenience wrapper for validating cron hour field
  - valid_cron_day_of_month
-    - Description:  Convenience wrapper for validating cron day of month field 
+    - Description: Convenience wrapper for validating cron day of month field
  - valid_cron_month
-    - Description:  Convenience wrapper for validating cron month field 
+    - Description: Convenience wrapper for validating cron month field
  - valid_cron_day_of_week
-    - Description:  Convenience wrapper for validating cron day of week field 
+    - Description: Convenience wrapper for validating cron day of week field
  - valid_cron_frequency
-    - Description: 
-    Validate contents of cron frequency field
-
+    - Description: Validate contents of cron frequency field

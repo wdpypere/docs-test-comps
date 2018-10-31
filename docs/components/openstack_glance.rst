@@ -3,10 +3,8 @@ Types
 -----
 
  - `/software/openstack/openstack_glance_store`
-    - Description: 
-    The Glance configuration options in the "glance_store" Section.
+    - Description: The Glance configuration options in the "glance_store" Section.
     From glance.api
-
     - `/software/openstack/openstack_glance_store/stores`
         - Description: List of enabled Glance stores.
     Register the storage backends to use for storing disk images
@@ -76,9 +74,7 @@ Types
         - Optional
         - Type: string
  - `/software/openstack/openstack_glance_service_config`
-    - Description: 
-    list of Glance configuration sections
-
+    - Description: list of Glance configuration sections
     - `/software/openstack/openstack_glance_service_config/DEFAULT`
         - Optional
         - Type: openstack_DEFAULTS
@@ -95,9 +91,7 @@ Types
         - Optional
         - Type: openstack_glance_store
  - `/software/openstack/openstack_glance_config`
-    - Description: 
-    list of Glance service configuration sections
-
+    - Description: list of Glance service configuration sections
     - `/software/openstack/openstack_glance_config/service`
         - Optional
         - Type: openstack_glance_service_config

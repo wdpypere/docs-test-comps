@@ -3,21 +3,13 @@ Types
 -----
 
  - `/software/authconfig/sssd_provider_string`
-    - Description: 
-    Valid SSSD providers.
-
+    - Description: Valid SSSD providers.
  - `/software/authconfig/sssd_auth_provider_string`
-    - Description: 
-    Valid SSSD auth providers.
-
+    - Description: Valid SSSD auth providers.
  - `/software/authconfig/sssd_ldap_schema_string`
-    - Description: 
-    Valid LDAP schema types.
-
+    - Description: Valid LDAP schema types.
  - `/software/authconfig/authconfig_sssd_simple`
-    - Description: 
-    Simple access provider for SSSD.  See the sssd-simple man page.
-
+    - Description: Simple access provider for SSSD.  See the sssd-simple man page.
     - `/software/authconfig/authconfig_sssd_simple/allow_users`
         - Optional
         - Type: string

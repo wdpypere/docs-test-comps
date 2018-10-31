@@ -3,13 +3,11 @@ Types
 -----
 
  - `/software/grub/type_grub_password`
-    - Description: 
- the crypted password can be supplied either in the password field
+    - Description: the crypted password can be supplied either in the password field
  OR, alternatively, within a file. this could be useful if putting the crypted
  password in the profile is undesirable. for this the file will be scanned
  and the password will be taken from the second field in a colon delimited
  line, where the first field matches the file_user parameter.
-
     - `/software/grub/type_grub_password/enabled`
         - Description: Sets if a password should be enabled in grub.conf. If this is false,
       any existing password will be removed. If this is not defined, the component

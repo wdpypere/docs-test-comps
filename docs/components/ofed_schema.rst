@@ -189,9 +189,7 @@ Types
         - Optional
         - Type: string
  - `/software/ofed/component_ofed_partition`
-    - Description: 
-    Partition entry
-
+    - Description: Partition entry
     - `/software/ofed/component_ofed_partition/key`
         - Description: partition key (aka PKey); default is 32767/0x7fff.
       (partition keys are unique; first name is used by OpenSM for same keys)
@@ -217,9 +215,7 @@ Types
         - Optional
         - Type: component_ofed_partition_property
  - `/software/ofed/component_ofed_opensm_config`
-    - Description: 
-    OpenSM configuration file. Get the defaults and annotation with 'opensm -c /tmp/opensm.conf'
-
+    - Description: OpenSM configuration file. Get the defaults and annotation with 'opensm -c /tmp/opensm.conf'
     - `/software/ofed/component_ofed_opensm_config/virt_enabled`
         - Description: Virtualization support:
         0: Ignore Virtualization - No virtualization support

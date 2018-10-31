@@ -3,9 +3,7 @@ Types
 -----
 
  - `/software/openstack/openstack_keystone_token`
-    - Description: 
-    The Keystone "token" configuration section
-
+    - Description: The Keystone "token" configuration section
     - `/software/openstack/openstack_keystone_token/provider`
         - Description: Entry point for the token provider in the "keystone.token.provider"
     namespace. The token provider controls the token construction, validation,
@@ -27,9 +25,7 @@ Types
         - Optional
         - Type: string
  - `/software/openstack/openstack_keystone_authtoken`
-    - Description: 
-    The Keystone configuration options in the "authtoken" Section
-
+    - Description: The Keystone configuration options in the "authtoken" Section
     - `/software/openstack/openstack_keystone_authtoken/auth_uri`
         - Description: Complete "public" Identity API endpoint. This endpoint should not be an
     "admin" endpoint, as it should be accessible by all end users. Unauthenticated
@@ -46,9 +42,7 @@ Types
         - Optional
         - Type: type_hostport
  - `/software/openstack/openstack_keystone_paste_deploy`
-    - Description: 
-    The Keystone configuration options in the "paste_deploy" Section.
-
+    - Description: The Keystone configuration options in the "paste_deploy" Section.
     - `/software/openstack/openstack_keystone_paste_deploy/flavor`
         - Description: Deployment flavor to use in the server application pipeline.
     Provide a string value representing the appropriate deployment
@@ -62,9 +56,7 @@ Types
         - Optional
         - Type: string
  - `/software/openstack/openstack_openrc_config`
-    - Description: 
-Type that sets the OpenStack OpenRC script configuration
-
+    - Description: Type that sets the OpenStack OpenRC script configuration
     - `/software/openstack/openstack_openrc_config/os_username`
         - Optional
         - Type: string
@@ -95,9 +87,7 @@ Type that sets the OpenStack OpenRC script configuration
         - Type: long
         - Range: 1..
  - `/software/openstack/openstack_keystone_config`
-    - Description: 
-    The Keystone configuration sections
-
+    - Description: The Keystone configuration sections
     - `/software/openstack/openstack_keystone_config/DEFAULT`
         - Optional
         - Type: openstack_DEFAULTS

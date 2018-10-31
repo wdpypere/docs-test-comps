@@ -3,17 +3,11 @@ Types
 -----
 
  - `/software/systemd/hwloc_location`
-    - Description: 
-    hwloc (Portable Hardware Locality, hwloc(7)) location, e.g. node:1 for NUMAnode 1
-
+    - Description: hwloc (Portable Hardware Locality, hwloc(7)) location, e.g. node:1 for NUMAnode 1
  - `/software/systemd/syslog_facility`
-    - Description: 
-    syslog facility to use when logging to syslog
-
+    - Description: syslog facility to use when logging to syslog
  - `/software/systemd/syslog_level`
-    - Description: 
-    syslog level to use when logging to syslog or the kernel log buffer
-
+    - Description: syslog level to use when logging to syslog or the kernel log buffer
  - `/software/systemd/systemd_skip`
     - `/software/systemd/systemd_skip/service`
         - Optional
@@ -23,10 +17,8 @@ Types
  - `/software/systemd/systemd_unit_virtualization`
  - `/software/systemd/systemd_valid_unit`
  - `/software/systemd/systemd_unitfile_config_unit_condition`
-    - Description: 
-    Condition/Assert entries in Unit section
+    - Description: Condition/Assert entries in Unit section
     All lists can start with empty string to reset previously defined values.
-
     - `/software/systemd/systemd_unitfile_config_unit_condition/ACPower`
         - Optional
         - Type: boolean
@@ -82,10 +74,8 @@ Types
         - Optional
         - Type: systemd_unit_virtualization
  - `/software/systemd/systemd_unitfile_config_unit`
-    - Description: 
-the [Unit] section
+    - Description: the [Unit] section
 http://www.freedesktop.org/software/systemd/man/systemd.unit.html#%5BUnit%5D%20Section%20Options
-
     - `/software/systemd/systemd_unitfile_config_unit/After`
         - Optional
         - Type: systemd_valid_unit
@@ -184,10 +174,8 @@ http://www.freedesktop.org/software/systemd/man/systemd.unit.html#%5BUnit%5D%20S
         - Optional
         - Type: systemd_valid_unit
  - `/software/systemd/systemd_unitfile_config_install`
-    - Description: 
-the [Install] section
+    - Description: the [Install] section
 http://www.freedesktop.org/software/systemd/man/systemd.unit.html#%5BInstall%5D%20Section%20Options
-
     - `/software/systemd/systemd_unitfile_config_install/Alias`
         - Optional
         - Type: string
@@ -205,11 +193,9 @@ http://www.freedesktop.org/software/systemd/man/systemd.unit.html#%5BInstall%5D%
         - Type: systemd_valid_unit
  - `/software/systemd/systemd_unitfile_config_systemd_exec_stdouterr`
  - `/software/systemd/systemd_unitfile_config_systemd_kill`
-    - Description: 
-systemd.kill directives
+    - Description: systemd.kill directives
 http://www.freedesktop.org/software/systemd/man/systemd.kill.html
 valid for [Service], [Socket], [Mount], or [Swap] sections
-
     - `/software/systemd/systemd_unitfile_config_systemd_kill/KillMode`
         - Optional
         - Type: string
@@ -223,11 +209,9 @@ valid for [Service], [Socket], [Mount], or [Swap] sections
         - Optional
         - Type: boolean
  - `/software/systemd/systemd_unitfile_config_systemd_exec`
-    - Description: 
-systemd.exec directives
+    - Description: systemd.exec directives
 http://www.freedesktop.org/software/systemd/man/systemd.exec.html
 valid for [Service], [Socket], [Mount], or [Swap] sections
-
     - `/software/systemd/systemd_unitfile_config_systemd_exec/CPUAffinity`
         - Optional
         - Type: long
@@ -381,10 +365,8 @@ valid for [Service], [Socket], [Mount], or [Swap] sections
         - Optional
         - Type: string
  - `/software/systemd/systemd_unitfile_config_service`
-    - Description: 
-the [Service] section
+    - Description: the [Service] section
 http://www.freedesktop.org/software/systemd/man/systemd.service.html
-
     - `/software/systemd/systemd_unitfile_config_service/AmbientCapabilities`
         - Optional
         - Type: linux_capability
@@ -475,12 +457,10 @@ http://www.freedesktop.org/software/systemd/man/systemd.service.html
         - Type: long
         - Range: 0..
  - `/software/systemd/systemd_unitfile_config`
-    - Description: 
-Unit configuration sections
+    - Description: Unit configuration sections
     includes, unit and install are type agnostic
         unit and install are mandatory, but not enforced by schema (possible issues in case of replace=true)
     the other attributes are only valid for a specific type
-
     - `/software/systemd/systemd_unitfile_config/includes`
         - Description: list of existing/other units to base the configuration on
       (e.g. when creating a new service with a different name, based on an exsiting one)
@@ -496,11 +476,9 @@ Unit configuration sections
         - Optional
         - Type: systemd_unitfile_config_unit
  - `/software/systemd/systemd_unitfile_custom`
-    - Description: 
-Custom unit configuration to allow inserting computed configuration data
+    - Description: Custom unit configuration to allow inserting computed configuration data
 It overrides the data defined in the regular config schema,
 so do not forget to set those as well (can be dummy value).
-
     - `/software/systemd/systemd_unitfile_custom/CPUAffinity`
         - Description: CPUAffinity list determined via
       'hwloc-calc --physical-output --intersect PU <location0> <location1>'
@@ -509,9 +487,7 @@ so do not forget to set those as well (can be dummy value).
         - Optional
         - Type: hwloc_location
  - `/software/systemd/systemd_unitfile`
-    - Description: 
-    Unit file configuration
-
+    - Description: Unit file configuration
     - `/software/systemd/systemd_unitfile/config`
         - Description: unitfile configuration data
         - Optional

@@ -3,9 +3,7 @@ Types
 -----
 
  - `/software/openstack/openstack_neutron_ml2`
-    - Description: 
-    The Neutron configuration options in ml2_conf.ini "ml2" Section.
-
+    - Description: The Neutron configuration options in ml2_conf.ini "ml2" Section.
     - `/software/openstack/openstack_neutron_ml2/type_drivers`
         - Description: WARNING: After you configure the ML2 plug-in,
     removing values in the type_drivers option can lead to database inconsistency
@@ -28,9 +26,7 @@ Types
         - Optional
         - Type: type_neutronextension
  - `/software/openstack/openstack_neutron_ml2_type_flat`
-    - Description: 
-    The Neutron configuration options in ml2_conf.ini "ml2_type_flat" Section.
-
+    - Description: The Neutron configuration options in ml2_conf.ini "ml2_type_flat" Section.
     - `/software/openstack/openstack_neutron_ml2_type_flat/flat_networks`
         - Description: List of physical_network names with which flat networks can be created. Use
     default "*" to allow flat networks with arbitrary physical_network names. Use
@@ -38,17 +34,13 @@ Types
         - Optional
         - Type: string
  - `/software/openstack/openstack_neutron_ml2_type_vxlan`
-    - Description: 
-    The Neutron configuration options in ml2_conf.ini "ml2_type_vxlan" Section.
-
+    - Description: The Neutron configuration options in ml2_conf.ini "ml2_type_vxlan" Section.
     - `/software/openstack/openstack_neutron_ml2_type_vxlan/vni_ranges`
         - Description: Configure the VXLAN network identifier range for self-service networks
         - Optional
         - Type: string
  - `/software/openstack/openstack_neutron_securitygroup`
-    - Description: 
-    The Neutron configuration options in ml2_conf.ini "securitygroup" Section.
-
+    - Description: The Neutron configuration options in ml2_conf.ini "securitygroup" Section.
     - `/software/openstack/openstack_neutron_securitygroup/enable_ipset`
         - Description: Use ipset to speed-up the iptables based security groups. Enabling ipset
     support requires that ipset is installed on L2 agent node
@@ -65,9 +57,7 @@ Types
         - Optional
         - Type: string
  - `/software/openstack/openstack_neutron_vxlan`
-    - Description: 
-    The Neutron configuration options in linuxbridge_agent.ini "vxlan" Section.
-
+    - Description: The Neutron configuration options in linuxbridge_agent.ini "vxlan" Section.
     - `/software/openstack/openstack_neutron_vxlan/enable_vxlan`
         - Description: Enable VXLAN on the agent. Can be enabled when agent is managed by ml2 plugin
     using linuxbridge mechanism driver
@@ -86,9 +76,7 @@ Types
         - Optional
         - Type: boolean
  - `/software/openstack/openstack_neutron_linux_bridge`
-    - Description: 
-    The Neutron configuration options in linuxbridge_agent.ini "linux_bridge" Section.
-
+    - Description: The Neutron configuration options in linuxbridge_agent.ini "linux_bridge" Section.
     - `/software/openstack/openstack_neutron_linux_bridge/physical_interface_mappings`
         - Description: Comma-separated list of <physical_network>:<physical_interface> tuples
     mapping physical network names to the agents node-specific physical network
@@ -99,9 +87,7 @@ Types
         - Optional
         - Type: string
  - `/software/openstack/openstack_neutron_common`
-    - Description: 
-    list of Neutron common configuration sections
-
+    - Description: list of Neutron common configuration sections
     - `/software/openstack/openstack_neutron_common/DEFAULT`
         - Optional
         - Type: openstack_DEFAULTS
@@ -147,9 +133,7 @@ Types
         - Optional
         - Type: openstack_DEFAULTS
  - `/software/openstack/openstack_neutron_service_config`
-    - Description: 
-    list of Neutron service configuration sections
-
+    - Description: list of Neutron service configuration sections
     - `/software/openstack/openstack_neutron_service_config/database`
         - Optional
         - Type: openstack_database
@@ -158,9 +142,7 @@ Types
         - Optional
         - Type: openstack_domains_common
  - `/software/openstack/openstack_neutron_config`
-    - Description: 
-    list of Neutron service configuration sections
-
+    - Description: list of Neutron service configuration sections
     - `/software/openstack/openstack_neutron_config/service`
         - Optional
         - Type: openstack_neutron_service_config

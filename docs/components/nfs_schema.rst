@@ -1,8 +1,4 @@
 
-###########
-nfs::schema
-###########
-
 Types
 -----
 
@@ -52,7 +48,6 @@ Types
 
       If a path is listed more than once, then the last entry will be used
       to generate the exports file.
-    
         - Optional
         - Type: structure_nfs_exports
     - `/software/nfs/nfs_component/mounts`
@@ -73,6 +68,5 @@ Types
       If the list is empty, all supported mounts in fstab will be removed.
       If you don't want ncm-nfs to modify /etc/fstab, do not set the mounts
       attribute at all.
-    
         - Optional
         - Type: structure_nfs_mounts

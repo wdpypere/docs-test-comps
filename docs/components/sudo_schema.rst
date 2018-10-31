@@ -279,7 +279,6 @@ Types
 
       "/software/components/sudo/user_aliases/FOO" =
             list ("bar", "%wheel", "!root");
-    
         - Optional
         - Type: sudo_user_alias
     - `/software/sudo/sudo_component/run_as_aliases`

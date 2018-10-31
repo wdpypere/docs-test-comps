@@ -6,9 +6,7 @@ Types
  - `/software/openstack/type_neutrondriver`
  - `/software/openstack/type_neutronextension`
  - `/software/openstack/openstack_domains_common`
-    - Description: 
-    OpenStack common domains section
-
+    - Description: OpenStack common domains section
     - `/software/openstack/openstack_domains_common/project_domain_name`
         - Description: Domain name containing project
         - Optional
@@ -39,17 +37,13 @@ Types
         - Optional
         - Type: string
  - `/software/openstack/openstack_database`
-    - Description: 
-    The configuration options in the database Section
-
+    - Description: The configuration options in the database Section
     - `/software/openstack/openstack_database/connection`
         - Description: The SQLAlchemy connection string to use to connect to the database
         - Optional
         - Type: string
  - `/software/openstack/openstack_oslo_concurrency`
-    - Description: 
-    The configuration options in 'oslo_concurrency' Section.
-
+    - Description: The configuration options in 'oslo_concurrency' Section.
     - `/software/openstack/openstack_oslo_concurrency/lock_path`
         - Description: Directory to use for lock files.  For security, the specified directory should
     only be writable by the user running the processes that need locking. Defaults
@@ -58,9 +52,7 @@ Types
         - Optional
         - Type: absolute_file_path
  - `/software/openstack/openstack_DEFAULTS`
-    - Description: 
-    The configuration options in the DEFAULTS Section
-
+    - Description: The configuration options in the DEFAULTS Section
     - `/software/openstack/openstack_DEFAULTS/admin_token`
         - Description: Using this feature is *NOT* recommended. Instead, use the "keystone-manage
     bootstrap" command. The value of this option is treated as a "shared secret"
@@ -118,7 +110,6 @@ Types
         - Description: From nova.conf
     An URL representing the messaging driver to use and its full configuration.
     Example: rabbit://openstack:<rabbit_password>@<fqdn>
-    
         - Optional
         - Type: string
     - `/software/openstack/openstack_DEFAULTS/rootwrap_config`
@@ -193,7 +184,6 @@ Types
     shared secret to prevent spoofing. You may select any string for a secret,
     but it must match here and in the configuration used by the Nova Metadata
     Server. NOTE: Nova uses the same config key, but in [neutron] section.
-    
         - Optional
         - Type: string
     - `/software/openstack/openstack_DEFAULTS/firewall_driver`
@@ -205,9 +195,7 @@ Types
         - Optional
         - Type: boolean
  - `/software/openstack/openstack_rabbitmq_config`
-    - Description: 
-    Type to enable RabbitMQ and the message system for OpenStack.
-
+    - Description: Type to enable RabbitMQ and the message system for OpenStack.
     - `/software/openstack/openstack_rabbitmq_config/user`
         - Description: RabbitMQ user to get access to the queue
         - Optional

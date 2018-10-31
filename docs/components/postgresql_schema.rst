@@ -24,12 +24,10 @@ Types
         - Optional
         - Type: string
  - `/software/postgresql/postgresql_mainconfig`
-    - Description: 
-    postgresql main configuration
+    - Description: postgresql main configuration
         boolean -> yes / no
         int     -> int
         string  -> 'string' (use double single quotes for a single quote in the string)
-
     - `/software/postgresql/postgresql_mainconfig/archive_command`
         - Optional
         - Type: string
@@ -609,7 +607,7 @@ Types
         - Optional
         - Type: string
     - `/software/postgresql/postgresql_db/lang`
-        - Description: sets the pg language for the db (using createlang), this runs after installfile. 
+        - Description: sets the pg language for the db (using createlang), this runs after installfile.
         - Optional
         - Type: string
     - `/software/postgresql/postgresql_db/langfile`
@@ -666,9 +664,7 @@ Types
         - Optional
         - Type: long
  - `/software/postgresql/postgresql_role_sql`
-    - Description: 
-    The raw ALTER ROLE sql (cannot contain a ';'; use ENCRYPTED PASSWORD instead)
-
+    - Description: The raw ALTER ROLE sql (cannot contain a ';'; use ENCRYPTED PASSWORD instead)
  - `/software/postgresql/postgresql_initdb`
     - `/software/postgresql/postgresql_initdb/data-checksums`
         - Description: enable datachecksumming (requires v9.3.0)

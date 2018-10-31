@@ -3,12 +3,10 @@ Types
 -----
 
  - `/software/ceph/ceph_daemon`
-    - Description:  type for a generic ceph daemon 
+    - Description: type for a generic ceph daemon
  - `/software/ceph/ceph_global_config`
-    - Description: 
-ceph cluster-wide config parameters
+    - Description: ceph cluster-wide config parameters
 generate an fsid with uuidgen
- 
     - `/software/ceph/ceph_global_config/auth_client_required`
         - Optional
         - Type: choice
@@ -105,7 +103,7 @@ generate an fsid with uuidgen
         - Optional
         - Type: ceph_rgw_config
  - `/software/ceph/ceph_cluster`
-    - Description:  overarching ceph cluster type, with osds, mons and msds 
+    - Description: overarching ceph cluster type, with osds, mons and msds
     - `/software/ceph/ceph_cluster/monitors`
         - Optional
         - Type: ceph_monitor
@@ -125,10 +123,8 @@ generate an fsid with uuidgen
         - Optional
         - Type: boolean
  - `/software/ceph/ceph_daemons`
-    - Description: 
-Decentralized config feature:
+    - Description: Decentralized config feature:
 For use with dedicated pan code that builds the cluster info from remote templates.
-
     - `/software/ceph/ceph_daemons/osds`
         - Optional
         - Type: ceph_osd
@@ -139,11 +135,9 @@ For use with dedicated pan code that builds the cluster info from remote templat
  - `/software/ceph/ceph_supported_version`
  - `/software/ceph/ceph_deploy_supported_version`
  - `/software/ceph/ceph_component`
-    - Description: 
-ceph cluster configuration
+    - Description: ceph cluster configuration
 we only support node to be in one ceph cluster named ceph
 this schema only works with Luminous 12.2.2 and above
- 
     - `/software/ceph/ceph_component/cluster`
         - Optional
         - Type: ceph_cluster

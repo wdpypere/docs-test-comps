@@ -3,10 +3,8 @@ Types
 -----
 
  - `/software/network/structure_route`
-    - Description: 
-    Add route (IPv4 of IPv6)
+    - Description: Add route (IPv4 of IPv6)
     Presence of ':' in any of the values indicates this is IPv6 related.
-
     - `/software/network/structure_route/address`
         - Description: The ADDRESS in ADDRESS/PREFIX via GATEWAY
         - Optional
@@ -28,18 +26,14 @@ Types
         - Optional
         - Type: string
  - `/software/network/structure_rule`
-    - Description: 
-    Add rule (IPv4 of IPv6)
+    - Description: Add rule (IPv4 of IPv6)
     Presence of ':' in any of the values indicates this is IPv6 related.
-
     - `/software/network/structure_rule/command`
         - Description: rule add options to use (cannot be combined with other options)
         - Optional
         - Type: string
  - `/software/network/structure_interface_alias`
-    - Description: 
-    Interface alias
-
+    - Description: Interface alias
     - `/software/network/structure_interface_alias/ip`
         - Optional
         - Type: type_ip
@@ -53,9 +47,7 @@ Types
         - Optional
         - Type: type_fqdn
  - `/software/network/structure_bonding_options`
-    - Description: 
-    Describes the bonding options for configuring channel bonding on EL5 and similar.
-
+    - Description: Describes the bonding options for configuring channel bonding on EL5 and similar.
     - `/software/network/structure_bonding_options/mode`
         - Optional
         - Type: long
@@ -80,10 +72,8 @@ Types
         - Optional
         - Type: string
  - `/software/network/structure_bridging_options`
-    - Description: 
-    describes the bridging options
+    - Description: describes the bridging options
     (the parameters for /sys/class/net/<br>/brport)
-
     - `/software/network/structure_bridging_options/bpdu_guard`
         - Optional
         - Type: long
@@ -109,9 +99,7 @@ Types
         - Optional
         - Type: long
  - `/software/network/structure_ethtool_offload`
-    - Description: 
-    interface ethtool offload
-
+    - Description: interface ethtool offload
     - `/software/network/structure_ethtool_offload/rx`
         - Optional
         - Type: string
@@ -126,10 +114,8 @@ Types
         - Optional
         - Type: string
  - `/software/network/structure_ethtool_ring`
-    - Description: 
-    Set the ethernet transmit or receive buffer ring counts.
+    - Description: Set the ethernet transmit or receive buffer ring counts.
     See ethtool --show-ring for the values.
-
     - `/software/network/structure_ethtool_ring/rx`
         - Optional
         - Type: long
@@ -143,8 +129,7 @@ Types
         - Optional
         - Type: long
  - `/software/network/structure_ethtool_wol`
-    - Description: 
-    ethtool wol p|u|m|b|a|g|s|d...
+    - Description: ethtool wol p|u|m|b|a|g|s|d...
     from the man page
         Sets Wake-on-LAN options.  Not all devices support this.  The argument to this option is a string
         of characters specifying which options to enable.
@@ -156,11 +141,8 @@ Types
             g  Wake on MagicPacket(tm)
             s  Enable SecureOn(tm) password for MagicPacket(tm)
             d  Disable (wake on nothing).  This option clears all previous option
-
  - `/software/network/structure_ethtool`
-    - Description: 
-    ethtool
-
+    - Description: ethtool
     - `/software/network/structure_ethtool/wol`
         - Optional
         - Type: structure_ethtool_wol
@@ -174,9 +156,7 @@ Types
         - Optional
         - Type: long
  - `/software/network/structure_interface_plugin_vxlan`
-    - Description: 
-    interface plugin for vxlan support via initscripts-vxlan
-
+    - Description: interface plugin for vxlan support via initscripts-vxlan
     - `/software/network/structure_interface_plugin_vxlan/vni`
         - Description: VXLAN Network Identifier (or VXLAN Segment ID); derived from devicename vxlan[0-9] if not defined
         - Optional
@@ -204,17 +184,13 @@ Types
         - Optional
         - Type: boolean
  - `/software/network/structure_interface_plugin`
-    - Description: 
-    interface plugin via custom ifup/down[-pre]-local hooks
-
+    - Description: interface plugin via custom ifup/down[-pre]-local hooks
     - `/software/network/structure_interface_plugin/vxlan`
         - Description: VXLAN support via initscripts-vxlan
         - Optional
         - Type: structure_interface_plugin_vxlan
  - `/software/network/structure_interface`
-    - Description: 
-    interface
-
+    - Description: interface
     - `/software/network/structure_interface/ip`
         - Optional
         - Type: type_ip
@@ -381,13 +357,9 @@ Types
         - Optional
         - Type: structure_interface_plugin
  - `/software/network/structure_router`
-    - Description: 
-    router
-
+    - Description: router
  - `/software/network/structure_ipv6`
-    - Description: 
-    IPv6 global settings
-
+    - Description: IPv6 global settings
     - `/software/network/structure_ipv6/enabled`
         - Optional
         - Type: boolean
@@ -398,12 +370,10 @@ Types
         - Optional
         - Type: valid_interface
  - `/software/network/structure_network`
-    - Description: 
-    Host network configuration
+    - Description: Host network configuration
 
     These values are used to generate /etc/sysconfig/network
     when using ncm-network (unless specified otherwise).
-
     - `/software/network/structure_network/domainname`
         - Optional
         - Type: type_fqdn

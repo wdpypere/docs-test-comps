@@ -3,7 +3,7 @@ Types
 -----
 
  - `/software/ceph/ceph_osd_config`
-    - Description:  configuration options for a ceph osd daemon 
+    - Description: configuration options for a ceph osd daemon
     - `/software/ceph/ceph_osd_config/osd_deep_scrub_interval`
         - Optional
         - Type: double
@@ -40,11 +40,9 @@ Types
         - Optional
         - Type: double
  - `/software/ceph/ceph_osd`
-    - Description: 
-ceph osd-specific type
+    - Description: ceph osd-specific type
 Only bluestore support for now
 dmcrypt supported with ceph-volume > 12.2.3
-
     - `/software/ceph/ceph_osd/class`
         - Optional
         - Type: string

@@ -4,10 +4,8 @@ Types
 
  - `/software/metaconfig/metaconfig_extension`
  - `/software/metaconfig/metaconfig_textrender_convert`
-    - Description: 
-    Convert value of certain types (e.g. boolean to string yes/no)
+    - Description: Convert value of certain types (e.g. boolean to string yes/no)
     (using the CCM::TextRender element options)
-
     - `/software/metaconfig/metaconfig_textrender_convert/yesno`
         - Description: Convert boolean to (lowercase) 'yes' and 'no'.
         - Optional

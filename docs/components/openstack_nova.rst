@@ -3,19 +3,14 @@ Types
 -----
 
  - `/software/openstack/openstack_nova_api_database`
-    - Description: 
-    The Nova configuration options in "api_database" Section.
-
+    - Description: The Nova configuration options in "api_database" Section.
     - `/software/openstack/openstack_nova_api_database/connection`
         - Description: The SQLAlchemy connection string to use to connect to the database.
     Example (mysql): mysql+pymysql://nova:<NOVA_DBPASS>@<nova_fqdn>/nova_api
-    
         - Optional
         - Type: string
  - `/software/openstack/openstack_nova_vnc`
-    - Description: 
-    The Nova configuration options in the "vnc" Section.
-
+    - Description: The Nova configuration options in the "vnc" Section.
     - `/software/openstack/openstack_nova_vnc/vncserver_listen`
         - Description: The IP address or hostname on which an instance should listen to for
     incoming VNC connection requests on this node
@@ -47,9 +42,7 @@ Types
         - Optional
         - Type: type_absoluteURI
  - `/software/openstack/openstack_nova_glance`
-    - Description: 
-    The Nova configuration options in the "glance" Section.
-
+    - Description: The Nova configuration options in the "glance" Section.
     - `/software/openstack/openstack_nova_glance/api_servers`
         - Description: List of glance api servers endpoints available to nova.
     https is used for ssl-based glance api servers.
@@ -61,18 +54,14 @@ Types
         - Optional
         - Type: type_absoluteURI
  - `/software/openstack/openstack_nova_placement`
-    - Description: 
-    The Nova configuration options in "placement" Section.
-
+    - Description: The Nova configuration options in "placement" Section.
     - `/software/openstack/openstack_nova_placement/os_region_name`
         - Description: Region name of this node. This is used when picking the URL in the service
     catalog
         - Optional
         - Type: string
  - `/software/openstack/openstack_nova_libvirt`
-    - Description: 
-    The Nova hypervisor configuration options in "libvirt" Section.
-
+    - Description: The Nova hypervisor configuration options in "libvirt" Section.
     - `/software/openstack/openstack_nova_libvirt/virt_type`
         - Description: Describes the virtualization type (or so called domain type) libvirt should
     use.
@@ -100,9 +89,7 @@ Types
         - Optional
         - Type: string
  - `/software/openstack/openstack_nova_neutron`
-    - Description: 
-    The Nova hypervisor configuration options in "neutron" Section.
-
+    - Description: The Nova hypervisor configuration options in "neutron" Section.
     - `/software/openstack/openstack_nova_neutron/url`
         - Description: Any valid URL that points to the Neutron API service is appropriate here.
     This typically matches the URL returned for the 'network' service type
@@ -132,9 +119,7 @@ Types
         - Optional
         - Type: boolean
  - `/software/openstack/openstack_nova_scheduler`
-    - Description: 
-    The Nova configuration options in the "scheduler" Section.
-
+    - Description: The Nova configuration options in the "scheduler" Section.
     - `/software/openstack/openstack_nova_scheduler/discover_hosts_in_cells_interval`
         - Description: This value controls how often (in seconds) the scheduler should attempt
     to discover new hosts that have been added to cells. If negative (the
@@ -148,9 +133,7 @@ Types
         - Type: long
         - Range: -1..
  - `/software/openstack/openstack_nova_common`
-    - Description: 
-    list of Nova common configuration sections
-
+    - Description: list of Nova common configuration sections
     - `/software/openstack/openstack_nova_common/DEFAULT`
         - Optional
         - Type: openstack_DEFAULTS
@@ -174,9 +157,7 @@ Types
         - Optional
         - Type: openstack_nova_neutron
  - `/software/openstack/openstack_nova_config`
-    - Description: 
-    list of Nova configuration sections
-
+    - Description: list of Nova configuration sections
     - `/software/openstack/openstack_nova_config/database`
         - Optional
         - Type: openstack_database

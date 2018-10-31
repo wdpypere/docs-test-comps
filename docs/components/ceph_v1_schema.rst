@@ -3,14 +3,14 @@ Types
 -----
 
  - `/software/ceph/ceph_daemon_config`
-    - Description:  ceph daemon config parameters 
+    - Description: ceph daemon config parameters
  - `/software/ceph/ceph_daemon`
-    - Description:  type for a generic ceph daemon 
+    - Description: type for a generic ceph daemon
     - `/software/ceph/ceph_daemon/up`
         - Optional
         - Type: boolean
  - `/software/ceph/ceph_cluster_config`
-    - Description:  ceph cluster-wide config parameters 
+    - Description: ceph cluster-wide config parameters
     - `/software/ceph/ceph_cluster_config/auth_client_required`
         - Optional
         - Type: string
@@ -85,7 +85,7 @@ Types
         - Optional
         - Type: type_network_name
  - `/software/ceph/ceph_crushmap_bucket`
-    - Description:  ceph crushmap bucket definition 
+    - Description: ceph crushmap bucket definition
     - `/software/ceph/ceph_crushmap_bucket/name`
         - Optional
         - Type: string
@@ -114,7 +114,7 @@ Types
         - Optional
         - Type: dict
  - `/software/ceph/ceph_crushmap_rule_choice`
-    - Description:  ceph crushmap rule step 
+    - Description: ceph crushmap rule step
     - `/software/ceph/ceph_crushmap_rule_choice/chtype`
         - Optional
         - Type: string
@@ -125,7 +125,7 @@ Types
         - Optional
         - Type: string
  - `/software/ceph/ceph_crushmap_rule_step`
-    - Description:  ceph crushmap rule step 
+    - Description: ceph crushmap rule step
     - `/software/ceph/ceph_crushmap_rule_step/take`
         - Optional
         - Type: string
@@ -139,7 +139,7 @@ Types
         - Optional
         - Type: ceph_crushmap_rule_choice
  - `/software/ceph/ceph_crushmap_rule`
-    - Description:  ceph crushmap rule definition 
+    - Description: ceph crushmap rule definition
     - `/software/ceph/ceph_crushmap_rule/name`
         - Optional
         - Type: string
@@ -162,13 +162,11 @@ Types
         - Optional
         - Type: ceph_crushmap_rule_step
  - `/software/ceph/ceph_crushmap`
-    - Description: 
-ceph crushmap definition
+    - Description: ceph crushmap definition
 The crushmap defines some types of buckets,
 a hierarchical bucket structure,
 rules for traversing these buckets
 and tunables for magic numbers.
-
     - `/software/ceph/ceph_crushmap/types`
         - Optional
         - Type: string
@@ -182,7 +180,7 @@ and tunables for magic numbers.
         - Optional
         - Type: long
  - `/software/ceph/ceph_cluster`
-    - Description:  overarching ceph cluster type, with osds, mons and msds 
+    - Description: overarching ceph cluster type, with osds, mons and msds
     - `/software/ceph/ceph_cluster/config`
         - Optional
         - Type: ceph_cluster_config
@@ -205,15 +203,13 @@ and tunables for magic numbers.
         - Optional
         - Type: ceph_crushmap
  - `/software/ceph/ceph_localdaemons`
-    - Description: 
-Decentralized config feature:
+    - Description: Decentralized config feature:
 For use with dedicated pan code that builds the cluster info from remote templates.
-
     - `/software/ceph/ceph_localdaemons/osds`
         - Optional
         - Type: ceph_osd
  - `/software/ceph/ceph_component`
-    - Description:  ceph clusters 
+    - Description: ceph clusters
     - `/software/ceph/ceph_component/clusters`
         - Optional
         - Type: ceph_cluster

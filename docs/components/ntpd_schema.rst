@@ -10,10 +10,8 @@ Types
         - Optional
         - Type: type_ip
  - `/software/ntpd/ntpd_server_options`
-    - Description: 
-    Server command options
+    - Description: Server command options
     Refer to man ntp.conf for details.
-
     - `/software/ntpd/ntpd_server_options/autokey`
         - Optional
         - Type: boolean
@@ -52,10 +50,8 @@ Types
         - Type: long
         - Range: 1..4
  - `/software/ntpd/ntpd_restrict_options`
-    - Description: 
-    Base restrict command options
+    - Description: Base restrict command options
     Refer to C<< man ntp_acc >> for more information or access control commands.
-
     - `/software/ntpd/ntpd_restrict_options/mask`
         - Description: Mask can be a address of a host or network and can be a valid host DNS name.
         - Optional
@@ -99,15 +95,11 @@ Types
         - Type: long
         - Range: 1..4
  - `/software/ntpd/ntpd_restrict_default`
-    - Description: 
-    Default restrict command options.
+    - Description: Default restrict command options.
     Default when none-defined: restrict default ignore.
-
  - `/software/ntpd/ntpd_server_definition`
-    - Description: 
-    Server address with optional options and access restrictions
+    - Description: Server address with optional options and access restrictions
     Allows to configure timeservers with their own options.
-
     - `/software/ntpd/ntpd_server_definition/server`
         - Description: Time server, can be ip address or qualified DNS hostname
         - Optional
@@ -116,9 +108,7 @@ Types
         - Optional
         - Type: ntpd_server_options
  - `/software/ntpd/ntpd_tinker_options`
-    - Description: 
-    Alter certain system variables used by the clock discipline algorithm
-
+    - Description: Alter certain system variables used by the clock discipline algorithm
     - `/software/ntpd/ntpd_tinker_options/allan`
         - Optional
         - Type: long
@@ -141,13 +131,11 @@ Types
         - Optional
         - Type: long
  - `/software/ntpd/ntpd_system_options`
-    - Description: 
-    System options that can be en/disabled.
+    - Description: System options that can be en/disabled.
     Flags not mentioned are unaffected.
     Note that all of these flags can be controlled remotely using
     the ntpdc utility program.
     Refer to ntp_misc manpage for more details.
-
     - `/software/ntpd/ntpd_system_options/auth`
         - Optional
         - Type: boolean
@@ -173,8 +161,7 @@ Types
         - Optional
         - Type: boolean
  - `/software/ntpd/ntpd_logconfig`
-    - Description: 
-    Log configuration arguments must be defined in a list of strings.
+    - Description: Log configuration arguments must be defined in a list of strings.
     Values for each argument must follow what is defined in ntp_misc manual.
     Refer to ntp_misc manpage for more details.
 
@@ -183,11 +170,8 @@ Types
 
         prefix "/software/components/ntpd";
         "logconfig" = list("-syncstatus", "+sysevents");
-
  - `/software/ntpd/ntpd_statistics`
-    - Description: 
-    Monitoring/statistics options, see ntp_mon manpage.
-
+    - Description: Monitoring/statistics options, see ntp_mon manpage.
     - `/software/ntpd/ntpd_statistics/clockstats`
         - Optional
         - Type: boolean
@@ -207,9 +191,7 @@ Types
         - Optional
         - Type: boolean
  - `/software/ntpd/ntpd_filegen`
-    - Description: 
-    Monitoring/statistics options, see ntp_mon manpage.
-
+    - Description: Monitoring/statistics options, see ntp_mon manpage.
     - `/software/ntpd/ntpd_filegen/name`
         - Optional
         - Type: string

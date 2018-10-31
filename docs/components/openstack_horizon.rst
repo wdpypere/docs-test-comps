@@ -3,9 +3,7 @@ Types
 -----
 
  - `/software/openstack/openstack_horizon_caches`
-    - Description: 
-    The Horizon configuration options in "caches" Section.
-
+    - Description: The Horizon configuration options in "caches" Section.
     - `/software/openstack/openstack_horizon_caches/BACKEND`
         - Description: We recommend you use memcached for development; otherwise after every reload
      of the django development server, you will have to login again
@@ -16,8 +14,7 @@ Types
         - Optional
         - Type: type_hostport
  - `/software/openstack/openstack_horizon_api_versions`
-    - Description: 
-    The Horizon api versions section.
+    - Description: The Horizon api versions section.
     Overrides for OpenStack API versions. Use this setting to force the
     OpenStack dashboard to use a specific API version for a given service API.
     Versions specified here should be integers or floats, not strings.
@@ -25,7 +22,6 @@ Types
     service API. For example, The identity service APIs have inconsistent
     use of the decimal point, so valid options would be 2.0 or 3.
     Minimum compute version to get the instance locked status is 2.9.
-
     - `/software/openstack/openstack_horizon_api_versions/identity`
         - Optional
         - Type: long
@@ -39,11 +35,9 @@ Types
         - Type: long
         - Range: 1..
  - `/software/openstack/openstack_horizon_neutron_network`
-    - Description: 
-    The Horizon "OPENSTACK_NEUTRON_NETWORK" settings can be used to enable optional
+    - Description: The Horizon "OPENSTACK_NEUTRON_NETWORK" settings can be used to enable optional
     services provided by neutron. Options currently available are load
     balancer service, security groups, quotas, VPN service.
-
     - `/software/openstack/openstack_horizon_neutron_network/enable_router`
         - Optional
         - Type: boolean
@@ -72,13 +66,11 @@ Types
         - Optional
         - Type: boolean
  - `/software/openstack/openstack_horizon_keystone_backend`
-    - Description: 
-    The OPENSTACK_KEYSTONE_BACKEND settings can be used to identify the
+    - Description: The OPENSTACK_KEYSTONE_BACKEND settings can be used to identify the
     capabilities of the auth backend for Keystone.
     If Keystone has been configured to use LDAP as the auth backend then set
     can_edit_user to False and name to 'ldap'.
     TODO(tres): Remove these once Keystone has an API to identify auth backend.
-
     - `/software/openstack/openstack_horizon_keystone_backend/name`
         - Optional
         - Type: string
@@ -98,12 +90,10 @@ Types
         - Optional
         - Type: boolean
  - `/software/openstack/openstack_horizon_hypervisor_features`
-    - Description: 
-    The Xen Hypervisor has the ability to set the mount point for volumes
+    - Description: The Xen Hypervisor has the ability to set the mount point for volumes
     attached to instances (other Hypervisors currently do not). Setting
     can_set_mount_point to True will add the option to set the mount point
     from the UI.
-
     - `/software/openstack/openstack_horizon_hypervisor_features/can_set_mount_point`
         - Optional
         - Type: boolean
@@ -117,26 +107,20 @@ Types
         - Optional
         - Type: boolean
  - `/software/openstack/openstack_horizon_cinder_features`
-    - Description: 
-    The OPENSTACK_CINDER_FEATURES settings can be used to enable optional
+    - Description: The OPENSTACK_CINDER_FEATURES settings can be used to enable optional
     services provided by cinder that is not exposed by its extension API.
-
     - `/software/openstack/openstack_horizon_cinder_features/enable_backup`
         - Optional
         - Type: boolean
  - `/software/openstack/openstack_horizon_heat_stack`
-    - Description: 
-    The OPENSTACK_HEAT_STACK settings can be used to disable password
+    - Description: The OPENSTACK_HEAT_STACK settings can be used to disable password
     field required while launching the stack.
-
     - `/software/openstack/openstack_horizon_heat_stack/enable_user_pass`
         - Optional
         - Type: boolean
  - `/software/openstack/openstack_horizon_image_custom_titles`
-    - Description: 
-    The IMAGE_CUSTOM_PROPERTY_TITLES settings is used to customize the titles for
+    - Description: The IMAGE_CUSTOM_PROPERTY_TITLES settings is used to customize the titles for
     image custom property attributes that appear on image detail pages.
-
     - `/software/openstack/openstack_horizon_image_custom_titles/architecture`
         - Optional
         - Type: string
@@ -156,9 +140,7 @@ Types
         - Optional
         - Type: string
  - `/software/openstack/openstack_horizon_logging_handlers`
-    - Description: 
-    Dashboard handlers logging levels.
-
+    - Description: Dashboard handlers logging levels.
     - `/software/openstack/openstack_horizon_logging_handlers/level`
         - Optional
         - Type: string
@@ -169,9 +151,7 @@ Types
         - Optional
         - Type: string
  - `/software/openstack/openstack_horizon_logging_loggers`
-    - Description: 
-    Dashboard django loggers debug levels
-
+    - Description: Dashboard django loggers debug levels
     - `/software/openstack/openstack_horizon_logging_loggers/handlers`
         - Optional
         - Type: string
@@ -182,20 +162,16 @@ Types
         - Optional
         - Type: boolean
  - `/software/openstack/openstack_horizon_logging_formatters`
-    - Description: 
-    Dashboard django logger formatters
-
+    - Description: Dashboard django logger formatters
     - `/software/openstack/openstack_horizon_logging_formatters/format`
         - Description: The format of "%(message)s" is defined by
     OPERATION_LOG_OPTIONS['format']
         - Optional
         - Type: string
  - `/software/openstack/openstack_horizon_logging`
-    - Description: 
-    Horizon django logging options.
+    - Description: Horizon django logging options.
     Logging from django.db.backends is VERY verbose, send to null
     by default.
-
     - `/software/openstack/openstack_horizon_logging/version`
         - Optional
         - Type: long
@@ -217,8 +193,7 @@ Types
         - Optional
         - Type: openstack_horizon_logging_formatters
  - `/software/openstack/openstack_horizon_allowed_subnet`
-    - Description: 
-    Dictionary used to restrict user private subnet cidr range.
+    - Description: Dictionary used to restrict user private subnet cidr range.
     An empty list means that user input will not be restricted
     for a corresponding IP version. By default, there is
     no restriction for IPv4 or IPv6. To restrict
@@ -226,7 +201,6 @@ Types
     to something like:
         'ipv4': ['10.0.0.0/8', '192.168.0.0/16'],
         'ipv6': ['fc00::/7'],
-
     - `/software/openstack/openstack_horizon_allowed_subnet/ipv4`
         - Optional
         - Type: type_ipv4
@@ -234,9 +208,7 @@ Types
         - Optional
         - Type: type_ipv6
  - `/software/openstack/openstack_horizon_security_group`
-    - Description: 
-    "direction" should not be specified for all_tcp, udp or icmp.
-
+    - Description: "direction" should not be specified for all_tcp, udp or icmp.
     - `/software/openstack/openstack_horizon_security_group/name`
         - Optional
         - Type: string
@@ -252,9 +224,7 @@ Types
         - Type: long
         - Range: -1..65535
  - `/software/openstack/openstack_horizon_config`
-    - Description: 
-    list of Horizon service configuration sections
-
+    - Description: list of Horizon service configuration sections
     - `/software/openstack/openstack_horizon_config/debug`
         - Description: Set Horizon debug mode
         - Optional

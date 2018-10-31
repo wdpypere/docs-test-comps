@@ -13,10 +13,8 @@ Types
         - Optional
         - Type: boolean
  - `/software/spma/spma_yum_main_options`
-    - Description: 
-    Main configuration options for yum.conf.
+    - Description: Main configuration options for yum.conf.
     The cleanup_on_remove, obsoletes, reposdir and pluginpath are set internally.
-
     - `/software/spma/spma_yum_main_options/exclude`
         - Optional
         - Type: string
@@ -61,7 +59,7 @@ Types
         - Optional
         - Type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_yum/reposdirs`
-        - Description:  List of external repo dirs to be included in addition to the one managed by this component. 
+        - Description: List of external repo dirs to be included in addition to the one managed by this component.
         - Optional
         - Type: absolute_file_path
     - `/software/spma/component_spma_yum/filter`
@@ -73,6 +71,5 @@ Types
       all non-matching packages. It is advised to remove the userpkgs attribute).
       Versionlocking is not affected by the filter (i.e. all packages are considered
       for version locking, not only the filtered ones).
-    
         - Optional
         - Type: string

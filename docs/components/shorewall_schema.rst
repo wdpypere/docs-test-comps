@@ -570,7 +570,7 @@ Types
         - Optional
         - Type: component_shorewall_interfaces
     - `/software/shorewall/component_shorewall/policy`
-        - Description:  configuration
+        - Description: configuration
         - Optional
         - Type: component_shorewall_policy
     - `/software/shorewall/component_shorewall/rules`

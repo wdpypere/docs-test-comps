@@ -7,9 +7,7 @@ Types
  - `/software/authconfig/ldap_deref`
  - `/software/authconfig/ldap_order`
  - `/software/authconfig/sssd_chpass`
-    - Description: 
-    LDAP chpass fields
-
+    - Description: LDAP chpass fields
     - `/software/authconfig/sssd_chpass/uri`
         - Optional
         - Type: type_absoluteURI
@@ -33,9 +31,7 @@ Types
         - Optional
         - Type: string
  - `/software/authconfig/sssd_netgroup`
-    - Description: 
-    LDAP netgroup fields
-
+    - Description: LDAP netgroup fields
     - `/software/authconfig/sssd_netgroup/object_class`
         - Optional
         - Type: string
@@ -58,9 +54,7 @@ Types
         - Optional
         - Type: string
  - `/software/authconfig/sssd_autofs`
-    - Description: 
-    LDAP autofs fields
-
+    - Description: LDAP autofs fields
     - `/software/authconfig/sssd_autofs/map_object_class`
         - Optional
         - Type: string
@@ -80,9 +74,7 @@ Types
         - Optional
         - Type: string
  - `/software/authconfig/sssd_ldap_service`
-    - Description: 
-    LDAP IP service fields
-
+    - Description: LDAP IP service fields
     - `/software/authconfig/sssd_ldap_service/object_class`
         - Optional
         - Type: string
@@ -99,10 +91,8 @@ Types
         - Optional
         - Type: string
  - `/software/authconfig/authconfig_sssd_ldap`
-    - Description: 
-    LDAP access provider for SSSD.  See the sssd-ldap man page.
+    - Description: LDAP access provider for SSSD.  See the sssd-ldap man page.
     Timeouts are expressed in seconds.
-
     - `/software/authconfig/authconfig_sssd_ldap/user`
         - Optional
         - Type: sssd_user

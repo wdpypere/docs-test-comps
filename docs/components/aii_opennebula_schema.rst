@@ -27,14 +27,10 @@ Types
  - `/software/opennebula/opennebula_vmtemplate_vnet`
  - `/software/opennebula/opennebula_vmtemplate_datastore`
  - `/software/opennebula/valid_interface_ignoremac`
-    - Description: 
-Type that checks if the network interface is available from the quattor tree
-
+    - Description: Type that checks if the network interface is available from the quattor tree
  - `/software/opennebula/opennebula_ignoremac`
-    - Description: 
-Type that sets which net interfaces/MACs
+    - Description: Type that sets which net interfaces/MACs
 will not include MAC values within ONE templates
-
     - `/software/opennebula/opennebula_ignoremac/macaddr`
         - Optional
         - Type: type_hwaddr
@@ -42,13 +38,11 @@ will not include MAC values within ONE templates
         - Optional
         - Type: valid_interface_ignoremac
  - `/software/opennebula/opennebula_permissions`
-    - Description: 
-Type that changes resources owner/group permissions.
+    - Description: Type that changes resources owner/group permissions.
 By default opennebula-aii generates all the resources as oneadmin owner/group.
   owner: OpenNebula user id or user name
   group: OpenNebula group id or username
   mode:  Octal notation, e.g. 0600
-
     - `/software/opennebula/opennebula_permissions/owner`
         - Optional
         - Type: string
@@ -59,8 +53,7 @@ By default opennebula-aii generates all the resources as oneadmin owner/group.
         - Optional
         - Type: long
  - `/software/opennebula/opennebula_vmtemplate_pci`
-    - Description: 
-It is possible to discover PCI devices in the hosts
+    - Description: It is possible to discover PCI devices in the hosts
 and assign them to Virtual Machines for the KVM host.
 I/O MMU and SR-IOV must be supported and enabled by the host OS and BIOS.
 More than one PCI option can be added to attach more than one PCI device to the VM.
@@ -89,7 +82,6 @@ In this case to request this IB device we should set:
 
 For more info:
 http://docs.opennebula.org/5.0/deployment/open_cloud_host_setup/pci_passthrough.html
-
     - `/software/opennebula/opennebula_vmtemplate_pci/vendor`
         - Description: first value from onehost TYPE section
         - Optional
@@ -103,10 +95,8 @@ http://docs.opennebula.org/5.0/deployment/open_cloud_host_setup/pci_passthrough.
         - Optional
         - Type: long
  - `/software/opennebula/opennebula_placements`
-    - Description: 
-Type that sets placement constraints and preferences for the VM, valid for all hosts
+    - Description: Type that sets placement constraints and preferences for the VM, valid for all hosts
 More info: http://docs.opennebula.org/5.0/operation/references/template.html#placement-section
-
     - `/software/opennebula/opennebula_placements/sched_requirements`
         - Description: Boolean expression that rules out provisioning hosts from list of machines
     suitable to run this VM.
@@ -194,7 +184,5 @@ Functions
 ---------
 
  - validate_aii_opennebula_hooks
-    - Description: 
-Function to validate all aii_opennebula hooks
-
+    - Description: Function to validate all aii_opennebula hooks
  - is_consistent_memorybacking

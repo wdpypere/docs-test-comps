@@ -3,56 +3,40 @@ Types
 -----
 
  - `/software/openstack/openstack_identity_config`
-    - Description: 
-Type to define OpenStack identity services
-
+    - Description: Type to define OpenStack identity services
     - `/software/openstack/openstack_identity_config/keystone`
         - Optional
         - Type: openstack_keystone_config
  - `/software/openstack/openstack_storage_config`
-    - Description: 
-Type to define OpenStack storage services
-
+    - Description: Type to define OpenStack storage services
     - `/software/openstack/openstack_storage_config/glance`
         - Optional
         - Type: openstack_glance_config
  - `/software/openstack/openstack_compute_config`
-    - Description: 
-Type to define OpenStack compute services
-
+    - Description: Type to define OpenStack compute services
     - `/software/openstack/openstack_compute_config/nova`
         - Optional
         - Type: openstack_nova_config
  - `/software/openstack/openstack_network_config`
-    - Description: 
-Type to define OpenStack network services
-
+    - Description: Type to define OpenStack network services
     - `/software/openstack/openstack_network_config/neutron`
         - Optional
         - Type: openstack_neutron_config
  - `/software/openstack/openstack_dashboard_config`
-    - Description: 
-Type to define OpenStack dashboard services
-
+    - Description: Type to define OpenStack dashboard services
     - `/software/openstack/openstack_dashboard_config/horizon`
         - Optional
         - Type: openstack_horizon_config
  - `/software/openstack/openstack_messaging_config`
-    - Description: 
-Type to define OpenStack messaging services
-
+    - Description: Type to define OpenStack messaging services
     - `/software/openstack/openstack_messaging_config/rabbitmq`
         - Optional
         - Type: openstack_rabbitmq_config
  - `/software/openstack/openstack_hypervisor_config`
-    - Description: 
-Hyperviosr configuration.
-
+    - Description: Hyperviosr configuration.
  - `/software/openstack/openstack_component`
-    - Description: 
-Type to define OpenStack services
+    - Description: Type to define OpenStack services
 Keystone, Nova, Neutron, etc
-
     - `/software/openstack/openstack_component/identity`
         - Optional
         - Type: openstack_identity_config

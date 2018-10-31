@@ -19,8 +19,6 @@ Functions
 ---------
 
  - validate_aii_freeipa_hooks
-    - Description: 
-a function to validate all freeipa hooks
+    - Description: a function to validate all freeipa hooks
 example usage:
     bind "/system/aii/hooks" = dict with validate_aii_freeipa_hooks('post_reboot')
-

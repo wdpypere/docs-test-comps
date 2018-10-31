@@ -3,13 +3,13 @@ Types
 -----
 
  - `/software/freeipa/component_freeipa_member`
-    - Description:  group members configuration 
+    - Description: group members configuration
     - `/software/freeipa/component_freeipa_member/user`
         - Description: (minimal) user group members
         - Optional
         - Type: string
  - `/software/freeipa/component_freeipa_group`
-    - Description:  group configuration 
+    - Description: group configuration
     - `/software/freeipa/component_freeipa_group/gidnumber`
         - Description: group ID number
         - Optional
@@ -20,7 +20,7 @@ Types
         - Optional
         - Type: component_freeipa_member
  - `/software/freeipa/component_freeipa_user`
-    - Description:  service configuration 
+    - Description: service configuration
     - `/software/freeipa/component_freeipa_user/uidnumber`
         - Description: user ID number
         - Optional
@@ -55,14 +55,14 @@ Types
         - Optional
         - Type: string
  - `/software/freeipa/component_freeipa_service`
-    - Description:  service configuration 
+    - Description: service configuration
     - `/software/freeipa/component_freeipa_service/hosts`
         - Description: regular expressions to match known hosts; for each host, a service/host principal
       will be added and the host is allowed to retrieve the keytab
         - Optional
         - Type: string
  - `/software/freeipa/component_freeipa_host`
-    - Description:  host configuration 
+    - Description: host configuration
     - `/software/freeipa/component_freeipa_host/ip_address`
         - Description: host ip address (for DNS configuration only)
         - Optional
@@ -72,7 +72,7 @@ Types
         - Optional
         - Type: string
  - `/software/freeipa/component_freeipa_dns`
-    - Description:  DNS zone configuration 
+    - Description: DNS zone configuration
     - `/software/freeipa/component_freeipa_dns/subnet`
         - Description: subnet to use, in A.B.C.D/MASK notation
         - Optional
@@ -86,7 +86,7 @@ Types
         - Optional
         - Type: boolean
  - `/software/freeipa/component_freeipa_server`
-    - Description:  Server configuration 
+    - Description: Server configuration
     - `/software/freeipa/component_freeipa_server/dns`
         - Description: subnet name with DNSzone information
         - Optional
@@ -108,7 +108,7 @@ Types
         - Optional
         - Type: component_freeipa_group
  - `/software/freeipa/component_freeipa_permission`
-    - Description:  permission / ownership for keytabs and certificates 
+    - Description: permission / ownership for keytabs and certificates
     - `/software/freeipa/component_freeipa_permission/mode`
         - Description: mode/permissions
         - Optional
@@ -122,28 +122,26 @@ Types
         - Optional
         - Type: string
  - `/software/freeipa/component_freeipa_keytab`
-    - Description:  keytab for service configuration 
+    - Description: keytab for service configuration
     - `/software/freeipa/component_freeipa_keytab/service`
         - Description: service to retrieve keytab for (the pricipal service/fqdn is used if no component is specified)
         - Optional
         - Type: string
  - `/software/freeipa/component_freeipa_certificate`
-    - Description: 
-   Certificate to request/retrieve. cert and/or key can be optionally extracted from NSSDB.
+    - Description: Certificate to request/retrieve. cert and/or key can be optionally extracted from NSSDB.
    Permissions are set on both cert and key, with certmode for the certificate.
    The nick is an alias for DN, and is unique (adding a 2nd nick for same, existing DN will result in
    adding a new entry with already existing nick).
-
     - `/software/freeipa/component_freeipa_certificate/cert`
-        - Description:  certificate location to extract 
+        - Description: certificate location to extract
         - Optional
         - Type: string
     - `/software/freeipa/component_freeipa_certificate/certmode`
-        - Description:  certificate mode/permissions 
+        - Description: certificate mode/permissions
         - Optional
         - Type: long
     - `/software/freeipa/component_freeipa_certificate/key`
-        - Description:  (private) key location to extract 
+        - Description: (private) key location to extract
         - Optional
         - Type: string
  - `/software/freeipa/component_freeipa_principal`

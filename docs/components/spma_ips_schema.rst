@@ -35,10 +35,10 @@ Types
         - Optional
         - Type: component_spma_ips_type
     - `/software/spma/component_spma_ips/run`
-        - Description:  Run the SPMA after configuring it 
+        - Description: Run the SPMA after configuring it
         - Optional
         - Type: legacy_binary_affirmation_string
     - `/software/spma/component_spma_ips/userpkgs`
-        - Description:  Allow user installed (i.e. unmanaged) packages to be present on the system 
+        - Description: Allow user installed (i.e. unmanaged) packages to be present on the system
         - Optional
         - Type: legacy_binary_affirmation_string
