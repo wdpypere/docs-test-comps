@@ -12,3 +12,4 @@ Types
     - */software/fmonagent/component_fmonagent/no_contact_timeout*
         - Optional
         - Type: long
+        - Default value: 120

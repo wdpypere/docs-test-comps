@@ -14,18 +14,22 @@ Types
         - Description: Domain name containing project
         - Optional
         - Type: string
+        - Default value: Default
     - */software/openstack/openstack_domains_common/project_name*
         - Description: Project name to scope to
         - Optional
         - Type: string
+        - Default value: service
     - */software/openstack/openstack_domains_common/auth_type*
         - Description: The type of authentication credential to create. Required if no context is passed to the credential factory
         - Optional
         - Type: string
+        - Default value: password
     - */software/openstack/openstack_domains_common/user_domain_name*
         - Description: Users domain name
         - Optional
         - Type: string
+        - Default value: Default
     - */software/openstack/openstack_domains_common/auth_url*
         - Description: Keystone authentication URL http(s)://host:port
         - Optional
@@ -75,6 +79,7 @@ Types
         - Description: From nova.conf This determines the strategy to use for authentication: keystone or noauth2. "noauth2" is designed for testing only, as it does no actual credential checking. "noauth2" provides administrative credentials only if "admin" is specified as the username
         - Optional
         - Type: string
+        - Default value: keystone
     - */software/openstack/openstack_DEFAULTS/my_ip*
         - Description: From nova.conf The IP address which the host is using to connect to the management network. Default is IPv4 address of this host
         - Optional
@@ -95,6 +100,7 @@ Types
         - Description: From neutron.conf The core plugin Neutron will use
         - Optional
         - Type: string
+        - Default value: ml2
     - */software/openstack/openstack_DEFAULTS/service_plugins*
         - Description: From neutron.conf The service plugins Neutron will use
         - Optional
@@ -103,26 +109,32 @@ Types
         - Description: From neutron.conf Allow overlapping IP support in Neutron. Attention: the following parameter MUST be set to False if Neutron is being used in conjunction with Nova security groups
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/openstack/openstack_DEFAULTS/notify_nova_on_port_status_changes*
         - Description: From neutron.conf Send notification to nova when port status changes
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/openstack/openstack_DEFAULTS/notify_nova_on_port_data_changes*
         - Description: From neutron.conf Send notification to nova when port data (fixed_ips/floatingip) changes so nova can update its cache
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/openstack/openstack_DEFAULTS/interface_driver*
         - Description: From Neutron l3_agent.ini and dhcp_agent.ini The driver used to manage the virtual interface
         - Optional
         - Type: string
+        - Default value: linuxbridge
     - */software/openstack/openstack_DEFAULTS/dhcp_driver*
         - Description: From Neutron dhcp_agent.ini The driver used to manage the DHCP server
         - Optional
         - Type: string
+        - Default value: neutron.agent.linux.dhcp.Dnsmasq
     - */software/openstack/openstack_DEFAULTS/enable_isolated_metadata*
         - Description: From Neutron dhcp_agent.ini The DHCP server can assist with providing metadata support on isolated networks. Setting this value to True will cause the DHCP server to append specific host routes to the DHCP request. The metadata service will only be activated when the subnet does not contain any router port. The guest instance must be configured to request host routes via DHCP (Option 121). This option does not have any effect when force_metadata is set to True
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/openstack/openstack_DEFAULTS/nova_metadata_ip*
         - Description: From Neutron metadata_agent.ini IP address or hostname used by Nova metadata server
         - Optional
@@ -135,16 +147,19 @@ Types
         - Description: Driver for security groups
         - Optional
         - Type: string
+        - Default value: neutron.agent.linux.iptables_firewall.IptablesFirewallDriver
     - */software/openstack/openstack_DEFAULTS/use_neutron*
         - Description: Use neutron and disable the default firewall setup
         - Optional
         - Type: boolean
+        - Default value: true
  - **/software/openstack/openstack_rabbitmq_config**
     - Description: Type to enable RabbitMQ and the message system for OpenStack.
     - */software/openstack/openstack_rabbitmq_config/user*
         - Description: RabbitMQ user to get access to the queue
         - Optional
         - Type: string
+        - Default value: openstack
     - */software/openstack/openstack_rabbitmq_config/password*
         - Optional
         - Type: string

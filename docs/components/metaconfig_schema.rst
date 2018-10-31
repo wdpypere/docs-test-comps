@@ -58,14 +58,17 @@ Types
         - Description: File permissions. Defaults to 0644.
         - Optional
         - Type: long
+        - Default value: 420
     - */software/metaconfig/metaconfig_config/owner*
         - Description: File owner. Defaults to root.
         - Optional
         - Type: string
+        - Default value: root
     - */software/metaconfig/metaconfig_config/group*
         - Description: File group. Defaults to root.
         - Optional
         - Type: string
+        - Default value: root
     - */software/metaconfig/metaconfig_config/daemons*
         - Description: An dict with foreach daemon the CAF::Service action to take if the file changes. Even if multiple services are associated to the same daemon, each action for the daemon will be taken at most once. If multiple actions are to be taken for the same daemon, all actions will be taken (no attempt to optimize is made).
         - Optional

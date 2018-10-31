@@ -41,12 +41,14 @@ Types
         - Description: Region name of this node. This is used when picking the URL in the service catalog
         - Optional
         - Type: string
+        - Default value: RegionOne
  - **/software/openstack/openstack_nova_libvirt**
     - Description: The Nova hypervisor configuration options in "libvirt" Section.
     - */software/openstack/openstack_nova_libvirt/virt_type*
         - Description: Describes the virtualization type (or so called domain type) libvirt should use. The choice of this type must match the underlying virtualization strategy you have chosen for the host
         - Optional
         - Type: string
+        - Default value: kvm
     - */software/openstack/openstack_nova_libvirt/images_rbd_pool*
         - Description: The RADOS pool in which rbd volumes are stored
         - Optional
@@ -73,6 +75,7 @@ Types
         - Description: Region name for connecting to Neutron in admin context. This option is used in multi-region setups. If there are two Neutron servers running in two regions in two different machines, then two services need to be created in Keystone with two different regions and associate corresponding endpoints to those services. When requests are made to Keystone, the Keystone service uses the region_name to determine the region the request is coming from
         - Optional
         - Type: string
+        - Default value: RegionOne
     - */software/openstack/openstack_nova_neutron/metadata_proxy_shared_secret*
         - Description: This option holds the shared secret string used to validate proxy requests to Neutron metadata requests. In order to be used, the "X-Metadata-Provider-Signature" header must be supplied in the request
         - Optional

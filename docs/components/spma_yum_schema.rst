@@ -9,12 +9,15 @@ Types
     - */software/spma/SOFTWARE_GROUP/default*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/spma/SOFTWARE_GROUP/mandatory*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/spma/SOFTWARE_GROUP/optional*
         - Optional
         - Type: boolean
+        - Default value: false
  - **/software/spma/spma_yum_main_options**
     - Description: Main configuration options for yum.conf. The cleanup_on_remove, obsoletes, reposdir and pluginpath are set internally.
     - */software/spma/spma_yum_main_options/exclude*
@@ -24,6 +27,7 @@ Types
         - Optional
         - Type: long
         - Range: 0..
+        - Default value: 3
     - */software/spma/spma_yum_main_options/keepcache*
         - Optional
         - Type: boolean
@@ -31,14 +35,17 @@ Types
         - Optional
         - Type: long
         - Range: 0..
+        - Default value: 10
     - */software/spma/spma_yum_main_options/timeout*
         - Optional
         - Type: long
         - Range: 0..
+        - Default value: 30
  - **/software/spma/component_spma_yum**
     - */software/spma/component_spma_yum/fullsearch*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/spma/component_spma_yum/main_options*
         - Optional
         - Type: spma_yum_main_options
@@ -48,6 +55,7 @@ Types
     - */software/spma/component_spma_yum/process_obsoletes*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/spma/component_spma_yum/proxytype*
         - Optional
         - Type: string
@@ -57,6 +65,7 @@ Types
     - */software/spma/component_spma_yum/userpkgs_retry*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/spma/component_spma_yum/userpkgs*
         - Optional
         - Type: legacy_binary_affirmation_string

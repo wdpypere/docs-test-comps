@@ -26,24 +26,29 @@ Types
     - */software/pbsserver/pbs_server_attlist/acl_host_enable*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/pbsserver/pbs_server_attlist/acl_hosts*
         - Optional
         - Type: string
     - */software/pbsserver/pbs_server_attlist/acl_logic_or*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/pbsserver/pbs_server_attlist/acl_user_enable*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/pbsserver/pbs_server_attlist/acl_roots*
         - Optional
         - Type: string
     - */software/pbsserver/pbs_server_attlist/allow_node_submit*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/pbsserver/pbs_server_attlist/allow_proxy_user*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/pbsserver/pbs_server_attlist/auto_node_np*
         - Optional
         - Type: boolean
@@ -84,6 +89,7 @@ Types
     - */software/pbsserver/pbs_server_attlist/job_nanny*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/pbsserver/pbs_server_attlist/job_start_timeout*
         - Optional
         - Type: long
@@ -92,6 +98,7 @@ Types
         - Optional
         - Type: long
         - Range: 1..
+        - Default value: 150
     - */software/pbsserver/pbs_server_attlist/keep_completed*
         - Optional
         - Type: long
@@ -119,10 +126,12 @@ Types
         - Optional
         - Type: long
         - Range: 0..
+        - Default value: 0
     - */software/pbsserver/pbs_server_attlist/log_file_roll_depth*
         - Optional
         - Type: long
         - Range: 1..
+        - Default value: 10
     - */software/pbsserver/pbs_server_attlist/log_keep_days*
         - Optional
         - Type: long
@@ -131,6 +140,7 @@ Types
         - Optional
         - Type: long
         - Range: 0..
+        - Default value: 0
     - */software/pbsserver/pbs_server_attlist/mail_body_fmt*
         - Optional
         - Type: string
@@ -177,6 +187,7 @@ Types
     - */software/pbsserver/pbs_server_attlist/mom_job_sync*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/pbsserver/pbs_server_attlist/next_job_number*
         - Optional
         - Type: long
@@ -188,6 +199,7 @@ Types
         - Optional
         - Type: long
         - Range: 10..
+        - Default value: 600
     - */software/pbsserver/pbs_server_attlist/node_pack*
         - Optional
         - Type: boolean
@@ -195,6 +207,7 @@ Types
         - Optional
         - Type: long
         - Range: 10..
+        - Default value: 300
     - */software/pbsserver/pbs_server_attlist/node_suffix*
         - Optional
         - Type: string
@@ -211,9 +224,11 @@ Types
     - */software/pbsserver/pbs_server_attlist/poll_jobs*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/pbsserver/pbs_server_attlist/query_other_jobs*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/pbsserver/pbs_server_attlist/resources_available*
         - Optional
         - Type: string
@@ -221,6 +236,7 @@ Types
         - Optional
         - Type: long
         - Range: 1..
+        - Default value: 2048
     - */software/pbsserver/pbs_server_attlist/resources_default*
         - Optional
         - Type: string
@@ -255,6 +271,7 @@ Types
         - Optional
         - Type: long
         - Range: 1..
+        - Default value: 8
     - */software/pbsserver/pbs_server_attlist/checkpoint_dir*
         - Optional
         - Type: string
@@ -384,6 +401,7 @@ Types
         - Optional
         - Type: long
         - Range: 1..
+        - Default value: 2048
     - */software/pbsserver/pbs_queue_attlist/resources_default.mem*
         - Optional
         - Type: string
@@ -568,3 +586,4 @@ Types
     - */software/pbsserver/pbsserver_component/ignoretorquecfg*
         - Optional
         - Type: boolean
+        - Default value: false

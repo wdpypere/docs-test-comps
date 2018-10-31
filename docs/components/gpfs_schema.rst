@@ -9,18 +9,22 @@ Types
     - */software/gpfs/gpfs_curl/usecurl*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/gpfs/gpfs_curl/usegss*
         - Description: use kerberos token form host keytab
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/gpfs/gpfs_curl/usesindesgetcertcertwithcurl*
         - Description: get certificate information from SINDES getcert component configuration
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/gpfs/gpfs_curl/useccmcertwithcurl*
         - Description: get certificate information from CCM component configuration
         - Optional
         - Type: boolean
+        - Default value: false
  - **/software/gpfs/gpfs_cfg**
     - */software/gpfs/gpfs_cfg/url*
         - Optional
@@ -31,6 +35,7 @@ Types
     - */software/gpfs/gpfs_cfg/sdrrestore*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/gpfs/gpfs_cfg/subnet*
         - Optional
         - Type: string
@@ -44,9 +49,11 @@ Types
     - */software/gpfs/gpfs_base/useproxy*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/gpfs/gpfs_base/useyum*
         - Optional
         - Type: boolean
+        - Default value: true
  - **/software/gpfs/gpfs_sysmon_common**
     - */software/gpfs/gpfs_sysmon_common/monitorinterval*
         - Optional
@@ -78,3 +85,4 @@ Types
     - */software/gpfs/gpfs_component/skiprpm*
         - Optional
         - Type: boolean
+        - Default value: false

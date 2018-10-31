@@ -38,6 +38,7 @@ Types
         - Description: Configure a NFS server. In particular relevant for missing exports attribute. If true, missing exports forces an empty exports file and a NFS service reload. If false, missing exports has no effect.
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/nfs/nfs_component/exports*
         - Description: This is a list of dicts with "path" giving the export path and "hosts" being a dict of host/option entries where the key is the escaped host name and the value the export options(e.g. for "nfsclient.example.org(rw)", key will be escape("nfsclient.example.org") and value will be 'rw'. Note that the values in "hosts" may NOT contain embedded spaces and should not contain the enclosing '()'. This restriction is not checked in the schema! If a path is listed more than once, then the last entry will be used to generate the exports file.
         - Optional

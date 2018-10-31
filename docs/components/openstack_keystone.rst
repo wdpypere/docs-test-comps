@@ -11,6 +11,7 @@ Types
         - Description: Entry point for the token provider in the "keystone.token.provider" namespace. The token provider controls the token construction, validation, and revocation operations. Keystone includes "fernet" and "uuid" token providers. "uuid" tokens must be persisted (using the backend specified in the "[token] driver" option), but do not require any extra configuration or setup. "fernet" tokens do not need to be persisted at all, but require that you run "keystone-manage fernet_setup" (also see the "keystone-manage fernet_rotate" command)
         - Optional
         - Type: string
+        - Default value: fernet
     - */software/openstack/openstack_keystone_token/driver*
         - Description: Entry point for the token persistence backend driver in the "keystone.token.persistence" namespace. Keystone provides "kvs" and "sql" drivers. The "kvs" backend depends on the configuration in the "[kvs]" section. The "sql" option (default) depends on the options in your "[database]" section. If you are using the "fernet" "[token] provider", this backend will not be utilized to persist tokens at all. (string value)
         - Optional
@@ -31,26 +32,32 @@ Types
         - Description: Deployment flavor to use in the server application pipeline. Provide a string value representing the appropriate deployment flavor used in the server application pipleline. This is typically the partial name of a pipeline in the paste configuration file with the service name removed. For example, if your paste section name in the paste configuration file is [pipeline:glance-api-keystone], set "flavor" to "keystone"
         - Optional
         - Type: string
+        - Default value: keystone
  - **/software/openstack/openstack_openrc_config**
     - Description: Type that sets the OpenStack OpenRC script configuration
     - */software/openstack/openstack_openrc_config/os_username*
         - Optional
         - Type: string
+        - Default value: admin
     - */software/openstack/openstack_openrc_config/os_password*
         - Optional
         - Type: string
     - */software/openstack/openstack_openrc_config/os_project_name*
         - Optional
         - Type: string
+        - Default value: admin
     - */software/openstack/openstack_openrc_config/os_user_domain_name*
         - Optional
         - Type: string
+        - Default value: Default
     - */software/openstack/openstack_openrc_config/os_project_domain_name*
         - Optional
         - Type: string
+        - Default value: Default
     - */software/openstack/openstack_openrc_config/os_region_name*
         - Optional
         - Type: string
+        - Default value: RegionOne
     - */software/openstack/openstack_openrc_config/os_auth_url*
         - Optional
         - Type: type_absoluteURI
@@ -58,10 +65,12 @@ Types
         - Optional
         - Type: long
         - Range: 1..
+        - Default value: 3
     - */software/openstack/openstack_openrc_config/os_image_api_version*
         - Optional
         - Type: long
         - Range: 1..
+        - Default value: 2
  - **/software/openstack/openstack_keystone_config**
     - Description: The Keystone configuration sections
     - */software/openstack/openstack_keystone_config/DEFAULT*

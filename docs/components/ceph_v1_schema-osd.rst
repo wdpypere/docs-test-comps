@@ -50,12 +50,14 @@ Types
     - */software/ceph/ceph_osd/in*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/ceph/ceph_osd/journal_path*
         - Optional
         - Type: string
     - */software/ceph/ceph_osd/crush_weight*
         - Optional
         - Type: double
+        - Default value: 1.0
     - */software/ceph/ceph_osd/labels*
         - Optional
         - Type: string

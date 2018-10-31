@@ -12,12 +12,15 @@ Types
     - */software/ceph/ceph_global_config/auth_client_required*
         - Optional
         - Type: choice
+        - Default value: cephx
     - */software/ceph/ceph_global_config/auth_cluster_required*
         - Optional
         - Type: choice
+        - Default value: cephx
     - */software/ceph/ceph_global_config/auth_service_required*
         - Optional
         - Type: choice
+        - Default value: cephx
     - */software/ceph/ceph_global_config/cluster_network*
         - Optional
         - Type: type_network_name
@@ -33,6 +36,7 @@ Types
     - */software/ceph/ceph_global_config/mon_cluster_log_to_syslog*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/ceph/ceph_global_config/mon_initial_members*
         - Optional
         - Type: type_network_name
@@ -53,9 +57,11 @@ Types
     - */software/ceph/ceph_global_config/mon_osd_warn_op_age*
         - Optional
         - Type: long
+        - Default value: 32
     - */software/ceph/ceph_global_config/mon_osd_err_op_age_ratio*
         - Optional
         - Type: long
+        - Default value: 128
     - */software/ceph/ceph_global_config/ms_type*
         - Optional
         - Type: choice
@@ -66,6 +72,7 @@ Types
         - Optional
         - Type: long
         - Range: 0..
+        - Default value: 10240
     - */software/ceph/ceph_global_config/osd_max_pg_per_osd_hard_ratio*
         - Optional
         - Type: long
@@ -73,6 +80,7 @@ Types
         - Optional
         - Type: long
         - Range: 0..
+        - Default value: 2
     - */software/ceph/ceph_global_config/osd_pool_default_pg_num*
         - Optional
         - Type: long
@@ -85,6 +93,7 @@ Types
         - Optional
         - Type: long
         - Range: 0..
+        - Default value: 3
     - */software/ceph/ceph_global_config/public_network*
         - Optional
         - Type: type_network_name
@@ -124,6 +133,7 @@ Types
     - */software/ceph/ceph_cluster/ssh_multiplex*
         - Optional
         - Type: boolean
+        - Default value: true
  - **/software/ceph/ceph_daemons**
     - Description: Decentralized config feature:For use with dedicated pan code that builds the cluster info from remote templates.
     - */software/ceph/ceph_daemons/osds*
@@ -133,6 +143,7 @@ Types
         - Optional
         - Type: long
         - Range: 0..
+        - Default value: 0
  - **/software/ceph/ceph_supported_version**
  - **/software/ceph/ceph_deploy_supported_version**
  - **/software/ceph/ceph_component**
@@ -155,3 +166,4 @@ Types
     - */software/ceph/ceph_component/release*
         - Optional
         - Type: choice
+        - Default value: Luminous

@@ -18,6 +18,7 @@ Types
         - Description: If false, then the proxy configuration will be ignored for this file. This has no effect when there are no proxy hosts defined.
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/download/component_download_file/gssapi*
         - Description: If true, then curl/LWP will be invoked with GSSAPI Negotiate extension enabled, using the host keytab as the identity.
         - Optional
@@ -38,6 +39,7 @@ Types
         - Description: Don't consider the remote file to be new until it is this number of minutes old
         - Optional
         - Type: long
+        - Default value: 0
     - */software/download/component_download_file/cacert*
         - Optional
         - Type: string

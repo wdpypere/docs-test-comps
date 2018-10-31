@@ -17,9 +17,11 @@ Types
     - */software/puppet/puppet_puppetconf_main/logdir*
         - Optional
         - Type: string
+        - Default value: /var/log/puppet
     - */software/puppet/puppet_puppetconf_main/rundir*
         - Optional
         - Type: string
+        - Default value: /var/run/puppet
  - **/software/puppet/puppet_puppetconf**
     - */software/puppet/puppet_puppetconf/main*
         - Optional
@@ -28,18 +30,22 @@ Types
     - */software/puppet/puppet_hieraconf_yaml/_3adatadir*
         - Optional
         - Type: string
+        - Default value: /etc/puppet/hieradata
  - **/software/puppet/puppet_hieraconf**
  - **/software/puppet/puppet_hieradata**
  - **/software/puppet/puppet_component**
     - */software/puppet/puppet_component/puppet_cmd*
         - Optional
         - Type: string
+        - Default value: /usr/bin/puppet
     - */software/puppet/puppet_component/logfile*
         - Optional
         - Type: string
+        - Default value: /var/log/puppet/log
     - */software/puppet/puppet_component/modulepath*
         - Optional
         - Type: string
+        - Default value: /etc/puppet/modules
     - */software/puppet/puppet_component/modules*
         - Optional
         - Type: puppet_module
@@ -49,21 +55,25 @@ Types
     - */software/puppet/puppet_component/nodefiles_path*
         - Optional
         - Type: string
+        - Default value: /etc/puppet/manifests
     - */software/puppet/puppet_component/puppetconf*
         - Optional
         - Type: puppet_puppetconf
     - */software/puppet/puppet_component/puppetconf_file*
         - Optional
         - Type: string
+        - Default value: /etc/puppet/puppet.conf
     - */software/puppet/puppet_component/hieraconf*
         - Optional
         - Type: puppet_hieraconf
     - */software/puppet/puppet_component/hieraconf_file*
         - Optional
         - Type: string
+        - Default value: /etc/puppet/hiera.yaml
     - */software/puppet/puppet_component/hieradata*
         - Optional
         - Type: puppet_hieradata
     - */software/puppet/puppet_component/hieradata_file*
         - Optional
         - Type: string
+        - Default value: /etc/puppet/hieradata/quattor.yaml

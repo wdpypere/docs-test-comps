@@ -35,26 +35,31 @@ Types
         - Description: Configure the VXLAN network identifier range for self-service networks
         - Optional
         - Type: string
+        - Default value: 1:1000
  - **/software/openstack/openstack_neutron_securitygroup**
     - Description: The Neutron configuration options in ml2_conf.ini "securitygroup" Section.
     - */software/openstack/openstack_neutron_securitygroup/enable_ipset*
         - Description: Use ipset to speed-up the iptables based security groups. Enabling ipset support requires that ipset is installed on L2 agent node
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/openstack/openstack_neutron_securitygroup/enable_security_group*
         - Description: Controls whether the neutron security group API is enabled in the server. It should be false when using no security groups or using the nova security group API
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/openstack/openstack_neutron_securitygroup/firewall_driver*
         - Description: Driver for security groups
         - Optional
         - Type: string
+        - Default value: neutron.agent.linux.iptables_firewall.IptablesFirewallDriver
  - **/software/openstack/openstack_neutron_vxlan**
     - Description: The Neutron configuration options in linuxbridge_agent.ini "vxlan" Section.
     - */software/openstack/openstack_neutron_vxlan/enable_vxlan*
         - Description: Enable VXLAN on the agent. Can be enabled when agent is managed by ml2 plugin using linuxbridge mechanism driver
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/openstack/openstack_neutron_vxlan/local_ip*
         - Description: IP address of local overlay (tunnel) network endpoint. Use either an IPv4 or IPv6 address that resides on one of the host network interfaces. The IP version of this value must match the value of the 'overlay_ip_version' option in the ML2 plug-in configuration file on the neutron server node(s)
         - Optional
@@ -63,6 +68,7 @@ Types
         - Description: Extension to use alongside ml2 plugins l2population mechanism driver. It enables the plugin to populate VXLAN forwarding table
         - Optional
         - Type: boolean
+        - Default value: true
  - **/software/openstack/openstack_neutron_linux_bridge**
     - Description: The Neutron configuration options in linuxbridge_agent.ini "linux_bridge" Section.
     - */software/openstack/openstack_neutron_linux_bridge/physical_interface_mappings*

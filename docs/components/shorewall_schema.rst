@@ -164,6 +164,7 @@ Types
         - Description: zone entry, all[+-]/any, the firewall itself ($FW) or none
         - Optional
         - Type: string
+        - Default value: all
     - */software/shorewall/component_shorewall_rules_srcdst/interface*
         - Optional
         - Type: string
@@ -503,6 +504,7 @@ Types
     - */software/shorewall/component_shorewall_shorewall/startup_enabled*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/shorewall/component_shorewall_shorewall/startup_log*
         - Optional
         - Type: string
@@ -604,9 +606,11 @@ Types
     - */software/shorewall/shorewall_sysconfig/STARTOPTIONS*
         - Optional
         - Type: string
+        - Default value: /etc/shorewall
     - */software/shorewall/shorewall_sysconfig/RELOADOPTIONS*
         - Optional
         - Type: string
+        - Default value: /etc/shorewall
     - */software/shorewall/shorewall_sysconfig/STOPOPTIONS*
         - Optional
         - Type: string

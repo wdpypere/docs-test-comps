@@ -29,9 +29,11 @@ Types
     - */software/gip2/gip2_component/group*
         - Optional
         - Type: string
+        - Default value: root
     - */software/gip2/gip2_component/flavor*
         - Optional
         - Type: string
+        - Default value: lcg
     - */software/gip2/gip2_component/basedir*
         - Optional
         - Type: string
@@ -56,6 +58,7 @@ Types
     - */software/gip2/gip2_component/bdiiRestartAllowed*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/gip2/gip2_component/confFiles*
         - Optional
         - Type: string

@@ -10,6 +10,7 @@ Types
         - Description: The location of the configuration file. Normally this should not be changed.
         - Optional
         - Type: string
+        - Default value: /etc/cdp-listend.conf
     - */software/cdp/cdp_component/port*
         - Description: The port used by the daemon.
         - Optional
