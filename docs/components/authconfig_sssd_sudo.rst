@@ -1,0 +1,66 @@
+##########################
+authconfig :: sssd :: sudo
+##########################
+
+Types
+-----
+
+ - **/software/authconfig/sssd_sudorule**
+    - */software/authconfig/sssd_sudorule/object_class*
+        - Optional
+        - Type: string
+    - */software/authconfig/sssd_sudorule/name*
+        - Optional
+        - Type: string
+    - */software/authconfig/sssd_sudorule/command*
+        - Optional
+        - Type: string
+    - */software/authconfig/sssd_sudorule/host*
+        - Optional
+        - Type: string
+    - */software/authconfig/sssd_sudorule/user*
+        - Optional
+        - Type: string
+    - */software/authconfig/sssd_sudorule/option*
+        - Optional
+        - Type: string
+    - */software/authconfig/sssd_sudorule/runasuser*
+        - Optional
+        - Type: string
+    - */software/authconfig/sssd_sudorule/runasgroup*
+        - Optional
+        - Type: string
+    - */software/authconfig/sssd_sudorule/notbefore*
+        - Optional
+        - Type: string
+    - */software/authconfig/sssd_sudorule/notafter*
+        - Optional
+        - Type: string
+    - */software/authconfig/sssd_sudorule/order*
+        - Optional
+        - Type: string
+ - **/software/authconfig/sssd_sudo**
+    - */software/authconfig/sssd_sudo/full_refresh_interval*
+        - Optional
+        - Type: long
+    - */software/authconfig/sssd_sudo/smart_refresh_interval*
+        - Optional
+        - Type: long
+    - */software/authconfig/sssd_sudo/use_host_filter*
+        - Optional
+        - Type: boolean
+    - */software/authconfig/sssd_sudo/hostnames*
+        - Optional
+        - Type: string
+    - */software/authconfig/sssd_sudo/ip*
+        - Optional
+        - Type: string
+    - */software/authconfig/sssd_sudo/include_netgroups*
+        - Optional
+        - Type: boolean
+    - */software/authconfig/sssd_sudo/include_regexp*
+        - Optional
+        - Type: boolean
+    - */software/authconfig/sssd_sudo/search_base*
+        - Optional
+        - Type: string

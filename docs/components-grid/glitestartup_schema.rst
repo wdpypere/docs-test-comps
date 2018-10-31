@@ -1,0 +1,49 @@
+######################
+glitestartup :: schema
+######################
+
+Types
+-----
+
+ - **/software/glitestartup/glitestartup_component_service**
+    - */software/glitestartup/glitestartup_component_service/args*
+        - Optional
+        - Type: string
+ - **/software/glitestartup/glitestartup_component_post_restart**
+    - */software/glitestartup/glitestartup_component_post_restart/cmd*
+        - Optional
+        - Type: string
+    - */software/glitestartup/glitestartup_component_post_restart/expectedStatus*
+        - Optional
+        - Type: long
+ - **/software/glitestartup/glitestartup_component**
+    - */software/glitestartup/glitestartup_component/configFile*
+        - Optional
+        - Type: string
+    - */software/glitestartup/glitestartup_component/initScript*
+        - Optional
+        - Type: string
+    - */software/glitestartup/glitestartup_component/disableOutput*
+        - Optional
+        - Type: boolean
+    - */software/glitestartup/glitestartup_component/disableError*
+        - Optional
+        - Type: boolean
+    - */software/glitestartup/glitestartup_component/restartEnv*
+        - Optional
+        - Type: string
+    - */software/glitestartup/glitestartup_component/postRestart*
+        - Optional
+        - Type: glitestartup_component_post_restart
+    - */software/glitestartup/glitestartup_component/restartServices*
+        - Optional
+        - Type: boolean
+    - */software/glitestartup/glitestartup_component/createProxy*
+        - Optional
+        - Type: boolean
+    - */software/glitestartup/glitestartup_component/scriptPaths*
+        - Optional
+        - Type: string
+    - */software/glitestartup/glitestartup_component/services*
+        - Optional
+        - Type: glitestartup_component_service

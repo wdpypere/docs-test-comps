@@ -1,0 +1,53 @@
+########################
+ceph :: v1 :: schema-rgw
+########################
+
+Types
+-----
+
+ - **/software/ceph/type_quoted_string**
+ - **/software/ceph/ceph_radosgw_config**
+    - Description: configuration options for a ceph rados gateway instance
+    - */software/ceph/ceph_radosgw_config/host*
+        - Optional
+        - Type: string
+    - */software/ceph/ceph_radosgw_config/keyring*
+        - Optional
+        - Type: string
+    - */software/ceph/ceph_radosgw_config/rgw_socket_path*
+        - Optional
+        - Type: string
+    - */software/ceph/ceph_radosgw_config/log_file*
+        - Optional
+        - Type: string
+    - */software/ceph/ceph_radosgw_config/rgw_frontends*
+        - Optional
+        - Type: type_quoted_string
+    - */software/ceph/ceph_radosgw_config/rgw_print_continue*
+        - Optional
+        - Type: boolean
+    - */software/ceph/ceph_radosgw_config/rgw_dns_name*
+        - Optional
+        - Type: type_fqdn
+    - */software/ceph/ceph_radosgw_config/rgw_enable_ops_log*
+        - Optional
+        - Type: boolean
+    - */software/ceph/ceph_radosgw_config/rgw_enable_usage_log*
+        - Optional
+        - Type: boolean
+    - */software/ceph/ceph_radosgw_config/user*
+        - Optional
+        - Type: string
+ - **/software/ceph/ceph_radosgw**
+    - Description: ceph rados gateway typehttp://ceph.com/docs/master/radosgw/
+    - */software/ceph/ceph_radosgw/config*
+        - Optional
+        - Type: ceph_radosgw_config
+ - **/software/ceph/ceph_radosgwh**
+    - Description: ceph rados gateway host, defining all gateways on a host
+    - */software/ceph/ceph_radosgwh/fqdn*
+        - Optional
+        - Type: type_fqdn
+    - */software/ceph/ceph_radosgwh/gateways*
+        - Optional
+        - Type: ceph_radosgw
