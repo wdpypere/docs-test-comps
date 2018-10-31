@@ -1,61 +1,64 @@
+##############
+nsca :: schema
+##############
 
 Types
 -----
 
- - `/software/nsca/structure_component_nsca_daemon`
-    - `/software/nsca/structure_component_nsca_daemon/pid_file`
+ - **/software/nsca/structure_component_nsca_daemon**
+    - */software/nsca/structure_component_nsca_daemon/pid_file*
         - Optional
         - Type: string
-    - `/software/nsca/structure_component_nsca_daemon/server_port`
+    - */software/nsca/structure_component_nsca_daemon/server_port*
         - Optional
         - Type: long
-    - `/software/nsca/structure_component_nsca_daemon/server_addres`
+    - */software/nsca/structure_component_nsca_daemon/server_addres*
         - Optional
         - Type: string
-    - `/software/nsca/structure_component_nsca_daemon/user`
+    - */software/nsca/structure_component_nsca_daemon/user*
         - Optional
         - Type: string
-    - `/software/nsca/structure_component_nsca_daemon/group`
+    - */software/nsca/structure_component_nsca_daemon/group*
         - Optional
         - Type: string
-    - `/software/nsca/structure_component_nsca_daemon/chroot`
+    - */software/nsca/structure_component_nsca_daemon/chroot*
         - Optional
         - Type: string
-    - `/software/nsca/structure_component_nsca_daemon/debug`
+    - */software/nsca/structure_component_nsca_daemon/debug*
         - Optional
         - Type: boolean
-    - `/software/nsca/structure_component_nsca_daemon/command_file`
+    - */software/nsca/structure_component_nsca_daemon/command_file*
         - Optional
         - Type: string
-    - `/software/nsca/structure_component_nsca_daemon/alt_dump_file`
+    - */software/nsca/structure_component_nsca_daemon/alt_dump_file*
         - Optional
         - Type: string
-    - `/software/nsca/structure_component_nsca_daemon/aggregate_writes`
+    - */software/nsca/structure_component_nsca_daemon/aggregate_writes*
         - Optional
         - Type: boolean
-    - `/software/nsca/structure_component_nsca_daemon/append_to_file`
+    - */software/nsca/structure_component_nsca_daemon/append_to_file*
         - Optional
         - Type: boolean
-    - `/software/nsca/structure_component_nsca_daemon/max_packet_age`
+    - */software/nsca/structure_component_nsca_daemon/max_packet_age*
         - Optional
         - Type: long
-    - `/software/nsca/structure_component_nsca_daemon/password`
+    - */software/nsca/structure_component_nsca_daemon/password*
         - Optional
         - Type: string
-    - `/software/nsca/structure_component_nsca_daemon/decryption_method`
+    - */software/nsca/structure_component_nsca_daemon/decryption_method*
         - Optional
         - Type: long
- - `/software/nsca/structure_component_nsca_send`
-    - `/software/nsca/structure_component_nsca_send/password`
+ - **/software/nsca/structure_component_nsca_send**
+    - */software/nsca/structure_component_nsca_send/password*
         - Optional
         - Type: string
-    - `/software/nsca/structure_component_nsca_send/encryption_method`
+    - */software/nsca/structure_component_nsca_send/encryption_method*
         - Optional
         - Type: long
- - `/software/nsca/structure_component_nsca`
-    - `/software/nsca/structure_component_nsca/daemon`
+ - **/software/nsca/structure_component_nsca**
+    - */software/nsca/structure_component_nsca/daemon*
         - Optional
         - Type: structure_component_nsca_daemon
-    - `/software/nsca/structure_component_nsca/send`
+    - */software/nsca/structure_component_nsca/send*
         - Optional
         - Type: structure_component_nsca_send

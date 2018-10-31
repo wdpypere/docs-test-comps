@@ -1,39 +1,42 @@
+#######################
+spma :: yumng :: schema
+#######################
 
 Types
 -----
 
- - `/software/spma/SOFTWARE_GROUP`
-    - `/software/spma/SOFTWARE_GROUP/default`
+ - **/software/spma/SOFTWARE_GROUP**
+    - */software/spma/SOFTWARE_GROUP/default*
         - Optional
         - Type: boolean
-    - `/software/spma/SOFTWARE_GROUP/mandatory`
+    - */software/spma/SOFTWARE_GROUP/mandatory*
         - Optional
         - Type: boolean
-    - `/software/spma/SOFTWARE_GROUP/optional`
+    - */software/spma/SOFTWARE_GROUP/optional*
         - Optional
         - Type: boolean
-    - `/software/spma/SOFTWARE_GROUP/names`
+    - */software/spma/SOFTWARE_GROUP/names*
         - Optional
         - Type: string
- - `/software/spma/component_spma_yumng`
-    - `/software/spma/component_spma_yumng/excludes`
+ - **/software/spma/component_spma_yumng**
+    - */software/spma/component_spma_yumng/excludes*
         - Optional
         - Type: string
-    - `/software/spma/component_spma_yumng/quattor_os_file`
+    - */software/spma/component_spma_yumng/quattor_os_file*
         - Optional
         - Type: string
-    - `/software/spma/component_spma_yumng/quattor_os_release`
+    - */software/spma/component_spma_yumng/quattor_os_release*
         - Optional
         - Type: string
-    - `/software/spma/component_spma_yumng/run`
+    - */software/spma/component_spma_yumng/run*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - `/software/spma/component_spma_yumng/userpkgs`
+    - */software/spma/component_spma_yumng/userpkgs*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - `/software/spma/component_spma_yumng/whitelist`
+    - */software/spma/component_spma_yumng/whitelist*
         - Optional
         - Type: string
-    - `/software/spma/component_spma_yumng/yumconf`
+    - */software/spma/component_spma_yumng/yumconf*
         - Optional
         - Type: string

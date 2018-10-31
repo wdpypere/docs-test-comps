@@ -1,9 +1,12 @@
+#################
+spma :: functions
+#################
 
 Functions
 ---------
 
  - repository_exists
-    - Description: Utility function to determine if at least one particular child element exists.  (Used in the checking of the repositories.)
+    - Description: Utility function to determine if at least one particular child element exists. (Used in the checking of the repositories.)
 - Arguments:
         - name
         - path to list of dicts with at least one key 'name'
@@ -11,7 +14,7 @@ Functions
     - Description: Automatically fill "repository" field for package list
 - Arguments:
         - repository list
-        - (optional) package list.  When specified, only the package(s) specified are resolved, if they exist in the configuration.
+        - (optional) package list. When specified, only the package(s) specified are resolved, if they exist in the configuration.
  - purge_rep_list
     - Description: Remove unneeded repository information
 - Arguments:

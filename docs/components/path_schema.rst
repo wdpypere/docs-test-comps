@@ -1,5 +1,8 @@
+##############
+path :: schema
+##############
 
 Types
 -----
 
- - `/software/path/path_component`
+ - **/software/path/path_component**

@@ -1,17 +1,20 @@
+##################
+sendmail :: schema
+##################
 
 Types
 -----
 
- - `/software/sendmail/component_sendmail`
-    - `/software/sendmail/component_sendmail/smarthost`
+ - **/software/sendmail/component_sendmail**
+    - */software/sendmail/component_sendmail/smarthost*
         - Optional
         - Type: string
-    - `/software/sendmail/component_sendmail/userdomain`
+    - */software/sendmail/component_sendmail/userdomain*
         - Optional
         - Type: string
-    - `/software/sendmail/component_sendmail/localusers`
+    - */software/sendmail/component_sendmail/localusers*
         - Optional
         - Type: list
-    - `/software/sendmail/component_sendmail/allowexternal`
+    - */software/sendmail/component_sendmail/allowexternal*
         - Optional
         - Type: boolean

@@ -1,66 +1,69 @@
+################
+puppet :: schema
+################
 
 Types
 -----
 
- - `/software/puppet/puppet_module`
-    - `/software/puppet/puppet_module/version`
+ - **/software/puppet/puppet_module**
+    - */software/puppet/puppet_module/version*
         - Optional
         - Type: string
- - `/software/puppet/puppet_nodefile`
-    - `/software/puppet/puppet_nodefile/contents`
+ - **/software/puppet/puppet_nodefile**
+    - */software/puppet/puppet_nodefile/contents*
         - Optional
         - Type: string
- - `/software/puppet/puppet_puppetconf_main`
-    - `/software/puppet/puppet_puppetconf_main/logdir`
+ - **/software/puppet/puppet_puppetconf_main**
+    - */software/puppet/puppet_puppetconf_main/logdir*
         - Optional
         - Type: string
-    - `/software/puppet/puppet_puppetconf_main/rundir`
+    - */software/puppet/puppet_puppetconf_main/rundir*
         - Optional
         - Type: string
- - `/software/puppet/puppet_puppetconf`
-    - `/software/puppet/puppet_puppetconf/main`
+ - **/software/puppet/puppet_puppetconf**
+    - */software/puppet/puppet_puppetconf/main*
         - Optional
         - Type: puppet_puppetconf_main
- - `/software/puppet/puppet_hieraconf_yaml`
-    - `/software/puppet/puppet_hieraconf_yaml/_3adatadir`
+ - **/software/puppet/puppet_hieraconf_yaml**
+    - */software/puppet/puppet_hieraconf_yaml/_3adatadir*
         - Optional
         - Type: string
- - `/software/puppet/puppet_hieraconf`
- - `/software/puppet/puppet_hieradata`
- - `/software/puppet/puppet_component`
-    - `/software/puppet/puppet_component/puppet_cmd`
+ - **/software/puppet/puppet_hieraconf**
+ - **/software/puppet/puppet_hieradata**
+ - **/software/puppet/puppet_component**
+    - */software/puppet/puppet_component/puppet_cmd*
         - Optional
         - Type: string
-    - `/software/puppet/puppet_component/logfile`
+    - */software/puppet/puppet_component/logfile*
         - Optional
         - Type: string
-    - `/software/puppet/puppet_component/modulepath`
+    - */software/puppet/puppet_component/modulepath*
         - Optional
         - Type: string
-    - `/software/puppet/puppet_component/modules`
+    - */software/puppet/puppet_component/modules*
         - Optional
         - Type: puppet_module
-    - `/software/puppet/puppet_component/nodefiles`
+    - */software/puppet/puppet_component/nodefiles*
         - Optional
         - Type: puppet_nodefile
-    - `/software/puppet/puppet_component/nodefiles_path`
+    - */software/puppet/puppet_component/nodefiles_path*
         - Optional
         - Type: string
-    - `/software/puppet/puppet_component/puppetconf`
+    - */software/puppet/puppet_component/puppetconf*
         - Optional
         - Type: puppet_puppetconf
-    - `/software/puppet/puppet_component/puppetconf_file`
+    - */software/puppet/puppet_component/puppetconf_file*
         - Optional
         - Type: string
-    - `/software/puppet/puppet_component/hieraconf`
+    - */software/puppet/puppet_component/hieraconf*
         - Optional
         - Type: puppet_hieraconf
-    - `/software/puppet/puppet_component/hieraconf_file`
+    - */software/puppet/puppet_component/hieraconf_file*
         - Optional
         - Type: string
-    - `/software/puppet/puppet_component/hieradata`
+    - */software/puppet/puppet_component/hieradata*
         - Optional
         - Type: puppet_hieradata
-    - `/software/puppet/puppet_component/hieradata_file`
+    - */software/puppet/puppet_component/hieradata_file*
         - Optional
         - Type: string

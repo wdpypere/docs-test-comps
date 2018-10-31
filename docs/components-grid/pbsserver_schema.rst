@@ -1,567 +1,570 @@
+###################
+pbsserver :: schema
+###################
 
 Types
 -----
 
- - `/software/pbsserver/pbs_server_extended_att`
-    - `/software/pbsserver/pbs_server_extended_att/attribute`
+ - **/software/pbsserver/pbs_server_extended_att**
+    - */software/pbsserver/pbs_server_extended_att/attribute*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_extended_att/operator`
+    - */software/pbsserver/pbs_server_extended_att/operator*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_extended_att/value`
+    - */software/pbsserver/pbs_server_extended_att/value*
         - Optional
         - Type: string
- - `/software/pbsserver/pbs_server_attlist`
-    - `/software/pbsserver/pbs_server_attlist/accounting_keep_days`
+ - **/software/pbsserver/pbs_server_attlist**
+    - */software/pbsserver/pbs_server_attlist/accounting_keep_days*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/acl_group_sloppy`
+    - */software/pbsserver/pbs_server_attlist/acl_group_sloppy*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/acl_host_enable`
+    - */software/pbsserver/pbs_server_attlist/acl_host_enable*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/acl_hosts`
+    - */software/pbsserver/pbs_server_attlist/acl_hosts*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/acl_logic_or`
+    - */software/pbsserver/pbs_server_attlist/acl_logic_or*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/acl_user_enable`
+    - */software/pbsserver/pbs_server_attlist/acl_user_enable*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/acl_roots`
+    - */software/pbsserver/pbs_server_attlist/acl_roots*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/allow_node_submit`
+    - */software/pbsserver/pbs_server_attlist/allow_node_submit*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/allow_proxy_user`
+    - */software/pbsserver/pbs_server_attlist/allow_proxy_user*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/auto_node_np`
+    - */software/pbsserver/pbs_server_attlist/auto_node_np*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/clone_batch_delay`
+    - */software/pbsserver/pbs_server_attlist/clone_batch_delay*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/clone_batch_size`
+    - */software/pbsserver/pbs_server_attlist/clone_batch_size*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_server_attlist/credential_lifetime`
+    - */software/pbsserver/pbs_server_attlist/credential_lifetime*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_server_attlist/comment`
+    - */software/pbsserver/pbs_server_attlist/comment*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/default_node`
+    - */software/pbsserver/pbs_server_attlist/default_node*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/default_queue`
+    - */software/pbsserver/pbs_server_attlist/default_queue*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/down_on_error`
+    - */software/pbsserver/pbs_server_attlist/down_on_error*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/disable_server_id_check`
+    - */software/pbsserver/pbs_server_attlist/disable_server_id_check*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/extra_resc`
+    - */software/pbsserver/pbs_server_attlist/extra_resc*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/job_force_cancel_time`
+    - */software/pbsserver/pbs_server_attlist/job_force_cancel_time*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/job_nanny`
+    - */software/pbsserver/pbs_server_attlist/job_nanny*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/job_start_timeout`
+    - */software/pbsserver/pbs_server_attlist/job_start_timeout*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_server_attlist/job_stat_rate`
+    - */software/pbsserver/pbs_server_attlist/job_stat_rate*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_server_attlist/keep_completed`
+    - */software/pbsserver/pbs_server_attlist/keep_completed*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/kill_delay`
+    - */software/pbsserver/pbs_server_attlist/kill_delay*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/lock_file`
+    - */software/pbsserver/pbs_server_attlist/lock_file*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/lock_file_check_time`
+    - */software/pbsserver/pbs_server_attlist/lock_file_check_time*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/lock_file_update_time`
+    - */software/pbsserver/pbs_server_attlist/lock_file_update_time*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/log_events`
+    - */software/pbsserver/pbs_server_attlist/log_events*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/log_file_max_size`
+    - */software/pbsserver/pbs_server_attlist/log_file_max_size*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/log_file_roll_depth`
+    - */software/pbsserver/pbs_server_attlist/log_file_roll_depth*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_server_attlist/log_keep_days`
+    - */software/pbsserver/pbs_server_attlist/log_keep_days*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/log_level`
+    - */software/pbsserver/pbs_server_attlist/log_level*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/mail_body_fmt`
+    - */software/pbsserver/pbs_server_attlist/mail_body_fmt*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/mail_domain`
+    - */software/pbsserver/pbs_server_attlist/mail_domain*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/mail_from`
+    - */software/pbsserver/pbs_server_attlist/mail_from*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/mail_subject_fmt`
+    - */software/pbsserver/pbs_server_attlist/mail_subject_fmt*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/mail_uid`
+    - */software/pbsserver/pbs_server_attlist/mail_uid*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/managers`
+    - */software/pbsserver/pbs_server_attlist/managers*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/max_job_array_size`
+    - */software/pbsserver/pbs_server_attlist/max_job_array_size*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/max_slot_limit`
+    - */software/pbsserver/pbs_server_attlist/max_slot_limit*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/max_running`
+    - */software/pbsserver/pbs_server_attlist/max_running*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/max_user_run`
+    - */software/pbsserver/pbs_server_attlist/max_user_run*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/max_user_queuable`
+    - */software/pbsserver/pbs_server_attlist/max_user_queuable*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_server_attlist/max_group_run`
+    - */software/pbsserver/pbs_server_attlist/max_group_run*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/mom_job_sync`
+    - */software/pbsserver/pbs_server_attlist/mom_job_sync*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/next_job_number`
+    - */software/pbsserver/pbs_server_attlist/next_job_number*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/no_mail_force`
+    - */software/pbsserver/pbs_server_attlist/no_mail_force*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/node_check_rate`
+    - */software/pbsserver/pbs_server_attlist/node_check_rate*
         - Optional
         - Type: long
         - Range: 10..
-    - `/software/pbsserver/pbs_server_attlist/node_pack`
+    - */software/pbsserver/pbs_server_attlist/node_pack*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/node_ping_rate`
+    - */software/pbsserver/pbs_server_attlist/node_ping_rate*
         - Optional
         - Type: long
         - Range: 10..
-    - `/software/pbsserver/pbs_server_attlist/node_suffix`
+    - */software/pbsserver/pbs_server_attlist/node_suffix*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/np_default`
+    - */software/pbsserver/pbs_server_attlist/np_default*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/operators`
+    - */software/pbsserver/pbs_server_attlist/operators*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/owner_purge`
+    - */software/pbsserver/pbs_server_attlist/owner_purge*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/poll_jobs`
+    - */software/pbsserver/pbs_server_attlist/poll_jobs*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/query_other_jobs`
+    - */software/pbsserver/pbs_server_attlist/query_other_jobs*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/resources_available`
+    - */software/pbsserver/pbs_server_attlist/resources_available*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/resources_available.nodect`
+    - */software/pbsserver/pbs_server_attlist/resources_available.nodect*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_server_attlist/resources_default`
+    - */software/pbsserver/pbs_server_attlist/resources_default*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/resources_default.nodect`
+    - */software/pbsserver/pbs_server_attlist/resources_default.nodect*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_server_attlist/resources_default.nodes`
+    - */software/pbsserver/pbs_server_attlist/resources_default.nodes*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_server_attlist/resources_max`
+    - */software/pbsserver/pbs_server_attlist/resources_max*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/sched_version`
+    - */software/pbsserver/pbs_server_attlist/sched_version*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/scheduler_iteration`
+    - */software/pbsserver/pbs_server_attlist/scheduler_iteration*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_server_attlist/scheduling`
+    - */software/pbsserver/pbs_server_attlist/scheduling*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/server_name`
+    - */software/pbsserver/pbs_server_attlist/server_name*
         - Optional
         - Type: type_hostname
-    - `/software/pbsserver/pbs_server_attlist/submit_hosts`
+    - */software/pbsserver/pbs_server_attlist/submit_hosts*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/tcp_timeout`
+    - */software/pbsserver/pbs_server_attlist/tcp_timeout*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_server_attlist/checkpoint_dir`
+    - */software/pbsserver/pbs_server_attlist/checkpoint_dir*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/moab_array_compatible`
+    - */software/pbsserver/pbs_server_attlist/moab_array_compatible*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/authorized_users`
+    - */software/pbsserver/pbs_server_attlist/authorized_users*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_server_attlist/record_job_info`
+    - */software/pbsserver/pbs_server_attlist/record_job_info*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/record_job_script`
+    - */software/pbsserver/pbs_server_attlist/record_job_script*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/use_jobs_subdirs`
+    - */software/pbsserver/pbs_server_attlist/use_jobs_subdirs*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server_attlist/thread_idle_seconds`
+    - */software/pbsserver/pbs_server_attlist/thread_idle_seconds*
         - Optional
         - Type: long
         - Range: -1..
-    - `/software/pbsserver/pbs_server_attlist/max_threads`
+    - */software/pbsserver/pbs_server_attlist/max_threads*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/min_threads`
+    - */software/pbsserver/pbs_server_attlist/min_threads*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_server_attlist/legacy_vmem`
+    - */software/pbsserver/pbs_server_attlist/legacy_vmem*
         - Optional
         - Type: boolean
- - `/software/pbsserver/pbs_server`
-    - `/software/pbsserver/pbs_server/manualconfig`
+ - **/software/pbsserver/pbs_server**
+    - */software/pbsserver/pbs_server/manualconfig*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_server/attlist`
+    - */software/pbsserver/pbs_server/attlist*
         - Optional
         - Type: pbs_server_attlist
-    - `/software/pbsserver/pbs_server/extended_att`
+    - */software/pbsserver/pbs_server/extended_att*
         - Optional
         - Type: pbs_server_extended_att
- - `/software/pbsserver/pbs_queue_attlist`
-    - `/software/pbsserver/pbs_queue_attlist/acl_group_enable`
+ - **/software/pbsserver/pbs_queue_attlist**
+    - */software/pbsserver/pbs_queue_attlist/acl_group_enable*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_queue_attlist/acl_group_sloppy`
+    - */software/pbsserver/pbs_queue_attlist/acl_group_sloppy*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_queue_attlist/acl_groups`
+    - */software/pbsserver/pbs_queue_attlist/acl_groups*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/acl_host_enable`
+    - */software/pbsserver/pbs_queue_attlist/acl_host_enable*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_queue_attlist/acl_hosts`
+    - */software/pbsserver/pbs_queue_attlist/acl_hosts*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/acl_logic_or`
+    - */software/pbsserver/pbs_queue_attlist/acl_logic_or*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_queue_attlist/acl_user_enable`
+    - */software/pbsserver/pbs_queue_attlist/acl_user_enable*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_queue_attlist/acl_users`
+    - */software/pbsserver/pbs_queue_attlist/acl_users*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/alter_router`
+    - */software/pbsserver/pbs_queue_attlist/alter_router*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_queue_attlist/checkpoint_defaults`
+    - */software/pbsserver/pbs_queue_attlist/checkpoint_defaults*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/checkpoint_min`
+    - */software/pbsserver/pbs_queue_attlist/checkpoint_min*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_queue_attlist/disallowed`
+    - */software/pbsserver/pbs_queue_attlist/disallowed*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/enabled`
+    - */software/pbsserver/pbs_queue_attlist/enabled*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_queue_attlist/from_route_only`
+    - */software/pbsserver/pbs_queue_attlist/from_route_only*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_queue_attlist/is_transit`
+    - */software/pbsserver/pbs_queue_attlist/is_transit*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_queue_attlist/keep_completed`
+    - */software/pbsserver/pbs_queue_attlist/keep_completed*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_queue_attlist/kill_delay`
+    - */software/pbsserver/pbs_queue_attlist/kill_delay*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_queue_attlist/max_queuable`
+    - */software/pbsserver/pbs_queue_attlist/max_queuable*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_queue_attlist/max_group_run`
+    - */software/pbsserver/pbs_queue_attlist/max_group_run*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_queue_attlist/max_user_run`
+    - */software/pbsserver/pbs_queue_attlist/max_user_run*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_queue_attlist/max_user_queuable`
+    - */software/pbsserver/pbs_queue_attlist/max_user_queuable*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_queue_attlist/max_running`
+    - */software/pbsserver/pbs_queue_attlist/max_running*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_queue_attlist/Priority`
+    - */software/pbsserver/pbs_queue_attlist/Priority*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_queue_attlist/queue_type`
+    - */software/pbsserver/pbs_queue_attlist/queue_type*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_available.nodect`
+    - */software/pbsserver/pbs_queue_attlist/resources_available.nodect*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_queue_attlist/resources_default.mem`
+    - */software/pbsserver/pbs_queue_attlist/resources_default.mem*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_default.ncpus`
+    - */software/pbsserver/pbs_queue_attlist/resources_default.ncpus*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_queue_attlist/resources_default.neednodes`
+    - */software/pbsserver/pbs_queue_attlist/resources_default.neednodes*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_default.nice`
+    - */software/pbsserver/pbs_queue_attlist/resources_default.nice*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_queue_attlist/resources_default.nodect`
+    - */software/pbsserver/pbs_queue_attlist/resources_default.nodect*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_queue_attlist/resources_default.nodes`
+    - */software/pbsserver/pbs_queue_attlist/resources_default.nodes*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_queue_attlist/resources_default.pmem`
+    - */software/pbsserver/pbs_queue_attlist/resources_default.pmem*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_default.procct`
+    - */software/pbsserver/pbs_queue_attlist/resources_default.procct*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_queue_attlist/resources_default.pvmem`
+    - */software/pbsserver/pbs_queue_attlist/resources_default.pvmem*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_default.vmem`
+    - */software/pbsserver/pbs_queue_attlist/resources_default.vmem*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_default.walltime`
+    - */software/pbsserver/pbs_queue_attlist/resources_default.walltime*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_max.cput`
+    - */software/pbsserver/pbs_queue_attlist/resources_max.cput*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_max.file`
+    - */software/pbsserver/pbs_queue_attlist/resources_max.file*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_max.mem`
+    - */software/pbsserver/pbs_queue_attlist/resources_max.mem*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_max.nice`
+    - */software/pbsserver/pbs_queue_attlist/resources_max.nice*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_queue_attlist/resources_max.nodect`
+    - */software/pbsserver/pbs_queue_attlist/resources_max.nodect*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_queue_attlist/resources_max.nodes`
+    - */software/pbsserver/pbs_queue_attlist/resources_max.nodes*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_queue_attlist/resources_max.pcput`
+    - */software/pbsserver/pbs_queue_attlist/resources_max.pcput*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_max.pmem`
+    - */software/pbsserver/pbs_queue_attlist/resources_max.pmem*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_max.procct`
+    - */software/pbsserver/pbs_queue_attlist/resources_max.procct*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_queue_attlist/resources_max.pvmem`
+    - */software/pbsserver/pbs_queue_attlist/resources_max.pvmem*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_max.vmem`
+    - */software/pbsserver/pbs_queue_attlist/resources_max.vmem*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_max.walltime`
+    - */software/pbsserver/pbs_queue_attlist/resources_max.walltime*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_min.mem`
+    - */software/pbsserver/pbs_queue_attlist/resources_min.mem*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_min.nice`
+    - */software/pbsserver/pbs_queue_attlist/resources_min.nice*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_queue_attlist/resources_min.pmem`
+    - */software/pbsserver/pbs_queue_attlist/resources_min.pmem*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_min.pvmem`
+    - */software/pbsserver/pbs_queue_attlist/resources_min.pvmem*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_min.vmem`
+    - */software/pbsserver/pbs_queue_attlist/resources_min.vmem*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/resources_min.walltime`
+    - */software/pbsserver/pbs_queue_attlist/resources_min.walltime*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/started`
+    - */software/pbsserver/pbs_queue_attlist/started*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_queue_attlist/route_destinations`
+    - */software/pbsserver/pbs_queue_attlist/route_destinations*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_queue_attlist/route_held_jobs`
+    - */software/pbsserver/pbs_queue_attlist/route_held_jobs*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_queue_attlist/route_lifetime`
+    - */software/pbsserver/pbs_queue_attlist/route_lifetime*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_queue_attlist/route_retry_time`
+    - */software/pbsserver/pbs_queue_attlist/route_retry_time*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/pbsserver/pbs_queue_attlist/route_waiting_jobs`
+    - */software/pbsserver/pbs_queue_attlist/route_waiting_jobs*
         - Optional
         - Type: boolean
- - `/software/pbsserver/pbs_queue`
-    - `/software/pbsserver/pbs_queue/manualconfig`
+ - **/software/pbsserver/pbs_queue**
+    - */software/pbsserver/pbs_queue/manualconfig*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_queue/attlist`
+    - */software/pbsserver/pbs_queue/attlist*
         - Optional
         - Type: pbs_queue_attlist
- - `/software/pbsserver/pbs_queuelist`
-    - `/software/pbsserver/pbs_queuelist/manualconfig`
+ - **/software/pbsserver/pbs_queuelist**
+    - */software/pbsserver/pbs_queuelist/manualconfig*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_queuelist/queuelist`
+    - */software/pbsserver/pbs_queuelist/queuelist*
         - Optional
         - Type: pbs_queue
- - `/software/pbsserver/pbs_node_attlist`
-    - `/software/pbsserver/pbs_node_attlist/np`
+ - **/software/pbsserver/pbs_node_attlist**
+    - */software/pbsserver/pbs_node_attlist/np*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/pbsserver/pbs_node_attlist/properties`
+    - */software/pbsserver/pbs_node_attlist/properties*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_node_attlist/state`
+    - */software/pbsserver/pbs_node_attlist/state*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbs_node_attlist/ntype`
+    - */software/pbsserver/pbs_node_attlist/ntype*
         - Optional
         - Type: string
- - `/software/pbsserver/pbs_node`
-    - `/software/pbsserver/pbs_node/manualconfig`
+ - **/software/pbsserver/pbs_node**
+    - */software/pbsserver/pbs_node/manualconfig*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_node/attlist`
+    - */software/pbsserver/pbs_node/attlist*
         - Optional
         - Type: pbs_node_attlist
- - `/software/pbsserver/pbs_nodelist`
-    - `/software/pbsserver/pbs_nodelist/manualconfig`
+ - **/software/pbsserver/pbs_nodelist**
+    - */software/pbsserver/pbs_nodelist/manualconfig*
         - Optional
         - Type: boolean
-    - `/software/pbsserver/pbs_nodelist/nodelist`
+    - */software/pbsserver/pbs_nodelist/nodelist*
         - Optional
         - Type: pbs_node
- - `/software/pbsserver/pbsserver_component`
-    - `/software/pbsserver/pbsserver_component/pbsroot`
+ - **/software/pbsserver/pbsserver_component**
+    - */software/pbsserver/pbsserver_component/pbsroot*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbsserver_component/binpath`
+    - */software/pbsserver/pbsserver_component/binpath*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbsserver_component/submitfilter`
+    - */software/pbsserver/pbsserver_component/submitfilter*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbsserver_component/env`
+    - */software/pbsserver/pbsserver_component/env*
         - Optional
         - Type: string
-    - `/software/pbsserver/pbsserver_component/server`
+    - */software/pbsserver/pbsserver_component/server*
         - Optional
         - Type: pbs_server
-    - `/software/pbsserver/pbsserver_component/queue`
+    - */software/pbsserver/pbsserver_component/queue*
         - Optional
         - Type: pbs_queuelist
-    - `/software/pbsserver/pbsserver_component/node`
+    - */software/pbsserver/pbsserver_component/node*
         - Optional
         - Type: pbs_nodelist
-    - `/software/pbsserver/pbsserver_component/ignoretorquecfg`
+    - */software/pbsserver/pbsserver_component/ignoretorquecfg*
         - Optional
         - Type: boolean

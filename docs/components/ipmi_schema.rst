@@ -1,27 +1,30 @@
+##############
+ipmi :: schema
+##############
 
 Types
 -----
 
- - `/software/ipmi/structure_users`
-    - `/software/ipmi/structure_users/login`
+ - **/software/ipmi/structure_users**
+    - */software/ipmi/structure_users/login*
         - Optional
         - Type: string
-    - `/software/ipmi/structure_users/password`
+    - */software/ipmi/structure_users/password*
         - Optional
         - Type: string
-    - `/software/ipmi/structure_users/priv`
+    - */software/ipmi/structure_users/priv*
         - Optional
         - Type: string
-    - `/software/ipmi/structure_users/userid`
+    - */software/ipmi/structure_users/userid*
         - Optional
         - Type: long
- - `/software/ipmi/component_ipmi_type`
-    - `/software/ipmi/component_ipmi_type/channel`
+ - **/software/ipmi/component_ipmi_type**
+    - */software/ipmi/component_ipmi_type/channel*
         - Optional
         - Type: long
-    - `/software/ipmi/component_ipmi_type/users`
+    - */software/ipmi/component_ipmi_type/users*
         - Optional
         - Type: structure_users
-    - `/software/ipmi/component_ipmi_type/net_interface`
+    - */software/ipmi/component_ipmi_type/net_interface*
         - Optional
         - Type: string

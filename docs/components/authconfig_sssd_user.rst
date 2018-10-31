@@ -1,129 +1,132 @@
+##########################
+authconfig :: sssd :: user
+##########################
 
 Types
 -----
 
- - `/software/authconfig/sssd_user`
-    - `/software/authconfig/sssd_user/object_class`
+ - **/software/authconfig/sssd_user**
+    - */software/authconfig/sssd_user/object_class*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/uid_number`
+    - */software/authconfig/sssd_user/uid_number*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/gid_number`
+    - */software/authconfig/sssd_user/gid_number*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/name`
+    - */software/authconfig/sssd_user/name*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/gecos`
+    - */software/authconfig/sssd_user/gecos*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/home_directory`
+    - */software/authconfig/sssd_user/home_directory*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/shell`
+    - */software/authconfig/sssd_user/shell*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/uuid`
+    - */software/authconfig/sssd_user/uuid*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/objectsid`
+    - */software/authconfig/sssd_user/objectsid*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/modify_timestamp`
+    - */software/authconfig/sssd_user/modify_timestamp*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/shadow_last_change`
+    - */software/authconfig/sssd_user/shadow_last_change*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/shadow_min`
+    - */software/authconfig/sssd_user/shadow_min*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/shadow_max`
+    - */software/authconfig/sssd_user/shadow_max*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/shadow_warning`
+    - */software/authconfig/sssd_user/shadow_warning*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/shadow_inactive`
+    - */software/authconfig/sssd_user/shadow_inactive*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/shadow_expire`
+    - */software/authconfig/sssd_user/shadow_expire*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/krb_last_pwd_change`
+    - */software/authconfig/sssd_user/krb_last_pwd_change*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/krb_password_expiration`
+    - */software/authconfig/sssd_user/krb_password_expiration*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/ad_account_expires`
+    - */software/authconfig/sssd_user/ad_account_expires*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/ad_user_account_control`
+    - */software/authconfig/sssd_user/ad_user_account_control*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/nds_login_disabled`
+    - */software/authconfig/sssd_user/nds_login_disabled*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/nds_login_expiration_time`
+    - */software/authconfig/sssd_user/nds_login_expiration_time*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/nds_login_allowed_time_map`
+    - */software/authconfig/sssd_user/nds_login_allowed_time_map*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/principal`
+    - */software/authconfig/sssd_user/principal*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/ssh_public_key`
+    - */software/authconfig/sssd_user/ssh_public_key*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/fullname`
+    - */software/authconfig/sssd_user/fullname*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/member_of`
+    - */software/authconfig/sssd_user/member_of*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/authorized_service`
+    - */software/authconfig/sssd_user/authorized_service*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/authorized_host`
+    - */software/authconfig/sssd_user/authorized_host*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/search_base`
+    - */software/authconfig/sssd_user/search_base*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_user/search_filter`
+    - */software/authconfig/sssd_user/search_filter*
         - Optional
         - Type: string
- - `/software/authconfig/sssd_group`
-    - `/software/authconfig/sssd_group/object_class`
+ - **/software/authconfig/sssd_group**
+    - */software/authconfig/sssd_group/object_class*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_group/name`
+    - */software/authconfig/sssd_group/name*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_group/gid_number`
+    - */software/authconfig/sssd_group/gid_number*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_group/member`
+    - */software/authconfig/sssd_group/member*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_group/uuid`
+    - */software/authconfig/sssd_group/uuid*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_group/objectsid`
+    - */software/authconfig/sssd_group/objectsid*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_group/modify_timestamp`
+    - */software/authconfig/sssd_group/modify_timestamp*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_group/nesting_level`
+    - */software/authconfig/sssd_group/nesting_level*
         - Optional
         - Type: long
-    - `/software/authconfig/sssd_group/search_base`
+    - */software/authconfig/sssd_group/search_base*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_group/search_filter`
+    - */software/authconfig/sssd_group/search_filter*
         - Optional
         - Type: string

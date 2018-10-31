@@ -1,8 +1,11 @@
+##############
+spma :: schema
+##############
 
 Types
 -----
 
- - `/software/spma/component_spma_common`
-    - `/software/spma/component_spma_common/packager`
+ - **/software/spma/component_spma_common**
+    - */software/spma/component_spma_common/packager*
         - Optional
         - Type: string

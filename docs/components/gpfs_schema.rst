@@ -1,79 +1,80 @@
+##############
+gpfs :: schema
+##############
 
 Types
 -----
 
- - `/software/gpfs/gpfs_curl`
-    - `/software/gpfs/gpfs_curl/usecurl`
+ - **/software/gpfs/gpfs_curl**
+    - */software/gpfs/gpfs_curl/usecurl*
         - Optional
         - Type: boolean
-    - `/software/gpfs/gpfs_curl/usegss`
+    - */software/gpfs/gpfs_curl/usegss*
         - Description: use kerberos token form host keytab
         - Optional
         - Type: boolean
-    - `/software/gpfs/gpfs_curl/usesindesgetcertcertwithcurl`
+    - */software/gpfs/gpfs_curl/usesindesgetcertcertwithcurl*
         - Description: get certificate information from SINDES getcert component configuration
         - Optional
         - Type: boolean
-    - `/software/gpfs/gpfs_curl/useccmcertwithcurl`
+    - */software/gpfs/gpfs_curl/useccmcertwithcurl*
         - Description: get certificate information from CCM component configuration
         - Optional
         - Type: boolean
- - `/software/gpfs/gpfs_cfg`
-    - `/software/gpfs/gpfs_cfg/url`
+ - **/software/gpfs/gpfs_cfg**
+    - */software/gpfs/gpfs_cfg/url*
         - Optional
         - Type: string
-    - `/software/gpfs/gpfs_cfg/keyData`
+    - */software/gpfs/gpfs_cfg/keyData*
         - Optional
         - Type: string
-    - `/software/gpfs/gpfs_cfg/sdrrestore`
+    - */software/gpfs/gpfs_cfg/sdrrestore*
         - Optional
         - Type: boolean
-    - `/software/gpfs/gpfs_cfg/subnet`
+    - */software/gpfs/gpfs_cfg/subnet*
         - Optional
         - Type: string
- - `/software/gpfs/gpfs_base`
-    - `/software/gpfs/gpfs_base/rpms`
+ - **/software/gpfs/gpfs_base**
+    - */software/gpfs/gpfs_base/rpms*
         - Optional
         - Type: string
-    - `/software/gpfs/gpfs_base/baseurl`
+    - */software/gpfs/gpfs_base/baseurl*
         - Optional
         - Type: string
-    - `/software/gpfs/gpfs_base/useproxy`
+    - */software/gpfs/gpfs_base/useproxy*
         - Optional
         - Type: boolean
-    - `/software/gpfs/gpfs_base/useyum`
+    - */software/gpfs/gpfs_base/useyum*
         - Optional
         - Type: boolean
- - `/software/gpfs/gpfs_sysmon_common`
-    - `/software/gpfs/gpfs_sysmon_common/monitorinterval`
+ - **/software/gpfs/gpfs_sysmon_common**
+    - */software/gpfs/gpfs_sysmon_common/monitorinterval*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/gpfs/gpfs_sysmon_common/monitoroffset`
+    - */software/gpfs/gpfs_sysmon_common/monitoroffset*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/gpfs/gpfs_sysmon_common/clockalign`
+    - */software/gpfs/gpfs_sysmon_common/clockalign*
         - Optional
         - Type: boolean
- - `/software/gpfs/gpfs_sysmon_network`
- - `/software/gpfs/gpfs_sysmon`
-    - `/software/gpfs/gpfs_sysmon/network`
+ - **/software/gpfs/gpfs_sysmon_network**
+ - **/software/gpfs/gpfs_sysmon**
+    - */software/gpfs/gpfs_sysmon/network*
         - Optional
         - Type: gpfs_sysmon_network
- - `/software/gpfs/gpfs_component`
-    - `/software/gpfs/gpfs_component/base`
+ - **/software/gpfs/gpfs_component**
+    - */software/gpfs/gpfs_component/base*
         - Optional
         - Type: gpfs_base
-    - `/software/gpfs/gpfs_component/cfg`
+    - */software/gpfs/gpfs_component/cfg*
         - Optional
         - Type: gpfs_cfg
-    - `/software/gpfs/gpfs_component/sysmon`
-        - Description: GPFS mmsysmonitor configuration.
-      When defined, existing configuration is read and
-      only configured values are modified/added, keeping any other existing ones.
+    - */software/gpfs/gpfs_component/sysmon*
+        - Description: GPFS mmsysmonitor configuration. When defined, existing configuration is read and only configured values are modified/added, keeping any other existing ones.
         - Optional
         - Type: gpfs_sysmon
-    - `/software/gpfs/gpfs_component/skiprpm`
+    - */software/gpfs/gpfs_component/skiprpm*
         - Optional
         - Type: boolean

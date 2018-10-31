@@ -1,32 +1,35 @@
+################
+afsclt :: schema
+################
 
 Types
 -----
 
- - `/software/afsclt/component_afsclt_entry`
-    - `/software/afsclt/component_afsclt_entry/thiscell`
+ - **/software/afsclt/component_afsclt_entry**
+    - */software/afsclt/component_afsclt_entry/thiscell*
         - Optional
         - Type: string
-    - `/software/afsclt/component_afsclt_entry/thesecells`
+    - */software/afsclt/component_afsclt_entry/thesecells*
         - Optional
         - Type: string
-    - `/software/afsclt/component_afsclt_entry/settime`
+    - */software/afsclt/component_afsclt_entry/settime*
         - Optional
         - Type: boolean
-    - `/software/afsclt/component_afsclt_entry/cellservdb`
+    - */software/afsclt/component_afsclt_entry/cellservdb*
         - Optional
         - Type: string
-    - `/software/afsclt/component_afsclt_entry/afs_mount`
+    - */software/afsclt/component_afsclt_entry/afs_mount*
         - Optional
         - Type: string
-    - `/software/afsclt/component_afsclt_entry/cachemount`
+    - */software/afsclt/component_afsclt_entry/cachemount*
         - Optional
         - Type: string
-    - `/software/afsclt/component_afsclt_entry/cachesize`
+    - */software/afsclt/component_afsclt_entry/cachesize*
         - Optional
         - Type: string
-    - `/software/afsclt/component_afsclt_entry/enabled`
+    - */software/afsclt/component_afsclt_entry/enabled*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - `/software/afsclt/component_afsclt_entry/afsd_args`
+    - */software/afsclt/component_afsclt_entry/afsd_args*
         - Optional
         - Type: string

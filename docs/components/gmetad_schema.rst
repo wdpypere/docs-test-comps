@@ -1,67 +1,70 @@
+################
+gmetad :: schema
+################
 
 Types
 -----
 
- - `/software/gmetad/structure_component_gmetad_data_source_host`
-    - `/software/gmetad/structure_component_gmetad_data_source_host/address`
+ - **/software/gmetad/structure_component_gmetad_data_source_host**
+    - */software/gmetad/structure_component_gmetad_data_source_host/address*
         - Optional
         - Type: type_hostname
-    - `/software/gmetad/structure_component_gmetad_data_source_host/port`
+    - */software/gmetad/structure_component_gmetad_data_source_host/port*
         - Optional
         - Type: type_port
- - `/software/gmetad/structure_component_gmetad_data_source`
-    - `/software/gmetad/structure_component_gmetad_data_source/name`
+ - **/software/gmetad/structure_component_gmetad_data_source**
+    - */software/gmetad/structure_component_gmetad_data_source/name*
         - Optional
         - Type: string
-    - `/software/gmetad/structure_component_gmetad_data_source/polling_interval`
+    - */software/gmetad/structure_component_gmetad_data_source/polling_interval*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/gmetad/structure_component_gmetad_data_source/host`
+    - */software/gmetad/structure_component_gmetad_data_source/host*
         - Optional
         - Type: structure_component_gmetad_data_source_host
- - `/software/gmetad/structure_component_gmetad`
-    - `/software/gmetad/structure_component_gmetad/debug_level`
+ - **/software/gmetad/structure_component_gmetad**
+    - */software/gmetad/structure_component_gmetad/debug_level*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/gmetad/structure_component_gmetad/data_source`
+    - */software/gmetad/structure_component_gmetad/data_source*
         - Optional
         - Type: structure_component_gmetad_data_source
-    - `/software/gmetad/structure_component_gmetad/scalability`
+    - */software/gmetad/structure_component_gmetad/scalability*
         - Optional
         - Type: string
-    - `/software/gmetad/structure_component_gmetad/gridname`
+    - */software/gmetad/structure_component_gmetad/gridname*
         - Optional
         - Type: string
-    - `/software/gmetad/structure_component_gmetad/authorithy`
+    - */software/gmetad/structure_component_gmetad/authorithy*
         - Optional
         - Type: type_absoluteURI
-    - `/software/gmetad/structure_component_gmetad/trusted_hosts`
+    - */software/gmetad/structure_component_gmetad/trusted_hosts*
         - Optional
         - Type: type_hostname
-    - `/software/gmetad/structure_component_gmetad/all_trusted`
+    - */software/gmetad/structure_component_gmetad/all_trusted*
         - Optional
         - Type: string
-    - `/software/gmetad/structure_component_gmetad/setuid`
+    - */software/gmetad/structure_component_gmetad/setuid*
         - Optional
         - Type: string
-    - `/software/gmetad/structure_component_gmetad/setuid_username`
+    - */software/gmetad/structure_component_gmetad/setuid_username*
         - Optional
         - Type: string
-    - `/software/gmetad/structure_component_gmetad/xml_port`
+    - */software/gmetad/structure_component_gmetad/xml_port*
         - Optional
         - Type: type_port
-    - `/software/gmetad/structure_component_gmetad/interactive_port`
+    - */software/gmetad/structure_component_gmetad/interactive_port*
         - Optional
         - Type: type_port
-    - `/software/gmetad/structure_component_gmetad/server_threads`
+    - */software/gmetad/structure_component_gmetad/server_threads*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/gmetad/structure_component_gmetad/rrd_rootdir`
+    - */software/gmetad/structure_component_gmetad/rrd_rootdir*
         - Optional
         - Type: string
-    - `/software/gmetad/structure_component_gmetad/file`
+    - */software/gmetad/structure_component_gmetad/file*
         - Optional
         - Type: string

@@ -1,27 +1,30 @@
+###############
+named :: schema
+###############
 
 Types
 -----
 
- - `/software/named/component_named`
-    - `/software/named/component_named/serverConfig`
+ - **/software/named/component_named**
+    - */software/named/component_named/serverConfig*
         - Optional
         - Type: string
-    - `/software/named/component_named/configfile`
+    - */software/named/component_named/configfile*
         - Optional
         - Type: string
-    - `/software/named/component_named/use_localhost`
+    - */software/named/component_named/use_localhost*
         - Optional
         - Type: boolean
-    - `/software/named/component_named/start`
+    - */software/named/component_named/start*
         - Optional
         - Type: boolean
-    - `/software/named/component_named/servers`
+    - */software/named/component_named/servers*
         - Optional
         - Type: type_ip
-    - `/software/named/component_named/options`
+    - */software/named/component_named/options*
         - Optional
         - Type: string
-    - `/software/named/component_named/search`
+    - */software/named/component_named/search*
         - Optional
         - Type: type_fqdn
 

@@ -1,230 +1,232 @@
+##########################
+authconfig :: sssd :: ldap
+##########################
 
 Types
 -----
 
- - `/software/authconfig/ldap_schema`
- - `/software/authconfig/ldap_authok`
- - `/software/authconfig/ldap_deref`
- - `/software/authconfig/ldap_order`
- - `/software/authconfig/sssd_chpass`
+ - **/software/authconfig/ldap_schema**
+ - **/software/authconfig/ldap_authok**
+ - **/software/authconfig/ldap_deref**
+ - **/software/authconfig/ldap_order**
+ - **/software/authconfig/sssd_chpass**
     - Description: LDAP chpass fields
-    - `/software/authconfig/sssd_chpass/uri`
+    - */software/authconfig/sssd_chpass/uri*
         - Optional
         - Type: type_absoluteURI
-    - `/software/authconfig/sssd_chpass/backup_uri`
+    - */software/authconfig/sssd_chpass/backup_uri*
         - Optional
         - Type: type_absoluteURI
-    - `/software/authconfig/sssd_chpass/dns_service_name`
+    - */software/authconfig/sssd_chpass/dns_service_name*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_chpass/update_last_change`
+    - */software/authconfig/sssd_chpass/update_last_change*
         - Optional
         - Type: boolean
- - `/software/authconfig/sssd_ldap_defaults`
-    - `/software/authconfig/sssd_ldap_defaults/bind_dn`
+ - **/software/authconfig/sssd_ldap_defaults**
+    - */software/authconfig/sssd_ldap_defaults/bind_dn*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_ldap_defaults/authtok_type`
+    - */software/authconfig/sssd_ldap_defaults/authtok_type*
         - Optional
         - Type: ldap_authok
-    - `/software/authconfig/sssd_ldap_defaults/authtok`
+    - */software/authconfig/sssd_ldap_defaults/authtok*
         - Optional
         - Type: string
- - `/software/authconfig/sssd_netgroup`
+ - **/software/authconfig/sssd_netgroup**
     - Description: LDAP netgroup fields
-    - `/software/authconfig/sssd_netgroup/object_class`
+    - */software/authconfig/sssd_netgroup/object_class*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_netgroup/name`
+    - */software/authconfig/sssd_netgroup/name*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_netgroup/member`
+    - */software/authconfig/sssd_netgroup/member*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_netgroup/triple`
+    - */software/authconfig/sssd_netgroup/triple*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_netgroup/uuid`
+    - */software/authconfig/sssd_netgroup/uuid*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_netgroup/modify_timestamp`
+    - */software/authconfig/sssd_netgroup/modify_timestamp*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_netgroup/search_base`
+    - */software/authconfig/sssd_netgroup/search_base*
         - Optional
         - Type: string
- - `/software/authconfig/sssd_autofs`
+ - **/software/authconfig/sssd_autofs**
     - Description: LDAP autofs fields
-    - `/software/authconfig/sssd_autofs/map_object_class`
+    - */software/authconfig/sssd_autofs/map_object_class*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_autofs/map_name`
+    - */software/authconfig/sssd_autofs/map_name*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_autofs/entry_object_class`
+    - */software/authconfig/sssd_autofs/entry_object_class*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_autofs/entry_key`
+    - */software/authconfig/sssd_autofs/entry_key*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_autofs/entry_value`
+    - */software/authconfig/sssd_autofs/entry_value*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_autofs/search_base`
+    - */software/authconfig/sssd_autofs/search_base*
         - Optional
         - Type: string
- - `/software/authconfig/sssd_ldap_service`
+ - **/software/authconfig/sssd_ldap_service**
     - Description: LDAP IP service fields
-    - `/software/authconfig/sssd_ldap_service/object_class`
+    - */software/authconfig/sssd_ldap_service/object_class*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_ldap_service/name`
+    - */software/authconfig/sssd_ldap_service/name*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_ldap_service/port`
+    - */software/authconfig/sssd_ldap_service/port*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_ldap_service/proto`
+    - */software/authconfig/sssd_ldap_service/proto*
         - Optional
         - Type: string
-    - `/software/authconfig/sssd_ldap_service/search_base`
+    - */software/authconfig/sssd_ldap_service/search_base*
         - Optional
         - Type: string
- - `/software/authconfig/authconfig_sssd_ldap`
-    - Description: LDAP access provider for SSSD.  See the sssd-ldap man page.
-    Timeouts are expressed in seconds.
-    - `/software/authconfig/authconfig_sssd_ldap/user`
+ - **/software/authconfig/authconfig_sssd_ldap**
+    - Description: LDAP access provider for SSSD. See the sssd-ldap man page. Timeouts are expressed in seconds.
+    - */software/authconfig/authconfig_sssd_ldap/user*
         - Optional
         - Type: sssd_user
-    - `/software/authconfig/authconfig_sssd_ldap/group`
+    - */software/authconfig/authconfig_sssd_ldap/group*
         - Optional
         - Type: sssd_group
-    - `/software/authconfig/authconfig_sssd_ldap/chpass`
+    - */software/authconfig/authconfig_sssd_ldap/chpass*
         - Optional
         - Type: sssd_chpass
-    - `/software/authconfig/authconfig_sssd_ldap/default`
+    - */software/authconfig/authconfig_sssd_ldap/default*
         - Optional
         - Type: sssd_ldap_defaults
-    - `/software/authconfig/authconfig_sssd_ldap/sasl`
+    - */software/authconfig/authconfig_sssd_ldap/sasl*
         - Optional
         - Type: sssd_sasl
-    - `/software/authconfig/authconfig_sssd_ldap/krb5`
+    - */software/authconfig/authconfig_sssd_ldap/krb5*
         - Optional
         - Type: sssd_krb5
-    - `/software/authconfig/authconfig_sssd_ldap/sudo`
+    - */software/authconfig/authconfig_sssd_ldap/sudo*
         - Optional
         - Type: sssd_sudo
-    - `/software/authconfig/authconfig_sssd_ldap/sudorule`
+    - */software/authconfig/authconfig_sssd_ldap/sudorule*
         - Optional
         - Type: sssd_sudorule
-    - `/software/authconfig/authconfig_sssd_ldap/tls`
+    - */software/authconfig/authconfig_sssd_ldap/tls*
         - Optional
         - Type: sssd_tls
-    - `/software/authconfig/authconfig_sssd_ldap/netgroup`
+    - */software/authconfig/authconfig_sssd_ldap/netgroup*
         - Optional
         - Type: sssd_netgroup
-    - `/software/authconfig/authconfig_sssd_ldap/autofs`
+    - */software/authconfig/authconfig_sssd_ldap/autofs*
         - Optional
         - Type: sssd_autofs
-    - `/software/authconfig/authconfig_sssd_ldap/uri`
+    - */software/authconfig/authconfig_sssd_ldap/uri*
         - Optional
         - Type: type_absoluteURI
-    - `/software/authconfig/authconfig_sssd_ldap/backup_uri`
+    - */software/authconfig/authconfig_sssd_ldap/backup_uri*
         - Optional
         - Type: type_absoluteURI
-    - `/software/authconfig/authconfig_sssd_ldap/search_base`
+    - */software/authconfig/authconfig_sssd_ldap/search_base*
         - Optional
         - Type: string
-    - `/software/authconfig/authconfig_sssd_ldap/schema`
+    - */software/authconfig/authconfig_sssd_ldap/schema*
         - Optional
         - Type: ldap_schema
-    - `/software/authconfig/authconfig_sssd_ldap/service`
+    - */software/authconfig/authconfig_sssd_ldap/service*
         - Optional
         - Type: sssd_ldap_service
-    - `/software/authconfig/authconfig_sssd_ldap/krb5_backup_server`
+    - */software/authconfig/authconfig_sssd_ldap/krb5_backup_server*
         - Optional
         - Type: string
-    - `/software/authconfig/authconfig_sssd_ldap/krb5_canonicalize`
+    - */software/authconfig/authconfig_sssd_ldap/krb5_canonicalize*
         - Optional
         - Type: boolean
-    - `/software/authconfig/authconfig_sssd_ldap/krb5_realm`
+    - */software/authconfig/authconfig_sssd_ldap/krb5_realm*
         - Optional
         - Type: string
-    - `/software/authconfig/authconfig_sssd_ldap/krb5_server`
+    - */software/authconfig/authconfig_sssd_ldap/krb5_server*
         - Optional
         - Type: string
-    - `/software/authconfig/authconfig_sssd_ldap/access_filter`
+    - */software/authconfig/authconfig_sssd_ldap/access_filter*
         - Optional
         - Type: string
-    - `/software/authconfig/authconfig_sssd_ldap/access_order`
+    - */software/authconfig/authconfig_sssd_ldap/access_order*
         - Optional
         - Type: ldap_order
-    - `/software/authconfig/authconfig_sssd_ldap/connection_expire_timeout`
+    - */software/authconfig/authconfig_sssd_ldap/connection_expire_timeout*
         - Optional
         - Type: long
-    - `/software/authconfig/authconfig_sssd_ldap/deref`
+    - */software/authconfig/authconfig_sssd_ldap/deref*
         - Optional
         - Type: string
-    - `/software/authconfig/authconfig_sssd_ldap/deref_threshold`
+    - */software/authconfig/authconfig_sssd_ldap/deref_threshold*
         - Optional
         - Type: long
-    - `/software/authconfig/authconfig_sssd_ldap/disable_paging`
+    - */software/authconfig/authconfig_sssd_ldap/disable_paging*
         - Optional
         - Type: boolean
-    - `/software/authconfig/authconfig_sssd_ldap/dns_service_name`
+    - */software/authconfig/authconfig_sssd_ldap/dns_service_name*
         - Optional
         - Type: string
-    - `/software/authconfig/authconfig_sssd_ldap/entry_usn`
+    - */software/authconfig/authconfig_sssd_ldap/entry_usn*
         - Optional
         - Type: string
-    - `/software/authconfig/authconfig_sssd_ldap/enumeration_refresh_timeout`
+    - */software/authconfig/authconfig_sssd_ldap/enumeration_refresh_timeout*
         - Optional
         - Type: long
-    - `/software/authconfig/authconfig_sssd_ldap/enumeration_search_timeout`
+    - */software/authconfig/authconfig_sssd_ldap/enumeration_search_timeout*
         - Optional
         - Type: long
-    - `/software/authconfig/authconfig_sssd_ldap/force_upper_case_realm`
+    - */software/authconfig/authconfig_sssd_ldap/force_upper_case_realm*
         - Optional
         - Type: boolean
-    - `/software/authconfig/authconfig_sssd_ldap/groups_use_matching_rule_in_chain`
+    - */software/authconfig/authconfig_sssd_ldap/groups_use_matching_rule_in_chain*
         - Optional
         - Type: boolean
-    - `/software/authconfig/authconfig_sssd_ldap/id_use_start_tls`
+    - */software/authconfig/authconfig_sssd_ldap/id_use_start_tls*
         - Optional
         - Type: boolean
-    - `/software/authconfig/authconfig_sssd_ldap/id_mapping`
+    - */software/authconfig/authconfig_sssd_ldap/id_mapping*
         - Optional
         - Type: boolean
-    - `/software/authconfig/authconfig_sssd_ldap/network_timeout`
+    - */software/authconfig/authconfig_sssd_ldap/network_timeout*
         - Optional
         - Type: long
-    - `/software/authconfig/authconfig_sssd_ldap/ns_account_lock`
+    - */software/authconfig/authconfig_sssd_ldap/ns_account_lock*
         - Optional
         - Type: string
-    - `/software/authconfig/authconfig_sssd_ldap/offline_timeout`
+    - */software/authconfig/authconfig_sssd_ldap/offline_timeout*
         - Optional
         - Type: long
-    - `/software/authconfig/authconfig_sssd_ldap/opt_timeout`
+    - */software/authconfig/authconfig_sssd_ldap/opt_timeout*
         - Optional
         - Type: long
-    - `/software/authconfig/authconfig_sssd_ldap/page_size`
+    - */software/authconfig/authconfig_sssd_ldap/page_size*
         - Optional
         - Type: long
-    - `/software/authconfig/authconfig_sssd_ldap/purge_cache_timeout`
+    - */software/authconfig/authconfig_sssd_ldap/purge_cache_timeout*
         - Optional
         - Type: long
-    - `/software/authconfig/authconfig_sssd_ldap/pwd_policy`
+    - */software/authconfig/authconfig_sssd_ldap/pwd_policy*
         - Optional
         - Type: string
-    - `/software/authconfig/authconfig_sssd_ldap/referrals`
+    - */software/authconfig/authconfig_sssd_ldap/referrals*
         - Optional
         - Type: boolean
-    - `/software/authconfig/authconfig_sssd_ldap/rootdse_last_usn`
+    - */software/authconfig/authconfig_sssd_ldap/rootdse_last_usn*
         - Optional
         - Type: string
-    - `/software/authconfig/authconfig_sssd_ldap/search_timeout`
+    - */software/authconfig/authconfig_sssd_ldap/search_timeout*
         - Optional
         - Type: long
-    - `/software/authconfig/authconfig_sssd_ldap/account_expire_policy`
+    - */software/authconfig/authconfig_sssd_ldap/account_expire_policy*
         - Optional
         - Type: string

@@ -1,199 +1,202 @@
+##################
+wlconfig :: schema
+##################
 
 Types
 -----
 
- - `/software/wlconfig/structure_wl_log`
-    - `/software/wlconfig/structure_wl_log/file`
+ - **/software/wlconfig/structure_wl_log**
+    - */software/wlconfig/structure_wl_log/file*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_log/level`
+    - */software/wlconfig/structure_wl_log/level*
         - Optional
         - Type: long
         - Range: 1..
- - `/software/wlconfig/structure_wl_jobcontroller`
-    - `/software/wlconfig/structure_wl_jobcontroller/condorSubmit`
+ - **/software/wlconfig/structure_wl_jobcontroller**
+    - */software/wlconfig/structure_wl_jobcontroller/condorSubmit*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_jobcontroller/condorRemove`
+    - */software/wlconfig/structure_wl_jobcontroller/condorRemove*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_jobcontroller/condorQuery`
+    - */software/wlconfig/structure_wl_jobcontroller/condorQuery*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_jobcontroller/condorSubmitDAG`
+    - */software/wlconfig/structure_wl_jobcontroller/condorSubmitDAG*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_jobcontroller/condorRelease`
+    - */software/wlconfig/structure_wl_jobcontroller/condorRelease*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_jobcontroller/container`
+    - */software/wlconfig/structure_wl_jobcontroller/container*
         - Optional
         - Type: long
-    - `/software/wlconfig/structure_wl_jobcontroller/submitFile`
+    - */software/wlconfig/structure_wl_jobcontroller/submitFile*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_jobcontroller/outputFile`
+    - */software/wlconfig/structure_wl_jobcontroller/outputFile*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_jobcontroller/queueFile`
+    - */software/wlconfig/structure_wl_jobcontroller/queueFile*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_jobcontroller/lockFile`
+    - */software/wlconfig/structure_wl_jobcontroller/lockFile*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_jobcontroller/log`
+    - */software/wlconfig/structure_wl_jobcontroller/log*
         - Optional
         - Type: structure_wl_log
- - `/software/wlconfig/structure_wl_logmonitor`
-    - `/software/wlconfig/structure_wl_logmonitor/jobsPerCondorLog`
+ - **/software/wlconfig/structure_wl_logmonitor**
+    - */software/wlconfig/structure_wl_logmonitor/jobsPerCondorLog*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/wlconfig/structure_wl_logmonitor/mainLoopDuration`
+    - */software/wlconfig/structure_wl_logmonitor/mainLoopDuration*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/wlconfig/structure_wl_logmonitor/condorLogDir`
+    - */software/wlconfig/structure_wl_logmonitor/condorLogDir*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_logmonitor/condorRecycleDir`
+    - */software/wlconfig/structure_wl_logmonitor/condorRecycleDir*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_logmonitor/monitorInternalDir`
+    - */software/wlconfig/structure_wl_logmonitor/monitorInternalDir*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_logmonitor/idRepositoryName`
+    - */software/wlconfig/structure_wl_logmonitor/idRepositoryName*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_logmonitor/abortedJobsTimeout`
+    - */software/wlconfig/structure_wl_logmonitor/abortedJobsTimeout*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/wlconfig/structure_wl_logmonitor/externalLogFile`
+    - */software/wlconfig/structure_wl_logmonitor/externalLogFile*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_logmonitor/lockFile`
+    - */software/wlconfig/structure_wl_logmonitor/lockFile*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_logmonitor/log`
+    - */software/wlconfig/structure_wl_logmonitor/log*
         - Optional
         - Type: structure_wl_log
- - `/software/wlconfig/structure_wl_networkserver`
-    - `/software/wlconfig/structure_wl_networkserver/iiPort`
+ - **/software/wlconfig/structure_wl_networkserver**
+    - */software/wlconfig/structure_wl_networkserver/iiPort*
         - Optional
         - Type: type_port
-    - `/software/wlconfig/structure_wl_networkserver/iiTimeout`
+    - */software/wlconfig/structure_wl_networkserver/iiTimeout*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/wlconfig/structure_wl_networkserver/iiDN`
+    - */software/wlconfig/structure_wl_networkserver/iiDN*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_networkserver/iiHost`
+    - */software/wlconfig/structure_wl_networkserver/iiHost*
         - Optional
         - Type: type_hostname
-    - `/software/wlconfig/structure_wl_networkserver/grisPort`
+    - */software/wlconfig/structure_wl_networkserver/grisPort*
         - Optional
         - Type: type_port
-    - `/software/wlconfig/structure_wl_networkserver/grisTimeout`
+    - */software/wlconfig/structure_wl_networkserver/grisTimeout*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/wlconfig/structure_wl_networkserver/grisDN`
+    - */software/wlconfig/structure_wl_networkserver/grisDN*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_networkserver/backLogSize`
+    - */software/wlconfig/structure_wl_networkserver/backLogSize*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/wlconfig/structure_wl_networkserver/listeningPort`
+    - */software/wlconfig/structure_wl_networkserver/listeningPort*
         - Optional
         - Type: type_port
-    - `/software/wlconfig/structure_wl_networkserver/masterThreads`
+    - */software/wlconfig/structure_wl_networkserver/masterThreads*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/wlconfig/structure_wl_networkserver/dispatcherThreads`
+    - */software/wlconfig/structure_wl_networkserver/dispatcherThreads*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/wlconfig/structure_wl_networkserver/sandboxStagingPath`
+    - */software/wlconfig/structure_wl_networkserver/sandboxStagingPath*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_networkserver/quotaManagement`
+    - */software/wlconfig/structure_wl_networkserver/quotaManagement*
         - Optional
         - Type: boolean
-    - `/software/wlconfig/structure_wl_networkserver/quotaSandboxSize`
+    - */software/wlconfig/structure_wl_networkserver/quotaSandboxSize*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/wlconfig/structure_wl_networkserver/quotaAdjustment`
+    - */software/wlconfig/structure_wl_networkserver/quotaAdjustment*
         - Optional
         - Type: boolean
-    - `/software/wlconfig/structure_wl_networkserver/quotaAdjustmentAmount`
+    - */software/wlconfig/structure_wl_networkserver/quotaAdjustmentAmount*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/wlconfig/structure_wl_networkserver/reservedDiskPercentage`
+    - */software/wlconfig/structure_wl_networkserver/reservedDiskPercentage*
         - Optional
         - Type: double
-    - `/software/wlconfig/structure_wl_networkserver/log`
+    - */software/wlconfig/structure_wl_networkserver/log*
         - Optional
         - Type: structure_wl_log
-    - `/software/wlconfig/structure_wl_networkserver/DLICatalog`
+    - */software/wlconfig/structure_wl_networkserver/DLICatalog*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_networkserver/RLSCatalog`
+    - */software/wlconfig/structure_wl_networkserver/RLSCatalog*
         - Optional
         - Type: string
- - `/software/wlconfig/structure_wl_workloadmanager`
-    - `/software/wlconfig/structure_wl_workloadmanager/pipeDepth`
+ - **/software/wlconfig/structure_wl_workloadmanager**
+    - */software/wlconfig/structure_wl_workloadmanager/pipeDepth*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/wlconfig/structure_wl_workloadmanager/workerThreads`
+    - */software/wlconfig/structure_wl_workloadmanager/workerThreads*
         - Optional
         - Type: long
         - Range: 0..
-    - `/software/wlconfig/structure_wl_workloadmanager/dispatcherType`
+    - */software/wlconfig/structure_wl_workloadmanager/dispatcherType*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_workloadmanager/inputFile`
+    - */software/wlconfig/structure_wl_workloadmanager/inputFile*
         - Optional
         - Type: string
-    - `/software/wlconfig/structure_wl_workloadmanager/maxRetryCount`
+    - */software/wlconfig/structure_wl_workloadmanager/maxRetryCount*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/wlconfig/structure_wl_workloadmanager/log`
+    - */software/wlconfig/structure_wl_workloadmanager/log*
         - Optional
         - Type: structure_wl_log
- - `/software/wlconfig/wlconfig_component`
-    - `/software/wlconfig/wlconfig_component/configFile`
+ - **/software/wlconfig/wlconfig_component**
+    - */software/wlconfig/wlconfig_component/configFile*
         - Optional
         - Type: string
-    - `/software/wlconfig/wlconfig_component/user`
+    - */software/wlconfig/wlconfig_component/user*
         - Optional
         - Type: string
-    - `/software/wlconfig/wlconfig_component/hostProxyFile`
+    - */software/wlconfig/wlconfig_component/hostProxyFile*
         - Optional
         - Type: string
-    - `/software/wlconfig/wlconfig_component/grisCache`
+    - */software/wlconfig/wlconfig_component/grisCache*
         - Optional
         - Type: long
         - Range: 1..
-    - `/software/wlconfig/wlconfig_component/useCachedResourceInfo`
+    - */software/wlconfig/wlconfig_component/useCachedResourceInfo*
         - Optional
         - Type: boolean
-    - `/software/wlconfig/wlconfig_component/jobController`
+    - */software/wlconfig/wlconfig_component/jobController*
         - Optional
         - Type: structure_wl_jobcontroller
-    - `/software/wlconfig/wlconfig_component/logMonitor`
+    - */software/wlconfig/wlconfig_component/logMonitor*
         - Optional
         - Type: structure_wl_logmonitor
-    - `/software/wlconfig/wlconfig_component/networkServer`
+    - */software/wlconfig/wlconfig_component/networkServer*
         - Optional
         - Type: structure_wl_networkserver
-    - `/software/wlconfig/wlconfig_component/workloadManager`
+    - */software/wlconfig/wlconfig_component/workloadManager*
         - Optional
         - Type: structure_wl_workloadmanager

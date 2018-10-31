@@ -1,44 +1,47 @@
+#####################
+spma :: ips :: schema
+#####################
 
 Types
 -----
 
- - `/software/spma/component_spma_ips_type`
-    - `/software/spma/component_spma_ips_type/bename`
+ - **/software/spma/component_spma_ips_type**
+    - */software/spma/component_spma_ips_type/bename*
         - Optional
         - Type: string
-    - `/software/spma/component_spma_ips_type/cachedir`
+    - */software/spma/component_spma_ips_type/cachedir*
         - Optional
         - Type: string
-    - `/software/spma/component_spma_ips_type/cmdfile`
+    - */software/spma/component_spma_ips_type/cmdfile*
         - Optional
         - Type: string
-    - `/software/spma/component_spma_ips_type/flagfile`
+    - */software/spma/component_spma_ips_type/flagfile*
         - Optional
         - Type: string
-    - `/software/spma/component_spma_ips_type/freeze`
+    - */software/spma/component_spma_ips_type/freeze*
         - Optional
         - Type: boolean
-    - `/software/spma/component_spma_ips_type/imagedir`
+    - */software/spma/component_spma_ips_type/imagedir*
         - Optional
         - Type: string
-    - `/software/spma/component_spma_ips_type/pkgpaths`
+    - */software/spma/component_spma_ips_type/pkgpaths*
         - Optional
         - Type: string
-    - `/software/spma/component_spma_ips_type/rejectidr`
+    - */software/spma/component_spma_ips_type/rejectidr*
         - Optional
         - Type: boolean
-    - `/software/spma/component_spma_ips_type/uninstpaths`
+    - */software/spma/component_spma_ips_type/uninstpaths*
         - Optional
         - Type: string
- - `/software/spma/component_spma_ips`
-    - `/software/spma/component_spma_ips/ips`
+ - **/software/spma/component_spma_ips**
+    - */software/spma/component_spma_ips/ips*
         - Optional
         - Type: component_spma_ips_type
-    - `/software/spma/component_spma_ips/run`
+    - */software/spma/component_spma_ips/run*
         - Description: Run the SPMA after configuring it
         - Optional
         - Type: legacy_binary_affirmation_string
-    - `/software/spma/component_spma_ips/userpkgs`
+    - */software/spma/component_spma_ips/userpkgs*
         - Description: Allow user installed (i.e. unmanaged) packages to be present on the system
         - Optional
         - Type: legacy_binary_affirmation_string

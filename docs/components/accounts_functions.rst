@@ -1,9 +1,12 @@
+#####################
+accounts :: functions
+#####################
 
 Types
 -----
 
- - `/software/accounts/defined_user`
- - `/software/accounts/defined_group`
+ - **/software/accounts/defined_user**
+ - **/software/accounts/defined_group**
 
 Functions
 ---------

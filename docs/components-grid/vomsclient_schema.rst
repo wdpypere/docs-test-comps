@@ -1,39 +1,42 @@
+####################
+vomsclient :: schema
+####################
 
 Types
 -----
 
- - `/software/vomsclient/structure_vomsclient_voms_info`
-    - `/software/vomsclient/structure_vomsclient_voms_info/name`
+ - **/software/vomsclient/structure_vomsclient_voms_info**
+    - */software/vomsclient/structure_vomsclient_voms_info/name*
         - Optional
         - Type: string
-    - `/software/vomsclient/structure_vomsclient_voms_info/host`
+    - */software/vomsclient/structure_vomsclient_voms_info/host*
         - Optional
         - Type: type_fqdn
-    - `/software/vomsclient/structure_vomsclient_voms_info/port`
+    - */software/vomsclient/structure_vomsclient_voms_info/port*
         - Optional
         - Type: type_port
-    - `/software/vomsclient/structure_vomsclient_voms_info/cert`
+    - */software/vomsclient/structure_vomsclient_voms_info/cert*
         - Optional
         - Type: string
-    - `/software/vomsclient/structure_vomsclient_voms_info/oldcert`
+    - */software/vomsclient/structure_vomsclient_voms_info/oldcert*
         - Optional
         - Type: string
-    - `/software/vomsclient/structure_vomsclient_voms_info/DN`
+    - */software/vomsclient/structure_vomsclient_voms_info/DN*
         - Optional
         - Type: string
-    - `/software/vomsclient/structure_vomsclient_voms_info/issuer`
+    - */software/vomsclient/structure_vomsclient_voms_info/issuer*
         - Optional
         - Type: string
- - `/software/vomsclient/vomsclient_component`
-    - `/software/vomsclient/vomsclient_component/lscfile`
+ - **/software/vomsclient/vomsclient_component**
+    - */software/vomsclient/vomsclient_component/lscfile*
         - Optional
         - Type: boolean
-    - `/software/vomsclient/vomsclient_component/vomsCertsDir`
+    - */software/vomsclient/vomsclient_component/vomsCertsDir*
         - Optional
         - Type: string
-    - `/software/vomsclient/vomsclient_component/vomsServersDir`
+    - */software/vomsclient/vomsclient_component/vomsServersDir*
         - Optional
         - Type: string
-    - `/software/vomsclient/vomsclient_component/vos`
+    - */software/vomsclient/vomsclient_component/vos*
         - Optional
         - Type: structure_vomsclient_voms_info

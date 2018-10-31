@@ -1,59 +1,62 @@
+###################
+mkgridmap :: schema
+###################
 
 Types
 -----
 
- - `/software/mkgridmap/structure_mkgridmap_local`
-    - `/software/mkgridmap/structure_mkgridmap_local/cert`
+ - **/software/mkgridmap/structure_mkgridmap_local**
+    - */software/mkgridmap/structure_mkgridmap_local/cert*
         - Optional
         - Type: string
-    - `/software/mkgridmap/structure_mkgridmap_local/user`
+    - */software/mkgridmap/structure_mkgridmap_local/user*
         - Optional
         - Type: string
- - `/software/mkgridmap/structure_mkgridmap_lcmaps`
-    - `/software/mkgridmap/structure_mkgridmap_lcmaps/flavor`
+ - **/software/mkgridmap/structure_mkgridmap_lcmaps**
+    - */software/mkgridmap/structure_mkgridmap_lcmaps/flavor*
         - Optional
         - Type: string
-    - `/software/mkgridmap/structure_mkgridmap_lcmaps/gridmapfile`
+    - */software/mkgridmap/structure_mkgridmap_lcmaps/gridmapfile*
         - Optional
         - Type: string
-    - `/software/mkgridmap/structure_mkgridmap_lcmaps/groupmapfile`
+    - */software/mkgridmap/structure_mkgridmap_lcmaps/groupmapfile*
         - Optional
         - Type: string
- - `/software/mkgridmap/mkgridmap_component_entry`
-    - `/software/mkgridmap/mkgridmap_component_entry/mkgridmapconf`
+ - **/software/mkgridmap/mkgridmap_component_entry**
+    - */software/mkgridmap/mkgridmap_component_entry/mkgridmapconf*
         - Optional
         - Type: string
-    - `/software/mkgridmap/mkgridmap_component_entry/format`
+    - */software/mkgridmap/mkgridmap_component_entry/format*
         - Optional
         - Type: string
-    - `/software/mkgridmap/mkgridmap_component_entry/command`
+    - */software/mkgridmap/mkgridmap_component_entry/command*
         - Optional
         - Type: string
-    - `/software/mkgridmap/mkgridmap_component_entry/lcuser`
+    - */software/mkgridmap/mkgridmap_component_entry/lcuser*
         - Optional
         - Type: string
-    - `/software/mkgridmap/mkgridmap_component_entry/allow`
+    - */software/mkgridmap/mkgridmap_component_entry/allow*
         - Optional
         - Type: string
-    - `/software/mkgridmap/mkgridmap_component_entry/deny`
+    - */software/mkgridmap/mkgridmap_component_entry/deny*
         - Optional
         - Type: string
-    - `/software/mkgridmap/mkgridmap_component_entry/overwrite`
+    - */software/mkgridmap/mkgridmap_component_entry/overwrite*
         - Optional
         - Type: boolean
-    - `/software/mkgridmap/mkgridmap_component_entry/authURIs`
+    - */software/mkgridmap/mkgridmap_component_entry/authURIs*
         - Optional
         - Type: type_hostURI
-    - `/software/mkgridmap/mkgridmap_component_entry/locals`
+    - */software/mkgridmap/mkgridmap_component_entry/locals*
         - Optional
         - Type: structure_mkgridmap_local
- - `/software/mkgridmap/mkgridmap_component`
-    - `/software/mkgridmap/mkgridmap_component/entries`
+ - **/software/mkgridmap/mkgridmap_component**
+    - */software/mkgridmap/mkgridmap_component/entries*
         - Optional
         - Type: mkgridmap_component_entry
-    - `/software/mkgridmap/mkgridmap_component/lcmaps`
+    - */software/mkgridmap/mkgridmap_component/lcmaps*
         - Optional
         - Type: structure_mkgridmap_lcmaps
-    - `/software/mkgridmap/mkgridmap_component/voList`
+    - */software/mkgridmap/mkgridmap_component/voList*
         - Optional
         - Type: string
