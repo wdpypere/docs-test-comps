@@ -10,3 +10,4 @@ Types
     - */software/filesystems/structure_component_filesystems/manage_blockdevs*
         - Optional
         - Type: boolean
+        - Default value: true

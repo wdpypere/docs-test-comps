@@ -25,3 +25,4 @@ Types
     - */software/authconfig/sssd_tls/reqcert*
         - Optional
         - Type: ldap_req_checks
+        - Default value: hard

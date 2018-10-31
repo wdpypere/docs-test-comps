@@ -10,14 +10,17 @@ Types
         - Description: The syslog facility that should be used for logging purposes.
         - Optional
         - Type: string
+        - Default value: daemon
     - */software/nrpe/component_nrpe_options/pid_file*
         - Description: File in which the NRPE daemon should write it's process ID number.
         - Optional
         - Type: string
+        - Default value: /var/run/nrpe.pid
     - */software/nrpe/component_nrpe_options/server_port*
         - Description: The port the daemon will listen to.
         - Optional
         - Type: type_port
+        - Default value: 5666
     - */software/nrpe/component_nrpe_options/server_address*
         - Description: Address that nrpe should bind to if you do not want nrpe to bind on all interfaces.
         - Optional
@@ -26,10 +29,12 @@ Types
         - Description: User the daemon will run as.
         - Optional
         - Type: string
+        - Default value: nagios
     - */software/nrpe/component_nrpe_options/nrpe_group*
         - Description: Group the daemon will run as.
         - Optional
         - Type: string
+        - Default value: nagios
     - */software/nrpe/component_nrpe_options/allowed_hosts*
         - Description: List of hosts allowed to order the NRPE daemon to run commands.
         - Optional
@@ -38,6 +43,7 @@ Types
         - Description: Whether or not the remote hosts are allowed to pass arguments to the commands offered by NRPE.
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/nrpe/component_nrpe_options/command_prefix*
         - Description: Optional prefix for every single command to be run (e.g. /usr/bin/sudo).
         - Optional
@@ -46,18 +52,22 @@ Types
         - Description: Whether or not debugging messages are logged to the syslog facility.
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/nrpe/component_nrpe_options/command_timeout*
         - Description: Timeout for commands, in seconds.
         - Optional
         - Type: long
+        - Default value: 60
     - */software/nrpe/component_nrpe_options/connection_timeout*
         - Description: Timeout for connections, in seconds.
         - Optional
         - Type: long
+        - Default value: 300
     - */software/nrpe/component_nrpe_options/allow_weak_random_seed*
         - Description: Whether or not allow weak random number generation.
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/nrpe/component_nrpe_options/command*
         - Description: Dict with the command lines to be run. Keys are the command identifiers. Check Nagios' documentation for more information on command definitions.
         - Optional
@@ -74,6 +84,7 @@ Types
     - */software/nrpe/nrpe_component/mode*
         - Optional
         - Type: long
+        - Default value: 416
     - */software/nrpe/nrpe_component/options*
         - Optional
         - Type: component_nrpe_options

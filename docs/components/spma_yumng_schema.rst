@@ -9,12 +9,15 @@ Types
     - */software/spma/SOFTWARE_GROUP/default*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/spma/SOFTWARE_GROUP/mandatory*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/spma/SOFTWARE_GROUP/optional*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/spma/SOFTWARE_GROUP/names*
         - Optional
         - Type: string

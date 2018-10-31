@@ -19,9 +19,12 @@ Types
     - */software/gridmapdir/gridmapdir_component/owner*
         - Optional
         - Type: string
+        - Default value: root
     - */software/gridmapdir/gridmapdir_component/group*
         - Optional
         - Type: string
+        - Default value: root
     - */software/gridmapdir/gridmapdir_component/perms*
         - Optional
         - Type: string
+        - Default value: 0755

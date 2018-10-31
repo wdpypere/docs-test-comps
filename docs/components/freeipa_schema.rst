@@ -87,6 +87,7 @@ Types
         - Description: autoreverse determines rev from netmask, overridden by rev (only supports 8-bit masks for now)
         - Optional
         - Type: boolean
+        - Default value: true
  - **/software/freeipa/component_freeipa_server**
     - Description: Server configuration
     - */software/freeipa/component_freeipa_server/dns*
@@ -115,14 +116,17 @@ Types
         - Description: mode/permissions
         - Optional
         - Type: long
+        - Default value: 256
     - */software/freeipa/component_freeipa_permission/owner*
         - Description: owner
         - Optional
         - Type: string
+        - Default value: root
     - */software/freeipa/component_freeipa_permission/group*
         - Description: group
         - Optional
         - Type: string
+        - Default value: root
  - **/software/freeipa/component_freeipa_keytab**
     - Description: keytab for service configuration
     - */software/freeipa/component_freeipa_keytab/service*
@@ -139,6 +143,7 @@ Types
         - Description: certificate mode/permissions
         - Optional
         - Type: long
+        - Default value: 292
     - */software/freeipa/component_freeipa_certificate/key*
         - Description: (private) key location to extract
         - Optional

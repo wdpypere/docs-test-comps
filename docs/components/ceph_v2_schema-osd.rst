@@ -50,6 +50,7 @@ Types
     - */software/ceph/ceph_osd/storetype*
         - Optional
         - Type: choice
+        - Default value: bluestore
     - */software/ceph/ceph_osd/dmcrypt*
         - Optional
         - Type: boolean

@@ -292,6 +292,7 @@ Types
         - Description: if false and sshd doesn't exist, skip config validation
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/ssh/ssh_daemon_type/config_path*
         - Optional
         - Type: string

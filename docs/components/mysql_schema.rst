@@ -16,6 +16,7 @@ Types
     - */software/mysql/component_mysql_db_user/shortPwd*
         - Optional
         - Type: boolean
+        - Default value: false
  - **/software/mysql/component_mysql_db_script**
     - */software/mysql/component_mysql_db_script/file*
         - Optional
@@ -36,9 +37,11 @@ Types
     - */software/mysql/component_mysql_db_options/initOnce*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/mysql/component_mysql_db_options/createDb*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/mysql/component_mysql_db_options/tableOptions*
         - Optional
         - Type: string
@@ -68,6 +71,7 @@ Types
     - */software/mysql/component_mysql/serviceName*
         - Optional
         - Type: string
+        - Default value: mysqld
 
 Functions
 ---------

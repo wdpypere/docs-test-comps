@@ -9,27 +9,34 @@ Types
     - */software/spma/spma_yum_plugin_fastestmirror/enabled*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/spma/spma_yum_plugin_fastestmirror/verbose*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/spma/spma_yum_plugin_fastestmirror/always_print_best_host*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/spma/spma_yum_plugin_fastestmirror/socket_timeout*
         - Optional
         - Type: long
         - Range: 0..
+        - Default value: 3
     - */software/spma/spma_yum_plugin_fastestmirror/hostfilepath*
         - Optional
         - Type: string
+        - Default value: timedhosts.txt
     - */software/spma/spma_yum_plugin_fastestmirror/maxhostfileage*
         - Optional
         - Type: long
         - Range: 0..
+        - Default value: 10
     - */software/spma/spma_yum_plugin_fastestmirror/maxthreads*
         - Optional
         - Type: long
         - Range: 0..
+        - Default value: 15
     - */software/spma/spma_yum_plugin_fastestmirror/exclude*
         - Optional
         - Type: string
@@ -40,9 +47,11 @@ Types
     - */software/spma/spma_yum_plugin_versionlock/enabled*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/spma/spma_yum_plugin_versionlock/locklist*
         - Optional
         - Type: string
+        - Default value: /etc/yum/pluginconf.d/versionlock.list
     - */software/spma/spma_yum_plugin_versionlock/follow_obsoletes*
         - Optional
         - Type: boolean
@@ -50,6 +59,7 @@ Types
     - */software/spma/spma_yum_plugin_priorities/enabled*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/spma/spma_yum_plugin_priorities/check_obsoletes*
         - Optional
         - Type: boolean

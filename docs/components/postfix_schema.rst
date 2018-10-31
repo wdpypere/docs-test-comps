@@ -58,6 +58,7 @@ Types
     - */software/postfix/postfix_ldap_database/scope*
         - Optional
         - Type: string
+        - Default value: sub
     - */software/postfix/postfix_ldap_database/bind*
         - Optional
         - Type: boolean
@@ -86,9 +87,11 @@ Types
     - */software/postfix/postfix_ldap_database/version*
         - Optional
         - Type: long
+        - Default value: 2
     - */software/postfix/postfix_ldap_database/debuglevel*
         - Optional
         - Type: long
+        - Default value: 0
     - */software/postfix/postfix_ldap_database/start_tls*
         - Optional
         - Type: boolean
@@ -1704,18 +1707,23 @@ Types
     - */software/postfix/postfix_master/private*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/postfix/postfix_master/unprivileged*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/postfix/postfix_master/chroot*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/postfix/postfix_master/wakeup*
         - Optional
         - Type: long
+        - Default value: 0
     - */software/postfix/postfix_master/maxproc*
         - Optional
         - Type: long
+        - Default value: 100
     - */software/postfix/postfix_master/command*
         - Optional
         - Type: string

@@ -27,6 +27,7 @@ Types
     - */software/accounts/structure_userinfo/shell*
         - Optional
         - Type: string
+        - Default value: /bin/bash
     - */software/accounts/structure_userinfo/uid*
         - Optional
         - Type: long
@@ -63,6 +64,7 @@ Types
     - */software/accounts/structure_groupinfo/replaceMembers*
         - Optional
         - Type: boolean
+        - Default value: false
  - **/software/accounts/structure_login_defs**
     - */software/accounts/structure_login_defs/uid_min*
         - Optional
@@ -133,9 +135,11 @@ Types
     - */software/accounts/accounts_component/remove_unknown*
         - Optional
         - Type: boolean
+        - Default value: false
     - */software/accounts/accounts_component/preserved_accounts*
         - Optional
         - Type: string
+        - Default value: dyn_user_group
     - */software/accounts/accounts_component/kept_users*
         - Optional
         - Type: string

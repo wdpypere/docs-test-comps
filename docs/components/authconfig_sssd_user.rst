@@ -9,6 +9,7 @@ Types
     - */software/authconfig/sssd_user/object_class*
         - Optional
         - Type: string
+        - Default value: posixAccount
     - */software/authconfig/sssd_user/uid_number*
         - Optional
         - Type: string
@@ -103,9 +104,11 @@ Types
     - */software/authconfig/sssd_group/object_class*
         - Optional
         - Type: string
+        - Default value: posixGroup
     - */software/authconfig/sssd_group/name*
         - Optional
         - Type: string
+        - Default value: cn
     - */software/authconfig/sssd_group/gid_number*
         - Optional
         - Type: string

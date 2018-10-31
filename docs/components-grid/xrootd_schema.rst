@@ -22,19 +22,24 @@ Types
     - */software/xrootd/xrootd_component_access_rules/vo*
         - Optional
         - Type: string
+        - Default value: *
     - */software/xrootd/xrootd_component_access_rules/cert*
         - Optional
         - Type: string
+        - Default value: *
  - **/software/xrootd/xrootd_component_token_authz_options**
     - */software/xrootd/xrootd_component_token_authz_options/authzConf*
         - Optional
         - Type: string
+        - Default value: /etc/grid-security/xrootd/TkAuthz.Authorization
     - */software/xrootd/xrootd_component_token_authz_options/tokenPrivateKey*
         - Optional
         - Type: string
+        - Default value: /etc/grid-security/xrootd/pvkey.pem
     - */software/xrootd/xrootd_component_token_authz_options/tokenPublicKey*
         - Optional
         - Type: string
+        - Default value: /etc/grid-security/xrootd/pubkey.pem
     - */software/xrootd/xrootd_component_token_authz_options/accessRules*
         - Optional
         - Type: xrootd_component_access_rules
@@ -138,6 +143,7 @@ Types
     - */software/xrootd/xrootd_component_instances/logKeep*
         - Optional
         - Type: xrootd_logKeep
+        - Default value: 90
     - */software/xrootd/xrootd_component_instances/type*
         - Optional
         - Type: string
@@ -221,6 +227,7 @@ Types
     - */software/xrootd/xrootd_component_global_options/configDir*
         - Optional
         - Type: string
+        - Default value: xrootd
     - */software/xrootd/xrootd_component_global_options/authzLibraries*
         - Optional
         - Type: string
@@ -233,6 +240,7 @@ Types
     - */software/xrootd/xrootd_component_global_options/restartServices*
         - Optional
         - Type: boolean
+        - Default value: true
     - */software/xrootd/xrootd_component_global_options/mallocArenaMax*
         - Optional
         - Type: long
