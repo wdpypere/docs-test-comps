@@ -5,86 +5,86 @@ aiiserver :: schema
 Types
 -----
 
- - **/software/aiiserver/structure_aiishellfe**
-    - */software/aiiserver/structure_aiishellfe/cachedir*
+ - **/software/components/aiiserver/structure_aiishellfe**
+    - */software/components/aiiserver/structure_aiishellfe/cachedir*
         - Optional
         - Type: absolute_file_path
-    - */software/aiiserver/structure_aiishellfe/ca_dir*
+    - */software/components/aiiserver/structure_aiishellfe/ca_dir*
         - Optional
         - Type: absolute_file_path
-    - */software/aiiserver/structure_aiishellfe/ca_file*
+    - */software/components/aiiserver/structure_aiishellfe/ca_file*
         - Optional
         - Type: string
-    - */software/aiiserver/structure_aiishellfe/cdburl*
-        - Optional
+    - */software/components/aiiserver/structure_aiishellfe/cdburl*
+        - Required
         - Type: type_absoluteURI
-    - */software/aiiserver/structure_aiishellfe/cert_file*
+    - */software/components/aiiserver/structure_aiishellfe/cert_file*
         - Optional
         - Type: string
-    - */software/aiiserver/structure_aiishellfe/grub2_efi_kernel_root*
+    - */software/components/aiiserver/structure_aiishellfe/grub2_efi_kernel_root*
         - Optional
         - Type: string
-    - */software/aiiserver/structure_aiishellfe/grub2_efi_linux_cmd*
+    - */software/components/aiiserver/structure_aiishellfe/grub2_efi_linux_cmd*
         - Optional
         - Type: string
-    - */software/aiiserver/structure_aiishellfe/key_file*
+    - */software/components/aiiserver/structure_aiishellfe/key_file*
         - Optional
         - Type: string
-    - */software/aiiserver/structure_aiishellfe/lockdir*
+    - */software/components/aiiserver/structure_aiishellfe/lockdir*
         - Optional
         - Type: absolute_file_path
-    - */software/aiiserver/structure_aiishellfe/logfile*
+    - */software/components/aiiserver/structure_aiishellfe/logfile*
         - Optional
         - Type: string
-    - */software/aiiserver/structure_aiishellfe/nbpdir*
+    - */software/components/aiiserver/structure_aiishellfe/nbpdir*
         - Optional
         - Type: string
-    - */software/aiiserver/structure_aiishellfe/nbpdir_grub2*
+    - */software/components/aiiserver/structure_aiishellfe/nbpdir_grub2*
         - Optional
         - Type: string
-    - */software/aiiserver/structure_aiishellfe/noaction*
+    - */software/components/aiiserver/structure_aiishellfe/noaction*
         - Optional
         - Type: boolean
-    - */software/aiiserver/structure_aiishellfe/nodhcp*
+    - */software/components/aiiserver/structure_aiishellfe/nodhcp*
         - Optional
         - Type: boolean
-    - */software/aiiserver/structure_aiishellfe/nonbp*
+    - */software/components/aiiserver/structure_aiishellfe/nonbp*
         - Optional
         - Type: boolean
-    - */software/aiiserver/structure_aiishellfe/noosinstall*
+    - */software/components/aiiserver/structure_aiishellfe/noosinstall*
         - Optional
         - Type: boolean
-    - */software/aiiserver/structure_aiishellfe/osinstalldir*
+    - */software/components/aiiserver/structure_aiishellfe/osinstalldir*
         - Optional
         - Type: absolute_file_path
-    - */software/aiiserver/structure_aiishellfe/profile_format*
-        - Optional
+    - */software/components/aiiserver/structure_aiishellfe/profile_format*
+        - Required
         - Type: string
         - Default value: xml
-    - */software/aiiserver/structure_aiishellfe/profile_prefix*
+    - */software/components/aiiserver/structure_aiishellfe/profile_prefix*
         - Optional
         - Type: string
-    - */software/aiiserver/structure_aiishellfe/use_fqdn*
-        - Optional
+    - */software/components/aiiserver/structure_aiishellfe/use_fqdn*
+        - Required
         - Type: boolean
         - Default value: true
- - **/software/aiiserver/structure_aiidhcp**
-    - */software/aiiserver/structure_aiidhcp/dhcpconf*
-        - Optional
+ - **/software/components/aiiserver/structure_aiidhcp**
+    - */software/components/aiiserver/structure_aiidhcp/dhcpconf*
+        - Required
         - Type: absolute_file_path
         - Default value: /etc/dhcpd.conf
-    - */software/aiiserver/structure_aiidhcp/restartcmd*
+    - */software/components/aiiserver/structure_aiidhcp/restartcmd*
         - Optional
         - Type: string
-    - */software/aiiserver/structure_aiidhcp/norestart*
+    - */software/components/aiiserver/structure_aiidhcp/norestart*
         - Optional
         - Type: boolean
- - **/software/aiiserver/aiiserver_component**
-    - */software/aiiserver/aiiserver_component/aii-shellfe*
+ - **/software/components/aiiserver/aiiserver_component**
+    - */software/components/aiiserver/aiiserver_component/aii-shellfe*
         - Description: Configures the aii-shellfe tool.
-        - Optional
+        - Required
         - Type: structure_aiishellfe
-    - */software/aiiserver/aiiserver_component/aii-dhcp*
+    - */software/components/aiiserver/aiiserver_component/aii-dhcp*
         - Description: Configures AII::DHCP and the aii-dhcp legacy tool.
-        - Optional
+        - Required
         - Type: structure_aiidhcp

@@ -5,53 +5,53 @@ useraccess :: schema
 Types
 -----
 
- - **/software/useraccess/useraccess_pointer**
- - **/software/useraccess/useraccess_kerberos**
-    - */software/useraccess/useraccess_kerberos/realm*
-        - Optional
+ - **/software/components/useraccess/useraccess_pointer**
+ - **/software/components/useraccess/useraccess_kerberos**
+    - */software/components/useraccess/useraccess_kerberos/realm*
+        - Required
         - Type: type_hostname
-    - */software/useraccess/useraccess_kerberos/principal*
+    - */software/components/useraccess/useraccess_kerberos/principal*
+        - Required
+        - Type: string
+    - */software/components/useraccess/useraccess_kerberos/instance*
         - Optional
         - Type: string
-    - */software/useraccess/useraccess_kerberos/instance*
-        - Optional
-        - Type: string
-    - */software/useraccess/useraccess_kerberos/host*
+    - */software/components/useraccess/useraccess_kerberos/host*
         - Optional
         - Type: type_hostname
- - **/software/useraccess/credentialfilestring**
- - **/software/useraccess/useraccess_auth**
-    - */software/useraccess/useraccess_auth/ssh_keys_urls*
+ - **/software/components/useraccess/credentialfilestring**
+ - **/software/components/useraccess/useraccess_auth**
+    - */software/components/useraccess/useraccess_auth/ssh_keys_urls*
         - Optional
         - Type: type_absoluteURI
-    - */software/useraccess/useraccess_auth/kerberos4*
+    - */software/components/useraccess/useraccess_auth/kerberos4*
         - Optional
         - Type: useraccess_kerberos
-    - */software/useraccess/useraccess_auth/kerberos5*
+    - */software/components/useraccess/useraccess_auth/kerberos5*
         - Optional
         - Type: useraccess_kerberos
-    - */software/useraccess/useraccess_auth/acls*
+    - */software/components/useraccess/useraccess_auth/acls*
         - Optional
         - Type: string
-    - */software/useraccess/useraccess_auth/roles*
+    - */software/components/useraccess/useraccess_auth/roles*
         - Optional
         - Type: useraccess_pointer
-    - */software/useraccess/useraccess_auth/ssh_keys*
+    - */software/components/useraccess/useraccess_auth/ssh_keys*
         - Optional
         - Type: string
-    - */software/useraccess/useraccess_auth/managed_credentials*
-        - Optional
+    - */software/components/useraccess/useraccess_auth/managed_credentials*
+        - Required
         - Type: credentialfilestring
- - **/software/useraccess/useraccess_component**
-    - */software/useraccess/useraccess_component/configSerial*
+ - **/software/components/useraccess/useraccess_component**
+    - */software/components/useraccess/useraccess_component/configSerial*
         - Optional
         - Type: string
-    - */software/useraccess/useraccess_component/users*
+    - */software/components/useraccess/useraccess_component/users*
+        - Required
+        - Type: useraccess_auth
+    - */software/components/useraccess/useraccess_component/roles*
         - Optional
         - Type: useraccess_auth
-    - */software/useraccess/useraccess_component/roles*
-        - Optional
-        - Type: useraccess_auth
-    - */software/useraccess/useraccess_component/acl_services*
+    - */software/components/useraccess/useraccess_component/acl_services*
         - Optional
         - Type: string

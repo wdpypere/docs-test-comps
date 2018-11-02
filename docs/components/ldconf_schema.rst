@@ -5,11 +5,11 @@ ldconf :: schema
 Types
 -----
 
- - **/software/ldconf/component_ldconf**
-    - */software/ldconf/component_ldconf/conffile*
-        - Optional
+ - **/software/components/ldconf/component_ldconf**
+    - */software/components/ldconf/component_ldconf/conffile*
+        - Required
         - Type: string
         - Default value: /etc/ld.so.conf
-    - */software/ldconf/component_ldconf/paths*
+    - */software/components/ldconf/component_ldconf/paths*
         - Optional
         - Type: string

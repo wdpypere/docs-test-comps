@@ -5,27 +5,27 @@ gsissh :: schema
 Types
 -----
 
- - **/software/gsissh/structure_gsissh_server**
-    - */software/gsissh/structure_gsissh_server/port*
-        - Optional
+ - **/software/components/gsissh/structure_gsissh_server**
+    - */software/components/gsissh/structure_gsissh_server/port*
+        - Required
         - Type: type_port
-    - */software/gsissh/structure_gsissh_server/options*
+    - */software/components/gsissh/structure_gsissh_server/options*
         - Optional
         - Type: string
- - **/software/gsissh/structure_gsissh_client**
-    - */software/gsissh/structure_gsissh_client/options*
+ - **/software/components/gsissh/structure_gsissh_client**
+    - */software/components/gsissh/structure_gsissh_client/options*
         - Optional
         - Type: string
- - **/software/gsissh/gsissh_component**
-    - */software/gsissh/gsissh_component/globus_location*
+ - **/software/components/gsissh/gsissh_component**
+    - */software/components/gsissh/gsissh_component/globus_location*
         - Optional
         - Type: string
-    - */software/gsissh/gsissh_component/gpt_location*
+    - */software/components/gsissh/gsissh_component/gpt_location*
         - Optional
         - Type: string
-    - */software/gsissh/gsissh_component/server*
+    - */software/components/gsissh/gsissh_component/server*
         - Optional
         - Type: structure_gsissh_server
-    - */software/gsissh/gsissh_component/client*
+    - */software/components/gsissh/gsissh_component/client*
         - Optional
         - Type: structure_gsissh_client

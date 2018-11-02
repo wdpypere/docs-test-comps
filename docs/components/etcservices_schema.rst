@@ -5,7 +5,7 @@ etcservices :: schema
 Types
 -----
 
- - **/software/etcservices/component_etcservices_type**
-    - */software/etcservices/component_etcservices_type/entries*
-        - Optional
+ - **/software/components/etcservices/component_etcservices_type**
+    - */software/components/etcservices/component_etcservices_type/entries*
+        - Required
         - Type: string

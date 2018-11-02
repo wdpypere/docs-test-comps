@@ -5,13 +5,13 @@ ceph :: v1 :: schema-mon
 Types
 -----
 
- - **/software/ceph/ceph_mon_config**
+ - **/software/components/ceph/ceph_mon_config**
     - Description: configuration options for a ceph monitor daemon
- - **/software/ceph/ceph_monitor**
+ - **/software/components/ceph/ceph_monitor**
     - Description: ceph monitor-specific type
-    - */software/ceph/ceph_monitor/fqdn*
-        - Optional
+    - */software/components/ceph/ceph_monitor/fqdn*
+        - Required
         - Type: type_fqdn
-    - */software/ceph/ceph_monitor/config*
+    - */software/components/ceph/ceph_monitor/config*
         - Optional
         - Type: ceph_mon_config

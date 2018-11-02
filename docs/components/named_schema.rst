@@ -5,27 +5,27 @@ named :: schema
 Types
 -----
 
- - **/software/named/component_named**
-    - */software/named/component_named/serverConfig*
+ - **/software/components/named/component_named**
+    - */software/components/named/component_named/serverConfig*
         - Optional
         - Type: string
-    - */software/named/component_named/configfile*
+    - */software/components/named/component_named/configfile*
         - Optional
         - Type: string
-    - */software/named/component_named/use_localhost*
-        - Optional
+    - */software/components/named/component_named/use_localhost*
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/named/component_named/start*
+    - */software/components/named/component_named/start*
         - Optional
         - Type: boolean
-    - */software/named/component_named/servers*
+    - */software/components/named/component_named/servers*
         - Optional
         - Type: type_ip
-    - */software/named/component_named/options*
+    - */software/components/named/component_named/options*
         - Optional
         - Type: string
-    - */software/named/component_named/search*
+    - */software/components/named/component_named/search*
         - Optional
         - Type: type_fqdn
 

@@ -5,14 +5,14 @@ resolver :: schema
 Types
 -----
 
- - **/software/resolver/component_resolver_type**
-    - */software/resolver/component_resolver_type/servers*
-        - Optional
+ - **/software/components/resolver/component_resolver_type**
+    - */software/components/resolver/component_resolver_type/servers*
+        - Required
         - Type: type_ip
-    - */software/resolver/component_resolver_type/search*
+    - */software/components/resolver/component_resolver_type/search*
         - Optional
         - Type: type_fqdn
-    - */software/resolver/component_resolver_type/dnscache*
-        - Optional
+    - */software/components/resolver/component_resolver_type/dnscache*
+        - Required
         - Type: boolean
         - Default value: false

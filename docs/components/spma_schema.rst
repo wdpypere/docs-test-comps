@@ -5,8 +5,8 @@ spma :: schema
 Types
 -----
 
- - **/software/spma/component_spma_common**
-    - */software/spma/component_spma_common/packager*
-        - Optional
+ - **/software/components/spma/component_spma_common**
+    - */software/components/spma/component_spma_common/packager*
+        - Required
         - Type: string
         - Default value: yum

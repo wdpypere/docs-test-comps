@@ -5,4 +5,4 @@ path :: schema
 Types
 -----
 
- - **/software/path/path_component**
+ - **/software/components/path/path_component**

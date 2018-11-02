@@ -5,38 +5,38 @@ pbsknownhosts :: schema
 Types
 -----
 
- - **/software/pbsknownhosts/pbsknownhosts_component**
-    - */software/pbsknownhosts/pbsknownhosts_component/configFile*
-        - Optional
+ - **/software/components/pbsknownhosts/pbsknownhosts_component**
+    - */software/components/pbsknownhosts/pbsknownhosts_component/configFile*
+        - Required
         - Type: string
         - Default value: /opt/edg/etc/edg-pbs-knownhosts.conf
-    - */software/pbsknownhosts/pbsknownhosts_component/pbsbin*
-        - Optional
+    - */software/components/pbsknownhosts/pbsknownhosts_component/pbsbin*
+        - Required
         - Type: string
         - Default value: /usr/bin
-    - */software/pbsknownhosts/pbsknownhosts_component/nodes*
-        - Optional
+    - */software/components/pbsknownhosts/pbsknownhosts_component/nodes*
+        - Required
         - Type: string
-    - */software/pbsknownhosts/pbsknownhosts_component/keytypes*
-        - Optional
+    - */software/components/pbsknownhosts/pbsknownhosts_component/keytypes*
+        - Required
         - Type: string
         - Default value: rsa1,rsa,dsa
-    - */software/pbsknownhosts/pbsknownhosts_component/knownhosts*
-        - Optional
+    - */software/components/pbsknownhosts/pbsknownhosts_component/knownhosts*
+        - Required
         - Type: string
         - Default value: /etc/ssh/ssh_known_hosts
-    - */software/pbsknownhosts/pbsknownhosts_component/knownhostsscript*
+    - */software/components/pbsknownhosts/pbsknownhosts_component/knownhostsscript*
         - Optional
         - Type: string
-    - */software/pbsknownhosts/pbsknownhosts_component/targets*
+    - */software/components/pbsknownhosts/pbsknownhosts_component/targets*
         - Optional
         - Type: string
-    - */software/pbsknownhosts/pbsknownhosts_component/shostsConfigFile*
+    - */software/components/pbsknownhosts/pbsknownhosts_component/shostsConfigFile*
         - Optional
         - Type: string
-    - */software/pbsknownhosts/pbsknownhosts_component/shosts*
+    - */software/components/pbsknownhosts/pbsknownhosts_component/shosts*
         - Optional
         - Type: string
-    - */software/pbsknownhosts/pbsknownhosts_component/shostsscript*
+    - */software/components/pbsknownhosts/pbsknownhosts_component/shostsscript*
         - Optional
         - Type: string

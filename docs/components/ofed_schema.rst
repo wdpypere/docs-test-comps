@@ -5,296 +5,296 @@ ofed :: schema
 Types
 -----
 
- - **/software/ofed/component_ofed_openib_options**
+ - **/software/components/ofed/component_ofed_openib_options**
     - Description: openib options
-    - */software/ofed/component_ofed_openib_options/onboot*
+    - */software/components/ofed/component_ofed_openib_options/onboot*
         - Description: Start HCA driver upon boot
-        - Optional
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/ofed/component_ofed_openib_options/renice_ib_mad*
+    - */software/components/ofed/component_ofed_openib_options/renice_ib_mad*
         - Description: MAD datagrams thread priority
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_options/set_ipoib_cm*
+    - */software/components/ofed/component_ofed_openib_options/set_ipoib_cm*
         - Description: disable CM for IPoIB for large clusters
-        - Optional
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/ofed/component_ofed_openib_options/set_ipoib_channels*
-        - Optional
+    - */software/components/ofed/component_ofed_openib_options/set_ipoib_channels*
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_options/ipoib_mtu*
+    - */software/components/ofed/component_ofed_openib_options/ipoib_mtu*
         - Description: IPoIB MTU setting for CM
-        - Optional
+        - Required
         - Type: long
         - Range: 0..65536
-    - */software/ofed/component_ofed_openib_options/srpha_enable*
+    - */software/components/ofed/component_ofed_openib_options/srpha_enable*
         - Description: SRP High Availability
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_options/srp_daemon_enable*
-        - Optional
+    - */software/components/ofed/component_ofed_openib_options/srp_daemon_enable*
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_options/run_sysctl*
+    - */software/components/ofed/component_ofed_openib_options/run_sysctl*
         - Description: sysctl tuning
-        - Optional
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/ofed/component_ofed_openib_options/run_affinity_tuner*
+    - */software/components/ofed/component_ofed_openib_options/run_affinity_tuner*
         - Description: affinity tuning
-        - Optional
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/ofed/component_ofed_openib_options/run_mlnx_tune*
+    - */software/components/ofed/component_ofed_openib_options/run_mlnx_tune*
         - Description: Enable MLNX autotuning
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_options/node_desc*
+    - */software/components/ofed/component_ofed_openib_options/node_desc*
         - Description: node description
         - Optional
         - Type: string
-    - */software/ofed/component_ofed_openib_options/node_desc_update_timeout*
+    - */software/components/ofed/component_ofed_openib_options/node_desc_update_timeout*
         - Description: Max time in seconds to wait for node's hostname to be set
-        - Optional
+        - Required
         - Type: long
         - Range: 0..
         - Default value: 120
-    - */software/ofed/component_ofed_openib_options/node_desc_time_before_update*
+    - */software/components/ofed/component_ofed_openib_options/node_desc_time_before_update*
         - Description: Wait (in sec) before node description update
-        - Optional
+        - Required
         - Type: long
         - Range: 0..
         - Default value: 10
-    - */software/ofed/component_ofed_openib_options/post_start_delay*
+    - */software/components/ofed/component_ofed_openib_options/post_start_delay*
         - Description: Seconds to sleep after openibd start finished and before releasing the shell
-        - Optional
+        - Required
         - Type: long
         - Range: 0..
         - Default value: 0
-    - */software/ofed/component_ofed_openib_options/cx3_eth_only*
+    - */software/components/ofed/component_ofed_openib_options/cx3_eth_only*
         - Description: ConnectX-3 ethernet only
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
- - **/software/ofed/component_ofed_openib_modules**
+ - **/software/components/ofed/component_ofed_openib_modules**
     - Description: openib modules to load
-    - */software/ofed/component_ofed_openib_modules/ucm*
-        - Optional
+    - */software/components/ofed/component_ofed_openib_modules/ucm*
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_modules/umad*
-        - Optional
+    - */software/components/ofed/component_ofed_openib_modules/umad*
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/ofed/component_ofed_openib_modules/uverbs*
-        - Optional
+    - */software/components/ofed/component_ofed_openib_modules/uverbs*
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/ofed/component_ofed_openib_modules/rdma_cm*
+    - */software/components/ofed/component_ofed_openib_modules/rdma_cm*
         - Description: RDMA CM (connected mode) mode
-        - Optional
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/ofed/component_ofed_openib_modules/rdma_ucm*
+    - */software/components/ofed/component_ofed_openib_modules/rdma_ucm*
         - Description: RDMA UD (unreliable datagram) mode
-        - Optional
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/ofed/component_ofed_openib_modules/ipoib*
+    - */software/components/ofed/component_ofed_openib_modules/ipoib*
         - Description: IPoIB
-        - Optional
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/ofed/component_ofed_openib_modules/e_ipoib*
-        - Optional
+    - */software/components/ofed/component_ofed_openib_modules/e_ipoib*
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_modules/sdp*
+    - */software/components/ofed/component_ofed_openib_modules/sdp*
         - Description: SDP (Socket Direct Protocol)
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_modules/srp*
+    - */software/components/ofed/component_ofed_openib_modules/srp*
         - Description: SRP SCSI RDMA Protocol
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_modules/srpt*
+    - */software/components/ofed/component_ofed_openib_modules/srpt*
         - Description: SRP Target
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_modules/rds*
+    - */software/components/ofed/component_ofed_openib_modules/rds*
         - Description: Reliable datagram socket
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_modules/iser*
+    - */software/components/ofed/component_ofed_openib_modules/iser*
         - Description: ISCSI RDMA
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_modules/mlx4_vnic*
+    - */software/components/ofed/component_ofed_openib_modules/mlx4_vnic*
         - Description: Mellanox ConnectX-3 Virtual NICs
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_modules/mlx4_fc*
+    - */software/components/ofed/component_ofed_openib_modules/mlx4_fc*
         - Description: Mellanox ConnectX-3 FibreChannel over Ethernet
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_modules/mlx4_en*
+    - */software/components/ofed/component_ofed_openib_modules/mlx4_en*
         - Description: Mellanox ConnectX-3 Ethernet
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
- - **/software/ofed/component_ofed_openib_hardware**
+ - **/software/components/ofed/component_ofed_openib_hardware**
     - Description: openib hardware modules to load
-    - */software/ofed/component_ofed_openib_hardware/mthca*
+    - */software/components/ofed/component_ofed_openib_hardware/mthca*
         - Description: Mellanox Inifinihost III
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_hardware/mlx4*
+    - */software/components/ofed/component_ofed_openib_hardware/mlx4*
         - Description: Mellanox ConnectX-2/3
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_hardware/mlx5*
+    - */software/components/ofed/component_ofed_openib_hardware/mlx5*
         - Description: Mellanox ConnectX-4/5 / ConnectIB
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_hardware/mlx_en*
+    - */software/components/ofed/component_ofed_openib_hardware/mlx_en*
         - Description: Mellanox ethernet-only
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_hardware/ipath*
+    - */software/components/ofed/component_ofed_openib_hardware/ipath*
         - Description: Legacy Qlogic IB
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_hardware/qib*
+    - */software/components/ofed/component_ofed_openib_hardware/qib*
         - Description: Qlogic/Intel TrueScale IB
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_hardware/qlgc_vnic*
+    - */software/components/ofed/component_ofed_openib_hardware/qlgc_vnic*
         - Description: Qlogic ethernet
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_hardware/cxgb3*
+    - */software/components/ofed/component_ofed_openib_hardware/cxgb3*
         - Description: Chelsio T3/T4
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_hardware/cxgb4*
-        - Optional
+    - */software/components/ofed/component_ofed_openib_hardware/cxgb4*
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/ofed/component_ofed_openib_hardware/nes*
+    - */software/components/ofed/component_ofed_openib_hardware/nes*
         - Description: NetEffect
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
- - **/software/ofed/component_ofed_openib**
+ - **/software/components/ofed/component_ofed_openib**
     - Description: openib configuration
-    - */software/ofed/component_ofed_openib/config*
+    - */software/components/ofed/component_ofed_openib/config*
         - Description: location of openibd config file
-        - Optional
+        - Required
         - Type: string
         - Default value: /etc/infiniband/openib.conf
-    - */software/ofed/component_ofed_openib/options*
-        - Optional
+    - */software/components/ofed/component_ofed_openib/options*
+        - Required
         - Type: component_ofed_openib_options
-    - */software/ofed/component_ofed_openib/modules*
-        - Optional
+    - */software/components/ofed/component_ofed_openib/modules*
+        - Required
         - Type: component_ofed_openib_modules
-    - */software/ofed/component_ofed_openib/hardware*
-        - Optional
+    - */software/components/ofed/component_ofed_openib/hardware*
+        - Required
         - Type: component_ofed_openib_hardware
- - **/software/ofed/component_ofed_partition_property**
-    - */software/ofed/component_ofed_partition_property/guid*
+ - **/software/components/ofed/component_ofed_partition_property**
+    - */software/components/ofed/component_ofed_partition_property/guid*
         - Description: Port GUID
+        - Required
+        - Type: string
+    - */software/components/ofed/component_ofed_partition_property/membership*
         - Optional
         - Type: string
-    - */software/ofed/component_ofed_partition_property/membership*
-        - Optional
-        - Type: string
- - **/software/ofed/component_ofed_partition**
+ - **/software/components/ofed/component_ofed_partition**
     - Description: Partition entry
-    - */software/ofed/component_ofed_partition/key*
+    - */software/components/ofed/component_ofed_partition/key*
         - Description: partition key (aka PKey); default is 32767/0x7fff. (partition keys are unique; first name is used by OpenSM for same keys)
-        - Optional
+        - Required
         - Type: long
         - Range: 0..32767
         - Default value: 32767
-    - */software/ofed/component_ofed_partition/ipoib*
+    - */software/components/ofed/component_ofed_partition/ipoib*
         - Description: support IPoiB in this partition
         - Optional
         - Type: boolean
-    - */software/ofed/component_ofed_partition/rate*
+    - */software/components/ofed/component_ofed_partition/rate*
         - Description: Rate: e.g. 3 (10Gbps), 4 (20Gbps),...
         - Optional
         - Type: long
         - Range: 0..8
-    - */software/ofed/component_ofed_partition/mtu*
+    - */software/components/ofed/component_ofed_partition/mtu*
         - Description: MTU: e.g. 4 (2048 bytes), 5 (4096 bytes)
         - Optional
         - Type: long
         - Range: 0..5
-    - */software/ofed/component_ofed_partition/properties*
+    - */software/components/ofed/component_ofed_partition/properties*
         - Description: Partition properties
-        - Optional
+        - Required
         - Type: component_ofed_partition_property
- - **/software/ofed/component_ofed_opensm_config**
+ - **/software/components/ofed/component_ofed_opensm_config**
     - Description: OpenSM configuration file. Get the defaults and annotation with 'opensm -c /tmp/opensm.conf'
-    - */software/ofed/component_ofed_opensm_config/virt_enabled*
+    - */software/components/ofed/component_ofed_opensm_config/virt_enabled*
         - Description: Virtualization support: 0: Ignore Virtualization - No virtualization support 1: Disable Virtualization - Disable virtualization on all Virtualization supporting ports 2: Enable Virtualization - Enable virtualization on all Virtualization supporting ports
         - Optional
         - Type: long
         - Range: 0..2
-    - */software/ofed/component_ofed_opensm_config/virt_max_ports_in_process*
+    - */software/components/ofed/component_ofed_opensm_config/virt_max_ports_in_process*
         - Description: Maximum number of ports to be processed simultaneously by Virtualization Manager (0 - process all pending ports)
         - Optional
         - Type: long
         - Range: 0..
-    - */software/ofed/component_ofed_opensm_config/virt_default_hop_limit*
+    - */software/components/ofed/component_ofed_opensm_config/virt_default_hop_limit*
         - Description: Default value for hop limit to be returned in path records where either the source or desitination are virtual ports
         - Optional
         - Type: long
         - Range: 0..
- - **/software/ofed/component_ofed_opensm**
+ - **/software/components/ofed/component_ofed_opensm**
     - Description: Subnet manager configuration
-    - */software/ofed/component_ofed_opensm/daemons*
+    - */software/components/ofed/component_ofed_opensm/daemons*
         - Description: daemons to restart on configuration changes
-        - Optional
+        - Required
         - Type: string
-    - */software/ofed/component_ofed_opensm/partitions*
+    - */software/components/ofed/component_ofed_opensm/partitions*
         - Description: SM partitions configuration. Dict key is the partition name
         - Optional
         - Type: component_ofed_partition
-    - */software/ofed/component_ofed_opensm/names*
+    - */software/components/ofed/component_ofed_opensm/names*
         - Description: Node name map configuration. Dict key is the GUID starting with 'x' (the 0 is prefixed automatically)
         - Optional
         - Type: string
-    - */software/ofed/component_ofed_opensm/config*
+    - */software/components/ofed/component_ofed_opensm/config*
         - Description: configuration file
         - Optional
         - Type: component_ofed_opensm_config
- - **/software/ofed/ofed_component**
-    - */software/ofed/ofed_component/openib*
-        - Optional
+ - **/software/components/ofed/ofed_component**
+    - */software/components/ofed/ofed_component/openib*
+        - Required
         - Type: component_ofed_openib
-    - */software/ofed/ofed_component/opensm*
+    - */software/components/ofed/ofed_component/opensm*
         - Optional
         - Type: component_ofed_opensm

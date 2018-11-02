@@ -5,8 +5,8 @@ network :: schema
 Types
 -----
 
- - **/software/network/network_component**
-    - */software/network/network_component/rename*
+ - **/software/components/network/network_component**
+    - */software/components/network/network_component/rename*
         - Description: experimental: rename (physical) devices
         - Optional
         - Type: boolean

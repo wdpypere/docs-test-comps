@@ -5,10 +5,10 @@ lcgmonjob :: schema
 Types
 -----
 
- - **/software/lcgmonjob/lcgmonjob_component**
-    - */software/lcgmonjob/lcgmonjob_component/EDG_LOCATION*
-        - Optional
+ - **/software/components/lcgmonjob/lcgmonjob_component**
+    - */software/components/lcgmonjob/lcgmonjob_component/EDG_LOCATION*
+        - Required
         - Type: string
-    - */software/lcgmonjob/lcgmonjob_component/LCG_LOCATION*
-        - Optional
+    - */software/components/lcgmonjob/lcgmonjob_component/LCG_LOCATION*
+        - Required
         - Type: string

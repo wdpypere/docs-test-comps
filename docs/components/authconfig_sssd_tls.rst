@@ -5,24 +5,24 @@ authconfig :: sssd :: tls
 Types
 -----
 
- - **/software/authconfig/ldap_req_checks**
- - **/software/authconfig/sssd_tls**
-    - */software/authconfig/sssd_tls/cacert*
+ - **/software/components/authconfig/ldap_req_checks**
+ - **/software/components/authconfig/sssd_tls**
+    - */software/components/authconfig/sssd_tls/cacert*
         - Optional
         - Type: string
-    - */software/authconfig/sssd_tls/cacertdir*
+    - */software/components/authconfig/sssd_tls/cacertdir*
         - Optional
         - Type: string
-    - */software/authconfig/sssd_tls/cert*
+    - */software/components/authconfig/sssd_tls/cert*
         - Optional
         - Type: string
-    - */software/authconfig/sssd_tls/key*
+    - */software/components/authconfig/sssd_tls/key*
         - Optional
         - Type: string
-    - */software/authconfig/sssd_tls/cipher_suite*
+    - */software/components/authconfig/sssd_tls/cipher_suite*
         - Optional
         - Type: string
-    - */software/authconfig/sssd_tls/reqcert*
-        - Optional
+    - */software/components/authconfig/sssd_tls/reqcert*
+        - Required
         - Type: ldap_req_checks
         - Default value: hard

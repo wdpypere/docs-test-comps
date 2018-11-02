@@ -5,8 +5,8 @@ gacl :: schema
 Types
 -----
 
- - **/software/gacl/gacl_component**
-    - */software/gacl/gacl_component/aclFile*
-        - Optional
+ - **/software/components/gacl/gacl_component**
+    - */software/components/gacl/gacl_component/aclFile*
+        - Required
         - Type: string
         - Default value: /opt/glite/etc/glite_wms_wmproxy.gacl

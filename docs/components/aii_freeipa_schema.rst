@@ -5,18 +5,18 @@ aii :: freeipa :: schema
 Types
 -----
 
- - **/software/freeipa/aii_freeipa**
-    - */software/freeipa/aii_freeipa/module*
-        - Optional
+ - **/software/components/freeipa/aii_freeipa**
+    - */software/components/freeipa/aii_freeipa/module*
+        - Required
         - Type: string
-    - */software/freeipa/aii_freeipa/remove*
+    - */software/components/freeipa/aii_freeipa/remove*
         - Description: remove the host on AII removal (precedes disable)
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/freeipa/aii_freeipa/disable*
+    - */software/components/freeipa/aii_freeipa/disable*
         - Description: disable the host on AII removal
-        - Optional
+        - Required
         - Type: boolean
         - Default value: true
 
