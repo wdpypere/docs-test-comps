@@ -5,75 +5,75 @@ puppet :: schema
 Types
 -----
 
- - **/software/puppet/puppet_module**
-    - */software/puppet/puppet_module/version*
+ - **/software/components/puppet/puppet_module**
+    - */software/components/puppet/puppet_module/version*
         - Optional
         - Type: string
- - **/software/puppet/puppet_nodefile**
-    - */software/puppet/puppet_nodefile/contents*
+ - **/software/components/puppet/puppet_nodefile**
+    - */software/components/puppet/puppet_nodefile/contents*
         - Optional
         - Type: string
- - **/software/puppet/puppet_puppetconf_main**
-    - */software/puppet/puppet_puppetconf_main/logdir*
-        - Optional
+ - **/software/components/puppet/puppet_puppetconf_main**
+    - */software/components/puppet/puppet_puppetconf_main/logdir*
+        - Required
         - Type: string
         - Default value: /var/log/puppet
-    - */software/puppet/puppet_puppetconf_main/rundir*
-        - Optional
+    - */software/components/puppet/puppet_puppetconf_main/rundir*
+        - Required
         - Type: string
         - Default value: /var/run/puppet
- - **/software/puppet/puppet_puppetconf**
-    - */software/puppet/puppet_puppetconf/main*
-        - Optional
+ - **/software/components/puppet/puppet_puppetconf**
+    - */software/components/puppet/puppet_puppetconf/main*
+        - Required
         - Type: puppet_puppetconf_main
- - **/software/puppet/puppet_hieraconf_yaml**
-    - */software/puppet/puppet_hieraconf_yaml/_3adatadir*
-        - Optional
+ - **/software/components/puppet/puppet_hieraconf_yaml**
+    - */software/components/puppet/puppet_hieraconf_yaml/_3adatadir*
+        - Required
         - Type: string
         - Default value: /etc/puppet/hieradata
- - **/software/puppet/puppet_hieraconf**
- - **/software/puppet/puppet_hieradata**
- - **/software/puppet/puppet_component**
-    - */software/puppet/puppet_component/puppet_cmd*
-        - Optional
+ - **/software/components/puppet/puppet_hieraconf**
+ - **/software/components/puppet/puppet_hieradata**
+ - **/software/components/puppet/puppet_component**
+    - */software/components/puppet/puppet_component/puppet_cmd*
+        - Required
         - Type: string
         - Default value: /usr/bin/puppet
-    - */software/puppet/puppet_component/logfile*
-        - Optional
+    - */software/components/puppet/puppet_component/logfile*
+        - Required
         - Type: string
         - Default value: /var/log/puppet/log
-    - */software/puppet/puppet_component/modulepath*
-        - Optional
+    - */software/components/puppet/puppet_component/modulepath*
+        - Required
         - Type: string
         - Default value: /etc/puppet/modules
-    - */software/puppet/puppet_component/modules*
+    - */software/components/puppet/puppet_component/modules*
         - Optional
         - Type: puppet_module
-    - */software/puppet/puppet_component/nodefiles*
-        - Optional
+    - */software/components/puppet/puppet_component/nodefiles*
+        - Required
         - Type: puppet_nodefile
-    - */software/puppet/puppet_component/nodefiles_path*
-        - Optional
+    - */software/components/puppet/puppet_component/nodefiles_path*
+        - Required
         - Type: string
         - Default value: /etc/puppet/manifests
-    - */software/puppet/puppet_component/puppetconf*
-        - Optional
+    - */software/components/puppet/puppet_component/puppetconf*
+        - Required
         - Type: puppet_puppetconf
-    - */software/puppet/puppet_component/puppetconf_file*
-        - Optional
+    - */software/components/puppet/puppet_component/puppetconf_file*
+        - Required
         - Type: string
         - Default value: /etc/puppet/puppet.conf
-    - */software/puppet/puppet_component/hieraconf*
-        - Optional
+    - */software/components/puppet/puppet_component/hieraconf*
+        - Required
         - Type: puppet_hieraconf
-    - */software/puppet/puppet_component/hieraconf_file*
-        - Optional
+    - */software/components/puppet/puppet_component/hieraconf_file*
+        - Required
         - Type: string
         - Default value: /etc/puppet/hiera.yaml
-    - */software/puppet/puppet_component/hieradata*
+    - */software/components/puppet/puppet_component/hieradata*
         - Optional
         - Type: puppet_hieradata
-    - */software/puppet/puppet_component/hieradata_file*
-        - Optional
+    - */software/components/puppet/puppet_component/hieradata_file*
+        - Required
         - Type: string
         - Default value: /etc/puppet/hieradata/quattor.yaml

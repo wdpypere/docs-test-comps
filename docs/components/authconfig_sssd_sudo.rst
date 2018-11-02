@@ -5,78 +5,78 @@ authconfig :: sssd :: sudo
 Types
 -----
 
- - **/software/authconfig/sssd_sudorule**
-    - */software/authconfig/sssd_sudorule/object_class*
-        - Optional
+ - **/software/components/authconfig/sssd_sudorule**
+    - */software/components/authconfig/sssd_sudorule/object_class*
+        - Required
         - Type: string
         - Default value: sudoRole
-    - */software/authconfig/sssd_sudorule/name*
-        - Optional
+    - */software/components/authconfig/sssd_sudorule/name*
+        - Required
         - Type: string
         - Default value: cn
-    - */software/authconfig/sssd_sudorule/command*
-        - Optional
+    - */software/components/authconfig/sssd_sudorule/command*
+        - Required
         - Type: string
         - Default value: sudoCommand
-    - */software/authconfig/sssd_sudorule/host*
-        - Optional
+    - */software/components/authconfig/sssd_sudorule/host*
+        - Required
         - Type: string
         - Default value: sudoHost
-    - */software/authconfig/sssd_sudorule/user*
-        - Optional
+    - */software/components/authconfig/sssd_sudorule/user*
+        - Required
         - Type: string
         - Default value: sudoUser
-    - */software/authconfig/sssd_sudorule/option*
-        - Optional
+    - */software/components/authconfig/sssd_sudorule/option*
+        - Required
         - Type: string
         - Default value: sudoOption
-    - */software/authconfig/sssd_sudorule/runasuser*
-        - Optional
+    - */software/components/authconfig/sssd_sudorule/runasuser*
+        - Required
         - Type: string
         - Default value: sudoRunAsUser
-    - */software/authconfig/sssd_sudorule/runasgroup*
-        - Optional
+    - */software/components/authconfig/sssd_sudorule/runasgroup*
+        - Required
         - Type: string
         - Default value: sudoRunAsGroup
-    - */software/authconfig/sssd_sudorule/notbefore*
-        - Optional
+    - */software/components/authconfig/sssd_sudorule/notbefore*
+        - Required
         - Type: string
         - Default value: sudoNotBefore
-    - */software/authconfig/sssd_sudorule/notafter*
-        - Optional
+    - */software/components/authconfig/sssd_sudorule/notafter*
+        - Required
         - Type: string
         - Default value: sudoNotAfter
-    - */software/authconfig/sssd_sudorule/order*
-        - Optional
+    - */software/components/authconfig/sssd_sudorule/order*
+        - Required
         - Type: string
         - Default value: sudoOrder
- - **/software/authconfig/sssd_sudo**
-    - */software/authconfig/sssd_sudo/full_refresh_interval*
-        - Optional
+ - **/software/components/authconfig/sssd_sudo**
+    - */software/components/authconfig/sssd_sudo/full_refresh_interval*
+        - Required
         - Type: long
         - Default value: 21600
-    - */software/authconfig/sssd_sudo/smart_refresh_interval*
-        - Optional
+    - */software/components/authconfig/sssd_sudo/smart_refresh_interval*
+        - Required
         - Type: long
         - Default value: 900
-    - */software/authconfig/sssd_sudo/use_host_filter*
-        - Optional
+    - */software/components/authconfig/sssd_sudo/use_host_filter*
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/authconfig/sssd_sudo/hostnames*
+    - */software/components/authconfig/sssd_sudo/hostnames*
         - Optional
         - Type: string
-    - */software/authconfig/sssd_sudo/ip*
+    - */software/components/authconfig/sssd_sudo/ip*
         - Optional
         - Type: string
-    - */software/authconfig/sssd_sudo/include_netgroups*
-        - Optional
+    - */software/components/authconfig/sssd_sudo/include_netgroups*
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/authconfig/sssd_sudo/include_regexp*
-        - Optional
+    - */software/components/authconfig/sssd_sudo/include_regexp*
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/authconfig/sssd_sudo/search_base*
+    - */software/components/authconfig/sssd_sudo/search_base*
         - Optional
         - Type: string

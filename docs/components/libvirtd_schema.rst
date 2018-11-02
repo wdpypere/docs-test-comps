@@ -5,136 +5,136 @@ libvirtd :: schema
 Types
 -----
 
- - **/software/libvirtd/structure_libvirtd_network**
-    - */software/libvirtd/structure_libvirtd_network/listen_tls*
+ - **/software/components/libvirtd/structure_libvirtd_network**
+    - */software/components/libvirtd/structure_libvirtd_network/listen_tls*
         - Optional
         - Type: long
         - Range: 0..1
-    - */software/libvirtd/structure_libvirtd_network/listen_tcp*
+    - */software/components/libvirtd/structure_libvirtd_network/listen_tcp*
         - Optional
         - Type: long
         - Range: 0..1
-    - */software/libvirtd/structure_libvirtd_network/tls_port*
+    - */software/components/libvirtd/structure_libvirtd_network/tls_port*
         - Optional
         - Type: string
-    - */software/libvirtd/structure_libvirtd_network/tcp_port*
+    - */software/components/libvirtd/structure_libvirtd_network/tcp_port*
         - Optional
         - Type: string
-    - */software/libvirtd/structure_libvirtd_network/listen_addr*
+    - */software/components/libvirtd/structure_libvirtd_network/listen_addr*
         - Optional
         - Type: type_hostname
-    - */software/libvirtd/structure_libvirtd_network/mdns_adv*
+    - */software/components/libvirtd/structure_libvirtd_network/mdns_adv*
         - Optional
         - Type: long
         - Range: 0..1
-    - */software/libvirtd/structure_libvirtd_network/mdns_name*
+    - */software/components/libvirtd/structure_libvirtd_network/mdns_name*
         - Optional
         - Type: string
- - **/software/libvirtd/structure_libvirtd_socket**
-    - */software/libvirtd/structure_libvirtd_socket/unix_sock_group*
+ - **/software/components/libvirtd/structure_libvirtd_socket**
+    - */software/components/libvirtd/structure_libvirtd_socket/unix_sock_group*
         - Optional
         - Type: string
-    - */software/libvirtd/structure_libvirtd_socket/unix_sock_ro_perms*
+    - */software/components/libvirtd/structure_libvirtd_socket/unix_sock_ro_perms*
         - Optional
         - Type: string
-    - */software/libvirtd/structure_libvirtd_socket/unix_sock_rw_perms*
+    - */software/components/libvirtd/structure_libvirtd_socket/unix_sock_rw_perms*
         - Optional
         - Type: string
-    - */software/libvirtd/structure_libvirtd_socket/unix_sock_dir*
+    - */software/components/libvirtd/structure_libvirtd_socket/unix_sock_dir*
         - Optional
         - Type: string
- - **/software/libvirtd/structure_libvirtd_authn**
-    - */software/libvirtd/structure_libvirtd_authn/auth_unix_ro*
+ - **/software/components/libvirtd/structure_libvirtd_authn**
+    - */software/components/libvirtd/structure_libvirtd_authn/auth_unix_ro*
         - Optional
         - Type: string
-    - */software/libvirtd/structure_libvirtd_authn/auth_unix_rw*
+    - */software/components/libvirtd/structure_libvirtd_authn/auth_unix_rw*
         - Optional
         - Type: string
-    - */software/libvirtd/structure_libvirtd_authn/auth_tcp*
+    - */software/components/libvirtd/structure_libvirtd_authn/auth_tcp*
         - Optional
         - Type: string
-    - */software/libvirtd/structure_libvirtd_authn/auth_tls*
+    - */software/components/libvirtd/structure_libvirtd_authn/auth_tls*
         - Optional
         - Type: string
- - **/software/libvirtd/structure_libvirtd_tls**
-    - */software/libvirtd/structure_libvirtd_tls/key_file*
+ - **/software/components/libvirtd/structure_libvirtd_tls**
+    - */software/components/libvirtd/structure_libvirtd_tls/key_file*
         - Optional
         - Type: string
-    - */software/libvirtd/structure_libvirtd_tls/cert_file*
+    - */software/components/libvirtd/structure_libvirtd_tls/cert_file*
         - Optional
         - Type: string
-    - */software/libvirtd/structure_libvirtd_tls/ca_file*
+    - */software/components/libvirtd/structure_libvirtd_tls/ca_file*
         - Optional
         - Type: string
-    - */software/libvirtd/structure_libvirtd_tls/crl_file*
+    - */software/components/libvirtd/structure_libvirtd_tls/crl_file*
         - Optional
         - Type: string
- - **/software/libvirtd/structure_libvirtd_authz**
-    - */software/libvirtd/structure_libvirtd_authz/tls_no_verify_certificate*
+ - **/software/components/libvirtd/structure_libvirtd_authz**
+    - */software/components/libvirtd/structure_libvirtd_authz/tls_no_verify_certificate*
         - Optional
         - Type: long
         - Range: 0..1
-    - */software/libvirtd/structure_libvirtd_authz/tls_allowed_dn_list*
+    - */software/components/libvirtd/structure_libvirtd_authz/tls_allowed_dn_list*
         - Optional
         - Type: string
-    - */software/libvirtd/structure_libvirtd_authz/sasl_allowed_username_list*
+    - */software/components/libvirtd/structure_libvirtd_authz/sasl_allowed_username_list*
         - Optional
         - Type: string
- - **/software/libvirtd/structure_libvirtd_processing**
-    - */software/libvirtd/structure_libvirtd_processing/max_clients*
+ - **/software/components/libvirtd/structure_libvirtd_processing**
+    - */software/components/libvirtd/structure_libvirtd_processing/max_clients*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/libvirtd/structure_libvirtd_processing/min_workers*
+    - */software/components/libvirtd/structure_libvirtd_processing/min_workers*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/libvirtd/structure_libvirtd_processing/max_workers*
+    - */software/components/libvirtd/structure_libvirtd_processing/max_workers*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/libvirtd/structure_libvirtd_processing/max_requests*
+    - */software/components/libvirtd/structure_libvirtd_processing/max_requests*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/libvirtd/structure_libvirtd_processing/max_client_requests*
+    - */software/components/libvirtd/structure_libvirtd_processing/max_client_requests*
         - Optional
         - Type: long
         - Range: 1..
- - **/software/libvirtd/structure_libvirtd_logging**
-    - */software/libvirtd/structure_libvirtd_logging/log_level*
+ - **/software/components/libvirtd/structure_libvirtd_logging**
+    - */software/components/libvirtd/structure_libvirtd_logging/log_level*
         - Optional
         - Type: long
         - Range: 0..4
-    - */software/libvirtd/structure_libvirtd_logging/log_filters*
+    - */software/components/libvirtd/structure_libvirtd_logging/log_filters*
         - Optional
         - Type: string
-    - */software/libvirtd/structure_libvirtd_logging/log_outputs*
+    - */software/components/libvirtd/structure_libvirtd_logging/log_outputs*
         - Optional
         - Type: string
- - **/software/libvirtd/structure_component_libvirtd**
-    - */software/libvirtd/structure_component_libvirtd/libvirtd_config*
-        - Optional
+ - **/software/components/libvirtd/structure_component_libvirtd**
+    - */software/components/libvirtd/structure_component_libvirtd/libvirtd_config*
+        - Required
         - Type: string
         - Default value: /etc/libvirt/libvirtd.conf
-    - */software/libvirtd/structure_component_libvirtd/network*
+    - */software/components/libvirtd/structure_component_libvirtd/network*
         - Optional
         - Type: structure_libvirtd_network
-    - */software/libvirtd/structure_component_libvirtd/socket*
+    - */software/components/libvirtd/structure_component_libvirtd/socket*
         - Optional
         - Type: structure_libvirtd_socket
-    - */software/libvirtd/structure_component_libvirtd/authn*
+    - */software/components/libvirtd/structure_component_libvirtd/authn*
         - Optional
         - Type: structure_libvirtd_authn
-    - */software/libvirtd/structure_component_libvirtd/tls*
+    - */software/components/libvirtd/structure_component_libvirtd/tls*
         - Optional
         - Type: structure_libvirtd_tls
-    - */software/libvirtd/structure_component_libvirtd/authz*
+    - */software/components/libvirtd/structure_component_libvirtd/authz*
         - Optional
         - Type: structure_libvirtd_authz
-    - */software/libvirtd/structure_component_libvirtd/processing*
+    - */software/components/libvirtd/structure_component_libvirtd/processing*
         - Optional
         - Type: structure_libvirtd_processing
-    - */software/libvirtd/structure_component_libvirtd/logging*
+    - */software/components/libvirtd/structure_component_libvirtd/logging*
         - Optional
         - Type: structure_libvirtd_logging

@@ -5,564 +5,564 @@ authconfig :: schema
 Types
 -----
 
- - **/software/authconfig/authconfig_method_generic_type**
-    - */software/authconfig/authconfig_method_generic_type/enable*
+ - **/software/components/authconfig/authconfig_method_generic_type**
+    - */software/components/authconfig/authconfig_method_generic_type/enable*
         - Description: Enable this method. Unlisted methods are always disabled.
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
- - **/software/authconfig/authconfig_pamadditions_line_type**
-    - */software/authconfig/authconfig_pamadditions_line_type/order*
-        - Optional
+ - **/software/components/authconfig/authconfig_pamadditions_line_type**
+    - */software/components/authconfig/authconfig_pamadditions_line_type/order*
+        - Required
         - Type: string
-    - */software/authconfig/authconfig_pamadditions_line_type/entry*
-        - Optional
+    - */software/components/authconfig/authconfig_pamadditions_line_type/entry*
+        - Required
         - Type: string
- - **/software/authconfig/authconfig_pamadditions_type**
-    - */software/authconfig/authconfig_pamadditions_type/conffile*
-        - Optional
+ - **/software/components/authconfig/authconfig_pamadditions_type**
+    - */software/components/authconfig/authconfig_pamadditions_type/conffile*
+        - Required
         - Type: string
         - Default value: /etc/pam.d/system_auth
-    - */software/authconfig/authconfig_pamadditions_type/section*
-        - Optional
+    - */software/components/authconfig/authconfig_pamadditions_type/section*
+        - Required
         - Type: string
-    - */software/authconfig/authconfig_pamadditions_type/lines*
-        - Optional
+    - */software/components/authconfig/authconfig_pamadditions_type/lines*
+        - Required
         - Type: authconfig_pamadditions_line_type
- - **/software/authconfig/authconfig_method_ldap_tls_type**
-    - */software/authconfig/authconfig_method_ldap_tls_type/enable*
-        - Optional
+ - **/software/components/authconfig/authconfig_method_ldap_tls_type**
+    - */software/components/authconfig/authconfig_method_ldap_tls_type/enable*
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/authconfig/authconfig_method_ldap_tls_type/peercheck*
-        - Optional
+    - */software/components/authconfig/authconfig_method_ldap_tls_type/peercheck*
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/authconfig/authconfig_method_ldap_tls_type/cacertfile*
+    - */software/components/authconfig/authconfig_method_ldap_tls_type/cacertfile*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_tls_type/cacertdir*
+    - */software/components/authconfig/authconfig_method_ldap_tls_type/cacertdir*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_tls_type/ciphers*
+    - */software/components/authconfig/authconfig_method_ldap_tls_type/ciphers*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_tls_type/reqcert*
-        - Optional
+    - */software/components/authconfig/authconfig_method_ldap_tls_type/reqcert*
+        - Required
         - Type: string
         - Default value: never
- - **/software/authconfig/authconfig_method_ldap_timeouts_type**
-    - */software/authconfig/authconfig_method_ldap_timeouts_type/idle*
+ - **/software/components/authconfig/authconfig_method_ldap_timeouts_type**
+    - */software/components/authconfig/authconfig_method_ldap_timeouts_type/idle*
         - Optional
         - Type: long
-    - */software/authconfig/authconfig_method_ldap_timeouts_type/bind*
+    - */software/components/authconfig/authconfig_method_ldap_timeouts_type/bind*
         - Optional
         - Type: long
-    - */software/authconfig/authconfig_method_ldap_timeouts_type/search*
+    - */software/components/authconfig/authconfig_method_ldap_timeouts_type/search*
         - Optional
         - Type: long
- - **/software/authconfig/authconfig_nss_map_objectclass**
-    - */software/authconfig/authconfig_nss_map_objectclass/posixAccount*
-        - Optional
+ - **/software/components/authconfig/authconfig_nss_map_objectclass**
+    - */software/components/authconfig/authconfig_nss_map_objectclass/posixAccount*
+        - Required
         - Type: string
         - Default value: user
-    - */software/authconfig/authconfig_nss_map_objectclass/shadowAccount*
-        - Optional
+    - */software/components/authconfig/authconfig_nss_map_objectclass/shadowAccount*
+        - Required
         - Type: string
         - Default value: user
-    - */software/authconfig/authconfig_nss_map_objectclass/posixGroup*
-        - Optional
+    - */software/components/authconfig/authconfig_nss_map_objectclass/posixGroup*
+        - Required
         - Type: string
         - Default value: group
- - **/software/authconfig/authconfig_nss_map_attribute**
-    - */software/authconfig/authconfig_nss_map_attribute/uid*
-        - Optional
+ - **/software/components/authconfig/authconfig_nss_map_attribute**
+    - */software/components/authconfig/authconfig_nss_map_attribute/uid*
+        - Required
         - Type: string
         - Default value: sAMAccountName
-    - */software/authconfig/authconfig_nss_map_attribute/homeDirectory*
-        - Optional
+    - */software/components/authconfig/authconfig_nss_map_attribute/homeDirectory*
+        - Required
         - Type: string
         - Default value: unixHomeDirectory
-    - */software/authconfig/authconfig_nss_map_attribute/uniqueMember*
-        - Optional
+    - */software/components/authconfig/authconfig_nss_map_attribute/uniqueMember*
+        - Required
         - Type: string
         - Default value: member
-    - */software/authconfig/authconfig_nss_map_attribute/uidNumber*
+    - */software/components/authconfig/authconfig_nss_map_attribute/uidNumber*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nss_map_attribute/gidNumber*
+    - */software/components/authconfig/authconfig_nss_map_attribute/gidNumber*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nss_map_attribute/cn*
+    - */software/components/authconfig/authconfig_nss_map_attribute/cn*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nss_map_attribute/userPassword*
+    - */software/components/authconfig/authconfig_nss_map_attribute/userPassword*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nss_map_attribute/loginShell*
+    - */software/components/authconfig/authconfig_nss_map_attribute/loginShell*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nss_map_attribute/gecos*
+    - */software/components/authconfig/authconfig_nss_map_attribute/gecos*
         - Optional
         - Type: string
- - **/software/authconfig/authconfig_nss_override_attribute_value**
-    - */software/authconfig/authconfig_nss_override_attribute_value/unixHomeDirectory*
+ - **/software/components/authconfig/authconfig_nss_override_attribute_value**
+    - */software/components/authconfig/authconfig_nss_override_attribute_value/unixHomeDirectory*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nss_override_attribute_value/loginShell*
+    - */software/components/authconfig/authconfig_nss_override_attribute_value/loginShell*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nss_override_attribute_value/gecos*
+    - */software/components/authconfig/authconfig_nss_override_attribute_value/gecos*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nss_override_attribute_value/gidNumber*
+    - */software/components/authconfig/authconfig_nss_override_attribute_value/gidNumber*
         - Optional
         - Type: long
- - **/software/authconfig/connect_policy**
- - **/software/authconfig/authconfig_method_ldap_type**
-    - */software/authconfig/authconfig_method_ldap_type/servers*
+ - **/software/components/authconfig/connect_policy**
+ - **/software/components/authconfig/authconfig_method_ldap_type**
+    - */software/components/authconfig/authconfig_method_ldap_type/servers*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/nssonly*
+    - */software/components/authconfig/authconfig_method_ldap_type/nssonly*
         - Optional
         - Type: boolean
-    - */software/authconfig/authconfig_method_ldap_type/conffile*
-        - Optional
+    - */software/components/authconfig/authconfig_method_ldap_type/conffile*
+        - Required
         - Type: string
         - Default value: /etc/ldap.conf
-    - */software/authconfig/authconfig_method_ldap_type/basedn*
-        - Optional
+    - */software/components/authconfig/authconfig_method_ldap_type/basedn*
+        - Required
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/tls*
+    - */software/components/authconfig/authconfig_method_ldap_type/tls*
         - Optional
         - Type: authconfig_method_ldap_tls_type
-    - */software/authconfig/authconfig_method_ldap_type/binddn*
+    - */software/components/authconfig/authconfig_method_ldap_type/binddn*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/bindpw*
+    - */software/components/authconfig/authconfig_method_ldap_type/bindpw*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/scope*
+    - */software/components/authconfig/authconfig_method_ldap_type/scope*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/rootbinddn*
+    - */software/components/authconfig/authconfig_method_ldap_type/rootbinddn*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/port*
+    - */software/components/authconfig/authconfig_method_ldap_type/port*
         - Optional
         - Type: type_port
-    - */software/authconfig/authconfig_method_ldap_type/timeouts*
+    - */software/components/authconfig/authconfig_method_ldap_type/timeouts*
         - Optional
         - Type: authconfig_method_ldap_timeouts_type
-    - */software/authconfig/authconfig_method_ldap_type/pam_filter*
-        - Optional
+    - */software/components/authconfig/authconfig_method_ldap_type/pam_filter*
+        - Required
         - Type: string
         - Default value: objectclass=posixAccount
-    - */software/authconfig/authconfig_method_ldap_type/pam_login_attribute*
+    - */software/components/authconfig/authconfig_method_ldap_type/pam_login_attribute*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/pam_lookup_policy*
+    - */software/components/authconfig/authconfig_method_ldap_type/pam_lookup_policy*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/pam_password*
+    - */software/components/authconfig/authconfig_method_ldap_type/pam_password*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/pam_groupdn*
+    - */software/components/authconfig/authconfig_method_ldap_type/pam_groupdn*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/pam_member_attribute*
+    - */software/components/authconfig/authconfig_method_ldap_type/pam_member_attribute*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/pam_check_service_attr*
+    - */software/components/authconfig/authconfig_method_ldap_type/pam_check_service_attr*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/pam_check_host_attr*
+    - */software/components/authconfig/authconfig_method_ldap_type/pam_check_host_attr*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/pam_min_uid*
+    - */software/components/authconfig/authconfig_method_ldap_type/pam_min_uid*
         - Optional
         - Type: long
-    - */software/authconfig/authconfig_method_ldap_type/pam_max_uid*
+    - */software/components/authconfig/authconfig_method_ldap_type/pam_max_uid*
         - Optional
         - Type: long
-    - */software/authconfig/authconfig_method_ldap_type/nss_base_passwd*
+    - */software/components/authconfig/authconfig_method_ldap_type/nss_base_passwd*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/nss_base_group*
+    - */software/components/authconfig/authconfig_method_ldap_type/nss_base_group*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/nss_base_shadow*
+    - */software/components/authconfig/authconfig_method_ldap_type/nss_base_shadow*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/bind_policy*
+    - */software/components/authconfig/authconfig_method_ldap_type/bind_policy*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/ssl*
-        - Optional
+    - */software/components/authconfig/authconfig_method_ldap_type/ssl*
+        - Required
         - Type: string
         - Default value: start_tls
-    - */software/authconfig/authconfig_method_ldap_type/nss_map_objectclass*
+    - */software/components/authconfig/authconfig_method_ldap_type/nss_map_objectclass*
         - Optional
         - Type: authconfig_nss_map_objectclass
-    - */software/authconfig/authconfig_method_ldap_type/nss_map_attribute*
+    - */software/components/authconfig/authconfig_method_ldap_type/nss_map_attribute*
         - Optional
         - Type: authconfig_nss_map_attribute
-    - */software/authconfig/authconfig_method_ldap_type/nss_override_attribute_value*
+    - */software/components/authconfig/authconfig_method_ldap_type/nss_override_attribute_value*
         - Optional
         - Type: authconfig_nss_override_attribute_value
-    - */software/authconfig/authconfig_method_ldap_type/nss_initgroups_ignoreusers*
+    - */software/components/authconfig/authconfig_method_ldap_type/nss_initgroups_ignoreusers*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/debug*
+    - */software/components/authconfig/authconfig_method_ldap_type/debug*
         - Optional
         - Type: long
-    - */software/authconfig/authconfig_method_ldap_type/log_dir*
+    - */software/components/authconfig/authconfig_method_ldap_type/log_dir*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_ldap_type/nss_paged_results*
-        - Optional
+    - */software/components/authconfig/authconfig_method_ldap_type/nss_paged_results*
+        - Required
         - Type: legacy_binary_affirmation_string
         - Default value: yes
-    - */software/authconfig/authconfig_method_ldap_type/pagesize*
+    - */software/components/authconfig/authconfig_method_ldap_type/pagesize*
         - Optional
         - Type: long
-    - */software/authconfig/authconfig_method_ldap_type/nss_connect_policy*
+    - */software/components/authconfig/authconfig_method_ldap_type/nss_connect_policy*
         - Optional
         - Type: connect_policy
         - Default value: oneshot
- - **/software/authconfig/authconfig_method_nis_type**
-    - */software/authconfig/authconfig_method_nis_type/servers*
+ - **/software/components/authconfig/authconfig_method_nis_type**
+    - */software/components/authconfig/authconfig_method_nis_type/servers*
+        - Required
+        - Type: type_hostname
+    - */software/components/authconfig/authconfig_method_nis_type/domain*
+        - Required
+        - Type: string
+ - **/software/components/authconfig/authconfig_method_krb5_type**
+    - */software/components/authconfig/authconfig_method_krb5_type/kdcs*
         - Optional
         - Type: type_hostname
-    - */software/authconfig/authconfig_method_nis_type/domain*
-        - Optional
-        - Type: string
- - **/software/authconfig/authconfig_method_krb5_type**
-    - */software/authconfig/authconfig_method_krb5_type/kdcs*
+    - */software/components/authconfig/authconfig_method_krb5_type/adminservers*
         - Optional
         - Type: type_hostname
-    - */software/authconfig/authconfig_method_krb5_type/adminservers*
-        - Optional
+    - */software/components/authconfig/authconfig_method_krb5_type/realm*
+        - Required
+        - Type: string
+ - **/software/components/authconfig/authconfig_method_smb_type**
+    - */software/components/authconfig/authconfig_method_smb_type/servers*
+        - Required
         - Type: type_hostname
-    - */software/authconfig/authconfig_method_krb5_type/realm*
-        - Optional
+    - */software/components/authconfig/authconfig_method_smb_type/workgroup*
+        - Required
         - Type: string
- - **/software/authconfig/authconfig_method_smb_type**
-    - */software/authconfig/authconfig_method_smb_type/servers*
-        - Optional
-        - Type: type_hostname
-    - */software/authconfig/authconfig_method_smb_type/workgroup*
-        - Optional
+ - **/software/components/authconfig/authconfig_method_hesiod_type**
+    - */software/components/authconfig/authconfig_method_hesiod_type/lhs*
+        - Required
         - Type: string
- - **/software/authconfig/authconfig_method_hesiod_type**
-    - */software/authconfig/authconfig_method_hesiod_type/lhs*
-        - Optional
+    - */software/components/authconfig/authconfig_method_hesiod_type/rhs*
+        - Required
         - Type: string
-    - */software/authconfig/authconfig_method_hesiod_type/rhs*
-        - Optional
-        - Type: string
- - **/software/authconfig/authconfig_method_files_type**
- - **/software/authconfig/authconfig_nslcd_map_attributes**
+ - **/software/components/authconfig/authconfig_method_files_type**
+ - **/software/components/authconfig/authconfig_nslcd_map_attributes**
     - Description: LDAP attributes, as per RFC 2307
-    - */software/authconfig/authconfig_nslcd_map_attributes/uid*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/uid*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/gid*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/gid*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/uidNumber*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/uidNumber*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/gidNumber*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/gidNumber*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/gecos*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/gecos*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/homeDirectory*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/homeDirectory*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/loginShell*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/loginShell*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/shadowLastChange*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/shadowLastChange*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/shadowMin*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/shadowMin*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/shadowMax*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/shadowMax*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/shadowWarning*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/shadowWarning*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/shadowInactive*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/shadowInactive*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/shadowExpire*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/shadowExpire*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/shadowFlag*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/shadowFlag*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/memberUid*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/memberUid*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/memberNisNetgroup*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/memberNisNetgroup*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/nisNetgroupTriple*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/nisNetgroupTriple*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/ipServicePort*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/ipServicePort*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/ipServiceProtocol*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/ipServiceProtocol*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/ipProtocolNumber*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/ipProtocolNumber*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/oncRpcNumber*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/oncRpcNumber*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/ipHostNumber*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/ipHostNumber*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/ipNetworkNumber*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/ipNetworkNumber*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/ipNetmaskNumber*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/ipNetmaskNumber*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/macAddress*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/macAddress*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/bootParameter*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/bootParameter*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/bootFile*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/bootFile*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/nisMapName*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/nisMapName*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/nisMapEntry*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/nisMapEntry*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_map_attributes/uniqueMember*
+    - */software/components/authconfig/authconfig_nslcd_map_attributes/uniqueMember*
         - Optional
         - Type: string
- - **/software/authconfig/authconfig_nslcd_maps**
-    - */software/authconfig/authconfig_nslcd_maps/alias*
+ - **/software/components/authconfig/authconfig_nslcd_maps**
+    - */software/components/authconfig/authconfig_nslcd_maps/alias*
         - Optional
         - Type: authconfig_nslcd_map_attributes
-    - */software/authconfig/authconfig_nslcd_maps/ethers*
+    - */software/components/authconfig/authconfig_nslcd_maps/ethers*
         - Optional
         - Type: authconfig_nslcd_map_attributes
-    - */software/authconfig/authconfig_nslcd_maps/group*
+    - */software/components/authconfig/authconfig_nslcd_maps/group*
         - Optional
         - Type: authconfig_nslcd_map_attributes
-    - */software/authconfig/authconfig_nslcd_maps/host*
+    - */software/components/authconfig/authconfig_nslcd_maps/host*
         - Optional
         - Type: authconfig_nslcd_map_attributes
-    - */software/authconfig/authconfig_nslcd_maps/netgroup*
+    - */software/components/authconfig/authconfig_nslcd_maps/netgroup*
         - Optional
         - Type: authconfig_nslcd_map_attributes
-    - */software/authconfig/authconfig_nslcd_maps/networks*
+    - */software/components/authconfig/authconfig_nslcd_maps/networks*
         - Optional
         - Type: authconfig_nslcd_map_attributes
-    - */software/authconfig/authconfig_nslcd_maps/passwd*
+    - */software/components/authconfig/authconfig_nslcd_maps/passwd*
         - Optional
         - Type: authconfig_nslcd_map_attributes
-    - */software/authconfig/authconfig_nslcd_maps/protocols*
+    - */software/components/authconfig/authconfig_nslcd_maps/protocols*
         - Optional
         - Type: authconfig_nslcd_map_attributes
-    - */software/authconfig/authconfig_nslcd_maps/service*
+    - */software/components/authconfig/authconfig_nslcd_maps/service*
         - Optional
         - Type: authconfig_nslcd_map_attributes
-    - */software/authconfig/authconfig_nslcd_maps/shadow*
+    - */software/components/authconfig/authconfig_nslcd_maps/shadow*
         - Optional
         - Type: authconfig_nslcd_map_attributes
- - **/software/authconfig/authconfig_nslcd_filter**
-    - */software/authconfig/authconfig_nslcd_filter/alias*
+ - **/software/components/authconfig/authconfig_nslcd_filter**
+    - */software/components/authconfig/authconfig_nslcd_filter/alias*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_filter/ethers*
+    - */software/components/authconfig/authconfig_nslcd_filter/ethers*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_filter/group*
+    - */software/components/authconfig/authconfig_nslcd_filter/group*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_filter/host*
+    - */software/components/authconfig/authconfig_nslcd_filter/host*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_filter/netgroup*
+    - */software/components/authconfig/authconfig_nslcd_filter/netgroup*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_filter/networks*
+    - */software/components/authconfig/authconfig_nslcd_filter/networks*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_filter/passwd*
+    - */software/components/authconfig/authconfig_nslcd_filter/passwd*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_filter/protocols*
+    - */software/components/authconfig/authconfig_nslcd_filter/protocols*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_filter/service*
+    - */software/components/authconfig/authconfig_nslcd_filter/service*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_nslcd_filter/shadow*
+    - */software/components/authconfig/authconfig_nslcd_filter/shadow*
         - Optional
         - Type: string
- - **/software/authconfig/authconfig_method_nslcd_type**
-    - */software/authconfig/authconfig_method_nslcd_type/threads*
+ - **/software/components/authconfig/authconfig_method_nslcd_type**
+    - */software/components/authconfig/authconfig_method_nslcd_type/threads*
         - Optional
         - Type: long
-    - */software/authconfig/authconfig_method_nslcd_type/uid*
+    - */software/components/authconfig/authconfig_method_nslcd_type/uid*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/gid*
+    - */software/components/authconfig/authconfig_method_nslcd_type/gid*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/uri*
+    - */software/components/authconfig/authconfig_method_nslcd_type/uri*
         - Optional
         - Type: type_hostURI
-    - */software/authconfig/authconfig_method_nslcd_type/binddn*
+    - */software/components/authconfig/authconfig_method_nslcd_type/binddn*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/rootpwmoddn*
+    - */software/components/authconfig/authconfig_method_nslcd_type/rootpwmoddn*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/krb5_ccname*
+    - */software/components/authconfig/authconfig_method_nslcd_type/krb5_ccname*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/basedn*
+    - */software/components/authconfig/authconfig_method_nslcd_type/basedn*
+        - Required
+        - Type: string
+    - */software/components/authconfig/authconfig_method_nslcd_type/base*
+        - Required
+        - Type: authconfig_nslcd_filter
+    - */software/components/authconfig/authconfig_method_nslcd_type/scope*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/base*
+    - */software/components/authconfig/authconfig_method_nslcd_type/deref*
+        - Optional
+        - Type: string
+    - */software/components/authconfig/authconfig_method_nslcd_type/filter*
         - Optional
         - Type: authconfig_nslcd_filter
-    - */software/authconfig/authconfig_method_nslcd_type/scope*
-        - Optional
-        - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/deref*
-        - Optional
-        - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/filter*
-        - Optional
-        - Type: authconfig_nslcd_filter
-    - */software/authconfig/authconfig_method_nslcd_type/map*
+    - */software/components/authconfig/authconfig_method_nslcd_type/map*
         - Optional
         - Type: authconfig_nslcd_maps
-    - */software/authconfig/authconfig_method_nslcd_type/bind_timelimit*
+    - */software/components/authconfig/authconfig_method_nslcd_type/bind_timelimit*
         - Optional
         - Type: long
-    - */software/authconfig/authconfig_method_nslcd_type/timelimit*
+    - */software/components/authconfig/authconfig_method_nslcd_type/timelimit*
         - Optional
         - Type: long
-    - */software/authconfig/authconfig_method_nslcd_type/idle_timelimit*
+    - */software/components/authconfig/authconfig_method_nslcd_type/idle_timelimit*
         - Optional
         - Type: long
-    - */software/authconfig/authconfig_method_nslcd_type/reconnect_sleeptime*
+    - */software/components/authconfig/authconfig_method_nslcd_type/reconnect_sleeptime*
         - Optional
         - Type: long
-    - */software/authconfig/authconfig_method_nslcd_type/reconnect_retrytime*
+    - */software/components/authconfig/authconfig_method_nslcd_type/reconnect_retrytime*
         - Optional
         - Type: long
-    - */software/authconfig/authconfig_method_nslcd_type/ssl*
+    - */software/components/authconfig/authconfig_method_nslcd_type/ssl*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/tls_reqcert*
+    - */software/components/authconfig/authconfig_method_nslcd_type/tls_reqcert*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/tls_cacertdir*
+    - */software/components/authconfig/authconfig_method_nslcd_type/tls_cacertdir*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/tls_randfile*
+    - */software/components/authconfig/authconfig_method_nslcd_type/tls_randfile*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/tls_ciphers*
+    - */software/components/authconfig/authconfig_method_nslcd_type/tls_ciphers*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/tls_cert*
+    - */software/components/authconfig/authconfig_method_nslcd_type/tls_cert*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/tls_cert*
+    - */software/components/authconfig/authconfig_method_nslcd_type/tls_cert*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/tls_key*
+    - */software/components/authconfig/authconfig_method_nslcd_type/tls_key*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/pagesize*
+    - */software/components/authconfig/authconfig_method_nslcd_type/pagesize*
         - Optional
         - Type: long
-    - */software/authconfig/authconfig_method_nslcd_type/nss_initgroups_ignoreusers*
+    - */software/components/authconfig/authconfig_method_nslcd_type/nss_initgroups_ignoreusers*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/pam_authz_search*
+    - */software/components/authconfig/authconfig_method_nslcd_type/pam_authz_search*
         - Optional
         - Type: string
-    - */software/authconfig/authconfig_method_nslcd_type/bindpw*
+    - */software/components/authconfig/authconfig_method_nslcd_type/bindpw*
         - Optional
         - Type: string
- - **/software/authconfig/authconfig_method_type**
-    - */software/authconfig/authconfig_method_type/files*
+ - **/software/components/authconfig/authconfig_method_type**
+    - */software/components/authconfig/authconfig_method_type/files*
         - Optional
         - Type: authconfig_method_files_type
-    - */software/authconfig/authconfig_method_type/ldap*
+    - */software/components/authconfig/authconfig_method_type/ldap*
         - Optional
         - Type: authconfig_method_ldap_type
-    - */software/authconfig/authconfig_method_type/nis*
+    - */software/components/authconfig/authconfig_method_type/nis*
         - Optional
         - Type: authconfig_method_nis_type
-    - */software/authconfig/authconfig_method_type/krb5*
+    - */software/components/authconfig/authconfig_method_type/krb5*
         - Optional
         - Type: authconfig_method_krb5_type
-    - */software/authconfig/authconfig_method_type/smb*
+    - */software/components/authconfig/authconfig_method_type/smb*
         - Optional
         - Type: authconfig_method_smb_type
-    - */software/authconfig/authconfig_method_type/hesiod*
+    - */software/components/authconfig/authconfig_method_type/hesiod*
         - Optional
         - Type: authconfig_method_hesiod_type
-    - */software/authconfig/authconfig_method_type/nslcd*
+    - */software/components/authconfig/authconfig_method_type/nslcd*
         - Optional
         - Type: authconfig_method_nslcd_type
-    - */software/authconfig/authconfig_method_type/sssd*
+    - */software/components/authconfig/authconfig_method_type/sssd*
         - Optional
         - Type: authconfig_method_sssd_type
- - **/software/authconfig/hash_string**
- - **/software/authconfig/authconfig_component**
-    - */software/authconfig/authconfig_component/safemode*
+ - **/software/components/authconfig/hash_string**
+ - **/software/components/authconfig/authconfig_component**
+    - */software/components/authconfig/authconfig_component/safemode*
         - Description: When set to true, no actual configuration will change. Default: false.
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/authconfig/authconfig_component/passalgorithm*
-        - Optional
+    - */software/components/authconfig/authconfig_component/passalgorithm*
+        - Required
         - Type: hash_string
         - Default value: md5
-    - */software/authconfig/authconfig_component/useshadow*
+    - */software/components/authconfig/authconfig_component/useshadow*
         - Description: Enable the use of shadow password files.
         - Optional
         - Type: boolean
-    - */software/authconfig/authconfig_component/usecache*
+    - */software/components/authconfig/authconfig_component/usecache*
         - Description: Enable or disable nscd operation.
         - Optional
         - Type: boolean
-    - */software/authconfig/authconfig_component/enableforcelegacy*
-        - Optional
+    - */software/components/authconfig/authconfig_component/enableforcelegacy*
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/authconfig/authconfig_component/usemd5*
+    - */software/components/authconfig/authconfig_component/usemd5*
         - Description: Enable the use of MD5 hashed password.
-        - Optional
+        - Required
         - Type: boolean
-    - */software/authconfig/authconfig_component/method*
+    - */software/components/authconfig/authconfig_component/method*
         - Description: dict of authentication methods to enable. Supported methods are: files, ldap, nis, krb5, smb, hesiod, nslcd and sssd. The "files" method cannot be disabled.
         - Optional
         - Type: authconfig_method_type
-    - */software/authconfig/authconfig_component/pamadditions*
+    - */software/components/authconfig/authconfig_component/pamadditions*
         - Optional
         - Type: authconfig_pamadditions_type

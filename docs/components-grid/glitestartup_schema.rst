@@ -5,48 +5,48 @@ glitestartup :: schema
 Types
 -----
 
- - **/software/glitestartup/glitestartup_component_service**
-    - */software/glitestartup/glitestartup_component_service/args*
+ - **/software/components/glitestartup/glitestartup_component_service**
+    - */software/components/glitestartup/glitestartup_component_service/args*
         - Optional
         - Type: string
- - **/software/glitestartup/glitestartup_component_post_restart**
-    - */software/glitestartup/glitestartup_component_post_restart/cmd*
-        - Optional
+ - **/software/components/glitestartup/glitestartup_component_post_restart**
+    - */software/components/glitestartup/glitestartup_component_post_restart/cmd*
+        - Required
         - Type: string
-    - */software/glitestartup/glitestartup_component_post_restart/expectedStatus*
+    - */software/components/glitestartup/glitestartup_component_post_restart/expectedStatus*
         - Optional
         - Type: long
- - **/software/glitestartup/glitestartup_component**
-    - */software/glitestartup/glitestartup_component/configFile*
-        - Optional
+ - **/software/components/glitestartup/glitestartup_component**
+    - */software/components/glitestartup/glitestartup_component/configFile*
+        - Required
         - Type: string
         - Default value: /opt/glite/etc/gLiteservices
-    - */software/glitestartup/glitestartup_component/initScript*
-        - Optional
+    - */software/components/glitestartup/glitestartup_component/initScript*
+        - Required
         - Type: string
         - Default value: /etc/rc.d/init.d/gLite
-    - */software/glitestartup/glitestartup_component/disableOutput*
+    - */software/components/glitestartup/glitestartup_component/disableOutput*
         - Optional
         - Type: boolean
-    - */software/glitestartup/glitestartup_component/disableError*
+    - */software/components/glitestartup/glitestartup_component/disableError*
         - Optional
         - Type: boolean
-    - */software/glitestartup/glitestartup_component/restartEnv*
+    - */software/components/glitestartup/glitestartup_component/restartEnv*
         - Optional
         - Type: string
-    - */software/glitestartup/glitestartup_component/postRestart*
+    - */software/components/glitestartup/glitestartup_component/postRestart*
         - Optional
         - Type: glitestartup_component_post_restart
-    - */software/glitestartup/glitestartup_component/restartServices*
+    - */software/components/glitestartup/glitestartup_component/restartServices*
         - Optional
         - Type: boolean
-    - */software/glitestartup/glitestartup_component/createProxy*
-        - Optional
+    - */software/components/glitestartup/glitestartup_component/createProxy*
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/glitestartup/glitestartup_component/scriptPaths*
-        - Optional
+    - */software/components/glitestartup/glitestartup_component/scriptPaths*
+        - Required
         - Type: string
-    - */software/glitestartup/glitestartup_component/services*
-        - Optional
+    - */software/components/glitestartup/glitestartup_component/services*
+        - Required
         - Type: glitestartup_component_service

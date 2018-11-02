@@ -5,26 +5,26 @@ gridmapdir :: schema
 Types
 -----
 
- - **/software/gridmapdir/gridmapdir_component**
-    - */software/gridmapdir/gridmapdir_component/gridmapdir*
-        - Optional
+ - **/software/components/gridmapdir/gridmapdir_component**
+    - */software/components/gridmapdir/gridmapdir_component/gridmapdir*
+        - Required
         - Type: string
-    - */software/gridmapdir/gridmapdir_component/poolaccounts*
-        - Optional
+    - */software/components/gridmapdir/gridmapdir_component/poolaccounts*
+        - Required
         - Type: long
         - Range: 0..0
-    - */software/gridmapdir/gridmapdir_component/sharedGridmapdir*
+    - */software/components/gridmapdir/gridmapdir_component/sharedGridmapdir*
         - Optional
         - Type: string
-    - */software/gridmapdir/gridmapdir_component/owner*
-        - Optional
-        - Type: string
-        - Default value: root
-    - */software/gridmapdir/gridmapdir_component/group*
-        - Optional
+    - */software/components/gridmapdir/gridmapdir_component/owner*
+        - Required
         - Type: string
         - Default value: root
-    - */software/gridmapdir/gridmapdir_component/perms*
-        - Optional
+    - */software/components/gridmapdir/gridmapdir_component/group*
+        - Required
+        - Type: string
+        - Default value: root
+    - */software/components/gridmapdir/gridmapdir_component/perms*
+        - Required
         - Type: string
         - Default value: 0755

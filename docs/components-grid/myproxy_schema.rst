@@ -5,39 +5,39 @@ myproxy :: schema
 Types
 -----
 
- - **/software/myproxy/myproxy_component_policies**
-    - */software/myproxy/myproxy_component_policies/renewers*
+ - **/software/components/myproxy/myproxy_component_policies**
+    - */software/components/myproxy/myproxy_component_policies/renewers*
         - Optional
         - Type: string
-    - */software/myproxy/myproxy_component_policies/retrievers*
+    - */software/components/myproxy/myproxy_component_policies/retrievers*
         - Optional
         - Type: string
-    - */software/myproxy/myproxy_component_policies/keyRetrievers*
+    - */software/components/myproxy/myproxy_component_policies/keyRetrievers*
         - Optional
         - Type: string
-    - */software/myproxy/myproxy_component_policies/trustedRetrievers*
+    - */software/components/myproxy/myproxy_component_policies/trustedRetrievers*
         - Optional
         - Type: string
- - **/software/myproxy/myproxy_component**
-    - */software/myproxy/myproxy_component/flavor*
-        - Optional
+ - **/software/components/myproxy/myproxy_component**
+    - */software/components/myproxy/myproxy_component/flavor*
+        - Required
         - Type: string
         - Default value: edg
-    - */software/myproxy/myproxy_component/confFile*
+    - */software/components/myproxy/myproxy_component/confFile*
         - Optional
         - Type: string
         - Default value: opt/edg/etc/edg-myproxy.conf
-    - */software/myproxy/myproxy_component/daemonName*
-        - Optional
+    - */software/components/myproxy/myproxy_component/daemonName*
+        - Required
         - Type: string
         - Default value: myproxy
-    - */software/myproxy/myproxy_component/trustedDNs*
+    - */software/components/myproxy/myproxy_component/trustedDNs*
         - Optional
         - Type: string
-    - */software/myproxy/myproxy_component/authorizedDNs*
+    - */software/components/myproxy/myproxy_component/authorizedDNs*
         - Optional
         - Type: myproxy_component_policies
-    - */software/myproxy/myproxy_component/defaultDNs*
+    - */software/components/myproxy/myproxy_component/defaultDNs*
         - Optional
         - Type: myproxy_component_policies
 

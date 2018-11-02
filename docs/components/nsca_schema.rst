@@ -5,71 +5,71 @@ nsca :: schema
 Types
 -----
 
- - **/software/nsca/structure_component_nsca_daemon**
-    - */software/nsca/structure_component_nsca_daemon/pid_file*
-        - Optional
+ - **/software/components/nsca/structure_component_nsca_daemon**
+    - */software/components/nsca/structure_component_nsca_daemon/pid_file*
+        - Required
         - Type: string
         - Default value: /var/run/nsca.pid
-    - */software/nsca/structure_component_nsca_daemon/server_port*
-        - Optional
+    - */software/components/nsca/structure_component_nsca_daemon/server_port*
+        - Required
         - Type: long
-    - */software/nsca/structure_component_nsca_daemon/server_addres*
+    - */software/components/nsca/structure_component_nsca_daemon/server_addres*
         - Optional
         - Type: string
-    - */software/nsca/structure_component_nsca_daemon/user*
-        - Optional
-        - Type: string
-        - Default value: nagios
-    - */software/nsca/structure_component_nsca_daemon/group*
-        - Optional
+    - */software/components/nsca/structure_component_nsca_daemon/user*
+        - Required
         - Type: string
         - Default value: nagios
-    - */software/nsca/structure_component_nsca_daemon/chroot*
+    - */software/components/nsca/structure_component_nsca_daemon/group*
+        - Required
+        - Type: string
+        - Default value: nagios
+    - */software/components/nsca/structure_component_nsca_daemon/chroot*
         - Optional
         - Type: string
-    - */software/nsca/structure_component_nsca_daemon/debug*
-        - Optional
+    - */software/components/nsca/structure_component_nsca_daemon/debug*
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/nsca/structure_component_nsca_daemon/command_file*
-        - Optional
+    - */software/components/nsca/structure_component_nsca_daemon/command_file*
+        - Required
         - Type: string
         - Default value: /var/log/nagios/rw/nagios.cmd
-    - */software/nsca/structure_component_nsca_daemon/alt_dump_file*
-        - Optional
+    - */software/components/nsca/structure_component_nsca_daemon/alt_dump_file*
+        - Required
         - Type: string
         - Default value: /var/log/nagios/rw/nsca.dump
-    - */software/nsca/structure_component_nsca_daemon/aggregate_writes*
-        - Optional
+    - */software/components/nsca/structure_component_nsca_daemon/aggregate_writes*
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/nsca/structure_component_nsca_daemon/append_to_file*
-        - Optional
+    - */software/components/nsca/structure_component_nsca_daemon/append_to_file*
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/nsca/structure_component_nsca_daemon/max_packet_age*
-        - Optional
+    - */software/components/nsca/structure_component_nsca_daemon/max_packet_age*
+        - Required
         - Type: long
         - Default value: 30
-    - */software/nsca/structure_component_nsca_daemon/password*
-        - Optional
+    - */software/components/nsca/structure_component_nsca_daemon/password*
+        - Required
         - Type: string
-    - */software/nsca/structure_component_nsca_daemon/decryption_method*
-        - Optional
+    - */software/components/nsca/structure_component_nsca_daemon/decryption_method*
+        - Required
         - Type: long
         - Default value: 1
- - **/software/nsca/structure_component_nsca_send**
-    - */software/nsca/structure_component_nsca_send/password*
-        - Optional
+ - **/software/components/nsca/structure_component_nsca_send**
+    - */software/components/nsca/structure_component_nsca_send/password*
+        - Required
         - Type: string
-    - */software/nsca/structure_component_nsca_send/encryption_method*
-        - Optional
+    - */software/components/nsca/structure_component_nsca_send/encryption_method*
+        - Required
         - Type: long
         - Default value: 1
- - **/software/nsca/structure_component_nsca**
-    - */software/nsca/structure_component_nsca/daemon*
+ - **/software/components/nsca/structure_component_nsca**
+    - */software/components/nsca/structure_component_nsca/daemon*
         - Optional
         - Type: structure_component_nsca_daemon
-    - */software/nsca/structure_component_nsca/send*
+    - */software/components/nsca/structure_component_nsca/send*
         - Optional
         - Type: structure_component_nsca_send

@@ -5,312 +5,312 @@ ssh :: schema
 Types
 -----
 
- - **/software/ssh/ssh_preferred_authentication**
- - **/software/ssh/ssh_ciphers**
- - **/software/ssh/ssh_hostkeyalgorithms**
- - **/software/ssh/ssh_kbdinteractivedevices**
- - **/software/ssh/ssh_kexalgorithms**
- - **/software/ssh/ssh_MACs**
- - **/software/ssh/legacy_ssh_MACs**
- - **/software/ssh/legacy_ssh_ciphers**
- - **/software/ssh/legacy_ssh_kexalgorithm**
- - **/software/ssh/ssh_core_options_type**
-    - */software/ssh/ssh_core_options_type/AddressFamily*
+ - **/software/components/ssh/ssh_preferred_authentication**
+ - **/software/components/ssh/ssh_ciphers**
+ - **/software/components/ssh/ssh_hostkeyalgorithms**
+ - **/software/components/ssh/ssh_kbdinteractivedevices**
+ - **/software/components/ssh/ssh_kexalgorithms**
+ - **/software/components/ssh/ssh_MACs**
+ - **/software/components/ssh/legacy_ssh_MACs**
+ - **/software/components/ssh/legacy_ssh_ciphers**
+ - **/software/components/ssh/legacy_ssh_kexalgorithm**
+ - **/software/components/ssh/ssh_core_options_type**
+    - */software/components/ssh/ssh_core_options_type/AddressFamily*
         - Optional
         - Type: string
-    - */software/ssh/ssh_core_options_type/ChallengeResponseAuthentication*
+    - */software/components/ssh/ssh_core_options_type/ChallengeResponseAuthentication*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_core_options_type/Ciphers*
+    - */software/components/ssh/ssh_core_options_type/Ciphers*
         - Optional
         - Type: legacy_ssh_ciphers
-    - */software/ssh/ssh_core_options_type/Compression*
+    - */software/components/ssh/ssh_core_options_type/Compression*
         - Optional
         - Type: string
-    - */software/ssh/ssh_core_options_type/GSSAPIAuthentication*
+    - */software/components/ssh/ssh_core_options_type/GSSAPIAuthentication*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_core_options_type/GSSAPICleanupCredentials*
+    - */software/components/ssh/ssh_core_options_type/GSSAPICleanupCredentials*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_core_options_type/GSSAPIKeyExchange*
+    - */software/components/ssh/ssh_core_options_type/GSSAPIKeyExchange*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_core_options_type/GatewayPorts*
+    - */software/components/ssh/ssh_core_options_type/GatewayPorts*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_core_options_type/HostbasedAuthentication*
+    - */software/components/ssh/ssh_core_options_type/HostbasedAuthentication*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_core_options_type/LogLevel*
+    - */software/components/ssh/ssh_core_options_type/LogLevel*
         - Optional
         - Type: string
-    - */software/ssh/ssh_core_options_type/MACs*
+    - */software/components/ssh/ssh_core_options_type/MACs*
         - Optional
         - Type: legacy_ssh_MACs
-    - */software/ssh/ssh_core_options_type/PasswordAuthentication*
+    - */software/components/ssh/ssh_core_options_type/PasswordAuthentication*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_core_options_type/Protocol*
+    - */software/components/ssh/ssh_core_options_type/Protocol*
         - Optional
         - Type: string
-    - */software/ssh/ssh_core_options_type/PubkeyAuthentication*
+    - */software/components/ssh/ssh_core_options_type/PubkeyAuthentication*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_core_options_type/RSAAuthentication*
+    - */software/components/ssh/ssh_core_options_type/RSAAuthentication*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_core_options_type/RhostsRSAAuthentication*
+    - */software/components/ssh/ssh_core_options_type/RhostsRSAAuthentication*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_core_options_type/SendEnv*
+    - */software/components/ssh/ssh_core_options_type/SendEnv*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_core_options_type/TCPKeepAlive*
+    - */software/components/ssh/ssh_core_options_type/TCPKeepAlive*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_core_options_type/XAuthLocation*
+    - */software/components/ssh/ssh_core_options_type/XAuthLocation*
         - Optional
         - Type: string
-    - */software/ssh/ssh_core_options_type/KexAlgorithms*
+    - */software/components/ssh/ssh_core_options_type/KexAlgorithms*
         - Optional
         - Type: ssh_kexalgorithms
- - **/software/ssh/ssh_daemon_options_type**
-    - */software/ssh/ssh_daemon_options_type/AFSTokenPassing*
+ - **/software/components/ssh/ssh_daemon_options_type**
+    - */software/components/ssh/ssh_daemon_options_type/AFSTokenPassing*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/AcceptEnv*
+    - */software/components/ssh/ssh_daemon_options_type/AcceptEnv*
         - Description: AcceptEnv, one per line
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_options_type/AllowAgentForwarding*
+    - */software/components/ssh/ssh_daemon_options_type/AllowAgentForwarding*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/AllowGroups*
+    - */software/components/ssh/ssh_daemon_options_type/AllowGroups*
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_options_type/AllowTcpForwarding*
+    - */software/components/ssh/ssh_daemon_options_type/AllowTcpForwarding*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/AllowUsers*
+    - */software/components/ssh/ssh_daemon_options_type/AllowUsers*
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_options_type/AuthorizedKeysFile*
+    - */software/components/ssh/ssh_daemon_options_type/AuthorizedKeysFile*
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_options_type/Banner*
+    - */software/components/ssh/ssh_daemon_options_type/Banner*
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_options_type/ClientAliveCountMax*
+    - */software/components/ssh/ssh_daemon_options_type/ClientAliveCountMax*
         - Optional
         - Type: long
-    - */software/ssh/ssh_daemon_options_type/ClientAliveInterval*
+    - */software/components/ssh/ssh_daemon_options_type/ClientAliveInterval*
         - Optional
         - Type: long
-    - */software/ssh/ssh_daemon_options_type/DenyGroups*
+    - */software/components/ssh/ssh_daemon_options_type/DenyGroups*
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_options_type/DenyUsers*
+    - */software/components/ssh/ssh_daemon_options_type/DenyUsers*
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_options_type/GSSAPIStrictAcceptorCheck*
+    - */software/components/ssh/ssh_daemon_options_type/GSSAPIStrictAcceptorCheck*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/HostKey*
+    - */software/components/ssh/ssh_daemon_options_type/HostKey*
         - Description: HostKey, one per line
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_options_type/HPNDisabled*
+    - */software/components/ssh/ssh_daemon_options_type/HPNDisabled*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/HPNBufferSize*
+    - */software/components/ssh/ssh_daemon_options_type/HPNBufferSize*
         - Optional
         - Type: long
-    - */software/ssh/ssh_daemon_options_type/IgnoreRhosts*
+    - */software/components/ssh/ssh_daemon_options_type/IgnoreRhosts*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/IgnoreUserKnownHosts*
+    - */software/components/ssh/ssh_daemon_options_type/IgnoreUserKnownHosts*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/KbdInteractiveAuthentication*
+    - */software/components/ssh/ssh_daemon_options_type/KbdInteractiveAuthentication*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/KerberosAuthentication*
+    - */software/components/ssh/ssh_daemon_options_type/KerberosAuthentication*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/KerberosGetAFSToken*
+    - */software/components/ssh/ssh_daemon_options_type/KerberosGetAFSToken*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/KerberosOrLocalPasswd*
+    - */software/components/ssh/ssh_daemon_options_type/KerberosOrLocalPasswd*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/KerberosTgtPassing*
+    - */software/components/ssh/ssh_daemon_options_type/KerberosTgtPassing*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/KerberosTicketAuthentication*
+    - */software/components/ssh/ssh_daemon_options_type/KerberosTicketAuthentication*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/KerberosTicketCleanup*
+    - */software/components/ssh/ssh_daemon_options_type/KerberosTicketCleanup*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/KeyRegenerationInterval*
+    - */software/components/ssh/ssh_daemon_options_type/KeyRegenerationInterval*
         - Optional
         - Type: long
-    - */software/ssh/ssh_daemon_options_type/ListenAddress*
+    - */software/components/ssh/ssh_daemon_options_type/ListenAddress*
         - Description: ListenAddress, one per line
         - Optional
         - Type: type_hostport
-    - */software/ssh/ssh_daemon_options_type/LoginGraceTime*
+    - */software/components/ssh/ssh_daemon_options_type/LoginGraceTime*
         - Optional
         - Type: long
-    - */software/ssh/ssh_daemon_options_type/MaxAuthTries*
+    - */software/components/ssh/ssh_daemon_options_type/MaxAuthTries*
         - Optional
         - Type: long
-    - */software/ssh/ssh_daemon_options_type/MaxStartups*
+    - */software/components/ssh/ssh_daemon_options_type/MaxStartups*
         - Optional
         - Type: long
-    - */software/ssh/ssh_daemon_options_type/NoneEnabled*
+    - */software/components/ssh/ssh_daemon_options_type/NoneEnabled*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/PermitEmptyPasswords*
+    - */software/components/ssh/ssh_daemon_options_type/PermitEmptyPasswords*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/PermitRootLogin*
+    - */software/components/ssh/ssh_daemon_options_type/PermitRootLogin*
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_options_type/PermitTunnel*
+    - */software/components/ssh/ssh_daemon_options_type/PermitTunnel*
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_options_type/PermitUserEnvironment*
+    - */software/components/ssh/ssh_daemon_options_type/PermitUserEnvironment*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/PidFile*
+    - */software/components/ssh/ssh_daemon_options_type/PidFile*
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_options_type/Port*
+    - */software/components/ssh/ssh_daemon_options_type/Port*
         - Optional
         - Type: long
-    - */software/ssh/ssh_daemon_options_type/PrintLastLog*
+    - */software/components/ssh/ssh_daemon_options_type/PrintLastLog*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/PrintMotd*
+    - */software/components/ssh/ssh_daemon_options_type/PrintMotd*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/RhostsAuthentication*
+    - */software/components/ssh/ssh_daemon_options_type/RhostsAuthentication*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/ServerKeyBits*
+    - */software/components/ssh/ssh_daemon_options_type/ServerKeyBits*
         - Optional
         - Type: long
-    - */software/ssh/ssh_daemon_options_type/ShowPatchLevel*
+    - */software/components/ssh/ssh_daemon_options_type/ShowPatchLevel*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/StrictModes*
+    - */software/components/ssh/ssh_daemon_options_type/StrictModes*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/Subsystem*
+    - */software/components/ssh/ssh_daemon_options_type/Subsystem*
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_options_type/SyslogFacility*
+    - */software/components/ssh/ssh_daemon_options_type/SyslogFacility*
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_options_type/TcpRcvBuf*
+    - */software/components/ssh/ssh_daemon_options_type/TcpRcvBuf*
         - Optional
         - Type: long
-    - */software/ssh/ssh_daemon_options_type/TcpRcvBufPoll*
+    - */software/components/ssh/ssh_daemon_options_type/TcpRcvBufPoll*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/UseDNS*
+    - */software/components/ssh/ssh_daemon_options_type/UseDNS*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/UseLogin*
+    - */software/components/ssh/ssh_daemon_options_type/UseLogin*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/UsePAM*
+    - */software/components/ssh/ssh_daemon_options_type/UsePAM*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/UsePrivilegeSeparation*
+    - */software/components/ssh/ssh_daemon_options_type/UsePrivilegeSeparation*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/VerifyReverseMapping*
+    - */software/components/ssh/ssh_daemon_options_type/VerifyReverseMapping*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/X11DisplayOffset*
+    - */software/components/ssh/ssh_daemon_options_type/X11DisplayOffset*
         - Optional
         - Type: long
-    - */software/ssh/ssh_daemon_options_type/X11Forwarding*
+    - */software/components/ssh/ssh_daemon_options_type/X11Forwarding*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_daemon_options_type/X11UseLocalhost*
+    - */software/components/ssh/ssh_daemon_options_type/X11UseLocalhost*
         - Optional
         - Type: legacy_binary_affirmation_string
- - **/software/ssh/ssh_client_options_type**
-    - */software/ssh/ssh_client_options_type/BatchMode*
+ - **/software/components/ssh/ssh_client_options_type**
+    - */software/components/ssh/ssh_client_options_type/BatchMode*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_client_options_type/ConnectTimeout*
+    - */software/components/ssh/ssh_client_options_type/ConnectTimeout*
         - Optional
         - Type: long
-    - */software/ssh/ssh_client_options_type/EnableSSHKeysign*
+    - */software/components/ssh/ssh_client_options_type/EnableSSHKeysign*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_client_options_type/ForwardAgent*
+    - */software/components/ssh/ssh_client_options_type/ForwardAgent*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_client_options_type/ForwardX11*
+    - */software/components/ssh/ssh_client_options_type/ForwardX11*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_client_options_type/GSSAPIDelegateCredentials*
+    - */software/components/ssh/ssh_client_options_type/GSSAPIDelegateCredentials*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_client_options_type/Port*
+    - */software/components/ssh/ssh_client_options_type/Port*
         - Optional
         - Type: long
-    - */software/ssh/ssh_client_options_type/PreferredAuthentications*
+    - */software/components/ssh/ssh_client_options_type/PreferredAuthentications*
         - Optional
         - Type: ssh_preferred_authentication
-    - */software/ssh/ssh_client_options_type/RhostsAuthentication*
+    - */software/components/ssh/ssh_client_options_type/RhostsAuthentication*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_client_options_type/StrictHostKeyChecking*
+    - */software/components/ssh/ssh_client_options_type/StrictHostKeyChecking*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/ssh/ssh_client_options_type/UsePrivilegedPort*
+    - */software/components/ssh/ssh_client_options_type/UsePrivilegedPort*
         - Optional
         - Type: legacy_binary_affirmation_string
- - **/software/ssh/ssh_daemon_type**
-    - */software/ssh/ssh_daemon_type/options*
+ - **/software/components/ssh/ssh_daemon_type**
+    - */software/components/ssh/ssh_daemon_type/options*
         - Optional
         - Type: ssh_daemon_options_type
-    - */software/ssh/ssh_daemon_type/comment_options*
+    - */software/components/ssh/ssh_daemon_type/comment_options*
         - Optional
         - Type: ssh_daemon_options_type
-    - */software/ssh/ssh_daemon_type/sshd_path*
+    - */software/components/ssh/ssh_daemon_type/sshd_path*
         - Optional
         - Type: string
-    - */software/ssh/ssh_daemon_type/always_validate*
+    - */software/components/ssh/ssh_daemon_type/always_validate*
         - Description: if false and sshd doesn't exist, skip config validation
-        - Optional
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/ssh/ssh_daemon_type/config_path*
+    - */software/components/ssh/ssh_daemon_type/config_path*
         - Optional
         - Type: string
- - **/software/ssh/ssh_client_type**
-    - */software/ssh/ssh_client_type/options*
+ - **/software/components/ssh/ssh_client_type**
+    - */software/components/ssh/ssh_client_type/options*
         - Optional
         - Type: ssh_client_options_type
-    - */software/ssh/ssh_client_type/comment_options*
+    - */software/components/ssh/ssh_client_type/comment_options*
         - Optional
         - Type: ssh_client_options_type
-    - */software/ssh/ssh_client_type/config_path*
+    - */software/components/ssh/ssh_client_type/config_path*
         - Optional
         - Type: string
- - **/software/ssh/component_ssh_type**
-    - */software/ssh/component_ssh_type/daemon*
+ - **/software/components/ssh/component_ssh_type**
+    - */software/components/ssh/component_ssh_type/daemon*
         - Optional
         - Type: ssh_daemon_type
-    - */software/ssh/component_ssh_type/client*
+    - */software/components/ssh/component_ssh_type/client*
         - Optional
         - Type: ssh_client_type
 

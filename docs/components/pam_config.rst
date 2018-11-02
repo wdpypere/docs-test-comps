@@ -7,7 +7,7 @@ Functions
 
  - pam_add
     - Description: add a line to pam configuration
-- Arguments:
+    - Arguments:
         - service
         - pamtype
         - control
@@ -21,7 +21,7 @@ Functions
  - pam_add_access_netgroup
  - pam_add_access_group
     - Description: helper function to add (unix) group to pam/access/<key>
-- Arguments:
+    - Arguments:
         - key under components/pam/access to modify
         - group, unix group to add to <key>
  - pam_add_access_user

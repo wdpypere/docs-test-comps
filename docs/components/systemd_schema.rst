@@ -5,526 +5,526 @@ systemd :: schema
 Types
 -----
 
- - **/software/systemd/hwloc_location**
+ - **/software/components/systemd/hwloc_location**
     - Description: hwloc (Portable Hardware Locality, hwloc(7)) location, e.g. node:1 for NUMAnode 1
- - **/software/systemd/syslog_facility**
+ - **/software/components/systemd/syslog_facility**
     - Description: syslog facility to use when logging to syslog
- - **/software/systemd/syslog_level**
+ - **/software/components/systemd/syslog_level**
     - Description: syslog level to use when logging to syslog or the kernel log buffer
- - **/software/systemd/systemd_skip**
-    - */software/systemd/systemd_skip/service*
-        - Optional
+ - **/software/components/systemd/systemd_skip**
+    - */software/components/systemd/systemd_skip/service*
+        - Required
         - Type: boolean
         - Default value: false
- - **/software/systemd/systemd_unit_architecture**
- - **/software/systemd/systemd_unit_security**
- - **/software/systemd/systemd_unit_virtualization**
- - **/software/systemd/systemd_valid_unit**
- - **/software/systemd/systemd_unitfile_config_unit_condition**
+ - **/software/components/systemd/systemd_unit_architecture**
+ - **/software/components/systemd/systemd_unit_security**
+ - **/software/components/systemd/systemd_unit_virtualization**
+ - **/software/components/systemd/systemd_valid_unit**
+ - **/software/components/systemd/systemd_unitfile_config_unit_condition**
     - Description: Condition/Assert entries in Unit section All lists can start with empty string to reset previously defined values.
-    - */software/systemd/systemd_unitfile_config_unit_condition/ACPower*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/ACPower*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_unit_condition/Architecture*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/Architecture*
         - Optional
         - Type: systemd_unit_architecture
-    - */software/systemd/systemd_unitfile_config_unit_condition/Capability*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/Capability*
         - Optional
         - Type: linux_capability
-    - */software/systemd/systemd_unitfile_config_unit_condition/DirectoryNotEmpty*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/DirectoryNotEmpty*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit_condition/FileIsExecutable*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/FileIsExecutable*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit_condition/FileNotEmpty*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/FileNotEmpty*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit_condition/FirstBoot*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/FirstBoot*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_unit_condition/Host*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/Host*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit_condition/KernelCommandLine*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/KernelCommandLine*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit_condition/NeedsUpdate*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/NeedsUpdate*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit_condition/PathExistsGlob*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/PathExistsGlob*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit_condition/PathExists*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/PathExists*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit_condition/PathIsDirectory*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/PathIsDirectory*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit_condition/PathIsMountPoint*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/PathIsMountPoint*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit_condition/PathIsReadWrite*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/PathIsReadWrite*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit_condition/PathIsSymbolicLink*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/PathIsSymbolicLink*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit_condition/Security*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/Security*
         - Optional
         - Type: systemd_unit_security
-    - */software/systemd/systemd_unitfile_config_unit_condition/Virtualization*
+    - */software/components/systemd/systemd_unitfile_config_unit_condition/Virtualization*
         - Optional
         - Type: systemd_unit_virtualization
- - **/software/systemd/systemd_unitfile_config_unit**
+ - **/software/components/systemd/systemd_unitfile_config_unit**
     - Description: the [Unit] sectionhttp://www.freedesktop.org/software/systemd/man/systemd.unit.html#%5BUnit%5D%20Section%20Options
-    - */software/systemd/systemd_unitfile_config_unit/After*
+    - */software/components/systemd/systemd_unitfile_config_unit/After*
         - Optional
         - Type: systemd_valid_unit
-    - */software/systemd/systemd_unitfile_config_unit/AllowIsolate*
+    - */software/components/systemd/systemd_unitfile_config_unit/AllowIsolate*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_unit/Assert*
+    - */software/components/systemd/systemd_unitfile_config_unit/Assert*
         - Optional
         - Type: systemd_unitfile_config_unit_condition
-    - */software/systemd/systemd_unitfile_config_unit/Before*
+    - */software/components/systemd/systemd_unitfile_config_unit/Before*
         - Optional
         - Type: systemd_valid_unit
-    - */software/systemd/systemd_unitfile_config_unit/BindsTo*
+    - */software/components/systemd/systemd_unitfile_config_unit/BindsTo*
         - Optional
         - Type: systemd_valid_unit
-    - */software/systemd/systemd_unitfile_config_unit/Condition*
+    - */software/components/systemd/systemd_unitfile_config_unit/Condition*
         - Optional
         - Type: systemd_unitfile_config_unit_condition
-    - */software/systemd/systemd_unitfile_config_unit/Conflicts*
+    - */software/components/systemd/systemd_unitfile_config_unit/Conflicts*
         - Optional
         - Type: systemd_valid_unit
-    - */software/systemd/systemd_unitfile_config_unit/DefaultDependencies*
+    - */software/components/systemd/systemd_unitfile_config_unit/DefaultDependencies*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_unit/Description*
+    - */software/components/systemd/systemd_unitfile_config_unit/Description*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit/Documentation*
+    - */software/components/systemd/systemd_unitfile_config_unit/Documentation*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit/IgnoreOnIsolate*
+    - */software/components/systemd/systemd_unitfile_config_unit/IgnoreOnIsolate*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_unit/IgnoreOnSnapshot*
+    - */software/components/systemd/systemd_unitfile_config_unit/IgnoreOnSnapshot*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_unit/JobTimeoutAction*
+    - */software/components/systemd/systemd_unitfile_config_unit/JobTimeoutAction*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit/JobTimeoutRebootArgument*
+    - */software/components/systemd/systemd_unitfile_config_unit/JobTimeoutRebootArgument*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit/JobTimeoutSec*
+    - */software/components/systemd/systemd_unitfile_config_unit/JobTimeoutSec*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/systemd/systemd_unitfile_config_unit/JoinsNamespaceOf*
+    - */software/components/systemd/systemd_unitfile_config_unit/JoinsNamespaceOf*
         - Optional
         - Type: systemd_valid_unit
-    - */software/systemd/systemd_unitfile_config_unit/NetClass*
+    - */software/components/systemd/systemd_unitfile_config_unit/NetClass*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit/OnFailure*
+    - */software/components/systemd/systemd_unitfile_config_unit/OnFailure*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit/OnFailureJobMode*
+    - */software/components/systemd/systemd_unitfile_config_unit/OnFailureJobMode*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit/PartOf*
+    - */software/components/systemd/systemd_unitfile_config_unit/PartOf*
         - Optional
         - Type: systemd_valid_unit
-    - */software/systemd/systemd_unitfile_config_unit/PropagatesReloadTo*
+    - */software/components/systemd/systemd_unitfile_config_unit/PropagatesReloadTo*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit/RefuseManualStart*
+    - */software/components/systemd/systemd_unitfile_config_unit/RefuseManualStart*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_unit/RefuseManualStop*
+    - */software/components/systemd/systemd_unitfile_config_unit/RefuseManualStop*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_unit/ReloadPropagatedFrom*
+    - */software/components/systemd/systemd_unitfile_config_unit/ReloadPropagatedFrom*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit/Requires*
+    - */software/components/systemd/systemd_unitfile_config_unit/Requires*
         - Optional
         - Type: systemd_valid_unit
-    - */software/systemd/systemd_unitfile_config_unit/RequiresMountsFor*
+    - */software/components/systemd/systemd_unitfile_config_unit/RequiresMountsFor*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit/RequiresOverridable*
+    - */software/components/systemd/systemd_unitfile_config_unit/RequiresOverridable*
         - Optional
         - Type: systemd_valid_unit
-    - */software/systemd/systemd_unitfile_config_unit/Requisite*
+    - */software/components/systemd/systemd_unitfile_config_unit/Requisite*
         - Optional
         - Type: systemd_valid_unit
-    - */software/systemd/systemd_unitfile_config_unit/RequisiteOverridable*
+    - */software/components/systemd/systemd_unitfile_config_unit/RequisiteOverridable*
         - Optional
         - Type: systemd_valid_unit
-    - */software/systemd/systemd_unitfile_config_unit/SourcePath*
+    - */software/components/systemd/systemd_unitfile_config_unit/SourcePath*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_unit/StopWhenUnneeded*
+    - */software/components/systemd/systemd_unitfile_config_unit/StopWhenUnneeded*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_unit/Wants*
+    - */software/components/systemd/systemd_unitfile_config_unit/Wants*
         - Optional
         - Type: systemd_valid_unit
- - **/software/systemd/systemd_unitfile_config_install**
+ - **/software/components/systemd/systemd_unitfile_config_install**
     - Description: the [Install] sectionhttp://www.freedesktop.org/software/systemd/man/systemd.unit.html#%5BInstall%5D%20Section%20Options
-    - */software/systemd/systemd_unitfile_config_install/Alias*
+    - */software/components/systemd/systemd_unitfile_config_install/Alias*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_install/Also*
+    - */software/components/systemd/systemd_unitfile_config_install/Also*
         - Optional
         - Type: systemd_valid_unit
-    - */software/systemd/systemd_unitfile_config_install/DefaultInstance*
+    - */software/components/systemd/systemd_unitfile_config_install/DefaultInstance*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_install/RequiredBy*
+    - */software/components/systemd/systemd_unitfile_config_install/RequiredBy*
         - Optional
         - Type: systemd_valid_unit
-    - */software/systemd/systemd_unitfile_config_install/WantedBy*
+    - */software/components/systemd/systemd_unitfile_config_install/WantedBy*
         - Optional
         - Type: systemd_valid_unit
- - **/software/systemd/systemd_unitfile_config_systemd_exec_stdouterr**
- - **/software/systemd/systemd_unitfile_config_systemd_kill**
+ - **/software/components/systemd/systemd_unitfile_config_systemd_exec_stdouterr**
+ - **/software/components/systemd/systemd_unitfile_config_systemd_kill**
     - Description: systemd.kill directiveshttp://www.freedesktop.org/software/systemd/man/systemd.kill.htmlvalid for [Service], [Socket], [Mount], or [Swap] sections
-    - */software/systemd/systemd_unitfile_config_systemd_kill/KillMode*
+    - */software/components/systemd/systemd_unitfile_config_systemd_kill/KillMode*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_systemd_kill/KillSignal*
+    - */software/components/systemd/systemd_unitfile_config_systemd_kill/KillSignal*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_systemd_kill/SendSIGHUP*
+    - */software/components/systemd/systemd_unitfile_config_systemd_kill/SendSIGHUP*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_systemd_kill/SendSIGKILL*
+    - */software/components/systemd/systemd_unitfile_config_systemd_kill/SendSIGKILL*
         - Optional
         - Type: boolean
- - **/software/systemd/systemd_unitfile_config_systemd_exec**
+ - **/software/components/systemd/systemd_unitfile_config_systemd_exec**
     - Description: systemd.exec directiveshttp://www.freedesktop.org/software/systemd/man/systemd.exec.htmlvalid for [Service], [Socket], [Mount], or [Swap] sections
-    - */software/systemd/systemd_unitfile_config_systemd_exec/CPUAffinity*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/CPUAffinity*
         - Optional
         - Type: long
-    - */software/systemd/systemd_unitfile_config_systemd_exec/CPUSchedulingPolicy*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/CPUSchedulingPolicy*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_systemd_exec/CPUSchedulingPriority*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/CPUSchedulingPriority*
         - Optional
         - Type: long
         - Range: 1..99
-    - */software/systemd/systemd_unitfile_config_systemd_exec/CPUSchedulingResetOnFork*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/CPUSchedulingResetOnFork*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_systemd_exec/Environment*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/Environment*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_systemd_exec/EnvironmentFile*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/EnvironmentFile*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_systemd_exec/Group*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/Group*
         - Optional
         - Type: defined_group
-    - */software/systemd/systemd_unitfile_config_systemd_exec/IOSchedulingClass*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/IOSchedulingClass*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_systemd_exec/IOSchedulingPriority*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/IOSchedulingPriority*
         - Optional
         - Type: long
         - Range: 0..7
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitAS*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitAS*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitCORE*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitCORE*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitCPU*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitCPU*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitDATA*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitDATA*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitFSIZE*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitFSIZE*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitLOCKS*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitLOCKS*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitMEMLOCK*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitMEMLOCK*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitMSGQUEUE*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitMSGQUEUE*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitNICE*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitNICE*
         - Optional
         - Type: long
         - Range: 0..40
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitNOFILE*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitNOFILE*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitNPROC*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitNPROC*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitRSS*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitRSS*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitRTPRIO*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitRTPRIO*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitRTTIME*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitRTTIME*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitSIGPENDING*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitSIGPENDING*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/LimitSTACK*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/LimitSTACK*
         - Optional
         - Type: long
         - Range: -1..
-    - */software/systemd/systemd_unitfile_config_systemd_exec/Nice*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/Nice*
         - Optional
         - Type: long
         - Range: -20..19
-    - */software/systemd/systemd_unitfile_config_systemd_exec/OOMScoreAdjust*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/OOMScoreAdjust*
         - Optional
         - Type: long
         - Range: -1000..1000
-    - */software/systemd/systemd_unitfile_config_systemd_exec/PrivateTmp*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/PrivateTmp*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_systemd_exec/RootDirectory*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/RootDirectory*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_systemd_exec/StandardError*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/StandardError*
         - Optional
         - Type: systemd_unitfile_config_systemd_exec_stdouterr
-    - */software/systemd/systemd_unitfile_config_systemd_exec/StandardInput*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/StandardInput*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_systemd_exec/StandardOutput*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/StandardOutput*
         - Optional
         - Type: systemd_unitfile_config_systemd_exec_stdouterr
-    - */software/systemd/systemd_unitfile_config_systemd_exec/SupplementaryGroups*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/SupplementaryGroups*
         - Optional
         - Type: defined_group
-    - */software/systemd/systemd_unitfile_config_systemd_exec/SyslogFacility*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/SyslogFacility*
         - Optional
         - Type: syslog_facility
-    - */software/systemd/systemd_unitfile_config_systemd_exec/SyslogIdentifier*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/SyslogIdentifier*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_systemd_exec/SyslogLevel*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/SyslogLevel*
         - Optional
         - Type: syslog_level
-    - */software/systemd/systemd_unitfile_config_systemd_exec/SyslogLevelPrefix*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/SyslogLevelPrefix*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_systemd_exec/TTYPath*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/TTYPath*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_systemd_exec/TTYReset*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/TTYReset*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_systemd_exec/TTYVHangup*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/TTYVHangup*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_systemd_exec/TTYVTDisallocate*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/TTYVTDisallocate*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_systemd_exec/UMask*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/UMask*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_systemd_exec/User*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/User*
         - Optional
         - Type: defined_user
-    - */software/systemd/systemd_unitfile_config_systemd_exec/WorkingDirectory*
+    - */software/components/systemd/systemd_unitfile_config_systemd_exec/WorkingDirectory*
         - Optional
         - Type: string
- - **/software/systemd/systemd_unitfile_config_service**
+ - **/software/components/systemd/systemd_unitfile_config_service**
     - Description: the [Service] sectionhttp://www.freedesktop.org/software/systemd/man/systemd.service.html
-    - */software/systemd/systemd_unitfile_config_service/AmbientCapabilities*
+    - */software/components/systemd/systemd_unitfile_config_service/AmbientCapabilities*
         - Optional
         - Type: linux_capability
-    - */software/systemd/systemd_unitfile_config_service/BusName*
+    - */software/components/systemd/systemd_unitfile_config_service/BusName*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_service/BusPolicy*
+    - */software/components/systemd/systemd_unitfile_config_service/BusPolicy*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_service/CapabilityBoundingSet*
+    - */software/components/systemd/systemd_unitfile_config_service/CapabilityBoundingSet*
         - Optional
         - Type: linux_capability
-    - */software/systemd/systemd_unitfile_config_service/ExecReload*
+    - */software/components/systemd/systemd_unitfile_config_service/ExecReload*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_service/ExecStart*
+    - */software/components/systemd/systemd_unitfile_config_service/ExecStart*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_service/ExecStartPost*
+    - */software/components/systemd/systemd_unitfile_config_service/ExecStartPost*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_service/ExecStartPre*
+    - */software/components/systemd/systemd_unitfile_config_service/ExecStartPre*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_service/ExecStop*
+    - */software/components/systemd/systemd_unitfile_config_service/ExecStop*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_service/ExecStopPost*
+    - */software/components/systemd/systemd_unitfile_config_service/ExecStopPost*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_service/GuessMainPID*
+    - */software/components/systemd/systemd_unitfile_config_service/GuessMainPID*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_service/NonBlocking*
+    - */software/components/systemd/systemd_unitfile_config_service/NonBlocking*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_service/NotifyAccess*
+    - */software/components/systemd/systemd_unitfile_config_service/NotifyAccess*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_service/PIDFile*
+    - */software/components/systemd/systemd_unitfile_config_service/PIDFile*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_service/PermissionsStartOnly*
+    - */software/components/systemd/systemd_unitfile_config_service/PermissionsStartOnly*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_service/RemainAfterExit*
+    - */software/components/systemd/systemd_unitfile_config_service/RemainAfterExit*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_service/Restart*
+    - */software/components/systemd/systemd_unitfile_config_service/Restart*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_service/RestartForceExitStatus*
+    - */software/components/systemd/systemd_unitfile_config_service/RestartForceExitStatus*
         - Optional
         - Type: long
-    - */software/systemd/systemd_unitfile_config_service/RestartPreventExitStatus*
+    - */software/components/systemd/systemd_unitfile_config_service/RestartPreventExitStatus*
         - Optional
         - Type: long
-    - */software/systemd/systemd_unitfile_config_service/RestartSec*
+    - */software/components/systemd/systemd_unitfile_config_service/RestartSec*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/systemd/systemd_unitfile_config_service/RootDirectoryStartOnly*
+    - */software/components/systemd/systemd_unitfile_config_service/RootDirectoryStartOnly*
         - Optional
         - Type: boolean
-    - */software/systemd/systemd_unitfile_config_service/Sockets*
+    - */software/components/systemd/systemd_unitfile_config_service/Sockets*
         - Optional
         - Type: systemd_valid_unit
-    - */software/systemd/systemd_unitfile_config_service/SuccessExitStatus*
+    - */software/components/systemd/systemd_unitfile_config_service/SuccessExitStatus*
         - Optional
         - Type: long
-    - */software/systemd/systemd_unitfile_config_service/TimeoutSec*
-        - Optional
-        - Type: long
-        - Range: 0..
-    - */software/systemd/systemd_unitfile_config_service/TimeoutStartSec*
+    - */software/components/systemd/systemd_unitfile_config_service/TimeoutSec*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/systemd/systemd_unitfile_config_service/TimeoutStopSec*
+    - */software/components/systemd/systemd_unitfile_config_service/TimeoutStartSec*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/systemd/systemd_unitfile_config_service/Type*
+    - */software/components/systemd/systemd_unitfile_config_service/TimeoutStopSec*
+        - Optional
+        - Type: long
+        - Range: 0..
+    - */software/components/systemd/systemd_unitfile_config_service/Type*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config_service/WatchdogSec*
+    - */software/components/systemd/systemd_unitfile_config_service/WatchdogSec*
         - Optional
         - Type: long
         - Range: 0..
- - **/software/systemd/systemd_unitfile_config**
+ - **/software/components/systemd/systemd_unitfile_config**
     - Description: Unit configuration sections includes, unit and install are type agnostic unit and install are mandatory, but not enforced by schema (possible issues in case of replace=true) the other attributes are only valid for a specific type
-    - */software/systemd/systemd_unitfile_config/includes*
+    - */software/components/systemd/systemd_unitfile_config/includes*
         - Description: list of existing/other units to base the configuration on (e.g. when creating a new service with a different name, based on an exsiting one)
         - Optional
         - Type: string
-    - */software/systemd/systemd_unitfile_config/install*
+    - */software/components/systemd/systemd_unitfile_config/install*
         - Optional
         - Type: systemd_unitfile_config_install
-    - */software/systemd/systemd_unitfile_config/service*
+    - */software/components/systemd/systemd_unitfile_config/service*
         - Optional
         - Type: systemd_unitfile_config_service
-    - */software/systemd/systemd_unitfile_config/unit*
+    - */software/components/systemd/systemd_unitfile_config/unit*
         - Optional
         - Type: systemd_unitfile_config_unit
- - **/software/systemd/systemd_unitfile_custom**
+ - **/software/components/systemd/systemd_unitfile_custom**
     - Description: Custom unit configuration to allow inserting computed configuration dataIt overrides the data defined in the regular config schema,so do not forget to set those as well (can be dummy value).
-    - */software/systemd/systemd_unitfile_custom/CPUAffinity*
+    - */software/components/systemd/systemd_unitfile_custom/CPUAffinity*
         - Description: CPUAffinity list determined via 'hwloc-calc --physical-output --intersect PU <location0> <location1>' Allows to cpubind on numanodes (as we cannot trust logical CPU indices, which regular CPUAffinity requires) Forces an empty list to reset any possible previously defined affinity.
         - Optional
         - Type: hwloc_location
- - **/software/systemd/systemd_unitfile**
+ - **/software/components/systemd/systemd_unitfile**
     - Description: Unit file configuration
-    - */software/systemd/systemd_unitfile/config*
+    - */software/components/systemd/systemd_unitfile/config*
         - Description: unitfile configuration data
-        - Optional
+        - Required
         - Type: systemd_unitfile_config
-    - */software/systemd/systemd_unitfile/custom*
+    - */software/components/systemd/systemd_unitfile/custom*
         - Description: custom unitfile configuration data
         - Optional
         - Type: systemd_unitfile_custom
-    - */software/systemd/systemd_unitfile/replace*
+    - */software/components/systemd/systemd_unitfile/replace*
         - Description: replaceunitfile configuration: if true, only the defined parameters will be used by the unit; anything else is ignored
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/systemd/systemd_unitfile/only*
+    - */software/components/systemd/systemd_unitfile/only*
         - Description: only use the unit parameters for unitfile configuration, ignore other defined here such as targets (but still allow e.g. values defined by legacy chkconfig)
         - Optional
         - Type: boolean
- - **/software/systemd/systemd_target**
- - **/software/systemd/systemd_unit_type**
-    - */software/systemd/systemd_unit_type/name*
+ - **/software/components/systemd/systemd_target**
+ - **/software/components/systemd/systemd_unit_type**
+    - */software/components/systemd/systemd_unit_type/name*
         - Optional
         - Type: string
-    - */software/systemd/systemd_unit_type/targets*
-        - Optional
+    - */software/components/systemd/systemd_unit_type/targets*
+        - Required
         - Type: systemd_target
-    - */software/systemd/systemd_unit_type/type*
-        - Optional
+    - */software/components/systemd/systemd_unit_type/type*
+        - Required
         - Type: string
         - Default value: service
-    - */software/systemd/systemd_unit_type/startstop*
-        - Optional
+    - */software/components/systemd/systemd_unit_type/startstop*
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/systemd/systemd_unit_type/state*
-        - Optional
+    - */software/components/systemd/systemd_unit_type/state*
+        - Required
         - Type: string
         - Default value: enabled
-    - */software/systemd/systemd_unit_type/file*
+    - */software/components/systemd/systemd_unit_type/file*
         - Description: unitfile configuration
         - Optional
         - Type: systemd_unitfile
- - **/software/systemd/component_systemd**
-    - */software/systemd/component_systemd/skip*
-        - Optional
+ - **/software/components/systemd/component_systemd**
+    - */software/components/systemd/component_systemd/skip*
+        - Required
         - Type: systemd_skip
-    - */software/systemd/component_systemd/unconfigured*
+    - */software/components/systemd/component_systemd/unconfigured*
         - Description: what to do with unconfigured units: ignore, enabled, disabled, on (enabled+start), off (disabled+stop; advanced option)
-        - Optional
+        - Required
         - Type: string
         - Default value: ignore
-    - */software/systemd/component_systemd/unit*
+    - */software/components/systemd/component_systemd/unit*
         - Optional
         - Type: systemd_unit_type

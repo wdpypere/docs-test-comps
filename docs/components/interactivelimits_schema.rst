@@ -5,7 +5,7 @@ interactivelimits :: schema
 Types
 -----
 
- - **/software/interactivelimits/component_interactivelimits_type**
-    - */software/interactivelimits/component_interactivelimits_type/values*
-        - Optional
+ - **/software/components/interactivelimits/component_interactivelimits_type**
+    - */software/components/interactivelimits/component_interactivelimits_type/values*
+        - Required
         - Type: string

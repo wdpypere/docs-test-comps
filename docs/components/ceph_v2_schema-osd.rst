@@ -5,52 +5,52 @@ ceph :: v2 :: schema-osd
 Types
 -----
 
- - **/software/ceph/ceph_osd_config**
+ - **/software/components/ceph/ceph_osd_config**
     - Description: configuration options for a ceph osd daemon
-    - */software/ceph/ceph_osd_config/osd_deep_scrub_interval*
+    - */software/components/ceph/ceph_osd_config/osd_deep_scrub_interval*
         - Optional
         - Type: double
-    - */software/ceph/ceph_osd_config/osd_journal_size*
+    - */software/components/ceph/ceph_osd_config/osd_journal_size*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/ceph/ceph_osd_config/osd_max_scrubs*
+    - */software/components/ceph/ceph_osd_config/osd_max_scrubs*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/ceph/ceph_osd_config/osd_objectstore*
+    - */software/components/ceph/ceph_osd_config/osd_objectstore*
         - Optional
         - Type: string
-    - */software/ceph/ceph_osd_config/osd_op_threads*
+    - */software/components/ceph/ceph_osd_config/osd_op_threads*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/ceph/ceph_osd_config/osd_scrub_begin_hour*
+    - */software/components/ceph/ceph_osd_config/osd_scrub_begin_hour*
         - Optional
         - Type: long
         - Range: 0..24
-    - */software/ceph/ceph_osd_config/osd_scrub_end_hour*
+    - */software/components/ceph/ceph_osd_config/osd_scrub_end_hour*
         - Optional
         - Type: long
         - Range: 0..24
-    - */software/ceph/ceph_osd_config/osd_scrub_load_threshold*
+    - */software/components/ceph/ceph_osd_config/osd_scrub_load_threshold*
         - Optional
         - Type: double
-    - */software/ceph/ceph_osd_config/osd_scrub_min_interval*
+    - */software/components/ceph/ceph_osd_config/osd_scrub_min_interval*
         - Optional
         - Type: double
-    - */software/ceph/ceph_osd_config/osd_scrub_max_interval*
+    - */software/components/ceph/ceph_osd_config/osd_scrub_max_interval*
         - Optional
         - Type: double
- - **/software/ceph/ceph_osd**
+ - **/software/components/ceph/ceph_osd**
     - Description: ceph osd-specific typeOnly bluestore support for nowdmcrypt supported with ceph-volume > 12.2.3
-    - */software/ceph/ceph_osd/class*
+    - */software/components/ceph/ceph_osd/class*
         - Optional
         - Type: string
-    - */software/ceph/ceph_osd/storetype*
-        - Optional
+    - */software/components/ceph/ceph_osd/storetype*
+        - Required
         - Type: choice
         - Default value: bluestore
-    - */software/ceph/ceph_osd/dmcrypt*
+    - */software/components/ceph/ceph_osd/dmcrypt*
         - Optional
         - Type: boolean

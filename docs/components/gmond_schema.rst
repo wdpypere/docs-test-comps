@@ -5,246 +5,246 @@ gmond :: schema
 Types
 -----
 
- - **/software/gmond/gmond_acl_access**
-    - */software/gmond/gmond_acl_access/ip*
-        - Optional
+ - **/software/components/gmond/gmond_acl_access**
+    - */software/components/gmond/gmond_acl_access/ip*
+        - Required
         - Type: type_ip
-    - */software/gmond/gmond_acl_access/mask*
-        - Optional
+    - */software/components/gmond/gmond_acl_access/mask*
+        - Required
         - Type: long
         - Range: 0..32
-    - */software/gmond/gmond_acl_access/action*
-        - Optional
+    - */software/components/gmond/gmond_acl_access/action*
+        - Required
         - Type: string
- - **/software/gmond/gmond_acl**
-    - */software/gmond/gmond_acl/default*
-        - Optional
+ - **/software/components/gmond/gmond_acl**
+    - */software/components/gmond/gmond_acl/default*
+        - Required
         - Type: string
-    - */software/gmond/gmond_acl/access*
-        - Optional
+    - */software/components/gmond/gmond_acl/access*
+        - Required
         - Type: gmond_acl_access
- - **/software/gmond/gmond_cluster**
-    - */software/gmond/gmond_cluster/name*
+ - **/software/components/gmond/gmond_cluster**
+    - */software/components/gmond/gmond_cluster/name*
         - Optional
         - Type: string
         - Default value: unspecified
-    - */software/gmond/gmond_cluster/owner*
+    - */software/components/gmond/gmond_cluster/owner*
         - Optional
         - Type: string
         - Default value: unspecified
-    - */software/gmond/gmond_cluster/latlong*
+    - */software/components/gmond/gmond_cluster/latlong*
         - Optional
         - Type: string
         - Default value: unspecified
-    - */software/gmond/gmond_cluster/url*
+    - */software/components/gmond/gmond_cluster/url*
         - Optional
         - Type: type_absoluteURI
- - **/software/gmond/gmond_host**
-    - */software/gmond/gmond_host/location*
-        - Optional
+ - **/software/components/gmond/gmond_host**
+    - */software/components/gmond/gmond_host/location*
+        - Required
         - Type: string
         - Default value: unspecified
- - **/software/gmond/gmond_globals**
-    - */software/gmond/gmond_globals/daemonize*
+ - **/software/components/gmond/gmond_globals**
+    - */software/components/gmond/gmond_globals/daemonize*
         - Optional
         - Type: boolean
         - Default value: true
-    - */software/gmond/gmond_globals/setuid*
+    - */software/components/gmond/gmond_globals/setuid*
         - Optional
         - Type: boolean
         - Default value: true
-    - */software/gmond/gmond_globals/user*
+    - */software/components/gmond/gmond_globals/user*
         - Optional
         - Type: string
         - Default value: nobody
-    - */software/gmond/gmond_globals/debug_level*
+    - */software/components/gmond/gmond_globals/debug_level*
         - Optional
         - Type: long
         - Default value: 0
-    - */software/gmond/gmond_globals/mute*
+    - */software/components/gmond/gmond_globals/mute*
         - Optional
         - Type: boolean
         - Default value: false
-    - */software/gmond/gmond_globals/deaf*
+    - */software/components/gmond/gmond_globals/deaf*
         - Optional
         - Type: boolean
         - Default value: false
-    - */software/gmond/gmond_globals/host_dmax*
+    - */software/components/gmond/gmond_globals/host_dmax*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 0
-    - */software/gmond/gmond_globals/host_tmax*
+    - */software/components/gmond/gmond_globals/host_tmax*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 0
-    - */software/gmond/gmond_globals/cleanup_threshold*
+    - */software/components/gmond/gmond_globals/cleanup_threshold*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 0
-    - */software/gmond/gmond_globals/gexec*
+    - */software/components/gmond/gmond_globals/gexec*
         - Optional
         - Type: boolean
         - Default value: false
-    - */software/gmond/gmond_globals/send_metadata_interval*
+    - */software/components/gmond/gmond_globals/send_metadata_interval*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 0
-    - */software/gmond/gmond_globals/module_dir*
+    - */software/components/gmond/gmond_globals/module_dir*
         - Optional
         - Type: string
-    - */software/gmond/gmond_globals/allow_extra_data*
+    - */software/components/gmond/gmond_globals/allow_extra_data*
         - Optional
         - Type: boolean
-    - */software/gmond/gmond_globals/max_udp_msg_len*
+    - */software/components/gmond/gmond_globals/max_udp_msg_len*
         - Optional
         - Type: long
         - Range: 0..65536
- - **/software/gmond/gmond_udp_send_channel**
-    - */software/gmond/gmond_udp_send_channel/mcast_join*
+ - **/software/components/gmond/gmond_udp_send_channel**
+    - */software/components/gmond/gmond_udp_send_channel/mcast_join*
         - Optional
         - Type: type_ipv4
-    - */software/gmond/gmond_udp_send_channel/mcast_if*
+    - */software/components/gmond/gmond_udp_send_channel/mcast_if*
         - Optional
         - Type: string
-    - */software/gmond/gmond_udp_send_channel/host*
+    - */software/components/gmond/gmond_udp_send_channel/host*
         - Optional
         - Type: type_hostname
-    - */software/gmond/gmond_udp_send_channel/port*
-        - Optional
+    - */software/components/gmond/gmond_udp_send_channel/port*
+        - Required
         - Type: type_port
-    - */software/gmond/gmond_udp_send_channel/ttl*
+    - */software/components/gmond/gmond_udp_send_channel/ttl*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/gmond/gmond_udp_send_channel/bind*
+    - */software/components/gmond/gmond_udp_send_channel/bind*
         - Optional
         - Type: type_ipv4
-    - */software/gmond/gmond_udp_send_channel/bind_hostname*
+    - */software/components/gmond/gmond_udp_send_channel/bind_hostname*
         - Optional
         - Type: boolean
- - **/software/gmond/gmond_udp_recv_channel**
-    - */software/gmond/gmond_udp_recv_channel/mcast_join*
+ - **/software/components/gmond/gmond_udp_recv_channel**
+    - */software/components/gmond/gmond_udp_recv_channel/mcast_join*
         - Optional
         - Type: type_ipv4
-    - */software/gmond/gmond_udp_recv_channel/bind*
+    - */software/components/gmond/gmond_udp_recv_channel/bind*
         - Optional
         - Type: type_ip
-    - */software/gmond/gmond_udp_recv_channel/mcast_if*
+    - */software/components/gmond/gmond_udp_recv_channel/mcast_if*
         - Optional
         - Type: string
-    - */software/gmond/gmond_udp_recv_channel/port*
-        - Optional
+    - */software/components/gmond/gmond_udp_recv_channel/port*
+        - Required
         - Type: type_port
-    - */software/gmond/gmond_udp_recv_channel/family*
+    - */software/components/gmond/gmond_udp_recv_channel/family*
         - Optional
         - Type: string
         - Default value: inet4
-    - */software/gmond/gmond_udp_recv_channel/acl*
+    - */software/components/gmond/gmond_udp_recv_channel/acl*
         - Optional
         - Type: gmond_acl
- - **/software/gmond/gmond_tcp_accept_channel**
-    - */software/gmond/gmond_tcp_accept_channel/bind*
+ - **/software/components/gmond/gmond_tcp_accept_channel**
+    - */software/components/gmond/gmond_tcp_accept_channel/bind*
         - Optional
         - Type: type_ip
-    - */software/gmond/gmond_tcp_accept_channel/port*
-        - Optional
+    - */software/components/gmond/gmond_tcp_accept_channel/port*
+        - Required
         - Type: type_port
-    - */software/gmond/gmond_tcp_accept_channel/family*
+    - */software/components/gmond/gmond_tcp_accept_channel/family*
         - Optional
         - Type: string
         - Default value: inet4
-    - */software/gmond/gmond_tcp_accept_channel/timeout*
+    - */software/components/gmond/gmond_tcp_accept_channel/timeout*
         - Description: timeout in micro seconds
         - Optional
         - Type: long
         - Default value: 1000000
-    - */software/gmond/gmond_tcp_accept_channel/acl*
+    - */software/components/gmond/gmond_tcp_accept_channel/acl*
         - Optional
         - Type: gmond_acl
- - **/software/gmond/gmond_metric**
-    - */software/gmond/gmond_metric/name*
-        - Optional
+ - **/software/components/gmond/gmond_metric**
+    - */software/components/gmond/gmond_metric/name*
+        - Required
         - Type: string
-    - */software/gmond/gmond_metric/value_threshold*
+    - */software/components/gmond/gmond_metric/value_threshold*
         - Optional
         - Type: double
-    - */software/gmond/gmond_metric/title*
+    - */software/components/gmond/gmond_metric/title*
         - Optional
         - Type: string
- - **/software/gmond/gmond_collection_group**
-    - */software/gmond/gmond_collection_group/collect_once*
+ - **/software/components/gmond/gmond_collection_group**
+    - */software/components/gmond/gmond_collection_group/collect_once*
         - Optional
         - Type: boolean
-    - */software/gmond/gmond_collection_group/collect_every*
+    - */software/components/gmond/gmond_collection_group/collect_every*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/gmond/gmond_collection_group/time_threshold*
+    - */software/components/gmond/gmond_collection_group/time_threshold*
         - Optional
         - Type: long
         - Range: 1..
         - Default value: 3600
-    - */software/gmond/gmond_collection_group/metric*
-        - Optional
+    - */software/components/gmond/gmond_collection_group/metric*
+        - Required
         - Type: gmond_metric
- - **/software/gmond/gmond_module**
-    - */software/gmond/gmond_module/name*
+ - **/software/components/gmond/gmond_module**
+    - */software/components/gmond/gmond_module/name*
+        - Required
+        - Type: string
+    - */software/components/gmond/gmond_module/language*
         - Optional
         - Type: string
-    - */software/gmond/gmond_module/language*
+    - */software/components/gmond/gmond_module/path*
         - Optional
         - Type: string
-    - */software/gmond/gmond_module/path*
+    - */software/components/gmond/gmond_module/params*
         - Optional
         - Type: string
-    - */software/gmond/gmond_module/params*
-        - Optional
-        - Type: string
-    - */software/gmond/gmond_module/param*
+    - */software/components/gmond/gmond_module/param*
         - Optional
         - Type: dict
- - **/software/gmond/gmond_component**
-    - */software/gmond/gmond_component/cluster*
+ - **/software/components/gmond/gmond_component**
+    - */software/components/gmond/gmond_component/cluster*
         - Description: Cluster configuration
         - Optional
         - Type: gmond_cluster
-    - */software/gmond/gmond_component/host*
+    - */software/components/gmond/gmond_component/host*
         - Description: Host configuration
         - Optional
         - Type: gmond_host
-    - */software/gmond/gmond_component/globals*
+    - */software/components/gmond/gmond_component/globals*
         - Description: Configuration of gmond
-        - Optional
+        - Required
         - Type: gmond_globals
-    - */software/gmond/gmond_component/udp_send_channel*
+    - */software/components/gmond/gmond_component/udp_send_channel*
         - Description: List of UDP channels to send information to.
-        - Optional
+        - Required
         - Type: gmond_udp_send_channel
-    - */software/gmond/gmond_component/udp_recv_channel*
+    - */software/components/gmond/gmond_component/udp_recv_channel*
         - Description: List of UDP channels to receive information from.
-        - Optional
+        - Required
         - Type: gmond_udp_recv_channel
-    - */software/gmond/gmond_component/tcp_accept_channel*
+    - */software/components/gmond/gmond_component/tcp_accept_channel*
         - Description: List of TCP channels from which information is accepted.
-        - Optional
+        - Required
         - Type: gmond_tcp_accept_channel
-    - */software/gmond/gmond_component/collection_group*
+    - */software/components/gmond/gmond_component/collection_group*
         - Description: List of collection groups
-        - Optional
+        - Required
         - Type: gmond_collection_group
-    - */software/gmond/gmond_component/module*
+    - */software/components/gmond/gmond_component/module*
         - Description: List of modules
         - Optional
         - Type: gmond_module
-    - */software/gmond/gmond_component/include*
+    - */software/components/gmond/gmond_component/include*
         - Description: Optional list of additional files to include.
         - Optional
         - Type: absolute_file_path
-    - */software/gmond/gmond_component/file*
+    - */software/components/gmond/gmond_component/file*
         - Description: The location of the configuration file. The correct value differs between Ganglia 3.0 (/etc/gmond.conf) and 3.1 (/etc/ganglia/gmond.conf). There is no default value.
-        - Optional
+        - Required
         - Type: absolute_file_path

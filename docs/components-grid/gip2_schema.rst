@@ -5,81 +5,81 @@ gip2 :: schema
 Types
 -----
 
- - **/software/gip2/structure_gip2_attribute**
- - **/software/gip2/structure_gip2_ldif**
-    - */software/gip2/structure_gip2_ldif/confFile*
+ - **/software/components/gip2/structure_gip2_attribute**
+ - **/software/components/gip2/structure_gip2_ldif**
+    - */software/components/gip2/structure_gip2_ldif/confFile*
         - Optional
         - Type: string
-    - */software/gip2/structure_gip2_ldif/template*
+    - */software/components/gip2/structure_gip2_ldif/template*
         - Optional
         - Type: string
-    - */software/gip2/structure_gip2_ldif/ldifFile*
-        - Optional
+    - */software/components/gip2/structure_gip2_ldif/ldifFile*
+        - Required
         - Type: string
-    - */software/gip2/structure_gip2_ldif/entries*
+    - */software/components/gip2/structure_gip2_ldif/entries*
         - Optional
         - Type: structure_gip2_attribute
-    - */software/gip2/structure_gip2_ldif/staticInfoCmd*
+    - */software/components/gip2/structure_gip2_ldif/staticInfoCmd*
         - Optional
         - Type: string
- - **/software/gip2/gip2_component**
-    - */software/gip2/gip2_component/user*
-        - Optional
+ - **/software/components/gip2/gip2_component**
+    - */software/components/gip2/gip2_component/user*
+        - Required
         - Type: string
-    - */software/gip2/gip2_component/group*
-        - Optional
+    - */software/components/gip2/gip2_component/group*
+        - Required
         - Type: string
         - Default value: root
-    - */software/gip2/gip2_component/flavor*
-        - Optional
+    - */software/components/gip2/gip2_component/flavor*
+        - Required
         - Type: string
         - Default value: lcg
-    - */software/gip2/gip2_component/basedir*
+    - */software/components/gip2/gip2_component/basedir*
+        - Required
+        - Type: string
+    - */software/components/gip2/gip2_component/etcDir*
         - Optional
         - Type: string
-    - */software/gip2/gip2_component/etcDir*
+    - */software/components/gip2/gip2_component/ldifDir*
         - Optional
         - Type: string
-    - */software/gip2/gip2_component/ldifDir*
+    - */software/components/gip2/gip2_component/pluginDir*
         - Optional
         - Type: string
-    - */software/gip2/gip2_component/pluginDir*
+    - */software/components/gip2/gip2_component/providerDir*
         - Optional
         - Type: string
-    - */software/gip2/gip2_component/providerDir*
+    - */software/components/gip2/gip2_component/workDirs*
         - Optional
         - Type: string
-    - */software/gip2/gip2_component/workDirs*
+    - */software/components/gip2/gip2_component/staticInfoCmd*
         - Optional
         - Type: string
-    - */software/gip2/gip2_component/staticInfoCmd*
-        - Optional
-        - Type: string
-    - */software/gip2/gip2_component/bdiiRestartAllowed*
-        - Optional
+    - */software/components/gip2/gip2_component/bdiiRestartAllowed*
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/gip2/gip2_component/confFiles*
+    - */software/components/gip2/gip2_component/confFiles*
         - Optional
         - Type: string
-    - */software/gip2/gip2_component/ldif*
+    - */software/components/gip2/gip2_component/ldif*
         - Optional
         - Type: structure_gip2_ldif
-    - */software/gip2/gip2_component/ldifConfEntries*
+    - */software/components/gip2/gip2_component/ldifConfEntries*
         - Optional
         - Type: structure_gip2_attribute
-    - */software/gip2/gip2_component/plugin*
+    - */software/components/gip2/gip2_component/plugin*
         - Optional
         - Type: string
-    - */software/gip2/gip2_component/provider*
+    - */software/components/gip2/gip2_component/provider*
         - Optional
         - Type: string
-    - */software/gip2/gip2_component/scripts*
+    - */software/components/gip2/gip2_component/scripts*
         - Optional
         - Type: string
-    - */software/gip2/gip2_component/stubs*
+    - */software/components/gip2/gip2_component/stubs*
         - Optional
         - Type: structure_gip2_attribute
-    - */software/gip2/gip2_component/external*
+    - */software/components/gip2/gip2_component/external*
         - Optional
         - Type: string

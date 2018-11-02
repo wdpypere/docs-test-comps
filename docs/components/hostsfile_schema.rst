@@ -5,14 +5,14 @@ hostsfile :: schema
 Types
 -----
 
- - **/software/hostsfile/component_hostsfile_type**
-    - */software/hostsfile/component_hostsfile_type/file*
+ - **/software/components/hostsfile/component_hostsfile_type**
+    - */software/components/hostsfile/component_hostsfile_type/file*
         - Optional
         - Type: string
-    - */software/hostsfile/component_hostsfile_type/entries*
-        - Optional
+    - */software/components/hostsfile/component_hostsfile_type/entries*
+        - Required
         - Type: dict
-    - */software/hostsfile/component_hostsfile_type/takeover*
-        - Optional
+    - */software/components/hostsfile/component_hostsfile_type/takeover*
+        - Required
         - Type: boolean
         - Default value: false

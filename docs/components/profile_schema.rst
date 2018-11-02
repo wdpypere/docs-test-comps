@@ -5,38 +5,38 @@ profile :: schema
 Types
 -----
 
- - **/software/profile/structure_profile_path**
-    - */software/profile/structure_profile_path/prepend*
+ - **/software/components/profile/structure_profile_path**
+    - */software/components/profile/structure_profile_path/prepend*
         - Optional
         - Type: string
-    - */software/profile/structure_profile_path/append*
+    - */software/components/profile/structure_profile_path/append*
         - Optional
         - Type: string
-    - */software/profile/structure_profile_path/value*
+    - */software/components/profile/structure_profile_path/value*
         - Optional
         - Type: string
- - **/software/profile/structure_profile_script**
-    - */software/profile/structure_profile_script/flavors*
+ - **/software/components/profile/structure_profile_script**
+    - */software/components/profile/structure_profile_script/flavors*
+        - Required
+        - Type: string
+    - */software/components/profile/structure_profile_script/env*
         - Optional
         - Type: string
-    - */software/profile/structure_profile_script/env*
-        - Optional
-        - Type: string
-    - */software/profile/structure_profile_script/path*
+    - */software/components/profile/structure_profile_script/path*
         - Optional
         - Type: structure_profile_path
-    - */software/profile/structure_profile_script/flavorSuffix*
-        - Optional
+    - */software/components/profile/structure_profile_script/flavorSuffix*
+        - Required
         - Type: boolean
         - Default value: true
- - **/software/profile/component_profile**
-    - */software/profile/component_profile/configDir*
+ - **/software/components/profile/component_profile**
+    - */software/components/profile/component_profile/configDir*
         - Optional
         - Type: string
-    - */software/profile/component_profile/configName*
+    - */software/components/profile/component_profile/configName*
         - Optional
         - Type: string
-    - */software/profile/component_profile/scripts*
+    - */software/components/profile/component_profile/scripts*
         - Optional
         - Type: structure_profile_script
 

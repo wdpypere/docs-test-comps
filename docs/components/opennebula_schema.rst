@@ -5,970 +5,970 @@ opennebula :: schema
 Types
 -----
 
- - **/software/opennebula/directory**
- - **/software/opennebula/opennebula_mysql_db**
-    - */software/opennebula/opennebula_mysql_db/server*
+ - **/software/components/opennebula/directory**
+ - **/software/components/opennebula/opennebula_mysql_db**
+    - */software/components/opennebula/opennebula_mysql_db/server*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_mysql_db/port*
+    - */software/components/opennebula/opennebula_mysql_db/port*
         - Optional
         - Type: type_port
-    - */software/opennebula/opennebula_mysql_db/user*
+    - */software/components/opennebula/opennebula_mysql_db/user*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_mysql_db/passwd*
+    - */software/components/opennebula/opennebula_mysql_db/passwd*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_mysql_db/db_name*
+    - */software/components/opennebula/opennebula_mysql_db/db_name*
         - Optional
         - Type: string
- - **/software/opennebula/opennebula_db**
-    - */software/opennebula/opennebula_db/backend*
-        - Optional
+ - **/software/components/opennebula/opennebula_db**
+    - */software/components/opennebula/opennebula_db/backend*
+        - Required
         - Type: string
- - **/software/opennebula/opennebula_log**
-    - */software/opennebula/opennebula_log/system*
-        - Optional
+ - **/software/components/opennebula/opennebula_log**
+    - */software/components/opennebula/opennebula_log/system*
+        - Required
         - Type: string
         - Default value: file
-    - */software/opennebula/opennebula_log/debug_level*
-        - Optional
+    - */software/components/opennebula/opennebula_log/debug_level*
+        - Required
         - Type: long
         - Range: 0..3
         - Default value: 3
- - **/software/opennebula/opennebula_federation**
-    - */software/opennebula/opennebula_federation/mode*
-        - Optional
+ - **/software/components/opennebula/opennebula_federation**
+    - */software/components/opennebula/opennebula_federation/mode*
+        - Required
         - Type: string
         - Default value: STANDALONE
-    - */software/opennebula/opennebula_federation/zone_id*
-        - Optional
+    - */software/components/opennebula/opennebula_federation/zone_id*
+        - Required
         - Type: long
         - Default value: 0
-    - */software/opennebula/opennebula_federation/master_oned*
-        - Optional
+    - */software/components/opennebula/opennebula_federation/master_oned*
+        - Required
         - Type: string
- - **/software/opennebula/opennebula_im**
-    - */software/opennebula/opennebula_im/executable*
-        - Optional
+ - **/software/components/opennebula/opennebula_im**
+    - */software/components/opennebula/opennebula_im/executable*
+        - Required
         - Type: string
         - Default value: one_im_ssh
-    - */software/opennebula/opennebula_im/arguments*
+    - */software/components/opennebula/opennebula_im/arguments*
+        - Required
+        - Type: string
+    - */software/components/opennebula/opennebula_im/sunstone_name*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_im/sunstone_name*
-        - Optional
-        - Type: string
- - **/software/opennebula/opennebula_im_mad_collectd**
- - **/software/opennebula/opennebula_im_mad_kvm**
- - **/software/opennebula/opennebula_im_mad_xen**
- - **/software/opennebula/opennebula_im_mad**
-    - */software/opennebula/opennebula_im_mad/collectd*
-        - Optional
+ - **/software/components/opennebula/opennebula_im_mad_collectd**
+ - **/software/components/opennebula/opennebula_im_mad_kvm**
+ - **/software/components/opennebula/opennebula_im_mad_xen**
+ - **/software/components/opennebula/opennebula_im_mad**
+    - */software/components/opennebula/opennebula_im_mad/collectd*
+        - Required
         - Type: opennebula_im_mad_collectd
-    - */software/opennebula/opennebula_im_mad/kvm*
-        - Optional
+    - */software/components/opennebula/opennebula_im_mad/kvm*
+        - Required
         - Type: opennebula_im_mad_kvm
-    - */software/opennebula/opennebula_im_mad/xen*
+    - */software/components/opennebula/opennebula_im_mad/xen*
         - Optional
         - Type: opennebula_im_mad_xen
- - **/software/opennebula/opennebula_vm**
-    - */software/opennebula/opennebula_vm/executable*
-        - Optional
+ - **/software/components/opennebula/opennebula_vm**
+    - */software/components/opennebula/opennebula_vm/executable*
+        - Required
         - Type: string
         - Default value: one_vmm_exec
-    - */software/opennebula/opennebula_vm/arguments*
-        - Optional
+    - */software/components/opennebula/opennebula_vm/arguments*
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_vm/default*
-        - Optional
+    - */software/components/opennebula/opennebula_vm/default*
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_vm/sunstone_name*
-        - Optional
+    - */software/components/opennebula/opennebula_vm/sunstone_name*
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_vm/imported_vms_actions*
-        - Optional
+    - */software/components/opennebula/opennebula_vm/imported_vms_actions*
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_vm/keep_snapshots*
-        - Optional
+    - */software/components/opennebula/opennebula_vm/keep_snapshots*
+        - Required
         - Type: boolean
         - Default value: false
- - **/software/opennebula/opennebula_vm_mad_kvm**
- - **/software/opennebula/opennebula_vm_mad_xen**
- - **/software/opennebula/opennebula_vm_mad**
-    - */software/opennebula/opennebula_vm_mad/kvm*
-        - Optional
+ - **/software/components/opennebula/opennebula_vm_mad_kvm**
+ - **/software/components/opennebula/opennebula_vm_mad_xen**
+ - **/software/components/opennebula/opennebula_vm_mad**
+    - */software/components/opennebula/opennebula_vm_mad/kvm*
+        - Required
         - Type: opennebula_vm_mad_kvm
-    - */software/opennebula/opennebula_vm_mad/xen*
+    - */software/components/opennebula/opennebula_vm_mad/xen*
         - Optional
         - Type: opennebula_vm_mad_xen
- - **/software/opennebula/opennebula_tm_mad**
-    - */software/opennebula/opennebula_tm_mad/executable*
-        - Optional
+ - **/software/components/opennebula/opennebula_tm_mad**
+    - */software/components/opennebula/opennebula_tm_mad/executable*
+        - Required
         - Type: string
         - Default value: one_tm
-    - */software/opennebula/opennebula_tm_mad/arguments*
-        - Optional
+    - */software/components/opennebula/opennebula_tm_mad/arguments*
+        - Required
         - Type: string
         - Default value: -t 15 -d dummy,lvm,shared,fs_lvm,qcow2,ssh,ceph,dev,vcenter,iscsi_libvirt
- - **/software/opennebula/opennebula_datastore_mad**
-    - */software/opennebula/opennebula_datastore_mad/executable*
-        - Optional
+ - **/software/components/opennebula/opennebula_datastore_mad**
+    - */software/components/opennebula/opennebula_datastore_mad/executable*
+        - Required
         - Type: string
         - Default value: one_datastore
-    - */software/opennebula/opennebula_datastore_mad/arguments*
-        - Optional
+    - */software/components/opennebula/opennebula_datastore_mad/arguments*
+        - Required
         - Type: string
         - Default value: -t 15 -d dummy,fs,vmfs,lvm,ceph
- - **/software/opennebula/opennebula_hm_mad**
-    - */software/opennebula/opennebula_hm_mad/executable*
-        - Optional
+ - **/software/components/opennebula/opennebula_hm_mad**
+    - */software/components/opennebula/opennebula_hm_mad/executable*
+        - Required
         - Type: string
         - Default value: one_hm
- - **/software/opennebula/opennebula_auth_mad**
-    - */software/opennebula/opennebula_auth_mad/executable*
-        - Optional
+ - **/software/components/opennebula/opennebula_auth_mad**
+    - */software/components/opennebula/opennebula_auth_mad/executable*
+        - Required
         - Type: string
         - Default value: one_auth_mad
-    - */software/opennebula/opennebula_auth_mad/authn*
-        - Optional
+    - */software/components/opennebula/opennebula_auth_mad/authn*
+        - Required
         - Type: string
         - Default value: ssh,x509,ldap,server_cipher,server_x509
- - **/software/opennebula/opennebula_tm_mad_conf**
-    - */software/opennebula/opennebula_tm_mad_conf/name*
-        - Optional
+ - **/software/components/opennebula/opennebula_tm_mad_conf**
+    - */software/components/opennebula/opennebula_tm_mad_conf/name*
+        - Required
         - Type: string
         - Default value: dummy
-    - */software/opennebula/opennebula_tm_mad_conf/ln_target*
-        - Optional
+    - */software/components/opennebula/opennebula_tm_mad_conf/ln_target*
+        - Required
         - Type: string
         - Default value: NONE
-    - */software/opennebula/opennebula_tm_mad_conf/clone_target*
-        - Optional
+    - */software/components/opennebula/opennebula_tm_mad_conf/clone_target*
+        - Required
         - Type: string
         - Default value: SYSTEM
-    - */software/opennebula/opennebula_tm_mad_conf/shared*
-        - Optional
+    - */software/components/opennebula/opennebula_tm_mad_conf/shared*
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/opennebula/opennebula_tm_mad_conf/ds_migrate*
+    - */software/components/opennebula/opennebula_tm_mad_conf/ds_migrate*
         - Optional
         - Type: boolean
- - **/software/opennebula/opennebula_ds_mad_conf**
+ - **/software/components/opennebula/opennebula_ds_mad_conf**
     - Description: The configuration for each driver is defined in DS_MAD_CONF.These values are used when creating a new datastore and should not be modifiedsince they defined the datastore behavior.
-    - */software/opennebula/opennebula_ds_mad_conf/name*
+    - */software/components/opennebula/opennebula_ds_mad_conf/name*
         - Description: name of the transfer driver, listed in the -d option of the DS_MAD section
-        - Optional
+        - Required
         - Type: string
         - Default value: dummy
-    - */software/opennebula/opennebula_ds_mad_conf/required_attrs*
+    - */software/components/opennebula/opennebula_ds_mad_conf/required_attrs*
         - Description: comma separated list of required attributes in the DS template
-        - Optional
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_ds_mad_conf/persistent_only*
+    - */software/components/opennebula/opennebula_ds_mad_conf/persistent_only*
         - Description: specifies whether the datastore can only manage persistent images
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/opennebula/opennebula_ds_mad_conf/marketplace_actions*
+    - */software/components/opennebula/opennebula_ds_mad_conf/marketplace_actions*
         - Optional
         - Type: string
- - **/software/opennebula/opennebula_market_mad_conf**
+ - **/software/components/opennebula/opennebula_market_mad_conf**
     - Description: The configuration for each driver is defined in MARKET_MAD_CONF.These values are used when creating a new marketplace and should not be modifiedsince they define the marketplace behavior.A public marketplace can be removed even if it has registered apps.
-    - */software/opennebula/opennebula_market_mad_conf/name*
+    - */software/components/opennebula/opennebula_market_mad_conf/name*
         - Description: name of the market driver
-        - Optional
+        - Required
         - Type: string
         - Default value: one
-    - */software/opennebula/opennebula_market_mad_conf/required_attrs*
+    - */software/components/opennebula/opennebula_market_mad_conf/required_attrs*
         - Description: comma separated list of required attributes in the Market template
-        - Optional
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_market_mad_conf/app_actions*
+    - */software/components/opennebula/opennebula_market_mad_conf/app_actions*
         - Description: list of actions allowed for a MarketPlaceApp. monitor: the apps of the marketplace will be monitored. create: the app in the marketplace. delete: the app from the marketplace.
-        - Optional
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_market_mad_conf/public*
+    - */software/components/opennebula/opennebula_market_mad_conf/public*
         - Description: set to TRUE for external marketplaces
         - Optional
         - Type: boolean
- - **/software/opennebula/opennebula_default_cost**
+ - **/software/components/opennebula/opennebula_default_cost**
     - Description: The following attributes define the default cost for Virtual Machines that don't havea CPU, MEMORY or DISK cost.This is used by the oneshowback calculate method.
-    - */software/opennebula/opennebula_default_cost/cpu_cost*
-        - Optional
+    - */software/components/opennebula/opennebula_default_cost/cpu_cost*
+        - Required
         - Type: long
         - Default value: 0
-    - */software/opennebula/opennebula_default_cost/memory_cost*
-        - Optional
+    - */software/components/opennebula/opennebula_default_cost/memory_cost*
+        - Required
         - Type: long
         - Default value: 0
-    - */software/opennebula/opennebula_default_cost/disk_cost*
-        - Optional
+    - */software/components/opennebula/opennebula_default_cost/disk_cost*
+        - Required
         - Type: long
         - Default value: 0
- - **/software/opennebula/opennebula_vnc_ports**
+ - **/software/components/opennebula/opennebula_vnc_ports**
     - Description: VNC_BASE_PORT is deprecated since OpenNebula 5.0OpenNebula will automatically assign start + vmid,allowing to generate different ports for VMs so they do not collide.
-    - */software/opennebula/opennebula_vnc_ports/start*
+    - */software/components/opennebula/opennebula_vnc_ports/start*
         - Description: VNC port pool for automatic VNC port assignment, if possible the port will be set to START + VMID
-        - Optional
+        - Required
         - Type: long
         - Range: 5900..65535
         - Default value: 5900
-    - */software/opennebula/opennebula_vnc_ports/reserved*
+    - */software/components/opennebula/opennebula_vnc_ports/reserved*
         - Optional
         - Type: long
- - **/software/opennebula/opennebula_vlan_ids**
+ - **/software/components/opennebula/opennebula_vlan_ids**
     - Description: LAN ID pool for the automatic VLAN_ID assignment.This pool is for 802.1Q networks (Open vSwitch and 802.1Q drivers).The driver will try first to allocate VLAN_IDS[START] + VNET_ID
-    - */software/opennebula/opennebula_vlan_ids/start*
+    - */software/components/opennebula/opennebula_vlan_ids/start*
         - Description: first VLAN_ID to use
-        - Optional
+        - Required
         - Type: long
         - Default value: 2
-    - */software/opennebula/opennebula_vlan_ids/reserved*
+    - */software/components/opennebula/opennebula_vlan_ids/reserved*
         - Optional
         - Type: long
- - **/software/opennebula/opennebula_vxlan_ids**
+ - **/software/components/opennebula/opennebula_vxlan_ids**
     - Description: Automatic VXLAN Network ID (VNI) assignment.This is used or vxlan networks.NOTE: reserved is not supported by this pool
-    - */software/opennebula/opennebula_vxlan_ids/start*
+    - */software/components/opennebula/opennebula_vxlan_ids/start*
         - Description: first VNI (Virtual Network ID) to use
-        - Optional
+        - Required
         - Type: long
         - Default value: 2
- - **/software/opennebula/opennebula_market_mad**
+ - **/software/components/opennebula/opennebula_market_mad**
     - Description: Drivers to manage different marketplaces, specialized for the storage backend.
-    - */software/opennebula/opennebula_market_mad/executable*
+    - */software/components/opennebula/opennebula_market_mad/executable*
         - Description: path of the transfer driver executable, can be an absolute path or relative to $ONE_LOCATION/lib/mads (or /usr/lib/one/mads/ if OpenNebula was installed in /)
-        - Optional
+        - Required
         - Type: string
         - Default value: one_market
-    - */software/opennebula/opennebula_market_mad/arguments*
+    - */software/components/opennebula/opennebula_market_mad/arguments*
         - Description: arguments for the driver executable: -t number of threads, i.e. number of repo operations at the same time -m marketplace mads separated by commas
-        - Optional
+        - Required
         - Type: string
         - Default value: -t 15 -m http,s3,one
- - **/software/opennebula/opennebula_ceph_datastore**
+ - **/software/components/opennebula/opennebula_ceph_datastore**
     - Description: type for ceph datastore specific attributes.ceph_host, ceph_secret, ceph_user, ceph_user_key and pool_name are mandatory
-    - */software/opennebula/opennebula_ceph_datastore/ceph_host*
+    - */software/components/opennebula/opennebula_ceph_datastore/ceph_host*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_ceph_datastore/ceph_secret*
+    - */software/components/opennebula/opennebula_ceph_datastore/ceph_secret*
         - Optional
         - Type: type_uuid
-    - */software/opennebula/opennebula_ceph_datastore/ceph_user*
+    - */software/components/opennebula/opennebula_ceph_datastore/ceph_user*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_ceph_datastore/ceph_user_key*
+    - */software/components/opennebula/opennebula_ceph_datastore/ceph_user_key*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_ceph_datastore/pool_name*
+    - */software/components/opennebula/opennebula_ceph_datastore/pool_name*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_ceph_datastore/rbd_format*
+    - */software/components/opennebula/opennebula_ceph_datastore/rbd_format*
         - Optional
         - Type: long
         - Range: 1..2
- - **/software/opennebula/opennebula_ar**
+ - **/software/components/opennebula/opennebula_ar**
     - Description: type for vnet ars specific attributes.type and size are mandatory
-    - */software/opennebula/opennebula_ar/type*
-        - Optional
+    - */software/components/opennebula/opennebula_ar/type*
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_ar/ip*
+    - */software/components/opennebula/opennebula_ar/ip*
         - Optional
         - Type: type_ipv4
-    - */software/opennebula/opennebula_ar/size*
-        - Optional
+    - */software/components/opennebula/opennebula_ar/size*
+        - Required
         - Type: long
         - Range: 1..
-    - */software/opennebula/opennebula_ar/mac*
+    - */software/components/opennebula/opennebula_ar/mac*
         - Optional
         - Type: type_hwaddr
-    - */software/opennebula/opennebula_ar/global_prefix*
+    - */software/components/opennebula/opennebula_ar/global_prefix*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_ar/ula_prefix*
+    - */software/components/opennebula/opennebula_ar/ula_prefix*
         - Optional
         - Type: string
- - **/software/opennebula/opennebula_datastore**
+ - **/software/components/opennebula/opennebula_datastore**
     - Description: type for an opennebula datastore. Defaults to a ceph datastore (ds_mad is ceph).shared DS is also supported
-    - */software/opennebula/opennebula_datastore/bridge_list*
+    - */software/components/opennebula/opennebula_datastore/bridge_list*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_datastore/datastore_capacity_check*
-        - Optional
+    - */software/components/opennebula/opennebula_datastore/datastore_capacity_check*
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/opennebula/opennebula_datastore/disk_type*
+    - */software/components/opennebula/opennebula_datastore/disk_type*
         - Optional
         - Type: choice
-    - */software/opennebula/opennebula_datastore/ds_mad*
-        - Optional
+    - */software/components/opennebula/opennebula_datastore/ds_mad*
+        - Required
         - Type: string
         - Default value: ceph
-    - */software/opennebula/opennebula_datastore/tm_mad*
+    - */software/components/opennebula/opennebula_datastore/tm_mad*
         - Description: set system Datastore TM_MAD value. shared: The storage area for the system datastore is a shared directory across the hosts. vmfs: A specialized version of the shared one to use the vmfs file system. ssh: Uses a local storage area from each host for the system datastore. ceph: Uses Ceph storage backend.
-        - Optional
+        - Required
         - Type: string
         - Default value: ceph
-    - */software/opennebula/opennebula_datastore/type*
-        - Optional
+    - */software/components/opennebula/opennebula_datastore/type*
+        - Required
         - Type: string
         - Default value: IMAGE_DS
-    - */software/opennebula/opennebula_datastore/labels*
+    - */software/components/opennebula/opennebula_datastore/labels*
         - Description: datastore labels is a list of strings to group the datastores under a given name and filter them in the admin and cloud views. It is also possible to include in the list sub-labels using a common slash: list("Name", "Name/SubName")
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_datastore/permissions*
+    - */software/components/opennebula/opennebula_datastore/permissions*
         - Optional
         - Type: opennebula_permissions
-    - */software/opennebula/opennebula_datastore/clusters*
+    - */software/components/opennebula/opennebula_datastore/clusters*
         - Description: Adds the datastore to the given clusters
         - Optional
         - Type: string
- - **/software/opennebula/opennebula_vnet**
-    - */software/opennebula/opennebula_vnet/bridge*
+ - **/software/components/opennebula/opennebula_vnet**
+    - */software/components/opennebula/opennebula_vnet/bridge*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_vnet/vn_mad*
-        - Optional
+    - */software/components/opennebula/opennebula_vnet/vn_mad*
+        - Required
         - Type: string
         - Default value: dummy
-    - */software/opennebula/opennebula_vnet/gateway*
+    - */software/components/opennebula/opennebula_vnet/gateway*
         - Optional
         - Type: type_ipv4
-    - */software/opennebula/opennebula_vnet/gateway6*
+    - */software/components/opennebula/opennebula_vnet/gateway6*
         - Optional
         - Type: type_network_name
-    - */software/opennebula/opennebula_vnet/dns*
+    - */software/components/opennebula/opennebula_vnet/dns*
         - Optional
         - Type: type_ipv4
-    - */software/opennebula/opennebula_vnet/network_mask*
+    - */software/components/opennebula/opennebula_vnet/network_mask*
         - Optional
         - Type: type_ipv4
-    - */software/opennebula/opennebula_vnet/network_address*
+    - */software/components/opennebula/opennebula_vnet/network_address*
         - Optional
         - Type: type_ipv4
-    - */software/opennebula/opennebula_vnet/guest_mtu*
+    - */software/components/opennebula/opennebula_vnet/guest_mtu*
         - Optional
         - Type: long
-    - */software/opennebula/opennebula_vnet/context_force_ipv4*
+    - */software/components/opennebula/opennebula_vnet/context_force_ipv4*
         - Optional
         - Type: boolean
-    - */software/opennebula/opennebula_vnet/search_domain*
+    - */software/components/opennebula/opennebula_vnet/search_domain*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_vnet/bridge_ovs*
+    - */software/components/opennebula/opennebula_vnet/bridge_ovs*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_vnet/vlan*
+    - */software/components/opennebula/opennebula_vnet/vlan*
         - Optional
         - Type: boolean
-    - */software/opennebula/opennebula_vnet/vlan_id*
+    - */software/components/opennebula/opennebula_vnet/vlan_id*
         - Optional
         - Type: long
         - Range: 0..4095
-    - */software/opennebula/opennebula_vnet/ar*
+    - */software/components/opennebula/opennebula_vnet/ar*
         - Optional
         - Type: opennebula_ar
-    - */software/opennebula/opennebula_vnet/labels*
+    - */software/components/opennebula/opennebula_vnet/labels*
         - Description: vnet labels is a list of strings to group the vnets under a given name and filter them in the admin and cloud views. It is also possible to include in the list sub-labels using a common slash: list("Name", "Name/SubName")
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_vnet/filter_ip_spoofing*
+    - */software/components/opennebula/opennebula_vnet/filter_ip_spoofing*
         - Description: set network filter to avoid IP spoofing for the current vnet
         - Optional
         - Type: boolean
-    - */software/opennebula/opennebula_vnet/filter_mac_spoofing*
+    - */software/components/opennebula/opennebula_vnet/filter_mac_spoofing*
         - Description: set network filter to avoid MAC spoofing for the current vnet
         - Optional
         - Type: boolean
-    - */software/opennebula/opennebula_vnet/phydev*
+    - */software/components/opennebula/opennebula_vnet/phydev*
         - Description: Name of the physical network device that will be attached to the bridge (VXLAN)
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_vnet/mtu*
+    - */software/components/opennebula/opennebula_vnet/mtu*
         - Description: MTU for the tagged interface and bridge (VXLAN)
         - Optional
         - Type: long
         - Range: 1500..
-    - */software/opennebula/opennebula_vnet/permissions*
+    - */software/components/opennebula/opennebula_vnet/permissions*
         - Optional
         - Type: opennebula_permissions
-    - */software/opennebula/opennebula_vnet/clusters*
+    - */software/components/opennebula/opennebula_vnet/clusters*
         - Description: Adds the vnet to the given clusters
         - Optional
         - Type: string
- - **/software/opennebula/opennebula_host**
+ - **/software/components/opennebula/opennebula_host**
     - Description: Set OpenNebula hypervisor options and their virtual clusters (if any)
-    - */software/opennebula/opennebula_host/host_hyp*
+    - */software/components/opennebula/opennebula_host/host_hyp*
         - Description: set OpenNebula hosts type.
-        - Optional
+        - Required
         - Type: string
         - Default value: kvm
-    - */software/opennebula/opennebula_host/vnm_mad*
+    - */software/components/opennebula/opennebula_host/vnm_mad*
         - Description: set the network driver in your hosts. This option is not longer used by ONE >= 5.x versions.
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_host/cluster*
+    - */software/components/opennebula/opennebula_host/cluster*
         - Description: Set the hypervisor cluster. Any new hypervisor is always included within "Default" cluster. Hosts can be in only one cluster at a time.
         - Optional
         - Type: string
- - **/software/opennebula/opennebula_user**
+ - **/software/components/opennebula/opennebula_user**
     - Description: Set OpenNebula regular users and their primary groups.By default new users are assigned to the users group.
-    - */software/opennebula/opennebula_user/ssh_public_key*
+    - */software/components/opennebula/opennebula_user/ssh_public_key*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_user/password*
+    - */software/components/opennebula/opennebula_user/password*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_user/group*
+    - */software/components/opennebula/opennebula_user/group*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_user/labels*
+    - */software/components/opennebula/opennebula_user/labels*
         - Description: user labels is a list of strings to group the users under a given name and filter them in the admin and cloud views. It is also possible to include in the list sub-labels using a common slash: list("Name", "Name/SubName")
         - Optional
         - Type: string
- - **/software/opennebula/opennebula_group**
+ - **/software/components/opennebula/opennebula_group**
     - Description: Set a group name and an optional decription
-    - */software/opennebula/opennebula_group/description*
+    - */software/components/opennebula/opennebula_group/description*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_group/labels*
+    - */software/components/opennebula/opennebula_group/labels*
         - Optional
         - Type: string
- - **/software/opennebula/opennebula_cluster**
+ - **/software/components/opennebula/opennebula_cluster**
     - Description: Set OpenNebula clusters and their porperties.
-    - */software/opennebula/opennebula_cluster/reserved_cpu*
+    - */software/components/opennebula/opennebula_cluster/reserved_cpu*
         - Description: In percentage. Applies to all the Hosts in this cluster. It will be subtracted from the TOTAL CPU. This value can be negative, in that case you’ll be actually increasing the overall capacity so overcommiting host capacity.
         - Optional
         - Type: long
-    - */software/opennebula/opennebula_cluster/reserved_mem*
+    - */software/components/opennebula/opennebula_cluster/reserved_mem*
         - Description: In KB. Applies to all the Hosts in this cluster. It will be subtracted from the TOTAL MEM. This value can be negative, in that case you’ll be actually increasing the overall capacity so overcommiting host capacity.
         - Optional
         - Type: long
- - **/software/opennebula/opennebula_remoteconf_ceph**
-    - */software/opennebula/opennebula_remoteconf_ceph/pool_name*
+ - **/software/components/opennebula/opennebula_remoteconf_ceph**
+    - */software/components/opennebula/opennebula_remoteconf_ceph/pool_name*
+        - Required
+        - Type: string
+    - */software/components/opennebula/opennebula_remoteconf_ceph/host*
+        - Required
+        - Type: string
+    - */software/components/opennebula/opennebula_remoteconf_ceph/ceph_user*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_remoteconf_ceph/host*
-        - Optional
-        - Type: string
-    - */software/opennebula/opennebula_remoteconf_ceph/ceph_user*
-        - Optional
-        - Type: string
-    - */software/opennebula/opennebula_remoteconf_ceph/staging_dir*
+    - */software/components/opennebula/opennebula_remoteconf_ceph/staging_dir*
         - Optional
         - Type: directory
         - Default value: /var/tmp
-    - */software/opennebula/opennebula_remoteconf_ceph/rbd_format*
+    - */software/components/opennebula/opennebula_remoteconf_ceph/rbd_format*
         - Optional
         - Type: long
         - Range: 1..2
-    - */software/opennebula/opennebula_remoteconf_ceph/qemu_img_convert_args*
+    - */software/components/opennebula/opennebula_remoteconf_ceph/qemu_img_convert_args*
         - Optional
         - Type: string
- - **/software/opennebula/opennebula_oned**
+ - **/software/components/opennebula/opennebula_oned**
     - Description: Type that sets the OpenNebulaoned.conf file
-    - */software/opennebula/opennebula_oned/db*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/db*
+        - Required
         - Type: opennebula_db
-    - */software/opennebula/opennebula_oned/default_device_prefix*
+    - */software/components/opennebula/opennebula_oned/default_device_prefix*
         - Optional
         - Type: string
         - Default value: hd
-    - */software/opennebula/opennebula_oned/onegate_endpoint*
+    - */software/components/opennebula/opennebula_oned/onegate_endpoint*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_oned/manager_timer*
+    - */software/components/opennebula/opennebula_oned/manager_timer*
         - Optional
         - Type: long
-    - */software/opennebula/opennebula_oned/monitoring_interval*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/monitoring_interval*
+        - Required
         - Type: long
         - Default value: 60
-    - */software/opennebula/opennebula_oned/monitoring_threads*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/monitoring_threads*
+        - Required
         - Type: long
         - Default value: 50
-    - */software/opennebula/opennebula_oned/host_per_interval*
+    - */software/components/opennebula/opennebula_oned/host_per_interval*
         - Optional
         - Type: long
-    - */software/opennebula/opennebula_oned/host_monitoring_expiration_time*
+    - */software/components/opennebula/opennebula_oned/host_monitoring_expiration_time*
         - Optional
         - Type: long
-    - */software/opennebula/opennebula_oned/vm_individual_monitoring*
+    - */software/components/opennebula/opennebula_oned/vm_individual_monitoring*
         - Optional
         - Type: boolean
-    - */software/opennebula/opennebula_oned/vm_per_interval*
+    - */software/components/opennebula/opennebula_oned/vm_per_interval*
         - Optional
         - Type: long
-    - */software/opennebula/opennebula_oned/vm_monitoring_expiration_time*
+    - */software/components/opennebula/opennebula_oned/vm_monitoring_expiration_time*
         - Optional
         - Type: long
-    - */software/opennebula/opennebula_oned/vm_submit_on_hold*
+    - */software/components/opennebula/opennebula_oned/vm_submit_on_hold*
         - Optional
         - Type: boolean
-    - */software/opennebula/opennebula_oned/max_conn*
+    - */software/components/opennebula/opennebula_oned/max_conn*
         - Optional
         - Type: long
-    - */software/opennebula/opennebula_oned/max_conn_backlog*
+    - */software/components/opennebula/opennebula_oned/max_conn_backlog*
         - Optional
         - Type: long
-    - */software/opennebula/opennebula_oned/keepalive_timeout*
+    - */software/components/opennebula/opennebula_oned/keepalive_timeout*
         - Optional
         - Type: long
-    - */software/opennebula/opennebula_oned/keepalive_max_conn*
+    - */software/components/opennebula/opennebula_oned/keepalive_max_conn*
         - Optional
         - Type: long
-    - */software/opennebula/opennebula_oned/timeout*
+    - */software/components/opennebula/opennebula_oned/timeout*
         - Optional
         - Type: long
-    - */software/opennebula/opennebula_oned/rpc_log*
+    - */software/components/opennebula/opennebula_oned/rpc_log*
         - Optional
         - Type: boolean
-    - */software/opennebula/opennebula_oned/message_size*
+    - */software/components/opennebula/opennebula_oned/message_size*
         - Optional
         - Type: long
-    - */software/opennebula/opennebula_oned/log_call_format*
+    - */software/components/opennebula/opennebula_oned/log_call_format*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_oned/scripts_remote_dir*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/scripts_remote_dir*
+        - Required
         - Type: directory
         - Default value: /var/tmp/one
-    - */software/opennebula/opennebula_oned/log*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/log*
+        - Required
         - Type: opennebula_log
-    - */software/opennebula/opennebula_oned/federation*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/federation*
+        - Required
         - Type: opennebula_federation
-    - */software/opennebula/opennebula_oned/port*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/port*
+        - Required
         - Type: type_port
         - Default value: 2633
-    - */software/opennebula/opennebula_oned/vnc_base_port*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/vnc_base_port*
+        - Required
         - Type: long
         - Default value: 5900
-    - */software/opennebula/opennebula_oned/network_size*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/network_size*
+        - Required
         - Type: long
         - Default value: 254
-    - */software/opennebula/opennebula_oned/mac_prefix*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/mac_prefix*
+        - Required
         - Type: string
         - Default value: 02:00
-    - */software/opennebula/opennebula_oned/datastore_location*
+    - */software/components/opennebula/opennebula_oned/datastore_location*
         - Optional
         - Type: directory
         - Default value: /var/lib/one/datastores
-    - */software/opennebula/opennebula_oned/datastore_base_path*
+    - */software/components/opennebula/opennebula_oned/datastore_base_path*
         - Optional
         - Type: directory
         - Default value: /var/lib/one/datastores
-    - */software/opennebula/opennebula_oned/datastore_capacity_check*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/datastore_capacity_check*
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/opennebula/opennebula_oned/default_image_type*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/default_image_type*
+        - Required
         - Type: string
         - Default value: OS
-    - */software/opennebula/opennebula_oned/default_cdrom_device_prefix*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/default_cdrom_device_prefix*
+        - Required
         - Type: string
         - Default value: hd
-    - */software/opennebula/opennebula_oned/session_expiration_time*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/session_expiration_time*
+        - Required
         - Type: long
         - Default value: 900
-    - */software/opennebula/opennebula_oned/default_umask*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/default_umask*
+        - Required
         - Type: long
         - Default value: 177
-    - */software/opennebula/opennebula_oned/im_mad*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/im_mad*
+        - Required
         - Type: opennebula_im_mad
-    - */software/opennebula/opennebula_oned/vm_mad*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/vm_mad*
+        - Required
         - Type: opennebula_vm_mad
-    - */software/opennebula/opennebula_oned/tm_mad*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/tm_mad*
+        - Required
         - Type: opennebula_tm_mad
-    - */software/opennebula/opennebula_oned/datastore_mad*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/datastore_mad*
+        - Required
         - Type: opennebula_datastore_mad
-    - */software/opennebula/opennebula_oned/hm_mad*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/hm_mad*
+        - Required
         - Type: opennebula_hm_mad
-    - */software/opennebula/opennebula_oned/auth_mad*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/auth_mad*
+        - Required
         - Type: opennebula_auth_mad
-    - */software/opennebula/opennebula_oned/market_mad*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/market_mad*
+        - Required
         - Type: opennebula_market_mad
-    - */software/opennebula/opennebula_oned/default_cost*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/default_cost*
+        - Required
         - Type: opennebula_default_cost
-    - */software/opennebula/opennebula_oned/listen_address*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/listen_address*
+        - Required
         - Type: type_ipv4
         - Default value: 0.0.0.0
-    - */software/opennebula/opennebula_oned/vnc_ports*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/vnc_ports*
+        - Required
         - Type: opennebula_vnc_ports
-    - */software/opennebula/opennebula_oned/vlan_ids*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/vlan_ids*
+        - Required
         - Type: opennebula_vlan_ids
-    - */software/opennebula/opennebula_oned/vxlan_ids*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/vxlan_ids*
+        - Required
         - Type: opennebula_vxlan_ids
-    - */software/opennebula/opennebula_oned/tm_mad_conf*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/tm_mad_conf*
+        - Required
         - Type: opennebula_tm_mad_conf
-    - */software/opennebula/opennebula_oned/ds_mad_conf*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/ds_mad_conf*
+        - Required
         - Type: opennebula_ds_mad_conf
-    - */software/opennebula/opennebula_oned/market_mad_conf*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/market_mad_conf*
+        - Required
         - Type: opennebula_market_mad_conf
-    - */software/opennebula/opennebula_oned/vm_restricted_attr*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/vm_restricted_attr*
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_oned/image_restricted_attr*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/image_restricted_attr*
+        - Required
         - Type: string
         - Default value: SOURCE
-    - */software/opennebula/opennebula_oned/vnet_restricted_attr*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/vnet_restricted_attr*
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_oned/inherit_datastore_attr*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/inherit_datastore_attr*
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_oned/inherit_image_attr*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/inherit_image_attr*
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_oned/inherit_vnet_attr*
-        - Optional
+    - */software/components/opennebula/opennebula_oned/inherit_vnet_attr*
+        - Required
         - Type: string
- - **/software/opennebula/opennebula_instance_types**
-    - */software/opennebula/opennebula_instance_types/name*
-        - Optional
+ - **/software/components/opennebula/opennebula_instance_types**
+    - */software/components/opennebula/opennebula_instance_types/name*
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_instance_types/cpu*
-        - Optional
+    - */software/components/opennebula/opennebula_instance_types/cpu*
+        - Required
         - Type: long
         - Range: 1..
-    - */software/opennebula/opennebula_instance_types/vcpu*
-        - Optional
+    - */software/components/opennebula/opennebula_instance_types/vcpu*
+        - Required
         - Type: long
         - Range: 1..
-    - */software/opennebula/opennebula_instance_types/memory*
-        - Optional
+    - */software/components/opennebula/opennebula_instance_types/memory*
+        - Required
         - Type: long
-    - */software/opennebula/opennebula_instance_types/description*
+    - */software/components/opennebula/opennebula_instance_types/description*
         - Optional
         - Type: string
- - **/software/opennebula/opennebula_rpc_service**
+ - **/software/components/opennebula/opennebula_rpc_service**
     - Description: type for opennebula service common RPC attributes.
-    - */software/opennebula/opennebula_rpc_service/one_xmlrpc*
+    - */software/components/opennebula/opennebula_rpc_service/one_xmlrpc*
         - Description: OpenNebula daemon RPC contact information
-        - Optional
+        - Required
         - Type: type_absoluteURI
         - Default value: http://localhost:2633/RPC2
-    - */software/opennebula/opennebula_rpc_service/core_auth*
+    - */software/components/opennebula/opennebula_rpc_service/core_auth*
         - Description: authentication driver to communicate with OpenNebula core
-        - Optional
+        - Required
         - Type: string
         - Default value: cipher
- - **/software/opennebula/opennebula_sunstone**
+ - **/software/components/opennebula/opennebula_sunstone**
     - Description: Type that sets the OpenNebulasunstone_server.conf file
-    - */software/opennebula/opennebula_sunstone/env*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/env*
+        - Required
         - Type: string
         - Default value: prod
-    - */software/opennebula/opennebula_sunstone/tmpdir*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/tmpdir*
+        - Required
         - Type: directory
         - Default value: /var/tmp
-    - */software/opennebula/opennebula_sunstone/host*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/host*
+        - Required
         - Type: type_ipv4
         - Default value: 127.0.0.1
-    - */software/opennebula/opennebula_sunstone/port*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/port*
+        - Required
         - Type: type_port
         - Default value: 9869
-    - */software/opennebula/opennebula_sunstone/sessions*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/sessions*
+        - Required
         - Type: string
         - Default value: memory
-    - */software/opennebula/opennebula_sunstone/memcache_host*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/memcache_host*
+        - Required
         - Type: string
         - Default value: localhost
-    - */software/opennebula/opennebula_sunstone/memcache_port*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/memcache_port*
+        - Required
         - Type: type_port
         - Default value: 11211
-    - */software/opennebula/opennebula_sunstone/memcache_namespace*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/memcache_namespace*
+        - Required
         - Type: string
         - Default value: opennebula.sunstone
-    - */software/opennebula/opennebula_sunstone/debug_level*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/debug_level*
+        - Required
         - Type: long
         - Range: 0..3
         - Default value: 3
-    - */software/opennebula/opennebula_sunstone/auth*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/auth*
+        - Required
         - Type: string
         - Default value: opennebula
-    - */software/opennebula/opennebula_sunstone/encode_user_password*
+    - */software/components/opennebula/opennebula_sunstone/encode_user_password*
         - Optional
         - Type: boolean
-    - */software/opennebula/opennebula_sunstone/vnc_proxy_port*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/vnc_proxy_port*
+        - Required
         - Type: type_port
         - Default value: 29876
-    - */software/opennebula/opennebula_sunstone/vnc_proxy_support_wss*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/vnc_proxy_support_wss*
+        - Required
         - Type: string
         - Default value: no
-    - */software/opennebula/opennebula_sunstone/vnc_proxy_cert*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/vnc_proxy_cert*
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_sunstone/vnc_proxy_key*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/vnc_proxy_key*
+        - Required
         - Type: string
-    - */software/opennebula/opennebula_sunstone/vnc_proxy_ipv6*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/vnc_proxy_ipv6*
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/opennebula/opennebula_sunstone/lang*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/lang*
+        - Required
         - Type: string
         - Default value: en_US
-    - */software/opennebula/opennebula_sunstone/table_order*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/table_order*
+        - Required
         - Type: string
         - Default value: desc
-    - */software/opennebula/opennebula_sunstone/mode*
+    - */software/components/opennebula/opennebula_sunstone/mode*
         - Description: Set default views directory
-        - Optional
+        - Required
         - Type: string
         - Default value: mixed
-    - */software/opennebula/opennebula_sunstone/marketplace_username*
+    - */software/components/opennebula/opennebula_sunstone/marketplace_username*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_sunstone/marketplace_password*
+    - */software/components/opennebula/opennebula_sunstone/marketplace_password*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_sunstone/marketplace_url*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/marketplace_url*
+        - Required
         - Type: type_absoluteURI
         - Default value: http://marketplace.opennebula.systems/appliance
-    - */software/opennebula/opennebula_sunstone/oneflow_server*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/oneflow_server*
+        - Required
         - Type: type_absoluteURI
         - Default value: http://localhost:2474/
-    - */software/opennebula/opennebula_sunstone/instance_types*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/instance_types*
+        - Required
         - Type: opennebula_instance_types
-    - */software/opennebula/opennebula_sunstone/routes*
-        - Optional
+    - */software/components/opennebula/opennebula_sunstone/routes*
+        - Required
         - Type: string
- - **/software/opennebula/opennebula_oneflow**
+ - **/software/components/opennebula/opennebula_oneflow**
     - Description: Type that sets the OpenNebulaoneflow-server.conf file
-    - */software/opennebula/opennebula_oneflow/host*
+    - */software/components/opennebula/opennebula_oneflow/host*
         - Description: host where OneFlow server will run
-        - Optional
+        - Required
         - Type: type_ipv4
         - Default value: 127.0.0.1
-    - */software/opennebula/opennebula_oneflow/port*
+    - */software/components/opennebula/opennebula_oneflow/port*
         - Description: port where OneFlow server will run
-        - Optional
+        - Required
         - Type: type_port
         - Default value: 2474
-    - */software/opennebula/opennebula_oneflow/lcm_interval*
+    - */software/components/opennebula/opennebula_oneflow/lcm_interval*
         - Description: time in seconds between Life Cycle Manager steps
-        - Optional
+        - Required
         - Type: long
         - Default value: 30
-    - */software/opennebula/opennebula_oneflow/default_cooldown*
+    - */software/components/opennebula/opennebula_oneflow/default_cooldown*
         - Description: default cooldown period after a scale operation, in seconds
-        - Optional
+        - Required
         - Type: long
         - Default value: 300
-    - */software/opennebula/opennebula_oneflow/shutdown_action*
+    - */software/components/opennebula/opennebula_oneflow/shutdown_action*
         - Description: default shutdown action terminate : OpenNebula >= 5.0.0 shutdown : OpenNebula < 5.0.0
-        - Optional
+        - Required
         - Type: string
         - Default value: terminate
-    - */software/opennebula/opennebula_oneflow/action_number*
+    - */software/components/opennebula/opennebula_oneflow/action_number*
         - Description: default numner of virtual machines that will receive the given call in each interval defined by action_period, when an action is performed on a role
-        - Optional
+        - Required
         - Type: long
         - Range: 1..
         - Default value: 1
-    - */software/opennebula/opennebula_oneflow/action_period*
-        - Optional
+    - */software/components/opennebula/opennebula_oneflow/action_period*
+        - Required
         - Type: long
         - Range: 1..
         - Default value: 60
-    - */software/opennebula/opennebula_oneflow/vm_name_template*
+    - */software/components/opennebula/opennebula_oneflow/vm_name_template*
         - Description: default name for the Virtual Machines created by OneFlow. You can use any of the following placeholders: $SERVICE_ID $SERVICE_NAME $ROLE_NAME $VM_NUMBER
-        - Optional
+        - Required
         - Type: string
         - Default value: $ROLE_NAME_$VM_NUMBER_(service_$SERVICE_ID)
-    - */software/opennebula/opennebula_oneflow/debug_level*
+    - */software/components/opennebula/opennebula_oneflow/debug_level*
         - Description: log debug level 0 = ERROR 1 = WARNING 2 = INFO 3 = DEBUG
-        - Optional
+        - Required
         - Type: long
         - Range: 0..3
         - Default value: 2
- - **/software/opennebula/opennebula_kvmrc**
+ - **/software/components/opennebula/opennebula_kvmrc**
     - Description: Type that sets the OpenNebulaVMM kvmrc conf files
-    - */software/opennebula/opennebula_kvmrc/lang*
-        - Optional
+    - */software/components/opennebula/opennebula_kvmrc/lang*
+        - Required
         - Type: string
         - Default value: C
-    - */software/opennebula/opennebula_kvmrc/libvirt_uri*
-        - Optional
+    - */software/components/opennebula/opennebula_kvmrc/libvirt_uri*
+        - Required
         - Type: string
         - Default value: qemu:///system
-    - */software/opennebula/opennebula_kvmrc/qemu_protocol*
-        - Optional
+    - */software/components/opennebula/opennebula_kvmrc/qemu_protocol*
+        - Required
         - Type: string
         - Default value: qemu+ssh
-    - */software/opennebula/opennebula_kvmrc/libvirt_keytab*
+    - */software/components/opennebula/opennebula_kvmrc/libvirt_keytab*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_kvmrc/shutdown_timeout*
-        - Optional
+    - */software/components/opennebula/opennebula_kvmrc/shutdown_timeout*
+        - Required
         - Type: long
         - Default value: 300
-    - */software/opennebula/opennebula_kvmrc/force_destroy*
+    - */software/components/opennebula/opennebula_kvmrc/force_destroy*
         - Optional
         - Type: boolean
-    - */software/opennebula/opennebula_kvmrc/cancel_no_acpi*
+    - */software/components/opennebula/opennebula_kvmrc/cancel_no_acpi*
         - Optional
         - Type: boolean
-    - */software/opennebula/opennebula_kvmrc/default_attach_cache*
+    - */software/components/opennebula/opennebula_kvmrc/default_attach_cache*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_kvmrc/migrate_options*
+    - */software/components/opennebula/opennebula_kvmrc/migrate_options*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_kvmrc/default_attach_discard*
+    - */software/components/opennebula/opennebula_kvmrc/default_attach_discard*
         - Optional
         - Type: string
- - **/software/opennebula/opennebula_vnm_conf**
+ - **/software/components/opennebula/opennebula_vnm_conf**
     - Description: Type that sets the OpenNebulaVNM (Virtual Network Manager) configuration file on the nodes
-    - */software/opennebula/opennebula_vnm_conf/validate_vlan_id*
+    - */software/components/opennebula/opennebula_vnm_conf/validate_vlan_id*
         - Description: set to true to check that no other vlans are connected to the bridge. Works with 802.1Q and VXLAN.
-        - Optional
+        - Required
         - Type: boolean
         - Default value: false
-    - */software/opennebula/opennebula_vnm_conf/arp_cache_poisoning*
+    - */software/components/opennebula/opennebula_vnm_conf/arp_cache_poisoning*
         - Description: enable ARP Cache Poisoning Prevention Rules for Open vSwitch.
-        - Optional
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/opennebula/opennebula_vnm_conf/vxlan_mc*
+    - */software/components/opennebula/opennebula_vnm_conf/vxlan_mc*
         - Description: base multicast address for each VLAN. The mc address is :vxlan_mc + :vlan_id. Used by VXLAN.
-        - Optional
+        - Required
         - Type: type_ipv4
         - Default value: 239.0.0.0
-    - */software/opennebula/opennebula_vnm_conf/vxlan_ttl*
+    - */software/components/opennebula/opennebula_vnm_conf/vxlan_ttl*
         - Description: Time To Live (TTL) should be > 1 in routed multicast networks (IGMP). Used by VXLAN.
-        - Optional
+        - Required
         - Type: long
         - Default value: 16
- - **/software/opennebula/opennebula_rpc**
+ - **/software/components/opennebula/opennebula_rpc**
     - Description: Type that sets the OpenNebula confto contact to ONE RPC server
-    - */software/opennebula/opennebula_rpc/port*
-        - Optional
+    - */software/components/opennebula/opennebula_rpc/port*
+        - Required
         - Type: type_port
         - Default value: 2633
-    - */software/opennebula/opennebula_rpc/host*
-        - Optional
+    - */software/components/opennebula/opennebula_rpc/host*
+        - Required
         - Type: string
         - Default value: localhost
-    - */software/opennebula/opennebula_rpc/user*
-        - Optional
+    - */software/components/opennebula/opennebula_rpc/user*
+        - Required
         - Type: string
         - Default value: oneadmin
-    - */software/opennebula/opennebula_rpc/password*
-        - Optional
+    - */software/components/opennebula/opennebula_rpc/password*
+        - Required
         - Type: string
- - **/software/opennebula/opennebula_untouchables**
+ - **/software/components/opennebula/opennebula_untouchables**
     - Description: Type that sets the OpenNebulauntouchable resources
-    - */software/opennebula/opennebula_untouchables/datastores*
+    - */software/components/opennebula/opennebula_untouchables/datastores*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_untouchables/vnets*
+    - */software/components/opennebula/opennebula_untouchables/vnets*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_untouchables/users*
+    - */software/components/opennebula/opennebula_untouchables/users*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_untouchables/groups*
+    - */software/components/opennebula/opennebula_untouchables/groups*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_untouchables/hosts*
+    - */software/components/opennebula/opennebula_untouchables/hosts*
         - Optional
         - Type: string
-    - */software/opennebula/opennebula_untouchables/clusters*
+    - */software/components/opennebula/opennebula_untouchables/clusters*
         - Optional
         - Type: string
- - **/software/opennebula/component_opennebula**
+ - **/software/components/opennebula/component_opennebula**
     - Description: Type to define ONE basic resourcesdatastores, vnets, hosts names, etc
-    - */software/opennebula/component_opennebula/datastores*
+    - */software/components/opennebula/component_opennebula/datastores*
         - Optional
         - Type: opennebula_datastore
-    - */software/opennebula/component_opennebula/groups*
+    - */software/components/opennebula/component_opennebula/groups*
         - Optional
         - Type: opennebula_group
-    - */software/opennebula/component_opennebula/users*
+    - */software/components/opennebula/component_opennebula/users*
         - Optional
         - Type: opennebula_user
-    - */software/opennebula/component_opennebula/vnets*
+    - */software/components/opennebula/component_opennebula/vnets*
         - Optional
         - Type: opennebula_vnet
-    - */software/opennebula/component_opennebula/clusters*
+    - */software/components/opennebula/component_opennebula/clusters*
         - Optional
         - Type: opennebula_cluster
-    - */software/opennebula/component_opennebula/hosts*
+    - */software/components/opennebula/component_opennebula/hosts*
         - Optional
         - Type: opennebula_host
-    - */software/opennebula/component_opennebula/rpc*
+    - */software/components/opennebula/component_opennebula/rpc*
         - Optional
         - Type: opennebula_rpc
-    - */software/opennebula/component_opennebula/untouchables*
+    - */software/components/opennebula/component_opennebula/untouchables*
         - Optional
         - Type: opennebula_untouchables
-    - */software/opennebula/component_opennebula/oned*
+    - */software/components/opennebula/component_opennebula/oned*
         - Optional
         - Type: opennebula_oned
-    - */software/opennebula/component_opennebula/sunstone*
+    - */software/components/opennebula/component_opennebula/sunstone*
         - Optional
         - Type: opennebula_sunstone
-    - */software/opennebula/component_opennebula/oneflow*
+    - */software/components/opennebula/component_opennebula/oneflow*
         - Optional
         - Type: opennebula_oneflow
-    - */software/opennebula/component_opennebula/kvmrc*
+    - */software/components/opennebula/component_opennebula/kvmrc*
         - Optional
         - Type: opennebula_kvmrc
-    - */software/opennebula/component_opennebula/vnm_conf*
+    - */software/components/opennebula/component_opennebula/vnm_conf*
         - Description: set vnm remote configuration
         - Optional
         - Type: opennebula_vnm_conf
-    - */software/opennebula/component_opennebula/ssh_multiplex*
+    - */software/components/opennebula/component_opennebula/ssh_multiplex*
         - Description: set ssh host multiplex options
-        - Optional
+        - Required
         - Type: boolean
         - Default value: true
-    - */software/opennebula/component_opennebula/cfg_group*
+    - */software/components/opennebula/component_opennebula/cfg_group*
         - Description: in some cases (such a Sunstone standalone configuration with apache), some OpenNebula configuration files should be accessible by a different group (as apache). This variable sets the group name to change these files permissions.
         - Optional
         - Type: string
