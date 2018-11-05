@@ -30,6 +30,7 @@ html_theme_options = {
     "headtextcolor": "#333",
     "bodyfont": "'Lato', 'Helvetica', sans-serif",
     "headfont": "'Lato', 'Helvetica', sans-serif",
+    "body_max_width": None,
 }
 
 # Include the logo.
