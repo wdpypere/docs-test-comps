@@ -1,7 +1,7 @@
 
-##################
-CacheManager :: DB
-##################
+###################################
+EDG\::WP4\::CCM\::CacheManager\::DB
+###################################
 
 
 ****
@@ -12,20 +12,21 @@ NAME
 EDG::WP4::CCM::CacheManager::DB
 
 
-****************************************************************************************************************************************************************************************************************************************
+********
 SYNOPSIS
-    # Class style
-    my $db = EDG::WP4::CCM::CacheManager::DB->new($prefix, %opts);
-    # Write the hashref to the database file
-    $db->write($hashref);
-    # Open the database and tie to hashref
-    $db->open($hashref);
-****************************************************************************************************************************************************************************************************************************************
+********
 
 
 
 .. code-block:: perl
 
+     # Class style
+     my $db = EDG::WP4::CCM::CacheManager::DB->new($prefix, %opts);
+     # Write the hashref to the database file
+     $db->write($hashref);
+     # Open the database and tie to hashref
+     $db->open($hashref);
+ 
      # Direct read access to database (combines new and open)
      $success = EDG::WP4::CCM::CacheManager::DB::read($hashref, $prefix);
 

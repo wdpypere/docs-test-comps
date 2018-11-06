@@ -1,7 +1,7 @@
 
-#######################
-CacheManager :: Element
-#######################
+########################################
+EDG\::WP4\::CCM\::CacheManager\::Element
+########################################
 
 
 ****
@@ -112,7 +112,7 @@ getPath()
 
 getType()
  
- Returns the element's type, that is, one of the TYPE_\* constans
+ Returns the element's type, that is, one of the \ ``TYPE_\*``\  constans
  
 
 

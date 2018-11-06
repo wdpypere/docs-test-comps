@@ -1,7 +1,7 @@
 
-##########
-TextRender
-##########
+############################
+EDG\::WP4\::CCM\::TextRender
+############################
 
 
 ****
@@ -9,11 +9,7 @@ NAME
 ****
 
 
-
-.. code-block:: perl
-
-     CCM::TextRender - Class for rendering structured text using Element instances
-
+CCM::TextRender - Class for rendering structured text using Element instances
 
 
 ***********
@@ -54,38 +50,58 @@ Private methods
    scalar
     
     converted in a single line
-        <key> <value>
+    
+    
+    .. code-block:: perl
+    
+         <key> <value>
+    
     
    
    
    arrayref of scalars
     
     converted in multiple lines as follows
-        <key> <scalar element0>
-        <key> <scalar element1>
-        ...
+    
+    
+    .. code-block:: perl
+    
+         <key> <scalar element0>
+         <key> <scalar element1>
+         ...
+    
     
    
    
    hashref
     
     generates a block with format
-        <"key">
-            <recursive rendering of the value>
-        </"key">
+    
+    
+    .. code-block:: perl
+    
+         <"key">
+             <recursive rendering of the value>
+         </"key">
+    
     
    
    
    arrayref of hashref
     
     generates series of blocks
-        <"key">
-            <recursive rendering of the element0>
-        </"key">
-        <"key">
-            <recursive rendering of the element1>
-        </"key">
-        ...
+    
+    
+    .. code-block:: perl
+    
+         <"key">
+             <recursive rendering of the element0>
+         </"key">
+         <"key">
+             <recursive rendering of the element1>
+         </"key">
+         ...
+    
     
    
    

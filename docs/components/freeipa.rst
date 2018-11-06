@@ -1,7 +1,7 @@
 
-#######
-freeipa
-#######
+#########################
+NCM\::Component\::freeipa
+#########################
 
 
 ***********
@@ -32,12 +32,13 @@ Server
 ======
 
 
-On the server, create a keytab for the quattor-server user
-    kinit admin
+On the server, create a keytab for the quattor-server user:
 
 
 .. code-block:: perl
 
+     kinit admin
+ 
      uidadmin=`ipa user-show admin |grep UID: |sed "s/UID://;s/ //g;"`
      gidadmin=`ipa user-show admin |grep GID: |sed "s/GID://;s/ //g;"`
      # keep random password; it's already expired
@@ -54,12 +55,11 @@ On the server, create a keytab for the quattor-server user
      done
      ipa role-add-member --users=quattor-server "Quattor server"
  
- 
      # use -r option to retrieve existing keytab (e.g. from another ipa server)
      ipa-getkeytab -p quattor-server -k /etc/quattor-server.keytab -s ipaserver.example.com
 
 
-Use these with ncm-freeipa on the server.
+Use these with ncm-freeipa on the server:
 
 
 .. code-block:: perl
@@ -69,8 +69,7 @@ Use these with ncm-freeipa on the server.
      "keytab" = "/etc/quattor-server.keytab";
 
 
-(Do not retrieve a keytab for the admin user;
-it resets the admin password).
+(Do not retrieve a keytab for the admin user, it resets the admin password).
 
 
 AII
@@ -81,12 +80,13 @@ The AII hooks act on behalf of the host it is going to setup, so
 any of those principals cannot be used. Instead we use a fixed
 AII principal and keytab.
 
-First we need to add a user with appropriate privileges
-    kinit admin
+First we need to add a user with appropriate privileges:
 
 
 .. code-block:: perl
 
+     kinit admin
+ 
      uidadmin=`ipa user-show admin |grep UID: |sed "s/UID://;s/ //g;"`
      gidadmin=`ipa user-show admin |grep GID: |sed "s/GID://;s/ //g;"`
      # keep random password; it's already expired
@@ -102,18 +102,28 @@ First we need to add a user with appropriate privileges
      ipa role-add-member --users=quattor-aii "Quattor AII"
 
 
-On the AII host (assuming the host is already added to IPA)
-    kinit admin
-    # use -r option to retrieve existing keytab (e.g. from another AII server)
-    ipa-getkeytab -p quattor-aii -k /etc/quattor-aii.keytab -s ipaserver.example.com
-    kdestroy
+On the AII host (assuming the host is already added to IPA):
+
+
+.. code-block:: perl
+
+     kinit admin
+     # use -r option to retrieve existing keytab (e.g. from another AII server)
+     ipa-getkeytab -p quattor-aii -k /etc/quattor-aii.keytab -s ipaserver.example.com
+     kdestroy
+
 
 (If you have granted the host principal the rights to retrieve the quattor-aii keytab,
-you can add in the template of the AII host
-    prefix "/software/components/freeipa/principals/aii";
-    "principal" = "quattor-aii";
-    "keytab" = "/etc/quattor-aii.keytab";
-)
+you can add in the template of the AII host:
+
+
+.. code-block:: perl
+
+     prefix "/software/components/freeipa/principals/aii";
+     "principal" = "quattor-aii";
+     "keytab" = "/etc/quattor-aii.keytab";
+ )
+
 
 
 Missing
@@ -147,10 +157,10 @@ server
 Configure server settings
 
 
-server
+client
 ======
 
 
-Configure server settings
+Configure client settings
 
 
