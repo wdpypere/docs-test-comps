@@ -11,13 +11,19 @@ Running specific configuration modules
 
 To run a well-defined list of configuration modules together with their pre and post-dependencies, do:
 
-    ncm-ncd --configure <module1> [<module2> ...]
+.. code-block:: bash
+
+   ncm-ncd --configure <module1> [<module2> ...]
 
 For running all configuration modules use the --all option:
+
+.. code-block:: bash
 
     ncm-ncd --configure --all
 
 For listing available components Use the --list option. It is incompatible with --configure.
+
+.. code-block:: bash
 
     ncm-ncd --list
 
