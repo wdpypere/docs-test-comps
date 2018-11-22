@@ -1,7 +1,7 @@
 
-###########################
-Test\::Quattor\::TextRender
-###########################
+####################
+Quattor\::TextRender
+####################
 
 
 ****
@@ -28,39 +28,39 @@ Public methods
 
 
 
-new
+- new
  
  Returns a new object, accepts the following options
  
  
- basepath
+ - basepath
   
   Basepath that points to the templates.
   
  
  
- ttpath
+ - ttpath
   
   Path to the TT files.
   If the path is not absolute, search from basepath.
   
  
  
- panpath
+ - panpath
   
   Path to the (mandatory) pan templates.
   If the path is not absolute, search from basepath.
   
  
  
- pannamespace
+ - pannamespace
   
   Namespace for the (mandatory) pan templates. (Use empty
   string for no namespace).
   
  
  
- namespacepath
+ - namespacepath
   
   Destination directory to create a copy of the pan templates
   in correct namespaced directory. Relative paths are assumed
@@ -70,7 +70,7 @@ new
   
  
  
- panunfold
+ - panunfold
   
   Boolean to force or disable the "unfolding" of the pan templates
   in the namespacepath with correct pannamespace. Default is true.
@@ -79,7 +79,7 @@ new
   
  
  
- expect
+ - expect
   
   Expect is a hash reference to bypass some built-in tests
   in the test methods.
@@ -91,13 +91,13 @@ new
   
  
  
- invalidtt
+ - invalidtt
   
   Array reference of invalid TT files to pass the \ ``test_gather_tt``\  test method.
   
  
  
- invalidpan
+ - invalidpan
   
   Array reference of invalid pan templates to pass the \ ``test_gather_pan``\  test method.
   

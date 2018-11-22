@@ -3,7 +3,6 @@ ncm-ncd
 
 Front end for executing Quattor configuration modules.
 
-
 Uses
 ~~~~
 

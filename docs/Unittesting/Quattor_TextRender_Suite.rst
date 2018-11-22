@@ -1,7 +1,7 @@
 
-###################################
-Test\::Quattor\::TextRender\::Suite
-###################################
+############################
+Quattor\::TextRender\::Suite
+############################
 
 
 ****
@@ -39,37 +39,37 @@ new
 Support options
 
 
-testspath
+- testspath
  
  Basepath for the suite tests.
  
 
 
-regexps
+- regexps
  
  Path to the suite regexptests  (\ ``testspath``\ /regexps is default when not specified).
  
 
 
-profiles
+- profiles
  
  Path to the suite object templates (\ ``testspath``\ /profiles is default when not specified).
  
 
 
-ttincludepath
+- ttincludepath
  
  Includepath to use for CAF::TextRender.
  
 
 
-ttrelpath
+- ttrelpath
  
  relpath to use for CAF::TextRender.
  
 
 
-filter
+- filter
  
  A compiled regular expression that is used to filter the found regexptest files
  (matching relative filenames are kept; non-matcing ones are removed).

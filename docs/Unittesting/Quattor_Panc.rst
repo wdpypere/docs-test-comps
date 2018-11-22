@@ -1,7 +1,7 @@
 
-#####################
-Test\::Quattor\::Panc
-#####################
+##############
+Quattor\::Panc
+##############
 
 
 ***********
@@ -83,15 +83,15 @@ Arrayhash \ ``$cmd``\  for the command, \ ``$message``\  for a message to print.
 Options
 
 
-croak_on_error: \ ``croak``\  on error
+- croak_on_error: \ ``croak``\  on error
 
 
 
-srcdir: srcdir to return to after actual command is executed.
+- srcdir: srcdir to return to after actual command is executed.
 
 
 
-output: return arrayref with exitcode and output (stdout combined with stderr)
+- output: return arrayref with exitcode and output (stdout combined with stderr)
 
 
 

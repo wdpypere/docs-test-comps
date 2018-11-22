@@ -1,7 +1,7 @@
 
-##########################
-Test\::Quattor\::Namespace
-##########################
+###################
+Quattor\::Namespace
+###################
 
 
 ***********
@@ -36,20 +36,20 @@ Variables
 
 
 
-inc_orig
+- inc_orig
  
  \ ``$inc_orig``\  holds arrayref to a copy of \ ``@INC``\  when
  \ ``INC_insert_namespace``\  was first called.
  
 
 
-inc_history
+- inc_history
  
  \ ``$inc_history``\  is an arrayref with copy of all references of all \ ``@INC``\ s modified
  
 
 
-ignore
+- ignore
  
  Hashref with namespaces to ignore (if value is true) when \ ``INC_insert_namespace``\ 
  is used.
@@ -62,7 +62,7 @@ Functions
 
 
 
-INC_insert_namespace
+- INC_insert_namespace
  
  Setup @INC so NCM::Component is provided by Test::Quattor
  Returns modified @INC as reference.

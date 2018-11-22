@@ -1,7 +1,7 @@
 
-########################################
-Test\::Quattor\::TextRender\::RegexpTest
-########################################
+#################################
+Quattor\::TextRender\::RegexpTest
+#################################
 
 
 ****
@@ -27,30 +27,30 @@ Public methods
 
 
 
-new
+- new
  
  Returns a new object, accepts the following options
  
  
- regexp
+ - regexp
   
   The regexptest file.
   
  
  
- config
+ - config
   
   The configuration instance to retreive the values from.
   
  
  
- ttincludepath
+ - ttincludepath
   
   The includepath for CCM::TextRender.
   
  
  
- ttrelpath
+ - ttrelpath
   
   The relpath for CCM::TextRender.
   

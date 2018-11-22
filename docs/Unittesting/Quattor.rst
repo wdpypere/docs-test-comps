@@ -1,7 +1,7 @@
 
-##############
-Test\::Quattor
-##############
+#######
+Quattor
+#######
 
 
 ********
@@ -69,7 +69,7 @@ This is done with several functions, see \ **Redefined functions**\  below,
 that control the following variables:
 
 
-\* QUATTOR_TEST_LOG_DEBUGLEVEL
+* QUATTOR_TEST_LOG_DEBUGLEVEL
  
  If the environment variable QUATTOR_TEST_LOG_DEBUGLEVEL is set, the unittests
  will run with this debuglevel (0-5). Otherwise the default loglevel is 'verbose'.
@@ -79,21 +79,21 @@ that control the following variables:
  
 
 
-\* \ ``$log_cmd``\ 
+* \ ``$log_cmd``\ 
  
  A boolean to enable logging of each command that is run via CAF::Process.
  Can also be set via the QUATTOR_TEST_LOG_CMD environment variable.
  
 
 
-\* \ ``$log_cmd_missing``\ 
+* \ ``$log_cmd_missing``\ 
  
  A boolean to log each cmd that has output mocked but has no output set.
  Can also be set via the QUATTOR_TEST_LOG_CMD_MISSING environment variable.
  
 
 
-\* \ ``%files_contents``\ 
+* \ ``%files_contents``\ 
  
  Contents of a file after it is closed. The keys of this hash are the
  absolute paths to the files.
@@ -105,20 +105,20 @@ that control the following variables:
  
 
 
-\* \ ``%commands_run``\ 
+* \ ``%commands_run``\ 
  
  CAF::Process objects being associated to a command execution.
  
 
 
-\* \ ``%commands_status``\ 
+* \ ``%commands_status``\ 
  
  Desired exit status for a command. If the command is not present here,
  it is assumed to succeed.
  
 
 
-\* \ ``%desired_outputs``\ 
+* \ ``%desired_outputs``\ 
  
  When we know the component will call \ ``CAF::Process::output``\  and
  friends, we prepare here an output that the component will have to
@@ -126,14 +126,14 @@ that control the following variables:
  
 
 
-\* \ ``%desired_err``\ 
+* \ ``%desired_err``\ 
  
  When the component may analyse the standard error of a component, we
  supply it through this hash.
  
 
 
-\* \ ``%desired_file_contents``\ 
+* \ ``%desired_file_contents``\ 
  
  Initial contents for a file that should be "edited". The content of this hash
  (keys are the absolute path names) is managed/updated by all the \ ``CAF::FileWriter``\ 
@@ -143,19 +143,19 @@ that control the following variables:
  
 
 
-\* \ ``@command_history``\ 
+* \ ``@command_history``\ 
  
  CAF::Process commands that were run.
  
 
 
-\* \ ``caf_path``\ 
+* \ ``caf_path``\ 
  
  A hashref with \ ``CAF::Path``\  methods and arrayref of reference of used arguments
  
 
 
-\* \ ``NoAction``\ 
+* \ ``NoAction``\ 
  
  Set \ ``Test::Quattor::NoAction``\  to override \ ``CAF::Object::NoAction``\ 
  in any of the mocked \ ``Test::Quattor``\  methods (where relevant, e.g.
@@ -168,7 +168,7 @@ that control the following variables:
  
 
 
-\* \ ``%immutable``\ 
+* \ ``%immutable``\ 
  
  The content of this hash (keys are the absolute path names) indicates
  if paths (files, directories, ...) are immutable (or not).
@@ -178,7 +178,7 @@ that control the following variables:
  
 
 
-\* \ ``%status``\ 
+* \ ``%status``\ 
  
  The content of this hash (keys are the absolute path names) indicates
  current \ ``CAF::Path::status``\  (\ ``mode``\ , \ ``mtime``\ , \ ``owner``\  and/or \ ``group``\ ).
@@ -196,27 +196,27 @@ In order to achieve this, the following functions are redefined
 automatically:
 
 
-\ ``CAF::Process::{run,execute,output,trun,toutput}``\ 
+- \ ``CAF::Process::{run,execute,output,trun,toutput}``\ 
  
  Prevent any command from being executed.
  
 
 
-\ ``CAF::FileWriter::open``\ 
+- \ ``CAF::FileWriter::open``\ 
  
  Overriding this function allows us to inspect its contents after the
  unit under tests has released it.
  
 
 
-\ ``CAF::FileWriter::close``\ 
+- \ ``CAF::FileWriter::close``\ 
  
  Overriding this function to force noaction and update
  mocked \ ``%desired_file_contents``\ .
  
 
 
-\ ``CAF::FileWriter::_close``\ 
+- \ ``CAF::FileWriter::_close``\ 
  
  Mock-only method to make the FileWriter instance not opened
  (in `IO::String <http://search.cpan.org/search?query=IO%3a%3aString&mode=module>`_ sense).
@@ -225,75 +225,75 @@ automatically:
  
 
 
-\ ``CAF::FileWriter::_read_contents``\ 
+- \ ``CAF::FileWriter::_read_contents``\ 
  
  Used to get the original content (for \ ``<CAF::FileWriter-``\ close>>) and/or source
  (for \ ``<CAF::FileEditor-``\ new>>) from the \ ``%desired_file_contents``\ .
  
 
 
-\ ``CAF::FileEditor::_is_valid_file``\ 
+- \ ``CAF::FileEditor::_is_valid_file``\ 
  
  Mock using \ ``is_file``\  function.
  
 
 
-\ ``CAF::FileEditor::_is_reference_newer``\ 
+- \ ``CAF::FileEditor::_is_reference_newer``\ 
  
  Mock using \ ``is_file``\  function (but no support for pipes or
  age test).
  
 
 
-\ ``CAF::FileReader::_is_valid_file``\ 
+- \ ``CAF::FileReader::_is_valid_file``\ 
  
  Mock using \ ``is_file``\  function (but no support for pipes).
  
 
 
-\ ``CAF::Reporter::debug``\ 
+- \ ``CAF::Reporter::debug``\ 
  
  Checks that each debug() call starts with a debuglevel between 0 and 5.
  
 
 
-\ ``CAF::Reporter::debug``\ 
+- \ ``CAF::Reporter::debug``\ 
  
  Checks that each debug() call starts with a debuglevel between 0 and 5.
  
 
 
-\ ``IO::String::close``\ 
+- \ ``IO::String::close``\ 
  
  Prevents the buffers from being released when explicitly closing a file.
  
 
 
-\ ``CAF::Path::file_exists``\ 
+- \ ``CAF::Path::file_exists``\ 
  
  Return the mocked \ ``is_file``\ 
  
 
 
-\ ``CAF::Path::directory_exists``\ 
+- \ ``CAF::Path::directory_exists``\ 
  
  Return the mocked \ ``is_directory``\ 
  
 
 
-\ ``CAF::Path::any_exists``\ 
+- \ ``CAF::Path::any_exists``\ 
  
  Return the mocked \ ``is_any``\ 
  
 
 
-is_symlink
+- is_symlink
  
  Test if given \ ``path``\  is a mocked symlink
  
 
 
-has_hardlinks
+- has_hardlinks
  
  Test if given \ ``path``\  is a mocked hardlink
  
@@ -305,13 +305,13 @@ has_hardlinks
  
 
 
-is_hardlink
+- is_hardlink
  
  Test if \ ``path1``\  and \ ``path2``\  are hardlinked
  
 
 
-_make_link
+- _make_link
  
  Add a mocked \ ``_make_link``\ .
  
@@ -326,7 +326,7 @@ _make_link
  
 
 
-\ ``CAF::Path::directory``\ 
+- \ ``CAF::Path::directory``\ 
  
  Return directory name unless mocked \ ``make_directory``\  or mocked \ ``LC_Check``\  fail.
  
@@ -334,31 +334,31 @@ _make_link
  
 
 
-\ ``CAF::Path::LC_Check``\ 
+- \ ``CAF::Path::LC_Check``\ 
  
  Store args in \ ``caf_path``\  using \ ``add_caf_path``\ .
  
 
 
-\ ``CAF::Path::cleanup``\ 
+- \ ``CAF::Path::cleanup``\ 
  
  \ ``remove_any``\  and store args in \ ``caf_path``\  using \ ``add_caf_path``\ .
  
 
 
-\ ``CAF::Path::move``\ 
+- \ ``CAF::Path::move``\ 
  
  \ ``remove_any``\  and store args in \ ``caf_path``\  using \ ``add_caf_path``\ .
  
 
 
-\ ``CAF::Path::status``\ 
+- \ ``CAF::Path::status``\ 
  
  Set and compare status.
  
 
 
-\ ``CAF::Path::_listdir``\ 
+- \ ``CAF::Path::_listdir``\ 
  
  Mock underlying _listdir method that does the actual opendir/readdir/closedir.
  
@@ -377,13 +377,13 @@ FUNCTIONS FOR EXTERNAL USE
 The following functions are exported by default:
 
 
-\ ``get_file``\ 
+- \ ``get_file``\ 
  
  Returns the object that has manipulated \ ``$filename``\ 
  
 
 
-\ ``set_file_contents``\ 
+- \ ``set_file_contents``\ 
  
  For file \ ``$filename``\ , sets the initial \ ``$contents``\  the component should see.
  It also sets the default \ ``CAF::FileWriter``\  permissions (\ ``mode``\  644).
@@ -392,13 +392,13 @@ The following functions are exported by default:
  
 
 
-\ ``get_file_contents``\ 
+- \ ``get_file_contents``\ 
  
  For file \ ``$filename``\ , returns the contents on success, undef otherwise.
  
 
 
-\ ``get_command``\ 
+- \ ``get_command``\ 
  
  Returns all the information recorded about the execution of \ ``$cmd``\ ,
  if it has been executed. This is a hash reference in which the
@@ -407,33 +407,33 @@ The following functions are exported by default:
  
 
 
-\ ``set_command_status``\ 
+- \ ``set_command_status``\ 
  
  Sets the "exit status" we'll report for a given command.
  
 
 
-\ ``set_desired_output``\ 
+- \ ``set_desired_output``\ 
  
  Sets the standard output we'll return when the caller issues \ ``output``\ 
  on this command
  
 
 
-\ ``set_desired_err``\ 
+- \ ``set_desired_err``\ 
  
  Sets the standard error we'll receive when the caller issues
  \ ``execute``\  on this command.
  
 
 
-\ ``command_history_reset``\ 
+- \ ``command_history_reset``\ 
  
  Reset the command history to empty list.
  
 
 
-\ ``command_history_ok``\ 
+- \ ``command_history_ok``\ 
  
  Given an arrayref of \ ``required_commands``\ ,
  it checks the \ ``@command_history``\  if all commands were
@@ -456,24 +456,24 @@ The following functions are exported by default:
  
 
 
-\ ``set_service_variant``\ 
+- \ ``set_service_variant``\ 
  
  Sets the \ ``CAF::Service``\  variant to the one given in the command line:
  
  
- \* \ ``linux_sysv``\ 
+ * \ ``linux_sysv``\ 
   
   Linux SysV, e.g, \ ``/sbin/service foo start``\ 
   
  
  
- \* \ ``linux_systemd``\ 
+ * \ ``linux_systemd``\ 
   
   Linux, Systemd variant.
   
  
  
- \* \ ``solaris``\ 
+ * \ ``solaris``\ 
   
   Solaris and SMF variant.
   
@@ -483,7 +483,7 @@ The following functions are exported by default:
  
 
 
-\ ``force_service_variant``\ 
+- \ ``force_service_variant``\ 
  
  Force the variant by bypassing \ ``CAF::Service``\  \ ``AUTOLOAD``\  magic
  and defining the methods
@@ -497,20 +497,20 @@ The following functions are exported by default:
  
 
 
-set_immutable
+- set_immutable
  
  Make \ ``path``\  immutable. Pass a false \ ``bool``\  to make the path mutable again
  (not <undef>, default is to make the path immutable).
  
 
 
-set_status
+- set_status
  
  (Re)set status of \ ``path``\  to the options (\ ``mode``\ , \ ``mtime``\ , \ ``owner``\  and/or \ ``group``\ ).
  
 
 
-is_mutable
+- is_mutable
  
  Check if the path and parent path are mutable.
  (Parent path is not checked when \ ``skip_parent``\  argument is true).
@@ -520,38 +520,38 @@ is_mutable
  
 
 
-sane_path
+- sane_path
  
  sanitize path by
  
  
- squash multiple '/' into one
+ - squash multiple '/' into one
  
  
  
- remove all trailing '/'
+ - remove all trailing '/'
  
  
  
 
 
-is_file
+- is_file
  
  Test if given \ ``$path``\  is a mocked file
  
 
 
-is_directory
+- is_directory
  
  Test if given \ ``$path``\  is a mocked directory
  
 
 
-is_any Test if given \ ``path``\  is known (as file or directory or anything else)
+- is_any Test if given \ ``path``\  is known (as file or directory or anything else)
 
 
 
-make_directory
+- make_directory
  
  Add a directory to the mocked directories.
  If \ ``rec``\  is true or undef, also add all underlying directories.
@@ -562,32 +562,32 @@ make_directory
  
 
 
-remove_any
+- remove_any
  
  Recursive removal of a \ ``path``\  from the files_contents / desired_file_contents
  
 
 
-move
+- move
  
  move \ ``src``\  to \ ``dest``\ . If \ ``backup``\  is defined and not empty string,
  move \ ``dest``\  to backup (\ ``backup``\  is a suffix).
  
 
 
-add_caf_path
+- add_caf_path
  
  Add array of arguments to \ ``caf_path``\  hashref using \ ``name``\ 
  
 
 
-reset_caf_path
+- reset_caf_path
  
  Reset \ ``caf_path``\  ref. If \ ``name``\  is defined, only reset that cache.
  
 
 
-dump_contents
+- dump_contents
  
  Debug function to show the entries in \ ``desired_file_contents``\ 
  and \ ``files_contents``\ .
@@ -595,20 +595,20 @@ dump_contents
  Options
  
  
- log
+ - log
   
   Pass a reporter/logger instance, and report with verbose level.
   By default, \ ``Test::More::diag``\  is used.
   
  
  
- filter
+ - filter
   
   Regex pattern to filter filenames to show (matches are kept).
   
  
  
- prefix
+ - prefix
   
   A message prefix
   
