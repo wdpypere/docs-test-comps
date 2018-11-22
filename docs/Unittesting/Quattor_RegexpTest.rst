@@ -1,7 +1,7 @@
 
-###########################
-Test\::Quattor\::RegexpTest
-###########################
+####################
+Quattor\::RegexpTest
+####################
 
 
 ****
@@ -24,18 +24,18 @@ Public methods
 
 
 
-new
+- new
  
  Returns a new object, accepts the following options
  
  
- regexp
+ - regexp
   
   The regexptest file.
   
  
  
- text
+ - text
   
   The text to test.
   
@@ -72,16 +72,16 @@ Parse the flags block and set \ ``flags``\  attribute
 Following flags are supported
 
 
-regular expression flags:
+- regular expression flags:
  
  
- multiline
+ - multiline
   
   (no)multiline / multiline=1/0
   
  
  
- singleline
+ - singleline
   
   singleline / singleline=1/0
   
@@ -89,13 +89,13 @@ regular expression flags:
   
  
  
- extended format
+ - extended format
   
   extended / extended=1/0
   
  
  
- case senistive
+ - case senistive
   
   case(in)sensistive / casesensitive = 0/1
   
@@ -103,10 +103,10 @@ regular expression flags:
  
 
 
-order flag
+- order flag
  
  
- ordered matches
+ - ordered matches
   
   (un)ordered / ordered=0/1
   
@@ -114,7 +114,7 @@ order flag
  
 
 
-negate
+- negate
  
  negate / negate = 0/1
  
@@ -124,7 +124,7 @@ negate
  
 
 
-quote
+- quote
  
  quote / quote = 0/1
  
@@ -134,36 +134,36 @@ quote
  
 
 
-location of module and contents settings:
+- location of module and contents settings:
  
  
- metaconfigservice=/some/path
+ - metaconfigservice=/some/path
   
   Also any flag starting with \ ``/``\  is interpreted as \ ``metaconfigservice``\ 
   
  
  
- renderpath=/some/path
+ - renderpath=/some/path
   
   Also any flag starting with \ ``//``\  is interpreted as \ ``renderpath``\ 
   
  
  
- rendermodule
+ - rendermodule
   
   Specify the value of the module to use. (Precedes
   metaconfigservice/renderpath value).
   
  
  
- contentspath
+ - contentspath
   
   Specify the path to use for contents. (Precedes
   metaconfigservice/renderpath value).
   
  
  
- element
+ - element
   
   Comma separated list of predefined element convert options for CCM::TextRender.
   
@@ -171,7 +171,7 @@ location of module and contents settings:
  
 
 
-Default settings
+- Default settings
  
  
  .. code-block:: perl
@@ -206,7 +206,7 @@ Lines ending with \ ``\s#{3}``\  are interpreted as having options set.
 Supported options
 
 
-COUNT
+- COUNT
  
  \ ``COUNT \d+``\  is the exact number of matches
  (use \ ``COUNT 0 ``\ to make sure a line doesn't match).

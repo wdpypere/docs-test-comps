@@ -10,13 +10,10 @@ NAME
 
 
 ncm-ncd - Node Configuration Dispatcher
-      of the NCM (Node Configuration Management) subsystem
 
+Part of the NCM (Node Configuration Management) subsystem
 
-.. code-block:: perl
-
-       quattor toolsuite http://quattor.org
-
+quattor toolsuite http://quattor.org
 
 
 ********
@@ -24,10 +21,14 @@ SYNOPSIS
 ********
 
 
-ncm-ncd --configure   [options] [<component1> [<component2>] ...]
-ncm-ncd --unconfigure [options] component
 
-(See ncm-ncd --help for full list of options with default values.)
+.. code-block:: perl
+
+     ncm-ncd --configure   [options] [<component1> [<component2>] ...]
+     ncm-ncd --unconfigure [options] component
+
+
+(See \ ``ncm-ncd --help``\  for full list of options with default values.)
 
 
 ***********
@@ -51,7 +52,7 @@ The \ **ncd**\  can be executed manually, via \ **cron**\ , or via the
 If a dependency is not fulfilled, the \ **ncd**\  exits with an
 appropriate error message and return status.
 
-In case of deinstallation of a component using \ **--unconfigure**\ ,
+In case of deinstallation of a component using \ ``--unconfigure``\ ,
 the \ **ncd**\  is to be called with the component's name as a
 parameter.
 
@@ -62,7 +63,7 @@ OPTIONS
 
 
 
---list
+- --list
  
  Does nothing but list all found components, in the following format:
  
@@ -70,39 +71,39 @@ OPTIONS
  
 
 
---configure
+- --configure
  
  Run the \ ``Configure``\  method for <component1 component2 ...> (default option).
  For running configure on all components, use --configure --all.
  
 
 
---all
+- --all
  
  See above. Run --configure --all to run configure on all components.
  
 
 
---skip <component>
+- --skip <component>
  
  Skip one component (only to be used with --all)
  
 
 
---unconfigure
+- --unconfigure
  
  Run the \ ``Unconfigure``\  method for <component>. Only one component can
  be unconfigured at a time.
  
 
 
---logdir <dir>
+- --logdir <dir>
  
  Directory where to place ncm-ncd and component log files
  
 
 
---log_group_readable <groupname>
+- --log_group_readable <groupname>
  
  Group readable logdir (value is the groupname).
  If set with valid groupname, the configured logdirectory
@@ -114,7 +115,7 @@ OPTIONS
  
 
 
---log_world_readable <0|1>
+- --log_world_readable <0|1>
  
  World readable logdir flag (1/0). If true, the configured logdirectory
  will have its permissions set to 755. If false (the default) the permissions will be 700.
@@ -129,25 +130,25 @@ OPTIONS
  
 
 
---logpid
+- --logpid
  
  Add process ID to the log messages (disabled by default).
  
 
 
---verbose_logfile <0|1>
+- --verbose_logfile <0|1>
  
  Report with verbose loglevel to the logfile (default enabled)
  
 
 
---retries <n>
+- --retries <n>
  
  Try 'n' times if locked (another ncm-ncd instance is running).
  
 
 
---state <dir>
+- --state <dir>
  
  Directory in which to find state files. On conclusion of any component
  configuration, if the configuration was successful then the component
@@ -162,31 +163,31 @@ OPTIONS
  
 
 
---timeout <n>
+- --timeout <n>
  
  Wait a maximum of 'n' seconds between retries.
  
 
 
---useprofile <profile_id>
+- --useprofile <profile_id>
  
  Use <profile_id> as NVA-API configuration profile ID (default: latest)
  
 
 
---cache_root <directory>
+- --cache_root <directory>
  
  CCM cache root directory (optional, otherwise CCM default taken)
  
 
 
---multilog
+- --multilog
  
  Use separate (per component) log files in log directory
  
 
 
---pre-hook
+- --pre-hook
  
  Hook to be executed before any component is run.  It receives a JSON
  object with the list of components that will be executed.
@@ -201,7 +202,7 @@ OPTIONS
  
 
 
---post-hook
+- --post-hook
  
  Hook to be executed after all components have run.  It receives a JSON
  object via stdin with the components that succeeded, failed or had
@@ -209,7 +210,7 @@ OPTIONS
  
 
 
---pre-hook-timeout, --post-hook-timeout
+- --pre-hook-timeout, --post-hook-timeout
  
  Timeouts, in seconds, for the \ ``--pre-hook``\  and \ ``--post-hook``\ 
  
@@ -217,14 +218,14 @@ OPTIONS
  
 
 
---chroot
+- --chroot
  
  Chroot to the directory given as an argument.  If it's not possible to
  chroot, \ ``ncm-ncd``\  will die.
  
 
 
---check-noquattor
+- --check-noquattor
  
  Check if CCM updates are disabled globally via the /etc/noquattor file.
  And do not run if CCM updates are globally disabled.
@@ -235,13 +236,13 @@ OPTIONS
  
 
 
---history
+- --history
  
  Enable history/event tracking. (Enabled by default).
  
 
 
---force-quattor
+- --force-quattor
  
  Run even if CCM updates are globally disabled (and --check-noquattor is set).
  
@@ -255,19 +256,19 @@ Following options are advanced options (typically used for debugging and/or test
 Use with care.
 
 
---ignorelock
+- --ignorelock
  
  Ignore existing application lock. Use with care.
  
 
 
---forcelock
+- --forcelock
  
  Take over application lock. Use with care.
  
 
 
---nodeps
+- --nodeps
  
  ignore broken dependencies when invoking configure. Use with care.
  
@@ -278,14 +279,14 @@ Use with care.
  
 
 
---ignore-errors-from-dependencies
+- --ignore-errors-from-dependencies
  
  errors from dependencies are downgraded to warnings, to make the
  overall ncm-ncd run pass if a dependency fails. This option implies
  '--nodeps' and '--autodeps'. Use with care.
  
  A "dependency" is any component that is not requested/specified
-  via command line (and added to list of components to process via
+ via command line (and added to list of components to process via
  '--autodeps', if any).
  
  (If you do not care about dependencies and just want to avoid errors,
@@ -293,21 +294,21 @@ Use with care.
  
 
 
---autodeps
+- --autodeps
  
  Expand missing pre/post dependencies in configure (default to true).
  (Disable with --no-autodeps. Use --no-autodeps with care.)
  
 
 
---allowbrokencomps
+- --allowbrokencomps
  
  Do not stop overall execution if 'broken' components are found, just ignore
  these ('broken' components: component file missing or not instantiable). Use with care.
  
 
 
---history-instances
+- --history-instances
  
  Enable history/event instances tracking. Use with care.
  
@@ -319,49 +320,49 @@ Other Options
 
 
 
---help
+- --help
  
  Displays a help message with all options and default settings.
  
 
 
---version
+- --version
  
  Displays application version information.
  
 
 
---verbose
+- --verbose
  
  Print verbose details on operations.
  
 
 
---debug <1..5>
+- --debug <1..5>
  
  Set the debugging level to <1..5>.
  
 
 
---facility <f>
+- --facility <f>
  
  Set the syslog facility to <f> (Eg. local1).
  
 
 
---quiet
+- --quiet
  
  Suppress application output to standard output.
  
 
 
---noaction
+- --noaction
  
  Do not actually perform operations.
  
 
 
---include <directories>
+- --include <directories>
  
  A colon-seperated list of directories to include in search path for ncm-components
  
@@ -375,9 +376,9 @@ CONFIGURATION FILE
 
 
 A configuration file can keep site-wide configuration settings. The
-location of the configuration file is defined in the --cfgfile
+location of the configuration file is defined in the \ ``--cfgfile``\ 
 option. A default configuration file is found in
-/etc/ncm-ncd.conf
+\ ``/etc/ncm-ncd.conf``\ .
 
 
 ***************
@@ -387,22 +388,5 @@ SIGNAL HANDLING
 
 If a signal is received, the ncm-ncd will try to finish its execution
 gracefully and will report an error (return status: -1), except if
-it was called with the --noaction flag.
-
-
-******
-AUTHOR
-******
-
-
-${author}
-
-
-****************
-MORE INFORMATION
-****************
-
-
-Visit \ **http://quattor.org**\  for more information on the quattor
-toolsuite.
+it was called with the \ ``--noaction``\  flag.
 

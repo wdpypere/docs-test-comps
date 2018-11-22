@@ -1,7 +1,7 @@
 
-#########################
-Test\::Quattor\::Unittest
-#########################
+##################
+Quattor\::Unittest
+##################
 
 
 ****
@@ -36,7 +36,7 @@ FUNCTIONS
 
 
 
-import
+- import
  
  On import, run the tests.
  
@@ -55,13 +55,13 @@ METHODS
 
 
 
-new
+- new
  
  No options are required/supported
  
 
 
-read_cfg
+- read_cfg
  
  Read default config followed by optional configfile \ ``tqu.cfg``\  and optional
  variable \ ``$main::TQU``\ .
@@ -80,13 +80,13 @@ read_cfg
  
 
 
-test
+- test
  
  Run all enabled tests, in order
  
 
 
-load
+- load
  
  Run basic load test using \ ``use_ok``\  from \ ``Test::More``\ .
  
@@ -95,7 +95,7 @@ load
  Configuration parameters
  
  
- modules
+ - modules
   
   Comma separated list op module names to try to load.
   
@@ -107,7 +107,7 @@ load
   
  
  
- prefix
+ - prefix
   
   A prefix for all modules specified in the \ ``modules``\  option.
   
@@ -115,7 +115,7 @@ load
  
 
 
-doc
+- doc
  
  Documentation tests using \ ``Test::Quattor::Doc``\ .
  
@@ -130,7 +130,7 @@ doc
  
 
 
-tt
+- tt
  
  Run TT unittests using \ ``Test::Quattor::TextRender::Component``\ .
  (This does not apply to \ ``metaconfig``\  tests).
@@ -143,21 +143,21 @@ tt
  
 
 
-critic
+- critic
  
  Run \ ``Test::Quattor::Critic``\ 
  
  Options
  
  
- codedirs
+ - codedirs
   
   Comma-separated list of directories to look for code to test.
   (Defaults to poddirs (from doc test) or \ ``target/lib/perl``\ ).
   
  
  
- exclude
+ - exclude
   
   A regexp to remove policies from list of fatal policies.
   
@@ -165,14 +165,14 @@ critic
  
 
 
-tidy
+- tidy
  
  Run \ ``Test::Quattor::Tidy``\ 
  
  Options
  
  
- codedirs
+ - codedirs
   
   Comma-separated list of directories to look for code to test.
   (Defaults to poddirs (from doc test) or \ ``target/lib/perl``\ ).

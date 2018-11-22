@@ -1,7 +1,7 @@
 
-####################
-Test\::Quattor\::Doc
-####################
+#############
+Quattor\::Doc
+#############
 
 
 ****
@@ -32,12 +32,12 @@ Public methods
 
 
 
-new
+- new
  
  Returns a new object, accepts the following options
  
  
- poddirs
+ - poddirs
   
   Array reference of directories to test for podfiles.
   Default dirs are the relative paths \ ``target/lib/perl``\ 
@@ -46,13 +46,13 @@ new
   
  
  
- podfiles
+ - podfiles
   
   Array reference of podfiles to test (default empty)
   
  
  
- emptypoddirs
+ - emptypoddirs
   
   Array reference of poddirs that must be empty (or non-existing).
   If a directory is in both \ ``poddirs``\  and \ ``emptypoddirs``\ ,
@@ -60,14 +60,14 @@ new
   
  
  
- panpaths
+ - panpaths
   
   Array reference of paths that hold pan files to check for annotations.
   Default is \ ``target/pan``\  (use the exported $DOC_TARGET_PAN).
   
  
  
- panout
+ - panout
   
   Output path for pan annotations. Default
   target/panannotations (use exported $DOC_TARGET_PANOUT).
@@ -76,7 +76,7 @@ new
  
 
 
-pod_files
+- pod_files
  
  Test all files from \ ``podfiles``\  and \ ``poddirs``\ .
  Based on \ ``all_pod_files_ok``\  from \ ``Test::Pod``\ .
@@ -85,7 +85,7 @@ pod_files
  
 
 
-pan_annotations
+- pan_annotations
  
  Generate annotations, return arrayref with templates that
  have valid annotations and one for templates with invalid annotations.
@@ -95,7 +95,7 @@ pan_annotations
  
 
 
-test
+- test
  
  Run all tests:
      pod_files

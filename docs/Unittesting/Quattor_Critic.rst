@@ -1,7 +1,7 @@
 
-#######################
-Test\::Quattor\::Critic
-#######################
+################
+Quattor\::Critic
+################
 
 
 ****
@@ -29,10 +29,10 @@ METHODS
 
 
 
-new
+- new
  
  
- codedirs
+ - codedirs
   
   An arrayref of paths to look for perl code (uses \ ``Test::Pod::all_pod_files``\ ).
   
@@ -40,7 +40,7 @@ new
   
  
  
- exclude
+ - exclude
   
   A regexp to remove policies from list of fatal policies.
   
@@ -48,20 +48,20 @@ new
  
 
 
-make_critic
+- make_critic
  
  Create \ ``Perl::Critic``\  instance and load policies
  
 
 
-check
+- check
  
  Given a list of \ ``Perl::Critic::Violations``\  (e.g. as return value of
  \ ``critique``\  method) and check which one should be reported on.
  
 
 
-test
+- test
  
  Run critic test on all files found with \ ``all_pod_files``\  in all codedirs.
  

@@ -1,7 +1,7 @@
 
-########################################
-Test\::Quattor\::TextRender\::Metaconfig
-########################################
+#################################
+Quattor\::TextRender\::Metaconfig
+#################################
 
 
 ****
@@ -45,7 +45,7 @@ Public methods
 
 
 
-new
+- new
  
  Returns a new object, basepath is the default location
  for metaconfig-unittests (src/main/metaconfig).
@@ -53,19 +53,19 @@ new
  Accepts the following options
  
  
- service
+ - service
   
   The name of the service (the service is a subdirectory of the basepath).
   
  
  
- version
+ - version
   
   If a specific version is to be tested (undef assumes no version).
   
  
  
- usett
+ - usett
   
   Force (or disable) the TT gather and verification test. E.g. disable when a
   builtin TextRender module is used. (By default, \ ``usett``\  is true).

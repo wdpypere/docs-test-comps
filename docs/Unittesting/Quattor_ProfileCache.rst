@@ -1,7 +1,7 @@
 
-#############################
-Test\::Quattor\::ProfileCache
-#############################
+######################
+Quattor\::ProfileCache
+######################
 
 
 ***********
@@ -21,15 +21,15 @@ Set specific values for the \ ``cache``\ , \ ``resources``\  and/or \ ``profiles
 Will be used by \ ``get_profile_cache_dirs``\ 
 
 
-cache
+- cache
 
 
 
-resources
+- resources
 
 
 
-profiles
+- profiles
 
 
 

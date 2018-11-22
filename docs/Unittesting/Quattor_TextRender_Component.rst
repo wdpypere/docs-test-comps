@@ -1,7 +1,7 @@
 
-#######################################
-Test\::Quattor\::TextRender\::Component
-#######################################
+################################
+Quattor\::TextRender\::Component
+################################
 
 
 ****
@@ -44,7 +44,7 @@ Public methods
 
 
 
-new
+- new
  
  Returns a new object, basepath is the default location
  for component TT files (src/main/resources).
@@ -52,20 +52,20 @@ new
  Accepts the following options
  
  
- component
+ - component
   
   The name of the component that these tests are part of.
   
  
  
- usett
+ - usett
   
   Force (or disable) the TT gather and verification test. E.g. disable when a
   builtin TextRender module is used. (By default, \ ``usett``\  is true).
   
  
  
- pannamespace
+ - pannamespace
   
   For modules that are almost components (like AII plugins), one can change the
   \ ``pannamespace``\  (default is \ ``<components/<component``\ >>). (Use empty string to
@@ -73,7 +73,7 @@ new
   
  
  
- skippan
+ - skippan
   
   If \ ``skippan``\  is true, skip all pan related tests and checks.
   This should only be needed in some rare case

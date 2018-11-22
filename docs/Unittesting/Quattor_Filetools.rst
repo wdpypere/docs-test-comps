@@ -1,7 +1,7 @@
 
-##########################
-Test\::Quattor\::Filetools
-##########################
+###################
+Quattor\::Filetools
+###################
 
 
 ****
@@ -19,7 +19,7 @@ Functions
 
 
 
-writefile
+- writefile
  
  Create file with name \ ``fn``\  (and parent directory if needed).
  Optional second argument is the
@@ -27,7 +27,7 @@ writefile
  
 
 
-readfile
+- readfile
  
  Read the content of file \ ``fn``\  and return it.
  

@@ -1,7 +1,7 @@
 
-#####################
-Test\::Quattor\::Tidy
-#####################
+##############
+Quattor\::Tidy
+##############
 
 
 ****
@@ -29,10 +29,10 @@ METHODS
 
 
 
-new
+- new
  
  
- codedirs
+ - codedirs
   
   An arrayref of paths to look for perl code (uses \ ``Test::Pod::all_pod_files``\ ).
   
@@ -42,13 +42,13 @@ new
  
 
 
-check
+- check
  
  Run perltidy on filename
  
 
 
-test
+- test
  
  Run critic test on all files found with \ ``all_pod_files``\  in all codedirs.
  
