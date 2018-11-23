@@ -9,7 +9,7 @@ NAME
 ****
 
 
-\ ``NCM::Component::syslog``\  configures entries in /etc/(r)syslog.conf
+\ ``NCM::Component::syslog``\  configures entries in `/etc`/(r)syslog.conf
 
 
 *******

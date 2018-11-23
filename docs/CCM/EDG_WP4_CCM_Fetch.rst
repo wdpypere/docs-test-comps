@@ -57,7 +57,7 @@ Functions
  
  Creates new Fetch object. Full url of the profile can be provided as
  parameter PROFILE_URL, if it is not a url a profile url will be
- calculated using 'base_url' config option in /etc/ccm.conf.  Path of
+ calculated using 'base_url' config option in `/etc/ccm.conf`.  Path of
  alternative configuration file can be given as CONFIG.
  
  Returns undef in case of error.

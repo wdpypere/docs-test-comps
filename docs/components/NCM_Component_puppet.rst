@@ -59,14 +59,14 @@ RESOURCES
       :hierarchy:
       - quattor
       :yaml:
-            :datadir: /etc/puppet/hieradata
+            :datadir: `/etc/puppet/hieradata`
  
  
 
 
 * \ ``/software/components/puppet/nodefiles``\ 
  
- Named list of node specific manifests. The component will run \ ``puppet --apply /etc/puppet/manifests/<file>``\ 
+ Named list of node specific manifests. The component will run \ ``puppet --apply `/etc/puppet/manifests`/<file>``\ 
  for each item <file> of the nlist. The parameters of each item are:
  
  

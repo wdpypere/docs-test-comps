@@ -107,7 +107,7 @@ named just like the tags for the appropriate Nagios object.
 * \ ``/software/components/nagios/contactgroups``\ 
  
  Contact group definition, indexed by contact group name. These
- settings are written in /etc/nagios/contactgroups.cfg .
+ settings are written in `/etc/nagios/contactgroups.cfg` .
  
 
 

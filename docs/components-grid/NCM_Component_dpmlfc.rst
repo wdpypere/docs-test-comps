@@ -55,7 +55,7 @@ GLOBAL OPTIONS (DPM and LFC)
 DPM and LFC accept the same global options but there is a separate set for each one. Replace \ ``PRODUCT``\  by \ ``dpm``\  or \ ``lfc``\ .
 
 
-- /software/components/dpmlfc/options/PRODUCT/accessProtocols : list (optional, DPM only)
+- `/software/components/dpmlfc/options/PRODUCT/accessProtocols` : list (optional, DPM only)
  
  List of access protocols supported on disk servers. Supported protocols are : https, gsiftp, rfio, xroot.
  Note that xrootd configuration itself, including the DPM/Xrootd plug-in, must be configured with
@@ -65,7 +65,7 @@ DPM and LFC accept the same global options but there is a separate set for each 
  
 
 
-- /software/components/dpmlfc/options/PRODUCT/controlProtocols : list (optional, DPM only)
+- `/software/components/dpmlfc/options/PRODUCT/controlProtocols` : list (optional, DPM only)
  
  List of control protocols supported. Supported protocols are : srmv1, srmv2, srmv2.2.
  
@@ -73,7 +73,7 @@ DPM and LFC accept the same global options but there is a separate set for each 
  
 
 
-- /software/components/dpmlfc/options/PRODUCT/gridmapfile
+- `/software/components/dpmlfc/options/PRODUCT/gridmapfile`
  
  This option defines the local gridmap file used by products daemons.
  
@@ -81,7 +81,7 @@ DPM and LFC accept the same global options but there is a separate set for each 
  
 
 
-- /software/components/dpmlfc/options/PRODUCT/gridmapdir
+- `/software/components/dpmlfc/options/PRODUCT/gridmapdir`
  
  This option defines the gridmap dir used by products daemons.
  
@@ -89,7 +89,7 @@ DPM and LFC accept the same global options but there is a separate set for each 
  
 
 
-- /software/components/dpmlfc/options/PRODUCT/group
+- `/software/components/dpmlfc/options/PRODUCT/group`
  
  This option defines the userid used by product daemons.
  
@@ -97,7 +97,7 @@ DPM and LFC accept the same global options but there is a separate set for each 
  
 
 
-- /software/components/dpmlfc/options/PRODUCT/user
+- `/software/components/dpmlfc/options/PRODUCT/user`
  
  This option defines the userid used by product daemons.
  
@@ -115,15 +115,15 @@ DPM and LFC accepts the same set of options to describe the database connection.
 replace \ ``PRODUCT``\  by either \ ``dpm``\  or \ ``lfc``\ . Both sets can coexist.
 
 
-- /software/components/dpmlfc/options/PRODUCT/db/configfile
+- `/software/components/dpmlfc/options/PRODUCT/db/configfile`
  
  This option defines the file used to keep track of database connection information. This file will be owned by the userid used to run daemons and only this user will have access to this file.
  
- Default : /etc/DPMCONFIG for DPM, /etc/NSCONFIG for LFC
+ Default : `/etc/DPMCONFIG` for DPM, `/etc/NSCONFIG` for LFC
  
 
 
-- /software/components/dpmlfc/options/PRODUCT/db/infoFile (string, optional)
+- `/software/components/dpmlfc/options/PRODUCT/db/infoFile` (string, optional)
  
  Name (without path) of the file containing connection information to DPM DB to be used by GIP to collect information about DPM.
  This file will be owned and accessible only by GIP user.
@@ -134,7 +134,7 @@ replace \ ``PRODUCT``\  by either \ ``dpm``\  or \ ``lfc``\ . Both sets can coex
  
 
 
-- /software/components/dpmlfc/options/PRODUCT/db/infoPwd (string, optional)
+- `/software/components/dpmlfc/options/PRODUCT/db/infoPwd` (string, optional)
  
  Password for database connection account used by GIP to collect information about DPM
  
@@ -142,7 +142,7 @@ replace \ ``PRODUCT``\  by either \ ``dpm``\  or \ ``lfc``\ . Both sets can coex
  
 
 
-- /software/components/dpmlfc/options/PRODUCT/db/infoUser (string, optional)
+- `/software/components/dpmlfc/options/PRODUCT/db/infoUser` (string, optional)
  
  Username for database connection account used by GIP to collect information about DPM. If this option
  is not defined, the infoFile is not updated by \ **ncm-dpmlfc**\ .
@@ -151,7 +151,7 @@ replace \ ``PRODUCT``\  by either \ ``dpm``\  or \ ``lfc``\ . Both sets can coex
  
 
 
-- /software/components/dpmlfc/options/PRODUCT/db/password (string, required)
+- `/software/components/dpmlfc/options/PRODUCT/db/password` (string, required)
  
  This option defines the password used to connect to the database.
  
@@ -159,7 +159,7 @@ replace \ ``PRODUCT``\  by either \ ``dpm``\  or \ ``lfc``\ . Both sets can coex
  
 
 
-- /software/components/dpmlfc/options/PRODUCT/db/server (string, optional)
+- `/software/components/dpmlfc/options/PRODUCT/db/server` (string, optional)
  
  This option defines the server running the database. This component checks that
  DPM and LFC database server run on different node (DPNS and LFC use the same database name). 
@@ -169,7 +169,7 @@ replace \ ``PRODUCT``\  by either \ ``dpm``\  or \ ``lfc``\ . Both sets can coex
  
 
 
-- /software/components/dpmlfc/options/PRODUCT/db/user
+- `/software/components/dpmlfc/options/PRODUCT/db/user`
  
  This option defines the userid used to connect to the database.
  
@@ -359,7 +359,7 @@ in this case, the option description states it explicitly.
 
 - logfile: string (optional)
  
- \ ``logfile``\  option is the name of the logfile used by the daemon instance. Generally, each daemon has a dedicated directory under /var/log, where the actual log file is rotated. This option is accepted by every type of daemon.
+ \ ``logfile``\  option is the name of the logfile used by the daemon instance. Generally, each daemon has a dedicated directory under `/var/log`, where the actual log file is rotated. This option is accepted by every type of daemon.
  
  Default : use daemon default (see documentation).
  
@@ -459,16 +459,16 @@ in this case, the option description states it explicitly.
 
 
 **********************************************************
-VO OPTIONS (DPM and LFC) : /software/components/dpmlfc/vos
+VO OPTIONS (DPM and LFC) : `/software/components/dpmlfc/vos`
 **********************************************************
 
 
 VO-related options described each VO that must be configured to get access to DPM or LFC namespace. This includes creating VO home directory and setting correct permissions.
 
-VO-related options are stored under /software/components/dpmlfc/vos, which is a nlist with one entry per VO. nlist key is the VO name. Value is a nlist describing VO properties.
+VO-related options are stored under `/software/components/dpmlfc/vos`, which is a nlist with one entry per VO. nlist key is the VO name. Value is a nlist describing VO properties.
 
 
-- /software/components/dpmlfc/vos/VONAME/gid
+- `/software/components/dpmlfc/vos/VONAME/gid`
  
  This property specifies virtual GID to associate with the VO. Default is normally appropriate
  
@@ -483,7 +483,7 @@ POOL OPTIONS (DPM)
 
 
 
-- /software/components/dpmlfc/pool
+- `/software/components/dpmlfc/pool`
  
  Not implemented yet.
  
@@ -511,7 +511,7 @@ AUTHOR
 ******
 
 
-Michel Jouvin <jouvin@lal.in2p3.fr>
+Michel Jouvin <>
 
 
 **********
@@ -519,7 +519,7 @@ MAINTAINER
 **********
 
 
-Michel Jouvin <jouvin@lal.in2p3.fr>
+Michel Jouvin <>
 
 
 ********

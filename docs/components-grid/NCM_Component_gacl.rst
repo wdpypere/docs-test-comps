@@ -47,7 +47,7 @@ AUTHOR
 ******
 
 
-Michel Jouvin <jouvin@lal.in2p3.fr>
+Michel Jouvin <>
 
 
 **********
@@ -55,7 +55,7 @@ MAINTAINER
 **********
 
 
-Michel Jouvin <jouvin@lal.in2p3.fr>
+Michel Jouvin <>
 
 
 *******

@@ -26,21 +26,21 @@ RESOURCES
 *********
 
 
-/software/components/gsissh/server
+`/software/components/gsissh/server`
 ==================================
 
 
 An optional nlist with the server-side configuration.  If not
 specified, then the server is not configured.
 
-/software/components/gsissh/server/port
+`/software/components/gsissh/server/port`
 ---------------------------------------
 
 
 The port to use for the daemon.  This is mandatory.
 
 
-/software/components/gsissh/server/options
+`/software/components/gsissh/server/options`
 ------------------------------------------
 
 
@@ -51,7 +51,7 @@ yes/no values.
 
 
 
-/software/components/gsissh/client/options
+`/software/components/gsissh/client/options`
 ==========================================
 
 

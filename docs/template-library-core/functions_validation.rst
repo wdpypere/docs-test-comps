@@ -2,6 +2,17 @@
 functions\::validation
 ######################
 
+Types
+-----
+
+ - **valid_user**
+    - Description: This type is meant to be used to check if strings provided are valid user names. This is however designed to be overriden by site-specific policies. The regex used here as default is the one suggested by the useradd man page.
+
+Variables
+---------
+
+ - VALID_USER_PATTERN
+
 Functions
 ---------
 

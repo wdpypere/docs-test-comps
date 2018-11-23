@@ -94,7 +94,7 @@ EXAMPLES
 
     "/software/components/nss" = nlist(
        "build", nlist(
- 	  "db", nlist("script", "make -f /usr/local/lib/dbfiles.mk <DB>")
+ 	  "db", nlist("script", "make -f `/usr/local/lib/dbfiles.mk` <DB>")
        ),
  
        "database", nlist(

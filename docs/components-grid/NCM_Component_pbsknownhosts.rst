@@ -88,7 +88,7 @@ and "pbsknownhosts/targets" = list("pbsknownhosts","shostsequiv") will
 generate both.
 
 
-shostsConfigFile (optional, /opt/edg/etc/edg-pbs-shostsequiv.conf)
+shostsConfigFile (optional, `/opt/edg/etc/edg`-pbs-shostsequiv.conf)
 ==================================================================
 
 
@@ -96,14 +96,14 @@ The location of the shosts-script configuration file.  Normally this
 should not be changed.
 
 
-shosts (optional, /etc/ssh/shosts.equiv)
+shosts (optional, `/etc/ssh/shosts.equiv`)
 ========================================
 
 
 The ssh shosts.equiv file to update
 
 
-shostsscript (optional, /opt/edg/sbin/edg-pbs-shostsequiv)
+shostsscript (optional, `/opt/edg/sbin/edg`-pbs-shostsequiv)
 ==========================================================
 
 

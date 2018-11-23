@@ -182,7 +182,7 @@ get all the appropriate settings:
   "/software/components/useraccess/users/root/roles" = list ("myrole");
 
 
-And now, me@UAM.ES can login as root using Kerberos v4 tickets.
+And now,  can login as root using Kerberos v4 tickets.
 
 Also, roles can be nested. However, there are no checks for cyclic
 inclusions. Cyclic nesting will produce infinite loops at runtime, and

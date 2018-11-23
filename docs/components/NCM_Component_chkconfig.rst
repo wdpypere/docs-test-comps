@@ -21,7 +21,7 @@ SYNOPSIS
 - Configure()
  
  Updates runlevel information for system services by using \ **chkconfig**\  that are
- defined in /software/components/chkconfig/.
+ defined in `/software/components/chkconfig`/.
  
  Also starts/stops those services that have option \ ``startstop``\  set to true in
  and have one of the following options specified:
@@ -98,7 +98,7 @@ RESOURCES
  
  If service has value 'add', and is already known to chkconfig, 'reset'
  will be run. This will restore service runlevel to its default values
- and protect from any manual changes of runlevels by /sbin/chkconfig.
+ and protect from any manual changes of runlevels by `/sbin/chkconfig.`
  
 
 

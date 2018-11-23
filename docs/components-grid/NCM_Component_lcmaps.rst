@@ -28,22 +28,22 @@ RESOURCES
 *********
 
 
-/software/components/lcmaps/dbpath
+`/software/components/lcmaps/dbpath`
 ==================================
 
 
 Location of the main LCMAPS database (list of plugin modules).
-Default: /opt/edg/etc/lcmaps/lcmaps.db
+Default: `/opt/edg/etc/lcmaps/lcmaps.db`
 
 
-/software/components/lcmaps/modulepath
+`/software/components/lcmaps/modulepath`
 ======================================
 
 
 The LCMAPS module search path.
 
 
-/software/components/lcmaps/module
+`/software/components/lcmaps/module`
 ==================================
 
 
@@ -52,14 +52,14 @@ The names here are the module symbolic references that
 are used to define the policies
 
 
-/software/components/lcmaps/module/{}/path
+`/software/components/lcmaps/module/{}/path`
 ==========================================
 
 
 Path of the module to load.
 
 
-/software/components/lcmaps/module/{}/args
+`/software/components/lcmaps/module/{}/args`
 ==========================================
 
 
@@ -67,21 +67,21 @@ Arguments to the module (these are concatenated to the module
 path itself and quoted.
 
 
-/software/components/lcmaps/policies
+`/software/components/lcmaps/policies`
 ====================================
 
 
 List (ordered) of LCMAPS policies
 
 
-/software/components/lcmaps/policies/[]/name
+`/software/components/lcmaps/policies`/[]/name
 ============================================
 
 
 Name of the policy.
 
 
-/software/components/lcmaps/policies/[]/ruleset
+`/software/components/lcmaps/policies`/[]/ruleset
 ===============================================
 
 
@@ -102,13 +102,13 @@ EXAMPLE
   "/software/components/lcmaps/module/localaccount/path" = 
  	"lcmaps_localaccount.mod";
   "/software/components/lcmaps/module/localaccount/args" = 
- 	"-gridmapfile /etc/grid-security/grid-mapfile";
+ 	"-gridmapfile `/etc/grid`-security/grid-mapfile";
  
   "/software/components/lcmaps/module/poolaccount/path" = "lcmaps_poolaccount.mod";
   "/software/components/lcmaps/module/poolaccount/args" =
          " -override_inconsistency" +
-         " -gridmapfile /etc/grid-security/grid-mapfile" +
-         " -gridmapdir /etc/grid-security/gridmapdir";
+         " -gridmapfile `/etc/grid`-security/grid-mapfile" +
+         " -gridmapdir `/etc/grid`-security/gridmapdir";
  
   "/software/components/lcmaps/module/posixenf/path" = "lcmaps_posix_enf.mod";
   "/software/components/lcmaps/module/posixenf/args" =

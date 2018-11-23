@@ -29,7 +29,7 @@ named just like the tags for the appropriate Icinga object.
 * \ ``/software/components/icinga/general``\ 
  
  Global settings for Icinga. These settings will be written in
- /etc/icinga/icinga.cfg .
+ `/etc/icinga/icinga.cfg` .
  
 
 
@@ -213,59 +213,59 @@ FILES
 The following files are written by this component:
 
 
-* /etc/icinga/icinga.cfg
+* `/etc/icinga/icinga.cfg`
 
 
 
-* /etc/icinga/cgi.cfg
+* `/etc/icinga/cgi.cfg`
 
 
 
-* /etc/icinga/objects/contacts.cfg
+* `/etc/icinga/objects/contacts.cfg`
 
 
 
-* /etc/icinga/objects/contactgroups.cfg
+* `/etc/icinga/objects/contactgroups.cfg`
 
 
 
-* /etc/icinga/objects/hosts.cfg
+* `/etc/icinga/objects/hosts.cfg`
 
 
 
-* /etc/icinga/objects/hostgroups.cfg
+* `/etc/icinga/objects/hostgroups.cfg`
 
 
 
-* /etc/icinga/objects/hostdependencies.cfg
+* `/etc/icinga/objects/hostdependencies.cfg`
 
 
 
-* /etc/icinga/objects/services.cfg
+* `/etc/icinga/objects/services.cfg`
 
 
 
-* /etc/icinga/objects/servicegroups.cfg
+* `/etc/icinga/objects/servicegroups.cfg`
 
 
 
-* /etc/icinga/objects/servicedependencies.cfg
+* `/etc/icinga/objects/servicedependencies.cfg`
 
 
 
-* /etc/icinga/objects/serviceextinfo.cfg
+* `/etc/icinga/objects/serviceextinfo.cfg`
 
 
 
-* /etc/icinga/objects/timeperiods.cfg
+* `/etc/icinga/objects/timeperiods.cfg`
 
 
 
-* /etc/icinga/objects/commands.cfg
+* `/etc/icinga/objects/commands.cfg`
 
 
 
-* /etc/icinga/resources.cfg
+* `/etc/icinga/resources.cfg`
 
 
 

@@ -17,7 +17,7 @@ DESCRIPTION
 ***********
 
 
-The \ *myproxy*\  component manages the /opt/edg/etc/edg-myproxy.conf
+The \ *myproxy*\  component manages the `/opt/edg/etc/edg`-myproxy.conf
 file for the MyProxy server.
 
 
@@ -41,7 +41,7 @@ confFile : string (required)
 
 Configuration file for MyProxy. In edg variant, this is an intermediate configuration file used to generate the real one.
 
-Default: /opt/edg/etc/edg-myproxy.conf
+Default: `/opt/edg/etc/edg`-myproxy.conf
 
 
 daemonName : string (required)
@@ -117,7 +117,7 @@ AUTHOR
 ******
 
 
-Charles Loomis <charles.loomis@cern.ch>
+Charles Loomis <>
 
 
 **********
@@ -125,7 +125,7 @@ MAINTAINER
 **********
 
 
-Michel Jouvin <jouvin@lal.in2p3.fr>
+Michel Jouvin <>
 
 
 *******

@@ -39,7 +39,7 @@ RESOURCES
 *********
 
 
-/software/components/filecopy/forceRestart: boolean (required)
+`/software/components/filecopy/forceRestart`: boolean (required)
 ==============================================================
 
 
@@ -50,7 +50,7 @@ restart command only if file content, permissions or owner/group has been change
 Default: false
 
 
-/software/components/filecopy/services: nlist (optional)
+`/software/components/filecopy/services`: nlist (optional)
 ========================================================
 
 

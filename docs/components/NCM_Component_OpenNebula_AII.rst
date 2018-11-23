@@ -34,7 +34,7 @@ AII setup
 ^^^^^^^^^
 
 
-Set OpenNebula endpoints RPC connector /etc/aii/opennebula.conf
+Set OpenNebula endpoints RPC connector `/etc/aii/opennebula.conf`
 
 It must include at least one RPC endpoint and password.
 

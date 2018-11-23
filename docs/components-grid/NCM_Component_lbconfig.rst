@@ -18,7 +18,7 @@ DESCRIPTION
 
 
 The \ *ncm-lbconfig*\  component manages the configuration file of the WP1
-lbserver.  It creates the /opt/edg/etc/edg_wl_query_index file with
+lbserver.  It creates the `/opt/edg/etc/edg_wl_query_index` file with
 the values saved in the machine profile.
 
 

@@ -26,16 +26,16 @@ RESOURCES
 *********
 
 
-/software/components/@COMP/configFile : string (required)
+`/software/components`/@COMP/configFile : string (required)
 =========================================================
 
 
 Configuration file path/name for startup driver.
 
-Default : /opt/glite/etc/config/scripts/gLite.services
+Default : `/opt/glite/etc/config/scripts/gLite.services`
 
 
-/software/components/@COMP/createProxy : boolean
+`/software/components`/@COMP/createProxy : boolean
 ================================================
 
 
@@ -44,31 +44,31 @@ If true, create a grid proxy for the gLite user used to run the service.
 Default : true
 
 
-/software/components/@COMP/disableOutput : boolean (optional)
+`/software/components`/@COMP/disableOutput : boolean (optional)
 =============================================================
 
 
-If true, redirect script output to /dev/null. For special cases where the output can trigger problems
+If true, redirect script output to `/dev/null.` For special cases where the output can trigger problems
 (like those related to Python PIPE bugs).
 
 
-/software/components/@COMP/disableError : boolean (optional)
+`/software/components`/@COMP/disableError : boolean (optional)
 ============================================================
 
 
 Idem as disableOutput but for stderr.
 
 
-/software/components/@COMP/initScript : string (required)
+`/software/components`/@COMP/initScript : string (required)
 =========================================================
 
 
 Name of startup script for gLite services.
 
-Default : /etc/rc.d/init.d/gLite
+Default : `/etc/rc.d`/init.d/gLite
 
 
-/software/components/@COMP/postRestart : list (optional)
+`/software/components`/@COMP/postRestart : list (optional)
 ========================================================
 
 
@@ -87,7 +87,7 @@ commands. Each nlist accepts the following properties :
 Default : None
 
 
-/software/components/@COMP/restartEnv : list of string (optional)
+`/software/components`/@COMP/restartEnv : list of string (optional)
 =================================================================
 
 
@@ -96,7 +96,7 @@ If defined, must be a list of string, each element being a script name to source
 Default : undefined
 
 
-/software/components/@COMP/restartServices : boolean (optional)
+`/software/components`/@COMP/restartServices : boolean (optional)
 ===============================================================
 
 
@@ -107,16 +107,16 @@ in startup driver configuration.
 Default : not defined.
 
 
-/software/components/@COMP/scriptPaths : list of string (required)
+`/software/components`/@COMP/scriptPaths : list of string (required)
 ==================================================================
 
 
 List of paths where to look for a script matching service name.
 
-Default : /opt/glite/etc/init.d
+Default : `/opt/glite/etc/init.d`
 
 
-/software/components/@COMP/services : nlist of string
+`/software/components`/@COMP/services : nlist of string
 =====================================================
 
 
@@ -153,7 +153,7 @@ AUTHOR
 ******
 
 
-Michel Jouvin <jouvin@lal.in2p3.fr>
+Michel Jouvin <>
 
 
 **********
@@ -161,7 +161,7 @@ MAINTAINER
 **********
 
 
-Michel Jouvin <jouvin@lal.in2p3.fr>
+Michel Jouvin <>
 
 
 *******

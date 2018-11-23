@@ -90,7 +90,7 @@ Sets the configuration of the queue. Structure as follows:
 
 \ *"/software/components/pbsserver/queue/manualconfig" : boolean*\ 
 
-Same as /software/components/pbsserver/server/manualconfig, but will
+Same as `/software/components/pbsserver/server/manualconfig`, but will
 remove queues completely if set to false.
 
 \ *"/software/components/pbsserver/queue/queuelist" ? pbs_queue*\ 
@@ -106,7 +106,7 @@ the attributes of that queue.
 =====================================================
 
 
-Analog to /software/components/pbsserver/queue, with entries
+Analog to `/software/components/pbsserver/queue`, with entries
 manaulconfig and nodelist. Nodelist is a named list with the FQHN of
 the workernode as key and as value the type pbs_node, consisting of a
 manualconfig and an attlist of type pbs_node_attlist.

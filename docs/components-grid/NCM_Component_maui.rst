@@ -19,7 +19,7 @@ DESCRIPTION
 
 The \ *maui*\  component manages the configuration for the maui
 scheduler. By default the configuration file resides in
-/var/spool/maui/maui.cfg.
+`/var/spool/maui/maui.cfg`.
 
 
 *********

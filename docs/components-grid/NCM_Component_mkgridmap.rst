@@ -17,7 +17,7 @@ DESCRIPTION
 ***********
 
 
-The \ *mkgridmap*\  component manages the configuration file (e.g. /opt/edg/etc/edg-mkgridmap.conf) for mkgridmap.
+The \ *mkgridmap*\  component manages the configuration file (e.g. `/opt/edg/etc/edg`-mkgridmap.conf) for mkgridmap.
 It can handle several mapfiles and support two distinct mapfile format :
 
 
@@ -81,7 +81,7 @@ lcmaps/gridmapfile : string (required)
 
 The full path to the LCMAPS gridmapfile.
 
-Default : /opt/edg/etc/lcmaps/gridmapfile
+Default : `/opt/edg/etc/lcmaps/gridmapfile`
 
 
 lcmaps/groupmapfile : string (required)
@@ -90,7 +90,7 @@ lcmaps/groupmapfile : string (required)
 
 The full path to the LCMAPS groupmapfile.
 
-Default : /opt/edg/etc/lcmaps/groupmapfile
+Default : `/opt/edg/etc/lcmaps/groupmapfile`
 
 
 
@@ -104,7 +104,7 @@ mkgridmapconf
 
 
 The location of the edg-mkgridmap.conf file, by default
-/opt/edg/etc/edg-mkgridmap.conf
+`/opt/edg/etc/edg`-mkgridmap.conf
 
 
 command

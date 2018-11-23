@@ -41,7 +41,7 @@ AUTHOR
 ******
 
 
-Stijn.De.Weirdt@cern.ch
+
 
 
 **********
@@ -49,7 +49,7 @@ MAINTAINER
 **********
 
 
-Stijn.De.Weirdt@cern.ch
+
 
 
 *******

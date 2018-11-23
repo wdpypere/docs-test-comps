@@ -19,7 +19,7 @@ CONFIGURATION PARAMETERS
 
 
 The base path for all of the configuration parameters is
-    /software/components/libvirtd.  The following sections describe the
+    `/software/components/libvirtd.`  The following sections describe the
     elements that are permitted directly below this base path.  With
     further parameters described in each section.  All parameters are
     optional.  Except the configuration file location.

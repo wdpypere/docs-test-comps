@@ -25,7 +25,7 @@ RESOURCES
 *********
 
 
-/software/components/ganglia
+`/software/components/ganglia`
 ============================
 
 

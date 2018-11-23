@@ -72,7 +72,7 @@ AUTHOR
 ******
 
 
-Charles Loomis <charles.loomis@cern.ch>
+Charles Loomis <>
 
 
 **********
@@ -80,7 +80,7 @@ MAINTAINER
 **********
 
 
-Michel Jouvin <jouvin@lal.in2p3.fr>
+Michel Jouvin <>
 
 
 *******

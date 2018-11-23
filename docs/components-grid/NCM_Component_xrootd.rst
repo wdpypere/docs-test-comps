@@ -32,19 +32,19 @@ participating to the service.
 
 
 
-Cluster-wide options are found under configuration path /software/components/xrootd. For the
+Cluster-wide options are found under configuration path `/software/components/xrootd.` For the
 complete list of options, see the schema. The main ones are described here.
 
 There are several subsets of options:
 
 
-- General options These options are properties found directly under /software/components/xrootd.
+- General options These options are properties found directly under `/software/components/xrootd.`
 
 
 
 - Service-specific options They are options that apply to a specific service or component of Xrootd. Examples are the DPM/Xrootd
 plugin, the token-based authentication, Xrootd instances. These subsets are resources located under 
-/software/components/xrootd.
+`/software/components/xrootd.`
 
 
 
@@ -76,7 +76,7 @@ Xrootd general options
 **********************
 
 
-These options are properties found directly under /software/components/xrootd/options. Main ones
+These options are properties found directly under `/software/components/xrootd/options.` Main ones
 are described below.
 
 authzLibraries: list of string (required)
@@ -181,14 +181,14 @@ There are two main services in a Xrootd cluster:
 
 - xrootd Several instances of this service can coexist on the same host, one for each of its roles (disk, redirector,
 federated redirector). Information about these instances are found under 
-/software/components/xrootd/options/xrootdInstances. One xrootd instance must exist on
+`/software/components/xrootd/options/xrootdInstances.` One xrootd instance must exist on
 every xrootd host.
 
 
 
 - cmsd There must be one cmsd instance for each federation the Xrootd is participated in (a cmsd instance must
 exist matching each xrootd instance of type 'fedredir'). Information about these instances are found under 
-/software/components/xrootd/options/cmsdInstances.
+`/software/components/xrootd/options/cmsdInstances.`
 
 
 
@@ -241,7 +241,7 @@ DPM/Xrootd plugin options
 
 This set of options describes the configuration of the DPM Xrootd plugin. This set is optional and must
 not be defined if the DPM/Xrootd plugin is not used. It is found under 
-/software/components/xrootd/options/dpm.
+`/software/components/xrootd/options/dpm.`
 
 Main options are described below.
 
@@ -309,7 +309,7 @@ defaultPrefix (see above) if the path is matching. For example:
 
 replacementPrefix = nlist('/cms', '/dpm/example.com/home/cms');
 
-This will convert /cms/myfile to /dpm/example.com/home/cms/myfile.
+This will convert `/cms/myfile` to `/dpm/example.com`/home/cms/myfile.
 
 Default: none
 
@@ -322,7 +322,7 @@ Token-based authentication
 
 This set of options describes the configuration of token-based authorization. This set is optional and must
 not be defined if token-based authentication is not enabled. It is found under 
-/software/components/xrootd/options/tokenAuthz.
+`/software/components/xrootd/options/tokenAuthz.`
 
 Main options are described below.
 
@@ -371,7 +371,7 @@ authzConf: string (required)
 
 Full path of the configuration file for token-based authorization.
 
-Default: /etc/grid-security/xrootd/TkAuthz.Authorization
+Default: `/etc/grid`-security/xrootd/TkAuthz.Authorization
 
 
 allowedFQANs: list of string (required)
@@ -429,7 +429,7 @@ tokenPrivateKey string (required)
 
 Full path of the token private key (that must be created outside of this configuration module).
 
-Default: /etc/grid-security/xrootd/pvkey.pem
+Default: `/etc/grid`-security/xrootd/pvkey.pem
 
 
 tokenPublicKey string (required)
@@ -438,7 +438,7 @@ tokenPublicKey string (required)
 
 Full path of the token public key (that must be created outside of this configuration module).
 
-Default: /etc/grid-security/xrootd/pubkey.pem
+Default: `/etc/grid`-security/xrootd/pubkey.pem
 
 
 .. code-block:: perl
@@ -455,7 +455,7 @@ Federation options
 
 
 For each Xrootd federation supported (taht need to be configured) on a given Xrootd node, the federation parameters are described under
-/software/components//xrootd/options/federations. This is a nlist where the key is a federation identifier (arbitrary,
+`/software/components`//xrootd/options/federations. This is a nlist where the key is a federation identifier (arbitrary,
 used to refer to the federation by 'federations' property of instances) and the value a nlist with the following possible properties.
 
 federationCmsdManager : string (required)
@@ -609,7 +609,7 @@ AUTHOR
 ******
 
 
-Michel Jouvin <jouvin@lal.in2p3.fr>
+Michel Jouvin <>
 
 
 **********
@@ -617,7 +617,7 @@ MAINTAINER
 **********
 
 
-Michel Jouvin <jouvin@lal.in2p3.fr>
+Michel Jouvin <>
 
 
 *******

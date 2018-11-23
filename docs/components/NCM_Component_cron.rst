@@ -77,7 +77,7 @@ EXAMPLE
      );
 
 
-On Linux this will create three files in /etc/cron.d:
+On Linux this will create three files in `/etc/cron.d`:
 
 
 .. code-block:: perl

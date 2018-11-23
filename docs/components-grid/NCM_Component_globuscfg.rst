@@ -18,7 +18,7 @@ DESCRIPTION
 
 
 The \ *globuscfg*\  component configures the globus services. It manages
-the /etc/sysconfig/globus and globus configuration files. In
+the `/etc/sysconfig/globus` and globus configuration files. In
 addition, it will start the specified Globus services.
 
 
@@ -31,7 +31,7 @@ RESOURCES
 - \ ``/software/components/globuscfg/sysconfigUpdate``\  : boolean
  
  If false, \ ``/etc/sysconfig/globus``\  is not updated. Must be set to
- false if you want to manage /etc/sysconfig/globus with another component
+ false if you want to manage `/etc/sysconfig/globus` with another component
  (e.g. ncm-sysconfig).
  
  D : true

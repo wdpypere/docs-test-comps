@@ -9,7 +9,7 @@ NAME
 ****
 
 
-NCM::etcservices - /etc/services configuration component.
+NCM::etcservices - `/etc/services` configuration component.
 
 
 ***********
@@ -28,7 +28,7 @@ SYNOPSIS
 
 - Configure()
  
- Configure /etc/services entries
+ Configure `/etc/services` entries
  
 
 

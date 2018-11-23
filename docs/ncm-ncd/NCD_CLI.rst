@@ -64,7 +64,7 @@ FUNCTIONS
 
 - check_noquattor
  
- Handle the presence of the /etc/noquattor file.
+ Handle the presence of the `/etc/noquattor` file.
  Exits, does not return anything.
  
 

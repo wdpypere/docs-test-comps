@@ -85,11 +85,11 @@ EXAMPLES
 ********
 
 
-Configuring /etc/ccm.conf
+Configuring `/etc/ccm.conf`
 =========================
 
 
-The well-known /etc/ccm.conf can be defined like this:
+The well-known `/etc/ccm.conf` can be defined like this:
 
 Define a valid structure for the file
 -------------------------------------
@@ -216,7 +216,7 @@ And that's it
 
 
 That's it!  When you deploy your configuration you should see your
-/etc/foo.ini in the correct location.
+`/etc/foo.ini` in the correct location.
 
 
 

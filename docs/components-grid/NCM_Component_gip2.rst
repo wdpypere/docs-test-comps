@@ -26,7 +26,7 @@ Resources
 *********
 
 
-/software/components/gip2/basedir : string (required)
+`/software/components/gip2/basedir` : string (required)
 =====================================================
 
 
@@ -35,7 +35,7 @@ Base directory for gip components (must contain directories plugin/, provider/..
 Default : none.
 
 
-/software/components/gip2/group : string (required)
+`/software/components/gip2/group` : string (required)
 ===================================================
 
 
@@ -44,7 +44,7 @@ Group GIP account belongs to. Used to define group ownership of GIP directories 
 Default : root.
 
 
-/software/components/gip2/flavor : string (required)
+`/software/components/gip2/flavor` : string (required)
 ====================================================
 
 
@@ -53,7 +53,7 @@ Define GIP flavor used. Can be 'lcg' org 'glite'.
 Default : glite.
 
 
-/software/components/gip2/ldif : nlist (optional)
+`/software/components/gip2/ldif` : nlist (optional)
 =================================================
 
 
@@ -70,7 +70,7 @@ LDIF confFile : string (optional)
 Name of the file to create with 'entries', used as the input file for staticInfoCmd. Ignored when
 staticInfoCmd is ommitted.
 
-Default : key of the /software/components/gip2/ldif nlist.
+Default : key of the `/software/components/gip2/ldif` nlist.
 
 
 LDIF template : string (deprecated)
@@ -101,7 +101,7 @@ if staticInfoCmd is not specified or sets of key value/pairs (key is the set nam
 
 Key is interpreted as an escaped value.
 
-If ommitted and confFile is defined, must be defined in /software/components/gip2/ldifConfEntries 
+If ommitted and confFile is defined, must be defined in `/software/components/gip2/ldifConfEntries` 
 key matching confFile.
 
 Default : none.
@@ -118,21 +118,21 @@ Default : none.
 
 
 
-/software/components/gip2/ldifConfEntries : nlist (optional)
+`/software/components/gip2/ldifConfEntries` : nlist (optional)
 ============================================================
 
 
-It is a nlist of 'entries' (as defined under /software/components/gip2/ldif). The key must match a file name as
-specified with confFile under /software/components/gip2/ldif. This property allows to have a global definition
+It is a nlist of 'entries' (as defined under `/software/components/gip2/ldif`). The key must match a file name as
+specified with confFile under `/software/components/gip2/ldif.` This property allows to have a global definition
 of a configuration file, used to generate LDIF files, that is common to several LDIF sets/files (this is for example the
 case for GLUE2 with the CREAM CE). When such a shared configuration file is used to generate several LDIF files,
-'entries' under /software/components/gip2/ldif must be left undefined and the configuration file contents must
+'entries' under `/software/components/gip2/ldif` must be left undefined and the configuration file contents must
 be defined here.
 
 Default: none.
 
 
-/software/components/gip2/plugin : nlist (optional)
+`/software/components/gip2/plugin` : nlist (optional)
 ===================================================
 
 
@@ -141,7 +141,7 @@ Named list of GIP plugins (plugins are associated with a static LDIF file). Key 
 Default : none.
 
 
-/software/components/gip2/provider : nlist (optional)
+`/software/components/gip2/provider` : nlist (optional)
 =====================================================
 
 
@@ -150,19 +150,19 @@ Named list of GIP providers. Key the provider name, value is the provider script
 Default : none.
 
 
-/software/components/gip2/staticInfoCmd : string (optional)
+`/software/components/gip2/staticInfoCmd` : string (optional)
 ===========================================================
 
 
 Path of the command to execute to transform entries into a LDIF file if none is defined in the 
-/software/components/gip2/ldif entry. It is here for backward compatibility but it is recommended
+`/software/components/gip2/ldif` entry. It is here for backward compatibility but it is recommended
 to define it as part of the ldif entries. If undefined in both locations, the configuration file
 is read directly without any processing.
 
 Default : none.
 
 
-/software/components/gip2/scripts : nlist (optional)
+`/software/components/gip2/scripts` : nlist (optional)
 ====================================================
 
 
@@ -172,7 +172,7 @@ Key the script name, value is the script.
 Default : none.
 
 
-/software/components/gip2/stubs : nlist (optional)
+`/software/components/gip2/stubs` : nlist (optional)
 ==================================================
 
 
@@ -185,7 +185,7 @@ If stubs are defined, BDII will be restarted if running on the current node.
 Default : none.
 
 
-/software/components/gip2/external : list of strings (optional)
+`/software/components/gip2/external` : list of strings (optional)
 ===============================================================
 
 
@@ -194,7 +194,7 @@ List of files/scripts that will be trusted as if managed by the component.
 Default : none.
 
 
-/software/components/gip2/user : string (required)
+`/software/components/gip2/user` : string (required)
 ==================================================
 
 
@@ -203,7 +203,7 @@ Account GIP runs under. Used to define user ownership of GIP directories and fil
 Default : none.
 
 
-/software/components/gip2/workDirs : list of strings (optional)
+`/software/components/gip2/workDirs` : list of strings (optional)
 ===============================================================
 
 
@@ -212,7 +212,7 @@ List of working directories used by GIP that must be configured to be owned and 
 Default : none.
 
 
-/software/components/gip2/etcDir : string (optional)
+`/software/components/gip2/etcDir` : string (optional)
 ====================================================
 
 
@@ -221,7 +221,7 @@ Location of the "etc" directory.
 Default : basedir/etc (LCG) or basedir/etc/gip (gLite)
 
 
-/software/components/gip2/ldifDir : string (optional)
+`/software/components/gip2/ldifDir` : string (optional)
 =====================================================
 
 
@@ -230,7 +230,7 @@ Location of the "ldif" directory.
 Default : basedir/ldif (LCG) or basedir/etc/ldif (gLite)
 
 
-/software/components/gip2/pluginDir : string (optional)
+`/software/components/gip2/pluginDir` : string (optional)
 =======================================================
 
 
@@ -239,7 +239,7 @@ Location of the "plugin" directory.
 Default : basedir/plugin (LCG) or basedir/etc/plugin (gLite)
 
 
-/software/components/gip2/providerDir : string (optional)
+`/software/components/gip2/providerDir` : string (optional)
 =========================================================
 
 
@@ -270,7 +270,7 @@ AUTHOR
 ******
 
 
-Charles Loomis <charles.loomis@cern.ch>
+Charles Loomis <>
 
 
 **********
@@ -278,7 +278,7 @@ MAINTAINER
 **********
 
 
-Charles Loomis <charles.loomis@cern.ch>,Michel Jouvin <jouvin@lal.in2p3.fr>
+Charles Loomis <>,Michel Jouvin <>
 
 
 *******

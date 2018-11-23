@@ -47,13 +47,13 @@ Support options
 
 - regexps
  
- Path to the suite regexptests  (\ ``testspath``\ /regexps is default when not specified).
+ Path to the suite regexptests  (\ ``testspath``\ `/regexps` is default when not specified).
  
 
 
 - profiles
  
- Path to the suite object templates (\ ``testspath``\ /profiles is default when not specified).
+ Path to the suite object templates (\ ``testspath``\ `/profiles` is default when not specified).
  
 
 

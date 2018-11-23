@@ -191,7 +191,7 @@ mandatory. The available fields are:
  is preserved for an existing account (for a new account, it will remain undefined,
  meaning that the default shell on the system will be used).
  
- Defaults to /bin/bash.
+ Defaults to `/bin/bash.`
  
 
 
@@ -277,7 +277,7 @@ name.  At least one field must be specified.
 ================================================
 
 
-A nlist of values to be set in /etc/login.defs. NOTE: This
+A nlist of values to be set in `/etc/login.defs`. NOTE: This
 configuration file is specific to RedHat-like systems; setting will be
 ignored on other systems.  This file configures all kinds of default
 settings such as:
@@ -348,7 +348,7 @@ The effect of each possible value is:
 - system
  
  all accounts/groups in the system range (strictly below GID/UID_MIN as
- defined in /etc/login.defs) are preserved even though they are not present
+ defined in `/etc/login.defs`) are preserved even though they are not present
  in the configuration. It is possible to use login_defs/uid_min and
  login_defs/gid_min properties to control the preserved ranges.
  
@@ -359,7 +359,7 @@ The effect of each possible value is:
  all accounts/groups in the system range and in the
  range used for dynamic uid/gid allocation by useradd command, ie. all
  accounts/groups with uid/gid less or equal to GID/UID_MAX as defined in 
- /etc/login.defs, are preserved. The exact list of accounts preserved
+ `/etc/login.defs`, are preserved. The exact list of accounts preserved
  depends on UID/GID_MAX value. It is possible to use login_defs/uid_max and
  login_defs/gid_max properties to control the preserved ranges. Not that
  \ ``remove_unknown=true``\  with preserved_accounts=dyn_user_group and UID/GID_MAX

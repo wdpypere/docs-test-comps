@@ -19,7 +19,7 @@ DESCRIPTION
 
 The \ *ncm-wlconfig*\  component manages the configuration files of the WP1
 NetworkServer, LogMonitor, JobController, and WorkloadManager
-services.  All of these services read the /opt/edg/etc/edg_wl.conf
+services.  All of these services read the `/opt/edg/etc/edg_wl.conf`
 file.
 
 

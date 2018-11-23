@@ -27,7 +27,7 @@ reload the new configuration by executing the following command:
 
 .. code-block:: perl
 
-   /sbin/service sshd reload
+   `/sbin/service` sshd reload
 
 
 

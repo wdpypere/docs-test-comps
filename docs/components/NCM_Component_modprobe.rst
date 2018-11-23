@@ -20,8 +20,8 @@ SYNOPSIS
 
 - Configure()
  
- The method configures the modprobe configuration file /etc/modules.conf
- for 2.4 kernels and configuration file /etc/modprobe.d/quattor.conf
+ The method configures the modprobe configuration file `/etc/modules.conf`
+ for 2.4 kernels and configuration file `/etc/modprobe.d`/quattor.conf
  for 2.6 kernels. The method also creates a new initial ramdisk images for
  preloading modules for all the kernel releases installed in the node.
  
@@ -29,8 +29,8 @@ SYNOPSIS
 
 - Unconfigure()
  
- The method unconfigures the modprobe configuration file /etc/modules.conf
- for 2.4 kernels and configuration file /etc/modprobe.d/quattor.conf
+ The method unconfigures the modprobe configuration file `/etc/modules.conf`
+ for 2.4 kernels and configuration file `/etc/modprobe.d`/quattor.conf
  for 2.6 kernels. The method also creates a new initial ramdisk images for
  preloading modules for all the kernel releases installed in the node.
  

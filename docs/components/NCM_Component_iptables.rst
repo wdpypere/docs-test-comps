@@ -56,7 +56,7 @@ RESOURCES
 *********
 
 
-\* << /software/components/iptables>>
+\* << `/software/components/iptables`>>
 =====================================
 
 

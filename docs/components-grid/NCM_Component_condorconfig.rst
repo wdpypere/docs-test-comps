@@ -19,7 +19,7 @@ DESCRIPTION
 
 
 The \ *condorconfig*\  component manages the configuration file (default
-is /opt/condor/etc/condor.conf) for Condor.  All of the condor
+is `/opt/condor/etc/condor.conf`) for Condor.  All of the condor
 parameters are available with exactly the same name in Quattor.  See
 the condor documentation for the names and descriptions of the
 parameters.

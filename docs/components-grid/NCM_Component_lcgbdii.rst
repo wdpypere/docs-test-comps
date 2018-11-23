@@ -78,7 +78,7 @@ configFile : string (required)
 
 The location of the LCG BDII configuration file.
 
-Default: /opt/bdii/etc/bdii.conf
+Default: `/opt/bdii/etc/bdii.conf`
 
 
 dir
@@ -87,7 +87,7 @@ dir
 
 The base directory for the BDII code and configuration files.
 
-Default: /opt/bdii
+Default: `/opt/bdii`
 
 
 fixGlue : string (yes or no, optional)
@@ -202,7 +202,7 @@ schemaFile
 
 Name of file listing the schemas used by BDII.  This is required for LCG 2.5.0 or above.
 
-Default: /opt/bdii/etc/schemas
+Default: `/opt/bdii/etc/schemas`
 
 
 schemas : list of strings (optional)
@@ -248,7 +248,7 @@ slapdConf : string
 
 The location of slapd configuration file to use.
 
-Default:  /opt/bdii/etc/glue-slapd.conf
+Default:  `/opt/bdii/etc/glue`-slapd.conf
 
 
 slapdDebugLevel : long (0 to 5)
@@ -313,7 +313,7 @@ AUTHOR
 ******
 
 
-Charles Loomis <charles.loomis@cern.ch>
+Charles Loomis <>
 
 
 **********
@@ -321,7 +321,7 @@ MAINTAINER
 **********
 
 
-Charles Loomis <charles.loomis@cern.ch>, Michel Jouvin <jouvin@lal.in2p3.fr>
+Charles Loomis <>, Michel Jouvin <>
 
 
 *******

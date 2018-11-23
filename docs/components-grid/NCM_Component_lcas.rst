@@ -35,21 +35,21 @@ MAIN RESOURCES
 **************
 
 
-/software/components/lcas/dbpath
+`/software/components/lcas/dbpath`
 ================================
 
 
-Deprecated. Mutually exclusive with /software/components/lcas/db.
+Deprecated. Mutually exclusive with `/software/components/lcas/db.`
 
 
-/software/components/lcas/module
+`/software/components/lcas/module`
 ================================
 
 
-Deprecated. Mutually exclusive with /software/components/lcas/db.
+Deprecated. Mutually exclusive with `/software/components/lcas/db.`
 
 
-/software/components/lcas/db : list (optional)
+`/software/components/lcas/db` : list (optional)
 ==============================================
 
 
@@ -162,7 +162,7 @@ AUTHOR
 ******
 
 
-David Groep <davidg@nikhef.nl>
+David Groep <>
 
 
 **********
@@ -170,7 +170,7 @@ MAINTAINER
 **********
 
 
-David Groep <davidg@nikhef.nl>, Michel Jouvin <jouvin@lal.in2p3.fr>
+David Groep <>, Michel Jouvin <>
 
 
 *******

@@ -69,8 +69,8 @@ EXAMPLES
  .. code-block:: perl
  
     title Scientific Linux 4.2 / 2.6.9
-          kernel /vmlinuz-2.6.9-22.0.1.EL ro root=LABEL=/
-          initrd /initrd-2.6.9-22.0.1.EL.img
+          kernel `/vmlinuz`-2.6.9-22.0.1.EL ro root=LABEL=/
+          initrd `/initrd`-2.6.9-22.0.1.EL.img
  
  
 
@@ -96,9 +96,9 @@ EXAMPLES
  .. code-block:: perl
  
     title Xen 3 / XenLinux 2.6.16
-          kernel /xen-3.0.2-2.gz dom0_mem=400000 addthis
-          module /vmlinuz-2.6.16-xen3_86.1_rhel4.1 max_loop=128 root=/dev/hda2 ro
-          module /initrd-2.6.16-xen3_86.1_rhel4.1
+          kernel `/xen`-3.0.2-2.gz dom0_mem=400000 addthis
+          module `/vmlinuz`-2.6.16-xen3_86.1_rhel4.1 max_loop=128 root=/dev/hda2 ro
+          module `/initrd`-2.6.16-xen3_86.1_rhel4.1
  
  
 

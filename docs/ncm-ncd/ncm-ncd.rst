@@ -197,7 +197,7 @@ OPTIONS
  
  .. code-block:: perl
  
-      ncm-ncd --configure <some-comp> --pre-hook /bin/cat
+      ncm-ncd --configure <some-comp> --pre-hook `/bin/cat`
  
  
 
@@ -227,9 +227,9 @@ OPTIONS
 
 - --check-noquattor
  
- Check if CCM updates are disabled globally via the /etc/noquattor file.
+ Check if CCM updates are disabled globally via the `/etc/noquattor` file.
  And do not run if CCM updates are globally disabled.
- (If --check-noquattor is not set, ncm-ncd will ignore /etc/noquattor).
+ (If --check-noquattor is not set, ncm-ncd will ignore `/etc/noquattor`).
  
  It is enabled by default, use \ ``--no-check-noquattor``\  to disable it
  (or set \ ``check-noquattor = 0``\  in the configfile).

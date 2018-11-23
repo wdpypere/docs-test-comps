@@ -56,7 +56,7 @@ On the server, create a keytab for the quattor-server user:
      ipa role-add-member --users=quattor-server "Quattor server"
  
      # use -r option to retrieve existing keytab (e.g. from another ipa server)
-     ipa-getkeytab -p quattor-server -k /etc/quattor-server.keytab -s ipaserver.example.com
+     ipa-getkeytab -p quattor-server -k `/etc/quattor`-server.keytab -s ipaserver.example.com
 
 
 Use these with ncm-freeipa on the server:
@@ -109,7 +109,7 @@ On the AII host (assuming the host is already added to IPA):
 
      kinit admin
      # use -r option to retrieve existing keytab (e.g. from another AII server)
-     ipa-getkeytab -p quattor-aii -k /etc/quattor-aii.keytab -s ipaserver.example.com
+     ipa-getkeytab -p quattor-aii -k `/etc/quattor`-aii.keytab -s ipaserver.example.com
      kdestroy
 
 

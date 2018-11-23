@@ -125,7 +125,7 @@ RESOURCES
 *********
 
 
-/software/components/ceph
+`/software/components/ceph`
 =========================
 
 

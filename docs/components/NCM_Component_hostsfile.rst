@@ -76,7 +76,7 @@ RESOURCES
  
  - \ ``comment``\ 
   
-  A comment to append to the line within /etc/hosts.
+  A comment to append to the line within `/etc/hosts.`
   
  
  
@@ -116,7 +116,7 @@ Example - configuration defined like this:
      );
 
 
-will modify the /etc/hosts.local file from:
+will modify the `/etc/hosts.local` file from:
 
 
 .. code-block:: perl

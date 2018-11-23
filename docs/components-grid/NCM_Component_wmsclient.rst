@@ -20,8 +20,8 @@ DESCRIPTION
 The ncm-wmsclient component manages the configuration file of gLite WMS (both LB/NB and WMProxy interfaces) and EDG RB clients
 command line interface. It creates both the site default variables and per VO configuration files.
 
-Part of the configuration information used by this component comes from /system/vo/VONAME/services. EDG RB
-information (legacy) is directly under this configuration path, gLite WMS configuration is under /system/vo/VONAME/services/wms.
+Part of the configuration information used by this component comes from `/system/vo/VONAME/services.` EDG RB
+information (legacy) is directly under this configuration path, gLite WMS configuration is under `/system/vo/VONAME/services/wms.`
 Both share the same structure too.
 
 
@@ -33,7 +33,7 @@ RESOURCES
 wmsclient supports both gLite WMS with NS/LB interface or WMProxy interface and EDG RB. Information resources to describe all have the same structure.
 There must be one for each variant to configure. Supported MW variants are 'edg', 'glite' and 'wmproxy'.
 
-/software/components/wmsclient/MW_VARIANT/active
+`/software/components/wmsclient/MW_VARIANT/active`
 ================================================
 
 
@@ -42,17 +42,17 @@ Set to true to configure this WMS/RB variant.
 Default : true (for a present variant).
 
 
-/software/components/wmsclient/MW_VARIANT/basedir
+`/software/components/wmsclient/MW_VARIANT/basedir`
 =================================================
 
 
 The base directory to use for generating VO-specific configuration
-file.  It defaults to EDG_LOCATION/etc (or /opt/edg/etc if EDG_LOCATION
-is not defined) for EDG RB, and to GLITE_LOCATION/etc (or /opt/glite/etc if GLITE_LOCATION
+file.  It defaults to EDG_LOCATION/etc (or `/opt/edg/etc` if EDG_LOCATION
+is not defined) for EDG RB, and to GLITE_LOCATION/etc (or `/opt/glite/etc` if GLITE_LOCATION
 is not defined) for gLite WMS.
 
 
-/software/components/wmsclient/MW_VARIANT/defaultAttrs
+`/software/components/wmsclient/MW_VARIANT/defaultAttrs`
 ======================================================
 
 
@@ -67,11 +67,11 @@ VO specific configuration
 =========================
 
 
-VO specific configuration is under /system/vo configuration path. There is one entry per VO. In the resource for
+VO specific configuration is under `/system/vo` configuration path. There is one entry per VO. In the resource for
 each VO, this component uses the items described below. Except for VO full name, information is under 'services'
 for EDG RB and under 'services/wms' for gLite WMS.
 
-/system/vo/\*/name
+`/system/vo`/\*/name
 ------------------
 
 
@@ -151,7 +151,7 @@ AUTHOR
 ******
 
 
-Michel Jouvin <jouvin@lal.in2p3.fr>
+Michel Jouvin <>
 
 
 **********
@@ -159,7 +159,7 @@ MAINTAINER
 **********
 
 
-Michel Jouvin <jouvin@lal.in2p3.fr>
+Michel Jouvin <>
 
 
 *******
