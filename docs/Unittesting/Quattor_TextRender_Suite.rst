@@ -47,13 +47,13 @@ Support options
 
 - regexps
  
- Path to the suite regexptests  (\ ``testspath``\ `/regexps` is default when not specified).
+ Path to the suite regexptests  (``testspath```/regexps` is default when not specified).
  
 
 
 - profiles
  
- Path to the suite object templates (\ ``testspath``\ `/profiles` is default when not specified).
+ Path to the suite object templates (``testspath```/profiles` is default when not specified).
  
 
 
@@ -74,7 +74,7 @@ Support options
  A compiled regular expression that is used to filter the found regexptest files
  (matching relative filenames are kept; non-matcing ones are removed).
  
- One can also set the \ ``QUATTOR_TEST_SUITE_FILTER``\  enviroment variable, which will be
+ One can also set the ``QUATTOR_TEST_SUITE_FILTER`` enviroment variable, which will be
  used as regular expression pattern for the filter.
  
 
@@ -100,7 +100,7 @@ one_test
 ========
 
 
-Run all regexptest \ ``$regexps``\  for a single test profile \ ``profile``\  with name \ ``name``\ .
+Run all regexptest ``$regexps`` for a single test profile ``profile`` with name ``name``.
 
 
 test

@@ -18,7 +18,7 @@ Functions
 
 - get_fqdn
  
- Get \ ``fqdn``\  of the host using host profile \ ``config``\  instance.
+ Get ``fqdn`` of the host using host profile ``config`` instance.
  
 
 
@@ -70,13 +70,13 @@ Methods
 
 - _initialize
  
- Initialisation using \ ``_init_attrs``\ , \ ``_attrs``\  and \ ``_daemons``\ .
+ Initialisation using ``_init_attrs``, ``_attrs`` and ``_daemons``.
  
 
 
 - _daemons
  
- Method to customise the \ ``daemons``\  attribute during \ ``_initialize``\ .
+ Method to customise the ``daemons`` attribute during ``_initialize``.
  
 
 
@@ -89,15 +89,20 @@ Methods
 - _attrs
  
  Add/set/modify more attributes
- Conviennce method for inheritance
+ Convenience method for inheritance
  instead of using SUPER
-     my $res = $self->SUPER::method(@_);
+ 
+ 
+ .. code-block:: perl
+ 
+      my $res = $self->SUPER::method(@_);
+ 
  
 
 
 - _get_json_tree
  
- Return the getTree result on \ ``path``\ , in JSON data format.
+ Return the getTree result on ``path``, in JSON data format.
  (Relative paths are relative to the prefix).
  
 
@@ -110,42 +115,42 @@ Methods
 
 - _file_opts
  
- Return hashref with filewriter options for \ ``service``\ 
+ Return hashref with filewriter options for ``service``
  (incl owned by that service user)
  
 
 
 - _write_config_file
  
- Write the config file with name \ ``filename``\  and \ ``element``\  instance.
+ Write the config file with name ``filename`` and ``element`` instance.
  
 
 
 - _write_config_files
  
- Write multiple config files based on entries in the \ ``tree``\  attribute.
- Filename is based on mapping in the \ ``filename``\  attribute;
+ Write multiple config files based on entries in the ``tree`` attribute.
+ Filename is based on mapping in the ``filename`` attribute;
  a mapping which daemon(s) to start when the file is modified can
- be provided via the \ ``daemon_map``\  attribute.
+ be provided via the ``daemon_map`` attribute.
  
 
 
 - write_config_file
  
- Write the config files (when \ ``filenames``\  attribute is a hashref) or single file otherwise.
+ Write the config files (when ``filenames`` attribute is a hashref) or single file otherwise.
  
 
 
 - _read_ceph_keyring
  
- Read Ceph pool key file from \ ``keyring``\ .
+ Read Ceph pool key file from ``keyring``.
  
 
 
 - _libvirt_ceph_secret
  
- Set the libvirt \ ``secret``\  file and
- couple the \ ``uuid``\  to the Ceph key from the \ ``keyring``\ .
+ Set the libvirt ``secret`` file and
+ couple the ``uuid`` to the Ceph key from the ``keyring``.
  
 
 
@@ -156,11 +161,11 @@ Methods
  Options
  
  
- - user: option passed to \ ``CAF::Process``\ 
+ - user: option passed to ``CAF::Process``
  
  
  
- - sensitive: option passed to \ ``CAF::Process``\ 
+ - sensitive: option passed to ``CAF::Process``
  
  
  
@@ -200,7 +205,7 @@ Methods
 - restart_daemons
  
  Restarts system service(s) after any configuration
- change for OpenStack \ ``service``\  service.
+ change for OpenStack ``service`` service.
  
 
 

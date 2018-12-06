@@ -6,498 +6,498 @@ Types
 -----
 
  - **/software/components/condorconfig/condorconfig_component**
-    - */software/components/condorconfig//condorconfig_component/configFile*
+    - */software/components/condorconfig/condorconfig_component/configFile*
         - Required
         - Type: string
         - Default value: /opt/condor-c/etc/condor_config
-    - */software/components/condorconfig//condorconfig_component/localConfigFile*
+    - */software/components/condorconfig/condorconfig_component/localConfigFile*
         - Required
         - Type: string
         - Default value: /opt/condor-c/local.localhost/condor_config.local
-    - */software/components/condorconfig//condorconfig_component/user*
+    - */software/components/condorconfig/condorconfig_component/user*
         - Required
         - Type: string
         - Default value: glite
-    - */software/components/condorconfig//condorconfig_component/RELEASE_DIR*
+    - */software/components/condorconfig/condorconfig_component/RELEASE_DIR*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/LOCAL_DIR*
+    - */software/components/condorconfig/condorconfig_component/LOCAL_DIR*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/CONDOR_ADMIN*
+    - */software/components/condorconfig/condorconfig_component/CONDOR_ADMIN*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MAIL*
+    - */software/components/condorconfig/condorconfig_component/MAIL*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/CONDOR_HOST*
+    - */software/components/condorconfig/condorconfig_component/CONDOR_HOST*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/UID_DOMAIN*
+    - */software/components/condorconfig/condorconfig_component/UID_DOMAIN*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/FILESYSTEM_DOMAIN*
+    - */software/components/condorconfig/condorconfig_component/FILESYSTEM_DOMAIN*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/COLLECTOR_NAME*
+    - */software/components/condorconfig/condorconfig_component/COLLECTOR_NAME*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/USERNAME*
+    - */software/components/condorconfig/condorconfig_component/USERNAME*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/LOCK*
+    - */software/components/condorconfig/condorconfig_component/LOCK*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/FLOCK_FROM*
+    - */software/components/condorconfig/condorconfig_component/FLOCK_FROM*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/FLOCK_TO*
+    - */software/components/condorconfig/condorconfig_component/FLOCK_TO*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/FLOCK_NEGOTIATOR_HOSTS*
+    - */software/components/condorconfig/condorconfig_component/FLOCK_NEGOTIATOR_HOSTS*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/FLOCK_COLLECTOR_HOSTS*
+    - */software/components/condorconfig/condorconfig_component/FLOCK_COLLECTOR_HOSTS*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ALLOW_ADMINISTRATOR*
+    - */software/components/condorconfig/condorconfig_component/ALLOW_ADMINISTRATOR*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ALLOW_OWNER*
+    - */software/components/condorconfig/condorconfig_component/ALLOW_OWNER*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ALLOW_READ*
+    - */software/components/condorconfig/condorconfig_component/ALLOW_READ*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ALLOW_WRITE*
+    - */software/components/condorconfig/condorconfig_component/ALLOW_WRITE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ALLOW_NEGOTIATOR*
+    - */software/components/condorconfig/condorconfig_component/ALLOW_NEGOTIATOR*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ALLOW_NEGOTIATOR_SCHEDD*
+    - */software/components/condorconfig/condorconfig_component/ALLOW_NEGOTIATOR_SCHEDD*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ALLOW_WRITE_COLLECTOR*
+    - */software/components/condorconfig/condorconfig_component/ALLOW_WRITE_COLLECTOR*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ALLOW_WRITE_STARTD*
+    - */software/components/condorconfig/condorconfig_component/ALLOW_WRITE_STARTD*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ALLOW_READ_COLLECTOR*
+    - */software/components/condorconfig/condorconfig_component/ALLOW_READ_COLLECTOR*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ALLOW_READ_STARTD*
+    - */software/components/condorconfig/condorconfig_component/ALLOW_READ_STARTD*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GLIDEIN_SITES*
+    - */software/components/condorconfig/condorconfig_component/GLIDEIN_SITES*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/NEGOTIATOR_IGNORE_USER_PRIORITIES*
+    - */software/components/condorconfig/condorconfig_component/NEGOTIATOR_IGNORE_USER_PRIORITIES*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/CONDOR_IDS*
+    - */software/components/condorconfig/condorconfig_component/CONDOR_IDS*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MAX_COLLECTOR_LOG*
+    - */software/components/condorconfig/condorconfig_component/MAX_COLLECTOR_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/COLLECTOR_DEBUG*
+    - */software/components/condorconfig/condorconfig_component/COLLECTOR_DEBUG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MAX_NEGOTIATOR_LOG*
+    - */software/components/condorconfig/condorconfig_component/MAX_NEGOTIATOR_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/NEGOTIATOR_DEBUG*
+    - */software/components/condorconfig/condorconfig_component/NEGOTIATOR_DEBUG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MAX_NEGOTIATOR_MATCH_LOG*
+    - */software/components/condorconfig/condorconfig_component/MAX_NEGOTIATOR_MATCH_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MAX_SCHEDD_LOG*
+    - */software/components/condorconfig/condorconfig_component/MAX_SCHEDD_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SCHEDD_DEBUG*
+    - */software/components/condorconfig/condorconfig_component/SCHEDD_DEBUG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MAX_SHADOW_LOG*
+    - */software/components/condorconfig/condorconfig_component/MAX_SHADOW_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SHADOW_DEBUG*
+    - */software/components/condorconfig/condorconfig_component/SHADOW_DEBUG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MAX_STARTD_LOG*
+    - */software/components/condorconfig/condorconfig_component/MAX_STARTD_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/STARTD_DEBUG*
+    - */software/components/condorconfig/condorconfig_component/STARTD_DEBUG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MINUTE*
+    - */software/components/condorconfig/condorconfig_component/MINUTE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/HOUR*
+    - */software/components/condorconfig/condorconfig_component/HOUR*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/StateTimer*
+    - */software/components/condorconfig/condorconfig_component/StateTimer*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ActivityTimer*
+    - */software/components/condorconfig/condorconfig_component/ActivityTimer*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ActivationTimer*
+    - */software/components/condorconfig/condorconfig_component/ActivationTimer*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/LastCkpt*
+    - */software/components/condorconfig/condorconfig_component/LastCkpt*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/STANDARD*
+    - */software/components/condorconfig/condorconfig_component/STANDARD*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/VANILLA*
+    - */software/components/condorconfig/condorconfig_component/VANILLA*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/IsVanilla*
+    - */software/components/condorconfig/condorconfig_component/IsVanilla*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/IsStandard*
+    - */software/components/condorconfig/condorconfig_component/IsStandard*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/NonCondorLoadAvg*
+    - */software/components/condorconfig/condorconfig_component/NonCondorLoadAvg*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/BackgroundLoad*
+    - */software/components/condorconfig/condorconfig_component/BackgroundLoad*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/HighLoad*
+    - */software/components/condorconfig/condorconfig_component/HighLoad*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/StartIdleTime*
+    - */software/components/condorconfig/condorconfig_component/StartIdleTime*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ContinueIdleTime*
+    - */software/components/condorconfig/condorconfig_component/ContinueIdleTime*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MaxSuspendTime*
+    - */software/components/condorconfig/condorconfig_component/MaxSuspendTime*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MaxVacateTime*
+    - */software/components/condorconfig/condorconfig_component/MaxVacateTime*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/KeyboardBusy*
+    - */software/components/condorconfig/condorconfig_component/KeyboardBusy*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ConsoleBusy*
+    - */software/components/condorconfig/condorconfig_component/ConsoleBusy*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/CPUIdle*
+    - */software/components/condorconfig/condorconfig_component/CPUIdle*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/CPUBusy*
+    - */software/components/condorconfig/condorconfig_component/CPUBusy*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/BigJob*
+    - */software/components/condorconfig/condorconfig_component/BigJob*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MediumJob*
+    - */software/components/condorconfig/condorconfig_component/MediumJob*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SmallJob*
+    - */software/components/condorconfig/condorconfig_component/SmallJob*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/JustCPU*
+    - */software/components/condorconfig/condorconfig_component/JustCPU*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MachineBusy*
+    - */software/components/condorconfig/condorconfig_component/MachineBusy*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/WANT_SUSPEND*
+    - */software/components/condorconfig/condorconfig_component/WANT_SUSPEND*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/WANT_VACATE*
+    - */software/components/condorconfig/condorconfig_component/WANT_VACATE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/START*
+    - */software/components/condorconfig/condorconfig_component/START*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SUSPEND*
+    - */software/components/condorconfig/condorconfig_component/SUSPEND*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/CONTINUE*
+    - */software/components/condorconfig/condorconfig_component/CONTINUE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/PREEMPT*
+    - */software/components/condorconfig/condorconfig_component/PREEMPT*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/KILL*
+    - */software/components/condorconfig/condorconfig_component/KILL*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/LOG*
+    - */software/components/condorconfig/condorconfig_component/LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SPOOL*
+    - */software/components/condorconfig/condorconfig_component/SPOOL*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/EXECUTE*
+    - */software/components/condorconfig/condorconfig_component/EXECUTE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/BIN*
+    - */software/components/condorconfig/condorconfig_component/BIN*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/LIB*
+    - */software/components/condorconfig/condorconfig_component/LIB*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SBIN*
+    - */software/components/condorconfig/condorconfig_component/SBIN*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/HISTORY*
+    - */software/components/condorconfig/condorconfig_component/HISTORY*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/COLLECTOR_LOG*
+    - */software/components/condorconfig/condorconfig_component/COLLECTOR_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MASTER_LOG*
+    - */software/components/condorconfig/condorconfig_component/MASTER_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/NEGOTIATOR_LOG*
+    - */software/components/condorconfig/condorconfig_component/NEGOTIATOR_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/NEGOTIATOR_MATCH_LOG*
+    - */software/components/condorconfig/condorconfig_component/NEGOTIATOR_MATCH_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SCHEDD_LOG*
+    - */software/components/condorconfig/condorconfig_component/SCHEDD_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SHADOW_LOG*
+    - */software/components/condorconfig/condorconfig_component/SHADOW_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/STARTD_LOG*
+    - */software/components/condorconfig/condorconfig_component/STARTD_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SHADOW_LOCK*
+    - */software/components/condorconfig/condorconfig_component/SHADOW_LOCK*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/COLLECTOR_HOST*
+    - */software/components/condorconfig/condorconfig_component/COLLECTOR_HOST*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/RESERVED_DISK*
+    - */software/components/condorconfig/condorconfig_component/RESERVED_DISK*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/HIGHPORT*
+    - */software/components/condorconfig/condorconfig_component/HIGHPORT*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/LOWPORT*
+    - */software/components/condorconfig/condorconfig_component/LOWPORT*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/DAEMON_LIST*
+    - */software/components/condorconfig/condorconfig_component/DAEMON_LIST*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MASTER*
+    - */software/components/condorconfig/condorconfig_component/MASTER*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/STARTD*
+    - */software/components/condorconfig/condorconfig_component/STARTD*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SCHEDD*
+    - */software/components/condorconfig/condorconfig_component/SCHEDD*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/NEGOTIATOR*
+    - */software/components/condorconfig/condorconfig_component/NEGOTIATOR*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/COLLECTOR*
+    - */software/components/condorconfig/condorconfig_component/COLLECTOR*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MASTER_ADDRESS_FILE*
+    - */software/components/condorconfig/condorconfig_component/MASTER_ADDRESS_FILE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/PREEN*
+    - */software/components/condorconfig/condorconfig_component/PREEN*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/PREEN_ARGS*
+    - */software/components/condorconfig/condorconfig_component/PREEN_ARGS*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MASTER_UPDATE_INTERVAL*
+    - */software/components/condorconfig/condorconfig_component/MASTER_UPDATE_INTERVAL*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/STARTER_LIST*
+    - */software/components/condorconfig/condorconfig_component/STARTER_LIST*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/STARTER*
+    - */software/components/condorconfig/condorconfig_component/STARTER*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/STARTER_STANDARD*
+    - */software/components/condorconfig/condorconfig_component/STARTER_STANDARD*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/STARTER_LOCAL*
+    - */software/components/condorconfig/condorconfig_component/STARTER_LOCAL*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/STARTD_ADDRESS_FILE*
+    - */software/components/condorconfig/condorconfig_component/STARTD_ADDRESS_FILE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/UPDATE_INTERVAL*
+    - */software/components/condorconfig/condorconfig_component/UPDATE_INTERVAL*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/STARTD_JOB_EXPRS*
+    - */software/components/condorconfig/condorconfig_component/STARTD_JOB_EXPRS*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SHADOW*
+    - */software/components/condorconfig/condorconfig_component/SHADOW*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SCHEDD_ADDRESS_FILE*
+    - */software/components/condorconfig/condorconfig_component/SCHEDD_ADDRESS_FILE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SCHEDD_INTERVAL*
+    - */software/components/condorconfig/condorconfig_component/SCHEDD_INTERVAL*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SHADOW_SIZE_ESTIMATE*
+    - */software/components/condorconfig/condorconfig_component/SHADOW_SIZE_ESTIMATE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SHADOW_RENICE_INCREMENT*
+    - */software/components/condorconfig/condorconfig_component/SHADOW_RENICE_INCREMENT*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/QUEUE_SUPER_USERS*
+    - */software/components/condorconfig/condorconfig_component/QUEUE_SUPER_USERS*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/VALID_SPOOL_FILES*
+    - */software/components/condorconfig/condorconfig_component/VALID_SPOOL_FILES*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/INVALID_LOG_FILES*
+    - */software/components/condorconfig/condorconfig_component/INVALID_LOG_FILES*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/JAVA_MAXHEAP_ARGUMENT*
+    - */software/components/condorconfig/condorconfig_component/JAVA_MAXHEAP_ARGUMENT*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRIDMANAGER*
+    - */software/components/condorconfig/condorconfig_component/GRIDMANAGER*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GT2_GAHP*
+    - */software/components/condorconfig/condorconfig_component/GT2_GAHP*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRID_MONITOR*
+    - */software/components/condorconfig/condorconfig_component/GRID_MONITOR*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRIDMANAGER_DEBUG*
+    - */software/components/condorconfig/condorconfig_component/GRIDMANAGER_DEBUG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRIDMANAGER_LOG*
+    - */software/components/condorconfig/condorconfig_component/GRIDMANAGER_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MAX_GRIDMANAGER_LOG*
+    - */software/components/condorconfig/condorconfig_component/MAX_GRIDMANAGER_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRIDSHELL*
+    - */software/components/condorconfig/condorconfig_component/GRIDSHELL*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRIDMANAGER_MAX_JOBMANAGERS_PER_RESOURCE*
+    - */software/components/condorconfig/condorconfig_component/GRIDMANAGER_MAX_JOBMANAGERS_PER_RESOURCE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRIDMANAGER_CHECKPROXY_INTERVAL*
+    - */software/components/condorconfig/condorconfig_component/GRIDMANAGER_CHECKPROXY_INTERVAL*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRIDMANAGER_MINIMUM_PROXY_TIME*
+    - */software/components/condorconfig/condorconfig_component/GRIDMANAGER_MINIMUM_PROXY_TIME*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/DEFAULT_UNIVERSE*
+    - */software/components/condorconfig/condorconfig_component/DEFAULT_UNIVERSE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/CRED_MIN_TIME_LEFT*
+    - */software/components/condorconfig/condorconfig_component/CRED_MIN_TIME_LEFT*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/ENABLE_GRID_MONITOR*
+    - */software/components/condorconfig/condorconfig_component/ENABLE_GRID_MONITOR*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/CONDOR_GAHP*
+    - */software/components/condorconfig/condorconfig_component/CONDOR_GAHP*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/MAX_C_GAHP_LOG*
+    - */software/components/condorconfig/condorconfig_component/MAX_C_GAHP_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/C_GAHP_LOG*
+    - */software/components/condorconfig/condorconfig_component/C_GAHP_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/C_GAHP_WORKER_THREAD_LOG*
+    - */software/components/condorconfig/condorconfig_component/C_GAHP_WORKER_THREAD_LOG*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/NORDUGRID_GAHP*
+    - */software/components/condorconfig/condorconfig_component/NORDUGRID_GAHP*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/C_GAHP_TIMEOUT_MULTIPLIER*
+    - */software/components/condorconfig/condorconfig_component/C_GAHP_TIMEOUT_MULTIPLIER*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/C_GAHP_WORKER_THREAD_TIMEOUT_MULTIPLIER*
+    - */software/components/condorconfig/condorconfig_component/C_GAHP_WORKER_THREAD_TIMEOUT_MULTIPLIER*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/CLASSAD_LIFETIME*
+    - */software/components/condorconfig/condorconfig_component/CLASSAD_LIFETIME*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/CONDOR_JOB_POLL_INTERVAL*
+    - */software/components/condorconfig/condorconfig_component/CONDOR_JOB_POLL_INTERVAL*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/COLLECTOR_TIMEOUT_MULTIPLIER*
+    - */software/components/condorconfig/condorconfig_component/COLLECTOR_TIMEOUT_MULTIPLIER*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/DAGMAN_ALLOW_EVENTS*
+    - */software/components/condorconfig/condorconfig_component/DAGMAN_ALLOW_EVENTS*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GLITE_CONDORC_DEBUG_LEVEL*
+    - */software/components/condorconfig/condorconfig_component/GLITE_CONDORC_DEBUG_LEVEL*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GLITE_CONDORC_LOG_DIR*
+    - */software/components/condorconfig/condorconfig_component/GLITE_CONDORC_LOG_DIR*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GLOBUS_GATEKEEPER_TIMEOUT*
+    - */software/components/condorconfig/condorconfig_component/GLOBUS_GATEKEEPER_TIMEOUT*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRID_MONITOR_HEARTBEAT_TIMEOUT*
+    - */software/components/condorconfig/condorconfig_component/GRID_MONITOR_HEARTBEAT_TIMEOUT*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRID_MONITOR_RETRY_DURATION*
+    - */software/components/condorconfig/condorconfig_component/GRID_MONITOR_RETRY_DURATION*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRIDMANAGER_GLOBUS_COMMIT_TIMEOUT*
+    - */software/components/condorconfig/condorconfig_component/GRIDMANAGER_GLOBUS_COMMIT_TIMEOUT*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRIDMANAGER_MAX_PENDING_SUBMITS_PER_RESOURCE*
+    - */software/components/condorconfig/condorconfig_component/GRIDMANAGER_MAX_PENDING_SUBMITS_PER_RESOURCE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRIDMANAGER_MAX_SUBMITTED_JOBS_PER_RESOURCE*
+    - */software/components/condorconfig/condorconfig_component/GRIDMANAGER_MAX_SUBMITTED_JOBS_PER_RESOURCE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GRIDMANAGER_TIMEOUT_MULTIPLIER*
+    - */software/components/condorconfig/condorconfig_component/GRIDMANAGER_TIMEOUT_MULTIPLIER*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GSI_DAEMON_CERT*
+    - */software/components/condorconfig/condorconfig_component/GSI_DAEMON_CERT*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/GSI_DAEMON_KEY*
+    - */software/components/condorconfig/condorconfig_component/GSI_DAEMON_KEY*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/HOLD_JOB_IF_CREDENTIAL_EXPIRES*
+    - */software/components/condorconfig/condorconfig_component/HOLD_JOB_IF_CREDENTIAL_EXPIRES*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/HOSTALLOW_WRITE*
+    - */software/components/condorconfig/condorconfig_component/HOSTALLOW_WRITE*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/NEGOTIATOR_INTERVAL*
+    - */software/components/condorconfig/condorconfig_component/NEGOTIATOR_INTERVAL*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/NEGOTIATOR_MATCHLIST_CACHING*
+    - */software/components/condorconfig/condorconfig_component/NEGOTIATOR_MATCHLIST_CACHING*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/NEGOTIATOR_UPDATE_INTERVAL*
+    - */software/components/condorconfig/condorconfig_component/NEGOTIATOR_UPDATE_INTERVAL*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SEC_DEFAULT_NEGOTIATION*
+    - */software/components/condorconfig/condorconfig_component/SEC_DEFAULT_NEGOTIATION*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SEC_DEFAULT_AUTHENTICATION*
+    - */software/components/condorconfig/condorconfig_component/SEC_DEFAULT_AUTHENTICATION*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SEC_DEFAULT_AUTHENTICATION_METHODS*
+    - */software/components/condorconfig/condorconfig_component/SEC_DEFAULT_AUTHENTICATION_METHODS*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/SCHEDD_TIMEOUT_MULTIPLIER*
+    - */software/components/condorconfig/condorconfig_component/SCHEDD_TIMEOUT_MULTIPLIER*
         - Optional
         - Type: string
-    - */software/components/condorconfig//condorconfig_component/TOOL_TIMEOUT_MULTIPLIER*
+    - */software/components/condorconfig/condorconfig_component/TOOL_TIMEOUT_MULTIPLIER*
         - Optional
         - Type: string

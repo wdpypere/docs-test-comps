@@ -20,19 +20,19 @@ FILES
 This component touches the following files:
 
 
-- \ ``/etc/pnp4nagios/npcd.cfg``\ 
+- ``/etc/pnp4nagios/npcd.cfg``
 
 
 
-- \ ``/etc/pnp4nagios/config.php``\ 
+- ``/etc/pnp4nagios/config.php``
 
 
 
-- \ ``/etc/pnp4nagios/nagios.cfg``\ 
+- ``/etc/pnp4nagios/nagios.cfg``
 
 
 
-- \ ``/etc/pnp4nagios/process_perfdata.cfg``\ 
+- ``/etc/pnp4nagios/process_perfdata.cfg``
 
 
 
@@ -47,25 +47,25 @@ information on any of these fields' structure, please look at the pnp4nagios
 documentation.
 
 
-* \ ``/software/components/pnp4nagios/npcd``\ 
+* ``/software/components/pnp4nagios/npcd``
  
  Named list of npcd configuration options.
  
 
 
-* \ ``/software/components/pnp4nagios/php``\ 
+* ``/software/components/pnp4nagios/php``
  
  Named list of php configuration options.
  
 
 
-* \ ``/software/components/pnp4nagios/nagios``\ 
+* ``/software/components/pnp4nagios/nagios``
  
  Named list of nagios configuration options.
  
 
 
-* \ ``/software/components/pnp4nagios/perfata``\ 
+* ``/software/components/pnp4nagios/perfata``
  
  Named list of perfdata configuration options.
  

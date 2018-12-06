@@ -124,6 +124,6 @@ Configure
 =========
 
 
-Configure \ ``OpenStack``\  services resources.
+Configure ``OpenStack`` services resources.
 
 

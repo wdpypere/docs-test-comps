@@ -9,7 +9,7 @@ NAME
 ****
 
 
-\ ``NCM::Component::OpenNebula::Commands``\  Configuration module for ONE
+``NCM::Component::OpenNebula::Commands`` Configuration module for ONE
 
 
 ***********
@@ -24,11 +24,11 @@ This component needs a 'oneadmin' user.
 The user should be able to run these commands with sudo without password:
 
 
-- \ ``virsh secret-define --file `/var/lib/one/templates/secret/secret_ceph.xml```\ 
+- ``virsh secret-define --file `/var/lib/one/templates/secret/secret_ceph.xml```
 
 
 
-- \ ``virsh secret-set-value --secret $uuid --base64 $secret``\ 
+- ``virsh secret-set-value --secret $uuid --base64 $secret``
 
 
 
@@ -39,7 +39,7 @@ Public methods
 
 - set_ssh_command
  
- Sets \ ``$sshcmd``\ .
+ Sets ``$sshcmd``.
  
 
 
@@ -52,19 +52,19 @@ Public methods
 
 - run_virsh_as_oneadmin_with_ssh
  
- Executes a command prefixed with \ ``virsh``\  and returns the output.
+ Executes a command prefixed with ``virsh`` and returns the output.
  
 
 
 - run_oneuser_as_oneadmin_with_ssh
  
- Executes \ ``oneuser``\  command and returns the output.
+ Executes ``oneuser`` command and returns the output.
  
 
 
 - run_onehost_as_oneadmin_with_ssh
  
- Executes \ ``onehost``\  command to sync hosts VMMs scripts.
+ Executes ``onehost`` command to sync hosts VMMs scripts.
  
 
 
@@ -76,13 +76,13 @@ Public methods
 
 - run_command_as_oneadmin
  
- Executes a command as \ ``oneadmin``\  user.
+ Executes a command as ``oneadmin`` user.
  
 
 
 - run_command_as_oneadmin_with_ssh
  
- Executes a command as \ ``oneadmin``\  over ssh, optionally with options.
+ Executes a command as ``oneadmin`` over ssh, optionally with options.
  
 
 

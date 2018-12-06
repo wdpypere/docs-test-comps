@@ -32,14 +32,14 @@ There are 2 sets of configuration options:
 
 - Global options
  
- There is one separate set for DPM and LFC, \ ``/software/components/dpmlfc/options/dpm``\  and \ ``/software/components/dpmlfc/options/lfc``\  respectively. In each set,
- there is a subset, \ ``db``\ , describing the database and database connection options.
+ There is one separate set for DPM and LFC, ``/software/components/dpmlfc/options/dpm`` and ``/software/components/dpmlfc/options/lfc`` respectively. In each set,
+ there is a subset, ``db``, describing the database and database connection options.
  
 
 
 - Protocol options
  
- For each access or management protocol, there is one set of global options under \ ``/software/components/dpmlfc/protocols``\ . Each option defined in these sets
+ For each access or management protocol, there is one set of global options under ``/software/components/dpmlfc/protocols``. Each option defined in these sets
  can be superseded in the node-specific options for the given protocol.
  
 
@@ -52,7 +52,7 @@ GLOBAL OPTIONS (DPM and LFC)
 ****************************
 
 
-DPM and LFC accept the same global options but there is a separate set for each one. Replace \ ``PRODUCT``\  by \ ``dpm``\  or \ ``lfc``\ .
+DPM and LFC accept the same global options but there is a separate set for each one. Replace ``PRODUCT`` by ``dpm`` or ``lfc``.
 
 
 - `/software/components/dpmlfc/options/PRODUCT/accessProtocols` : list (optional, DPM only)
@@ -112,7 +112,7 @@ DATABASE CONNECTION OPTIONS (DPM and LFC)
 
 
 DPM and LFC accepts the same set of options to describe the database connection. In the following option names, 
-replace \ ``PRODUCT``\  by either \ ``dpm``\  or \ ``lfc``\ . Both sets can coexist.
+replace ``PRODUCT`` by either ``dpm`` or ``lfc``. Both sets can coexist.
 
 
 - `/software/components/dpmlfc/options/PRODUCT/db/configfile`
@@ -128,7 +128,7 @@ replace \ ``PRODUCT``\  by either \ ``dpm``\  or \ ``lfc``\ . Both sets can coex
  Name (without path) of the file containing connection information to DPM DB to be used by GIP to collect information about DPM.
  This file will be owned and accessible only by GIP user.
  
- This file will not be created if \ ``infoUser``\  is not defined.
+ This file will not be created if ``infoUser`` is not defined.
  
  Default : DPMINFO for DPM, LFCINFO for LFC.
  
@@ -163,7 +163,7 @@ replace \ ``PRODUCT``\  by either \ ``dpm``\  or \ ``lfc``\ . Both sets can coex
  
  This option defines the server running the database. This component checks that
  DPM and LFC database server run on different node (DPNS and LFC use the same database name). 
- \ ``localhost``\  is considered different as DPNS and LFC are not allowed to run on the same node.
+ ``localhost`` is considered different as DPNS and LFC are not allowed to run on the same node.
  
  Default : localhost.
  
@@ -183,7 +183,7 @@ PROTOCOL OPTIONS (DPM and LFC)
 ******************************
 
 
-Each access or management protocol has its specific set of global options under \ ``/software/components/dpmlfc/protocols``\  (e.g. \ ``dpm``\ , \ ``dpns``\ , \ ``srmv22``\ , \ ``dav``\ ...).
+Each access or management protocol has its specific set of global options under ``/software/components/dpmlfc/protocols`` (e.g. ``dpm``, ``dpns``, ``srmv22``, ``dav``...).
 Each of these options can be redefined in the node-specific options for the corresponding protocol. Node specific options are specified as a nlist attached to
 the node name. This allows configuration options to be different for each host running an instance of the service but it is
 generally not sensible to use a different value for each host.
@@ -237,7 +237,7 @@ option is undefined, look at \ */etc/httpd/conf.d/zlcgdm-dav.conf*\
 
 - NSSecureRedirect : string (optional)
  
- Enable/disable secure redirect (https) to disk servers. Value must be \ ``on``\  or \ ``off``\ .
+ Enable/disable secure redirect (https) to disk servers. Value must be ``on`` or ``off``.
  
 
 
@@ -245,7 +245,7 @@ option is undefined, look at \ */etc/httpd/conf.d/zlcgdm-dav.conf*\
  
  Name (first element) and port (second element) of the host serving the namespace, both specified as string. This is
  mainly useful to allow access to the namespace from localhost on any DPM nodes, if direct access to namespace has been
- configured on disk servers (via \ ``TrustedDNs``\ ).
+ configured on disk servers (via ``TrustedDNs``).
  
 
 
@@ -257,7 +257,7 @@ option is undefined, look at \ */etc/httpd/conf.d/zlcgdm-dav.conf*\
 
 - NSType : string (optional)
  
- Indicates whether the namespace is attached to DPM or LFC. Valid values are \ ``DPM``\  and \ ``LFC``\ .
+ Indicates whether the namespace is attached to DPM or LFC. Valid values are ``DPM`` and ``LFC``.
  
 
 
@@ -323,7 +323,7 @@ option is undefined, look at \ */etc/httpd/conf.d/zlcgdm-dav.conf*\
 
 - SSLVerifyClient : string (optional)
  
- Level of client certificate verifications (see Apache documentation). Valid values are \ ``require``\ , \ ``optional``\  and \ ``none``\ .
+ Level of client certificate verifications (see Apache documentation). Valid values are ``require``, ``optional`` and ``none``.
  
 
 
@@ -351,7 +351,7 @@ in this case, the option description states it explicitly.
 
 - allowCoreDump: boolean (optional)
  
- \ ``allowCoreDump``\  allows to explicitly enable/disable creation of a core dump in the event of a daemon crash.
+ ``allowCoreDump`` allows to explicitly enable/disable creation of a core dump in the event of a daemon crash.
  
  Default: use daemon default (see documentation)
  
@@ -359,7 +359,7 @@ in this case, the option description states it explicitly.
 
 - logfile: string (optional)
  
- \ ``logfile``\  option is the name of the logfile used by the daemon instance. Generally, each daemon has a dedicated directory under `/var/log`, where the actual log file is rotated. This option is accepted by every type of daemon.
+ ``logfile`` option is the name of the logfile used by the daemon instance. Generally, each daemon has a dedicated directory under `/var/log`, where the actual log file is rotated. This option is accepted by every type of daemon.
  
  Default : use daemon default (see documentation).
  
@@ -367,7 +367,7 @@ in this case, the option description states it explicitly.
 
 - port: long (optional)
  
- \ ``port``\  allows to specify a non standard port for the daemon.
+ ``port`` allows to specify a non standard port for the daemon.
  
  Default : default service port (see documentation or 'man service_name').
  
@@ -389,18 +389,18 @@ in this case, the option description states it explicitly.
  
 
 
-- requestMaxAge: string (optional, \ ``dpm``\  daemon only)
+- requestMaxAge: string (optional, ``dpm`` daemon only)
  
- \ ``requestMaxAge``\  allows to configure automatic purging of DPM request database, based on request age. It defines
+ ``requestMaxAge`` allows to configure automatic purging of DPM request database, based on request age. It defines
  the maximum lifetime allowed for a request before it is removed from the request database. This must be a number
- optionally followed by \ ``y``\  (year), \ ``m``\  (month), \ ``d``\  (day), \ ``h``\  (hour). If no unit is specified, the number is
+ optionally followed by ``y`` (year), ``m`` (month), ``d`` (day), ``h`` (hour). If no unit is specified, the number is
  interpreted as seconds.
  
  Default: by default automatic purging is disabled
  
 
 
-- fastThreads : long (optional, \ ``dpm``\  daemon only)
+- fastThreads : long (optional, ``dpm`` daemon only)
  
  Number of threads to use for short operations
  
@@ -408,7 +408,7 @@ in this case, the option description states it explicitly.
  
 
 
-- slowThreads : long (optional, \ ``dpm``\  daemon only)
+- slowThreads : long (optional, ``dpm`` daemon only)
  
  Number of threads to use for long operations
  
@@ -416,7 +416,7 @@ in this case, the option description states it explicitly.
  
 
 
-- useSyncGet : boolean (optional, \ ``dpm``\  daemon only)
+- useSyncGet : boolean (optional, ``dpm`` daemon only)
  
  Use synchronous get operation when querying the namespace.
  
@@ -458,9 +458,9 @@ in this case, the option description states it explicitly.
 
 
 
-**********************************************************
+************************************************************
 VO OPTIONS (DPM and LFC) : `/software/components/dpmlfc/vos`
-**********************************************************
+************************************************************
 
 
 VO-related options described each VO that must be configured to get access to DPM or LFC namespace. This includes creating VO home directory and setting correct permissions.
@@ -528,4 +528,3 @@ SEE ALSO
 
 
 ncm-ncd(1)
-

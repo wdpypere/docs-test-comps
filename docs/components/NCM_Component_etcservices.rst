@@ -39,13 +39,13 @@ RESOURCES
 
 
 
-* \ ``/software/components/etcservices/active``\  : boolean
+* ``/software/components/etcservices/active`` : boolean
  
  activates/deactivates the component.
  
 
 
-* \ ``/software/components/etcservices/entries``\ 
+* ``/software/components/etcservices/entries``
  
  The services file contains an entry for each service. Each entry has the form:
  

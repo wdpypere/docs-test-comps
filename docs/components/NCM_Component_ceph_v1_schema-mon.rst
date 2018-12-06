@@ -9,9 +9,9 @@ Types
     - Description: configuration options for a ceph monitor daemon
  - **/software/components/ceph/ceph_monitor**
     - Description: ceph monitor-specific type
-    - */software/components/ceph//ceph_monitor/fqdn*
+    - */software/components/ceph/ceph_monitor/fqdn*
         - Required
         - Type: type_fqdn
-    - */software/components/ceph//ceph_monitor/config*
+    - */software/components/ceph/ceph_monitor/config*
         - Optional
         - Type: ceph_mon_config

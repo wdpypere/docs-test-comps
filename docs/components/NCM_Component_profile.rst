@@ -19,7 +19,7 @@ DESCRIPTION
 
 The \ *profile*\  component creates two scripts (sh and csh flavors, respectively .sh and .csh extension) in
 the given configuration directory. This directory by default is
-\ ``/etc/profile.d``\ . These scripts contain environment variables and path
+``/etc/profile.d``. These scripts contain environment variables and path
 definitions.
 
 Note that the only guarantee with respect to order is that all the
@@ -32,7 +32,7 @@ RESOURCES
 
 
 
-- configDir (\ ``/etc/profile.d``\ )
+- configDir (``/etc/profile.d``)
  
  The directory which contains the generated files. This directory will
  be created if necessary.
@@ -44,7 +44,7 @@ RESOURCES
  The base name of the default profile.d file to create. This gives some
  flexibility on the order in which the profile script will be executed.
  (Normally executed in alphabetical order.) The full filename will
- have \ ``".[c]sh"``\  appended to it.
+ have ``".[c]sh"`` appended to it.
  
 
 

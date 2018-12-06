@@ -55,9 +55,9 @@ file.
 
 - setCfgValue ($key, $value, $force)
  
- Set the configuration option \ ``$key``\  to \ ``$value``\ .
+ Set the configuration option ``$key`` to ``$value``.
  If force is set, the option and value are also added
- to the \ ``force_cfg``\  hashref, making it protected against
+ to the ``force_cfg`` hashref, making it protected against
  rereading of the config file.
  
 

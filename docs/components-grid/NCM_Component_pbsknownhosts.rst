@@ -89,7 +89,7 @@ generate both.
 
 
 shostsConfigFile (optional, `/opt/edg/etc/edg`-pbs-shostsequiv.conf)
-==================================================================
+====================================================================
 
 
 The location of the shosts-script configuration file.  Normally this 
@@ -97,16 +97,14 @@ should not be changed.
 
 
 shosts (optional, `/etc/ssh/shosts.equiv`)
-========================================
+==========================================
 
 
 The ssh shosts.equiv file to update
 
 
 shostsscript (optional, `/opt/edg/sbin/edg`-pbs-shostsequiv)
-==========================================================
+============================================================
 
 
 The script to run for generating shosts.equiv.
-
-

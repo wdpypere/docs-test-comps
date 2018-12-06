@@ -9,7 +9,7 @@ NAME
 ****
 
 
-\ ``NCM::Component::OpenStack::Client``\  provides simple functions to get
+``NCM::Component::OpenStack::Client`` provides simple functions to get
 the REST client.
 
 

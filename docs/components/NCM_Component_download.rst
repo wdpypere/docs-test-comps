@@ -12,9 +12,9 @@ DESCRIPTION
 Downloads files onto the local machine during the configuration,
 and optionally post-processes the files.
 
-The download is achieved by invoking \ ``curl``\ ,
-so any URLs acceptable to \ ``curl``\  (and \ ``LWP::UserAgent``\ )
-(including local \ ``file://``\  URLs) are allowed.
+The download is achieved by invoking ``curl``,
+so any URLs acceptable to ``curl`` (and ``LWP::UserAgent``)
+(including local ``file://`` URLs) are allowed.
 
 A file is only downloaded if following conditions are met:
 
@@ -23,8 +23,7 @@ A file is only downloaded if following conditions are met:
 
 
 
-- The timestamp of the source is more recent than the current file (if such file exists);
-unless the \ ``allow_older``\  attribute is set.
+- The timestamp of the source is more recent than the current file (if such file exists); unless the ``allow_older`` attribute is set.
 
 
 
@@ -55,5 +54,4 @@ EXAMPLES
          "owner", "john",
          "perm", "0400",
      );
-
 

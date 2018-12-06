@@ -6,15 +6,15 @@ Types
 -----
 
  - **aii_freeipa**
-    - */aii_freeipa/module*
+    - *aii_freeipa/module*
         - Required
         - Type: string
-    - */aii_freeipa/remove*
+    - *aii_freeipa/remove*
         - Description: remove the host on AII removal (precedes disable)
         - Required
         - Type: boolean
         - Default value: false
-    - */aii_freeipa/disable*
+    - *aii_freeipa/disable*
         - Description: disable the host on AII removal
         - Required
         - Type: boolean

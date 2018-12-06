@@ -42,7 +42,7 @@ Public methods
 - warn
  
  Report with loglevel 'WARN'. Increases the number of
- reported warnings in the \ ``WARNINGS``\  attribute by 1.
+ reported warnings in the ``WARNINGS`` attribute by 1.
  
  (The ncd client will report the number of warnings reported by the component.)
  
@@ -51,7 +51,7 @@ Public methods
 - error
  
  Report with loglevel 'ERROR'. Increases the number of
- reported errors in the \ ``ERRORS``\  attribute by 1.
+ reported errors in the ``ERRORS`` attribute by 1.
  
  (The ncd client will report the number of errors reported by the component.
  The component will therefore be flagged as
@@ -68,7 +68,7 @@ Public methods
 - prefix
  
  Returns the standard configuration path for the component
- \ ``</software/components/<name``\ >>.
+ ``</software/components/<name``>>.
  
 
 
@@ -124,7 +124,7 @@ Public methods
 
 - set_active_config
  
- Set \ ``config``\  as the \ ``ACTIVE_CONFIG``\  attribute.
+ Set ``config`` as the ``ACTIVE_CONFIG`` attribute.
  
  Returns the current active config.
  
@@ -132,17 +132,17 @@ Public methods
 
 - get_tree
  
- Return \ ``EDG::WP4::CCM::Configuration-``\ getTree> on the \ ``ACTIVE_CONFIG``\  attribute.
+ Return ``EDG::WP4::CCM::Configuration-``getTree> on the ``ACTIVE_CONFIG`` attribute.
  
- All arguments are passed to \ ``getTree``\ .
+ All arguments are passed to ``getTree``.
  
- If no arguments are specified, the path passed to \ ``getTree``\  is
- the component prefix (using the \ ``prefix``\  method).
+ If no arguments are specified, the path passed to ``getTree`` is
+ the component prefix (using the ``prefix`` method).
  
- If the path specified is not absolute, the path passed to \ ``getTree``\  is
- prefixed with the component prefix (using the \ ``prefix``\  method).
+ If the path specified is not absolute, the path passed to ``getTree`` is
+ prefixed with the component prefix (using the ``prefix`` method).
  
- Returns undef on failure, with \ ``fail``\  attribute set in case of an error.
+ Returns undef on failure, with ``fail`` attribute set in case of an error.
  
  (Requires active configuration set).
  
@@ -152,8 +152,8 @@ Public methods
  
  Return the fqdn based on the current active config.
  
- This is either \ ``/system/network/realhostname``\  (if defined)
- or \ ``</system/network/hostname>.</system/network/domainname>``\ .
+ This is either ``/system/network/realhostname`` (if defined)
+ or ``</system/network/hostname>.</system/network/domainname>``.
  
  (Requires active configuration set).
  
@@ -200,7 +200,7 @@ Private methods
  
  - logger
   
-  Set the logger instance (\ ``main::this_app``\  is used as default when undefined)
+  Set the logger instance (``main::this_app`` is used as default when undefined)
   
  
  
@@ -209,7 +209,7 @@ Private methods
  
  - config
   
-  Set config as active config (using \ ``set_active_config``\  method).
+  Set config as active config (using ``set_active_config`` method).
   
  
  
@@ -224,51 +224,51 @@ Legacy methods
 
 - LogMessage
  
- Same as \ ``log``\  method.
- This is deprecated, use \ ``log``\  method instead.
+ Same as ``log`` method.
+ This is deprecated, use ``log`` method instead.
  
 
 
 - Report
  
- Same as \ ``report``\  method.
- This is deprecated, use \ ``report``\  method instead.
+ Same as ``report`` method.
+ This is deprecated, use ``report`` method instead.
  
 
 
 - Info
  
- Same as \ ``info``\  method.
- This is deprecated, use \ ``info``\  method instead.
+ Same as ``info`` method.
+ This is deprecated, use ``info`` method instead.
  
 
 
 - Verbose
  
- Same as \ ``verbose``\  method.
- This is deprecated, use \ ``verbose``\  method instead.
+ Same as ``verbose`` method.
+ This is deprecated, use ``verbose`` method instead.
  
 
 
 - Debug
  
- Similar to \ ``debug``\ ,  but the debug level is set to 1.
+ Similar to ``debug``,  but the debug level is set to 1.
  
- This is deprecated, use \ ``debug``\  method instead and set loglevel.
+ This is deprecated, use ``debug`` method instead and set loglevel.
  
 
 
 - Warn
  
- Same as \ ``warn``\  method.
- This is deprecated, use \ ``report``\  method instead.
+ Same as ``warn`` method.
+ This is deprecated, use ``report`` method instead.
  
 
 
 - Error
  
- Same as \ ``error``\  method.
- This is deprecated, use \ ``error``\  method instead.
+ Same as ``error`` method.
+ This is deprecated, use ``error`` method instead.
  
 
 

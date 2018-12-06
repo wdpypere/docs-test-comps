@@ -20,7 +20,7 @@ DESCRIPTION
 Object to set permissions and ownership of files and directories.
 Will create directories if they do not exist (with the proper
 permissions).  Useful, e.g., to give every pool-user a ".globus"
-directory in its \ ``$HOME``\ , or to create a bunch of home directories for
+directory in its ``$HOME``, or to create a bunch of home directories for
 poolaccounts on a non-CE machine.
 
 If the list initdir is set, then files in those directories will be
@@ -36,39 +36,39 @@ RESOURCES
 *********
 
 
-\ ``/software/components/dirperm/paths``\ 
+``/software/components/dirperm/paths``
 ==========================================
 
 
 A list of files/directories to manage with this component.
-Each entry in the list must be of the \ ``structure_dirperm_entry``\  type which has the following fields:
+Each entry in the list must be of the ``structure_dirperm_entry`` type which has the following fields:
 
 
-* \ ``path``\ 
+* ``path``
  
  String representing full path of configured file/directory.
  
 
 
-* \ ``owner``\ 
+* ``owner``
  
- String representing ownership, of form \ ``user``\  or \ ``user:group``\ .
+ String representing ownership, of form ``user`` or ``user:group``.
  
 
 
-* \ ``perm``\ 
+* ``perm``
  
  String containing octal permissions to enforce.
  
 
 
-* \ ``type``\ 
+* ``type``
  
- String, either \ ``'d'``\  for directory or \ ``'f'``\  for file.
+ String, either ``'d'`` for directory or ``'f'`` for file.
  
 
 
-* \ ``initdir``\ 
+* ``initdir``
  
  Optional list of strings representing full paths to directories.
  

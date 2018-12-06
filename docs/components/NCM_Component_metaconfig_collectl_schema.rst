@@ -6,176 +6,176 @@ Types
 -----
 
  - **/software/components/metaconfig/collectl_main**
-    - */software/components/metaconfig//collectl_main/DaemonCommands*
+    - */software/components/metaconfig/collectl_main/DaemonCommands*
         - Required
         - Type: string
         - Default value: -f /var/log/collectl -r00:00,7 -m -F60 -s+YZ
-    - */software/components/metaconfig//collectl_main/ReqDir*
+    - */software/components/metaconfig/collectl_main/ReqDir*
         - Optional
         - Type: string
-    - */software/components/metaconfig//collectl_main/Libraries*
+    - */software/components/metaconfig/collectl_main/Libraries*
         - Optional
         - Type: string
-    - */software/components/metaconfig//collectl_main/Grep*
+    - */software/components/metaconfig/collectl_main/Grep*
         - Optional
         - Type: string
         - Default value: /bin/grep
-    - */software/components/metaconfig//collectl_main/Egrep*
+    - */software/components/metaconfig/collectl_main/Egrep*
         - Optional
         - Type: string
         - Default value: /bin/egrep
-    - */software/components/metaconfig//collectl_main/Ps*
+    - */software/components/metaconfig/collectl_main/Ps*
         - Optional
         - Type: string
         - Default value: /bin/ps
-    - */software/components/metaconfig//collectl_main/Rpm*
+    - */software/components/metaconfig/collectl_main/Rpm*
         - Optional
         - Type: string
         - Default value: /bin/rpm
-    - */software/components/metaconfig//collectl_main/Lspci*
+    - */software/components/metaconfig/collectl_main/Lspci*
         - Optional
         - Type: string
         - Default value: /sbin/lspci
-    - */software/components/metaconfig//collectl_main/Lctl*
+    - */software/components/metaconfig/collectl_main/Lctl*
         - Optional
         - Type: string
         - Default value: /usr/sbin/lctl
-    - */software/components/metaconfig//collectl_main/PQuery*
+    - */software/components/metaconfig/collectl_main/PQuery*
         - Required
         - Type: string
-    - */software/components/metaconfig//collectl_main/PCounter*
+    - */software/components/metaconfig/collectl_main/PCounter*
         - Optional
         - Type: string
-    - */software/components/metaconfig//collectl_main/VStat*
+    - */software/components/metaconfig/collectl_main/VStat*
         - Optional
         - Type: string
-    - */software/components/metaconfig//collectl_main/OfedInfo*
+    - */software/components/metaconfig/collectl_main/OfedInfo*
         - Required
         - Type: string
-    - */software/components/metaconfig//collectl_main/IbDupCheckFlag*
+    - */software/components/metaconfig/collectl_main/IbDupCheckFlag*
         - Optional
         - Type: boolean
         - Default value: true
-    - */software/components/metaconfig//collectl_main/SubsysCore*
+    - */software/components/metaconfig/collectl_main/SubsysCore*
         - Optional
         - Type: string
-    - */software/components/metaconfig//collectl_main/Interval*
+    - */software/components/metaconfig/collectl_main/Interval*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 10
-    - */software/components/metaconfig//collectl_main/Interval2*
+    - */software/components/metaconfig/collectl_main/Interval2*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 60
-    - */software/components/metaconfig//collectl_main/Interval3*
+    - */software/components/metaconfig/collectl_main/Interval3*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 120
-    - */software/components/metaconfig//collectl_main/LustreSvcLunMax*
+    - */software/components/metaconfig/collectl_main/LustreSvcLunMax*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 10
-    - */software/components/metaconfig//collectl_main/LustreMaxBlkSize*
+    - */software/components/metaconfig/collectl_main/LustreMaxBlkSize*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 512
-    - */software/components/metaconfig//collectl_main/LustreConfigInt*
+    - */software/components/metaconfig/collectl_main/LustreConfigInt*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 1
-    - */software/components/metaconfig//collectl_main/InterConnectInt*
+    - */software/components/metaconfig/collectl_main/InterConnectInt*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 900
-    - */software/components/metaconfig//collectl_main/LimSVC*
+    - */software/components/metaconfig/collectl_main/LimSVC*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 30
-    - */software/components/metaconfig//collectl_main/LimIOS*
+    - */software/components/metaconfig/collectl_main/LimIOS*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 10
-    - */software/components/metaconfig//collectl_main/LimBool*
+    - */software/components/metaconfig/collectl_main/LimBool*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 0
-    - */software/components/metaconfig//collectl_main/LimLusKBS*
+    - */software/components/metaconfig/collectl_main/LimLusKBS*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 100
-    - */software/components/metaconfig//collectl_main/LimLusReints*
+    - */software/components/metaconfig/collectl_main/LimLusReints*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 1000
-    - */software/components/metaconfig//collectl_main/Port*
+    - */software/components/metaconfig/collectl_main/Port*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 2655
-    - */software/components/metaconfig//collectl_main/Timeout*
+    - */software/components/metaconfig/collectl_main/Timeout*
         - Optional
         - Type: long
         - Default value: 10
-    - */software/components/metaconfig//collectl_main/MaxZlibErrors*
+    - */software/components/metaconfig/collectl_main/MaxZlibErrors*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 20
-    - */software/components/metaconfig//collectl_main/DefNetSpeed*
+    - */software/components/metaconfig/collectl_main/DefNetSpeed*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 10000
-    - */software/components/metaconfig//collectl_main/TermHeight*
+    - */software/components/metaconfig/collectl_main/TermHeight*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 24
-    - */software/components/metaconfig//collectl_main/Resize*
+    - */software/components/metaconfig/collectl_main/Resize*
         - Required
         - Type: string
-    - */software/components/metaconfig//collectl_main/TimeHiResCheck*
+    - */software/components/metaconfig/collectl_main/TimeHiResCheck*
         - Optional
         - Type: boolean
         - Default value: true
-    - */software/components/metaconfig//collectl_main/Ipmitool*
+    - */software/components/metaconfig/collectl_main/Ipmitool*
         - Required
         - Type: string
-    - */software/components/metaconfig//collectl_main/IpmiCache*
+    - */software/components/metaconfig/collectl_main/IpmiCache*
         - Required
         - Type: string
-    - */software/components/metaconfig//collectl_main/IpmiTypes*
+    - */software/components/metaconfig/collectl_main/IpmiTypes*
         - Required
         - Type: string
-    - */software/components/metaconfig//collectl_main/Passwd*
+    - */software/components/metaconfig/collectl_main/Passwd*
         - Optional
         - Type: string
         - Default value: /etc/passwd
-    - */software/components/metaconfig//collectl_main/DiskMaxValue*
+    - */software/components/metaconfig/collectl_main/DiskMaxValue*
         - Optional
         - Type: long
         - Range: 0..
         - Default value: 5000000
-    - */software/components/metaconfig//collectl_main/DiskFilter*
+    - */software/components/metaconfig/collectl_main/DiskFilter*
         - Optional
         - Type: string
-    - */software/components/metaconfig//collectl_main/ProcReadTest*
+    - */software/components/metaconfig/collectl_main/ProcReadTest*
         - Optional
         - Type: boolean
         - Default value: true
  - **/software/components/metaconfig/collectl_config**
-    - */software/components/metaconfig//collectl_config/main*
+    - */software/components/metaconfig/collectl_config/main*
         - Required
         - Type: collectl_main

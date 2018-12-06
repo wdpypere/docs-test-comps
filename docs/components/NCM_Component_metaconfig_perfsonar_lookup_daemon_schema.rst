@@ -6,113 +6,113 @@ Types
 -----
 
  - **/software/components/metaconfig/ls_gls**
-    - */software/components/metaconfig//ls_gls/root*
+    - */software/components/metaconfig/ls_gls/root*
         - Required
         - Type: boolean
         - Default value: false
-    - */software/components/metaconfig//ls_gls/ls_ttl*
+    - */software/components/metaconfig/ls_gls/ls_ttl*
         - Required
         - Type: long
         - Range: 0..
         - Default value: 5760
-    - */software/components/metaconfig//ls_gls/ls_registration_interval*
+    - */software/components/metaconfig/ls_gls/ls_registration_interval*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//ls_gls/maintenance_interval*
+    - */software/components/metaconfig/ls_gls/maintenance_interval*
         - Required
         - Type: long
         - Range: 0..
         - Default value: 120
-    - */software/components/metaconfig//ls_gls/metadata_db_file*
+    - */software/components/metaconfig/ls_gls/metadata_db_file*
         - Required
         - Type: string
         - Default value: glsstore.dbxml
-    - */software/components/metaconfig//ls_gls/metadata_summary_db_file*
+    - */software/components/metaconfig/ls_gls/metadata_summary_db_file*
         - Required
         - Type: string
         - Default value: glsstore-summary.dbxml
-    - */software/components/metaconfig//ls_gls/metadata_db_name*
+    - */software/components/metaconfig/ls_gls/metadata_db_name*
         - Required
         - Type: string
         - Default value: /var/lib/perfsonar/lookup_service/xmldb
-    - */software/components/metaconfig//ls_gls/service_accesspoint*
+    - */software/components/metaconfig/ls_gls/service_accesspoint*
         - Required
         - Type: type_URI
         - Default value: http://localhost:9995/perfsonar_PS/services/hLS
-    - */software/components/metaconfig//ls_gls/service_description*
+    - */software/components/metaconfig/ls_gls/service_description*
         - Required
         - Type: string
-    - */software/components/metaconfig//ls_gls/service_name*
+    - */software/components/metaconfig/ls_gls/service_name*
         - Required
         - Type: string
-    - */software/components/metaconfig//ls_gls/service_type*
+    - */software/components/metaconfig/ls_gls/service_type*
         - Required
         - Type: string
         - Default value: hLS
  - **/software/components/metaconfig/ls_endpoint**
-    - */software/components/metaconfig//ls_endpoint/gls*
+    - */software/components/metaconfig/ls_endpoint/gls*
         - Required
         - Type: ls_gls
-    - */software/components/metaconfig//ls_endpoint/disable*
+    - */software/components/metaconfig/ls_endpoint/disable*
         - Required
         - Type: boolean
         - Default value: false
-    - */software/components/metaconfig//ls_endpoint/module*
+    - */software/components/metaconfig/ls_endpoint/module*
         - Required
         - Type: string
         - Default value: perfSONAR_PS::Services::LS::gLS
-    - */software/components/metaconfig//ls_endpoint/name*
+    - */software/components/metaconfig/ls_endpoint/name*
         - Required
         - Type: string
  - **/software/components/metaconfig/ls_port**
-    - */software/components/metaconfig//ls_port/endpoint*
+    - */software/components/metaconfig/ls_port/endpoint*
         - Required
         - Type: ls_endpoint
-    - */software/components/metaconfig//ls_port/portnum*
+    - */software/components/metaconfig/ls_port/portnum*
         - Required
         - Type: type_port
         - Default value: 9995
  - **/software/components/metaconfig/ls_daemon**
-    - */software/components/metaconfig//ls_daemon/port*
+    - */software/components/metaconfig/ls_daemon/port*
         - Required
         - Type: ls_port
-    - */software/components/metaconfig//ls_daemon/ls_registration_interval*
+    - */software/components/metaconfig/ls_daemon/ls_registration_interval*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//ls_daemon/disable_echo*
+    - */software/components/metaconfig/ls_daemon/disable_echo*
         - Required
         - Type: boolean
         - Default value: false
-    - */software/components/metaconfig//ls_daemon/root_hints_url*
+    - */software/components/metaconfig/ls_daemon/root_hints_url*
         - Optional
         - Type: type_URI
         - Default value: http://www.perfsonar.net/gls.root.hints
-    - */software/components/metaconfig//ls_daemon/root_hints_file*
+    - */software/components/metaconfig/ls_daemon/root_hints_file*
         - Optional
         - Type: string
         - Default value: /var/lib/perfsonar/lookup_service/hls.root.hints
-    - */software/components/metaconfig//ls_daemon/reaper_interval*
+    - */software/components/metaconfig/ls_daemon/reaper_interval*
         - Required
         - Type: long
         - Range: 0..
         - Default value: 20
-    - */software/components/metaconfig//ls_daemon/max_worker_lifetime*
+    - */software/components/metaconfig/ls_daemon/max_worker_lifetime*
         - Required
         - Type: long
         - Range: 0..
         - Default value: 300
-    - */software/components/metaconfig//ls_daemon/max_worker_processes*
+    - */software/components/metaconfig/ls_daemon/max_worker_processes*
         - Required
         - Type: long
         - Range: 0..
         - Default value: 30
-    - */software/components/metaconfig//ls_daemon/pid_dir*
+    - */software/components/metaconfig/ls_daemon/pid_dir*
         - Required
         - Type: string
         - Default value: /var/run
-    - */software/components/metaconfig//ls_daemon/pid_file*
+    - */software/components/metaconfig/ls_daemon/pid_file*
         - Required
         - Type: string
         - Default value: lookup_service.pid

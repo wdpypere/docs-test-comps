@@ -103,9 +103,9 @@ PRIVATE METHODS
  Optional arguments
  
  
- - \ ``log``\ 
+ - ``log``
   
-  A \ ``CAF::Reporter``\  object to log to.
+  A ``CAF::Reporter`` object to log to.
   
  
  

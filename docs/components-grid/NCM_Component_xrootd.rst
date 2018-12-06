@@ -22,13 +22,11 @@ This component allows to manage configuration of Xrootd services.
 The configuration description for Xrootd is made of 2 distinct parts:
 
 
-- Hosts This is a description of all hosts participating to the Xrootd service with their role (disk server,
-redirector, federated redirector).
+- Hosts This is a description of all hosts participating to the Xrootd service with their role (disk server, redirector, federated redirector).
 
 
 
-- Cluster-wide options These resources describe the configuration of the Xrootd cluster that applies to all the nodes
-participating to the service.
+- Cluster-wide options These resources describe the configuration of the Xrootd cluster that applies to all the nodes participating to the service.
 
 
 
@@ -42,9 +40,7 @@ There are several subsets of options:
 
 
 
-- Service-specific options They are options that apply to a specific service or component of Xrootd. Examples are the DPM/Xrootd
-plugin, the token-based authentication, Xrootd instances. These subsets are resources located under 
-`/software/components/xrootd.`
+- Service-specific options They are options that apply to a specific service or component of Xrootd. Examples are the DPM/Xrootd plugin, the token-based authentication, Xrootd instances. These subsets are resources located under  `/software/components/xrootd.`
 
 
 
@@ -179,16 +175,11 @@ Xrootd instances
 There are two main services in a Xrootd cluster:
 
 
-- xrootd Several instances of this service can coexist on the same host, one for each of its roles (disk, redirector,
-federated redirector). Information about these instances are found under 
-`/software/components/xrootd/options/xrootdInstances.` One xrootd instance must exist on
-every xrootd host.
+- xrootd Several instances of this service can coexist on the same host, one for each of its roles (disk, redirector, federated redirector). Information about these instances are found under  `/software/components/xrootd/options/xrootdInstances.` One xrootd instance must exist on every xrootd host.
 
 
 
-- cmsd There must be one cmsd instance for each federation the Xrootd is participated in (a cmsd instance must
-exist matching each xrootd instance of type 'fedredir'). Information about these instances are found under 
-`/software/components/xrootd/options/cmsdInstances.`
+- cmsd There must be one cmsd instance for each federation the Xrootd is participated in (a cmsd instance must exist matching each xrootd instance of type 'fedredir'). Information about these instances are found under  `/software/components/xrootd/options/cmsdInstances.`
 
 
 
@@ -340,13 +331,11 @@ Each entry in the list is a nlist with the following required properties:
 
 
 
-- authenticated Operations allowed for authenticated users. This is a list of string, it must be present and has 
-no default
+- authenticated Operations allowed for authenticated users. This is a list of string, it must be present and has  no default
 
 
 
-- unauthenticated Operations allowed for unauthenticated users. This is a list of string, it must be present and
-has no default
+- unauthenticated Operations allowed for unauthenticated users. This is a list of string, it must be present and has no default
 
 
 
@@ -634,4 +623,3 @@ SEE ALSO
 
 
 ncm-ncd(1)
-

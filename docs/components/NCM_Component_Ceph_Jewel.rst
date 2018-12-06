@@ -134,7 +134,7 @@ RESOURCES
 
 
 `/software/components/ceph`
-=========================
+===========================
 
 
 The configuration information for the component.  Each field should
@@ -154,4 +154,3 @@ caused a wrong error message in ncm-ceph. This is solved again in 1.5.21 .
 This version of Data-Compare can be found on http://www.city-fan.org/ftp/contrib/perl-modules/
 
 Attention: Some repositories (e.g. rpmforge) are shipping some versions like 1.2101 and 1.2102.
-

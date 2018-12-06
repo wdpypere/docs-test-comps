@@ -30,7 +30,7 @@ and a module allows for far easier unittesting.
 - action_dumpdb
  
  Lowlevel debugging function to dump the profile DBs
- \ ``path2eid``\  and \ ``eid2data``\ .
+ ``path2eid`` and ``eid2data``.
  
 
 

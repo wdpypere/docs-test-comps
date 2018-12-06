@@ -19,14 +19,14 @@ Public methods
 
 - cert_request
  
- Request certificate using certificate request file \ ``csr``\  and principal \ ``principal``\ .
+ Request certificate using certificate request file ``csr`` and principal ``principal``.
  
 
 
 - get_cert
  
- Given \ ``serial``\ , retrieve the certificate and when defined,
- save it in file \ ``crt``\ .
+ Given ``serial``, retrieve the certificate and when defined,
+ save it in file ``crt``.
  
 
 

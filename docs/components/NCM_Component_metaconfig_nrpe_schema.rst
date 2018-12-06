@@ -7,63 +7,63 @@ Types
 
  - **/software/components/metaconfig/nrpe_service**
     - Description: Configuration options for Nagios Remote Plugin Executor (NRPE)
-    - */software/components/metaconfig//nrpe_service/log_facility*
+    - */software/components/metaconfig/nrpe_service/log_facility*
         - Required
         - Type: string
         - Default value: daemon
-    - */software/components/metaconfig//nrpe_service/pid_file*
+    - */software/components/metaconfig/nrpe_service/pid_file*
         - Required
         - Type: string
         - Default value: /var/run/nrpe.pid
-    - */software/components/metaconfig//nrpe_service/server_port*
+    - */software/components/metaconfig/nrpe_service/server_port*
         - Required
         - Type: type_port
         - Default value: 5666
-    - */software/components/metaconfig//nrpe_service/server_address*
+    - */software/components/metaconfig/nrpe_service/server_address*
         - Optional
         - Type: type_hostname
-    - */software/components/metaconfig//nrpe_service/nrpe_user*
+    - */software/components/metaconfig/nrpe_service/nrpe_user*
         - Required
         - Type: string
         - Default value: nagios
-    - */software/components/metaconfig//nrpe_service/nrpe_group*
+    - */software/components/metaconfig/nrpe_service/nrpe_group*
         - Required
         - Type: string
         - Default value: nagios
-    - */software/components/metaconfig//nrpe_service/allowed_hosts*
+    - */software/components/metaconfig/nrpe_service/allowed_hosts*
         - Required
         - Type: type_hostname
-    - */software/components/metaconfig//nrpe_service/dont_blame_nrpe*
+    - */software/components/metaconfig/nrpe_service/dont_blame_nrpe*
         - Required
         - Type: boolean
         - Default value: false
-    - */software/components/metaconfig//nrpe_service/command_prefix*
+    - */software/components/metaconfig/nrpe_service/command_prefix*
         - Optional
         - Type: string
-    - */software/components/metaconfig//nrpe_service/debug*
+    - */software/components/metaconfig/nrpe_service/debug*
         - Required
         - Type: boolean
         - Default value: false
-    - */software/components/metaconfig//nrpe_service/command_timeout*
+    - */software/components/metaconfig/nrpe_service/command_timeout*
         - Required
         - Type: long
         - Range: 0..
         - Default value: 60
-    - */software/components/metaconfig//nrpe_service/connection_timeout*
+    - */software/components/metaconfig/nrpe_service/connection_timeout*
         - Required
         - Type: long
         - Range: 0..
         - Default value: 300
-    - */software/components/metaconfig//nrpe_service/allow_weak_random_seed*
+    - */software/components/metaconfig/nrpe_service/allow_weak_random_seed*
         - Optional
         - Type: boolean
         - Default value: false
-    - */software/components/metaconfig//nrpe_service/command*
+    - */software/components/metaconfig/nrpe_service/command*
         - Required
         - Type: string
-    - */software/components/metaconfig//nrpe_service/include*
+    - */software/components/metaconfig/nrpe_service/include*
         - Optional
         - Type: string
-    - */software/components/metaconfig//nrpe_service/include_dir*
+    - */software/components/metaconfig/nrpe_service/include_dir*
         - Optional
         - Type: string

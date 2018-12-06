@@ -9,7 +9,7 @@ NAME
 ****
 
 
-\ ``NCM::Component::OpenNebula::Account``\  adds and modifies \ ``OpenNebula``\  users
+``NCM::Component::OpenNebula::Account`` adds and modifies ``OpenNebula`` users
  groups and clusters consumers.
 
 Public methods

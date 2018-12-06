@@ -36,21 +36,21 @@ MAIN RESOURCES
 
 
 `/software/components/lcas/dbpath`
-================================
+==================================
 
 
 Deprecated. Mutually exclusive with `/software/components/lcas/db.`
 
 
 `/software/components/lcas/module`
-================================
+==================================
 
 
 Deprecated. Mutually exclusive with `/software/components/lcas/db.`
 
 
 `/software/components/lcas/db` : list (optional)
-==============================================
+================================================
 
 
 List of LCAS databases and associated module configaration files to configure. For each database,
@@ -187,4 +187,3 @@ SEE ALSO
 
 
 ncm-ncd(1)
-

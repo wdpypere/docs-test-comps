@@ -126,7 +126,7 @@ RESOURCES
 
 
 `/software/components/ceph`
-=========================
+===========================
 
 
 The configuration information for the component.  Each field should
@@ -140,4 +140,3 @@ DEPENDENCIES
 
 
 The component is tested with Ceph version 12.2.2 and ceph-deploy version 1.5.39.
-

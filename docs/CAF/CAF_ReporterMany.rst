@@ -18,8 +18,8 @@ DESCRIPTION
 ***********
 
 
-\ ``CAF::ReporterMany``\  provides class methods for message reporting
-just like \ ``CAF::Reporter``\  does, with the main distinction that
+``CAF::ReporterMany`` provides class methods for message reporting
+just like ``CAF::Reporter`` does, with the main distinction that
 multiple instances do not share the reporter setup
 (e.g. they can each have their own debuglevel).
 

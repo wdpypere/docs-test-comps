@@ -10,7 +10,7 @@ NAME
 
 
 NCM::Component::Systemd::Service::Chkconfig is a class handling services
-that can be controlled via (older) \ ``ncm-chkconfig``\ .
+that can be controlled via (older) ``ncm-chkconfig``.
 
 Public methods
 ==============
@@ -24,7 +24,7 @@ Public methods
  
  - log
   
-  A logger instance (compatible with \ ``CAF::Object``\ ).
+  A logger instance (compatible with ``CAF::Object``).
   
  
  
@@ -33,31 +33,31 @@ Public methods
 - current_units
  
  Return hash reference with current configured units
- determined via \ ``chkconfig --list``\ .
+ determined via ``chkconfig --list``.
  
- (No type to specify, \ ``sysv``\  type is forced).
+ (No type to specify, ``sysv`` type is forced).
  
 
 
 - current_target
  
- Return the current target based on legacy \ ``current_runlevel``\ .
+ Return the current target based on legacy ``current_runlevel``.
  
 
 
 - default_target
  
- Return the default target based on legacy \ ``default_runlevel``\ .
+ Return the default target based on legacy ``default_runlevel``.
  
 
 
 - configured_units
  
- \ ``configured_units``\  parses the \ ``tree``\  hash reference and builds up the
+ ``configured_units`` parses the ``tree`` hash reference and builds up the
  units to be configured. It returns a hash reference with key the unit name and
  values the details of the unit.
  
- (\ ``tree``\  is typically \ ``$config-``\ getElement('/software/components/chkconfig/service')->getTree>.)
+ (``tree`` is typically ``$config->getElement('/software/components/chkconfig/service')->getTree``.)
  
  This method converts the legacy states as following
  
@@ -92,8 +92,8 @@ Private methods
 
 - is_possible_missing
  
- Determine if \ ``unit``\  is \ ``possible_missing``\ 
- (see \ ``make_cache_alias``\ ). (Returns 0 or 1).
+ Determine if ``unit`` is ``possible_missing``
+ (see ``make_cache_alias``). (Returns 0 or 1).
  
  A unit is possible_missing if
  
@@ -109,23 +109,23 @@ Private methods
 
 - generate_runlevel2target
  
- Create, set and return the \ ``runlevel2target``\  map
+ Create, set and return the ``runlevel2target`` map
  (will reset existing one, return is merely for testing).
  
 
 
 - convert_runlevels
  
- Convert the \ ``ncm-chkconfig``\  levels to new systemsctl targets
+ Convert the ``ncm-chkconfig`` levels to new systemsctl targets
  
- \ ``legacylevel``\  is a string with integers e.g. "234".
+ ``legacylevel`` is a string with integers e.g. "234".
  Retrun a array reference with the targets.
  
 
 
 - default_runlevel
  
- \ ``default_runlevel``\  returns the default runlevel
+ ``default_runlevel`` returns the default runlevel
  via the INITTAB file. If that fails, the default
  DEFAULT_RUNLEVEL is returned.
  
@@ -136,8 +136,8 @@ Private methods
  Return the current legacy runlevel.
  
  The rulevel is determined by trying (in order)
- \ ``/sbin/runlevel``\  or \ ``who -r``\ . If both fail, the
- \ ``default_runlevel``\  method is called and its value
+ ``/sbin/runlevel`` or ``who -r``. If both fail, the
+ ``default_runlevel`` method is called and its value
  is returned.
  
 

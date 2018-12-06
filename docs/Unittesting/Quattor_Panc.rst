@@ -58,10 +58,10 @@ Compile pan object template into JSON profile
 =============================================
 
 
-Compile the pan \ ``profile``\  (file '\ ``profile``\ .pan' in \ ``resourcesdir``\ )
-and create the profile in \ ``outputdir``\ .
+Compile the pan ``profile`` (file '``profile``.pan' in ``resourcesdir``)
+and create the profile in ``outputdir``.
 
-If \ ``croak_on_error``\  is true (or undef), the method croaks on compilation failure.
+If ``croak_on_error`` is true (or undef), the method croaks on compilation failure.
 If false, it will return the exitcode.
 
 
@@ -69,21 +69,21 @@ panc_annotations
 ================
 
 
-Generate the pan annotations from \ ``basedir``\  in \ ``outputdir``\  for \ ``profiles``\ .
+Generate the pan annotations from ``basedir`` in ``outputdir`` for ``profiles``.
 
 
 process
 =======
 
 
-Sort-of private method to use \ ``CAF::Process``\  bypassing the mocking of \ ``CAF::Process``\ .
+Sort-of private method to use ``CAF::Process`` bypassing the mocking of ``CAF::Process``.
 
-Arrayhash \ ``$cmd``\  for the command, \ ``$message``\  for a message to print.
+Arrayhash ``$cmd`` for the command, ``$message`` for a message to print.
 
 Options
 
 
-- croak_on_error: \ ``croak``\  on error
+- croak_on_error: ``croak`` on error
 
 
 

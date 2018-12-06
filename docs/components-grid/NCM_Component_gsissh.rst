@@ -27,21 +27,21 @@ RESOURCES
 
 
 `/software/components/gsissh/server`
-==================================
+====================================
 
 
 An optional nlist with the server-side configuration.  If not
 specified, then the server is not configured.
 
 `/software/components/gsissh/server/port`
----------------------------------------
+-----------------------------------------
 
 
 The port to use for the daemon.  This is mandatory.
 
 
 `/software/components/gsissh/server/options`
-------------------------------------------
+--------------------------------------------
 
 
 An nlist giving the options to use.  Typical options are:
@@ -52,7 +52,7 @@ yes/no values.
 
 
 `/software/components/gsissh/client/options`
-==========================================
+============================================
 
 
 An optional nlist giving the client options to use.  Typical options
@@ -67,11 +67,14 @@ EXAMPLE
 *******
 
 
-"/software/components/gsissh/server/port" = 1975;
-"/software/components/gsissh/server/options" = 
-  nlist("PermitRootLogin", "no",
-        "RSAAuthentication", "no",
-        "PubkeyAuthentication", "no",
-        "PasswordAuthentication", "no",
-        "ChallengeResponseAuthentication", "no");
 
+.. code-block:: perl
+
+     "/software/components/gsissh/server/port" = 1975;
+     "/software/components/gsissh/server/options" =
+           dict(
+               "PermitRootLogin", "no",
+               "RSAAuthentication", "no",
+               "PubkeyAuthentication", "no",
+               "PasswordAuthentication", "no",
+               "ChallengeResponseAuthentication", "no");

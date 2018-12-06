@@ -47,21 +47,21 @@ matching line will be removed/commented out if the option is undefined.
 - condition
  
  An option or an option set/subset (see below) that must exist for the rule to be applied
- or the keyword \ ``ALWAYS``\ .
- Both \ ``option_set``\  and \ ``option_name:option_set``\  are accepted. option and option set
- in the condition are normally different from the \ ``option_name``\  and \ ``option_set``\ 
+ or the keyword ``ALWAYS``.
+ Both ``option_set`` and ``option_name:option_set`` are accepted. option and option set
+ in the condition are normally different from the ``option_name`` and ``option_set``
  parameters in the rule as this is the default behaviour to apply the rule only if
  they exist. One option set only is allowed and only its existence (not its value) is tested.
  
- \ ``option_set``\  can be either an actual option set as defined below or a subset of an option set
- (a subhash of the option set hash). To specify a subset, use \ ``/``\  as a level separator,
- e.g. \ ``xroot/securityProtocol/gsi``\  (\ ``gsi``\  subet of \ ``securityProtocol``\  subset of \ ``xroot``\  option set).
+ ``option_set`` can be either an actual option set as defined below or a subset of an option set
+ (a subhash of the option set hash). To specify a subset, use ``/`` as a level separator,
+ e.g. ``xroot/securityProtocol/gsi`` (``gsi`` subet of ``securityProtocol`` subset of ``xroot`` option set).
  
  It is possible to negate the condition (option or option_set must not exist)
  by prepending it with '!'.
  
- \ ``ALWAYS``\  is a special condition that means that rules must be applied whether
- the \ ``option_name:option_set``\  exist in the configuration or not. When they don't exist
+ ``ALWAYS`` is a special condition that means that rules must be applied whether
+ the ``option_name:option_set`` exist in the configuration or not. When they don't exist
  the result is to comment out the matching configuration lines.
  
 
@@ -76,8 +76,8 @@ matching line will be removed/commented out if the option is undefined.
 - option_set
  
  The name of an option set where the option is located in (for example 'dpnsHost:dpm'
- means \ ``dpnsHost``\  option of \ ``dpm``\  option set). An option set is a sub-hash in the configuration
- hash. \ ``GLOBAL``\  is a special value for \ ``option_set``\  indicating that the option is a global option,
+ means ``dpnsHost`` option of ``dpm`` option set). An option set is a sub-hash in the configuration
+ hash. ``GLOBAL`` is a special value for ``option_set`` indicating that the option is a global option,
  instead of belonging to a specific option set (global options are at the top level of the configuration
  hash).
  
@@ -142,7 +142,7 @@ LINE_FORMAT_xxx: general syntax of the line
 
 - LINE_FORMAT_KW_VAL
  
- Keyword value (e.g. Xrootd, Apache) keywork/value separator can be customized with \ ``LINE_VALUE_OPT_SEP_xxx``\ . No coment is added to the line.
+ Keyword value (e.g. Xrootd, Apache) keywork/value separator can be customized with ``LINE_VALUE_OPT_SEP_xxx``. No coment is added to the line.
  This is the default line format.
  
 
@@ -189,7 +189,7 @@ LINE_VALUE_xxx: how to interpret the configuration value
 
 - LINE_VALUE_BOOLEAN
  
- Interpret the value as a boolean rendered as \ ``yes``\  or \ ``no``\ .
+ Interpret the value as a boolean rendered as ``yes`` or ``no``.
  
 
 
@@ -208,7 +208,7 @@ LINE_VALUE_xxx: how to interpret the configuration value
 - LINE_VALUE_HASH_KEYS
  
  The value is a hash whose keys are the value. Rendering similar to arrays with
- \ ``LINE_VALUE_ARRAY``\  (the key list is treated as an array).
+ ``LINE_VALUE_ARRAY`` (the key list is treated as an array).
  
 
 
@@ -228,7 +228,7 @@ These options mainly apply to lists and hashes and are interpreted as a bitmask.
 
 - LINE_OPT_KEY_PREFIX_DASH
  
- If set, add a \ ``-``\  before the keyword when writing it in the configuration file.
+ If set, add a ``-`` before the keyword when writing it in the configuration file.
  
 
 

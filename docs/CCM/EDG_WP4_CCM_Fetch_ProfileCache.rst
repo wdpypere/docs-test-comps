@@ -33,11 +33,11 @@ Functions
  URL, being:
  
  
- * URLs ending in \ ``xml``\  are for XML profiles.
+ * URLs ending in ``xml`` are for XML profiles.
  
  
  
- * URLs ending in \ ``json``\  are for JSON profiles.
+ * URLs ending in ``json`` are for JSON profiles.
  
  
  

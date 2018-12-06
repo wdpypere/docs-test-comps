@@ -38,20 +38,20 @@ Variables
 
 - inc_orig
  
- \ ``$inc_orig``\  holds arrayref to a copy of \ ``@INC``\  when
- \ ``INC_insert_namespace``\  was first called.
+ ``$inc_orig`` holds arrayref to a copy of ``@INC`` when
+ ``INC_insert_namespace`` was first called.
  
 
 
 - inc_history
  
- \ ``$inc_history``\  is an arrayref with copy of all references of all \ ``@INC``\ s modified
+ ``$inc_history`` is an arrayref with copy of all references of all ``@INC``'s modified
  
 
 
 - ignore
  
- Hashref with namespaces to ignore (if value is true) when \ ``INC_insert_namespace``\ 
+ Hashref with namespaces to ignore (if value is true) when ``INC_insert_namespace``
  is used.
  
 

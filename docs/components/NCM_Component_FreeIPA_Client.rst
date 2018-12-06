@@ -24,8 +24,8 @@ Private methods
  
  - log
   
-  An \ ``CAF::Reporter``\  instance that can be used for logging
-  (it is converted in a logger appropriate for \ ``Net::FreeIPA``\ ).
+  An ``CAF::Reporter`` instance that can be used for logging
+  (it is converted in a logger appropriate for ``Net::FreeIPA``).
   
  
  

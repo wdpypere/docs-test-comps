@@ -20,7 +20,7 @@ Methods
 
 - skip
  
- The \ ``skip``\  methods determines what configuration work to skip.
+ The ``skip`` methods determines what configuration work to skip.
  It returns a hashref with key the configuration name and a boolean
  value (to skip or not). Undefined configurations will be skipped.
  
@@ -31,7 +31,7 @@ Methods
 
 - Configure()
  
- Configures \ ``systemd``\  for each supported sub-system
+ Configures ``systemd`` for each supported sub-system
  
 
 

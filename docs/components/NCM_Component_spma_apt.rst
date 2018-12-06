@@ -9,7 +9,7 @@ NAME
 ****
 
 
-\ ``NCM::Component::spma::apt``\  - NCM SPMA backend for apt
+``NCM::Component::spma::apt`` - NCM SPMA backend for apt
 
 
 ********
@@ -27,7 +27,7 @@ DESCRIPTION
 ***********
 
 
-This plugin implements an apt backend for \ ``ncm-spma``\ , the approach taken is to defer as much work as possible to apt.
+This plugin implements an apt backend for ``ncm-spma``, the approach taken is to defer as much work as possible to apt.
 
 A single SPMA run consists of the following steps:
 
@@ -68,8 +68,8 @@ RESOURCES
 
 Only a very minimal schema is implemented.
 
-Sources listed under \ ``/software/repositories``\  will be configured,
-URLs should be followed by the suite and sections required e.g. \ ``http://example.org/debian unstable main``\ 
+Sources listed under ``/software/repositories`` will be configured,
+URLs should be followed by the suite and sections required e.g. ``http://example.org/debian unstable main``
 
-Packages listed under \ ``/software/packages``\  will be installed, version and architecture locking (including multiarch) is fully implemented.
+Packages listed under ``/software/packages`` will be installed, version and architecture locking (including multiarch) is fully implemented.
 

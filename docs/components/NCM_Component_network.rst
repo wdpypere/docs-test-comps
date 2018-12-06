@@ -17,8 +17,8 @@ DESCRIPTION
 ***********
 
 
-The \ *network*\  component sets the network settings through \ ``/etc/sysconfig/network``\ 
-and the various files in \ ``/etc/sysconfig/network-scripts``\ .
+The \ *network*\  component sets the network settings through ``/etc/sysconfig/network``
+and the various files in ``/etc/sysconfig/network-scripts``.
 
 New/changed settings are first tested by retrieving the latest profile from the
 CDB server (using ccm-fetch).
@@ -65,16 +65,16 @@ To enable channel bonding with quattor using devices eth0 and eth1 to form bond0
      "/software/components/network/dependencies/pre" = append("modprobe");
 
 
-(see \ ``<kernel>/Documentation/networking/bonding.txt``\  for more info on the driver options)
+(see ``<kernel>/Documentation/networking/bonding.txt`` for more info on the driver options)
 
 
 VLAN support
 ============
 
 
-Use the \ ``vlan[0-9]{0-4}``\  interface devices and set the explicit device name and physdev.
+Use the ``vlan[0-9]{0-4}`` interface devices and set the explicit device name and physdev.
 The VLAN ID is the number of the '.' in the device name.
-\ `` physdev ``\  is mandatory for \ ``vlan[0-9]{0-4}``\  device.
+`` physdev `` is mandatory for ``vlan[0-9]{0-4}`` device.
 
 An example:
 

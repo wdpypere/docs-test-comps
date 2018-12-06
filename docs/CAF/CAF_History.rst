@@ -9,7 +9,7 @@ NAME
 ****
 
 
-\ ``CAF::History``\  - Class to keep history of events
+``CAF::History`` - Class to keep history of events
 
 
 ********
@@ -45,10 +45,10 @@ DESCRIPTION
 ***********
 
 
-\ ``CAF::History``\  provides class methods for tracking and
+``CAF::History`` provides class methods for tracking and
 lookup of events.
 
-TODO: \ ``CAF::History``\  should provide interfaces for
+TODO: ``CAF::History`` should provide interfaces for
 
 
 - loading / saving history to file e.g. sqlite
@@ -66,32 +66,32 @@ Public methods
 
 - new
  
- Create a \ ``CAF::History``\  instance,
+ Create a ``CAF::History`` instance,
  
  The history is a hashref with keys
  
  
- - \ ``$EVENTS``\ 
+ - ``$EVENTS``
   
   an array reference holding all events.
   
  
  
- - \ ``$LAST``\ 
+ - ``$LAST``
   
   The latest state of each id
   
  
  
- - \ ``$NEXTIDX``\ 
+ - ``$NEXTIDX``
   
   The index of the next event.
   
  
  
- - optional \ ``$INSTANCES``\ 
+ - optional ``$INSTANCES``
   
-  If \ ``keep_instances``\  is set, an INSTANCES attribute is also added,
+  If ``keep_instances`` is set, an INSTANCES attribute is also added,
   and any events will keep track of the (blessed) instances.
   
   Caveat: this will prevent code that relies on instances going out
@@ -105,11 +105,11 @@ Public methods
 
 - event
  
- Add an event. An event is specified by an id from the \ ``$obj``\ 
- and a hash \ ``metadata``\ . (Metadata can be passed as
- \ ``<-``\ event($obj, modified => 0);>>.)
+ Add an event. An event is specified by an id from the ``$obj``
+ and a hash ``metadata``. (Metadata can be passed as
+ ``->event($obj, modified => 0);``.)
  
- If an instance is passed, the \ ``Scalar::Util::refaddr``\  is used as internal
+ If an instance is passed, the ``Scalar::Util::refaddr`` is used as internal
  identifier. If a scalar is passed, it's value is used.
  
  Object instances are also added to an instances hash-ref to handle DESTROY properly
@@ -118,27 +118,27 @@ Public methods
  Following metadata is added automatically
  
  
- - \ ``IDX``\ 
+ - ``IDX``
   
   The unique event index, increases one per event.
   
  
  
- - \ ``ID``\ 
+ - ``ID``
   
   The identifier
   
  
  
- - \ ``REF``\ 
+ - ``REF``
   
-  The obj \ ``ref``\ 
+  The obj ``ref``
   
  
  
- - \ ``TS``\ 
+ - ``TS``
   
-  The timestamp (private method \ ``_now``\  is used to determine the timestamp)
+  The timestamp (private method ``_now`` is used to determine the timestamp)
   
  
  
@@ -152,12 +152,12 @@ Public methods
  
  Primitive interface to query the events.
  
- \ ``match``\  is a anonymous sub that is passed
+ ``match`` is a anonymous sub that is passed
  the event as (only) argument
  (each event is a metadata hashref).
  Returns true if the event matches and is to be returned.
  
- \ ``filter``\  is an arrayref of metadata keys to filter from the event
+ ``filter`` is an arrayref of metadata keys to filter from the event
  (only event metadata matching the filter is returned).
  
  Returns an arrayref of (a shallow copy of) the event metadata.
@@ -193,7 +193,7 @@ Private methods
 
 - _now
  
- Return the timestamp to use. Implemented using builtin \ ``time``\  for now,
+ Return the timestamp to use. Implemented using builtin ``time`` for now,
  i.e. no timezones.
  
 
@@ -209,9 +209,9 @@ Private methods
  Following methods are supported
  
  
- - \ ``close``\ 
+ - ``close``
   
-  If the instance has a \ ``close``\  method, the method is
+  If the instance has a ``close`` method, the method is
   called without any arguments.
   
  

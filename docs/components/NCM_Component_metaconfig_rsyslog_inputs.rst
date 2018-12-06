@@ -7,425 +7,425 @@ Types
 
  - **/software/components/metaconfig/rsyslog_input_common**
     - Description: Input module schema configuration options
-    - */software/components/metaconfig//rsyslog_input_common/ruleset*
+    - */software/components/metaconfig/rsyslog_input_common/ruleset*
         - Description: Bind this input to ruleset
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_common/queue*
+    - */software/components/metaconfig/rsyslog_input_common/queue*
         - Description: Per input queue
         - Optional
         - Type: rsyslog_queue
  - **/software/components/metaconfig/rsyslog_input_file**
-    - */software/components/metaconfig//rsyslog_input_file/File*
+    - */software/components/metaconfig/rsyslog_input_file/File*
         - Description: The file being monitored. Should be an absolute name, but it supports wildcards
         - Required
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_file/Tag*
+    - */software/components/metaconfig/rsyslog_input_file/Tag*
         - Description: Tag to use for messages that originate from this file
         - Required
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_file/Facility*
+    - */software/components/metaconfig/rsyslog_input_file/Facility*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_file/Severity*
+    - */software/components/metaconfig/rsyslog_input_file/Severity*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_file/PersistStateInterval*
+    - */software/components/metaconfig/rsyslog_input_file/PersistStateInterval*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_input_file/startmsg.regex*
+    - */software/components/metaconfig/rsyslog_input_file/startmsg.regex*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_file/readTimeout*
+    - */software/components/metaconfig/rsyslog_input_file/readTimeout*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_input_file/readMode*
+    - */software/components/metaconfig/rsyslog_input_file/readMode*
         - Optional
         - Type: long
         - Range: 0..2
-    - */software/components/metaconfig//rsyslog_input_file/escapeLF*
+    - */software/components/metaconfig/rsyslog_input_file/escapeLF*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_file/MaxLinesAtOnce*
+    - */software/components/metaconfig/rsyslog_input_file/MaxLinesAtOnce*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_input_file/MaxSubmitAtOnce*
+    - */software/components/metaconfig/rsyslog_input_file/MaxSubmitAtOnce*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_input_file/deleteStateOnFileDelete*
+    - */software/components/metaconfig/rsyslog_input_file/deleteStateOnFileDelete*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_file/addMetadata*
+    - */software/components/metaconfig/rsyslog_input_file/addMetadata*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_file/stateFile*
+    - */software/components/metaconfig/rsyslog_input_file/stateFile*
         - Optional
         - Type: absolute_file_path
-    - */software/components/metaconfig//rsyslog_input_file/reopenOnTruncate*
+    - */software/components/metaconfig/rsyslog_input_file/reopenOnTruncate*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_file/trimLineOverBytes*
+    - */software/components/metaconfig/rsyslog_input_file/trimLineOverBytes*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_input_file/freshStartTail*
+    - */software/components/metaconfig/rsyslog_input_file/freshStartTail*
         - Optional
         - Type: boolean
  - **/software/components/metaconfig/rsyslog_input_tcp**
-    - */software/components/metaconfig//rsyslog_input_tcp/Port*
+    - */software/components/metaconfig/rsyslog_input_tcp/Port*
         - Description: Listen om port
         - Required
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_input_tcp/address*
+    - */software/components/metaconfig/rsyslog_input_tcp/address*
         - Description: Bind on interface
         - Optional
         - Type: type_hostname
-    - */software/components/metaconfig//rsyslog_input_tcp/Name*
+    - */software/components/metaconfig/rsyslog_input_tcp/Name*
         - Description: Srt name for inputproperty
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_tcp/SupportOctetCountedFraming*
+    - */software/components/metaconfig/rsyslog_input_tcp/SupportOctetCountedFraming*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_tcp/RateLimit.Interval*
+    - */software/components/metaconfig/rsyslog_input_tcp/RateLimit.Interval*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_input_tcp/RateLimit.Burst*
+    - */software/components/metaconfig/rsyslog_input_tcp/RateLimit.Burst*
         - Optional
         - Type: long
         - Range: 0..
  - **/software/components/metaconfig/rsyslog_input_udp**
-    - */software/components/metaconfig//rsyslog_input_udp/Address*
+    - */software/components/metaconfig/rsyslog_input_udp/Address*
         - Optional
         - Type: type_hostname
-    - */software/components/metaconfig//rsyslog_input_udp/Port*
+    - */software/components/metaconfig/rsyslog_input_udp/Port*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_input_udp/Device*
+    - */software/components/metaconfig/rsyslog_input_udp/Device*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_udp/RateLimit.Interval*
+    - */software/components/metaconfig/rsyslog_input_udp/RateLimit.Interval*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_input_udp/RateLimit.Burst*
+    - */software/components/metaconfig/rsyslog_input_udp/RateLimit.Burst*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_input_udp/name*
+    - */software/components/metaconfig/rsyslog_input_udp/name*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_udp/InputName*
+    - */software/components/metaconfig/rsyslog_input_udp/InputName*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_udp/name.appendPort*
+    - */software/components/metaconfig/rsyslog_input_udp/name.appendPort*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_udp/InputName.AppendPort*
+    - */software/components/metaconfig/rsyslog_input_udp/InputName.AppendPort*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_udp/defaultTZ*
+    - */software/components/metaconfig/rsyslog_input_udp/defaultTZ*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_udp/rcvbufSize*
+    - */software/components/metaconfig/rsyslog_input_udp/rcvbufSize*
         - Optional
         - Type: long
         - Range: 0..
  - **/software/components/metaconfig/rsyslog_input_czmq**
-    - */software/components/metaconfig//rsyslog_input_czmq/endpoints*
+    - */software/components/metaconfig/rsyslog_input_czmq/endpoints*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_czmq/socktype*
+    - */software/components/metaconfig/rsyslog_input_czmq/socktype*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_czmq/authtype*
+    - */software/components/metaconfig/rsyslog_input_czmq/authtype*
         - Optional
         - Type: string
  - **/software/components/metaconfig/rsyslog_input_uxsock**
-    - */software/components/metaconfig//rsyslog_input_uxsock/IgnoreTimestamp*
+    - */software/components/metaconfig/rsyslog_input_uxsock/IgnoreTimestamp*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_uxsock/IgnoreOwnMessages*
+    - */software/components/metaconfig/rsyslog_input_uxsock/IgnoreOwnMessages*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_uxsock/FlowControl*
+    - */software/components/metaconfig/rsyslog_input_uxsock/FlowControl*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_uxsock/RateLimit.Interval*
+    - */software/components/metaconfig/rsyslog_input_uxsock/RateLimit.Interval*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_input_uxsock/RateLimit.Burst*
+    - */software/components/metaconfig/rsyslog_input_uxsock/RateLimit.Burst*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_input_uxsock/RateLimit.Severity*
+    - */software/components/metaconfig/rsyslog_input_uxsock/RateLimit.Severity*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_input_uxsock/UsePIDFromSystem*
+    - */software/components/metaconfig/rsyslog_input_uxsock/UsePIDFromSystem*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_uxsock/UseSysTimeStamp*
+    - */software/components/metaconfig/rsyslog_input_uxsock/UseSysTimeStamp*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_uxsock/CreatePath*
+    - */software/components/metaconfig/rsyslog_input_uxsock/CreatePath*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_uxsock/Socket*
+    - */software/components/metaconfig/rsyslog_input_uxsock/Socket*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_input_uxsock/HostName*
+    - */software/components/metaconfig/rsyslog_input_uxsock/HostName*
         - Optional
         - Type: type_hostname
-    - */software/components/metaconfig//rsyslog_input_uxsock/Annotate*
+    - */software/components/metaconfig/rsyslog_input_uxsock/Annotate*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_uxsock/ParseTrusted*
+    - */software/components/metaconfig/rsyslog_input_uxsock/ParseTrusted*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_uxsock/Unlink*
+    - */software/components/metaconfig/rsyslog_input_uxsock/Unlink*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_uxsock/useSpecialParser*
+    - */software/components/metaconfig/rsyslog_input_uxsock/useSpecialParser*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_input_uxsock/parseHostname*
+    - */software/components/metaconfig/rsyslog_input_uxsock/parseHostname*
         - Optional
         - Type: boolean
  - **/software/components/metaconfig/rsyslog_input**
-    - */software/components/metaconfig//rsyslog_input/file*
+    - */software/components/metaconfig/rsyslog_input/file*
         - Optional
         - Type: rsyslog_input_file
-    - */software/components/metaconfig//rsyslog_input/tcp*
+    - */software/components/metaconfig/rsyslog_input/tcp*
         - Optional
         - Type: rsyslog_input_tcp
-    - */software/components/metaconfig//rsyslog_input/udp*
+    - */software/components/metaconfig/rsyslog_input/udp*
         - Optional
         - Type: rsyslog_input_udp
-    - */software/components/metaconfig//rsyslog_input/czmq*
+    - */software/components/metaconfig/rsyslog_input/czmq*
         - Optional
         - Type: rsyslog_input_czmq
-    - */software/components/metaconfig//rsyslog_input/uxsock*
+    - */software/components/metaconfig/rsyslog_input/uxsock*
         - Optional
         - Type: rsyslog_input_uxsock
  - **/software/components/metaconfig/rsyslog_module_file**
-    - */software/components/metaconfig//rsyslog_module_file/mode*
+    - */software/components/metaconfig/rsyslog_module_file/mode*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_module_file/readTimeout*
+    - */software/components/metaconfig/rsyslog_module_file/readTimeout*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_file/timeoutGranularity*
+    - */software/components/metaconfig/rsyslog_module_file/timeoutGranularity*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_file/PollingInterval*
+    - */software/components/metaconfig/rsyslog_module_file/PollingInterval*
         - Optional
         - Type: long
         - Range: 0..
  - **/software/components/metaconfig/rsyslog_module_tcp**
-    - */software/components/metaconfig//rsyslog_module_tcp/AddtlFrameDelimiter*
+    - */software/components/metaconfig/rsyslog_module_tcp/AddtlFrameDelimiter*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_module_tcp/DisableLFDelimiter*
+    - */software/components/metaconfig/rsyslog_module_tcp/DisableLFDelimiter*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_tcp/maxFrameSize*
+    - */software/components/metaconfig/rsyslog_module_tcp/maxFrameSize*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_tcp/NotifyOnConnectionClose*
+    - */software/components/metaconfig/rsyslog_module_tcp/NotifyOnConnectionClose*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_tcp/KeepAlive*
+    - */software/components/metaconfig/rsyslog_module_tcp/KeepAlive*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_tcp/KeepAlive.Probes*
+    - */software/components/metaconfig/rsyslog_module_tcp/KeepAlive.Probes*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_tcp/KeepAlive.Interval*
+    - */software/components/metaconfig/rsyslog_module_tcp/KeepAlive.Interval*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_tcp/KeepAlive.Time*
+    - */software/components/metaconfig/rsyslog_module_tcp/KeepAlive.Time*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_tcp/FlowControl*
+    - */software/components/metaconfig/rsyslog_module_tcp/FlowControl*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_tcp/MaxListeners*
+    - */software/components/metaconfig/rsyslog_module_tcp/MaxListeners*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_tcp/MaxSessions*
+    - */software/components/metaconfig/rsyslog_module_tcp/MaxSessions*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_tcp/StreamDriver.Name*
+    - */software/components/metaconfig/rsyslog_module_tcp/StreamDriver.Name*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_module_tcp/StreamDriver.Mode*
+    - */software/components/metaconfig/rsyslog_module_tcp/StreamDriver.Mode*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_tcp/StreamDriver.AuthMode*
+    - */software/components/metaconfig/rsyslog_module_tcp/StreamDriver.AuthMode*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_module_tcp/PermittedPeer*
+    - */software/components/metaconfig/rsyslog_module_tcp/PermittedPeer*
         - Optional
         - Type: type_hostname
-    - */software/components/metaconfig//rsyslog_module_tcp/discardTruncatedMsg*
+    - */software/components/metaconfig/rsyslog_module_tcp/discardTruncatedMsg*
         - Optional
         - Type: boolean
  - **/software/components/metaconfig/rsyslog_module_udp**
-    - */software/components/metaconfig//rsyslog_module_udp/TimeRequery*
+    - */software/components/metaconfig/rsyslog_module_udp/TimeRequery*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_udp/SchedulingPolicy*
+    - */software/components/metaconfig/rsyslog_module_udp/SchedulingPolicy*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_module_udp/SchedulingPriority*
+    - */software/components/metaconfig/rsyslog_module_udp/SchedulingPriority*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_udp/batchSize*
+    - */software/components/metaconfig/rsyslog_module_udp/batchSize*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_udp/threads*
+    - */software/components/metaconfig/rsyslog_module_udp/threads*
         - Optional
         - Type: long
         - Range: 0..32
  - **/software/components/metaconfig/rsyslog_module_czmq**
-    - */software/components/metaconfig//rsyslog_module_czmq/servercertpath*
+    - */software/components/metaconfig/rsyslog_module_czmq/servercertpath*
         - Optional
         - Type: absolute_file_path
-    - */software/components/metaconfig//rsyslog_module_czmq/clientcertpath*
+    - */software/components/metaconfig/rsyslog_module_czmq/clientcertpath*
         - Optional
         - Type: absolute_file_path
-    - */software/components/metaconfig//rsyslog_module_czmq/authtype*
+    - */software/components/metaconfig/rsyslog_module_czmq/authtype*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_module_czmq/authenticator*
+    - */software/components/metaconfig/rsyslog_module_czmq/authenticator*
         - Optional
         - Type: boolean
  - **/software/components/metaconfig/rsyslog_module_uxsock**
-    - */software/components/metaconfig//rsyslog_module_uxsock/SysSock.IgnoreTimestamp*
+    - */software/components/metaconfig/rsyslog_module_uxsock/SysSock.IgnoreTimestamp*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_uxsock/SysSock.IgnoreOwnMessages*
+    - */software/components/metaconfig/rsyslog_module_uxsock/SysSock.IgnoreOwnMessages*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_uxsock/SysSock.Use*
+    - */software/components/metaconfig/rsyslog_module_uxsock/SysSock.Use*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_uxsock/SysSock.Name*
+    - */software/components/metaconfig/rsyslog_module_uxsock/SysSock.Name*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_module_uxsock/SysSock.FlowControl*
+    - */software/components/metaconfig/rsyslog_module_uxsock/SysSock.FlowControl*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_uxsock/SysSock.UsePIDFromSystem*
+    - */software/components/metaconfig/rsyslog_module_uxsock/SysSock.UsePIDFromSystem*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_uxsock/SysSock.RateLimit.Interval*
+    - */software/components/metaconfig/rsyslog_module_uxsock/SysSock.RateLimit.Interval*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_uxsock/SysSock.RateLimit.Burst*
+    - */software/components/metaconfig/rsyslog_module_uxsock/SysSock.RateLimit.Burst*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_uxsock/SysSock.RateLimit.Severity*
+    - */software/components/metaconfig/rsyslog_module_uxsock/SysSock.RateLimit.Severity*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_uxsock/SysSock.UseSysTimeStamp*
+    - */software/components/metaconfig/rsyslog_module_uxsock/SysSock.UseSysTimeStamp*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_uxsock/SysSock.Annotate*
+    - */software/components/metaconfig/rsyslog_module_uxsock/SysSock.Annotate*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_uxsock/SysSock.ParseTrusted*
+    - */software/components/metaconfig/rsyslog_module_uxsock/SysSock.ParseTrusted*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_uxsock/SysSock.Unlink*
+    - */software/components/metaconfig/rsyslog_module_uxsock/SysSock.Unlink*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_uxsock/sysSock.useSpecialParser*
+    - */software/components/metaconfig/rsyslog_module_uxsock/sysSock.useSpecialParser*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_uxsock/sysSock.parseHostname*
+    - */software/components/metaconfig/rsyslog_module_uxsock/sysSock.parseHostname*
         - Optional
         - Type: boolean
  - **/software/components/metaconfig/rsyslog_module_mark**
-    - */software/components/metaconfig//rsyslog_module_mark/MarkMessagePeriod*
+    - */software/components/metaconfig/rsyslog_module_mark/MarkMessagePeriod*
         - Optional
         - Type: long
         - Range: 0..
  - **/software/components/metaconfig/rsyslog_module_journal**
-    - */software/components/metaconfig//rsyslog_module_journal/PersistStateInterval*
+    - */software/components/metaconfig/rsyslog_module_journal/PersistStateInterval*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_journal/StateFile*
+    - */software/components/metaconfig/rsyslog_module_journal/StateFile*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_module_journal/ratelimit.interval*
+    - */software/components/metaconfig/rsyslog_module_journal/ratelimit.interval*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_journal/ratelimit.burst*
+    - */software/components/metaconfig/rsyslog_module_journal/ratelimit.burst*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//rsyslog_module_journal/IgnorePreviousMessages*
+    - */software/components/metaconfig/rsyslog_module_journal/IgnorePreviousMessages*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_journal/DefaultSeverity*
+    - */software/components/metaconfig/rsyslog_module_journal/DefaultSeverity*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_module_journal/DefaultFacility*
+    - */software/components/metaconfig/rsyslog_module_journal/DefaultFacility*
         - Optional
         - Type: string
-    - */software/components/metaconfig//rsyslog_module_journal/usepidfromsystem*
+    - */software/components/metaconfig/rsyslog_module_journal/usepidfromsystem*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//rsyslog_module_journal/IgnoreNonValidStatefile*
+    - */software/components/metaconfig/rsyslog_module_journal/IgnoreNonValidStatefile*
         - Optional
         - Type: boolean
  - **/software/components/metaconfig/rsyslog_module_input**
-    - */software/components/metaconfig//rsyslog_module_input/file*
+    - */software/components/metaconfig/rsyslog_module_input/file*
         - Optional
         - Type: rsyslog_module_file
-    - */software/components/metaconfig//rsyslog_module_input/tcp*
+    - */software/components/metaconfig/rsyslog_module_input/tcp*
         - Optional
         - Type: rsyslog_module_tcp
-    - */software/components/metaconfig//rsyslog_module_input/udp*
+    - */software/components/metaconfig/rsyslog_module_input/udp*
         - Optional
         - Type: rsyslog_module_udp
-    - */software/components/metaconfig//rsyslog_module_input/uxsock*
+    - */software/components/metaconfig/rsyslog_module_input/uxsock*
         - Optional
         - Type: rsyslog_module_uxsock
-    - */software/components/metaconfig//rsyslog_module_input/mark*
+    - */software/components/metaconfig/rsyslog_module_input/mark*
         - Optional
         - Type: rsyslog_module_mark
-    - */software/components/metaconfig//rsyslog_module_input/klog*
+    - */software/components/metaconfig/rsyslog_module_input/klog*
         - Description: Using module options is not advised; use empty dict to load
         - Optional
         - Type: dict
-    - */software/components/metaconfig//rsyslog_module_input/journal*
+    - */software/components/metaconfig/rsyslog_module_input/journal*
         - Optional
         - Type: rsyslog_module_journal

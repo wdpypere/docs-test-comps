@@ -31,7 +31,7 @@ SYNOPSIS
 
 
 Will do the right thing with SystemV Init scripts, Systemd units and
-Solaris' \ ``svcadm``\ .
+Solaris' ``svcadm``.
 
 
 ***********
@@ -47,12 +47,12 @@ Private methods
 
 
 
-- \ ``_initialize``\ 
+- ``_initialize``
  
  Initialize the process object. Arguments:
  
  
- - \ ``$services``\ 
+ - ``$services``
   
   Reference to a list of services to be handled.
   
@@ -61,19 +61,19 @@ Private methods
  It takes some extra optional arguments:
  
  
- - \ ``log``\ 
+ - ``log``
   
-  A \ ``CAF::Reporter``\  object to log daemon activities to.
+  A ``CAF::Reporter`` object to log daemon activities to.
   
  
  
- - \ ``timeout``\ 
+ - ``timeout``
   
   Maximum execution time, in seconds, for any service operations. If
   it's too slow it will be killed.  If not defined, the command won't
   time out.
   
-  On Solaris it implies that \ ``svcadm``\  actions are executed
+  On Solaris it implies that ``svcadm`` actions are executed
   synchronously.  After this timeout, the operation will continue in
   background, but will NOT mark the service as failed.  For marking
   timed out services operations as failed, we have to edit the method
@@ -87,34 +87,34 @@ Private methods
   
  
  
- - \ ``sleep``\ .
+ - ``sleep``.
   
-  Used only in \ ``stop_sleep_start``\ . Determines the number of
-  seconds to sleep after \ ``stop``\  before proceeding with \ ``start``\ .
+  Used only in ``stop_sleep_start``. Determines the number of
+  seconds to sleep after ``stop`` before proceeding with ``start``.
   
  
  
- - \ ``persistent``\ 
+ - ``persistent``
   
-  Used only in the Solaris variant of \ ``start``\  and \ ``stop``\ .  Make the
+  Used only in the Solaris variant of ``start`` and ``stop``.  Make the
   enabling or disabling of this service persist in subsequent reboots.
-  Implies not passing the \ ``-t``\  flag to \ ``svcadm``\ .
+  Implies not passing the ``-t`` flag to ``svcadm``.
   
  
  
- - \ ``recursive``\ .
+ - ``recursive``.
   
-  Used only in the Solaris variant of \ ``start``\  and \ ``stop``\ .  Starts or
+  Used only in the Solaris variant of ``start`` and ``stop``.  Starts or
   stops all the dependencies for the given daemons, too.
   
  
  
- - \ ``synchronous``\ 
+ - ``synchronous``
   
-  Used only in the Solaris variant of \ ``restart``\ .  Waits until all
+  Used only in the Solaris variant of ``restart``.  Waits until all
   services have been restarted.
   
-  If no \ ``timeout``\  was passed, it will wait forever.
+  If no ``timeout`` was passed, it will wait forever.
   
  
  
@@ -128,34 +128,34 @@ Public methods
 
 
 
-- \ ``restart``\ 
+- ``restart``
  
  Restarts the daemons.
  
 
 
-- \ ``start``\ 
+- ``start``
  
  Starts the daemons.
  
 
 
-- \ ``stop``\ 
+- ``stop``
  
  Stops the daemons
  
 
 
-- \ ``reload``\ 
+- ``reload``
  
  Reloads the daemons
  
 
 
-- \ ``stop_sleep_start``\ 
+- ``stop_sleep_start``
  
  Stops the daemon, sleep, and then start the dameon again.
- Only when both \ ``stop``\  and \ ``start``\  are successful, return success.
+ Only when both ``stop`` and ``start`` are successful, return success.
  
 
 
@@ -184,7 +184,7 @@ Public methods
   
  
  
- (All supported flavours are exported via \ ``@FLAVOURS``\ .)
+ (All supported flavours are exported via ``@FLAVOURS``.)
  
 
 
@@ -223,7 +223,7 @@ Private methods
       1;
  
  
- This class can than be used in the same way as \ ``CAF::Service``\ 
+ This class can than be used in the same way as ``CAF::Service``
  
  
  .. code-block:: perl

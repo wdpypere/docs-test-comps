@@ -20,7 +20,7 @@ DESCRIPTION
 This class handles Kerberos tickets and some
 utitlities like kerberos en/decryption.
 
-To create a new ticket for principal \ ``SERVICE/host@REALM``\ 
+To create a new ticket for principal ``SERVICE/host@REALM``
 (using default (server) keytab for the TGT), you can use
 
 
@@ -43,28 +43,28 @@ Methods
 
 
 
-- \ ``_initialize``\ 
+- ``_initialize``
  
  Initialize the kerberos object. Arguments:
  
  Optional arguments
  
  
- - \ ``log``\ 
+ - ``log``
   
-  A \ ``CAF::Reporter``\  object to log to.
+  A ``CAF::Reporter`` object to log to.
   
  
  
  - lifetime, keytab
   
-  Ticket lifetime and keytab are passed to \ ``update_ticket_options``\  method.
+  Ticket lifetime and keytab are passed to ``update_ticket_options`` method.
   
  
  
  - primary, instances, realm, principal
   
-  Principal primary, instances, realm and principal are passed to \ ``update_principal``\  method.
+  Principal primary, instances, realm and principal are passed to ``update_principal`` method.
   
  
  
@@ -127,8 +127,8 @@ Methods
 
 - create_credential_cache
  
- Create the credential cache and add the \ ``KRB5CCNAME``\  to the temp environment.
- Use \ ``kinit``\  to get an initial TGT for that cache.
+ Create the credential cache and add the ``KRB5CCNAME`` to the temp environment.
+ Use ``kinit`` to get an initial TGT for that cache.
  
  Returns SUCCESS on success, undef otherwise (see fail attribute).
  
@@ -136,28 +136,28 @@ Methods
 
 - get_context
  
- Create a \ ``GSSAPI::Context``\ .
+ Create a ``GSSAPI::Context``.
  
  Following options are supported
  
  
  - name
   
-  The \ ``GSSAPI::Name``\  instance to use. If undef,
-  \ ``get_name``\  method will be used to create one.
+  The ``GSSAPI::Name`` instance to use. If undef,
+  ``get_name`` method will be used to create one.
   
  
  
  - iflags
   
   Input flags/bits for the Context to create to support certain service options.
-  (See e.g. \ ``_spnego_iflags``\ ). Defaults to 0.
+  (See e.g. ``_spnego_iflags``). Defaults to 0.
   
  
  
  - itoken
   
-  Input token (\ ``q{}``\  is used if not defined).
+  Input token (``q{}`` is used if not defined).
   
  
  
@@ -173,43 +173,43 @@ Methods
 
 - get_cred
  
- Acquire a \ ``GSSAPI::Cred``\  instance.
+ Acquire a ``GSSAPI::Cred`` instance.
  
  Following options are supported
  
  
  - name
   
-  The \ ``GSSAPI::Name``\  instance to use. If undef,
-  \ ``get_name``\  method will be used to create one.
+  The ``GSSAPI::Name`` instance to use. If undef,
+  ``get_name`` method will be used to create one.
   
  
  
  - usage
   
-  Specify the credential usage, one of \ ``GSSAPI``\  constants
-  \ ``GSS_C_INITIATE``\ , \ ``GSS_C_ACCEPT``\  or (default) \ ``GSS_C_BOTH``\ .
+  Specify the credential usage, one of ``GSSAPI`` constants
+  ``GSS_C_INITIATE``, ``GSS_C_ACCEPT`` or (default) ``GSS_C_BOTH``.
   
  
  
- Returns the \ ``GSSAPI::Cred``\  instance in case of succes, undef in case of failure.
+ Returns the ``GSSAPI::Cred`` instance in case of succes, undef in case of failure.
  
 
 
 - get_hrname
  
- Return human readablename from \ ``GSSAPI::Name``\  instance.
- Return undef on failure (and set \ ``fail``\  attribute with reason).
+ Return human readablename from ``GSSAPI::Name`` instance.
+ Return undef on failure (and set ``fail`` attribute with reason).
  
 
 
 - get_name
  
- Return a imported \ ``GSSAPI::Name``\  instance.
+ Return a imported ``GSSAPI::Name`` instance.
  
  Returns undef on failure.
  
- Optional \ ``principal``\  hashref is passed to \ ``_principal_string``\ .
+ Optional ``principal`` hashref is passed to ``_principal_string``.
  
 
 
@@ -228,8 +228,8 @@ Methods
  
  Convert the principal hashref into a principal string.
  
- Optional \ ``principal``\  hashref can be passed, if none is provided,
- use the instance \ ``$self->{principal}``\ .
+ Optional ``principal`` hashref can be passed, if none is provided,
+ use the instance ``$self->{principal}``.
  
  Returns the principal string, undef in case or problem.
  
@@ -247,55 +247,55 @@ Methods
  
  Create the SPNEGO iflags for Context instance.
  
- Optional \ ``$delegate``\  boolean.
+ Optional ``$delegate`` boolean.
  
 
 
 - _gss_decrypt
  
- Given \ ``token``\ , decrypt \ ``inbuf``\  that is encrypted with GSSAPI wrap'ping.
- Returns human readable \ ``GSSAPI::Name``\  and decrypted output buffer.
+ Given ``token``, decrypt ``inbuf`` that is encrypted with GSSAPI wrap'ping.
+ Returns human readable ``GSSAPI::Name`` and decrypted output buffer.
  Returns undef on failure.
  
 
 
 - _gss_status
  
- Evaulatues \ ``status``\ : on success, returns SUCCESS reports with \ ``verbose``\ , on failure
- returns \ ``fail``\  (The fail message is set in the \ ``fail``\  attribute).
+ Evaulatues ``status``: on success, returns SUCCESS reports with ``verbose``, on failure
+ returns ``fail`` (The fail message is set in the ``fail`` attribute).
  
- Optional \ ``text``\  can be used to construct the message prefix.
+ Optional ``text`` can be used to construct the message prefix.
  
 
 
 - _gssapi_{init,accept,wrap,unwrap,import,display}
  
- Interfaces to GSSAPI methods returning a \ ``GSSAPI::Status``\  instance.
+ Interfaces to GSSAPI methods returning a ``GSSAPI::Status`` instance.
  
- Given an \ ``instance``\  of \ ``GSSAPI::Context``\  (for accept,init,valid_time_left,wrap,unwrap)
- or \ ``GSSAPI::Name``\  (for display,import), call the metod on the instacne
+ Given an ``instance`` of ``GSSAPI::Context`` (for accept,init,valid_time_left,wrap,unwrap)
+ or ``GSSAPI::Name`` (for display,import), call the metod on the instacne
  with the remaining arguments. The returned status is processed by
- \ ``_gss_status``\ .
+ ``_gss_status``.
  
- Returns undef in case of failure (with message in \ ``fail``\  attribute),
+ Returns undef in case of failure (with message in ``fail`` attribute),
  SUCCESS otherwise.
  
 
 
 - _process
  
- Run arrayref $cmd via \ ``CAF::Process->new->output``\  in updated environment.
+ Run arrayref $cmd via ``CAF::Process->new->output`` in updated environment.
  
- Returns the output (and sets \ ``$?``\ ).
+ Returns the output (and sets ``$?``).
  
 
 
 - _kinit
  
- Obtain the \ ``TGT``\  using kinit, using the credential
+ Obtain the ``TGT`` using kinit, using the credential
  cache specified in the 'KRB5CCNAME' environment variable.
  
- Principal used is generated via \ ``_principal_string``\ .
+ Principal used is generated via ``_principal_string``.
  
  Returns SUCCESS on success, undef otherwise.
  

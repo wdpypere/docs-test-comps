@@ -40,11 +40,11 @@ FUNCTIONS
  
  On import, run the tests.
  
- Pass \ ``notest``\  to disable automatic testing
+ Pass ``notest`` to disable automatic testing
  (only useful when testing this code).
  
- Pass \ ``nopod``\  to set the \ ``nopodflag``\  (for \ ``doc``\  test)
- when testing (is ignored when \ ``notest``\  is passed).
+ Pass ``nopod`` to set the ``nopodflag`` (for ``doc`` test)
+ when testing (is ignored when ``notest`` is passed).
  
 
 
@@ -63,17 +63,22 @@ METHODS
 
 - read_cfg
  
- Read default config followed by optional configfile \ ``tqu.cfg``\  and optional
- variable \ ``$main::TQU``\ .
+ Read default config followed by optional configfile ``tqu.cfg`` and optional
+ variable ``$main::TQU``.
  
  Variable can be defined in main test as follows
-     BEGIN {
-         our $TQU = <<'EOF';
-     ...
-     EOF
-     }
  
- Every test section has at least the \ ``enable``\  option,
+ 
+ .. code-block:: perl
+ 
+      BEGIN {
+          our $TQU = <<'EOF';
+      ...
+      EOF
+      }
+ 
+ 
+ Every test section has at least the ``enable`` option,
  set to true by default.
  For all other options, read the respective method
  documentation.
@@ -88,7 +93,7 @@ METHODS
 
 - load
  
- Run basic load test using \ ``use_ok``\  from \ ``Test::More``\ .
+ Run basic load test using ``use_ok`` from ``Test::More``.
  
  The module(s) can be configured or guessed.
  
@@ -101,15 +106,15 @@ METHODS
   
   When specified, no guesses are made, only this list is used.
   
-  If \ ``:``\  is passed, the prefix is used.
+  If ``:`` is passed, the prefix is used.
   
-  All trailing \ ``:``\  are removed.
+  All trailing ``:`` are removed.
   
  
  
  - prefix
   
-  A prefix for all modules specified in the \ ``modules``\  option.
+  A prefix for all modules specified in the ``modules`` option.
   
  
  
@@ -117,35 +122,35 @@ METHODS
 
 - doc
  
- Documentation tests using \ ``Test::Quattor::Doc``\ .
+ Documentation tests using ``Test::Quattor::Doc``.
  
- Configuration options \ ``poddirs``\ , \ ``podfiles``\ , \ ``emptypoddirs``\ , \ ``panpaths``\  and
- \ ``panout``\  are parsed as comma-seperated lists
- and passed to \ ``Test::Quattor::Doc-``\ new>.
+ Configuration options ``poddirs``, ``podfiles``, ``emptypoddirs``, ``panpaths`` and
+ ``panout`` are parsed as comma-seperated lists
+ and passed to ``Test::Quattor::Doc->new``.
  
- If the \ ``nopodflag``\  attribute is true, and no \ ``emptypoddirs``\  are defined,
- the \ ``Test::Quattor::Doc::DOC_TARGET_POD``\  is set as \ ``emptypoddirs``\ .
+ If the ``nopodflag`` attribute is true, and no ``emptypoddirs`` are defined,
+ the ``Test::Quattor::Doc::DOC_TARGET_POD`` is set as ``emptypoddirs``.
  
- \ ``panpaths``\  value \ ``NOPAN``\  is special, as it disables the pan tests.
+ ``panpaths`` value ``NOPAN`` is special, as it disables the pan tests.
  
 
 
 - tt
  
- Run TT unittests using \ ``Test::Quattor::TextRender::Component``\ .
- (This does not apply to \ ``metaconfig``\  tests).
+ Run TT unittests using ``Test::Quattor::TextRender::Component``.
+ (This does not apply to ``metaconfig`` tests).
  
  Configuration options are passed to
- \ ``<Test::Quattor::TextRender::Component-``\ new>>.
+ ``Test::Quattor::TextRender::Component->new``.
  
- The tests are only run if the basepath (default to \ ``src/main/resources``\ )
+ The tests are only run if the basepath (default to ``src/main/resources``)
  exists.
  
 
 
 - critic
  
- Run \ ``Test::Quattor::Critic``\ 
+ Run ``Test::Quattor::Critic``
  
  Options
  
@@ -153,7 +158,7 @@ METHODS
  - codedirs
   
   Comma-separated list of directories to look for code to test.
-  (Defaults to poddirs (from doc test) or \ ``target/lib/perl``\ ).
+  (Defaults to poddirs (from doc test) or ``target/lib/perl``).
   
  
  
@@ -167,7 +172,7 @@ METHODS
 
 - tidy
  
- Run \ ``Test::Quattor::Tidy``\ 
+ Run ``Test::Quattor::Tidy``
  
  Options
  
@@ -175,7 +180,7 @@ METHODS
  - codedirs
   
   Comma-separated list of directories to look for code to test.
-  (Defaults to poddirs (from doc test) or \ ``target/lib/perl``\ ).
+  (Defaults to poddirs (from doc test) or ``target/lib/perl``).
   
  
  

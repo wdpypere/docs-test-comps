@@ -34,9 +34,9 @@ SYNOPSIS
   	top_dir/sensors/
  
  
- Component will try in this case to modify the \ ``top_dir/general.conf``\ ,
- \ ``top_dir/transport/udp.conf``\ , \ ``top_dir/metrics/default.conf``\  and
- for each sensor \ ``top_dir/sensors/sensor_name.conf``\  files.
+ Component will try in this case to modify the ``top_dir/general.conf``,
+ ``top_dir/transport/udp.conf``, ``top_dir/metrics/default.conf`` and
+ for each sensor ``top_dir/sensors/sensor_name.conf`` files.
  
 
 
@@ -47,7 +47,7 @@ RESOURCES
 
 
 
-- \ ``/software/components/fmonagent/active``\  : boolean
+- ``/software/components/fmonagent/active`` : boolean
  
  Activates/deactivates the component.
  

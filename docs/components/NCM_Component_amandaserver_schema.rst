@@ -6,13 +6,13 @@ Types
 -----
 
  - **/software/components/amandaserver/columnspec**
-    - */software/components/amandaserver//columnspec/name*
+    - */software/components/amandaserver/columnspec/name*
         - Required
         - Type: string
-    - */software/components/amandaserver//columnspec/space*
+    - */software/components/amandaserver/columnspec/space*
         - Required
         - Type: long
-    - */software/components/amandaserver//columnspec/width*
+    - */software/components/amandaserver/columnspec/width*
         - Required
         - Type: long
  - **/software/components/amandaserver/backupstring**
@@ -23,303 +23,303 @@ Types
  - **/software/components/amandaserver/sizestring**
  - **/software/components/amandaserver/speedstring**
  - **/software/components/amandaserver/structure_amandaserver_general**
-    - */software/components/amandaserver//structure_amandaserver_general/org*
+    - */software/components/amandaserver/structure_amandaserver_general/org*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/mailto*
+    - */software/components/amandaserver/structure_amandaserver_general/mailto*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/dumpcycle*
+    - */software/components/amandaserver/structure_amandaserver_general/dumpcycle*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_general/runspercycle*
+    - */software/components/amandaserver/structure_amandaserver_general/runspercycle*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_general/tapecycle*
+    - */software/components/amandaserver/structure_amandaserver_general/tapecycle*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_general/dumpuser*
+    - */software/components/amandaserver/structure_amandaserver_general/dumpuser*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/printer*
+    - */software/components/amandaserver/structure_amandaserver_general/printer*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/tapedev*
+    - */software/components/amandaserver/structure_amandaserver_general/tapedev*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/rawtapedev*
+    - */software/components/amandaserver/structure_amandaserver_general/rawtapedev*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/tpchanger*
+    - */software/components/amandaserver/structure_amandaserver_general/tpchanger*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/changerdev*
+    - */software/components/amandaserver/structure_amandaserver_general/changerdev*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/changerfile*
+    - */software/components/amandaserver/structure_amandaserver_general/changerfile*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/runtapes*
+    - */software/components/amandaserver/structure_amandaserver_general/runtapes*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_general/maxdumpsize*
+    - */software/components/amandaserver/structure_amandaserver_general/maxdumpsize*
         - Optional
         - Type: sizestring
-    - */software/components/amandaserver//structure_amandaserver_general/taperalgo*
+    - */software/components/amandaserver/structure_amandaserver_general/taperalgo*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/labelstr*
+    - */software/components/amandaserver/structure_amandaserver_general/labelstr*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/tapetype*
+    - */software/components/amandaserver/structure_amandaserver_general/tapetype*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/ctimeout*
+    - */software/components/amandaserver/structure_amandaserver_general/ctimeout*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_general/dtimeout*
+    - */software/components/amandaserver/structure_amandaserver_general/dtimeout*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_general/etimeout*
+    - */software/components/amandaserver/structure_amandaserver_general/etimeout*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_general/inparallel*
+    - */software/components/amandaserver/structure_amandaserver_general/inparallel*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_general/netusage*
+    - */software/components/amandaserver/structure_amandaserver_general/netusage*
         - Optional
         - Type: speedstring
-    - */software/components/amandaserver//structure_amandaserver_general/dumporder*
+    - */software/components/amandaserver/structure_amandaserver_general/dumporder*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/maxdumps*
+    - */software/components/amandaserver/structure_amandaserver_general/maxdumps*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_general/bumpsize*
+    - */software/components/amandaserver/structure_amandaserver_general/bumpsize*
         - Optional
         - Type: sizestring
-    - */software/components/amandaserver//structure_amandaserver_general/bumpmult*
+    - */software/components/amandaserver/structure_amandaserver_general/bumpmult*
         - Optional
         - Type: double
-    - */software/components/amandaserver//structure_amandaserver_general/bumpdays*
+    - */software/components/amandaserver/structure_amandaserver_general/bumpdays*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_general/disklist*
+    - */software/components/amandaserver/structure_amandaserver_general/disklist*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/infofile*
+    - */software/components/amandaserver/structure_amandaserver_general/infofile*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/logdir*
+    - */software/components/amandaserver/structure_amandaserver_general/logdir*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/indexdir*
+    - */software/components/amandaserver/structure_amandaserver_general/indexdir*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/tapelist*
+    - */software/components/amandaserver/structure_amandaserver_general/tapelist*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/tapebufs*
+    - */software/components/amandaserver/structure_amandaserver_general/tapebufs*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_general/reserve*
+    - */software/components/amandaserver/structure_amandaserver_general/reserve*
         - Optional
         - Type: number
-    - */software/components/amandaserver//structure_amandaserver_general/autoflush*
+    - */software/components/amandaserver/structure_amandaserver_general/autoflush*
         - Optional
         - Type: booleanstring
-    - */software/components/amandaserver//structure_amandaserver_general/amrecover_do_fsf*
+    - */software/components/amandaserver/structure_amandaserver_general/amrecover_do_fsf*
         - Optional
         - Type: booleanstring
-    - */software/components/amandaserver//structure_amandaserver_general/amrecover_check_label*
+    - */software/components/amandaserver/structure_amandaserver_general/amrecover_check_label*
         - Optional
         - Type: booleanstring
-    - */software/components/amandaserver//structure_amandaserver_general/amrecover_changer*
+    - */software/components/amandaserver/structure_amandaserver_general/amrecover_changer*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_general/columnspec*
+    - */software/components/amandaserver/structure_amandaserver_general/columnspec*
         - Optional
         - Type: columnspec
-    - */software/components/amandaserver//structure_amandaserver_general/includefile*
+    - */software/components/amandaserver/structure_amandaserver_general/includefile*
         - Optional
         - Type: string
  - **/software/components/amandaserver/structure_amandaserver_holdingdisk**
-    - */software/components/amandaserver//structure_amandaserver_holdingdisk/comment*
+    - */software/components/amandaserver/structure_amandaserver_holdingdisk/comment*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_holdingdisk/directory*
+    - */software/components/amandaserver/structure_amandaserver_holdingdisk/directory*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_holdingdisk/use*
+    - */software/components/amandaserver/structure_amandaserver_holdingdisk/use*
         - Optional
         - Type: sizestring
-    - */software/components/amandaserver//structure_amandaserver_holdingdisk/chunksize*
+    - */software/components/amandaserver/structure_amandaserver_holdingdisk/chunksize*
         - Optional
         - Type: sizestring
  - **/software/components/amandaserver/structure_amandaserver_dumptype_conf**
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/auth*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/auth*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/comment*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/comment*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/comprate*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/comprate*
         - Optional
         - Type: double
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/compress*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/compress*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/dumpcycle*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/dumpcycle*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/exclude*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/exclude*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/holdingdisk*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/holdingdisk*
         - Optional
         - Type: booleanstring
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/ignore*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/ignore*
         - Optional
         - Type: booleanstring
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/include*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/include*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/index*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/index*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/kencrypt*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/kencrypt*
         - Optional
         - Type: booleanstring
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/maxdumps*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/maxdumps*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/maxpromoteday*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/maxpromoteday*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/priority*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/priority*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/program*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/program*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/record*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/record*
         - Optional
         - Type: booleanstring
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/skip-full*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/skip-full*
         - Optional
         - Type: booleanstring
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/skip-incr*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/skip-incr*
         - Optional
         - Type: booleanstring
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/starttime*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/starttime*
         - Optional
         - Type: long
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/strategy*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/strategy*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_dumptype_conf/inc_dumptypes*
+    - */software/components/amandaserver/structure_amandaserver_dumptype_conf/inc_dumptypes*
         - Optional
         - Type: string
  - **/software/components/amandaserver/structure_amandaserver_dumptype**
-    - */software/components/amandaserver//structure_amandaserver_dumptype/dumptype_name*
+    - */software/components/amandaserver/structure_amandaserver_dumptype/dumptype_name*
         - Required
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_dumptype/dumptype_conf*
+    - */software/components/amandaserver/structure_amandaserver_dumptype/dumptype_conf*
         - Required
         - Type: structure_amandaserver_dumptype_conf
  - **/software/components/amandaserver/structure_amandaserver_tapetype_conf**
-    - */software/components/amandaserver//structure_amandaserver_tapetype_conf/comment*
+    - */software/components/amandaserver/structure_amandaserver_tapetype_conf/comment*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_tapetype_conf/filemark*
+    - */software/components/amandaserver/structure_amandaserver_tapetype_conf/filemark*
         - Optional
         - Type: sizestring
-    - */software/components/amandaserver//structure_amandaserver_tapetype_conf/length*
+    - */software/components/amandaserver/structure_amandaserver_tapetype_conf/length*
         - Optional
         - Type: sizestring
-    - */software/components/amandaserver//structure_amandaserver_tapetype_conf/block-size*
+    - */software/components/amandaserver/structure_amandaserver_tapetype_conf/block-size*
         - Optional
         - Type: sizestring
-    - */software/components/amandaserver//structure_amandaserver_tapetype_conf/file-pad*
+    - */software/components/amandaserver/structure_amandaserver_tapetype_conf/file-pad*
         - Optional
         - Type: booleanstring
-    - */software/components/amandaserver//structure_amandaserver_tapetype_conf/speed*
+    - */software/components/amandaserver/structure_amandaserver_tapetype_conf/speed*
         - Optional
         - Type: speedstring
-    - */software/components/amandaserver//structure_amandaserver_tapetype_conf/lbl-templ*
+    - */software/components/amandaserver/structure_amandaserver_tapetype_conf/lbl-templ*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_tapetype_conf/inc_tapetypes*
+    - */software/components/amandaserver/structure_amandaserver_tapetype_conf/inc_tapetypes*
         - Optional
         - Type: string
  - **/software/components/amandaserver/structure_amandaserver_tapetype**
-    - */software/components/amandaserver//structure_amandaserver_tapetype/tapetype_name*
+    - */software/components/amandaserver/structure_amandaserver_tapetype/tapetype_name*
         - Required
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_tapetype/tapetype_conf*
+    - */software/components/amandaserver/structure_amandaserver_tapetype/tapetype_conf*
         - Required
         - Type: structure_amandaserver_tapetype_conf
  - **/software/components/amandaserver/structure_amandaserver_interface_conf**
-    - */software/components/amandaserver//structure_amandaserver_interface_conf/comment*
+    - */software/components/amandaserver/structure_amandaserver_interface_conf/comment*
         - Optional
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_interface_conf/use*
+    - */software/components/amandaserver/structure_amandaserver_interface_conf/use*
         - Optional
         - Type: speedstring
-    - */software/components/amandaserver//structure_amandaserver_interface_conf/inc_interfaces*
+    - */software/components/amandaserver/structure_amandaserver_interface_conf/inc_interfaces*
         - Optional
         - Type: string
  - **/software/components/amandaserver/structure_amandaserver_interface**
-    - */software/components/amandaserver//structure_amandaserver_interface/interface_name*
+    - */software/components/amandaserver/structure_amandaserver_interface/interface_name*
         - Required
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_interface/interface_conf*
+    - */software/components/amandaserver/structure_amandaserver_interface/interface_conf*
         - Required
         - Type: structure_amandaserver_interface_conf
  - **/software/components/amandaserver/structure_amandaserver_config**
-    - */software/components/amandaserver//structure_amandaserver_config/general_options*
+    - */software/components/amandaserver/structure_amandaserver_config/general_options*
         - Required
         - Type: structure_amandaserver_general
-    - */software/components/amandaserver//structure_amandaserver_config/holdingdisks*
+    - */software/components/amandaserver/structure_amandaserver_config/holdingdisks*
         - Required
         - Type: structure_amandaserver_holdingdisk
-    - */software/components/amandaserver//structure_amandaserver_config/tapetypes*
+    - */software/components/amandaserver/structure_amandaserver_config/tapetypes*
         - Required
         - Type: structure_amandaserver_tapetype
-    - */software/components/amandaserver//structure_amandaserver_config/dumptypes*
+    - */software/components/amandaserver/structure_amandaserver_config/dumptypes*
         - Required
         - Type: structure_amandaserver_dumptype
-    - */software/components/amandaserver//structure_amandaserver_config/interfaces*
+    - */software/components/amandaserver/structure_amandaserver_config/interfaces*
         - Required
         - Type: structure_amandaserver_interface
  - **/software/components/amandaserver/structure_amandaserver_disk**
-    - */software/components/amandaserver//structure_amandaserver_disk/hostname*
+    - */software/components/amandaserver/structure_amandaserver_disk/hostname*
         - Required
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_disk/diskname*
+    - */software/components/amandaserver/structure_amandaserver_disk/diskname*
         - Required
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_disk/dumptype*
+    - */software/components/amandaserver/structure_amandaserver_disk/dumptype*
         - Required
         - Type: string
  - **/software/components/amandaserver/structure_amandaserver_backup**
-    - */software/components/amandaserver//structure_amandaserver_backup/config*
+    - */software/components/amandaserver/structure_amandaserver_backup/config*
         - Required
         - Type: structure_amandaserver_config
-    - */software/components/amandaserver//structure_amandaserver_backup/disklist*
+    - */software/components/amandaserver/structure_amandaserver_backup/disklist*
         - Required
         - Type: structure_amandaserver_disk
  - **/software/components/amandaserver/structure_amandaserver_amandahost**
-    - */software/components/amandaserver//structure_amandaserver_amandahost/domain*
+    - */software/components/amandaserver/structure_amandaserver_amandahost/domain*
         - Required
         - Type: string
-    - */software/components/amandaserver//structure_amandaserver_amandahost/user*
+    - */software/components/amandaserver/structure_amandaserver_amandahost/user*
         - Required
         - Type: string
  - **/software/components/amandaserver/structure_component_amandaserver**
-    - */software/components/amandaserver//structure_component_amandaserver/backups*
+    - */software/components/amandaserver/structure_component_amandaserver/backups*
         - Required
         - Type: structure_amandaserver_backup
-    - */software/components/amandaserver//structure_component_amandaserver/amandahosts*
+    - */software/components/amandaserver/structure_component_amandaserver/amandahosts*
         - Required
         - Type: structure_amandaserver_amandahost

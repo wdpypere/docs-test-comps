@@ -66,8 +66,8 @@ Gory details
 ============
 
 
-This is a wrapper class for \ ``IO::String``\  with customised close based on
-\ ``File::AtomicWrite``\ .
+This is a wrapper class for ``IO::String`` with customised close based on
+``File::AtomicWrite``.
 
 
 Public methods
@@ -81,57 +81,57 @@ Public methods
  and the next hash as additional options:
  
  
- - \ ``log``\ 
+ - ``log``
   
   The log object. If not supplied, no logging will be performed.
   
  
  
- - \ ``owner``\ 
+ - ``owner``
   
   UID for the file.
   
  
  
- - \ ``group``\ 
+ - ``group``
   
   File's GID.
   
  
  
- - \ ``mode``\ 
+ - ``mode``
   
   File's permissions.
   
  
  
- - \ ``mtime``\ 
+ - ``mtime``
   
   File's modification time.
   
  
  
- - \ ``backup``\ 
+ - ``backup``
   
   Create a backup file when the file already exists and will be modified.
   The value is used as a suffix to create the backup filename
-  (e.g. \ ``.old``\ ).
+  (e.g. ``.old``).
   
  
  
- - \ ``keeps_state``\ 
+ - ``keeps_state``
   
   A boolean specifying whether a file change respects the current system
-  state or not. A file with \ ``keeps_state``\  will be created/modified,
-  regardless of any value for \ ``NoAction``\ .
+  state or not. A file with ``keeps_state`` will be created/modified,
+  regardless of any value for ``NoAction``.
   This is useful when creating temporary files that are required for a NoAction run.
   
-  By default, file changes modify the state and thus \ ``keeps_state``\  is
+  By default, file changes modify the state and thus ``keeps_state`` is
   false.
   
  
  
- - \ ``sensitive``\ 
+ - ``sensitive``
   
   A boolean specifying whether a file contains sensitive information
   (like passwords). When the content of the file is modified, the changes
@@ -144,7 +144,7 @@ Public methods
 
 - open
  
- Synonym for \ ``new()``\ 
+ Synonym for ``new()``
  
 
 
@@ -152,14 +152,14 @@ Public methods
  
  Closes the file.
  
- If the file has been saved (e.g. previous \ ``close``\  or \ ``cancel``\ )
+ If the file has been saved (e.g. previous ``close`` or ``cancel``)
  nothing happens and undef is returned.
  
  If the file has not been saved,
  it checks its contents and perhaps re-writes it, in a
  secure way (not following symlinks, etc). The (re)write only occurs
  if there was a change in content and this change (or not) is
- always determined and returned, even if \ ``NoAction``\  is true
+ always determined and returned, even if ``NoAction`` is true
  (but in that case nothing is (re)written).
  
  Under a verbose level, it will show in the standard output a diff of
@@ -173,7 +173,7 @@ Public methods
  Marks the printed contents as invalid. The existing file will not be
  altered.
  
- Option \ ``msg``\  to add custom message to verbose reporting.
+ Option ``msg`` to add custom message to verbose reporting.
  
 
 
@@ -186,7 +186,7 @@ Public methods
 - stringify
  
  Returns a string with the contents of the file, so far. It overloads
- \ ``""``\ , so it's now possible to do \ ``$fh``\  and get the contents of the
+ ``""``, so it's now possible to do ``$fh`` and get the contents of the
  file so far.
  
  (Returns empty string on an already closed file.)
@@ -196,7 +196,7 @@ Public methods
 - error, warn, info, verbose, debug, report, log, OK
  
  Convenience methods to access the log/reporter instance that might
- be passed during initialisation and set to \ ``\*$self->{LOG}``\ .
+ be passed during initialisation and set to ``\*$self->{LOG}``.
  
 
 
@@ -204,16 +204,16 @@ Public methods
  
  Determine if the reporter level is verbose.
  If it can't be determined from the reporter instance,
- use the global \ ``CAF::Reporter``\  state.
+ use the global ``CAF::Reporter`` state.
  
- Supports boolean option \ ``verbose_logfile``\  to check if
+ Supports boolean option ``verbose_logfile`` to check if
  reporting to logfile is verbose.
  
 
 
 - event
  
- Method to track an event via LOG \ ``CAF::History``\  instance (if any).
+ Method to track an event via LOG ``CAF::History`` instance (if any).
  
  Following metadata is added
  
@@ -234,7 +234,7 @@ Private methods
 
 - _read_contents
  
- Read the contents from file \ ``filename``\  using \ ``LC::File::file_contents``\ 
+ Read the contents from file ``filename`` using ``LC::File::file_contents``
  and return it.
  
  Optional named arguments
@@ -242,15 +242,15 @@ Private methods
  
  - event
   
-  A hashref that will be updated in place if an error occured. The \ ``error``\ 
+  A hashref that will be updated in place if an error occured. The ``error``
   attribute is set to the exception text.
   
  
  
  - missing_ok
   
-  When true and \ ``LC::File::file_contents``\  fails with \ ``ENOENT``\ 
-  (i.e. when \ ``filename``\  is missing),
+  When true and ``LC::File::file_contents`` fails with ``ENOENT``
+  (i.e. when ``filename`` is missing),
   the exception is ignored and no warning is reported.
   
  
@@ -273,7 +273,7 @@ EXAMPLES
 
 
 Opening `/etc/sudoers`
-====================
+======================
 
 
 This a part of what \ *ncm-sudo*\  should do, if it used this module:
@@ -315,8 +315,8 @@ Changing the default filehandle
 ===============================
 
 
-If you don't want \ ``STDOUT``\  as your default filehandle, you can just
-\ ``select``\  a \ ``CAF::FileWriter``\  object:
+If you don't want ``STDOUT`` as your default filehandle, you can just
+``select`` a ``CAF::FileWriter`` object:
 
 
 .. code-block:: perl
@@ -352,7 +352,7 @@ Closing when destroying
 =======================
 
 
-If you forget to explictly close the \ ``CAF::FileWriter``\  object, it
+If you forget to explictly close the ``CAF::FileWriter`` object, it
 will be closed automatically when it is destroyed:
 
 
@@ -370,6 +370,5 @@ SEE ALSO
 ********
 
 
-This package inherits from \ ``IO::String``\ . Check its man page to
+This package inherits from ``IO::String``. Check its man page to
 do powerful things with the already printed contents.
-

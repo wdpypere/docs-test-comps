@@ -75,7 +75,7 @@ Public methods
   Boolean to force or disable the "unfolding" of the pan templates
   in the namespacepath with correct pannamespace. Default is true.
   
-  The \ ``make_namespace``\  method  takes care of the actual unfolding (if any).
+  The ``make_namespace`` method  takes care of the actual unfolding (if any).
   
  
  
@@ -93,13 +93,13 @@ Public methods
  
  - invalidtt
   
-  Array reference of invalid TT files to pass the \ ``test_gather_tt``\  test method.
+  Array reference of invalid TT files to pass the ``test_gather_tt`` test method.
   
  
  
  - invalidpan
   
-  Array reference of invalid pan templates to pass the \ ``test_gather_pan``\  test method.
+  Array reference of invalid pan templates to pass the ``test_gather_pan`` test method.
   
  
  
@@ -110,8 +110,8 @@ gather_tt
 =========
 
 
-Walk the \ ``ttpath``\  and gather all TT files
-A TT file is a text file with an \ ``.tt``\  extension;
+Walk the ``ttpath`` and gather all TT files
+A TT file is a text file with an ``.tt`` extension;
 they are considered 'invalid' when they are
 in a 'test' or 'pan' directory or
 when they fail syntax validation.
@@ -131,22 +131,22 @@ gather_pan
 ==========
 
 
-Same as Test::Quattor::Object \ ``gather_pan``\ , but with <relpath> set
-to the instance 'basepath'. (With \ ``panpath``\  and \ ``pannamespace``\  as arguments)
+Same as Test::Quattor::Object ``gather_pan``, but with <relpath> set
+to the instance 'basepath'. (With ``panpath`` and ``pannamespace`` as arguments)
 
 
 make_namespace
 ==============
 
 
-Create a copy of the gathered pan files from \ ``panpath``\  in the correct \ ``pannamespace``\ .
-Directory structure is build up starting from the instance \ ``namespacepath``\  value.
+Create a copy of the gathered pan files from ``panpath`` in the correct ``pannamespace``.
+Directory structure is build up starting from the instance ``namespacepath`` value.
 
 Returns an arrayreference with the copy locations.
 
-If the \ ``panunfold``\  attribute is true, a copy of the pan templates is placed
-in the expected subdirectory under the \ ``namespacepath``\ .
-If \ ``panunfold``\  attribute is false, the pan templates are assumed to be in the
+If the ``panunfold`` attribute is true, a copy of the pan templates is placed
+in the expected subdirectory under the ``namespacepath``.
+If ``panunfold`` attribute is false, the pan templates are assumed to be in the
 correct location, and nothing is done.
 
 
@@ -156,7 +156,7 @@ test_gather_pan
 
 Run tests based on gather_pan results; returns nothing.
 
-(\ ``panpath``\  and \ ``pannamespace``\  can be passed as arguments to
+(``panpath`` and ``pannamespace`` can be passed as arguments to
 override the instance values).
 
 

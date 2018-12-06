@@ -34,9 +34,9 @@ METHODS
  
  - codedirs
   
-  An arrayref of paths to look for perl code (uses \ ``Test::Pod::all_pod_files``\ ).
+  An arrayref of paths to look for perl code (uses ``Test::Pod::all_pod_files``).
   
-  Default is \ ``target/lib/perl``\ .
+  Default is ``target/lib/perl``.
   
  
  
@@ -50,20 +50,20 @@ METHODS
 
 - make_critic
  
- Create \ ``Perl::Critic``\  instance and load policies
+ Create ``Perl::Critic`` instance and load policies
  
 
 
 - check
  
- Given a list of \ ``Perl::Critic::Violations``\  (e.g. as return value of
- \ ``critique``\  method) and check which one should be reported on.
+ Given a list of ``Perl::Critic::Violations`` (e.g. as return value of
+ ``critique`` method) and check which one should be reported on.
  
 
 
 - test
  
- Run critic test on all files found with \ ``all_pod_files``\  in all codedirs.
+ Run critic test on all files found with ``all_pod_files`` in all codedirs.
  
 
 

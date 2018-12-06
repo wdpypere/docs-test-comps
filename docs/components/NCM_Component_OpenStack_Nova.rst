@@ -11,14 +11,14 @@ Methods
 
 - _attrs
  
- Override \ ``daemons``\  attribute
+ Override ``daemons`` attribute
  
 
 
 - pre_populate_service_database
  
  Initializes API, cell and placement databases
- for \ ``Nova``\  compute service.
+ for ``Nova`` compute service.
  
 
 

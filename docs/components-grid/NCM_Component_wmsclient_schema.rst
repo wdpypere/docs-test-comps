@@ -6,91 +6,91 @@ Types
 -----
 
  - **/software/components/wmsclient/wmsclient_component_mw_ce_attrs**
-    - */software/components/wmsclient//wmsclient_component_mw_ce_attrs/rank*
+    - */software/components/wmsclient/wmsclient_component_mw_ce_attrs/rank*
         - Optional
         - Type: string
-    - */software/components/wmsclient//wmsclient_component_mw_ce_attrs/rankMPI*
+    - */software/components/wmsclient/wmsclient_component_mw_ce_attrs/rankMPI*
         - Optional
         - Type: string
-    - */software/components/wmsclient//wmsclient_component_mw_ce_attrs/requirements*
+    - */software/components/wmsclient/wmsclient_component_mw_ce_attrs/requirements*
         - Optional
         - Type: string
  - **/software/components/wmsclient/wmsclient_component_mw_def_attrs**
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/defaultSchema*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/defaultSchema*
         - Optional
         - Type: string
         - Default value: Glue
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/CEAttrs*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/CEAttrs*
         - Optional
         - Type: wmsclient_component_mw_ce_attrs
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/defaultVO*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/defaultVO*
         - Optional
         - Type: string
         - Default value: unspecified
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/errorStorage*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/errorStorage*
         - Optional
         - Type: string
         - Default value: /tmp
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/loggingDestination*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/loggingDestination*
         - Optional
         - Type: string
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/listenerPort*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/listenerPort*
         - Optional
         - Type: type_port
         - Default value: 44000
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/listenerStorage*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/listenerStorage*
         - Optional
         - Type: string
         - Default value: /tmp
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/loggingLevel*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/loggingLevel*
         - Optional
         - Type: long
         - Default value: 0
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/loggingSyncTimeout*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/loggingSyncTimeout*
         - Optional
         - Type: long
         - Default value: 30
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/loggingTimeout*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/loggingTimeout*
         - Optional
         - Type: long
         - Default value: 30
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/NSLoggerLevel*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/NSLoggerLevel*
         - Optional
         - Type: long
         - Default value: 0
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/outputStorage*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/outputStorage*
         - Optional
         - Type: string
         - Default value: ${HOME}/JobOutput
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/retryCount*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/retryCount*
         - Optional
         - Type: long
         - Default value: 3
-    - */software/components/wmsclient//wmsclient_component_mw_def_attrs/statusLevel*
+    - */software/components/wmsclient/wmsclient_component_mw_def_attrs/statusLevel*
         - Optional
         - Type: long
         - Default value: 0
  - **/software/components/wmsclient/wmsclient_component_mw_entry**
-    - */software/components/wmsclient//wmsclient_component_mw_entry/active*
+    - */software/components/wmsclient/wmsclient_component_mw_entry/active*
         - Required
         - Type: boolean
         - Default value: true
-    - */software/components/wmsclient//wmsclient_component_mw_entry/configDir*
+    - */software/components/wmsclient/wmsclient_component_mw_entry/configDir*
         - Optional
         - Type: string
-    - */software/components/wmsclient//wmsclient_component_mw_entry/classAdsHelper*
+    - */software/components/wmsclient/wmsclient_component_mw_entry/classAdsHelper*
         - Optional
         - Type: string
-    - */software/components/wmsclient//wmsclient_component_mw_entry/defaultAttrs*
+    - */software/components/wmsclient/wmsclient_component_mw_entry/defaultAttrs*
         - Optional
         - Type: wmsclient_component_mw_def_attrs
  - **/software/components/wmsclient/wmsclient_component**
-    - */software/components/wmsclient//wmsclient_component/edg*
+    - */software/components/wmsclient/wmsclient_component/edg*
         - Optional
         - Type: wmsclient_component_mw_entry
-    - */software/components/wmsclient//wmsclient_component/glite*
+    - */software/components/wmsclient/wmsclient_component/glite*
         - Optional
         - Type: wmsclient_component_mw_entry
-    - */software/components/wmsclient//wmsclient_component/wmproxy*
+    - */software/components/wmsclient/wmsclient_component/wmproxy*
         - Optional
         - Type: wmsclient_component_mw_entry

@@ -34,19 +34,19 @@ RESOURCES
 
 
 
-* \ ``/software/components/resolver/active``\  : boolean
+* ``/software/components/resolver/active`` : boolean
  
  activates/deactivates the component.
  
 
 
-* \ ``/software/componens/resolver/search``\  : list
+* ``/software/componens/resolver/search`` : list
  
  A list of strings to use for the resolver search path.
  
 
 
-* \ ``/software/components/resolver/servers``\  : list
+* ``/software/components/resolver/servers`` : list
  
  list of server addresses or hostnames. If these are
  hostnames, they will be resolved before the resolver 
@@ -54,7 +54,7 @@ RESOURCES
  
 
 
-* \ ``/software/components/resolver/dnscache``\  : boolean
+* ``/software/components/resolver/dnscache`` : boolean
  
  If true, then configure dnscache with the server list
  and point resolv.conf at the localhost. This will
@@ -73,11 +73,11 @@ FILES MODIFIED
 The component resolver modifies the following files:
 
 
-- \ ``/etc/resolv.conf``\ 
+- ``/etc/resolv.conf``
 
 
 
-- \ ``/var/spool/dnscache/servers/@``\ 
+- ``/var/spool/dnscache/servers/@``
 
 
 

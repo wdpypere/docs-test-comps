@@ -69,8 +69,8 @@ Public methods
 
 - version(): string
  
- Returns the version number as defined in \ ``$self->{'VERSION'}``\ , or
- \ ``<unknown>``\  if not defined.
+ Returns the version number as defined in ``$self->{'VERSION'}``, or
+ ``<unknown>`` if not defined.
  
 
 
@@ -90,7 +90,7 @@ Public methods
  
  Returns true if the option exists, false otherwhise. Option can be
  defined either in the application configuration file or on the
- command line (based on \ ``AppConfig``\  module).
+ command line (based on ``AppConfig`` module).
  
 
 
@@ -98,10 +98,10 @@ Public methods
  
  Returns the option value coming from the command line and/or
  configuration file. Scalar can be a string, or a reference to a hash
- or an array containing the option's value. \ ``option()``\  is a wrapper
- on top of \ ``AppConfig->get($opt)``\ .
+ or an array containing the option's value. ``option()`` is a wrapper
+ on top of ``AppConfig->get($opt)``.
  
- If the option doesn't exist, returns \ ``undef``\ , except if the \ ``default``\ 
+ If the option doesn't exist, returns ``undef``, except if the ``default``
  argument has been specified: in this case this value is returned but
  the option remains undefined.
  
@@ -110,8 +110,8 @@ Public methods
 - set_option($opt, $val): SUCCESS
  
  Defines an option and sets its value. If the option was previously
- defined, its value is overwritten. This is a wrapper over \ ``AppConfig``\  
- methods to hide the internal implementation of a \ ``CAF::Application``\ .
+ defined, its value is overwritten. This is a wrapper over ``AppConfig`` 
+ methods to hide the internal implementation of a ``CAF::Application``.
  
  This method always returns SUCCESS.
  
@@ -175,21 +175,21 @@ Private methods
  Arguments
  
  
- - \ ``$command``\ 
+ - ``$command``
   
-  Name of the script/command/... (typically \ ``$0``\ ).
+  Name of the script/command/... (typically ``$0``).
   
  
  
- - Remaining arguments \ ``@argv``\ 
+ - Remaining arguments ``@argv``
   
-  Typically this is the perl builtin variable \ ``@ARGV``\ ,
+  Typically this is the perl builtin variable ``@ARGV``,
   but can be any array of options/arguments,
   or a single arrayref (in which case all elements
   of the arrayref are handled as options/arguments).
   
   Any arguments that are not handled by the options,
-  can be retrieved either via \ ``@ARGV``\  or by passing
+  can be retrieved either via ``@ARGV`` or by passing
   an arrayref holding the options/arguments.
   In these 2 cases, the contents is modified,
   removing all handled options, leaving the

@@ -10,7 +10,7 @@ NAME
 
 
 ncm-metaconfig: Configure services whose config format can be
-rendered via \ ``EDG::WP4::CCM::TextRender``\ .
+rendered via ``EDG::WP4::CCM::TextRender``.
 
 
 *********************
@@ -18,7 +18,7 @@ CONFIGURATION MODULES
 *********************
 
 
-The following formats can be rendered via \ ``EDG::WP4::CCM::TextRender``\ :
+The following formats can be rendered via ``EDG::WP4::CCM::TextRender``:
 
 
 * general
@@ -44,8 +44,8 @@ The following formats can be rendered via \ ``EDG::WP4::CCM::TextRender``\ :
 
 * tiny
  
- Uses Perl's `Config::Tiny <http://search.cpan.org/search?query=Config%3a%3aTiny&mode=module>`_, typically for \ ``key = value``\  files or
- INI-like files with sections separated by \ ``[section]``\  headers.
+ Uses Perl's `Config::Tiny <http://search.cpan.org/search?query=Config%3a%3aTiny&mode=module>`_, typically for ``key = value`` files or
+ INI-like files with sections separated by ``[section]`` headers.
  
 
 
@@ -74,7 +74,7 @@ The following formats can be rendered via \ ``EDG::WP4::CCM::TextRender``\ :
  supplied by the user.
  
  The name of the template is given by this field. It \ **must**\  be a path
- relative to \ ``metaconfig/``\ , and the component actively sanitizes this
+ relative to ``metaconfig/``, and the component actively sanitizes this
  field.
  
 
@@ -86,7 +86,7 @@ EXAMPLES
 
 
 Configuring `/etc/ccm.conf`
-=========================
+===========================
 
 
 The well-known `/etc/ccm.conf` can be defined like this:
@@ -136,7 +136,7 @@ Generating an INI-like file
 ===========================
 
 
-We can generate simple INI-like files with the \ ``Config::Tiny``\  module.
+We can generate simple INI-like files with the ``Config::Tiny`` module.
 
 Example schema
 --------------
@@ -217,6 +217,5 @@ And that's it
 
 That's it!  When you deploy your configuration you should see your
 `/etc/foo.ini` in the correct location.
-
 
 

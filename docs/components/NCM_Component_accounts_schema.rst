@@ -6,147 +6,147 @@ Types
 -----
 
  - **/software/components/accounts/structure_userinfo**
-    - */software/components/accounts//structure_userinfo/comment*
+    - */software/components/accounts/structure_userinfo/comment*
         - Optional
         - Type: string
-    - */software/components/accounts//structure_userinfo/homeDir*
+    - */software/components/accounts/structure_userinfo/homeDir*
         - Optional
         - Type: string
-    - */software/components/accounts//structure_userinfo/createHome*
+    - */software/components/accounts/structure_userinfo/createHome*
         - Optional
         - Type: boolean
-    - */software/components/accounts//structure_userinfo/createKeys*
+    - */software/components/accounts/structure_userinfo/createKeys*
         - Optional
         - Type: boolean
-    - */software/components/accounts//structure_userinfo/groups*
+    - */software/components/accounts/structure_userinfo/groups*
         - Required
         - Type: string
-    - */software/components/accounts//structure_userinfo/password*
+    - */software/components/accounts/structure_userinfo/password*
         - Optional
         - Type: string
-    - */software/components/accounts//structure_userinfo/shell*
+    - */software/components/accounts/structure_userinfo/shell*
         - Required
         - Type: string
         - Default value: /bin/bash
-    - */software/components/accounts//structure_userinfo/uid*
+    - */software/components/accounts/structure_userinfo/uid*
         - Required
         - Type: long
         - Range: 0..
-    - */software/components/accounts//structure_userinfo/poolStart*
+    - */software/components/accounts/structure_userinfo/poolStart*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/accounts//structure_userinfo/poolDigits*
+    - */software/components/accounts/structure_userinfo/poolDigits*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/components/accounts//structure_userinfo/poolSize*
+    - */software/components/accounts/structure_userinfo/poolSize*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/accounts//structure_userinfo/info*
+    - */software/components/accounts/structure_userinfo/info*
         - Optional
         - Type: string
-    - */software/components/accounts//structure_userinfo/ldap*
+    - */software/components/accounts/structure_userinfo/ldap*
         - Optional
         - Type: boolean
  - **/software/components/accounts/structure_groupinfo**
-    - */software/components/accounts//structure_groupinfo/comment*
+    - */software/components/accounts/structure_groupinfo/comment*
         - Optional
         - Type: string
-    - */software/components/accounts//structure_groupinfo/gid*
+    - */software/components/accounts/structure_groupinfo/gid*
         - Required
         - Type: long
         - Range: 1..
-    - */software/components/accounts//structure_groupinfo/requiredMembers*
+    - */software/components/accounts/structure_groupinfo/requiredMembers*
         - Optional
         - Type: string
-    - */software/components/accounts//structure_groupinfo/replaceMembers*
+    - */software/components/accounts/structure_groupinfo/replaceMembers*
         - Required
         - Type: boolean
         - Default value: false
  - **/software/components/accounts/structure_login_defs**
-    - */software/components/accounts//structure_login_defs/uid_min*
+    - */software/components/accounts/structure_login_defs/uid_min*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/components/accounts//structure_login_defs/uid_max*
+    - */software/components/accounts/structure_login_defs/uid_max*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/components/accounts//structure_login_defs/gid_min*
+    - */software/components/accounts/structure_login_defs/gid_min*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/components/accounts//structure_login_defs/gid_max*
+    - */software/components/accounts/structure_login_defs/gid_max*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/components/accounts//structure_login_defs/pass_max_days*
+    - */software/components/accounts/structure_login_defs/pass_max_days*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/components/accounts//structure_login_defs/pass_min_days*
+    - */software/components/accounts/structure_login_defs/pass_min_days*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/components/accounts//structure_login_defs/pass_min_len*
+    - */software/components/accounts/structure_login_defs/pass_min_len*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/components/accounts//structure_login_defs/pass_warn_age*
+    - */software/components/accounts/structure_login_defs/pass_warn_age*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/components/accounts//structure_login_defs/create_home*
+    - */software/components/accounts/structure_login_defs/create_home*
         - Optional
         - Type: legacy_binary_affirmation_string
-    - */software/components/accounts//structure_login_defs/mail_dir*
+    - */software/components/accounts/structure_login_defs/mail_dir*
         - Optional
         - Type: string
-    - */software/components/accounts//structure_login_defs/umask*
+    - */software/components/accounts/structure_login_defs/umask*
         - Optional
         - Type: string
-    - */software/components/accounts//structure_login_defs/userdel_cmd*
+    - */software/components/accounts/structure_login_defs/userdel_cmd*
         - Optional
         - Type: string
-    - */software/components/accounts//structure_login_defs/usergroups_enab*
+    - */software/components/accounts/structure_login_defs/usergroups_enab*
         - Optional
         - Type: boolean
  - **/software/components/accounts/accounts_component**
-    - */software/components/accounts//accounts_component/rootpwd*
+    - */software/components/accounts/accounts_component/rootpwd*
         - Optional
         - Type: string
-    - */software/components/accounts//accounts_component/rootshell*
+    - */software/components/accounts/accounts_component/rootshell*
         - Optional
         - Type: string
-    - */software/components/accounts//accounts_component/shadowpwd*
+    - */software/components/accounts/accounts_component/shadowpwd*
         - Optional
         - Type: boolean
-    - */software/components/accounts//accounts_component/users*
+    - */software/components/accounts/accounts_component/users*
         - Optional
         - Type: structure_userinfo
-    - */software/components/accounts//accounts_component/groups*
+    - */software/components/accounts/accounts_component/groups*
         - Optional
         - Type: structure_groupinfo
-    - */software/components/accounts//accounts_component/login_defs*
+    - */software/components/accounts/accounts_component/login_defs*
         - Optional
         - Type: structure_login_defs
-    - */software/components/accounts//accounts_component/remove_unknown*
+    - */software/components/accounts/accounts_component/remove_unknown*
         - Required
         - Type: boolean
         - Default value: false
-    - */software/components/accounts//accounts_component/preserved_accounts*
+    - */software/components/accounts/accounts_component/preserved_accounts*
         - Required
         - Type: string
         - Default value: dyn_user_group
-    - */software/components/accounts//accounts_component/kept_users*
+    - */software/components/accounts/accounts_component/kept_users*
         - Required
         - Type: string
-    - */software/components/accounts//accounts_component/kept_groups*
+    - */software/components/accounts/accounts_component/kept_groups*
         - Required
         - Type: string
-    - */software/components/accounts//accounts_component/ldap*
+    - */software/components/accounts/accounts_component/ldap*
         - Optional
         - Type: boolean
 

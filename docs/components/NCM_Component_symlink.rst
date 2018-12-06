@@ -22,126 +22,6 @@ can be checked. And clobbering can be disabled. Also, target definition
 can be simplified by the use of contextual variables and command outputs.
 
 
-*********
-RESOURCES
-*********
-
-
-
-* \ ``/software/components/symlink/links``\ 
- 
- A list of symbolic links to create or delete.  Each entry
- must be of the \ ``structure_symlink_entry``\  type which has the following
- fields:
- 
- 
- * \ ``name``\  : symbolic link name (path).
- 
- 
- 
- * \ ``target``\  : link target path.
-  
-  The target path can be built using a command output with the command string
-  (can include valid command options) to execute between a pair of \ ``@@``\ 
-  or a contextual variable using the syntax \ ``{variable}``\ 
-  (variables are defined in \ ``/software/components/symlinks/context``\ ).
-  Unless the shell command between \ ``@@``\  must be reevaluated for each link,
-  it is better to associate the shell command with a contextual variable and
-  use the variable in the target definition, as a contextual variable is evaluated once (global).
-  
- 
- 
- * \ ``delete``\  : (boolean)
-  
-  Delete the symlink (not its target) rather than creating it. \ ``target``\ 
-  can be ommitted in this case and if present, it is not checked to be this
-  value before deletion. If \ ``exists``\  is true, raise an error, if the
-  link is not found else just silently ignore it.
-  
- 
- 
- * \ ``exists``\  : (boolean)
-  
-  Check that the target exists when creating it or check that the symlink
-  name exists when deleting it.
-  
- 
- 
- * \ ``replace``\  : (nlist)
-  
-  Option used to specify the action to take when an object with the same
-  name as the symlink already exists, depending on the object type.
-  Possible actions are: do not define the symlink, replace the
-  object by the symlink or define the symlink after renaming the object.
-  The nlist keys and values can be:
-  
-  
-  * \ ** key **\ :
-   
-   The existing object type. Valid values are: \ ``all``\ , \ ``dir``\ , \ ``dirempty``\ ,
-   \ ``file``\ , \ ``link``\ , \ ``none``\ .  \ ``dirempty``\  means an empty directory only,
-   \ ``dir``\  means any directory. \ ``all``\  and \ ``none``\  are mutually exclusive
-   but can be combined with other object types to define the extension
-   to use when renaming a given object type or to prevent/enable replacement
-   for a specific object type.
-   
-  
-  
-  * \ ** value **\ :
-   
-   Action applying to the object type. Can be \ ``yes``\  (replacement of the object
-   by the symlink allowed), \ ``no``\  (replacement of the object by the symlink
-   disabled) or any other string. In this latter case, replacement of the object
-   by the symlink is enabled after renaming the object by appending the string
-   to its name. The value can also be empty: see below. Note that non empty
-   directories are \ **always**\  renamed before defining the symlink
-   (a default extension, \ ``.ncm-symlink_saved``\ , is used).
-   
-  
-  
- 
- 
- \ ``replace``\  option allows a lot of flexibility in specifying what should
- be done in case of conflict with an existing object. It implements the
- following advanced features:
- 
- 
- * \ ``none=extension``\ 
-  
-  Can be used to establish a default rename extension without actually enabling
-  replacement for a particular type. This extension will be used with object
-  types for which replacement is enabled with \ ``yes``\  rather than an extension.
-  
- 
- 
- * \ ``Action``\ 
-  
-  Can be empty. If a default rename extension was defined with \ ``none=extension``\ ,
-  the object will be renamed before defining the symlink. Else it is interpreted as \ ``yes``\ .
-  
- 
- 
-
-
-* \ ``/software/components/symlink/context``\ 
- 
- A list of contextual variables to use in target definitions. Each entry is
- a key/value pair with the variable name as the key. The value can contain
- a command output, as link target definition: see \ ``target``\  description above.
- Contextual variables are global. They are evaluated once, before starting to define
- symlinks.
- 
-
-
-* \ ``/software/components/symlink/options``\ 
- 
- A list of global options used as default for all links creation/deletion.
- Supported options are the same as options supported in the link definition
- (see above), with the exception of \ ``delete``\ .
- 
-
-
-
 ********
 EXAMPLES
 ********
@@ -229,7 +109,7 @@ EXAMPLES
  
 
 
-- Define options to enable replacement of empty directories and links, with empty directories renamed adding \ ``.saved``\  to their name before defining the symlink.
+- Define options to enable replacement of empty directories and links, with empty directories renamed adding ``.saved`` to their name before defining the symlink.
  
  
  .. code-block:: perl

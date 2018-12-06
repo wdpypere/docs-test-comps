@@ -31,7 +31,7 @@ Methods
 
 - new
  
- Create a new instance with \ ``value``\  and \ ``type``\ .
+ Create a new instance with ``value`` and ``type``.
  
 
 

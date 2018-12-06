@@ -38,23 +38,23 @@ public methods
 - create_postgresql_config
  
  Create main or hba config via textrender. Returns undef on failure, changed state otherwise.
- The \ ``data``\  hash is either \ ``%MAIN_CONFIG``\  or \ ``%HBA_CONFIG``\ ;
- or the pg_alter hashref (see \ ``pg_alter``\  method).
+ The ``data`` hash is either ``%MAIN_CONFIG`` or ``%HBA_CONFIG``;
+ or the pg_alter hashref (see ``pg_alter`` method).
  
 
 
 - fetch
  
- Get \ ``$path``\  from \ ``$config``\ , if it does not exists, return \ ``$default``\ .
- If \ ``$default``\  is not defined, use empty string as default.
+ Get ``$path`` from ``$config``, if it does not exists, return ``$default``.
+ If ``$default`` is not defined, use empty string as default.
  
- If \ ``$path``\  is a relative path, it is assumed relative from \ ``$self-``\ prefix>.
+ If ``$path`` is a relative path, it is assumed relative from ``$self->prefix``.
  
 
 
 - get_version
  
- Return version instance \ ``v$major.$minor.$remainder``\  version information (from postmaster --version)
+ Return version instance ``v$major.$minor.$remainder`` version information (from ``postmaster --version``)
  
  Return undef in case of problem.
  
@@ -92,7 +92,7 @@ public methods
  
  - version
   
-  Return value from \ ``version``\  method
+  Return value from ``version`` method
   
  
  
@@ -162,13 +162,13 @@ public methods
  
  - service
   
-  The \ ``NCM::Component::Postgresql::Service``\  instance
+  The ``NCM::Component::Postgresql::Service`` instance
   
  
  
  - commands
   
-  The \ ``NCM::Component::Postgresql::Commands``\  instance
+  The ``NCM::Component::Postgresql::Commands`` instance
   
  
  
@@ -208,7 +208,7 @@ public methods
 
 - roles
  
- \ ``$roles_tree``\  is the roles configuration hashref (via \ ``config-``\ getTree(prefix/roles)>).
+ ``$roles_tree`` is the roles configuration hashref (via ``config->getTree(prefix/roles)``).
  
  Roles and only added and modified, never removed.
  
@@ -218,7 +218,7 @@ public methods
 
 - databases
  
- \ ``$dbs_tree``\  is the databases configuration hashref (via \ ``config-``\ getTree(prefix/databases)>).
+ ``$dbs_tree`` is the databases configuration hashref (via ``config->getTree(prefix/databases)``).
  
  Databases are only created, never modified or removed.
  

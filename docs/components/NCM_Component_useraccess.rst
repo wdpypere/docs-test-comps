@@ -22,10 +22,10 @@ BASIC COMPONENT STRUCTURE
 *************************
 
 
-Besides the classic \ ``component_structure fields``\ , it provides two more
-fields, named \ ``users``\  and \ ``roles``\ . \ ``users``\  will contain the
-authorization information for each user, and \ ``roles``\  will contain a
-set of credentials for users to accept. Both \ ``users``\  and \ ``roles``\ 
+Besides the classic ``component_structure fields``, it provides two more
+fields, named ``users`` and ``roles``. ``users`` will contain the
+authorization information for each user, and ``roles`` will contain a
+set of credentials for users to accept. Both ``users`` and ``roles``
 have the same structure.
 
 All the fields are optional, so you can have Kerberos authentication
@@ -36,7 +36,7 @@ service. And, to make it clear:
 as user "foo".**\ 
 
 
-* \ ``/software/components/useraccess/configSerial``\ 
+* ``/software/components/useraccess/configSerial``
  
  This property is an arbitrary string representing a configuration
  serial number. It is not interpreted in any way by the component. Its
@@ -46,29 +46,29 @@ as user "foo".**\
  
 
 
-* \ ``/software/components/useraccess/acl_services``\ 
+* ``/software/components/useraccess/acl_services``
  
  List of services that will have ACLs associated to them.
  
 
 
-* \ ``/software/components/useraccess/{users,roles}/<id>/kerberos4``\ 
+* ``/software/components/useraccess/{users,roles}/<id>/kerberos4``
  
  It is a list of the users who can log in using Kerberos v4
  tickets. The contents of this list will be appropriately formatted and
- written into \ ``~/.klogin``\ .
+ written into ``~/.klogin``.
  
 
 
-* \ ``/software/components/useraccess/{users,roles}/<id>/kerberos5``\ 
+* ``/software/components/useraccess/{users,roles}/<id>/kerberos5``
  
  It is a list of the users who can log using Kerberos v5 tickets. The
  contents of this list will be appropriately formatted and written into
- \ ``~/.k5login``\ .
+ ``~/.k5login``.
  
 
 
-* \ ``/software/components/useraccess/{users,roles}/<id>/ssh_keys_urls``\ 
+* ``/software/components/useraccess/{users,roles}/<id>/ssh_keys_urls``
  
  It is a list containing the \ **absolute URLs**\  where the public keys
  granted to login as this user can be found. The URL can have any
@@ -77,16 +77,16 @@ as user "foo".**\
  
 
 
-* \ ``/software/components/useraccess/{users,roles}/<id>/ssh_keys``\ 
+* ``/software/components/useraccess/{users,roles}/<id>/ssh_keys``
  
  It is a list containing the \ **exact lines**\  to be added to
- \ ``~/.ssh/authorized_keys``\ .
+ ``~/.ssh/authorized_keys``.
  
  The preferred way for adding authorized_keys is ssh_keys_urls.
  
 
 
-* \ ``/software/components/useraccess/{users,roles}/<id>/acls``\ 
+* ``/software/components/useraccess/{users,roles}/<id>/acls``
  
  It is a list of the ACL-controlled services the user is allowed to log
  in. This only applies to PAM controlled services. SSH is not (not
@@ -94,11 +94,11 @@ as user "foo".**\
  
  \ **IMPORTANT NOTE:**\  this will add the user to the given ACL, but will
  \ **not**\  force the service to use ACLs at all. To do so, add the service
- to \ ``/software/components/useraccess/acl_services``\ .
+ to ``/software/components/useraccess/acl_services``.
  
 
 
-* \ ``/software/components/useraccess/{users,roles}/<id>/roles``\ 
+* ``/software/components/useraccess/{users,roles}/<id>/roles``
  
  List of strings. It contains the list of roles the user belongs
  to. Roles can be nested.
@@ -107,16 +107,16 @@ as user "foo".**\
  
 
 
-* \ ``/software/components/useraccess/users/<id>/managed_credentials``\ 
+* ``/software/components/useraccess/users/<id>/managed_credentials``
  
  List of authentication methods the component will configure (and thus,
  fully control) for the user. It is a list of strings, with possible
- values \ ``ssh_keys``\ , \ ``kerberos4``\  and \ ``kerberos5``\ .
+ values ``ssh_keys``, ``kerberos4`` and ``kerberos5``.
  
  It defaults to control all credentials, change it if you want to
  control something by some other means. For instance, CERN uses a
  different tool to controls SSH public key authentication on user
- \ ``oracle``\ .
+ ``oracle``.
  
 
 
@@ -126,30 +126,30 @@ KERBEROS SETTINGS
 *****************
 
 
-Both \ ``kerberos4``\  and \ ``kerberos5``\  share the same structure. It
+Both ``kerberos4`` and ``kerberos5`` share the same structure. It
 contains the following fields:
 
 
-* \ ``/software/components/useraccess/<id>/kerberosX/realm``\  : mandatory
+* ``/software/components/useraccess/<id>/kerberosX/realm`` : mandatory
  
  Kerberos' realm for authentication (the part behind the @ in
- \ ``.klogin``\ ).
+ ``.klogin``).
  
 
 
-* \ ``/software/components/useraccess/<id>/kerberosX/principal``\  : mandatory
+* ``/software/components/useraccess/<id>/kerberosX/principal`` : mandatory
  
  Principal identity for the user in the Kerberos ticket server.
  
 
 
-* \ ``/software/components/useraccess/<id>/kerberosX/instance``\  : optional
+* ``/software/components/useraccess/<id>/kerberosX/instance`` : optional
  
  "Instance" identity for the user. This is a sub-identity.
  
 
 
-* \ ``/software/components/useraccess/<id>/kerberosX/host``\  : optional
+* ``/software/components/useraccess/<id>/kerberosX/host`` : optional
  
  Host from which the ticket must come for this identity. It is
  currently ignored.
@@ -313,6 +313,6 @@ LOCKING USER ACCOUNTS
 
 
 When you lock user accounts, it may not be enough to just lock them
-with \ ``passwd -l``\ . Depending on how you configured SSH, a locked user
+with ``passwd -l``. Depending on how you configured SSH, a locked user
 may still be able to log-in with his public key.
 

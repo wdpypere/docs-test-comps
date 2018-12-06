@@ -17,7 +17,7 @@ RESOURCES
 *********
 
 
-\ ``/software/components/postfix``\ 
+``/software/components/postfix``
 ====================================
 
 
@@ -25,67 +25,67 @@ The configuration information for the component. This structure
 contains three fields:
 
 
-- \ ``main``\ 
+- ``main``
  
  An nlist with all the possible configuration values for
- \ ``/etc/postfix/main.cf``\ .
+ ``/etc/postfix/main.cf``.
  
 
 
-- \ ``master``\ 
+- ``master``
  
- A list with all entries for \ ``/etc/postfix/master.cf``\ .
+ A list with all entries for ``/etc/postfix/master.cf``.
  For each line, we have to provide:
  
  
- - \ ``name``\  : string
+ - ``name`` : string
   
   Name of the entry (first field in the line).
   
  
  
- - \ ``type``\  : string
+ - ``type`` : string
   
   Type of service/socket for this entry.
   
  
  
- - \ ``private``\  : boolean
+ - ``private`` : boolean
   
   Defaults to true.
   
  
  
- - \ ``unprivileged``\  : boolean
+ - ``unprivileged`` : boolean
   
   Defaults to true
   
  
  
- - \ ``chroot``\  : boolean
+ - ``chroot`` : boolean
   
   Defaults to true
   
  
  
- - \ ``maxproc``\  : long
+ - ``maxproc`` : long
   
   Maximum number of processes that may be instantiated following this
   line Defaults to 100.
   
  
  
- - \ ``wakeup``\  : long
+ - ``wakeup`` : long
  
  
  
- - \ ``command``\ 
+ - ``command``
  
  
  
 
 
-- \ ``databases``\ 
+- ``databases``
  
  An optional structure describing additional Postfix databases (lookup
  tables in Postfix terminology). See
@@ -93,7 +93,7 @@ contains three fields:
  
  Each subtree is associated with a class of lookup tables. Each class
  of lookup tables is an nlist, in which the keys are the file names
- (relative to \ ``/etc/postfix``\ ) that configure the access to such a database.
+ (relative to ``/etc/postfix``) that configure the access to such a database.
  
  Currently, only LDAP lookups can be described, see
  `http://www.postfix.org/LDAP_README.html <http://www.postfix.org/LDAP_README.html>`_
@@ -111,7 +111,7 @@ Minimal configuration
 =====================
 
 
-An empty nlist is valid for \ ``main.cf``\ :
+An empty nlist is valid for ``main.cf``:
 
 
 .. code-block:: perl

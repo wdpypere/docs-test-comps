@@ -7,93 +7,93 @@ Types
 
  - **/software/components/metaconfig/hadoop_core_site_fs_defaultFS**
     - Description: type for the fs.defaultFS setting of the core-site.xml hadoop file @
-    - */software/components/metaconfig//hadoop_core_site_fs_defaultFS/format*
+    - */software/components/metaconfig/hadoop_core_site_fs_defaultFS/format*
         - Required
         - Type: string
-    - */software/components/metaconfig//hadoop_core_site_fs_defaultFS/host*
+    - */software/components/metaconfig/hadoop_core_site_fs_defaultFS/host*
         - Required
         - Type: type_hostname
-    - */software/components/metaconfig//hadoop_core_site_fs_defaultFS/port*
+    - */software/components/metaconfig/hadoop_core_site_fs_defaultFS/port*
         - Required
         - Type: long
         - Default value: 9000
  - **/software/components/metaconfig/hadoop_core_site_fs**
     - Description: fs settings of the core-site.xml hadoop file @
-    - */software/components/metaconfig//hadoop_core_site_fs/defaultFS*
+    - */software/components/metaconfig/hadoop_core_site_fs/defaultFS*
         - Required
         - Type: hadoop_core_site_fs_defaultFS
  - **/software/components/metaconfig/hadoop_core_site**
     - Description: settings for the core-site.xml hadoop file @
-    - */software/components/metaconfig//hadoop_core_site/fs*
+    - */software/components/metaconfig/hadoop_core_site/fs*
         - Required
         - Type: hadoop_core_site_fs
  - **/software/components/metaconfig/hadoop_hdfs_site_datanode**
     - Description: datanode settings of the hdfs-site.xml hadoop file @
-    - */software/components/metaconfig//hadoop_hdfs_site_datanode/handler.count*
+    - */software/components/metaconfig/hadoop_hdfs_site_datanode/handler.count*
         - Optional
         - Type: long
-    - */software/components/metaconfig//hadoop_hdfs_site_datanode/address*
+    - */software/components/metaconfig/hadoop_hdfs_site_datanode/address*
         - Optional
         - Type: type_hostport
         - Default value: 0.0.0.0:50010
-    - */software/components/metaconfig//hadoop_hdfs_site_datanode/ipc.address*
+    - */software/components/metaconfig/hadoop_hdfs_site_datanode/ipc.address*
         - Optional
         - Type: type_hostport
         - Default value: 0.0.0.0:50020
-    - */software/components/metaconfig//hadoop_hdfs_site_datanode/http.address*
+    - */software/components/metaconfig/hadoop_hdfs_site_datanode/http.address*
         - Optional
         - Type: type_hostport
         - Default value: 0.0.0.0:50075
-    - */software/components/metaconfig//hadoop_hdfs_site_datanode/https.address*
+    - */software/components/metaconfig/hadoop_hdfs_site_datanode/https.address*
         - Optional
         - Type: type_hostport
         - Default value: 0.0.0.0:50475
-    - */software/components/metaconfig//hadoop_hdfs_site_datanode/max.transfer.threads*
+    - */software/components/metaconfig/hadoop_hdfs_site_datanode/max.transfer.threads*
         - Optional
         - Type: long
  - **/software/components/metaconfig/hadoop_hdfs_site_namenode**
     - Description: namenode settings of the hdfs-site.xml hadoop file @
-    - */software/components/metaconfig//hadoop_hdfs_site_namenode/handler.count*
+    - */software/components/metaconfig/hadoop_hdfs_site_namenode/handler.count*
         - Optional
         - Type: long
  - **/software/components/metaconfig/hadoop_hdfs_site**
     - Description: settings for the hdfs-site.xml hadoop file @
-    - */software/components/metaconfig//hadoop_hdfs_site/namenode*
+    - */software/components/metaconfig/hadoop_hdfs_site/namenode*
         - Optional
         - Type: hadoop_hdfs_site_namenode
-    - */software/components/metaconfig//hadoop_hdfs_site/datanode*
+    - */software/components/metaconfig/hadoop_hdfs_site/datanode*
         - Optional
         - Type: hadoop_hdfs_site_datanode
  - **/software/components/metaconfig/hadoop_gpfs_site**
     - Description: settings for the gpfs-site.xml file @
-    - */software/components/metaconfig//hadoop_gpfs_site/mnt.dir*
+    - */software/components/metaconfig/hadoop_gpfs_site/mnt.dir*
         - Required
         - Type: string
-    - */software/components/metaconfig//hadoop_gpfs_site/data.dir*
+    - */software/components/metaconfig/hadoop_gpfs_site/data.dir*
         - Optional
         - Type: string
-    - */software/components/metaconfig//hadoop_gpfs_site/supergroup*
+    - */software/components/metaconfig/hadoop_gpfs_site/supergroup*
         - Optional
         - Type: string
-    - */software/components/metaconfig//hadoop_gpfs_site/storage.type*
+    - */software/components/metaconfig/hadoop_gpfs_site/storage.type*
         - Required
         - Type: string
-    - */software/components/metaconfig//hadoop_gpfs_site/replica.enforced*
+    - */software/components/metaconfig/hadoop_gpfs_site/replica.enforced*
         - Required
         - Type: string
  - **/software/components/metaconfig/type_hdfs_slaves**
     - Description: contents of hadoop slaves file @
  - **/software/components/metaconfig/hadoop_service**
     - Description: type for hadoop configuration @
-    - */software/components/metaconfig//hadoop_service/core-site*
+    - */software/components/metaconfig/hadoop_service/core-site*
         - Required
         - Type: hadoop_core_site
-    - */software/components/metaconfig//hadoop_service/hdfs-site*
+    - */software/components/metaconfig/hadoop_service/hdfs-site*
         - Required
         - Type: hadoop_hdfs_site
-    - */software/components/metaconfig//hadoop_service/gpfs-site*
+    - */software/components/metaconfig/hadoop_service/gpfs-site*
         - Optional
         - Type: hadoop_gpfs_site
-    - */software/components/metaconfig//hadoop_service/slaves*
+    - */software/components/metaconfig/hadoop_service/slaves*
         - Optional
         - Type: type_hdfs_slaves

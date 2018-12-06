@@ -7,150 +7,150 @@ Types
 
  - **/software/components/metaconfig/named_acl_name**
  - **/software/components/metaconfig/named_source**
-    - */software/components/metaconfig//named_source/ip*
+    - */software/components/metaconfig/named_source/ip*
         - Optional
         - Type: type_ip
-    - */software/components/metaconfig//named_source/port*
+    - */software/components/metaconfig/named_source/port*
         - Required
         - Type: type_port
  - **/software/components/metaconfig/named_options**
     - Description: Named options
-    - */software/components/metaconfig//named_options/allow-query*
+    - */software/components/metaconfig/named_options/allow-query*
         - Required
         - Type: named_acl_name
-    - */software/components/metaconfig//named_options/allow-recursion*
+    - */software/components/metaconfig/named_options/allow-recursion*
         - Optional
         - Type: named_acl_name
-    - */software/components/metaconfig//named_options/allow-transfer*
+    - */software/components/metaconfig/named_options/allow-transfer*
         - Optional
         - Type: named_acl_name
-    - */software/components/metaconfig//named_options/blackhole*
+    - */software/components/metaconfig/named_options/blackhole*
         - Optional
         - Type: named_acl_name
-    - */software/components/metaconfig//named_options/forwarders*
+    - */software/components/metaconfig/named_options/forwarders*
         - Optional
         - Type: type_ip
-    - */software/components/metaconfig//named_options/listen-on*
+    - */software/components/metaconfig/named_options/listen-on*
         - Optional
         - Type: type_ip
-    - */software/components/metaconfig//named_options/notify*
+    - */software/components/metaconfig/named_options/notify*
         - Required
         - Type: boolean
         - Default value: true
-    - */software/components/metaconfig//named_options/recursion*
+    - */software/components/metaconfig/named_options/recursion*
         - Required
         - Type: boolean
         - Default value: true
-    - */software/components/metaconfig//named_options/dnssec-enable*
+    - */software/components/metaconfig/named_options/dnssec-enable*
         - Required
         - Type: boolean
         - Default value: true
-    - */software/components/metaconfig//named_options/dnssec-validation*
+    - */software/components/metaconfig/named_options/dnssec-validation*
         - Required
         - Type: boolean
         - Default value: true
-    - */software/components/metaconfig//named_options/transfer-source*
+    - */software/components/metaconfig/named_options/transfer-source*
         - Optional
         - Type: named_source
-    - */software/components/metaconfig//named_options/query-source*
+    - */software/components/metaconfig/named_options/query-source*
         - Optional
         - Type: named_source
-    - */software/components/metaconfig//named_options/notify-source*
+    - */software/components/metaconfig/named_options/notify-source*
         - Optional
         - Type: named_source
-    - */software/components/metaconfig//named_options/directory*
+    - */software/components/metaconfig/named_options/directory*
         - Required
         - Type: string
         - Default value: /var/named
-    - */software/components/metaconfig//named_options/dump-file*
+    - */software/components/metaconfig/named_options/dump-file*
         - Required
         - Type: string
         - Default value: /var/named/data/cache_dump.db
-    - */software/components/metaconfig//named_options/statistics-file*
+    - */software/components/metaconfig/named_options/statistics-file*
         - Required
         - Type: string
         - Default value: /var/named/data/named_stats.txt
-    - */software/components/metaconfig//named_options/memstatistics-file*
+    - */software/components/metaconfig/named_options/memstatistics-file*
         - Required
         - Type: string
         - Default value: /var/named/data/named_mem_stats.txt
-    - */software/components/metaconfig//named_options/bindkeys-file*
+    - */software/components/metaconfig/named_options/bindkeys-file*
         - Required
         - Type: string
         - Default value: /etc/named.iscdlv.key
-    - */software/components/metaconfig//named_options/dnssec-lookaside*
+    - */software/components/metaconfig/named_options/dnssec-lookaside*
         - Required
         - Type: string
         - Default value: auto
-    - */software/components/metaconfig//named_options/empty-zones-enable*
+    - */software/components/metaconfig/named_options/empty-zones-enable*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//named_options/forward*
+    - */software/components/metaconfig/named_options/forward*
         - Required
         - Type: string
         - Default value: first
-    - */software/components/metaconfig//named_options/max-cache-size*
+    - */software/components/metaconfig/named_options/max-cache-size*
         - Optional
         - Type: long
  - **/software/components/metaconfig/named_log_channel**
     - Description: Named log channels
-    - */software/components/metaconfig//named_log_channel/file*
+    - */software/components/metaconfig/named_log_channel/file*
         - Optional
         - Type: string
-    - */software/components/metaconfig//named_log_channel/severity*
+    - */software/components/metaconfig/named_log_channel/severity*
         - Required
         - Type: string
-    - */software/components/metaconfig//named_log_channel/syslog*
+    - */software/components/metaconfig/named_log_channel/syslog*
         - Optional
         - Type: string
  - **/software/components/metaconfig/named_zone**
     - Description: Named zones
-    - */software/components/metaconfig//named_zone/type*
+    - */software/components/metaconfig/named_zone/type*
         - Required
         - Type: string
-    - */software/components/metaconfig//named_zone/transfers-in*
+    - */software/components/metaconfig/named_zone/transfers-in*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/components/metaconfig//named_zone/transfers-out*
+    - */software/components/metaconfig/named_zone/transfers-out*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/components/metaconfig//named_zone/file*
+    - */software/components/metaconfig/named_zone/file*
         - Required
         - Type: string
-    - */software/components/metaconfig//named_zone/name*
+    - */software/components/metaconfig/named_zone/name*
         - Required
         - Type: string
-    - */software/components/metaconfig//named_zone/class*
+    - */software/components/metaconfig/named_zone/class*
         - Required
         - Type: string
         - Default value: IN
-    - */software/components/metaconfig//named_zone/masters*
+    - */software/components/metaconfig/named_zone/masters*
         - Optional
         - Type: type_ip
  - **/software/components/metaconfig/named_channel_name**
  - **/software/components/metaconfig/named_logging**
     - Description: Named log parameters
-    - */software/components/metaconfig//named_logging/channels*
+    - */software/components/metaconfig/named_logging/channels*
         - Required
         - Type: named_log_channel
-    - */software/components/metaconfig//named_logging/category*
+    - */software/components/metaconfig/named_logging/category*
         - Required
         - Type: named_channel_name
  - **/software/components/metaconfig/named_config**
-    - */software/components/metaconfig//named_config/zones*
+    - */software/components/metaconfig/named_config/zones*
         - Optional
         - Type: named_zone
-    - */software/components/metaconfig//named_config/includes*
+    - */software/components/metaconfig/named_config/includes*
         - Optional
         - Type: string
-    - */software/components/metaconfig//named_config/logging*
+    - */software/components/metaconfig/named_config/logging*
         - Optional
         - Type: named_logging
-    - */software/components/metaconfig//named_config/options*
+    - */software/components/metaconfig/named_config/options*
         - Required
         - Type: named_options
-    - */software/components/metaconfig//named_config/acls*
+    - */software/components/metaconfig/named_config/acls*
         - Optional
         - Type: type_network_name

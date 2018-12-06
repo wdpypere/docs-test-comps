@@ -6,130 +6,130 @@ Types
 -----
 
  - **/software/components/lcgbdii/lcgbdii_component**
-    - */software/components/lcgbdii//lcgbdii_component/dir*
+    - */software/components/lcgbdii/lcgbdii_component/dir*
         - Optional
         - Type: string
         - Default value: /opt/bdii/
-    - */software/components/lcgbdii//lcgbdii_component/varDir*
+    - */software/components/lcgbdii/lcgbdii_component/varDir*
         - Required
         - Type: string
         - Default value: /opt/bdii/var
-    - */software/components/lcgbdii//lcgbdii_component/configFile*
+    - */software/components/lcgbdii/lcgbdii_component/configFile*
         - Required
         - Type: string
         - Default value: /opt/bdii/bdii.conf
-    - */software/components/lcgbdii//lcgbdii_component/logFile*
+    - */software/components/lcgbdii/lcgbdii_component/logFile*
         - Optional
         - Type: string
-    - */software/components/lcgbdii//lcgbdii_component/logLevel*
+    - */software/components/lcgbdii/lcgbdii_component/logLevel*
         - Required
         - Type: string
         - Default value: ERROR
-    - */software/components/lcgbdii//lcgbdii_component/schemaFile*
+    - */software/components/lcgbdii/lcgbdii_component/schemaFile*
         - Optional
         - Type: string
         - Default value: /opt/bdii/etc/schemas
-    - */software/components/lcgbdii//lcgbdii_component/schemas*
+    - */software/components/lcgbdii/lcgbdii_component/schemas*
         - Optional
         - Type: string
-    - */software/components/lcgbdii//lcgbdii_component/port*
+    - */software/components/lcgbdii/lcgbdii_component/port*
         - Optional
         - Type: type_port
-    - */software/components/lcgbdii//lcgbdii_component/portRead*
+    - */software/components/lcgbdii/lcgbdii_component/portRead*
         - Optional
         - Type: type_port
-    - */software/components/lcgbdii//lcgbdii_component/portsWrite*
+    - */software/components/lcgbdii/lcgbdii_component/portsWrite*
         - Optional
         - Type: type_port
-    - */software/components/lcgbdii//lcgbdii_component/user*
+    - */software/components/lcgbdii/lcgbdii_component/user*
         - Required
         - Type: string
         - Default value: edguser
-    - */software/components/lcgbdii//lcgbdii_component/bind*
+    - */software/components/lcgbdii/lcgbdii_component/bind*
         - Optional
         - Type: string
         - Default value: mds-vo-name=local,o=grid
-    - */software/components/lcgbdii//lcgbdii_component/passwd*
+    - */software/components/lcgbdii/lcgbdii_component/passwd*
         - Optional
         - Type: string
-    - */software/components/lcgbdii//lcgbdii_component/searchFilter*
+    - */software/components/lcgbdii/lcgbdii_component/searchFilter*
         - Optional
         - Type: string
-    - */software/components/lcgbdii//lcgbdii_component/searchTimeout*
+    - */software/components/lcgbdii/lcgbdii_component/searchTimeout*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/components/lcgbdii//lcgbdii_component/readTimeout*
+    - */software/components/lcgbdii/lcgbdii_component/readTimeout*
         - Optional
         - Type: long
         - Range: 1..
-    - */software/components/lcgbdii//lcgbdii_component/breatheTime*
+    - */software/components/lcgbdii/lcgbdii_component/breatheTime*
         - Optional
         - Type: long
         - Range: 1..
         - Default value: 60
-    - */software/components/lcgbdii//lcgbdii_component/archiveSize*
+    - */software/components/lcgbdii/lcgbdii_component/archiveSize*
         - Optional
         - Type: long
-    - */software/components/lcgbdii//lcgbdii_component/autoUpdate*
+    - */software/components/lcgbdii/lcgbdii_component/autoUpdate*
         - Optional
         - Type: string
         - Default value: no
-    - */software/components/lcgbdii//lcgbdii_component/autoModify*
+    - */software/components/lcgbdii/lcgbdii_component/autoModify*
         - Optional
         - Type: string
         - Default value: no
-    - */software/components/lcgbdii//lcgbdii_component/isCache*
+    - */software/components/lcgbdii/lcgbdii_component/isCache*
         - Optional
         - Type: string
         - Default value: no
-    - */software/components/lcgbdii//lcgbdii_component/modifyDN*
+    - */software/components/lcgbdii/lcgbdii_component/modifyDN*
         - Optional
         - Type: string
         - Default value: no
-    - */software/components/lcgbdii//lcgbdii_component/RAMDisk*
+    - */software/components/lcgbdii/lcgbdii_component/RAMDisk*
         - Optional
         - Type: string
-    - */software/components/lcgbdii//lcgbdii_component/deleteDelay*
+    - */software/components/lcgbdii/lcgbdii_component/deleteDelay*
         - Optional
         - Type: long
-    - */software/components/lcgbdii//lcgbdii_component/fixGlue*
+    - */software/components/lcgbdii/lcgbdii_component/fixGlue*
         - Optional
         - Type: string
-    - */software/components/lcgbdii//lcgbdii_component/updateUrl*
+    - */software/components/lcgbdii/lcgbdii_component/updateUrl*
         - Optional
         - Type: type_absoluteURI
-    - */software/components/lcgbdii//lcgbdii_component/updateLdif*
+    - */software/components/lcgbdii/lcgbdii_component/updateLdif*
         - Optional
         - Type: type_absoluteURI
-    - */software/components/lcgbdii//lcgbdii_component/defaultLdif*
+    - */software/components/lcgbdii/lcgbdii_component/defaultLdif*
         - Optional
         - Type: string
         - Default value: /opt/bdii/etc/default.ldif
-    - */software/components/lcgbdii//lcgbdii_component/slapd*
+    - */software/components/lcgbdii/lcgbdii_component/slapd*
         - Optional
         - Type: string
-    - */software/components/lcgbdii//lcgbdii_component/slapadd*
+    - */software/components/lcgbdii/lcgbdii_component/slapadd*
         - Optional
         - Type: string
-    - */software/components/lcgbdii//lcgbdii_component/slapdConf*
+    - */software/components/lcgbdii/lcgbdii_component/slapdConf*
         - Optional
         - Type: string
         - Default value: /opt/bdii/etc/glue-slapd.conf
-    - */software/components/lcgbdii//lcgbdii_component/slapdDebugLevel*
+    - */software/components/lcgbdii/lcgbdii_component/slapdDebugLevel*
         - Optional
         - Type: long
         - Range: 0..5
-    - */software/components/lcgbdii//lcgbdii_component/urls*
+    - */software/components/lcgbdii/lcgbdii_component/urls*
         - Optional
         - Type: type_absoluteURI
-    - */software/components/lcgbdii//lcgbdii_component/ldifDir*
+    - */software/components/lcgbdii/lcgbdii_component/ldifDir*
         - Optional
         - Type: string
-    - */software/components/lcgbdii//lcgbdii_component/pluginDir*
+    - */software/components/lcgbdii/lcgbdii_component/pluginDir*
         - Optional
         - Type: string
-    - */software/components/lcgbdii//lcgbdii_component/providerDir*
+    - */software/components/lcgbdii/lcgbdii_component/providerDir*
         - Optional
         - Type: string
 

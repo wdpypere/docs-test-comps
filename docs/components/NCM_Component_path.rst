@@ -9,6 +9,6 @@ DESCRIPTION
 ***********
 
 
-\ ``ncm-path``\  handles interaction with files, directories, links, ...
-using \ ``CAF::Path``\ .
+``ncm-path`` handles interaction with files, directories, links, ...
+using ``CAF::Path``.
 

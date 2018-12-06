@@ -38,10 +38,10 @@ functions. Commands are logged at the verbose level.
 
 All these methods return the return value of their LC::Process
 equivalent. This is different from the command's exit status, which is
-stored in \ ``$?``\ .
+stored in ``$?``.
 
-Please use these functions, and \ **do not**\  use \ ``\`\```\ , \ ``qx//``\  or
-\ ``system``\ . These functions won't spawn a subshell, and thus are more
+Please use these functions, and \ **do not**\  use ``\`\```, ``qx//`` or
+``system``. These functions won't spawn a subshell, and thus are more
 secure.
 
 Private methods
@@ -49,90 +49,90 @@ Private methods
 
 
 
-- \ ``_initialize``\ 
+- ``_initialize``
  
  Initialize the process object. Arguments:
  
  
- - \ ``$command``\ 
+ - ``$command``
   
   A reference to an array with the command and its arguments.
   
  
  
- - \ ``%opts``\ 
+ - ``%opts``
   
   A hash with the command options:
   
   
-  - \ ``log``\ 
+  - ``log``
    
    The log object. If not supplied, no logging will be performed.
    
   
   
-  - \ ``timeout``\ 
+  - ``timeout``
    
    Maximum execution time, in seconds, for the command. If it's too slow
    it will be killed.
    
   
   
-  - \ ``pid``\ 
+  - ``pid``
    
    Reference to a scalar that will hold the child's PID.
    
   
   
-  - \ ``stdin``\ 
+  - ``stdin``
    
    Data to be passed to the child's stdin
    
   
   
-  - \ ``stdout``\ 
+  - ``stdout``
    
    Reference to a scalar that will have child's stdout
    
   
   
-  - \ ``stderr``\ 
+  - ``stderr``
    
    Reference to a scalar that will hold the child's stderr.
    
   
   
-  - \ ``keeps_state``\ 
+  - ``keeps_state``
    
    A boolean specifying whether the command respects the current system
-   state or not. A command that \ ``keeps_state``\  will be executed,
-   regardless of any value for \ ``NoAction``\ .
+   state or not. A command that ``keeps_state`` will be executed,
+   regardless of any value for ``NoAction``.
    
-   By default, commands modify the state and thus \ ``keeps_state``\  is
+   By default, commands modify the state and thus ``keeps_state`` is
    false.
    
   
   
-  - \ ``sensitive``\ 
+  - ``sensitive``
    
    A boolean, hashref or functionref specifying whether the arguments contain
    sensitive information (like passwords).
    
-   If \ ``sensitive``\  is true, the commandline will not be reported
-   (by default when \ ``log``\  option is used, the commandline is reported
+   If ``sensitive`` is true, the commandline will not be reported
+   (by default when ``log`` option is used, the commandline is reported
    with verbose level).
    
-   If \ ``sensitive``\  is a hash reference, a basic search (key) and replace (value) is performed.
+   If ``sensitive`` is a hash reference, a basic search (key) and replace (value) is performed.
    The keys and values are not interpreted as regexp patterns. The order of the search and
    replace is determined by the sorted values (this gives you some control over the order).
    Be aware that all occurences are replaced, and when e.g. weak passwords are used,
    it might reveal the password by replacing other parts of the commandline
-   (\ ``--password=password``\  might be replaced by \ ``--SECRET=SECRET``\ ,
+   (``--password=password`` might be replaced by ``--SECRET=SECRET``,
    thus revealing the weak password).
    Also, when a key is a substring of another key,
    it will reveal (parts of) sensitive data if the order is not correct.
    
-   If \ ``sensitive``\  is a function reference, the command arrayref is passed
+   If ``sensitive`` is a function reference, the command arrayref is passed
    as only argument, and the stringified return value is reported.
    
    
@@ -149,8 +149,8 @@ Private methods
    
    
    This does not cover command output. If the output (stdout and/or stderr) contains
-   sensitve information, make sure to handle it yourself via \ ``stdout``\  and/or \ ``stderr``\ 
-   options (or by using the \ ``output``\  method).
+   sensitve information, make sure to handle it yourself via ``stdout`` and/or ``stderr``
+   options (or by using the ``output`` method).
    
   
   
@@ -163,23 +163,23 @@ Private methods
 - _sensitive_commandline
  
  Generate the reported command line text, in particular it deals with
- the \ ``sensitive``\  attribute.
- When the sensitive attribute is not set, it returns \ ``stringify_command``\ .
+ the ``sensitive`` attribute.
+ When the sensitive attribute is not set, it returns ``stringify_command``.
  
  This method does not report, only returns text.
  
- See the description of the \ ``sensitive``\  option in \ ``_initialize``\ .
+ See the description of the ``sensitive`` option in ``_initialize``.
  
 
 
 - _LC_Process
  
- Run \ ``LC::Process``\  \ ``function``\  with arrayref arguments \ ``args``\ .
+ Run ``LC::Process`` ``function`` with arrayref arguments ``args``.
  
- \ ``noaction_value``\  is is the value to return with \ ``NoAction``\ .
+ ``noaction_value`` is is the value to return with ``NoAction``.
  
- \ ``msg``\  and \ ``postmsg``\  are used to construct log message
- \ ``<msg> command: <COMMAND>[ <postmsg>]``\ .
+ ``msg`` and ``postmsg`` are used to construct log message
+ ``<msg> command: <COMMAND>[ <postmsg>]``.
  
 
 
@@ -195,7 +195,7 @@ Public methods
  running on verbose mode, the exact command line and options are
  logged.
  
- Please, initialize the object with \ ``log => ''``\  if you are passing
+ Please, initialize the object with ``log => ''`` if you are passing
  confidential data as an argument to your command.
  
 
@@ -220,23 +220,23 @@ Public methods
 
 - stream_output
  
- Execute the commands using \ ``execute``\ , but the \ ``stderr``\  is
- redirected to \ ``stdout``\ , and \ ``stdout``\  is processed with \ ``process``\ 
+ Execute the commands using ``execute``, but the ``stderr`` is
+ redirected to ``stdout``, and ``stdout`` is processed with ``process``
  function. The total output is aggregated and returned when finished.
  
- Extra option is the process \ ``mode``\ . By default (or value \ ``undef``\ ),
- the new output is passed to \ ``process``\ . With mode \ ``line``\ , \ ``process``\ 
+ Extra option is the process ``mode``. By default (or value ``undef``),
+ the new output is passed to ``process``. With mode ``line``, ``process``
  is called for each line of output (i.e. separated by newline), and
  the remainder of the output when the process is finished.
  
- Another option are the process \ ``arguments``\ . This is a reference to the
- array of arguments passed to the \ ``process``\  function.
- The arguments are passed before the output to the \ ``process``\ : e.g.
- if \ ``arguments =\> [qw(a b)]``\  is used, the \ ``process``\  function is
- called like \ ``process(a,b,$newoutput)``\  (with \ ``$newoutput``\  the
+ Another option are the process ``arguments``. This is a reference to the
+ array of arguments passed to the ``process`` function.
+ The arguments are passed before the output to the ``process``: e.g.
+ if ``arguments =\> [qw(a b)]`` is used, the ``process`` function is
+ called like ``process(a,b,$newoutput)`` (with ``$newoutput`` the
  new streamed output)
  
- Example usage: during a \ ``yum install``\ , you want to stop the yum process
+ Example usage: during a ``yum install``, you want to stop the yum process
  when an error message is detected.
  
  
@@ -312,13 +312,13 @@ Public methods
  Checks if the first element of the
  array with the command and its arguments, is executable.
  
- It returns the result of the \ ``-x``\  test on the filename
- (or \ ``undef``\  if filename can't be resolved).
+ It returns the result of the ``-x`` test on the filename
+ (or ``undef`` if filename can't be resolved).
  
- If the filename is equal to the \ ``basename``\ , then the
+ If the filename is equal to the ``basename``, then the
  filename to test is resolved using the
- \ ``File::Which::which``\  method.
- (Use \ ``./script``\  if you want to check a script in the
+ ``File::Which::which`` method.
+ (Use ``./script`` if you want to check a script in the
  current working directory).
  
 
@@ -341,7 +341,7 @@ COMMON USE CASES
 
 
 On the next examples, no log is used. If you want your component to
-log the command, just add \ ``log => $self``\  to the object creation.
+log the command, just add ``log => $self`` to the object creation.
 
 Running a command
 =================
@@ -398,8 +398,8 @@ Create the contents to be piped:
      my $contents = "Hello, world";
 
 
-Create the command, specifying \ ``$contents``\  as the input, and
-\ ``execute``\  it:
+Create the command, specifying ``$contents`` as the input, and
+``execute`` it:
 
 
 .. code-block:: perl
@@ -466,6 +466,6 @@ it. But please, don't use it without a \ **good**\  reason:
      $cmd->execute();
 
 
-It will only work with the \ ``execute``\  method.
+It will only work with the ``execute`` method.
 
 
