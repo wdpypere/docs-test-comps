@@ -31,7 +31,7 @@ Public methods
   
  
  
- - Options (passed to \ ``Net::FreeIPA::API::api_host_add``\ ).
+ - Options (passed to ``Net::FreeIPA::API::api_host_add``).
   
   
   - ip_address: IP to configure DNS entry
@@ -48,19 +48,19 @@ Public methods
 
 - disable_host
  
- Disable a host with \ ``fqdn``\  hostname.
+ Disable a host with ``fqdn`` hostname.
  
 
 
 - remove_host
  
- Remove the host \ ``fqdn``\ .
+ Remove the host ``fqdn``.
  
 
 
 - host_passwd
  
- Reset and return the one-time password for host \ ``fqdn``\ .
+ Reset and return the one-time password for host ``fqdn``.
  Returns undef if the host already has a keytab or if it doesn't exist.
  
 

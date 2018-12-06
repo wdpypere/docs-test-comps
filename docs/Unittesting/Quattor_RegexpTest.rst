@@ -51,7 +51,7 @@ parse
 Parse the regexp file in 3 sections: description, flags and tests.
 
 Each section is converted in an instance attribute named 'description',
- 'flags' and 'tests'.
+'flags' and 'tests'.
 
 
 parse_description
@@ -60,14 +60,14 @@ parse_description
 
 Parse the description block and set the description attribute.
 
-First argument \ ``blocktxt``\  is the 1st block of the regexptest file.
+First argument ``blocktxt`` is the 1st block of the regexptest file.
 
 
 parse_flags
 ===========
 
 
-Parse the flags block and set \ ``flags``\  attribute
+Parse the flags block and set ``flags`` attribute
 
 Following flags are supported
 
@@ -119,8 +119,8 @@ Following flags are supported
  negate / negate = 0/1
  
  Negate all regexps, none of the regexps can match
- (is an alias for \ ``COUNT 0``\  on every regtest;
-  overwritten when COUNT is set for individual regexp)
+ (is an alias for ``COUNT 0`` on every regtest;
+ overwritten when COUNT is set for individual regexp)
  
 
 
@@ -128,8 +128,8 @@ Following flags are supported
  
  quote / quote = 0/1
  
- Whole tests block is 1 regular expression. With \ ``quote``\  flag set,
- \ ``multiline``\  flag is logged and ignored; \ ``ordered``\  flag is
+ Whole tests block is 1 regular expression. With ``quote`` flag set,
+ ``multiline`` flag is logged and ignored; ``ordered`` flag is
  meaningless (and silently ignored).
  
 
@@ -139,13 +139,13 @@ Following flags are supported
  
  - metaconfigservice=/some/path
   
-  Also any flag starting with \ ``/``\  is interpreted as \ ``metaconfigservice``\ 
+  Also any flag starting with ``/`` is interpreted as ``metaconfigservice``
   
  
  
  - renderpath=/some/path
   
-  Also any flag starting with \ ``//``\  is interpreted as \ ``renderpath``\ 
+  Also any flag starting with ``//`` is interpreted as ``renderpath``
   
  
  
@@ -184,39 +184,39 @@ Following flags are supported
  
 
 
-First argument \ ``blocktxt``\  is the 2nd block of the regexptest file.
+First argument ``blocktxt`` is the 2nd block of the regexptest file.
 
 
 parse_tests
 ===========
 
 
-Parse the tests block and set \ ``tests``\  attribute
+Parse the tests block and set ``tests`` attribute
 
-If the \ ``quote``\  flag is set, the whole tests block is
+If the ``quote`` flag is set, the whole tests block is
 seen as one big regular expression, and rendered text
 has to be an exact match, incl EOF newline etc.
 
-Without the \ ``quote``\  flag set, the tests are parsed line by line,
+Without the ``quote`` flag set, the tests are parsed line by line,
 and seen as one regexp per line.
 
-Lines starting with \ ``\s\*#{3} ``\  (trailing space!) are comments.
+Lines starting with `` \s\*#{3}  `` (trailing space!) are comments.
 
-Lines ending with \ ``\s#{3}``\  are interpreted as having options set.
+Lines ending with ``\s#{3}`` are interpreted as having options set.
 Supported options
 
 
 - COUNT
  
- \ ``COUNT \d+``\  is the exact number of matches
- (use \ ``COUNT 0 ``\ to make sure a line doesn't match).
+ The exact number of matches is ``COUNT \d+``
+ (use ``COUNT 0`` to make sure a line doesn't match).
  
  This is a global count, e.g. in ordered mode the count
  itself is not number of matches since previous test match.
  
 
 
-The first argument \ ``blocktxt``\  is the 3rd block of the regexptest file
+The first argument ``blocktxt`` is the 3rd block of the regexptest file
 
 
 test

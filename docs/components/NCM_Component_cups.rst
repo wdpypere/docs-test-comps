@@ -26,44 +26,44 @@ RESOURCES
 
 
 
-* \ ``/software/components/cups/defaultprinter``\  : string (optional)
+* ``/software/components/cups/defaultprinter`` : string (optional)
  
  Define the printer specified as the default printer. Printer must be listed in the printers list to be defined as
  the default printer.
  
 
 
-* \ ``/software/components/cups/nodetype``\  : string (optional)
+* ``/software/components/cups/nodetype`` : string (optional)
  
- Possible values are \ ``client``\  and \ ``server``\ . \ ``server``\  must be specified to start cupsd daemon.
- When \ ``client``\  is specified and cupsd is running, it is stopped.
+ Possible values are ``client`` and ``server``. ``server`` must be specified to start cupsd daemon.
+ When ``client`` is specified and cupsd is running, it is stopped.
  
- Default : \ ``server``\  on machine defined in \ ``options/ServerName``\  or if this option is not defined (server assumed
- to be localhost), \ ``client``\  on other machines.
+ Default : ``server`` on machine defined in ``options/ServerName`` or if this option is not defined (server assumed
+ to be localhost), ``client`` on other machines.
  
 
 
-* \ ``/software/components/cups/options/...``\  : nlist (optional)
+* ``/software/components/cups/options/...`` : nlist (optional)
  
  This ressource is a list of properties corresponding to option keywords supported by CUPS configuration
- files (\ ``cupsd.conf``\  and \ ``client.conf``\ ). See the configuration files provided by CUPS for the documentation about
+ files (``cupsd.conf`` and ``client.conf``). See the configuration files provided by CUPS for the documentation about
  each possible option. It is a nlist where the key is the option name and the value the option value.
  
  An empty value is interpreted as "undefine the option". If present, the matching configuration line is
  commented out. To define an option with an empty value, you need to specify a value made of spaces.
  
  Generally, options apply either to server configuration or to client configuration. There is
- one exception, \ ``ServerName``\ , which applies to both.
+ one exception, ``ServerName``, which applies to both.
  
- \ **Note**\  : not all the CUPS options are currently implemented. If you get a message \ ``unsupported option``\  when
+ \ **Note**\  : not all the CUPS options are currently implemented. If you get a message ``unsupported option`` when
  running this component, look at the comments at the beginning of component Perl source about how to add
  support for a new option.
  
 
 
-* \ ``/software/components/cups/options/ServerAlias``\  : list of string
+* ``/software/components/cups/options/ServerAlias`` : list of string
  
- This option sets the \ ``ServerAlias``\  option in cupsd configuration. It is interpreted as a list of string.
+ This option sets the ``ServerAlias`` option in cupsd configuration. It is interpreted as a list of string.
  
  Default : None
  
@@ -71,10 +71,10 @@ RESOURCES
  
 
 
-* \ ``/software/components/cups/options/ServerName``\  : string
+* ``/software/components/cups/options/ServerName`` : string
  
  This option is a special case. It is used by both client and server. In the server configuration, if not defined
- or defined as local host, it is converted to the local host name. In client configuration file, if \ ``ServerName``\ 
+ or defined as local host, it is converted to the local host name. In client configuration file, if ``ServerName``
  points to the current host, it is converted to "127.0.0.1" (CUPS default).
  
  Default : localhost (CUPS default)
@@ -83,14 +83,14 @@ RESOURCES
  
 
 
-* \ ``/software/components/cups/printers/...``\  : nlist (optional)
+* ``/software/components/cups/printers/...`` : nlist (optional)
  
  List of printers to configure if the current node is the server node. This resource is a nlist where the key is
  the printer name. In addition to standard CUPS printer options (look at lpadmin
  documentation), the following printer properties are defined :
  
  
- * \ ``delete``\  : boolean
+ * ``delete`` : boolean
   
   Allow to delete a printer previously defined. Deleting a non existent printer is not considered an error.
   
@@ -104,7 +104,7 @@ RESOURCES
   
  
  
- * \ ``enable``\  : boolean
+ * ``enable`` : boolean
   
   If this property is false, allow to disable a printer (without deleting it).
   
@@ -115,7 +115,7 @@ RESOURCES
   
  
  
- * \ ``printer``\  : string
+ * ``printer`` : string
   
   Define the printer/queue name on the server associated with this printer. For LPD, need to match a printcap entry.
   
@@ -123,7 +123,7 @@ RESOURCES
   
  
  
- * \ ``protocol``\  : string
+ * ``protocol`` : string
   
   Define the protocol part of the printer URI (CUPS backend).
   
@@ -131,7 +131,7 @@ RESOURCES
   
  
  
- * \ ``server``\  : string
+ * ``server`` : string
   
   Define the server part of the printer URI.
   

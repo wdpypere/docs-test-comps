@@ -19,9 +19,9 @@ DESCRIPTION
 
 The \ *accounts*\  component manages the local accounts on a machine. LDAP
 authentication depends on the LDAP configuration, which is handled by
-\ ``ncm-authconfig``\ .
+``ncm-authconfig``.
 
-Shadowing of passwords is also controlled by \ ``ncm-authconfig``\ .
+Shadowing of passwords is also controlled by ``ncm-authconfig``.
 
 
 *********
@@ -43,39 +43,39 @@ calling them, mainly :
 
 - ACCOUNTS_USER_HOME_ROOT
  
- defines default root for home directory (Default: \ ``/home``\ )
+ defines default root for home directory (Default: ``/home``)
  
 
 
 - ACCOUNTS_USER_CREATE_HOME
  
- defines if home directory must be created by default (Default: \ ``true``\ )
+ defines if home directory must be created by default (Default: ``true``)
  
 
 
 - ACCOUNTS_USER_AUTOGROUP
  
  defines if a group must be defined with the same name as the user, if no group
- has been explicitly specified (Default: \ ``true``\ ).
+ has been explicitly specified (Default: ``true``).
  
 
 
 - ACCOUNTS_USER_CHECK_GROUP
  
  defines if the default group must be created if it doesn't exist, with a gid
- equals to uid (Default: \ ``true``\ )
+ equals to uid (Default: ``true``)
  
 
 
 - ACCOUNTS_USER_COMMENT
  
- defines a default value for user comment (Default: \ ``Created by ncm-accounts``\ )
+ defines a default value for user comment (Default: ``Created by ncm-accounts``)
  
 
 
 - ACCOUNTS_GROUP_COMMENT
  
- defines a default value for group comment (Default: \ ``Created by ncm-accounts``\ )
+ defines a default value for group comment (Default: ``Created by ncm-accounts``)
  
 
 
@@ -84,7 +84,7 @@ create_accounts_from_db(userList:nlist, users:list:optional, accountType:optiona
 
 
 This function creates users or groups from a nlist containing user or group characteristics.
-It updates a structure_accounts (return value may be assigned to \ ``/software/components/accounts``\ ).
+It updates a structure_accounts (return value may be assigned to ``/software/components/accounts``).
 
 User/group characteristics must be provided as structure_userinfo/structure_groupinfo.
 
@@ -102,7 +102,7 @@ create_group(groupname:string, params:structure_groupinfo)
 
 This function creates a group, applying some defaults defined by variables and checking
 information consistency.
-It updates a structure_accounts (return value may be assigned to \ ``/software/components/accounts``\ ).
+It updates a structure_accounts (return value may be assigned to ``/software/components/accounts`` ).
 
 
 create_user(username:string, params:structure_userinfo)
@@ -110,8 +110,8 @@ create_user(username:string, params:structure_userinfo)
 
 
 This function creates a user, applying some defaults defined by variables and checking
- information consistency (e.g. group existence).
-It updates a structure_accounts (return value may be assigned to Default: \ ``/software/components/accounts``\ ).
+information consistency (e.g. group existence).
+It updates a structure_accounts (return value may be assigned to Default: ``/software/components/accounts``).
 
 
 keep_user_group(user_or_group:string or list of string)
@@ -120,7 +120,7 @@ keep_user_group(user_or_group:string or list of string)
 
 This functions adds a user or group to the kept_users or kept_groups resources. The
 argument can be a string or list of strings. The return value can be assigned to 
-\ ``/software/components/accounts/kept_users``\  or \ ``/software/components/accounts/kept_groups``\ .
+``/software/components/accounts/kept_users`` or ``/software/components/accounts/kept_groups``.
 
 
 
@@ -129,14 +129,14 @@ RESOURCES
 *********
 
 
-\ ``/software/components/accounts/rootpwd``\ 
+``/software/components/accounts/rootpwd``
 =============================================
 
 
 The crypted root password for the machine.
 
 
-\ ``/software/components/accounts/users``\ 
+``/software/components/accounts/users``
 ===========================================
 
 
@@ -229,7 +229,7 @@ mandatory. The available fields are:
 
 
 
-\ ``/software/components/accounts/groups``\ 
+``/software/components/accounts/groups``
 ============================================
 
 
@@ -258,14 +258,14 @@ name.  At least one field must be specified.
  are removed by \ **ncm-accounts**\  if they are not required members.
  
  Note 2: for users defined in the configuration the preferred way to add them to groups is by defining
- their \ ``groups``\  property.
+ their ``groups`` property.
  
 
 
 - replaceMembers (boolean)
  
  When true, current members of the group (if existing) are replaced by the groups defined in the
- configuration (coming from \ ``requiredMembers``\  and user groups). If false, groups from the
+ configuration (coming from ``requiredMembers`` and user groups). If false, groups from the
  configuration are merged with existing ones.
  
  D: false
@@ -273,7 +273,7 @@ name.  At least one field must be specified.
 
 
 
-\ ``/software/components/accounts/login_defs``\ 
+``/software/components/accounts/login_defs``
 ================================================
 
 
@@ -326,7 +326,7 @@ settings such as:
 
 
 
-\ ``/software/components/accounts/remove_unknown``\ 
+``/software/components/accounts/remove_unknown``
 ====================================================
 
 
@@ -334,13 +334,13 @@ Flag to indicate whether unknown accounts should be deleted.  The
 default is false.  The root account can never be removed.
 
 
-\ ``/software/components/accounts/preserved_accounts``\ 
+``/software/components/accounts/preserved_accounts``
 ========================================================
 
 
 This property may have 3 values: 'none', 'system', 'dyn_user_group'. It controls
-the accounts/groups that have to be preserved when \ ``remove_unknown``\  is true 
-(it has no effect when \ ``remove_unknown=false``\ ).
+the accounts/groups that have to be preserved when ``remove_unknown`` is true 
+(it has no effect when ``remove_unknown=false``).
 
 The effect of each possible value is:
 
@@ -362,8 +362,8 @@ The effect of each possible value is:
  `/etc/login.defs`, are preserved. The exact list of accounts preserved
  depends on UID/GID_MAX value. It is possible to use login_defs/uid_max and
  login_defs/gid_max properties to control the preserved ranges. Not that
- \ ``remove_unknown=true``\  with preserved_accounts=dyn_user_group and UID/GID_MAX
- set to the highest possible IDs is equivalent to \ ``remove_unknown=false``\ .
+ ``remove_unknown=true`` with preserved_accounts=dyn_user_group and UID/GID_MAX
+ set to the highest possible IDs is equivalent to ``remove_unknown=false``.
  
 
 
@@ -374,7 +374,7 @@ The effect of each possible value is:
  
 
 
-\ ** Default: **\  \ ``dyn_user_group``\ 
+Default: ``dyn_user_group``
 
 
 
@@ -391,7 +391,7 @@ When a local user has to belong to a group defined only on LDAP, a
 local group with the desired numerical ID is created.
 
 This group has the same name as the user ID. It will be removed on the
-next run of the component if \ ``remove_unknown``\  is set to true. This is
+next run of the component if ``remove_unknown`` is set to true. This is
 somewhat ugly, but doesn't affect the system behaviour at all, so it
 \ **won't**\  be fixed.
 
@@ -400,9 +400,9 @@ nsswitch.conf status
 ====================
 
 
-The component has been tested with \ ``files``\  as the primary source on
-\ ``/etc/nsswitch.conf``\  for \ ``group``\  and \ ``passwd``\ . Different settings may
+The component has been tested with ``files`` as the primary source on
+``/etc/nsswitch.conf`` for ``group`` and ``passwd``. Different settings may
 produce strange behaviour. These settings are not controlled by
-ncm-accounts but by \ ``ncm-authconfig``\ .
+ncm-accounts but by ``ncm-authconfig``.
 
 

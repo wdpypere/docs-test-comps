@@ -28,11 +28,11 @@ This metadata includes a checksum for each element in the profile, the
 Pan basic type, the element's name (that will help to reconstruct the path)...
 JSONProfileSimple only support 2 scalars: booleans and strings.
 
-Should be used by \ ``EDG::WP4::CCM::Fetch``\  only.
+Should be used by ``EDG::WP4::CCM::Fetch`` only.
 
 This module has only one method for the outside world:
 
-\ ``interpret_node``\ 
+``interpret_node``
 ======================
 
 

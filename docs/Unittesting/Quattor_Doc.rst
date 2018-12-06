@@ -40,9 +40,9 @@ Public methods
  - poddirs
   
   Array reference of directories to test for podfiles.
-  Default dirs are the relative paths \ ``target/lib/perl``\ 
-  and \ ``target/doc/pod``\  (use the exported \ ``@DOC_TEST_PATHS``\ 
-  list of defaults or resp. \ ``$DOC_TARGET_PERL``\  and <$DOC_TARGET_POD>)
+  Default dirs are the relative paths ``target/lib/perl``
+  and ``target/doc/pod`` (use the exported ``@DOC_TEST_PATHS``
+  list of defaults or resp. ``$DOC_TARGET_PERL`` and <$DOC_TARGET_POD>)
   
  
  
@@ -55,7 +55,7 @@ Public methods
  - emptypoddirs
   
   Array reference of poddirs that must be empty (or non-existing).
-  If a directory is in both \ ``poddirs``\  and \ ``emptypoddirs``\ ,
+  If a directory is in both ``poddirs`` and ``emptypoddirs``,
   if is considered an empty poddir.
   
  
@@ -63,7 +63,7 @@ Public methods
  - panpaths
   
   Array reference of paths that hold pan files to check for annotations.
-  Default is \ ``target/pan``\  (use the exported $DOC_TARGET_PAN).
+  Default is ``target/pan`` (use the exported $DOC_TARGET_PAN).
   
  
  
@@ -78,8 +78,8 @@ Public methods
 
 - pod_files
  
- Test all files from \ ``podfiles``\  and \ ``poddirs``\ .
- Based on \ ``all_pod_files_ok``\  from \ ``Test::Pod``\ .
+ Test all files from ``podfiles`` and ``poddirs``.
+ Based on ``all_pod_files_ok`` from ``Test::Pod``.
  
  Returns array refs of all ok and not ok files.
  

@@ -51,13 +51,13 @@ RESOURCES
 
 
 
-* \ ``/software/components/pam/active``\  : boolean
+* ``/software/components/pam/active`` : boolean
  
  Activates/deactivates the component.
  
 
 
-* \ ``/software/components/pam/modules``\  : nlist
+* ``/software/components/pam/modules`` : nlist
  
  Contains the list of supported PAM modules. For each module, the value
  should be an nlist containing that path for that named module. The
@@ -68,7 +68,7 @@ RESOURCES
  
 
 
-* \ ``/software/components/pam/services``\  : nlist
+* ``/software/components/pam/services`` : nlist
  
  Contains an nlist of services that are being controlled by this
  component. Any service controlled will have it's PAM configuration
@@ -97,7 +97,7 @@ RESOURCES
  
 
 
-* \ ``/software/components/pam/acls``\  : nlist
+* ``/software/components/pam/acls`` : nlist
  
  Every ACL managed by this component must be given a name
  and placed into this nlist. The value of the ACL is itself an nlist containing:
@@ -112,22 +112,22 @@ RESOURCES
  - file
   
   Optionally the filename for the ACL. If this is not provided, then a filename
-  will be generated based on \ ``/software/components/pam/acldir``\ , the name of
+  will be generated based on ``/software/components/pam/acldir``, the name of
   the ACL and the sense in which it is being used.
   
  
  
 
 
-* \ ``/software/components/pam/directory``\  : string
+* ``/software/components/pam/directory`` : string
  
- The directory where the config files will be placed, defaulting to \ ``/etc/pam.d``\ .
+ The directory where the config files will be placed, defaulting to ``/etc/pam.d``.
  
 
 
-* \ ``/software/components/pam/acldir``\  : string
+* ``/software/components/pam/acldir`` : string
  
- The directory where the ACL files will be placed, defaulting to \ ``/etc/pam.acls``\ .
+ The directory where the ACL files will be placed, defaulting to ``/etc/pam.acls``.
  
 
 
@@ -143,13 +143,13 @@ The component provides the following functions to assist in creating configurati
 - pam_add(SERVICE, TYPE, CONTROL, MODULE, OPTIONS?)
  
  This function should be applied to
- \ ``/software/components/pam/services``\ . A mapping is appended to the
+ ``/software/components/pam/services``. A mapping is appended to the
  appropriate point in the configuration tree. SERVICE refers to the
  service name being configured (e.g. "sshd"). TYPE refers to the module
  type (e.g. "auth"). CONTROL refers to the action that is taken when
  the PAM system encounters this mapping (e.g. "required"). MODULE is
  the name of a module listed within
- \ ``/software/components/pam/modules``\ . OPTIONS is an optional argument;
+ ``/software/components/pam/modules``. OPTIONS is an optional argument;
  if supplied it should be an nlist containing additional information
  for the PAM module.
  
@@ -157,7 +157,7 @@ The component provides the following functions to assist in creating configurati
 
 - pam_add_stack(SERVICE, TYPE, CONTROL, STACKEDSERVICE)
  
- This function is applied to \ ``/software/components/pam/services``\ .
+ This function is applied to ``/software/components/pam/services``.
  
  A mapping is appended to the appropriate point in the configuration
  tree. SERVICE refers to the service being configured (e.g. "sshd").
@@ -170,13 +170,13 @@ The component provides the following functions to assist in creating configurati
 
 - pam_add_listfile_acl(SERVICE, TYPE, CONTROL, SENSE, ITEMTYPE, ITEMS, ONERR?)
  
- This function should be applied to \ ``/software/components/pam/services``\ .
+ This function should be applied to ``/software/components/pam/services``.
  
 
 
 - pam_add_access_file(KEY, FILENAME, ALLOWPOS, ALLOWNEG)
  
- This function should be applied to \ ``/software/components/pam/access``\ .
+ This function should be applied to ``/software/components/pam/access``.
  See pam_access(8) for more details. Example:
  
  
@@ -190,9 +190,9 @@ The component provides the following functions to assist in creating configurati
 
 - pam_add_access_lastacl(KEY, PERMISSION, USERS, ORIGINS)
  
- This function should be applied to \ ``/software/components/pam/access``\ 
+ This function should be applied to ``/software/components/pam/access``
  and sets the value of the last ACL in the access file.
- Typically this is used to ensure last entry in the ACL is: \ ``"-:ALL:ALL"``\ .
+ Typically this is used to ensure last entry in the ACL is: ``"-:ALL:ALL"``.
  
 
 
@@ -205,7 +205,7 @@ The component provides the following functions to assist in creating configurati
 
 - pam_add_access_netgroup(KEY, NETGROUP)
  
- This function should be applied to \ ``/software/components/pam/access``\ .
+ This function should be applied to ``/software/components/pam/access``.
  It adds a netgroup the access file using the correct syntax. Example:
  
  
@@ -219,7 +219,7 @@ The component provides the following functions to assist in creating configurati
 
 - pam_add_access_user(KEY, USER)
  
- This function should be applied to \ ``/software/components/pam/access``\ .
+ This function should be applied to ``/software/components/pam/access``.
  It adds a user to the access file.
  
 
@@ -230,8 +230,8 @@ FILES MODIFIED
 **************
 
 
-The component pam modifies files within the \ ``/etc/pam.d``\  directory
-and the \ ``/etc/pam.acls``\  directory.
+The component pam modifies files within the ``/etc/pam.d`` directory
+and the ``/etc/pam.acls`` directory.
 
 
 ********

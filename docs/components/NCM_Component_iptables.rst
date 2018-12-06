@@ -18,7 +18,7 @@ DESCRIPTION
 
 
 The \ *IPTABLES*\  component perform the setup of the
-\ ``/etc/sysconfig/iptables``\  configuration file and restarts the
+``/etc/sysconfig/iptables`` configuration file and restarts the
 iptables service.
 
 
@@ -45,7 +45,7 @@ SYNOPSIS
  
  Duplicated entries in the component resource declaration are
  ignored. For each configured table, the chains are added to the
- \ ``/etc/sysconfig/iptables``\  in order, the relative order among the rules
+ ``/etc/sysconfig/iptables`` in order, the relative order among the rules
  belonging to the same chain is preserved.
  
 
@@ -57,7 +57,7 @@ RESOURCES
 
 
 \* << `/software/components/iptables`>>
-=====================================
+=======================================
 
 
 Top component description with the following parameters:
@@ -77,7 +77,7 @@ These parameters correspond to the three \ *IPTABLES*\  table types.
 ===============================
 
 
-The \ ``component_iptables_acls``\  type is defined as:
+The ``component_iptables_acls`` type is defined as:
 
 
 .. code-block:: perl
@@ -88,11 +88,11 @@ The \ ``component_iptables_acls``\  type is defined as:
    "ordered_rules" ? string with match (self, 'yes|no')
 
 
-The \ ``epilogue``\  parameter is the "COMMIT" command at the end of
+The ``epilogue`` parameter is the "COMMIT" command at the end of
 \ *IPTABLES*\  table description. Presently, no check is performed upon
 the content of this parameter.
 
-If \ ``ordered_rules``\  is set to yes, the ruleset will be written as
+If ``ordered_rules`` is set to yes, the ruleset will be written as
 ordered in the original array. If set to no is is unset (the default),
 the rules will be ordered by target type (first, all the "log" rules,
 then "accept","drop", and "logging").
@@ -102,7 +102,7 @@ then "accept","drop", and "logging").
 ===================================
 
 
-The \ ``component_iptables_preamble``\  type is defined as:
+The ``component_iptables_preamble`` type is defined as:
 
 
 .. code-block:: perl
@@ -113,7 +113,7 @@ The \ ``component_iptables_preamble``\  type is defined as:
 
 
 These parameters contain the global rules for stated rules,
-e.g. \ ``:INPUT ACCEPT [0:0]``\ . Presently, no check is performed upon the
+e.g. ``:INPUT ACCEPT [0:0]``. Presently, no check is performed upon the
 content of this parameters.
 
 
@@ -121,7 +121,7 @@ content of this parameters.
 ===============================
 
 
-The \ ``component_iptables_rule``\  type is defined as:
+The ``component_iptables_rule`` type is defined as:
 
 
 .. code-block:: perl
@@ -174,18 +174,11 @@ The \ ``component_iptables_rule``\  type is defined as:
 
 
 
-* The \ **"src_addr"**\  defines the packet source address, it can be an IP address, or a network in the form net/mask (CIDR notation or full mask), or a
-hostname (which will be resolved at configuration time, not at
-runtime) - all of which can be optionally prepended with "!" to negate
-the selection. To limit the ability of hackers/crackers to use your
-system for DDoS attacks it is worthwhile, for machines which are not
-being used as routers, to block packets which do not come from their
-IP address in the OUTPUT tables.
+* The \ **"src_addr"**\  defines the packet source address, it can be an IP address, or a network in the form net/mask (CIDR notation or full mask), or a hostname (which will be resolved at configuration time, not at runtime) - all of which can be optionally prepended with "!" to negate the selection. To limit the ability of hackers/crackers to use your system for DDoS attacks it is worthwhile, for machines which are not being used as routers, to block packets which do not come from their IP address in the OUTPUT tables.
 
 
 
-* The \ **"src_port"**\  defines the packet source port, it may be an integer or a service name included in the \ ``/etc/services``\  file. This parameter
-requires \ **"protocol"**\  also be set.
+* The \ **"src_port"**\  defines the packet source port, it may be an integer or a service name included in the ``/etc/services`` file. This parameter requires \ **"protocol"**\  also be set.
 
 
 
@@ -253,7 +246,7 @@ FILES
 *****
 
 
-\ ``/etc/sysconfig/iptables``\ :
+``/etc/sysconfig/iptables``:
 ================================
 
 
@@ -313,9 +306,7 @@ to SSH and allows all outgoing connections.
 
 
 
-* Lines 4-6 set the default policy for the input, output and forward chains. These can be set to either accept or drop. We don't recommend that you set
-these to log unless you have a very, very large disk. The COMMIT in
-line 7 is required by IPTables otherwise the rule set will be generated but not acted on.
+* Lines 4-6 set the default policy for the input, output and forward chains. These can be set to either accept or drop. We don't recommend that you set these to log unless you have a very, very large disk. The COMMIT in line 7 is required by IPTables otherwise the rule set will be generated but not acted on.
 
 
 
@@ -323,13 +314,11 @@ line 7 is required by IPTables otherwise the rule set will be generated but not 
 
 
 
-* Lines 15 to 20 sets a rule to allow related connections. These are used by multi-threaded applications, such as SSH, which move
-the connection to a random port after authentication.
+* Lines 15 to 20 sets a rule to allow related connections. These are used by multi-threaded applications, such as SSH, which move the connection to a random port after authentication.
 
 
 
-* Lines 21 to 28 creates a rule to allow the ssh service. The port number is set by the component querying \ ``/etc/services``\ .
-Alternatively you can specify the specific port number yourself.
+* Lines 21 to 28 creates a rule to allow the ssh service. The port number is set by the component querying ``/etc/services``. Alternatively you can specify the specific port number yourself.
 
 
 
@@ -402,7 +391,3 @@ GridFTP Server
                          "target", "accept",
                          "protocol", "tcp",
                          "dst_port", "2811"));
-
-
-
-

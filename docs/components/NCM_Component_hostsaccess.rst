@@ -9,7 +9,7 @@ NAME
 ****
 
 
-hostsaccess: NCM component to control \ ``/etc/hosts.allow``\  and \ ``hosts.deny``\  files.
+hostsaccess: NCM component to control ``/etc/hosts.allow`` and ``hosts.deny`` files.
 
 
 ***********
@@ -17,8 +17,8 @@ DESCRIPTION
 ***********
 
 
-The \ *hostsaccess*\  component manages the configuration files \ ``/etc/hosts.allow``\ 
-and \ ``/etc/hosts.deny``\ . Few checks are done on the given configuration to
+The \ *hostsaccess*\  component manages the configuration files ``/etc/hosts.allow``
+and ``/etc/hosts.deny``. Few checks are done on the given configuration to
 allow all of the supported wildcarding.
 
 
@@ -28,7 +28,7 @@ RESOURCES
 
 
 
-* \ ``/software/components/hostsaccess/allow``\ 
+* ``/software/components/hostsaccess/allow``
  
  A list where each entry consists of a named list with the keys: daemon
  and host.  Both of the keys take strings as values and hence can
@@ -40,7 +40,7 @@ RESOURCES
  
 
 
-* \ ``/software/components/hostsaccess/deny``\ 
+* ``/software/components/hostsaccess/deny``
  
  A list where each entry consists of a named list with the keys: daemon
  and host.  Both of the keys take strings as values and hence can

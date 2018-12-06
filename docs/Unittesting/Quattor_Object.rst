@@ -15,7 +15,7 @@ add_loghist
 ===========
 
 
-Add a log \ ``message``\  for \ ``type``\  to the log history.
+Add a log ``message`` for ``type`` to the log history.
 
 
 reset_loghist
@@ -29,7 +29,7 @@ loghist_get
 ===========
 
 
-Return the array of log messages for \ ``type``\ .
+Return the array of log messages for ``type``.
 
 
 info
@@ -105,14 +105,14 @@ gather_pan
 ==========
 
 
-Walk the \ ``panpath``\  and gather all pan templates.
+Walk the ``panpath`` and gather all pan templates.
 
-A pan template is a text file with an \ ``.pan``\  extension;
-they are considered 'invalid' when the \ ``pannamespace``\  is not
+A pan template is a text file with an ``.pan`` extension;
+they are considered 'invalid' when the ``pannamespace`` is not
 correct.
 
 Returns a reference to hash with key path
-(relative to \ ``relpath``\ ) and value hashreference
+(relative to ``relpath``) and value hashreference
 with 'type' of pan templates and 'expected' relative filepath;
 and an arrayreference to the invalid pan templates.
 
@@ -121,16 +121,16 @@ get_template_library_core
 =========================
 
 
-Return path to \ ``template-library-core``\  to allow "include 'pan/types';"
+Return path to ``template-library-core`` to allow "include 'pan/types';"
 and friends being used in the templates (in particular the schema).
 
-By default, the \ ``template-library-core``\  is expected to be in the
+By default, the ``template-library-core`` is expected to be in the
 parent or parent of parent directory as the current working directory.
 
-One can also specify the location via the \ ``QUATTOR_TEST_TEMPLATE_LIBRARY_CORE``\ 
+One can also specify the location via the ``QUATTOR_TEST_TEMPLATE_LIBRARY_CORE``
 environment variable.
 
-When \ ``notok_on_missing``\  is true (or undefined), \ ``notok``\  is called (i.e. test fails).
+When ``notok_on_missing`` is true (or undefined), ``notok`` is called (i.e. test fails).
 
 
 make_target_pan_path

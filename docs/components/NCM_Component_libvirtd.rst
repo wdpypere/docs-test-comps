@@ -98,19 +98,19 @@ authn
 This section contains the authentication parameters.
 
 
-* auth_unix_ro: \ ``'none|sasl|polkit'``\ , default anyone
+* auth_unix_ro: ``'none|sasl|polkit'``, default anyone
 
 
 
-* auth_unix_rw: \ ``'none|sasl|polkit'``\ , default polkit
+* auth_unix_rw: ``'none|sasl|polkit'``, default polkit
 
 
 
-* auth_tcp' ? \ ``'none|sasl'``\ , should be 'sasl' for production
+* auth_tcp' ? ``'none|sasl'``, should be 'sasl' for production
 
 
 
-* auth_tls' ? \ ``'none|sasl'``\ 
+* auth_tls' ? ``'none|sasl'``
 
 
 

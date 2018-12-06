@@ -40,10 +40,10 @@ DESCRIPTION
 ***********
 
 
-The class \ ``EDG::WP4::CCM::CacheManager::Element``\  implements those methods
-that are common to all elements and represents a \ ``Property``\ .
+The class ``EDG::WP4::CCM::CacheManager::Element`` implements those methods
+that are common to all elements and represents a ``Property``.
 The class <EDG::WP4::CCM::CacheManager::Element> is a base class for
-\ ``EDG::WP4::CCM::CacheManager::Resource``\ , which has additional methods.
+``EDG::WP4::CCM::CacheManager::Resource``, which has additional methods.
 
 
 - new($config, $ele_path)
@@ -112,7 +112,7 @@ The class <EDG::WP4::CCM::CacheManager::Element> is a base class for
 
 - getType()
  
- Returns the element's type, that is, one of the \ ``TYPE_\*``\  constans
+ Returns the element's type, that is, one of the ``TYPE_\*`` constans
  
 
 
@@ -170,9 +170,9 @@ The class <EDG::WP4::CCM::CacheManager::Element> is a base class for
  
  Note that links cannot be followed.
  
- If \ ``depth``\  is specified (and not \ ``undef``\ ), only return the next \ ``depth``\ 
+ If ``depth`` is specified (and not ``undef``), only return the next ``depth``
  levels of nesting (and use the Element instances as values).
- A \ ``depth == 0``\  is the element itself, \ ``depth == 1``\  is the first level, ...
+ A ``depth == 0`` is the element itself, ``depth == 1`` is the first level, ...
  
  Named options
  
@@ -233,7 +233,7 @@ The class <EDG::WP4::CCM::CacheManager::Element> is a base class for
  
  
  The arrayref of anonymous methods are applied as follows:
- convert methods \ ``[a, b, c]``\  will produce \ ``$new = c(b(a($old)))``\ .
+ convert methods ``[a, b, c]`` will produce ``$new = c(b(a($old)))``.
  (An exception is thrown if these methods are not code references).
  
 

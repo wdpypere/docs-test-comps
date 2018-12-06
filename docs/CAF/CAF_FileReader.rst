@@ -33,19 +33,19 @@ This class should be used whenever a file is to be opened for reading,
 and no modifications are expected.
 
 Printing to this file is allowed, but changes will be discarded (in
-effect, the \ ``FileEditor``\  is \ ``cancel``\ -ed.
+effect, the ``FileEditor`` is ``cancel``-ed.
 
 
 - new
  
- Create a new instance: open the file \ ``$fn``\ , read it,
- seek to the beginning and \ ``cancel``\  any (future) changes.
+ Create a new instance: open the file ``$fn``, read it,
+ seek to the beginning and ``cancel`` any (future) changes.
  
 
 
 - open
  
- Synonym for \ ``new()``\ 
+ Synonym for ``new()``
  
 
 

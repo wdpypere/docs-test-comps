@@ -19,7 +19,7 @@ DESCRIPTION
 
 The \ *grub*\  component manages the configuration of grub.
 
-Most of the configuration is handled via the \ ``grubby``\  tool
+Most of the configuration is handled via the ``grubby`` tool
 (which supports grub2).
 
 Some configuration like serial console settings and password
@@ -32,14 +32,14 @@ RESOURCES
 *********
 
 
-Besides \ ``/software/component/grub``\ , following resources are used:
+Besides ``/software/component/grub``, following resources are used:
 
 
-- \ ``/system/kernel/version``\  for setting the default kernel
+- ``/system/kernel/version`` for setting the default kernel
 
 
 
-- \ ``/hardware/console/serial``\  for serial console configuration
+- ``/hardware/console/serial`` for serial console configuration
 
 
 
@@ -110,10 +110,10 @@ Methods
 
 - grubby_args_options
  
- Given string \ ``args``\ , split and convert into grubby commandline options
+ Given string ``args``, split and convert into grubby commandline options
  to add and/or remove the arguments.
  Arguments prefixed with '-' are scheduled for removal
- If \ ``multiboot``\  is true, generate multiboot commandline options
+ If ``multiboot`` is true, generate multiboot commandline options
  
  Returns a list of options.
  
@@ -122,7 +122,7 @@ Methods
 - password
  
  Configure the grub password by editing the grub conf via filehandle
- \ ``grub_fh``\  (a \ ``CAF::FileEditor``\  instance,
+ ``grub_fh`` (a ``CAF::FileEditor`` instance,
  which is not closed in this method).
  
  Returns SUCCESS on succes, undef otherwise.
@@ -131,9 +131,9 @@ Methods
 
 - serial_console
  
- Configure the grub serial console settings (\ ``ttyS``\  devices only)
- by editing the grub conf via filehandle \ ``grub_fh``\ 
- (a \ ``CAF::FileEditor``\  instance, which is not closed in this method).
+ Configure the grub serial console settings (``ttyS`` devices only)
+ by editing the grub conf via filehandle ``grub_fh``
+ (a ``CAF::FileEditor`` instance, which is not closed in this method).
  
  Returns undef on failure, the console kernel commandline option
  (or empty string if none is to be configured) on success.
@@ -142,7 +142,7 @@ Methods
 
 - main_section_offset
  
- Given a grub config filehandle (a \ ``CAF::FileEditor``\  instance),
+ Given a grub config filehandle (a ``CAF::FileEditor`` instance),
  return the startposition of the main section
  i.e. after the header comments (if any).
  
@@ -157,13 +157,13 @@ Methods
 
 - grubby
  
- Run \ ``grubby``\  with arraref \ ``args``\  via \ ``CAF::Proces``\  using the
- \ ``output``\  method and return the output.
+ Run ``grubby`` with arraref ``args`` via ``CAF::Proces`` using the
+ ``output`` method and return the output.
  
  Has following options
  
  
- - proc: return new \ ``CAF::Process``\  instance with \ ``args``\  (i.e. without execute/output)
+ - proc: return new ``CAF::Process`` instance with ``args`` (i.e. without execute/output)
  
  
  
@@ -185,7 +185,7 @@ Methods
 
 - set_default
  
- Set default kernel to \ ``new``\  kernelpath and verify by (re)checking the default kernel.
+ Set default kernel to ``new`` kernelpath and verify by (re)checking the default kernel.
  
  Returns success on success; on failure, return either
  
@@ -204,21 +204,21 @@ Methods
 
 - configure_default
  
- Configure the new default kernel to be \ ``new``\ .
- If this fails and \ ``mbnew``\  exists, try to set \ ``mbnew``\  as default.
+ Configure the new default kernel to be ``new``.
+ If this fails and ``mbnew`` exists, try to set ``mbnew`` as default.
  
- If neither \ ``new``\  nor \ ``mbnew``\  are successful,
- report an error and revert to \ ``original``\ .
+ If neither ``new`` nor ``mbnew`` are successful,
+ report an error and revert to ``original``.
  
 
 
 - kernel
  
- Configure boot entry using \ ``kernel``\  hashref, the kernel \ ``prefix``\ 
- and optional serial console kernel commandline option \ ``cons``\ .
+ Configure boot entry using ``kernel`` hashref, the kernel ``prefix``
+ and optional serial console kernel commandline option ``cons``.
  
- Any serial console settings in the \ ``kernelargs``\  attribute
- is replaced by \ ``cons``\  (when defined).
+ Any serial console settings in the ``kernelargs`` attribute
+ is replaced by ``cons`` (when defined).
  
 
 
@@ -241,7 +241,7 @@ Methods
  Set pxeboot as first bootorder.
  Returns SUCCESS on success, undef otherwise.
  
- Currently only supported on UEFI systems using \ ``efibootmgr``\ . On other systems,
+ Currently only supported on UEFI systems using ``efibootmgr``. On other systems,
  SUCCESS is also returned (but nothing is done).
  
 
@@ -251,12 +251,12 @@ Methods
  Updates the grub.conf configuration file using grubby according to a
  list of kernels described in the profile.
  
- Sets the default kernel to that specified in \ ``/system/kernel/version``\ .
+ Sets the default kernel to that specified in ``/system/kernel/version``.
  
  Supports
  
  
- - serial console configuration specified in \ ``/hardware/console/serial``\ .
+ - serial console configuration specified in ``/hardware/console/serial``.
  
  
  

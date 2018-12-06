@@ -9,7 +9,7 @@ NAME
 ****
 
 
-\ ``CAF::Download::LWP``\  class to use \ ``LWP``\  (and \ ``Net::HTTPS``\ ).
+``CAF::Download::LWP`` class to use ``LWP`` (and ``Net::HTTPS``).
 
 
 ***********
@@ -17,23 +17,22 @@ DESCRIPTION
 ***********
 
 
-\ ``CAF::Download::LWP``\  prepares \ ``LWP``\  (and \ ``Net::HTTPS``\ ) and
-provides interface to \ ``LWP::UserAgent``\ .
+``CAF::Download::LWP`` prepares ``LWP`` (and ``Net::HTTPS``) and
+provides interface to ``LWP::UserAgent``.
 
 Remarks wrt SSL/TLS:
 
 
-- If LWP is recent enough (v8.333, e.g. on EL6+), the choice of SSL module will be the system default
-(typically \ ``IO::Socket::SSL``\  when available, \ ``Net::SSL``\  otherwise).
+- If LWP is recent enough (v8.333, e.g. on EL6+), the choice of SSL module will be the system default (typically ``IO::Socket::SSL`` when available, ``Net::SSL`` otherwise).
  
  The usual environment variable will not be honoured
  (this module will typically be executed in a minimal environment anyway).
  
- When LWP is too old, \ ``Net::SSL``\  will be forced (e.g. on EL5).
+ When LWP is too old, ``Net::SSL`` will be forced (e.g. on EL5).
  
 
 
-- If LWP is recent enough and \ ``IO::Socket::SSL``\  is the default, hostname verification is forced.
+- If LWP is recent enough and ``IO::Socket::SSL`` is the default, hostname verification is forced.
 
 
 
@@ -44,16 +43,16 @@ METHODS
 
 
 
-- \ ``_initialize``\ 
+- ``_initialize``
  
  Initialize the object.
  
  Optional arguments:
  
  
- - \ ``log``\ 
+ - ``log``
   
-  A \ ``CAF::Reporter``\  object to log to.
+  A ``CAF::Reporter`` object to log to.
   
  
  
@@ -61,9 +60,9 @@ METHODS
 
 - _get_ua
  
- Prepare the environment and initialise \ ``LWP::UserAgent``\ .
- Best-effort to handle ssl setup, \ ``Net::SSL``\  vs \ ``IO::Socket::SSL``\ 
- and \ ``verify_hostname``\ .
+ Prepare the environment and initialise ``LWP::UserAgent``.
+ Best-effort to handle ssl setup, ``Net::SSL`` vs ``IO::Socket::SSL``
+ and ``verify_hostname``.
  
  Example usage
  
@@ -78,7 +77,7 @@ METHODS
       ...
  
  
- Returns the \ ``LWP::UserAgent``\  instance or undef.
+ Returns the ``LWP::UserAgent`` instance or undef.
  
  Options
  
@@ -111,10 +110,9 @@ METHODS
 
 - _do_ua
  
- Initialise \ ``LWP::UserAgent``\  using \ ``_get_ua``\  method
- and run \ ``method``\  with arrayref \ ``args``\ .
+ Initialise ``LWP::UserAgent`` using ``_get_ua`` method
+ and run ``method`` with arrayref ``args``.
  
- All named options are passed to \ ``_get_ua``\ .
+ All named options are passed to ``_get_ua``.
  
-
 

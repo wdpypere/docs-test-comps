@@ -7,74 +7,74 @@ Types
 
  - **/software/components/metaconfig/keepalived_service_global**
     - Description: The global_defs section
-    - */software/components/metaconfig//keepalived_service_global/router_id*
+    - */software/components/metaconfig/keepalived_service_global/router_id*
         - Required
         - Type: string
  - **/software/components/metaconfig/keepalived_service_vrrpscript**
     - Description: The vrrp_script section
-    - */software/components/metaconfig//keepalived_service_vrrpscript/name*
+    - */software/components/metaconfig/keepalived_service_vrrpscript/name*
         - Required
         - Type: string
-    - */software/components/metaconfig//keepalived_service_vrrpscript/script*
+    - */software/components/metaconfig/keepalived_service_vrrpscript/script*
         - Required
         - Type: string
-    - */software/components/metaconfig//keepalived_service_vrrpscript/interval*
+    - */software/components/metaconfig/keepalived_service_vrrpscript/interval*
         - Required
         - Type: long
         - Default value: 2
-    - */software/components/metaconfig//keepalived_service_vrrpscript/weight*
+    - */software/components/metaconfig/keepalived_service_vrrpscript/weight*
         - Required
         - Type: long
         - Default value: 2
  - **/software/components/metaconfig/keepalived_service_vip**
     - Description: The virtual_ipaddress section of the vrrp_instance
-    - */software/components/metaconfig//keepalived_service_vip/ipaddress*
+    - */software/components/metaconfig/keepalived_service_vip/ipaddress*
         - Required
         - Type: string
-    - */software/components/metaconfig//keepalived_service_vip/interface*
+    - */software/components/metaconfig/keepalived_service_vip/interface*
         - Required
         - Type: string
  - **/software/components/metaconfig/keepalived_service_vrrpinstance_config**
     - Description: The vrrp_instance configuration
-    - */software/components/metaconfig//keepalived_service_vrrpinstance_config/virtual_router_id*
+    - */software/components/metaconfig/keepalived_service_vrrpinstance_config/virtual_router_id*
         - Required
         - Type: long
-    - */software/components/metaconfig//keepalived_service_vrrpinstance_config/advert_int*
+    - */software/components/metaconfig/keepalived_service_vrrpinstance_config/advert_int*
         - Required
         - Type: long
         - Default value: 1
-    - */software/components/metaconfig//keepalived_service_vrrpinstance_config/priority*
+    - */software/components/metaconfig/keepalived_service_vrrpinstance_config/priority*
         - Required
         - Type: long
         - Default value: 100
-    - */software/components/metaconfig//keepalived_service_vrrpinstance_config/state*
+    - */software/components/metaconfig/keepalived_service_vrrpinstance_config/state*
         - Required
         - Type: string
-    - */software/components/metaconfig//keepalived_service_vrrpinstance_config/interface*
+    - */software/components/metaconfig/keepalived_service_vrrpinstance_config/interface*
         - Required
         - Type: string
  - **/software/components/metaconfig/keepalived_service_vrrpinstance**
     - Description: The vrrp_instance section
-    - */software/components/metaconfig//keepalived_service_vrrpinstance/name*
+    - */software/components/metaconfig/keepalived_service_vrrpinstance/name*
         - Required
         - Type: string
-    - */software/components/metaconfig//keepalived_service_vrrpinstance/config*
+    - */software/components/metaconfig/keepalived_service_vrrpinstance/config*
         - Required
         - Type: keepalived_service_vrrpinstance_config
-    - */software/components/metaconfig//keepalived_service_vrrpinstance/virtual_ipaddresses*
+    - */software/components/metaconfig/keepalived_service_vrrpinstance/virtual_ipaddresses*
         - Required
         - Type: keepalived_service_vip
-    - */software/components/metaconfig//keepalived_service_vrrpinstance/track_scripts*
+    - */software/components/metaconfig/keepalived_service_vrrpinstance/track_scripts*
         - Required
         - Type: string
  - **/software/components/metaconfig/keepalived_service**
     - Description: Keepalived config See: http://keepalived.org/
-    - */software/components/metaconfig//keepalived_service/global_defs*
+    - */software/components/metaconfig/keepalived_service/global_defs*
         - Required
         - Type: keepalived_service_global
-    - */software/components/metaconfig//keepalived_service/vrrp_scripts*
+    - */software/components/metaconfig/keepalived_service/vrrp_scripts*
         - Required
         - Type: keepalived_service_vrrpscript
-    - */software/components/metaconfig//keepalived_service/vrrp_instances*
+    - */software/components/metaconfig/keepalived_service/vrrp_instances*
         - Required
         - Type: keepalived_service_vrrpinstance

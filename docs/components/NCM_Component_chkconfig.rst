@@ -23,9 +23,9 @@ SYNOPSIS
  Updates runlevel information for system services by using \ **chkconfig**\  that are
  defined in `/software/components/chkconfig`/.
  
- Also starts/stops those services that have option \ ``startstop``\  set to true in
+ Also starts/stops those services that have option ``startstop`` set to true in
  and have one of the following options specified:
- \ ``add``\  or \ ``del``\  option is true, \ ``on``\  or \ ``off``\  option is specified either
+ ``add`` or ``del`` option is true, ``on`` or ``off`` option is specified either
  without specific runlevels, or with runlevel value that contains the current runlevel.
  
  The optional \ *default*\  key decides what will happen with services that are not explicitly
@@ -47,13 +47,13 @@ RESOURCES
 
 
 
-- \ ``/software/components/chkconfig/active : boolean``\ 
+- ``/software/components/chkconfig/active : boolean``
  
  activates/deactivates the component.
  
 
 
-- \ ``/software/components/chkconfig/default : string ("off", "ignore")``\ 
+- ``/software/components/chkconfig/default : string ("off", "ignore")``
  
  says what happens if no explicit configuration is found for the
  service. Certain services (like \ ``network, messagebus, haldaemon,
@@ -62,34 +62,34 @@ RESOURCES
  
 
 
-- \ ``/software/components/chkconfig/service/<service>/off : string ("[0-7]\*")``\ 
+- ``/software/components/chkconfig/service/<service>/off : string ("[0-7]\*")``
 
 
 
-- \ ``/software/components/chkconfig/service/<service>/on : string ("[0-7]\*")``\ 
+- ``/software/components/chkconfig/service/<service>/on : string ("[0-7]\*")``
  
  Sets the service <service> on/off on specified run levels. The run
  levels are specified as string of numbers, the same way as with
- \ ``chkconfig``\ -command. If the string is empty, system default is taken
- (see \ ``man chkconfig(8)``\  for exact details).
+ ``chkconfig``-command. If the string is empty, system default is taken
+ (see ``man chkconfig(8)`` for exact details).
  
 
 
-- \ ``/software/components/chkconfig/service/<service>/name : string``\ 
+- ``/software/components/chkconfig/service/<service>/name : string``
  
  If set, the value is used as the name of the service instead of using the
  \ *service*\  path as a name.
  
 
 
-- \ ``/software/components/chkconfig/service/<service>/reset : string ("[0-7]\*")``\ 
+- ``/software/components/chkconfig/service/<service>/reset : string ("[0-7]\*")``
  
  Resets the service on defined run levels. Reset with no run levels specified
  affects every run level.
  
 
 
-- \ ``/software/components/chkconfig/service/<service>/add : boolean``\ 
+- ``/software/components/chkconfig/service/<service>/add : boolean``
  
  If the value is true, adds service for management by chkconfig (if not
  already the case), otherwise the option is ignored. Please note that
@@ -102,14 +102,14 @@ RESOURCES
  
 
 
-- \ ``/software/components/chkconfig/service/<service>/del : boolean``\ 
+- ``/software/components/chkconfig/service/<service>/del : boolean``
  
  If the value is true, removes service from management by chkconfig, otherwise
  the option is ignored.
  
 
 
-- \ ``/software/components/chkconfig/service/<service>/startstop : boolean``\ 
+- ``/software/components/chkconfig/service/<service>/startstop : boolean``
  
  If true, the service is also started/stopped when the service is
  added, removed or turned off/on. The component tries to check whether

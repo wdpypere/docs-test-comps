@@ -27,7 +27,7 @@ Resources
 
 
 `/software/components/gip2/basedir` : string (required)
-=====================================================
+=======================================================
 
 
 Base directory for gip components (must contain directories plugin/, provider/...)
@@ -36,7 +36,7 @@ Default : none.
 
 
 `/software/components/gip2/group` : string (required)
-===================================================
+=====================================================
 
 
 Group GIP account belongs to. Used to define group ownership of GIP directories and files.
@@ -45,7 +45,7 @@ Default : root.
 
 
 `/software/components/gip2/flavor` : string (required)
-====================================================
+======================================================
 
 
 Define GIP flavor used. Can be 'lcg' org 'glite'.
@@ -54,7 +54,7 @@ Default : glite.
 
 
 `/software/components/gip2/ldif` : nlist (optional)
-=================================================
+===================================================
 
 
 Named list of LDIF files used by GIP plugins. Key is an arbitrary name, value is a nlist defiining a set of LDIF
@@ -119,7 +119,7 @@ Default : none.
 
 
 `/software/components/gip2/ldifConfEntries` : nlist (optional)
-============================================================
+==============================================================
 
 
 It is a nlist of 'entries' (as defined under `/software/components/gip2/ldif`). The key must match a file name as
@@ -133,7 +133,7 @@ Default: none.
 
 
 `/software/components/gip2/plugin` : nlist (optional)
-===================================================
+=====================================================
 
 
 Named list of GIP plugins (plugins are associated with a static LDIF file). Key the plugin name, value is the plugin script.
@@ -142,7 +142,7 @@ Default : none.
 
 
 `/software/components/gip2/provider` : nlist (optional)
-=====================================================
+=======================================================
 
 
 Named list of GIP providers. Key the provider name, value is the provider script.
@@ -151,7 +151,7 @@ Default : none.
 
 
 `/software/components/gip2/staticInfoCmd` : string (optional)
-===========================================================
+=============================================================
 
 
 Path of the command to execute to transform entries into a LDIF file if none is defined in the 
@@ -163,7 +163,7 @@ Default : none.
 
 
 `/software/components/gip2/scripts` : nlist (optional)
-====================================================
+======================================================
 
 
 Named list of GIP scripts (usually used to launch lcg/glite-info-generic with the appropriate configuration.
@@ -173,7 +173,7 @@ Default : none.
 
 
 `/software/components/gip2/stubs` : nlist (optional)
-==================================================
+====================================================
 
 
 Named list of static LDIF files produced without a Glue template. Mainly used to add intermediate LDIF entries
@@ -186,7 +186,7 @@ Default : none.
 
 
 `/software/components/gip2/external` : list of strings (optional)
-===============================================================
+=================================================================
 
 
 List of files/scripts that will be trusted as if managed by the component.
@@ -195,7 +195,7 @@ Default : none.
 
 
 `/software/components/gip2/user` : string (required)
-==================================================
+====================================================
 
 
 Account GIP runs under. Used to define user ownership of GIP directories and files.
@@ -204,7 +204,7 @@ Default : none.
 
 
 `/software/components/gip2/workDirs` : list of strings (optional)
-===============================================================
+=================================================================
 
 
 List of working directories used by GIP that must be configured to be owned and writable by GIP user.
@@ -213,7 +213,7 @@ Default : none.
 
 
 `/software/components/gip2/etcDir` : string (optional)
-====================================================
+======================================================
 
 
 Location of the "etc" directory.
@@ -222,7 +222,7 @@ Default : basedir/etc (LCG) or basedir/etc/gip (gLite)
 
 
 `/software/components/gip2/ldifDir` : string (optional)
-=====================================================
+=======================================================
 
 
 Location of the "ldif" directory.
@@ -231,7 +231,7 @@ Default : basedir/ldif (LCG) or basedir/etc/ldif (gLite)
 
 
 `/software/components/gip2/pluginDir` : string (optional)
-=======================================================
+=========================================================
 
 
 Location of the "plugin" directory.
@@ -240,7 +240,7 @@ Default : basedir/plugin (LCG) or basedir/etc/plugin (gLite)
 
 
 `/software/components/gip2/providerDir` : string (optional)
-=========================================================
+===========================================================
 
 
 Location of the "provider" directory.
@@ -295,4 +295,3 @@ SEE ALSO
 
 
 ncm-ncd(1)
-

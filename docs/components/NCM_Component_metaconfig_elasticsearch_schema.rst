@@ -6,122 +6,122 @@ Types
 -----
 
  - **/software/components/metaconfig/elasticsearch_cluster**
-    - */software/components/metaconfig//elasticsearch_cluster/name*
+    - */software/components/metaconfig/elasticsearch_cluster/name*
         - Optional
         - Type: string
  - **/software/components/metaconfig/elasticsearch_node**
-    - */software/components/metaconfig//elasticsearch_node/master*
+    - */software/components/metaconfig/elasticsearch_node/master*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//elasticsearch_node/name*
+    - */software/components/metaconfig/elasticsearch_node/name*
         - Optional
         - Type: string
-    - */software/components/metaconfig//elasticsearch_node/rack*
+    - */software/components/metaconfig/elasticsearch_node/rack*
         - Optional
         - Type: string
-    - */software/components/metaconfig//elasticsearch_node/data*
+    - */software/components/metaconfig/elasticsearch_node/data*
         - Optional
         - Type: boolean
  - **/software/components/metaconfig/elasticsearch_index_search**
-    - */software/components/metaconfig//elasticsearch_index_search/showlog*
+    - */software/components/metaconfig/elasticsearch_index_search/showlog*
         - Optional
         - Type: string
  - **/software/components/metaconfig/elasticsearch_translog**
-    - */software/components/metaconfig//elasticsearch_translog/flush_threshold_ops*
+    - */software/components/metaconfig/elasticsearch_translog/flush_threshold_ops*
         - Required
         - Type: long
         - Default value: 5000
  - **/software/components/metaconfig/elasticsearch_index**
-    - */software/components/metaconfig//elasticsearch_index/number_of_shards*
+    - */software/components/metaconfig/elasticsearch_index/number_of_shards*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//elasticsearch_index/number_of_replicas*
+    - */software/components/metaconfig/elasticsearch_index/number_of_replicas*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//elasticsearch_index/search*
+    - */software/components/metaconfig/elasticsearch_index/search*
         - Optional
         - Type: elasticsearch_index_search
-    - */software/components/metaconfig//elasticsearch_index/refresh*
+    - */software/components/metaconfig/elasticsearch_index/refresh*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//elasticsearch_index/translog*
+    - */software/components/metaconfig/elasticsearch_index/translog*
         - Optional
         - Type: elasticsearch_translog
  - **/software/components/metaconfig/elasticsearch_recovery**
-    - */software/components/metaconfig//elasticsearch_recovery/max_size_per_sec*
+    - */software/components/metaconfig/elasticsearch_recovery/max_size_per_sec*
         - Required
         - Type: long
         - Default value: 0
-    - */software/components/metaconfig//elasticsearch_recovery/concurrent_streams*
+    - */software/components/metaconfig/elasticsearch_recovery/concurrent_streams*
         - Required
         - Type: long
         - Default value: 5
  - **/software/components/metaconfig/elasticsearch_memory**
-    - */software/components/metaconfig//elasticsearch_memory/index_buffer_size*
+    - */software/components/metaconfig/elasticsearch_memory/index_buffer_size*
         - Required
         - Type: string
  - **/software/components/metaconfig/elasticsearch_indices**
-    - */software/components/metaconfig//elasticsearch_indices/recovery*
+    - */software/components/metaconfig/elasticsearch_indices/recovery*
         - Optional
         - Type: elasticsearch_recovery
-    - */software/components/metaconfig//elasticsearch_indices/memory*
+    - */software/components/metaconfig/elasticsearch_indices/memory*
         - Optional
         - Type: elasticsearch_memory
  - **/software/components/metaconfig/elasticsearch_gw**
-    - */software/components/metaconfig//elasticsearch_gw/recover_after_nodes*
+    - */software/components/metaconfig/elasticsearch_gw/recover_after_nodes*
         - Optional
         - Type: long
-    - */software/components/metaconfig//elasticsearch_gw/recover_after_time*
+    - */software/components/metaconfig/elasticsearch_gw/recover_after_time*
         - Optional
         - Type: long
  - **/software/components/metaconfig/elasticsearch_network**
-    - */software/components/metaconfig//elasticsearch_network/host*
+    - */software/components/metaconfig/elasticsearch_network/host*
         - Optional
         - Type: type_hostname
-    - */software/components/metaconfig//elasticsearch_network/bind_host*
+    - */software/components/metaconfig/elasticsearch_network/bind_host*
         - Optional
         - Type: type_hostname
-    - */software/components/metaconfig//elasticsearch_network/publish_host*
+    - */software/components/metaconfig/elasticsearch_network/publish_host*
         - Optional
         - Type: type_hostname
  - **/software/components/metaconfig/elasticsearch_monitoring**
-    - */software/components/metaconfig//elasticsearch_monitoring/enabled*
+    - */software/components/metaconfig/elasticsearch_monitoring/enabled*
         - Required
         - Type: boolean
         - Default value: false
  - **/software/components/metaconfig/elasticsearch_transport**
-    - */software/components/metaconfig//elasticsearch_transport/host*
+    - */software/components/metaconfig/elasticsearch_transport/host*
         - Optional
         - Type: type_hostname
  - **/software/components/metaconfig/elasticsearch_discovery_zen_ping_unicast**
-    - */software/components/metaconfig//elasticsearch_discovery_zen_ping_unicast/hosts*
+    - */software/components/metaconfig/elasticsearch_discovery_zen_ping_unicast/hosts*
         - Optional
         - Type: type_hostport
  - **/software/components/metaconfig/elasticsearch_discovery_zen_ping**
-    - */software/components/metaconfig//elasticsearch_discovery_zen_ping/unicast*
+    - */software/components/metaconfig/elasticsearch_discovery_zen_ping/unicast*
         - Optional
         - Type: elasticsearch_discovery_zen_ping_unicast
  - **/software/components/metaconfig/elasticsearch_discovery_zen**
     - Description: Control discovery process https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-discovery-zen.html
-    - */software/components/metaconfig//elasticsearch_discovery_zen/ping*
+    - */software/components/metaconfig/elasticsearch_discovery_zen/ping*
         - Optional
         - Type: elasticsearch_discovery_zen_ping
-    - */software/components/metaconfig//elasticsearch_discovery_zen/ping_timeout*
+    - */software/components/metaconfig/elasticsearch_discovery_zen/ping_timeout*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//elasticsearch_discovery_zen/join_timeout*
+    - */software/components/metaconfig/elasticsearch_discovery_zen/join_timeout*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//elasticsearch_discovery_zen/minimum_master_nodes*
+    - */software/components/metaconfig/elasticsearch_discovery_zen/minimum_master_nodes*
         - Optional
         - Type: long
         - Range: 0..
  - **/software/components/metaconfig/elasticsearch_discovery**
-    - */software/components/metaconfig//elasticsearch_discovery/zen*
+    - */software/components/metaconfig/elasticsearch_discovery/zen*
         - Optional
         - Type: elasticsearch_discovery_zen

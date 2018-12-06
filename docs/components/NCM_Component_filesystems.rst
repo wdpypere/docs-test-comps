@@ -14,18 +14,18 @@ to create and remove blockdevices without restarting or
 re-installing.
 
 These filesystems will be later mounted/unmounted, and added/removed
-from \ ``/etc/fstab``\ , using ncm-fstab.
+from ``/etc/fstab``, using ncm-fstab.
 
 The component doesn't provide any special resources at the moment. It
-just watches for changes on \ ``/system/filesystems``\  and \ ``/system/blockdevices``\ 
+just watches for changes on ``/system/filesystems`` and ``/system/blockdevices``
 and creates new filesystems, if needed.
 You can also use ncm-filesystems to replace ncm-fstab :
-If \ ``manage_blockdevs``\  is set to false, only the ncm-fstab code will run.
+If ``manage_blockdevs`` is set to false, only the ncm-fstab code will run.
 
 A blockdevice is useful only for its ability to hold a
 filesystem. Blockdevices with no filesystems associated will not be
 created. If you want any such device, create a filesystem with
-\ ``"type"="none"``\  and \ ``"mount"=false``\ .
+``"type"="none"`` and ``"mount"=false``.
 
 \ **Note:**\  It will also remove filesystems and blockdevices that are not listed
 on the profile (or have been removed).
@@ -36,8 +36,8 @@ Examples
 
 We will define a software RAID 1 composed of three disks, one volume
 group named Springfield on it, and two logical volumes (Simpsons and
-Flanders) on it. They will be mounted on \ ``/Evergreen_Terrace/742``\  and
-\ ``/Evergreen_Terrace/740``\ , respectively.
+Flanders) on it. They will be mounted on ``/Evergreen_Terrace/742`` and
+``/Evergreen_Terrace/740``, respectively.
 
 This is how the block devices definition looks like:
 

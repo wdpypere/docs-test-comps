@@ -19,7 +19,7 @@ Public methods
 
 - add_dnszone
  
- Add a DNS zone with name \ ``name``\ .
+ Add a DNS zone with name ``name``.
  
 
 

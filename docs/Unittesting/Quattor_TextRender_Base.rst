@@ -26,17 +26,17 @@ mock_textrender
 ===============
 
 
-An exported function that mocks \ ``CAF::TextRender``\ 
+An exported function that mocks ``CAF::TextRender``
 to test usage of TT files during regular component use
-in unittests. During this phase, \ ``CAF::TextRender``\  has to use
+in unittests. During this phase, ``CAF::TextRender`` has to use
 TT files that are being tested, not the ones installed.
-(\ ``CAF::TextRender``\  has no easy way to do this to
+(``CAF::TextRender`` has no easy way to do this to
 avoid spreading TT files around).
 
-It takes an optional argument \ ``includepath``\  and sets this
-as the includepath of \ ``CAF::TextRender``\ . The default includepath
-is \ ``target/share/templates/quattor``\ , where the TT files are
-staged during testing via maven (use exported \ ``$TARGET_TT_DIR``\ ).
+It takes an optional argument ``includepath`` and sets this
+as the includepath of ``CAF::TextRender``. The default includepath
+is ``target/share/templates/quattor``, where the TT files are
+staged during testing via maven (use exported ``$TARGET_TT_DIR``).
 
 To be used as
 
@@ -48,7 +48,7 @@ To be used as
 
 
 It returns the mock instance. (This is for convenience, you shouldn't
-need this (except maybe to \ ``unmock_all``\ ?). \ ``Test::MockModule``\ 
+need this (except maybe to ``unmock_all``?). ``Test::MockModule``
 keeps a cache of mocked instances, a new call would return the same
 instance.)
 

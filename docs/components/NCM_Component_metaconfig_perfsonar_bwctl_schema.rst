@@ -6,62 +6,62 @@ Types
 -----
 
  - **/software/components/metaconfig/bwctl_client**
-    - */software/components/metaconfig//bwctl_client/iperf_port*
+    - */software/components/metaconfig/bwctl_client/iperf_port*
         - Optional
         - Type: type_port
-    - */software/components/metaconfig//bwctl_client/control_timeout*
+    - */software/components/metaconfig/bwctl_client/control_timeout*
         - Required
         - Type: long
         - Range: 0..
         - Default value: 7200
-    - */software/components/metaconfig//bwctl_client/allow_unsync*
+    - */software/components/metaconfig/bwctl_client/allow_unsync*
         - Required
         - Type: boolean
         - Default value: false
  - **/software/components/metaconfig/bwctl_server**
-    - */software/components/metaconfig//bwctl_server/user*
+    - */software/components/metaconfig/bwctl_server/user*
         - Required
         - Type: string
         - Default value: bwctl
-    - */software/components/metaconfig//bwctl_server/group*
+    - */software/components/metaconfig/bwctl_server/group*
         - Required
         - Type: string
         - Default value: bwctl
-    - */software/components/metaconfig//bwctl_server/nuttcp_port*
+    - */software/components/metaconfig/bwctl_server/nuttcp_port*
         - Required
         - Type: type_port
  - **/software/components/metaconfig/bwctl_limitname**
  - **/software/components/metaconfig/bwctl_limit**
-    - */software/components/metaconfig//bwctl_limit/parent*
+    - */software/components/metaconfig/bwctl_limit/parent*
         - Optional
         - Type: bwctl_limitname
-    - */software/components/metaconfig//bwctl_limit/duration*
+    - */software/components/metaconfig/bwctl_limit/duration*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//bwctl_limit/allow_tcp*
+    - */software/components/metaconfig/bwctl_limit/allow_tcp*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//bwctl_limit/allow_udp*
+    - */software/components/metaconfig/bwctl_limit/allow_udp*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//bwctl_limit/bandwidth*
+    - */software/components/metaconfig/bwctl_limit/bandwidth*
         - Optional
         - Type: long
-    - */software/components/metaconfig//bwctl_limit/allow_open_mode*
+    - */software/components/metaconfig/bwctl_limit/allow_open_mode*
         - Optional
         - Type: boolean
  - **/software/components/metaconfig/bwctl_assign**
-    - */software/components/metaconfig//bwctl_assign/network*
+    - */software/components/metaconfig/bwctl_assign/network*
         - Required
         - Type: type_network_name
-    - */software/components/metaconfig//bwctl_assign/restrictions*
+    - */software/components/metaconfig/bwctl_assign/restrictions*
         - Required
         - Type: bwctl_limitname
  - **/software/components/metaconfig/bwctl_limits**
-    - */software/components/metaconfig//bwctl_limits/assign*
+    - */software/components/metaconfig/bwctl_limits/assign*
         - Required
         - Type: bwctl_assign
-    - */software/components/metaconfig//bwctl_limits/limit*
+    - */software/components/metaconfig/bwctl_limits/limit*
         - Required
         - Type: bwctl_limit

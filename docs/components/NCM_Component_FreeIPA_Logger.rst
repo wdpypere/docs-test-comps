@@ -9,8 +9,8 @@ NAME
 ****
 
 
-\ ``NCM::Component::FreeIPA::Logger``\  provides a log4perl compatible logger
-using \ ``CAf::Reporter``\ .
+``NCM::Component::FreeIPA::Logger`` provides a log4perl compatible logger
+using ``CAf::Reporter``.
 
 Public methods
 ==============
@@ -19,8 +19,8 @@ Public methods
 
 - new
  
- Creates simple instance wrapper arond mandatory argument \ ``reporter``\ ,
- a \ ``CAF::Reporter``\  instance.
+ Creates simple instance wrapper arond mandatory argument ``reporter``,
+ a ``CAF::Reporter`` instance.
  
 
 

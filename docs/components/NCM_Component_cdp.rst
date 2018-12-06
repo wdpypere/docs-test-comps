@@ -10,7 +10,7 @@ NAME
 
 
 The \ *cdp*\  component manages the configuration file
-\ ``/etc/cdp-listend.conf.``\ 
+``/etc/cdp-listend.conf.``
 
 
 ***********

@@ -9,8 +9,8 @@ NAME
 ****
 
 
-\ ``NCM::Component::OpenNebula::Image``\  adds \ ``OpenNebula``\  \ ``VM``\  images
-support to \ ``NCM::Component::OpenNebula``\ .
+``NCM::Component::OpenNebula::Image`` adds ``OpenNebula`` ``VM`` images
+support to ``NCM::Component::OpenNebula``.
 
 Public methods
 ==============
@@ -19,15 +19,15 @@ Public methods
 
 - get_images
  
- Gets the image template from \ ``TT``\  file
- and gathers the image names (\ ``<fqdn``\ _<vdx>>)
+ Gets the image template from ``TT`` file
+ and gathers the image names ( ``<fqdn>_<vdx>`` )
  and datastore names to store the new images.
  
 
 
 - remove_or_create_vm_images
  
- Creates new \ ``VM``\  images and it detects if the image is
+ Creates new ``VM`` images and it detects if the image is
  already available or not.
  Also it removes images if the remove flag is set.
  
@@ -35,14 +35,14 @@ Public methods
 
 - create_vm_images
  
- Creates new \ ``VM``\  images.
+ Creates new ``VM`` images.
  
 
 
 - remove_vm_images
  
- Removes \ ``VM``\  images.
- Updates \ ``$ref_rimages``\  to track the removed images.
+ Removes ``VM`` images.
+ Updates ``$ref_rimages`` to track the removed images.
  
 
 

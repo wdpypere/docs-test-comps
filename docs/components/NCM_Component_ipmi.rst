@@ -18,7 +18,7 @@ RESOURCES
 
 
 
-* \ ``/software/components/ipmi/active``\  : boolean
+* ``/software/components/ipmi/active`` : boolean
  
  Activates/deactivates the component.
  

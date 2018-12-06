@@ -34,7 +34,7 @@ wmsclient supports both gLite WMS with NS/LB interface or WMProxy interface and 
 There must be one for each variant to configure. Supported MW variants are 'edg', 'glite' and 'wmproxy'.
 
 `/software/components/wmsclient/MW_VARIANT/active`
-================================================
+==================================================
 
 
 Set to true to configure this WMS/RB variant.
@@ -43,7 +43,7 @@ Default : true (for a present variant).
 
 
 `/software/components/wmsclient/MW_VARIANT/basedir`
-=================================================
+===================================================
 
 
 The base directory to use for generating VO-specific configuration
@@ -53,7 +53,7 @@ is not defined) for gLite WMS.
 
 
 `/software/components/wmsclient/MW_VARIANT/defaultAttrs`
-======================================================
+========================================================
 
 
 Set of properties and resources allowing to override default values for WMS/RB default ClassAds files. To know the
@@ -72,7 +72,7 @@ each VO, this component uses the items described below. Except for VO full name,
 for EDG RB and under 'services/wms' for gLite WMS.
 
 `/system/vo`/\*/name
-------------------
+--------------------
 
 
 The official name of the VO.
@@ -176,4 +176,3 @@ SEE ALSO
 
 
 ncm-ncd(1)
-

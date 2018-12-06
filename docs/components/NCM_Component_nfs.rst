@@ -17,8 +17,8 @@ DESCRIPTION
 ***********
 
 
-The \ *nfs*\  component manages entries for \ ``NFS``\  in the \ ``/etc/exports``\ 
-and/or \ ``NFS``\ /\ ``NFSv4``\ /\ ``Ceph``\ /\ ``PanFS``\ /\ ``bind``\  mount in the \ ``/etc/fstab``\  files.
+The \ *nfs*\  component manages entries for ``NFS`` in the ``/etc/exports``
+and/or ``NFS``/``NFSv4``/``Ceph``/``PanFS``/``bind`` mount in the ``/etc/fstab`` files.
 
 
 *******
@@ -52,7 +52,7 @@ Functions
 
 - mount_action_new_old
  
- Compares two fstab hashref \ ``new``\  and \ ``old``\  for equality,
+ Compares two fstab hashref ``new`` and ``old`` for equality,
  and returns mount action to be taken.
  
  
@@ -83,12 +83,12 @@ Functions
 
 - parse_fstab_line
  
- Parses a line of \ ``/etc/fstab``\  and converts it
+ Parses a line of ``/etc/fstab`` and converts it
  in a hashref.
  
  Returns undef when the line is comment/empty.
  
- Defaults are added using \ ``fstab_add_defaults``\  function.
+ Defaults are added using ``fstab_add_defaults`` function.
  
 
 
@@ -100,11 +100,11 @@ Methods
 
 - exports
  
- Given the component configuration hashref \ ``tree``\ ,
- create the exports configuration file \ ``/etc/exports``\ .
+ Given the component configuration hashref ``tree``,
+ create the exports configuration file ``/etc/exports``.
  A backup of the old file is created.
  
- The method also sets the \ ``sync``\  option if nethier sync or async
+ The method also sets the ``sync`` option if nethier sync or async
  is specified.
  
  Returns if the configuration file changed (or not).
@@ -113,8 +113,8 @@ Methods
 
 - fstab
  
- Given the component configuration hashref \ ``tree``\ ,
- create the fstab configuration file \ ``/etc/fstab``\ .
+ Given the component configuration hashref ``tree``,
+ create the fstab configuration file ``/etc/fstab``.
  A backup of the old file is created.
  
  The fstab configuration file is read and processed. Any non-managed
@@ -126,11 +126,11 @@ Methods
  The current managed entries are
  
  
- - devices with filesystems \ ``nfs``\ , \ ``nfs4``\ , \ ``panfs``\  or \ ``ceph``\ .
+ - devices with filesystems ``nfs``, ``nfs4``, ``panfs`` or ``ceph``.
  
  
  
- - bind mounts (filesystem \ ``none``\  and mount option \ ``bind``\ )
+ - bind mounts (filesystem ``none`` and mount option ``bind``)
  
  
  
@@ -141,8 +141,7 @@ Methods
  
  
  
- - hashref with the old managed entries (key the device and value the fstab hashref
- from \ ``parse_fstab_line``\  function)
+ - hashref with the old managed entries (key the device and value the fstab hashref  from ``parse_fstab_line`` function)
  
  
  
@@ -163,7 +162,7 @@ Methods
 - do_mount
  
  Do something mount(point) related (umount, mount, remount, ...)
- \ ``cmd``\  is the arrayref, the mountpoint is appended from the \ ``fstab``\  hashref.
+ ``cmd`` is the arrayref, the mountpoint is appended from the ``fstab`` hashref.
  
  Returns SUCCESS on success, undef on failure.
  
@@ -171,14 +170,14 @@ Methods
 
 - process_mounts
  
- Given the component configuration hashref \ ``tree``\ ,
+ Given the component configuration hashref ``tree``,
  determine the new and old ncm-nfs managed entries via
- the \ ``fstab``\  method and do the appropriate unmounting/mounting.
+ the ``fstab`` method and do the appropriate unmounting/mounting.
  
  Returns
  
  
- - if the fstab configuration file changed (or not) (value from \ ``fstab``\  method)
+ - if the fstab configuration file changed (or not) (value from ``fstab`` method)
  
  
  
@@ -186,6 +185,5 @@ Methods
  
  
  
-
 
 

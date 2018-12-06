@@ -22,7 +22,7 @@ This class should be used whenever a file is to be opened for
 modifying its existing contents. For instance, if you want to add a
 single line at the beginning or the end of the file.
 
-As usual, all operations may be logged by passing a \ ``log``\  argument to
+As usual, all operations may be logged by passing a ``log`` argument to
 the class constructor.
 
 Public methods
@@ -33,7 +33,7 @@ Public methods
 - new
  
  Returns a new object it accepts the same arguments as the constructor
- for \ ``CAF::FileWriter``\  with one additional option:
+ for ``CAF::FileWriter`` with one additional option:
  
  
  - source
@@ -43,7 +43,7 @@ Public methods
   is more recent than the edited file modification time. This allows to rebuild
   the file contents based on a new version of the reference file.
   
-  The \ ``source``\  can be a pipe: in this case, it is always considered more recent
+  The ``source`` can be a pipe: in this case, it is always considered more recent
   than the edited file.
   
  
@@ -52,7 +52,7 @@ Public methods
 
 - open
  
- Synonym for \ ``new()``\ 
+ Synonym for ``new()``
  
 
 
@@ -60,7 +60,7 @@ Public methods
  
  Sets the contents of the file to the given argument. Usually, it
  doesn't make sense to use this method directly. Just use a
- \ ``CAF::FileWriter``\  object instead.
+ ``CAF::FileWriter`` object instead.
  
 
 
@@ -84,8 +84,8 @@ Public methods
 
 - replace_lines(re, goodre, newvalue)
  
- Replace any lines matching \ ``re``\  but \*not\* \ ``goodre``\  with
- \ ``newvalue``\ . If there is no match, nothing will be done. For instance,
+ Replace any lines matching ``re`` but \*not\* ``goodre`` with
+ ``newvalue``. If there is no match, nothing will be done. For instance,
  
  
  .. code-block:: perl
@@ -107,37 +107,37 @@ Public methods
  This is useful when we want to change a given configuration directive
  only if it exists and it's wrong.
  
- The regular expressions can be expressed with the \ ``qr``\  operator, thus
- allowing for modification flags such as \ ``i``\ .
+ The regular expressions can be expressed with the ``qr`` operator, thus
+ allowing for modification flags such as ``i``.
  
 
 
 - add_or_replace_sysconfig_lines(key, value, whence)
  
- Replace the \ ``value``\  in lines matching the \ ``key``\ . If
- there is no match, a new line will be added to the where \ ``whence``\ 
- and \ ``offset``\  tells us.
+ Replace the ``value`` in lines matching the ``key``. If
+ there is no match, a new line will be added to the where ``whence``
+ and ``offset`` tells us.
  The sysconfig_separator value can be changed if it's not the usual '='.
  
 
 
 - add_or_replace_lines(re, goodre, newvalue, whence, offset, add_after_newline)
  
- Replace lines matching \ ``re``\  but not \ ``goodre``\  with \ ``newvalue``\ . If
- there is no match, a new line will be added where the \ ``whence``\ 
- and \ ``offset``\  tell us. See \ ``IO::String::seek``\ 
+ Replace lines matching ``re`` but not ``goodre`` with ``newvalue``. If
+ there is no match, a new line will be added where the ``whence``
+ and ``offset`` tell us. See ``IO::String::seek``
  for details; e.g. use the constants tuple
  BEGINNING_OF_FILE or ENDING_OF_FILE.
- If \ ``add_after_newline``\  is true or undef, before adding the new line,
+ If ``add_after_newline`` is true or undef, before adding the new line,
  it is verified that a newline precedes this position. If no newline
  char is found, one is added first.
  
- \ ``whence``\  must be one of SEEK_SET, SEEK_CUR or SEEK_END;
+ ``whence`` must be one of SEEK_SET, SEEK_CUR or SEEK_END;
  everything else will be ignored (an error is logged if
  logging is set)).
  
  Reminder: if the offset position lies beyond SEEK_END, padding will
- occur with $self->pad, which defaults to \ ``\0``\ .
+ occur with $self->pad, which defaults to ``\0``.
  
 
 
@@ -145,13 +145,13 @@ Public methods
  
  Return reference to the arrays with the positions
  before and after all matches of the compiled regular expression
- \ ``regex``\ , starting from \ ``whence``\  (default
- beginning) and \ ``offset``\  (default 0). (If the regexp
+ ``regex``, starting from ``whence`` (default
+ beginning) and ``offset`` (default 0). (If the regexp
  does not match, references to empty arrays are returned).
  
- Global regular expression matching is performed (i.e. \ ``m/$regex/g``\ ).
+ Global regular expression matching is performed (i.e. ``m/$regex/g``).
  The text is searched without line-splitting, but multiline regular
- expressions like \ ``qr{^something.\*$}m``\  can be used for per line matching.
+ expressions like ``qr{^something.\*$}m`` can be used for per line matching.
  
 
 
@@ -159,20 +159,20 @@ Public methods
  
  Return the position before and after the "header".
  A header is a block of lines that start with same
- compiled regular expression \ ``regex``\ .
- Default value for \ ``regex``\  is \ ``qr{^\s\*#.\*$}m``\ 
- (matching a block of text with each line starting with a \ ``#``\ );
- the default value is also used when \ ``regex``\  is \ ``undef``\ .
- \ ``(-1, -1)``\  is returned if no match was found.
+ compiled regular expression ``regex``.
+ Default value for ``regex`` is ``qr{^\s\*#.\*$}m``
+ (matching a block of text with each line starting with a ``#``);
+ the default value is also used when ``regex`` is ``undef``.
+ ``(-1, -1)`` is returned if no match was found.
  
- \ ``whence``\  and \ ``offset``\  are passed to underlying \ ``get_all_positions``\ 
+ ``whence`` and ``offset`` are passed to underlying ``get_all_positions``
  call.
  
 
 
 - remove_lines(re, goodre)
  
- Remove any lines matching \ ``re``\  but \*not\* \ ``goodre``\ .
+ Remove any lines matching ``re`` but \*not\* ``goodre``.
  If there is no match, nothing will be done.
  
 
@@ -187,19 +187,19 @@ EXPORTED CONSTANTS
 The following constants are automatically exported when using this module:
 
 
-- \ ``BEGINNING_OF_FILE``\ 
+- ``BEGINNING_OF_FILE``
  
- Flag to pass to \ ``add_or_replace_lines``\ . Lines should be added at the
+ Flag to pass to ``add_or_replace_lines``. Lines should be added at the
  beginning of the file. (To be used in list context, as this is actually
- \ ``(SEEK_SET, 0)``\ .)
+ ``(SEEK_SET, 0)``.)
  
 
 
-- \ ``ENDING_OF_FILE``\ 
+- ``ENDING_OF_FILE``
  
- Flag to pass to \ ``add_or_replace_lines``\ . Lines should be added at the
+ Flag to pass to ``add_or_replace_lines``. Lines should be added at the
  end of the file. (To be used in list context, as this is actually
- \ ``(SEEK_END, 0)``\ .)
+ ``(SEEK_END, 0)``.)
  
 
 
@@ -232,7 +232,7 @@ Cancelling changes in case of error
 ===================================
 
 
-This is a subclass of \ ``CAF::FileWriter``\ , so just do as you did with
+This is a subclass of ``CAF::FileWriter``, so just do as you did with
 it:
 
 
@@ -249,7 +249,7 @@ Appending a line to the beginning of the file
 =============================================
 
 
-Trivial: use the \ ``head_print``\  method:
+Trivial: use the ``head_print`` method:
 
 
 .. code-block:: perl
@@ -309,6 +309,6 @@ SEE ALSO
 ********
 
 
-This class inherits from \ ``CAF::FileWriter``\ , and thus from
-\ ``IO::String``\ .
+This class inherits from ``CAF::FileWriter``, and thus from
+``IO::String``.
 

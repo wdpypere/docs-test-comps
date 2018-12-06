@@ -59,7 +59,7 @@ RESOURCES
  Example properties are : "ncores", "ncpus", "flags", "model name", "cpu MHz", "cpu family", "model", "stepping"
  
  Properties that start with "model " or "cpu " will see this be stripped as a first step.
- All resulting pbs_mom resources will be prefixed with \ ``cpu_``\  except ncpus and ncores.
+ All resulting pbs_mom resources will be prefixed with ``cpu_`` except ncpus and ncores.
  
 
 
@@ -146,8 +146,8 @@ RESOURCES
 - `/software/components/pbsclient/configPath` : string
  
  location of the PBS mom configuration file (default: 
- \ ``/var/spool/pbs/mom_priv/config``\ ).  Note that the server_name file is 
- written two directories up (thus by default in \ ``/var/spool/pbs``\ ).
+ ``/var/spool/pbs/mom_priv/config``).  Note that the server_name file is 
+ written two directories up (thus by default in ``/var/spool/pbs``).
  
 
 
@@ -171,7 +171,7 @@ RESOURCES
 - `/software/components/pbsclient/initScriptPath` : string
  
  Name of the init.d script to run in the configuration changed. BY
- default this is "\ ``/etc/init.d/pbs``\ ".
+ default this is "``/etc/init.d/pbs``".
  
 
 
@@ -183,10 +183,7 @@ RESOURCES
  
 
 
-- `/software/components/pbsclient/scripts/prologue` : string =item `/software/components/pbsclient/scripts/epilogue` : string
-=item `/software/components/pbsclient/scripts/prologue.user` : string
-=item `/software/components/pbsclient/scripts/epilogue.user` : string
-=item `/software/components/pbsclient/scripts/prologue.parallel` : string
+- `/software/components/pbsclient/scripts/prologue` : string =item `/software/components/pbsclient/scripts/epilogue` : string =item `/software/components/pbsclient/scripts/prologue.user` : string =item `/software/components/pbsclient/scripts/epilogue.user` : string =item `/software/components/pbsclient/scripts/prologue.parallel` : string
  
  These scripts may be defined to augment the behavior of pbs when
  starting and ending jobs.  See the pbs documentation for a complete
@@ -199,5 +196,3 @@ RESOURCES
  If true, it assumes this host is only used for job submission, and has no pbs MOM running
   that requires restarting.
  
-
-

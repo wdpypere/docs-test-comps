@@ -31,7 +31,7 @@ Public methods
   
  
  
- - Options (passed to \ ``Net::FreeIPA::API::api_user_add``\ ).
+ - Options (passed to ``Net::FreeIPA::API::api_user_add``).
   
   
   - homedirectory
@@ -64,19 +64,19 @@ Public methods
 
 - disable_user
  
- Disable a user with \ ``uid``\ .
+ Disable a user with ``uid``.
  
 
 
 - remove_user
  
- Remove the user \ ``uid``\   (preserve=1).
+ Remove the user ``uid``  (preserve=1).
  
 
 
 - user_passwd
  
- Reset and return a new random password for user \ ``uid``\ .
+ Reset and return a new random password for user ``uid``.
  Returns undef if the user doesn't exist.
  
 

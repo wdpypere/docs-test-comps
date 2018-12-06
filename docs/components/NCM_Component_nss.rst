@@ -20,8 +20,8 @@ SYNOPSIS
 
 - Configure()
  
- Generates \ ``/etc/nsswitch.conf``\  and returns error in case of failure. If the
- \ ``nsswitch.conf``\  file is modified and nscd is running, then nscd will be
+ Generates ``/etc/nsswitch.conf`` and returns error in case of failure. If the
+ ``nsswitch.conf`` file is modified and nscd is running, then nscd will be
  restarted.
  
 
@@ -33,20 +33,20 @@ RESOURCES
 
 
 
-* \ ``/software/components/nss/active``\  : boolean
+* ``/software/components/nss/active`` : boolean
  
  activates/deactivates the component.
  
 
 
-* \ ``/software/components/nss/databases``\  : nlist
+* ``/software/components/nss/databases`` : nlist
  
  A list of database names (e.g. "passwd", "hosts"). Each
  name should be associated with a list of strings.
  
 
 
-* \ ``/software/components/nss/build``\  : nlist
+* ``/software/components/nss/build`` : nlist
  
  A list of database types (e.g. "file", "db"). If any
  nss sources are set to use one of these database types
@@ -62,7 +62,7 @@ RESOURCES
  - script
   
   the command line to run to generate once for each database.
-  Any token of the form \ ``"<DB>"``\  will be substituted with the
+  Any token of the form ``"<DB>"`` will be substituted with the
   name of the database being built.
   
  
@@ -114,7 +114,7 @@ FILES MODIFIED
 The component modifies the following files:
 
 
-* \ ``/etc/nsswitch.conf``\ 
+* ``/etc/nsswitch.conf``
 
 
 

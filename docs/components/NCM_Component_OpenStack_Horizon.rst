@@ -11,7 +11,7 @@ Methods
 
 - _attrs
  
- Override \ ``daemons``\  attribute
+ Override ``daemons`` attribute
  
 
 

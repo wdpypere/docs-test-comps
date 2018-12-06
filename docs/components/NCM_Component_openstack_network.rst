@@ -7,6 +7,6 @@ Types
 
  - **/software/components/openstack/openstack_network_config**
     - Description: Type to define OpenStack network services
-    - */software/components/openstack//openstack_network_config/neutron*
+    - */software/components/openstack/openstack_network_config/neutron*
         - Optional
         - Type: openstack_neutron_config

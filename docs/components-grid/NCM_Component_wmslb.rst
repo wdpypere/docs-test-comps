@@ -26,7 +26,7 @@ RESOURCES
 
 
 `/software/components`/@COMP/envScript : string (required)
-========================================================
+==========================================================
 
 
 Name of the shell script containing environment variables used by WMS/LB startup scripts to configure the services.
@@ -35,7 +35,7 @@ Default : `/etc/profile.d`/glite-wms-vars.sh
 
 
 `/software/components`/@COMP/env : nlist of string (optional)
-===========================================================
+=============================================================
 
 
 Each nlist element defines an environment variable to be added to envScript. Key is the variable name, value is variable value.
@@ -45,7 +45,7 @@ Default : see schema.tpl
 
 
 `/software/components`/@COMP/services : nlist (optional)
-======================================================
+========================================================
 
 
 Per service configuration. For the list of supported services, see schema.tpl.
@@ -100,4 +100,3 @@ SEE ALSO
 
 
 ncm-ncd(1)
-

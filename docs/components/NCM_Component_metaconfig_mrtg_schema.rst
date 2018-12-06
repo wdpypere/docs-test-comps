@@ -6,24 +6,24 @@ Types
 -----
 
  - **/software/components/metaconfig/mrtg_file**
-    - */software/components/metaconfig//mrtg_file/HtmlDir*
+    - */software/components/metaconfig/mrtg_file/HtmlDir*
         - Required
         - Type: string
-    - */software/components/metaconfig//mrtg_file/ImageDir*
+    - */software/components/metaconfig/mrtg_file/ImageDir*
         - Required
         - Type: string
-    - */software/components/metaconfig//mrtg_file/LogFormat*
+    - */software/components/metaconfig/mrtg_file/LogFormat*
         - Required
         - Type: string
-    - */software/components/metaconfig//mrtg_file/LogDir*
+    - */software/components/metaconfig/mrtg_file/LogDir*
         - Required
         - Type: string
-    - */software/components/metaconfig//mrtg_file/ThreshDir*
+    - */software/components/metaconfig/mrtg_file/ThreshDir*
         - Required
         - Type: string
-    - */software/components/metaconfig//mrtg_file/WorkDir*
+    - */software/components/metaconfig/mrtg_file/WorkDir*
         - Required
         - Type: string
-    - */software/components/metaconfig//mrtg_file/LibAdd*
+    - */software/components/metaconfig/mrtg_file/LibAdd*
         - Required
         - Type: string

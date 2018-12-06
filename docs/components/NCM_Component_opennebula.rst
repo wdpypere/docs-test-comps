@@ -79,7 +79,7 @@ Features that are implemented at this moment:
 
 
 
-* Updates OpenNebula \ ``\*_auth``\  files
+* Updates OpenNebula ``\*_auth`` files
 
 
 
@@ -134,7 +134,7 @@ To set up the initial cluster, some steps should be taken:
 
 
 
-- 3. Start OpenNebula services: \ ``# for i in '' -econe -gate -novnc -occi -sunstone; do service opennebula$i stop; done``\ 
+- 3. Start OpenNebula services: ``# for i in '' -econe -gate -novnc -occi -sunstone; do service opennebula$i stop; done``
 
 
 
@@ -142,12 +142,11 @@ To set up the initial cluster, some steps should be taken:
 
 
 
-- 5. The new oneadmin password will be available from \ ``/var/lib/one/.one/one_auth``\  file. The old auth files are stored with .quattor.backup extension.
+- 5. The new oneadmin password will be available from ``/var/lib/one/.one/one_auth`` file. The old auth files are stored with .quattor.backup extension.
 
 
 
-- 6. It is also possible to change sunstone service password, just include 'serveradmin' user and passwd within opennebula/users tree.
-In that case the component also updates the \ ``sunstone_auth``\  file.
+- 6. It is also possible to change sunstone service password, just include 'serveradmin' user and passwd within opennebula/users tree. In that case the component also updates the ``sunstone_auth`` file.
 
 
 
@@ -163,7 +162,7 @@ make_one
 ========
 
 
-Sets \ ``OpenNebula``\  \ ``RPC``\  endpoint info to connect to ONE API.
+Sets ``OpenNebula`` ``RPC`` endpoint info to connect to ONE API.
 
 
 process_template
@@ -171,7 +170,7 @@ process_template
 
 
 Detect and process ONE templates.
-It could return a \ ``CAF::TextRender``\  instance or a plain text template for ONE \ ``RPC``\ .
+It could return a ``CAF::TextRender`` instance or a plain text template for ONE ``RPC``.
 
 
 create_or_update_something
@@ -185,14 +184,14 @@ remove_something
 ================
 
 
-Removes \ ``OpenNebula``\  resources.
+Removes ``OpenNebula`` resources.
 
 
 update_something
 ================
 
 
-Updates \ ``OpenNebula``\  resource templates.
+Updates ``OpenNebula`` resource templates.
 
 
 detect_used_resource
@@ -220,5 +219,4 @@ Configure
 
 
 Configure basic OpenNebula server resources.
-
 

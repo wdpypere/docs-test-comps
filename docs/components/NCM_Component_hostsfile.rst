@@ -20,14 +20,14 @@ SYNOPSIS
 
 - Configure()
  
- Updates the \ ``/etc/hosts``\  file with the entries specified within the
+ Updates the ``/etc/hosts`` file with the entries specified within the
  configuration. The entries in the configuration are keyed by the primary
- hostname. If an entry describes a hostname which is already in \ ``/etc/hosts``\ 
+ hostname. If an entry describes a hostname which is already in ``/etc/hosts``
  (either as a primary hostname, or as an alias), then that host entry will
  be left alone (if takeover is false), or will be completely replaced by
  the entry specified in the configuration (if takeover is true).
  
- A comment \ ``# NCM``\  is added to each line so that any deletions will also be
+ A comment ``# NCM`` is added to each line so that any deletions will also be
  cleaned up correctly.
  
  Returns error in case of a failure.
@@ -41,7 +41,7 @@ RESOURCES
 
 
 
-* \ ``/system/network/domainname``\ 
+* ``/system/network/domainname``
  
  When specifying hosts within the entries nlist, if a hostname is not FQDN
  and there are no aliases defined, then an alias will be automatically
@@ -50,19 +50,19 @@ RESOURCES
  
 
 
-* \ ``/software/components/hostsfile/file``\ 
+* ``/software/components/hostsfile/file``
  
- The filename to modify, defaults to \ ``/etc/hosts``\ .
+ The filename to modify, defaults to ``/etc/hosts``.
  
 
 
-* \ ``/software/components/hostsfile/entries``\ 
+* ``/software/components/hostsfile/entries``
  
  An nlist, keyed by hostname. The value of each hostname is an nlist
  containing the following structure:
  
  
- - \ ``ipaddr``\ 
+ - ``ipaddr``
   
   The IP address of the host.
   
@@ -74,7 +74,7 @@ RESOURCES
   
  
  
- - \ ``comment``\ 
+ - ``comment``
   
   A comment to append to the line within `/etc/hosts.`
   
@@ -82,7 +82,7 @@ RESOURCES
  
 
 
-* \ ``/software/components/hostsfile/takeover``\ 
+* ``/software/components/hostsfile/takeover``
  
  A boolean. If false (the default), then pre-existing host lines in the file
  which are not tagged with the "NCM" comment will be preserved.

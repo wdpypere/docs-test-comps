@@ -56,7 +56,7 @@ DESCRIPTION
 
 
 This class simplifies text handling via stringification and produces
-a \ ``CAF::FileWriter``\  instance.
+a ``CAF::FileWriter`` instance.
 
 Methods
 =======
@@ -65,97 +65,97 @@ Methods
 
 - _initialize_textopts
  
- Handle some common options in the subclass \ ``_initialize``\  method.
+ Handle some common options in the subclass ``_initialize`` method.
  
  
- - \ ``log``\ 
+ - ``log``
   
-  A \ ``CAF::Reporter``\  object to log to.
+  A ``CAF::Reporter`` object to log to.
   
  
  
- - \ ``eol``\ 
+ - ``eol``
   
-  If \ ``eol``\  is true, the produced text will be verified that it ends with
+  If ``eol`` is true, the produced text will be verified that it ends with
   an end-of-line, and if missing, a newline character will be added.
-  By default, \ ``eol``\  is true.
+  By default, ``eol`` is true.
   
-  \ ``eol``\  set to false will not strip trailing newlines (use \ ``chomp``\ 
+  ``eol`` set to false will not strip trailing newlines (use ``chomp``
   or something similar for that).
   
  
  
- - \ ``usecache``\ 
+ - ``usecache``
   
-  If \ ``usecache``\  is false, the text is always re-produced.
-  Default is to cache the produced text (\ ``usecache``\  is true).
+  If ``usecache`` is false, the text is always re-produced.
+  Default is to cache the produced text (``usecache`` is true).
   
  
  
 
 
-- \ ``_get_text_test``\ 
+- ``_get_text_test``
  
- Run additional tests before the actual text is produced via \ ``get_text``\ .
+ Run additional tests before the actual text is produced via ``get_text``.
  Returns undef in case of failure, SUCCESS otherwise.
  
- The method is called in \ ``get_text``\  before the caching is checked.
+ The method is called in ``get_text`` before the caching is checked.
  
  Default implementation does not test anything, always returns SUCCESS.
  This method should be redefined in the subclass.
  
 
 
-- \ ``_get_text``\ 
+- ``_get_text``
  
- Produce the actual text in \ ``get_text``\ 
+ Produce the actual text in ``get_text``
  (or call another method that does so).
  
  Returns 2 element tuple with first element the resulting text
  (or undef in case of failure). The second element is an error message
- prefix (ideally, real error message is set via the \ ``fail``\  attribute).
+ prefix (ideally, real error message is set via the ``fail`` attribute).
  
  This method needs to be defined in the subclass.
  
 
 
-- \ ``get_text``\ 
+- ``get_text``
  
- \ ``get_text``\  produces and returns the text.
+ ``get_text`` produces and returns the text.
  
- In case of an error, \ ``get_text``\  returns \ ``undef``\ 
+ In case of an error, ``get_text`` returns ``undef``
  (no error is logged).
  This is the main difference from the auto-stringification that
  returns an empty string in case of a rendering error.
  
  By default, the result is cached. To force re-producing the text,
- clear the current cache by passing \ ``1``\  as first argument
- (or disable caching completely with the option \ ``usecache``\ 
+ clear the current cache by passing ``1`` as first argument
+ (or disable caching completely with the option ``usecache``
  set to false during the initialisation).
  
 
 
-- \ ``filewriter``\ 
+- ``filewriter``
  
- Create and return an open \ ``CAF::FileWriter``\  instance with
- first argument as the filename. If the \ ``get_text``\  method fails
- (i.e. returns undef), \ ``undef``\  is returned.
+ Create and return an open ``CAF::FileWriter`` instance with
+ first argument as the filename. If the ``get_text`` method fails
+ (i.e. returns undef), ``undef`` is returned.
  
  The text is added to the filehandle.
  It's up to the consumer to cancel
  and/or close the instance.
  
- All \ ``CAF::FileWriter``\  initialisation options are supported
- and passed on. (If no \ ``log``\  option is provided,
+ All ``CAF::FileWriter`` initialisation options are supported
+ and passed on. (If no ``log`` option is provided,
  the one from the current instance is passed).
  
- Two new options \ ``header``\  and \ ``footer``\  are supported
+ Two new options ``header`` and ``footer`` are supported
  to respectively prepend and append to the text.
  
- If \ ``eol``\  was set during initialisation, the header and footer
+ If ``eol`` was set during initialisation, the header and footer
  will also be checked for EOL.
- (EOL is still added to the \ ``get_text``\  if
- \ ``eol``\  is set during initialisation, even if there is a footer
+ (EOL is still added to the ``get_text`` if
+ ``eol`` is set during initialisation, even if there is a footer
  defined.)
  
 

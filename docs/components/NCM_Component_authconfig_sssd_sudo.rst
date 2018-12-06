@@ -6,77 +6,77 @@ Types
 -----
 
  - **/software/components/authconfig/sssd_sudorule**
-    - */software/components/authconfig//sssd_sudorule/object_class*
+    - */software/components/authconfig/sssd_sudorule/object_class*
         - Required
         - Type: string
         - Default value: sudoRole
-    - */software/components/authconfig//sssd_sudorule/name*
+    - */software/components/authconfig/sssd_sudorule/name*
         - Required
         - Type: string
         - Default value: cn
-    - */software/components/authconfig//sssd_sudorule/command*
+    - */software/components/authconfig/sssd_sudorule/command*
         - Required
         - Type: string
         - Default value: sudoCommand
-    - */software/components/authconfig//sssd_sudorule/host*
+    - */software/components/authconfig/sssd_sudorule/host*
         - Required
         - Type: string
         - Default value: sudoHost
-    - */software/components/authconfig//sssd_sudorule/user*
+    - */software/components/authconfig/sssd_sudorule/user*
         - Required
         - Type: string
         - Default value: sudoUser
-    - */software/components/authconfig//sssd_sudorule/option*
+    - */software/components/authconfig/sssd_sudorule/option*
         - Required
         - Type: string
         - Default value: sudoOption
-    - */software/components/authconfig//sssd_sudorule/runasuser*
+    - */software/components/authconfig/sssd_sudorule/runasuser*
         - Required
         - Type: string
         - Default value: sudoRunAsUser
-    - */software/components/authconfig//sssd_sudorule/runasgroup*
+    - */software/components/authconfig/sssd_sudorule/runasgroup*
         - Required
         - Type: string
         - Default value: sudoRunAsGroup
-    - */software/components/authconfig//sssd_sudorule/notbefore*
+    - */software/components/authconfig/sssd_sudorule/notbefore*
         - Required
         - Type: string
         - Default value: sudoNotBefore
-    - */software/components/authconfig//sssd_sudorule/notafter*
+    - */software/components/authconfig/sssd_sudorule/notafter*
         - Required
         - Type: string
         - Default value: sudoNotAfter
-    - */software/components/authconfig//sssd_sudorule/order*
+    - */software/components/authconfig/sssd_sudorule/order*
         - Required
         - Type: string
         - Default value: sudoOrder
  - **/software/components/authconfig/sssd_sudo**
-    - */software/components/authconfig//sssd_sudo/full_refresh_interval*
+    - */software/components/authconfig/sssd_sudo/full_refresh_interval*
         - Required
         - Type: long
         - Default value: 21600
-    - */software/components/authconfig//sssd_sudo/smart_refresh_interval*
+    - */software/components/authconfig/sssd_sudo/smart_refresh_interval*
         - Required
         - Type: long
         - Default value: 900
-    - */software/components/authconfig//sssd_sudo/use_host_filter*
+    - */software/components/authconfig/sssd_sudo/use_host_filter*
         - Required
         - Type: boolean
         - Default value: true
-    - */software/components/authconfig//sssd_sudo/hostnames*
+    - */software/components/authconfig/sssd_sudo/hostnames*
         - Optional
         - Type: string
-    - */software/components/authconfig//sssd_sudo/ip*
+    - */software/components/authconfig/sssd_sudo/ip*
         - Optional
         - Type: string
-    - */software/components/authconfig//sssd_sudo/include_netgroups*
+    - */software/components/authconfig/sssd_sudo/include_netgroups*
         - Required
         - Type: boolean
         - Default value: true
-    - */software/components/authconfig//sssd_sudo/include_regexp*
+    - */software/components/authconfig/sssd_sudo/include_regexp*
         - Required
         - Type: boolean
         - Default value: true
-    - */software/components/authconfig//sssd_sudo/search_base*
+    - */software/components/authconfig/sssd_sudo/search_base*
         - Optional
         - Type: string

@@ -7,76 +7,76 @@ Types
 
  - **structure_import**
     - Description: system-related structures
-    - */structure_import/source*
+    - *structure_import/source*
         - Required
         - Type: string
-    - */structure_import/mountpoint*
+    - *structure_import/mountpoint*
         - Optional
         - Type: string
-    - */structure_import/options*
+    - *structure_import/options*
         - Optional
         - Type: string
  - **structure_export**
-    - */structure_export/localpath*
+    - *structure_export/localpath*
         - Required
         - Type: string
-    - */structure_export/options*
+    - *structure_export/options*
         - Optional
         - Type: string
  - **structure_kernel**
-    - */structure_kernel/version*
+    - *structure_kernel/version*
         - Description: kernel version to use (eg. 2.4.18-27.7.x.cernsmp)
         - Optional
         - Type: string
  - **structure_system**
-    - */structure_system/aii*
+    - *structure_system/aii*
         - Optional
         - Type: structure_aii
-    - */structure_system/architecture*
+    - *structure_system/architecture*
         - Description: CPU architecture of system.
         - Optional
         - Type: cpu_architecture
-    - */structure_system/edg*
+    - *structure_system/edg*
         - Optional
         - Type: structure_edg
-    - */structure_system/blockdevices*
+    - *structure_system/blockdevices*
         - Optional
         - Type: structure_blockdevices
-    - */structure_system/glite*
+    - *structure_system/glite*
         - Optional
         - Type: structure_glite
-    - */structure_system/kernel*
+    - *structure_system/kernel*
         - Required
         - Type: structure_kernel
-    - */structure_system/lcg*
+    - *structure_system/lcg*
         - Optional
         - Type: structure_lcg
-    - */structure_system/network*
+    - *structure_system/network*
         - Required
         - Type: structure_network
-    - */structure_system/monitoring*
+    - *structure_system/monitoring*
         - Description: Monitoring-related schemas should handle the bind to this path when they are included.
         - Optional
         - Type: dict
-    - */structure_system/os*
+    - *structure_system/os*
         - Optional
         - Type: structure_os
-    - */structure_system/resources*
+    - *structure_system/resources*
         - Optional
         - Type: structure_resources
-    - */structure_system/rootmail*
+    - *structure_system/rootmail*
         - Required
         - Type: type_email
-    - */structure_system/siterelease*
+    - *structure_system/siterelease*
         - Optional
         - Type: string
-    - */structure_system/state*
+    - *structure_system/state*
         - Description: Current state of system, one of: production, out-of-production, test, development, onloan.
         - Optional
         - Type: string
-    - */structure_system/vo*
+    - *structure_system/vo*
         - Optional
         - Type: structure_vo
-    - */structure_system/opennebula*
+    - *structure_system/opennebula*
         - Optional
         - Type: dict

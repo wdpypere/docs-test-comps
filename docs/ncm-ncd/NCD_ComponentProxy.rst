@@ -39,18 +39,18 @@ Public methods
 
 - executeConfigure
  
- executeConfigure loads and executes the component with \ ``Configure``\  method.
+ executeConfigure loads and executes the component with ``Configure`` method.
  The number of produced errors and warnings is returned in
- a hashref with keys \ ``ERRORS``\  and \ ``WARNINGS``\ .
+ a hashref with keys ``ERRORS`` and ``WARNINGS``.
  If the component cannot be executed, undef is returned.
  
 
 
 - executeUnconfigure
  
- executeUnconfigure loads and executes the component with \ ``Unconfigure``\ .
+ executeUnconfigure loads and executes the component with ``Unconfigure``.
  The number of produced errors and warnings is returned in
- a hashref with keys \ ``ERRORS``\  and \ ``WARNINGS``\ .
+ a hashref with keys ``ERRORS`` and ``WARNINGS``.
  If the component cannot be executed, undef is returned.
  
 
@@ -101,7 +101,7 @@ Private methods
 
 - _load
  
- Load the component file in a separate namespace \ ``NCM::Component::<name>``\ 
+ Load the component file in a separate namespace ``NCM::Component::<name>``
  
  Returns the component instance on success, undef on failure.
  
@@ -118,11 +118,11 @@ Private methods
  
  Apply version related checks.
  
- Return \ ``SUCCESS``\  if there are no version-related issues;
+ Return ``SUCCESS`` if there are no version-related issues;
  report an error and return undef otherwise.
  
  Current version only reports possible different versions,
- and always returns \ ``SUCCESS``\ 
+ and always returns ``SUCCESS``
  (but behaviour might change in future versions).
  
 
@@ -131,8 +131,8 @@ Private methods
  
  common function for executeConfigure() and executeUnconfigure()
  
- Adds the \ ``USR1``\  signal handler (reports the (currently active) component and method)
- \ ``HUP``\ , \ ``PIPE``\  and \ ``ALRM``\  signals are ignored during the method execution.
+ Adds the ``USR1`` signal handler (reports the (currently active) component and method)
+ ``HUP``, ``PIPE`` and ``ALRM`` signals are ignored during the method execution.
  
 
 

@@ -6,57 +6,57 @@ Types
 -----
 
  - **/software/components/metaconfig/hnormalise_connection_tcp**
-    - */software/components/metaconfig//hnormalise_connection_tcp/host*
+    - */software/components/metaconfig/hnormalise_connection_tcp/host*
         - Required
         - Type: string
-    - */software/components/metaconfig//hnormalise_connection_tcp/port*
+    - */software/components/metaconfig/hnormalise_connection_tcp/port*
         - Required
         - Type: long
  - **/software/components/metaconfig/hnormalise_output_tcp**
-    - */software/components/metaconfig//hnormalise_output_tcp/success*
+    - */software/components/metaconfig/hnormalise_output_tcp/success*
         - Required
         - Type: hnormalise_connection_tcp
-    - */software/components/metaconfig//hnormalise_output_tcp/failure*
+    - */software/components/metaconfig/hnormalise_output_tcp/failure*
         - Required
         - Type: hnormalise_connection_tcp
  - **/software/components/metaconfig/hnormalise_connection_zeromq**
-    - */software/components/metaconfig//hnormalise_connection_zeromq/method*
+    - */software/components/metaconfig/hnormalise_connection_zeromq/method*
         - Required
         - Type: string
-    - */software/components/metaconfig//hnormalise_connection_zeromq/host*
+    - */software/components/metaconfig/hnormalise_connection_zeromq/host*
         - Required
         - Type: string
-    - */software/components/metaconfig//hnormalise_connection_zeromq/port*
+    - */software/components/metaconfig/hnormalise_connection_zeromq/port*
         - Required
         - Type: long
  - **/software/components/metaconfig/hnormalise_output_zeromq**
-    - */software/components/metaconfig//hnormalise_output_zeromq/success*
+    - */software/components/metaconfig/hnormalise_output_zeromq/success*
         - Required
         - Type: hnormalise_connection_zeromq
-    - */software/components/metaconfig//hnormalise_output_zeromq/failure*
+    - */software/components/metaconfig/hnormalise_output_zeromq/failure*
         - Required
         - Type: hnormalise_connection_zeromq
  - **/software/components/metaconfig/hnormalise_input**
-    - */software/components/metaconfig//hnormalise_input/tcp*
+    - */software/components/metaconfig/hnormalise_input/tcp*
         - Optional
         - Type: hnormalise_connection_tcp
-    - */software/components/metaconfig//hnormalise_input/zeromq*
+    - */software/components/metaconfig/hnormalise_input/zeromq*
         - Optional
         - Type: hnormalise_connection_zeromq
  - **/software/components/metaconfig/hnormalise_output**
-    - */software/components/metaconfig//hnormalise_output/tcp*
+    - */software/components/metaconfig/hnormalise_output/tcp*
         - Optional
         - Type: hnormalise_output_tcp
-    - */software/components/metaconfig//hnormalise_output/zeromq*
+    - */software/components/metaconfig/hnormalise_output/zeromq*
         - Optional
         - Type: hnormalise_output_zeromq
  - **/software/components/metaconfig/hnormalise**
-    - */software/components/metaconfig//hnormalise/input*
+    - */software/components/metaconfig/hnormalise/input*
         - Required
         - Type: hnormalise_input
-    - */software/components/metaconfig//hnormalise/output*
+    - */software/components/metaconfig/hnormalise/output*
         - Required
         - Type: hnormalise_output
-    - */software/components/metaconfig//hnormalise/fields*
+    - */software/components/metaconfig/hnormalise/fields*
         - Required
         - Type: string

@@ -9,7 +9,7 @@ NAME
 ****
 
 
-\ ``ncm-autofs``\ : NCM component to manage autofs configuration.
+``ncm-autofs``: NCM component to manage autofs configuration.
 
 
 ***********
@@ -30,7 +30,7 @@ Scenario 1 : Configure a NFS mountpoint
 =======================================
 
 
-We will mount the NFS filesystem nfsserv.example.org: \ ``/data``\  under \ ``/tmp_mnt/nfsdata``\ 
+We will mount the NFS filesystem nfsserv.example.org: ``/data`` under ``/tmp_mnt/nfsdata``
 
 
 .. code-block:: perl

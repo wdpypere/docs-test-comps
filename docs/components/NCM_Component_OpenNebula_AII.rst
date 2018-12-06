@@ -9,9 +9,9 @@ NAME
 ****
 
 
-\ ``NCM::Component::OpenNebula::AII``\  adds \ ``AII``\  hook
+``NCM::Component::OpenNebula::AII`` adds ``AII`` hook
 to generate the required resources and templates
-to instantiate/create/remove VMs within an \ ``OpenNebula``\  infrastructure.
+to instantiate/create/remove VMs within an ``OpenNebula`` infrastructure.
 
 AII
 ===
@@ -80,40 +80,40 @@ Public methods
 
 - process_template_aii
  
- Detect and process \ ``OpenNebula``\  \ ``VM``\  templates.
+ Detect and process ``OpenNebula`` ``VM`` templates.
  
 
 
 - read_one_aii_conf
  
- Reads a config file in \ ``.ini``\  style with a minimal RPC endpoint setup.
- Returns an \ ``OpenNebula``\  instance afterwards.
+ Reads a config file in ``.ini`` style with a minimal RPC endpoint setup.
+ Returns an ``OpenNebula`` instance afterwards.
  
 
 
 - is_supported_one_version
  
- Detects \ ``OpenNebula``\  version.
+ Detects ``OpenNebula`` version.
  Returns false if <OpenNebula> version is not supported.
  
 
 
 - get_fqdn
  
- Returns \ ``fqdn``\  of the VM
+ Returns ``fqdn`` of the VM
  
 
 
 - get_resource_instance
  
- Returns ONE virtual resource instance from \ ``RPC``\ 
+ Returns ONE virtual resource instance from ``RPC``
  
 
 
 - is_timeout
  
  Check if the resource is available
- before our \ ``$TIMEOUT``\ 
+ before our ``$TIMEOUT``
  
 
 
@@ -126,8 +126,8 @@ Public methods
 
 - aii_post_reboot
  
- Performs \ ``AII``\  \ ``post_reboot``\ .
- \ ``ACPID``\  service is mandatory for ONE VMs.
+ Performs ``AII`` ``post_reboot``.
+ ``ACPID`` service is mandatory for ONE VMs.
  
 
 
@@ -144,11 +144,11 @@ Public methods
  
  
  
- - Creates new VM image for each \ ``$harddisks``\ .
+ - Creates new VM image for each ``$harddisks``.
  
  
  
- - Creates new \ ``VNET``\  \ ``ARs``\  if required.
+ - Creates new ``VNET`` ``ARs`` if required.
  
  
  
@@ -188,11 +188,11 @@ Public methods
  
  
  
- - Removes VM image for each \ ``$harddisks``\ .
+ - Removes VM image for each ``$harddisks``.
  
  
  
- - Removes vnet \ ``ARs``\ .
+ - Removes vnet ``ARs``.
  
  
  

@@ -31,15 +31,15 @@ Available convenience methods:
 
 - setCCMConfig
  
- Set the CCM Configuration instance for CID \ ``cid``\  under CCM_CONFIG attribute
- using CacheManager's \ ``getConfiguration``\  method.
+ Set the CCM Configuration instance for CID ``cid`` under CCM_CONFIG attribute
+ using CacheManager's ``getConfiguration`` method.
  
- If \ ``cid``\  is not defined, the \ ``cid``\  value from the \ ``--cid``\ -option will be used.
- (To use the current CID when another cid value set via \ ``--cid``\ -option, pass an empty
+ If ``cid`` is not defined, the ``cid`` value from the ``--cid``-option will be used.
+ (To use the current CID when another cid value set via ``--cid``-option, pass an empty
  string or the string 'current').
  
  A CacheManager instance under CACHEMGR attribute is created if none exists
- or \ ``force_cache``\  is set to true.
+ or ``force_cache`` is set to true.
  
  Returns SUCCESS on success, undef on failure.
  
@@ -48,9 +48,9 @@ Available convenience methods:
 - getCCMConfig
  
  Returns the CCM configuration instance.
- If none exists, one is created via \ ``setCCMConfig``\  method.
+ If none exists, one is created via ``setCCMConfig`` method.
  
- All arguments are passed to possible \ ``setCCMConfig``\  call.
+ All arguments are passed to possible ``setCCMConfig`` call.
  
 
 
@@ -64,7 +64,7 @@ Available convenience methods:
 
 - default_action
  
- Set the default action \ ``$action``\  if action is defined
+ Set the default action ``$action`` if action is defined
  (use empty string to unset the default value).
  
  Returns the default action.

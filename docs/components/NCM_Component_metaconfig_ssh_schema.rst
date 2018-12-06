@@ -11,280 +11,280 @@ Types
  - **/software/components/metaconfig/temp_ssh_kexalgorithms**
  - **/software/components/metaconfig/temp_ssh_MACs**
  - **/software/components/metaconfig/ssh_config_opts**
-    - */software/components/metaconfig//ssh_config_opts/AddressFamily*
+    - */software/components/metaconfig/ssh_config_opts/AddressFamily*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/BatchMode*
+    - */software/components/metaconfig/ssh_config_opts/BatchMode*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/BindAddress*
+    - */software/components/metaconfig/ssh_config_opts/BindAddress*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/CanonicalDomains*
+    - */software/components/metaconfig/ssh_config_opts/CanonicalDomains*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/CanonicalizeFallbackLocal*
+    - */software/components/metaconfig/ssh_config_opts/CanonicalizeFallbackLocal*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/CanonicalizeHostname*
+    - */software/components/metaconfig/ssh_config_opts/CanonicalizeHostname*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/CanonicalizeMaxDots*
+    - */software/components/metaconfig/ssh_config_opts/CanonicalizeMaxDots*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//ssh_config_opts/CanonicalizePermittedCNAMEs*
+    - */software/components/metaconfig/ssh_config_opts/CanonicalizePermittedCNAMEs*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/ChallengeResponseAuthentication*
+    - */software/components/metaconfig/ssh_config_opts/ChallengeResponseAuthentication*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/CheckHostIP*
+    - */software/components/metaconfig/ssh_config_opts/CheckHostIP*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/Cipher*
+    - */software/components/metaconfig/ssh_config_opts/Cipher*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/Ciphers*
+    - */software/components/metaconfig/ssh_config_opts/Ciphers*
         - Optional
         - Type: temp_ssh_ciphers
-    - */software/components/metaconfig//ssh_config_opts/ClearAllForwardings*
+    - */software/components/metaconfig/ssh_config_opts/ClearAllForwardings*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/Compression*
+    - */software/components/metaconfig/ssh_config_opts/Compression*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/CompressionLevel*
+    - */software/components/metaconfig/ssh_config_opts/CompressionLevel*
         - Optional
         - Type: long
         - Range: 0..9
-    - */software/components/metaconfig//ssh_config_opts/ConnectionAttempts*
+    - */software/components/metaconfig/ssh_config_opts/ConnectionAttempts*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//ssh_config_opts/ConnectTimeout*
+    - */software/components/metaconfig/ssh_config_opts/ConnectTimeout*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//ssh_config_opts/ControlMaster*
+    - */software/components/metaconfig/ssh_config_opts/ControlMaster*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/ControlPath*
+    - */software/components/metaconfig/ssh_config_opts/ControlPath*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/ControlPersist*
+    - */software/components/metaconfig/ssh_config_opts/ControlPersist*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/DynamicForward*
+    - */software/components/metaconfig/ssh_config_opts/DynamicForward*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/EnableSSHKeysign*
+    - */software/components/metaconfig/ssh_config_opts/EnableSSHKeysign*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/EscapeChar*
+    - */software/components/metaconfig/ssh_config_opts/EscapeChar*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/ExitOnForwardFailure*
+    - */software/components/metaconfig/ssh_config_opts/ExitOnForwardFailure*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/FingerprintHash*
+    - */software/components/metaconfig/ssh_config_opts/FingerprintHash*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/ForwardAgent*
+    - */software/components/metaconfig/ssh_config_opts/ForwardAgent*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/ForwardX11*
+    - */software/components/metaconfig/ssh_config_opts/ForwardX11*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/ForwardX11Timeout*
+    - */software/components/metaconfig/ssh_config_opts/ForwardX11Timeout*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//ssh_config_opts/ForwardX11Trusted*
+    - */software/components/metaconfig/ssh_config_opts/ForwardX11Trusted*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/GatewayPorts*
+    - */software/components/metaconfig/ssh_config_opts/GatewayPorts*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/GlobalKnownHostsFile*
+    - */software/components/metaconfig/ssh_config_opts/GlobalKnownHostsFile*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/GSSAPIAuthentication*
+    - */software/components/metaconfig/ssh_config_opts/GSSAPIAuthentication*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/GSSAPIDelegateCredentials*
+    - */software/components/metaconfig/ssh_config_opts/GSSAPIDelegateCredentials*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/HashKnownHosts*
+    - */software/components/metaconfig/ssh_config_opts/HashKnownHosts*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/HostbasedAuthentication*
+    - */software/components/metaconfig/ssh_config_opts/HostbasedAuthentication*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/HostbasedKeyTypes*
+    - */software/components/metaconfig/ssh_config_opts/HostbasedKeyTypes*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/HostKeyAlgorithms*
+    - */software/components/metaconfig/ssh_config_opts/HostKeyAlgorithms*
         - Optional
         - Type: temp_ssh_hostkeyalgorithms
-    - */software/components/metaconfig//ssh_config_opts/HostKeyAlias*
+    - */software/components/metaconfig/ssh_config_opts/HostKeyAlias*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/HostName*
+    - */software/components/metaconfig/ssh_config_opts/HostName*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/IdentitiesOnly*
+    - */software/components/metaconfig/ssh_config_opts/IdentitiesOnly*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/IdentityFile*
+    - */software/components/metaconfig/ssh_config_opts/IdentityFile*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/IgnoreUnknown*
+    - */software/components/metaconfig/ssh_config_opts/IgnoreUnknown*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/IPQoS*
+    - */software/components/metaconfig/ssh_config_opts/IPQoS*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/KbdInteractiveAuthentication*
+    - */software/components/metaconfig/ssh_config_opts/KbdInteractiveAuthentication*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/KbdInteractiveDevices*
+    - */software/components/metaconfig/ssh_config_opts/KbdInteractiveDevices*
         - Optional
         - Type: temp_ssh_kbdinteractivedevices
-    - */software/components/metaconfig//ssh_config_opts/KexAlgorithms*
+    - */software/components/metaconfig/ssh_config_opts/KexAlgorithms*
         - Optional
         - Type: temp_ssh_kexalgorithms
-    - */software/components/metaconfig//ssh_config_opts/LocalCommand*
+    - */software/components/metaconfig/ssh_config_opts/LocalCommand*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/LocalForward*
+    - */software/components/metaconfig/ssh_config_opts/LocalForward*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/LogLevel*
+    - */software/components/metaconfig/ssh_config_opts/LogLevel*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/MACs*
+    - */software/components/metaconfig/ssh_config_opts/MACs*
         - Optional
         - Type: temp_ssh_MACs
-    - */software/components/metaconfig//ssh_config_opts/NoHostAuthenticationForLocalhost*
+    - */software/components/metaconfig/ssh_config_opts/NoHostAuthenticationForLocalhost*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/NumberOfPasswordPrompts*
+    - */software/components/metaconfig/ssh_config_opts/NumberOfPasswordPrompts*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//ssh_config_opts/PasswordAuthentication*
+    - */software/components/metaconfig/ssh_config_opts/PasswordAuthentication*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/PermitLocalCommand*
+    - */software/components/metaconfig/ssh_config_opts/PermitLocalCommand*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/PKCS11Provider*
+    - */software/components/metaconfig/ssh_config_opts/PKCS11Provider*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/Port*
+    - */software/components/metaconfig/ssh_config_opts/Port*
         - Optional
         - Type: long
         - Range: 1..65535
-    - */software/components/metaconfig//ssh_config_opts/PreferredAuthentications*
+    - */software/components/metaconfig/ssh_config_opts/PreferredAuthentications*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/Protocol*
+    - */software/components/metaconfig/ssh_config_opts/Protocol*
         - Optional
         - Type: long
         - Range: 1..2
-    - */software/components/metaconfig//ssh_config_opts/ProxyCommand*
+    - */software/components/metaconfig/ssh_config_opts/ProxyCommand*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/ProxyUseFdpass*
+    - */software/components/metaconfig/ssh_config_opts/ProxyUseFdpass*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/PubkeyAuthentication*
+    - */software/components/metaconfig/ssh_config_opts/PubkeyAuthentication*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/RekeyLimit*
+    - */software/components/metaconfig/ssh_config_opts/RekeyLimit*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/RemoteForward*
+    - */software/components/metaconfig/ssh_config_opts/RemoteForward*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/RequestTTY*
+    - */software/components/metaconfig/ssh_config_opts/RequestTTY*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/RevokedHostKeys*
+    - */software/components/metaconfig/ssh_config_opts/RevokedHostKeys*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/RhostsRSAAuthentication*
+    - */software/components/metaconfig/ssh_config_opts/RhostsRSAAuthentication*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/RSAAuthentication*
+    - */software/components/metaconfig/ssh_config_opts/RSAAuthentication*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/SendEnv*
+    - */software/components/metaconfig/ssh_config_opts/SendEnv*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/ServerAliveCountMax*
+    - */software/components/metaconfig/ssh_config_opts/ServerAliveCountMax*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//ssh_config_opts/ServerAliveInterval*
+    - */software/components/metaconfig/ssh_config_opts/ServerAliveInterval*
         - Optional
         - Type: long
         - Range: 0..
-    - */software/components/metaconfig//ssh_config_opts/StreamLocalBindMask*
+    - */software/components/metaconfig/ssh_config_opts/StreamLocalBindMask*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/StreamLocalBindUnlink*
+    - */software/components/metaconfig/ssh_config_opts/StreamLocalBindUnlink*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/StrictHostKeyChecking*
+    - */software/components/metaconfig/ssh_config_opts/StrictHostKeyChecking*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/TCPKeepAlive*
+    - */software/components/metaconfig/ssh_config_opts/TCPKeepAlive*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/Tunnel*
+    - */software/components/metaconfig/ssh_config_opts/Tunnel*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/TunnelDevice*
+    - */software/components/metaconfig/ssh_config_opts/TunnelDevice*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/UpdateHostKeys*
+    - */software/components/metaconfig/ssh_config_opts/UpdateHostKeys*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/UsePrivilegedPort*
+    - */software/components/metaconfig/ssh_config_opts/UsePrivilegedPort*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/User*
+    - */software/components/metaconfig/ssh_config_opts/User*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/UserKnownHostsFile*
+    - */software/components/metaconfig/ssh_config_opts/UserKnownHostsFile*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/VerifyHostKeyDNS*
+    - */software/components/metaconfig/ssh_config_opts/VerifyHostKeyDNS*
         - Optional
         - Type: string
-    - */software/components/metaconfig//ssh_config_opts/VisualHostKey*
+    - */software/components/metaconfig/ssh_config_opts/VisualHostKey*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//ssh_config_opts/XAuthLocation*
+    - */software/components/metaconfig/ssh_config_opts/XAuthLocation*
         - Optional
         - Type: string
  - **/software/components/metaconfig/ssh_config_host**
-    - */software/components/metaconfig//ssh_config_host/hostnames*
+    - */software/components/metaconfig/ssh_config_host/hostnames*
         - Required
         - Type: string
  - **/software/components/metaconfig/ssh_config_match**
-    - */software/components/metaconfig//ssh_config_match/matches*
+    - */software/components/metaconfig/ssh_config_match/matches*
         - Required
         - Type: string
  - **/software/components/metaconfig/ssh_config_file**
-    - */software/components/metaconfig//ssh_config_file/Host*
+    - */software/components/metaconfig/ssh_config_file/Host*
         - Optional
         - Type: ssh_config_host
-    - */software/components/metaconfig//ssh_config_file/Match*
+    - */software/components/metaconfig/ssh_config_file/Match*
         - Optional
         - Type: ssh_config_match
-    - */software/components/metaconfig//ssh_config_file/main*
+    - */software/components/metaconfig/ssh_config_file/main*
         - Optional
         - Type: ssh_config_opts

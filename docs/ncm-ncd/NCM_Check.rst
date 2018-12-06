@@ -17,7 +17,7 @@ INHERITANCE
 ***********
 
 
-Derives from \ ``LC::Check``\ .  Most functions are described in the \ ``LC::Check``\ 
+Derives from ``LC::Check``.  Most functions are described in the ``LC::Check``
 manpage.
 
 
@@ -46,8 +46,8 @@ DESCRIPTION
 ***********
 
 
-\ ``NCM::Check``\  is a suite of functions to control the state of configuration files.
-If the files are not correct, \ ``NCM::Check``\  will amend them.  Various
+``NCM::Check`` is a suite of functions to control the state of configuration files.
+If the files are not correct, ``NCM::Check`` will amend them.  Various
 properties may be controlled, including:
 
 
@@ -110,19 +110,19 @@ Options:
  Specifies which matching lines should be kept.
  
  
- - \ ``first``\ 
+ - ``first``
   
   Keep only the first line matching /\ *linere*\ /.
   
  
  
- - \ ``last``\ 
+ - ``last``
   
   Keep only the last line matching /\ *linere*\ /.
   
  
  
- - \ ``all``\ 
+ - ``all``
   
   Default: keep all lines matching /\ *linere*\ /.
   
@@ -132,23 +132,23 @@ Options:
 
 - add
  
- If no match for /\ *linere*\ / is found, \ ``NCM::Check::lines``\  may add the line to
+ If no match for /\ *linere*\ / is found, ``NCM::Check::lines`` may add the line to
  the file.  This option specifies where to add the line:
  
  
- - \ ``first``\ 
+ - ``first``
   
   Add \ *good*\  string as the first line of the file.
   
  
  
- - \ ``last``\ 
+ - ``last``
   
   Default: add \ *good*\  string as the last line of the file.
   
  
  
- - \ ``no``\ 
+ - ``no``
   
   Do not alter the file.
   

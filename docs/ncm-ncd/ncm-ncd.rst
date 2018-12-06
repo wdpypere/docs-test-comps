@@ -28,7 +28,7 @@ SYNOPSIS
      ncm-ncd --unconfigure [options] component
 
 
-(See \ ``ncm-ncd --help``\  for full list of options with default values.)
+(See ``ncm-ncd --help`` for full list of options with default values.)
 
 
 ***********
@@ -52,7 +52,7 @@ The \ **ncd**\  can be executed manually, via \ **cron**\ , or via the
 If a dependency is not fulfilled, the \ **ncd**\  exits with an
 appropriate error message and return status.
 
-In case of deinstallation of a component using \ ``--unconfigure``\ ,
+In case of deinstallation of a component using ``--unconfigure``,
 the \ **ncd**\  is to be called with the component's name as a
 parameter.
 
@@ -73,7 +73,7 @@ OPTIONS
 
 - --configure
  
- Run the \ ``Configure``\  method for <component1 component2 ...> (default option).
+ Run the ``Configure`` method for <component1 component2 ...> (default option).
  For running configure on all components, use --configure --all.
  
 
@@ -92,7 +92,7 @@ OPTIONS
 
 - --unconfigure
  
- Run the \ ``Unconfigure``\  method for <component>. Only one component can
+ Run the ``Unconfigure`` method for <component>. Only one component can
  be unconfigured at a time.
  
 
@@ -110,8 +110,8 @@ OPTIONS
  will have its permissions set to 750 and the
  the groupname as group (still owned by root).
  
- Following standard UNIX ACL semantics, the \ ``log_group_readable``\  configuration
- option is not very useful if \ ``log_world_readable``\  is also true.
+ Following standard UNIX ACL semantics, the ``log_group_readable`` configuration
+ option is not very useful if ``log_world_readable`` is also true.
  
 
 
@@ -120,12 +120,12 @@ OPTIONS
  World readable logdir flag (1/0). If true, the configured logdirectory
  will have its permissions set to 755. If false (the default) the permissions will be 700.
  
- These permissions will be set each time \ ``ncm-ncd``\  is run.
+ These permissions will be set each time ``ncm-ncd`` is run.
  
- Following standard UNIX ACL semantics, the \ ``log_group_readable``\  configuration
- option is not very useful if \ ``log_world_readable``\  is also true.
+ Following standard UNIX ACL semantics, the ``log_group_readable`` configuration
+ option is not very useful if ``log_world_readable`` is also true.
  
- The use of \ ``log_world_readable``\  is not recommended
+ The use of ``log_world_readable`` is not recommended
  if profiles contain sensitive or private information.
  
 
@@ -212,7 +212,7 @@ OPTIONS
 
 - --pre-hook-timeout, --post-hook-timeout
  
- Timeouts, in seconds, for the \ ``--pre-hook``\  and \ ``--post-hook``\ 
+ Timeouts, in seconds, for the ``--pre-hook`` and ``--post-hook``
  
  A value of 0 means no time out.  By default they time out after 5 minutes.
  
@@ -221,7 +221,7 @@ OPTIONS
 - --chroot
  
  Chroot to the directory given as an argument.  If it's not possible to
- chroot, \ ``ncm-ncd``\  will die.
+ chroot, ``ncm-ncd`` will die.
  
 
 
@@ -231,8 +231,8 @@ OPTIONS
  And do not run if CCM updates are globally disabled.
  (If --check-noquattor is not set, ncm-ncd will ignore `/etc/noquattor`).
  
- It is enabled by default, use \ ``--no-check-noquattor``\  to disable it
- (or set \ ``check-noquattor = 0``\  in the configfile).
+ It is enabled by default, use ``--no-check-noquattor`` to disable it
+ (or set ``check-noquattor = 0`` in the configfile).
  
 
 
@@ -376,9 +376,9 @@ CONFIGURATION FILE
 
 
 A configuration file can keep site-wide configuration settings. The
-location of the configuration file is defined in the \ ``--cfgfile``\ 
+location of the configuration file is defined in the ``--cfgfile``
 option. A default configuration file is found in
-\ ``/etc/ncm-ncd.conf``\ .
+``/etc/ncm-ncd.conf``.
 
 
 ***************
@@ -388,5 +388,5 @@ SIGNAL HANDLING
 
 If a signal is received, the ncm-ncd will try to finish its execution
 gracefully and will report an error (return status: -1), except if
-it was called with the \ ``--noaction``\  flag.
+it was called with the ``--noaction`` flag.
 

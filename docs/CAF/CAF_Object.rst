@@ -40,16 +40,16 @@ CAF objects.
 All other CAF objects should inherit from it.
 
 All CAF classes use this as their base class and inherit their class
-constructor \ ``new``\  from here. Sub-classes should implement all their
-constructor initialisation in an \ ``_initialize``\  method which is invoked
-from this base class \ ``new``\  constructor. Sub-classes should NOT need to
-override the \ ``new``\  class method.
+constructor ``new`` from here. Sub-classes should implement all their
+constructor initialisation in an ``_initialize`` method which is invoked
+from this base class ``new`` constructor. Sub-classes should NOT need to
+override the ``new`` class method.
 
-The subclass \ ``_initialize``\  method has to be implemented
+The subclass ``_initialize`` method has to be implemented
 and has to return a boolean value indicating if the initialisation was succesful
-(e.g. use \ ``SUCCESS``\  exported by \ ``CAF::Object``\ ).
-In particular, one should avoid to return the \ ``$self``\  instance at the end of
-\ ``_initialize``\  (e.g. to avoid troubles when the subclass overloads logic evaluation
+(e.g. use ``SUCCESS`` exported by ``CAF::Object``).
+In particular, one should avoid to return the ``$self`` instance at the end of
+``_initialize`` (e.g. to avoid troubles when the subclass overloads logic evaluation
 (which is also possible via overloading other methods such as stringification)).
 
 Public methods
@@ -60,10 +60,10 @@ Public methods
 - new
  
  Creates an empty hash and bless'es it as the new class instance. All arguments are then passed
- to a \ ``$self->_initialize(@_)``\  call.
- When \ ``_initialize``\  returns success, the \ ``NoAction``\  attribute is set to the value of
- \ ``CAF::Object::NoAction``\  if it didn't exist after \ ``_initialize``\ .
- If \ ``_initialize``\  returns failure, an error is thrown and undef returned.
+ to a ``$self->_initialize(@_)`` call.
+ When ``_initialize`` returns success, the ``NoAction`` attribute is set to the value of
+ ``CAF::Object::NoAction`` if it didn't exist after ``_initialize``.
+ If ``_initialize`` returns failure, an error is thrown and undef returned.
  
 
 
@@ -88,32 +88,32 @@ Private methods
 - error, warn, info, verbose, debug, report, OK, event
  
  Convenience methods to access the log/reporter instance that might
- be passed during initialisation and set to \ ``$self->{log}``\ .
+ be passed during initialisation and set to ``$self->{log}``.
  
  (When constructing classes via multiple inheritance,
- \ ``CAF::Reporter``\  should precede \ ``CAF::Object``\  if you want
+ ``CAF::Reporter`` should precede ``CAF::Object`` if you want
  to use an absolute rather than a conditional logger).
  
 
 
 - fail
  
- Handle failures. Stores the error message in the \ ``fail``\  attribute,
- logs it with \ ``verbose``\  and returns undef.
+ Handle failures. Stores the error message in the ``fail`` attribute,
+ logs it with ``verbose`` and returns undef.
  
  To be used in subclasses that are not supposed to log/report
  any errors themself when a problem or failure occurs.
- In such classes, all failures should use \ ``return $self->fail("message");``\ .
+ In such classes, all failures should use ``return $self->fail("message");``.
  
 
 
 - update_env
  
- Update the hashref \ ``$env``\  with key/value
- from the \ ``ENV``\  attribute hashref.
+ Update the hashref ``$env`` with key/value
+ from the ``ENV`` attribute hashref.
  (A undef value will remove the key.)
  
- Returns the \ ``env``\  hashref.
+ Returns the ``env`` hashref.
  
  To be used as
  

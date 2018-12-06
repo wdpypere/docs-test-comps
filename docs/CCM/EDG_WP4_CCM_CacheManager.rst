@@ -40,9 +40,9 @@ the NVA cache.
 
 - new ($cache_path)
  
- Create new CacheManager object with \ ``$cache_path``\ .
+ Create new CacheManager object with ``$cache_path``.
  
- \ ``$config_file``\  is an optional parameter that points
+ ``$config_file`` is an optional parameter that points
  to the CCM config file.
  
 
@@ -55,7 +55,7 @@ the NVA cache.
 
 - getConfigurationPath
  
- For given \ ``cid``\ , return the basepath of the Configuration data.
+ For given ``cid``, return the basepath of the Configuration data.
  (No checks are made e.g. if the directory exists,
  simply returns the directory name).
  
@@ -71,11 +71,11 @@ the NVA cache.
 
 - getCid
  
- For given \ ``cid``\ , validate and check the CID.
+ For given ``cid``, validate and check the CID.
  
  Returns undef for a non-existing CID.
  
- Also handles special values for \ ``cid``\ :
+ Also handles special values for ``cid``:
  
  
  - undef, "current" or empty string
@@ -94,7 +94,7 @@ the NVA cache.
  
  - negative value (e.g. -1)
   
-  If CID is negative \ ``-N``\ , the N-th most recent CID value is returned
+  If CID is negative ``-N``, the N-th most recent CID value is returned
   (e.g. -1 returns the most recent CID, -2 the CID before the most recent, ...).
   
   (A distinction is made between "most recent" and "latest", as the "latest" CID
@@ -108,37 +108,37 @@ the NVA cache.
  
  Returns narrowest-possible Configuration object.
  
- If \ ``cid``\  is defined, return a locked Configuration with this \ ``cid``\ .
- (Special values for \ ``cid``\  are handled by the \ ``getCid``\  method).
+ If ``cid`` is defined, return a locked Configuration with this ``cid``.
+ (Special values for ``cid`` are handled by the ``getCid`` method).
  
- If \ ``cid``\  is undefined, an unlocked Configuration is used (and the write permission
+ If ``cid`` is undefined, an unlocked Configuration is used (and the write permission
  for the anonymous flag are checked against the CacheManager's current CID).
  
- The Configuration instance is created with anonymous flag equal to \ ``-1``\ 
+ The Configuration instance is created with anonymous flag equal to ``-1``
  (i.e. the Configuration instance will determine if the Configuration
  is anonymous or not based on the write permissions of the current process).
  
- The \ ``locked``\  and \ ``anonymous``\  flags can also be forced via named arguments (e.g.
- \ ``<locked =``\  1>> or \ ``<anonymous =``\  1>>).
+ The ``locked`` and ``anonymous`` flags can also be forced via named arguments (e.g.
+ ``<locked =`` 1>> or ``<anonymous =`` 1>>).
  
- Security and \ ``$cred``\  parameter meaning are not defined
+ Security and ``$cred`` parameter meaning are not defined
  (but is kept for compatibility with other
- \ ``get{Locked,Unlock,Anonymous}Configuration``\  methods).
+ ``get{Locked,Unlock,Anonymous}Configuration`` methods).
  
  The configuration template name can also be passed via an
- optional named argument \ ``name_template``\  (e.g. \ ``name_template => basic``\ ).
+ optional named argument ``name_template`` (e.g. ``name_template => basic``).
  
 
 
 - getUnlockedConfiguration ($cred; $cid)
  
- This method is deprecated in favour of \ ``getConfiguration``\ .
+ This method is deprecated in favour of ``getConfiguration``.
  
  Returns unlocked Configuration object.
  
- Unless the object is locked explicitly later by calling the \ ``lock``\  method,
- \ ``CCM::CacheManager::Element``\ s will always be fetched from the current CID,
- not the CID passed via \ ``$cid``\ . (If the $cid parameter is omitted,
+ Unless the object is locked explicitly later by calling the ``lock`` method,
+ ``CCM::CacheManager::Element``s will always be fetched from the current CID,
+ not the CID passed via ``$cid``. (If the $cid parameter is omitted,
  the most recently downloaded configuration (when the cache
  was not globally locked) is returned.)
  
@@ -148,7 +148,7 @@ the NVA cache.
 
 - getLockedConfiguration ($cred; $cid)
  
- This method is deprecated in favour of \ ``getConfiguration``\ .
+ This method is deprecated in favour of ``getConfiguration``.
  
  Returns locked Configuration object. If the $cid parameter is
  omitted, the most recently downloaded configuration (when the cache
@@ -160,13 +160,13 @@ the NVA cache.
 
 - getAnonymousConfiguration ($cred; $cid)
  
- This method is deprecated in favour of \ ``getConfiguration``\ .
+ This method is deprecated in favour of ``getConfiguration``.
  
  Returns unlocked anonymous Configuration object.
  
- Unless the object is locked explicitly later by calling the \ ``lock``\  method,
- \ ``CCM::CacheManager::Element``\ s will always be fetched from the current CID,
- not the CID passed via \ ``$cid``\ . (If the $cid parameter is omitted,
+ Unless the object is locked explicitly later by calling the ``lock`` method,
+ ``CCM::CacheManager::Element``s will always be fetched from the current CID,
+ not the CID passed via ``$cid``. (If the $cid parameter is omitted,
  the most recently downloaded configuration (when the cache
  was not globally locked) is returned.)
  

@@ -28,9 +28,9 @@ RESOURCES
 
 
 
-- \ ``/software/components/globuscfg/sysconfigUpdate``\  : boolean
+- ``/software/components/globuscfg/sysconfigUpdate`` : boolean
  
- If false, \ ``/etc/sysconfig/globus``\  is not updated. Must be set to
+ If false, ``/etc/sysconfig/globus`` is not updated. Must be set to
  false if you want to manage `/etc/sysconfig/globus` with another component
  (e.g. ncm-sysconfig).
  
@@ -38,37 +38,37 @@ RESOURCES
  
 
 
-- \ ``/software/components/globuscfg/GLOBUS_LOCATION``\ 
+- ``/software/components/globuscfg/GLOBUS_LOCATION``
  
- The root of the Globus software tree. By default this is \ ``/opt/globus``\ .
+ The root of the Globus software tree. By default this is ``/opt/globus``.
  
 
 
-- \ ``/software/components/globuscfg/GLOBUS_CONFIG``\ 
+- ``/software/components/globuscfg/GLOBUS_CONFIG``
  
  The full path to the Globus configuration file. Defaults to
- \ ``/etc/globus.conf``\ .
+ ``/etc/globus.conf``.
  
 
 
-- \ ``/software/components/globuscfg/globus_flavor_name``\ 
+- ``/software/components/globuscfg/globus_flavor_name``
  
  The globus "flavor" to use. There is no default. A typical value is
  gcc32dbg.
  
 
 
-- \ ``/software/components/globuscfg/services``\ 
+- ``/software/components/globuscfg/services``
  
  The list of Globus services to restart after a configuration.
  
 
 
-- \ ``/software/components/globuscfg/x509_user_cert``\ 
+- ``/software/components/globuscfg/x509_user_cert``
 
 
 
-- \ ``/software/components/globuscfg/x509_user_key``\ 
+- ``/software/components/globuscfg/x509_user_key``
  
  The path to the host certificate and key. These have no default as
  there are some machines which do not require the security
@@ -76,7 +76,7 @@ RESOURCES
  
 
 
-- \ ``/software/components/globuscfg/gridmap``\ 
+- ``/software/components/globuscfg/gridmap``
  
  The path to the grid-mapfile. This has no default as there are some
  machines which do not require the security infrastructure to be
@@ -84,21 +84,21 @@ RESOURCES
  
 
 
-- \ ``/software/components/globuscfg/GLOBUS_TCP_PORT_RANGE``\ 
+- ``/software/components/globuscfg/GLOBUS_TCP_PORT_RANGE``
  
  The port range that the gatekeeper and gridftp will use to open
  up listening services for inbound tcp connections. eg 50000,52000
  
 
 
-- \ ``/software/components/globuscfg/GLOBUS_UDP_PORT_RANGE``\ 
+- ``/software/components/globuscfg/GLOBUS_UDP_PORT_RANGE``
  
  The port range that the gatekeeper and gridftp will use to open
  up listening services for inbound udp connections. eg 50000,52000
  
 
 
-- \ ``/software/components/globuscfg/gridmapdir``\ 
+- ``/software/components/globuscfg/gridmapdir``
  
  The path to the grid-mapfile. This has no default as there are some
  machines which do not require the security infrastructure to be
@@ -106,37 +106,37 @@ RESOURCES
  
 
 
-- \ ``/software/components/globuscfg/mds/globus_flavor_name``\ 
+- ``/software/components/globuscfg/mds/globus_flavor_name``
  
  The globus "flavor" to use for MDS will use global value unless specified.
  
 
 
-- \ ``/software/components/globuscfg/mds/user``\ 
+- ``/software/components/globuscfg/mds/user``
  
  The user with which to run the MDS daemons (default: root).
  
 
 
-- \ ``/software/components/globuscfg/mds/x509_user_cert``\ 
+- ``/software/components/globuscfg/mds/x509_user_cert``
 
 
 
-- \ ``/software/components/globuscfg/mds/x509_user_key``\ 
+- ``/software/components/globuscfg/mds/x509_user_key``
  
  The path to the certificate and key to use for MDS. Host credentials
  will be used if not specified.
  
 
 
-- \ ``/software/components/globuscfg/mds/gris/suffix``\ 
+- ``/software/components/globuscfg/mds/gris/suffix``
  
- The suffix to use for the GRISes. Defaults to \ ``""Mds-Vo-name=local,o=grid""``\ .
+ The suffix to use for the GRISes. Defaults to ``""Mds-Vo-name=local,o=grid""``.
  Double quotes MUST appear as part of the value.
  
 
 
-- \ ``/software/components/globuscfg/mds/gris/provider``\ 
+- ``/software/components/globuscfg/mds/gris/provider``
  
  A table of GRIS information providers to run within the MDS. By
  default the name of each provider is the name of the info provider
@@ -150,12 +150,12 @@ RESOURCES
  
  "xyz" will be taken, as the name of the executable.
  You may optionally specify a fully-qualified executable name to
-  override this default. The parameter to set is, for example,
+ override this default. The parameter to set is, for example,
  "provider_edg" for the edg information provider.
  
 
 
-- \ ``/software/components/globuscfg/mds/gris/registration``\ 
+- ``/software/components/globuscfg/mds/gris/registration``
  
  The \ *list*\  of GIISes to which the GRISes should register, so it
  has entries labelled with numbers. These entries are have
@@ -168,7 +168,7 @@ RESOURCES
  
 
 
-- \ ``/software/components/globuscfg/mds/giis/allowedregs``\ 
+- ``/software/components/globuscfg/mds/giis/allowedregs``
  
  The \ *list*\  of local GIISes to run. As for lists, entries which
  represent GIISes have numbers as names. They have an obligatory
@@ -178,14 +178,14 @@ RESOURCES
  
 
 
-- \ ``/software/components/globuscfg/mds/giis/allowedregs/_number_/allowreg``\ 
+- ``/software/components/globuscfg/mds/giis/allowedregs/_number_/allowreg``
  
  The list of allowed host:port pairs which may register to this
  giis. This is a sub-parameter of the giis.
  
 
 
-- \ ``/software/components/globuscfg/mds/giis/registration``\ 
+- ``/software/components/globuscfg/mds/giis/registration``
  
  To register a local GIIS to another GIIS specify explicitly at least
  the \ *regname*\  sub-parameter.  Additionally, you may also specify
@@ -202,103 +202,103 @@ RESOURCES
  
 
 
-- \ ``/software/components/globuscfg/gridftp/globus_flavour_name``\ 
+- ``/software/components/globuscfg/gridftp/globus_flavour_name``
  
  The globus "flavor" to use for GridFTP will use global value unless
  specified.
  
 
 
-- \ ``/software/components/globuscfg/gridftp/X509_USER_CERT``\ 
+- ``/software/components/globuscfg/gridftp/X509_USER_CERT``
 
 
 
-- \ ``/software/components/globuscfg/gridftp/X509_USER_KEY``\ 
+- ``/software/components/globuscfg/gridftp/X509_USER_KEY``
  
  The path to the certificate and key to use for GridFTP. Host credentials
  will be used if not specified.
  
 
 
-- \ ``/software/components/globuscfg/gridftp/ftpd``\ 
+- ``/software/components/globuscfg/gridftp/ftpd``
  
  The full path to the GridFTP daemon. Normally this is not specified
  as the default is usually correct.
  
 
 
-- \ ``/software/components/globuscfg/gridftp/port``\ 
+- ``/software/components/globuscfg/gridftp/port``
  
  The port number to use for the GridFTP daemon. The default is 2811.
  
 
 
-- \ ``/software/components/globuscfg/gridftp/umask``\ 
+- ``/software/components/globuscfg/gridftp/umask``
  
  The umask to use for the GridFTP daemon. The default is 002.
  
 
 
-- \ ``/software/components/globuscfg/gridftp/log``\ 
+- ``/software/components/globuscfg/gridftp/log``
  
  The full path to the log file for the GridFTP daemon. This defaults
- to the area \ ``/var/log``\ .
+ to the area ``/var/log``.
  
 
 
-- \ ``/software/components/globuscfg/gridftp/user``\ 
+- ``/software/components/globuscfg/gridftp/user``
  
  The user with which to run the GridFTP daemon. Will default to root.
  
 
 
-- \ ``/software/components/globuscfg/gridftp/options``\ 
+- ``/software/components/globuscfg/gridftp/options``
  
  This will override all options for the GridFTP daemon. Use only if
  you really know what you are doing.
  
 
 
-- \ ``/software/components/globuscfg/gatekeeper/globus_gatekeeper``\ 
+- ``/software/components/globuscfg/gatekeeper/globus_gatekeeper``
  
  The executable name for the gatekeeper.
  
 
 
-- \ ``/software/components/globuscfg/gatekeeper/extra_options``\ 
+- ``/software/components/globuscfg/gatekeeper/extra_options``
  
  Additional options to pass to the gatekeeper.
  
 
 
-- \ ``/software/components/globuscfg/gatekeeper/globus_flavor_name``\ 
+- ``/software/components/globuscfg/gatekeeper/globus_flavor_name``
  
  The globus "flavor" to use for the gatekeeper will use global value
  unless specified.
  
 
 
-- \ ``/software/components/globuscfg/gatekeeper/user``\ 
+- ``/software/components/globuscfg/gatekeeper/user``
  
  The user name to use to run the gatekeeper.
  
 
 
-- \ ``/software/components/globuscfg/gatekeeper/port``\ 
+- ``/software/components/globuscfg/gatekeeper/port``
  
  The port to use for the gatekeeper. (This defaults to 2119 if not
  specified.)
  
 
 
-- \ ``/software/components/globuscfg/gatekeeper/logfile``\ 
+- ``/software/components/globuscfg/gatekeeper/logfile``
  
  The location of the log file for the daemon. (Default depends on
  whether user is specified.)
  
 
 
-- \ ``/software/components/globuscfg/gatekeeper/jobmanagers``\ 
+- ``/software/components/globuscfg/gatekeeper/jobmanagers``
  
  The \ *list*\  of job managers to use for this gatekeeper. The fork job
  manager is required (and required to be the default), so only non-fork
@@ -306,32 +306,32 @@ RESOURCES
  
 
 
-- \ ``/software/components/globuscfg/gatekeeper/jobmanagers/_entryNo_/recordname``\ 
+- ``/software/components/globuscfg/gatekeeper/jobmanagers/_entryNo_/recordname``
  
  Obligatory parameter, identifier string for a certain job manager.
  
 
 
-- \ ``/software/components/globuscfg/gatekeeper/jobmanagers/_entryNo_/type``\ 
+- ``/software/components/globuscfg/gatekeeper/jobmanagers/_entryNo_/type``
  
  Mandatory option giving the type of LRMS. E.g. pbs, lsf, etc.
  
 
 
-- \ ``/software/components/globuscfg/gatekeeper/jobmanagers/_enrtyNo_/job_manager``\ 
+- ``/software/components/globuscfg/gatekeeper/jobmanagers/_enrtyNo_/job_manager``
  
  Name of job manager executable.
  
 
 
-- \ ``/software/components/globuscfg/gatekeeper/jobmanagers/_entryNo_/job_manager_path``\ 
+- ``/software/components/globuscfg/gatekeeper/jobmanagers/_entryNo_/job_manager_path``
  
  Path to the job manager executable. Only needs to be specified if it
  is in a non-standard location.
  
 
 
-- \ ``/software/components/globuscfg/gatekeeper/jobmanagers/_entryNo_/extra_config``\ 
+- ``/software/components/globuscfg/gatekeeper/jobmanagers/_entryNo_/extra_config``
  
  Extra configuration options needed by the job manager.
  

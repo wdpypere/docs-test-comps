@@ -9,7 +9,7 @@ NAME
 ****
 
 
-CAF::ServiceActions - Class for running different \ ``CAF::Service``\  actions
+CAF::ServiceActions - Class for running different ``CAF::Service`` actions
 on groups of daemons.
 
 
@@ -42,7 +42,7 @@ DESCRIPTION
 ***********
 
 
-This class can be used to run different \ ``CAF::Service``\  actions
+This class can be used to run different ``CAF::Service`` actions
 on groups of daemons.
 
 Private methods
@@ -50,31 +50,31 @@ Private methods
 
 
 
-- \ ``_initialize``\ 
+- ``_initialize``
  
  Initialize the object.
  It takes optional arguments:
  
  
- - \ ``log``\ 
+ - ``log``
   
-  A \ ``CAF::Reporter``\  object to log daemon activities to.
-  
- 
- 
- - \ ``pairs``\ 
-  
-  Daemon/action pairs (in hashref) passed to \ ``add``\  method.
+  A ``CAF::Reporter`` object to log daemon activities to.
   
  
  
- All other named options are passed to \ ``add``\  method if the \ ``pairs``\  option is passed.
+ - ``pairs``
+  
+  Daemon/action pairs (in hashref) passed to ``add`` method.
+  
+ 
+ 
+ All other named options are passed to ``add`` method if the ``pairs`` option is passed.
  
 
 
-- \ ``add``\ 
+- ``add``
  
- Add daemon/action \ ``pairs``\  as hashref, e.g.
+ Add daemon/action ``pairs`` as hashref, e.g.
  
  
  .. code-block:: perl
@@ -82,12 +82,12 @@ Private methods
       $srvact->add({daemon1 => 'restart', daemon2 => 'stop'});
  
  
- Does not run any service action (see \ ``run``\  method).
+ Does not run any service action (see ``run`` method).
  
  It takes optional arguments:
  
  
- - \ ``msg``\ 
+ - ``msg``
   
   A string that is appended to the log messages.
   
@@ -97,7 +97,7 @@ Private methods
  
 
 
-- \ ``run``\ 
+- ``run``
  
  Run the actions for all daemons.
  

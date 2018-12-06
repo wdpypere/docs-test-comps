@@ -6,25 +6,25 @@ Types
 -----
 
  - **/software/components/metaconfig/mailrc_element**
-    - */software/components/metaconfig//mailrc_element/smtp*
+    - */software/components/metaconfig/mailrc_element/smtp*
         - Optional
         - Type: string
-    - */software/components/metaconfig//mailrc_element/from*
+    - */software/components/metaconfig/mailrc_element/from*
         - Optional
         - Type: type_email
-    - */software/components/metaconfig//mailrc_element/smtp-use-starttls*
+    - */software/components/metaconfig/mailrc_element/smtp-use-starttls*
         - Optional
         - Type: boolean
-    - */software/components/metaconfig//mailrc_element/smtp-auth-user*
+    - */software/components/metaconfig/mailrc_element/smtp-auth-user*
         - Optional
         - Type: string
-    - */software/components/metaconfig//mailrc_element/smtp-auth-password*
+    - */software/components/metaconfig/mailrc_element/smtp-auth-password*
         - Optional
         - Type: string
-    - */software/components/metaconfig//mailrc_element/nss-config-dir*
+    - */software/components/metaconfig/mailrc_element/nss-config-dir*
         - Optional
         - Type: string
  - **/software/components/metaconfig/mailrc_config**
-    - */software/components/metaconfig//mailrc_config/account*
+    - */software/components/metaconfig/mailrc_config/account*
         - Optional
         - Type: mailrc_element

@@ -19,7 +19,7 @@ Public methods
 
 - add_group
  
- Add a group with name \ ``gid``\ .
+ Add a group with name ``gid``.
  
  
  - Arguments
@@ -31,7 +31,7 @@ Public methods
   
  
  
- - Options (passed to \ ``Net::FreeIPA::API::api_group_add``\ ).
+ - Options (passed to ``Net::FreeIPA::API::api_group_add``).
   
   
   - gidnumber
@@ -44,8 +44,8 @@ Public methods
 
 - add_group_member
  
- Add the members to group \ ``gid``\  using options
- (options are passed to \ ``api_group_add_member``\ ).
+ Add the members to group ``gid`` using options
+ (options are passed to ``api_group_add_member``).
  
 
 

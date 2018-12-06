@@ -42,23 +42,23 @@ Public methods
 
 
 
-- \ ``close()``\ : boolean
+- ``close()``: boolean
  
  closes the log file, returns SUCCESS on success, undef otherwise
  (if no FH attribute exists).
  
 
 
-- \ ``print($msg)``\ : boolean
+- ``print($msg)``: boolean
  
- Prints \ ``$msg``\  into the log file.
+ Prints ``$msg`` into the log file.
  
- If \ ``PROCID``\  attribute is defined (value is irrelevant),
- the proces id in square brackets (\ ``[PID]``\ ) and additional
+ If ``PROCID`` attribute is defined (value is irrelevant),
+ the proces id in square brackets (``[PID]``) and additional
  space are prepended.
  
- If \ ``TSTAMP``\  attribute is defined (value is irrelevant),
- a \ ``YYYY/MM/DD-HH:mm:ss``\  timestamp and additional space
+ If ``TSTAMP`` attribute is defined (value is irrelevant),
+ a ``YYYY/MM/DD-HH:mm:ss`` timestamp and additional space
  are prepended.
  
  No newline is added to the message.
@@ -73,9 +73,9 @@ Private methods
 
 
 
-- \ ``_initialize($filename, $options)``\ 
+- ``_initialize($filename, $options)``
  
- \ ``$options``\  is a string with magic letters
+ ``$options`` is a string with magic letters
  
  
  - a: append to a logfile
@@ -94,9 +94,9 @@ Private methods
  
  
  
- Only one of \ ``w``\  or \ ``a``\  can and has to be set. (There is no default.)
+ Only one of ``w`` or ``a`` can and has to be set. (There is no default.)
  
- If the \ ``w``\  option is used and there was a previous
+ If the ``w`` option is used and there was a previous
  log file, it is renamed with the extension '.prev'.
  
  Examples:
@@ -108,8 +108,8 @@ Private methods
       CAF::Log->new('/foo/bar', 'w') : truncate logfile, no timestamp
  
  
- If the filename ends with \ ``.log``\ , the \ ``SYSLOG``\  attribute is set to
- basename of the file without suffix (relevant for \ ``CAF::Reporter::syslog``\ ).
+ If the filename ends with ``.log``, the ``SYSLOG`` attribute is set to
+ basename of the file without suffix (relevant for ``CAF::Reporter::syslog``).
  
 
 

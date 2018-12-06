@@ -7,40 +7,40 @@ Types
 
  - **structure_pxelinux_pxe_info**
     - Description: PXE configuration
-    - */structure_pxelinux_pxe_info/initrd*
+    - *structure_pxelinux_pxe_info/initrd*
         - Required
         - Type: string
-    - */structure_pxelinux_pxe_info/kernel*
+    - *structure_pxelinux_pxe_info/kernel*
         - Required
         - Type: string
-    - */structure_pxelinux_pxe_info/ksdevice*
+    - *structure_pxelinux_pxe_info/ksdevice*
         - Required
         - Type: string
-    - */structure_pxelinux_pxe_info/kslocation*
+    - *structure_pxelinux_pxe_info/kslocation*
         - Required
         - Type: type_absoluteURI
-    - */structure_pxelinux_pxe_info/label*
+    - *structure_pxelinux_pxe_info/label*
         - Required
         - Type: string
-    - */structure_pxelinux_pxe_info/append*
+    - *structure_pxelinux_pxe_info/append*
         - Optional
         - Type: string
-    - */structure_pxelinux_pxe_info/rescue*
+    - *structure_pxelinux_pxe_info/rescue*
         - Optional
         - Type: string
-    - */structure_pxelinux_pxe_info/livecd*
+    - *structure_pxelinux_pxe_info/livecd*
         - Optional
         - Type: string
-    - */structure_pxelinux_pxe_info/firmware*
+    - *structure_pxelinux_pxe_info/firmware*
         - Optional
         - Type: string
-    - */structure_pxelinux_pxe_info/setifnames*
+    - *structure_pxelinux_pxe_info/setifnames*
         - Optional
         - Type: boolean
-    - */structure_pxelinux_pxe_info/updates*
+    - *structure_pxelinux_pxe_info/updates*
         - Optional
         - Type: type_absoluteURI
-    - */structure_pxelinux_pxe_info/ipdev*
+    - *structure_pxelinux_pxe_info/ipdev*
         - Description: Get (static) IP details used for ksdevice configuration form this device. For most network configs like bridges and bonds, this is not required.
         - Optional
         - Type: string
