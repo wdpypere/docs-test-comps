@@ -275,6 +275,24 @@ Types
     - *structure_security/svcwhitelist*
         - Optional
         - Type: list
+ - **structure_entitlement_user**
+    - *structure_entitlement_user/type*
+        - Required
+        - Type: string
+    - *structure_entitlement_user/value*
+        - Required
+        - Type: valid_user
+ - **structure_entitlement_eon_id**
+    - *structure_entitlement_eon_id/value*
+        - Required
+        - Type: long
+ - **structure_entitlements**
+    - *structure_entitlements/eon_id*
+        - Optional
+        - Type: structure_entitlement_eon_id
+    - *structure_entitlements/user*
+        - Optional
+        - Type: structure_entitlement_user
  - **structure_system_aquilon**
     - *structure_system_aquilon/advertise_status*
         - Optional
@@ -310,6 +328,9 @@ Types
     - *structure_system_aquilon/owner_eon_id*
         - Optional
         - Type: long
+    - *structure_system_aquilon/entitlements*
+        - Optional
+        - Type: structure_entitlements
     - *structure_system_aquilon/provides*
         - Optional
         - Type: nlist

@@ -237,7 +237,7 @@ Types
         - Type: structure_dpc_console
     - *structure_console/bmc*
         - Optional
-        - Type: structure_dpc_console
+        - Type: structure_bmc_console
     - *structure_console/preferred*
         - Optional
         - Type: string
@@ -254,6 +254,14 @@ Types
         - Description: unit: MB/s TRIAD
         - Optional
         - Type: double
+ - **structure_bios**
+    - Description: BIOS definition
+    - *structure_bios/version*
+        - Required
+        - Type: string
+    - *structure_bios/releasedate*
+        - Required
+        - Type: string
  - **structure_hardware**
     - Description: Hardware definition
     - *structure_hardware/cpu*
@@ -262,6 +270,9 @@ Types
     - *structure_hardware/ram*
         - Optional
         - Type: structure_ram
+    - *structure_hardware/bios*
+        - Optional
+        - Type: structure_bios
     - *structure_hardware/cards*
         - Optional
         - Type: structure_cards
