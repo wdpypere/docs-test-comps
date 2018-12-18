@@ -24,7 +24,7 @@ Types
         - Optional
         - Type: long
     - *structure_ks_ksxinfo/defaultdesktop*
-        - Required
+        - Optional
         - Type: string
     - *structure_ks_ksxinfo/resolution*
         - Optional
@@ -205,6 +205,10 @@ Types
     - *structure_ks_ks_info/timezone*
         - Required
         - Type: string
+    - *structure_ks_ks_info/ntpservers*
+        - Description: NTP servers used by Anaconda
+        - Optional
+        - Type: string
     - *structure_ks_ks_info/selinux*
         - Optional
         - Type: string
@@ -226,9 +230,6 @@ Types
         - Required
         - Type: string
     - *structure_ks_ks_info/packages_args*
-        - Required
-        - Type: string
-    - *structure_ks_ks_info/end_script*
         - Required
         - Type: string
     - *structure_ks_ks_info/part_label*

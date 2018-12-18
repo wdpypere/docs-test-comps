@@ -51,6 +51,9 @@ Types
     - *structure_system/lcg*
         - Optional
         - Type: structure_lcg
+    - *structure_system/licences*
+        - Optional
+        - Type: structure_licence
     - *structure_system/network*
         - Required
         - Type: structure_network
